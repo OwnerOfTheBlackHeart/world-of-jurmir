@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<title>Home - Anthony Parsch's UAT Board</title>
+
+		<link rel="stylesheet" href="styles/home.css" type="text/css">
+		<link rel="stylesheet" href="styles/main.css" type="text/css">
+		<link rel="stylesheet" href="styles/monsters.css" type="text/css">
+		<link rel="stylesheet" href="styles/srd.css" type="text/css">
+		<style></style>
+
+        <!-- <script>var buttons;</script> -->
+        <script src="scripts/buttons.js"></script>
+		<script src="scripts/IO.js"></script>
+		<script src="scripts/master.js"></script>
+	</head>
+
+    <body onload="LoadIntoId('header.html', 'header');
+				  LoadIntoId('footer.html', 'footer');
+				  SetupButtons(LoadPageAtStart('page_area', indexPage));">
+
+		<div id="content"> <!-- Where everything goes -->
+		
+			<!-- Our header plus our navigation bar -->
+			<div id="header"></div>
+			
+			<!-- Where we load the code of each page into -->
+			<div id="page_area"></div>
+			
+			<!-- Where we will have our footer -->
+			<div id="footer"></div>
+		</div>
+	</body>
+</html>
