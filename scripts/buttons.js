@@ -20,7 +20,8 @@ class Button
 
 const buttons = [
     new Button('home_button', 'home.html', 'Home', 'home'),
-    new Button('aaron_button', 'campaigns/the-story-of-aaron/main.html', 'The Story of Aaron', 'aaron-main'),
+    new Button(undefined, 'templates/character.html', 'Character Template', 'template-character'),
+    new Button(undefined, 'campaigns/the-story-of-aaron/main.html', 'The Story of Aaron', 'aaron-main'),
     new Button(undefined, 'pantheon/planes/material-plane.html', 'The Material Plane', 'material-plane'),
     new Button(undefined, 'pantheon/planes/dysvegr.html', 'Dysvegr', 'dysvegr'),
     new Button(undefined, 'pantheon/planes/horgrverold.html', 'Horgrverold', 'horgrverold'),
@@ -30,4 +31,6 @@ const buttons = [
     new Button(undefined, 'pantheon/planes/planes-connection.html', 'How the Planes Connect', 'planes-connect'),
     new Button(undefined, 'pantheon/sithrak.html', 'Sithrak', 'sithrak'),
     new Button(undefined, 'pantheon/god-types.html', 'God Types', 'god-types'),
+    new Button(undefined, 'campaigns/the-story-of-aaron/characters/chione.html', 'Chione of Ashborne', 'chione'),
+    new Button(undefined, 'campaigns/the-story-of-aaron/locations/ashborne.html', 'Ashborne', 'ashborne'),
 ];

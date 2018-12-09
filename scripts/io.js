@@ -5,7 +5,7 @@
  * is given, then an object with the id "page_area" will be
  * used.
  */
-function LoadIntoId(url, id)
+function LoadIntoId(url, id, title)
 {
 	// Set default
     id = id || "page_area";
@@ -18,6 +18,12 @@ function LoadIntoId(url, id)
         
         // Scroll to the top of the page
         document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+        if (title != undefined)
+        {
+            // Change page title
+            document.title = title;
+        }
     });
 }
 
@@ -27,10 +33,10 @@ function LoadIntoId(url, id)
  * with the given id. It also changes the hash string
  * of the page to match the new page.
  */
-function LoadPage(url, id)
+function LoadPage(url, id, title)
 {
 	parent.location.hash = url;
-	LoadIntoId(url, id);
+	LoadIntoId(url, id, title);
 }
 
 /*
@@ -40,12 +46,12 @@ function LoadPage(url, id)
  * hash string and open the given page.
  * Returns the uri from the hash.
  */
-function LoadPageAtStart(id, defaultPage)
+function LoadPageAtStart(id, defaultPage, GetTitle)
 {
-	let uri = parent.location.hash || defaultPage;
+    let uri = parent.location.hash || defaultPage;
 	
 	if (uri != defaultPage) uri = uri.slice(1);
 	
-	LoadIntoId(uri, id);
+	LoadIntoId(uri, id, GetTitle(uri));
 	return uri;
 }

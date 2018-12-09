@@ -259,7 +259,9 @@ li {
 #header {
 	position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 0;
+	top: 0;
+	width: 100%;
+	background-image: url(../images/bkg_base.jpg);
 }
 
 #searchIndex {

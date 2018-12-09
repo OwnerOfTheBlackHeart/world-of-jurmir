@@ -3,7 +3,7 @@
 const indexPage = "home.html";
 const page_area = "page_area";
 
-const basic_title = " - World of Jurmir World Info";
+const basic_title = " - World of Jurmir Setting Document";
 
 // const buttons = 
 // 	{
@@ -25,10 +25,10 @@ function SetActive(page)
 	}
 }
 
-function SetActiveAndLoad(page)
+function SetActiveAndLoad(page, title)
 {
 	SetActive(page);
-	LoadPage(page);
+	LoadPage(page, undefined, title);
 }
 
 function LoadByName(button_name)
@@ -43,7 +43,7 @@ function LoadByName(button_name)
 
         if ((page != undefined) && (page != ""))
         {
-            SetActiveAndLoad(page);
+            SetActiveAndLoad(page, found.title + basic_title);
         }
     }
 }
@@ -70,4 +70,14 @@ function SetupButtons(currentPage)
 	
     // Update our buttons active status if we aren't on the index page
 	SetActive(currentPage);
+}
+
+function GetPageTitle(uri)
+{
+    for (const button of buttons)
+    {
+        if (button.url === uri) { return button.title + basic_title; }
+    }
+
+    return undefined;
 }
