@@ -22,6 +22,7 @@ const buttons = [
     new Button('home_button', 'home.html', 'Home', 'home'),
     new Button(undefined, 'templates/character.html', 'Character Template', 'template-character'),
     new Button(undefined, 'campaigns/the-story-of-aaron/main.html', 'The Story of Aaron', 'aaron-main'),
+    new Button(undefined, 'campaigns/the-story-of-aaron/notes.html', 'The Story of Aaron Notes', 'aaron-notes'),
     new Button(undefined, 'pantheon/planes/material-plane.html', 'The Material Plane', 'material-plane'),
     new Button(undefined, 'pantheon/planes/dysvegr.html', 'Dysvegr', 'dysvegr'),
     new Button(undefined, 'pantheon/planes/horgrverold.html', 'Horgrverold', 'horgrverold'),
