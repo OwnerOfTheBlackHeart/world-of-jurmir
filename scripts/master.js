@@ -3,7 +3,7 @@
 const indexPage = "home.html";
 const page_area = "page_area";
 
-const basic_title = " - World of Jurmir Setting Document";
+const basic_title = " - World of Jurmir Reference Document";
 
 // const buttons = 
 // 	{
