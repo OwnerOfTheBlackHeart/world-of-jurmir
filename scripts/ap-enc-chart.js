@@ -84,12 +84,12 @@ class EncumbranceChart extends HTMLElement
         row = document.createElement('tr');
         this.encTable.appendChild(row);
 
-        row.appendChild(this.CreateData(this.strength));
-        row.appendChild(this.CreateData(this.enc.light));
-        row.appendChild(this.CreateData(this.enc.medium));
-        row.appendChild(this.CreateData(this.enc.heavy));
-        row.appendChild(this.CreateData(this.enc.lift));
-        row.appendChild(this.CreateData(this.enc.drag));
+        row.appendChild(this.CreateData(this.strength + "lbs"));
+        row.appendChild(this.CreateData(this.enc.light + "lbs"));
+        row.appendChild(this.CreateData(this.enc.medium + "lbs"));
+        row.appendChild(this.CreateData(this.enc.heavy + "lbs"));
+        row.appendChild(this.CreateData(this.enc.lift + "lbs"));
+        row.appendChild(this.CreateData(this.enc.drag + "lbs"));
 
         this.appendChild(this.encTable);
 
