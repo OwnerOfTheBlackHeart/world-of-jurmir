@@ -1,23 +1,36 @@
 <h2>Campaigns</h2>
 <ul>
-    <li><button class="link-button" onclick="LoadByName('aaron-main');">The Story of Aaron</button></li>
+    <li><ap-link-button linkName="aaron-main">The Story of Aaron</ap-link-button></li>
 </ul>
 <h2>Planes and the Pantheon</h2>
 <h3>The Planes</h3>
 <ul>
-    <li><button class="link-button" onclick="LoadByName('planes-connect');">How the Planes Connect</button></li>
-    <li><button class="link-button" onclick="LoadByName('material-plane');">The Material</button></li>
-    <li><button class="link-button" onclick="LoadByName('dysvegr');">Dysvegr, Hall of the Dead</button></li>
-    <li><button class="link-button" onclick="LoadByName('horgrverold');">Horgrverold, The Field of Temples</button></li>
-    <li><button class="link-button" onclick="LoadByName('frostgard');">Frostgard, The Wild Frost</button></li>
-    <li><button class="link-button" onclick="LoadByName('hell');">Hell, The Eternal Prison</button></li>
-    <li><button class="link-button" onclick="LoadByName('the-void');">The Void, The Womb of Destruction</button></li>
+    <li><ap-link-button linkName="planes-connect">How the Planes Connect</ap-link-button></li>
+    <li><ap-link-button linkName="material-plane">The Material</ap-link-button></li>
+    <li><ap-link-button linkName="dysvegr">Dysvegr, Hall of the Dead</ap-link-button></li>
+    <li><ap-link-button linkName="horgrverold">Horgrverold, The Field of Temples</ap-link-button></li>
+    <li><ap-link-button linkName="frostgard">Frostgard, The Wild Frost</ap-link-button></li>
+    <li><ap-link-button linkName="hell">Hell, The Eternal Prison</ap-link-button></li>
+    <li><ap-link-button linkName="the-void">The Void, Womb of Destruction</ap-link-button></li>
 </ul>
 <h3>The Gods</h3>
 <ul>
-    <li><button class="link-button" onclick="LoadByName('god-types');">They Types of Gods</button></li>
-    <li><button class="link-button" onclick="LoadByName('sithrak');">Sithrak, the Hateful Judge</button></li>
-    <li><button class="link-button" onclick="LoadByName('durn');">Durn, the God of Civilization</button></li>
+    <li><ap-link-button linkName="god-types">The Types of Gods</ap-link-button></li>
+    <li><ap-link-button linkName="sithrak">Sithrak, the Hateful Judge</ap-link-button></li>
+    <li><ap-link-button linkName="durn">Durn, the God of Civilization</ap-link-button></li>
 </ul>
 <h2>Homebrew</h2>
 <ul></ul>
+<h2>Element Testing</h2>
+<ap-enc-chart></ap-enc-chart>
+<ap-enc-chart strength="20">
+    [
+        ["Weapon", 1, [0, 10, 0, 0], 5.5],
+        ["Other Items", 5, [0, 0, 0, 1], 0.1],
+        ["Healing Potions", 2, [0, 50, 0, 0], 0.1],
+        ["Wand", 1, [100, 0, 25, 25], 0.5]
+    ]
+</ap-enc-chart>
+<ap-enc-chart strength="30"></ap-enc-chart>
+<ap-enc-chart strength="40"></ap-enc-chart>
+<ap-enc-chart strength="15" multiplier="2"></ap-enc-chart>

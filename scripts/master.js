@@ -65,7 +65,7 @@ function ResetButtonActive(button)
 
 function SetupButtons(currentPage)
 {
-	// Update buttons from ids to actual buttons
+    // Update buttons from ids to actual buttons
 	for (const button of buttons) { button.UpdateButton(); }
 	
     // Update our buttons active status if we aren't on the index page
