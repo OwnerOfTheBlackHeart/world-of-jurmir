@@ -153,7 +153,7 @@ class EncumbranceChart extends HTMLElement
         node.appendChild(this.CreateData(item.count));
         node.appendChild(this.CreateData(item.value.ToString()));
         node.appendChild(this.CreateData("" + item.weight + "lbs"));
-        node.appendChild(this.CreateData(item.value.Multiply(item.count).ToString()));
+        node.appendChild(this.CreateData(item.value.Multiply(item.count).Condense().ToString()));
         node.appendChild(this.CreateData("" + (item.weight * item.count) + "lbs"));
         
         return node;
@@ -168,7 +168,7 @@ class EncumbranceChart extends HTMLElement
         else { node = document.createElement('tr'); }
 
         node.appendChild(this.CreateHeader('Total Value'));
-        data = this.CreateData(totalValue.ToString());
+        data = this.CreateData(totalValue.Condense().ToString());
         data.setAttribute('colspan', '2');
         node.appendChild(data);
 
