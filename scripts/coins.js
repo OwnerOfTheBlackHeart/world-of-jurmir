@@ -1,5 +1,12 @@
+const singleCoinWeight = 0.02;
+
 class Coin
 {
+    get weight()
+    {
+        return (this.pp + this.gp + this.sp + this.cp) * singleCoinWeight;
+    }
+
     static NewCoin()
     {
         return new Coin([0,0,0,0]);
@@ -13,7 +20,7 @@ class Coin
         this.cp = coins[3];
     }
 
-    ToString()
+    toString()
     {
         let toReturn = "";
 
@@ -134,5 +141,31 @@ var Utilities =
     IsGoodString: function(str)
     {
         return (str != undefined) && (str != "");
+    },
+
+    CreateHeader: function(data, className)
+    {
+        let header = document.createElement('th');
+        header.innerHTML = data;
+
+        if (Utilities.IsGoodString(className))
+        {
+            header.className = className;
+        }
+
+        return header;
+    },
+
+    CreateData: function(data, className)
+    {
+        let dataElement = document.createElement('td');
+        dataElement.innerHTML = data;
+
+        if (Utilities.IsGoodString(className))
+        {
+            dataElement.className = className;
+        }
+
+        return dataElement;
     }
 }
