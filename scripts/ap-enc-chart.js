@@ -98,9 +98,9 @@ class EncumbranceChart extends HTMLElement
         node.appendChild(Utilities.CreateData(item.name));
         node.appendChild(Utilities.CreateData(item.count, "count-column"));
         node.appendChild(Utilities.CreateData(item.value.toString()));
-        node.appendChild(Utilities.CreateData("" + item.weight + "lbs"));
+        node.appendChild(Utilities.CreateData("" + item.weight + " lbs"));
         node.appendChild(Utilities.CreateData(item.value.Multiply(item.count).Condense().toString()));
-        node.appendChild(Utilities.CreateData("" + (item.weight * item.count) + "lbs"));
+        node.appendChild(Utilities.CreateData("" + (item.weight * item.count) + " lbs"));
         
         return node;
     }
@@ -119,7 +119,7 @@ class EncumbranceChart extends HTMLElement
         node.appendChild(data);
 
         node.appendChild(Utilities.CreateHeader('Total Weight'));
-        data = Utilities.CreateData("" + totalWeight + "lbs");
+        data = Utilities.CreateData("" + totalWeight + " lbs");
         data.setAttribute('colspan', '2');
         node.appendChild(data);
 
@@ -197,7 +197,7 @@ class EncumbranceChart extends HTMLElement
             subNode.appendChild(Utilities.CreateData(coins.cp, "coins-cell"));
 
             subNode.appendChild(Utilities.CreateData(coins.Condense().toString()));
-            subNode.appendChild(Utilities.CreateData(coins.weight + "lbs"));
+            subNode.appendChild(Utilities.CreateData(coins.weight + " lbs"));
             table.appendChild(subNode);
             node.appendChild(table);
         }
@@ -224,11 +224,11 @@ class EncumbranceChart extends HTMLElement
         this.encTable.appendChild(row);
 
         row.appendChild(Utilities.CreateData(this.strength));
-        row.appendChild(Utilities.CreateData(this.enc.light + "lbs"));
-        row.appendChild(Utilities.CreateData(this.enc.medium + "lbs"));
-        row.appendChild(Utilities.CreateData(this.enc.heavy + "lbs"));
-        row.appendChild(Utilities.CreateData(this.enc.lift + "lbs"));
-        row.appendChild(Utilities.CreateData(this.enc.drag + "lbs"));
+        row.appendChild(Utilities.CreateData(this.enc.light + " lbs"));
+        row.appendChild(Utilities.CreateData(this.enc.medium + " lbs"));
+        row.appendChild(Utilities.CreateData(this.enc.heavy + " lbs"));
+        row.appendChild(Utilities.CreateData(this.enc.lift + " lbs"));
+        row.appendChild(Utilities.CreateData(this.enc.drag + " lbs"));
 
         node.appendChild(this.encTable);
         return node;

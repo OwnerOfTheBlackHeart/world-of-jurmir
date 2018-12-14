@@ -35,5 +35,6 @@ const buttons = [
     new Button(undefined, 'pantheon/god-types.html', 'God Types', 'god-types'),
     new Button(undefined, 'campaigns/the-story-of-aaron/characters/chione.html', 'Chione of Ashborne', 'chione'),
     new Button(undefined, 'campaigns/the-story-of-aaron/characters/erik.html', 'Erik Ericson, Son of Eric', 'erik'),
+    new Button(undefined, 'campaigns/the-story-of-aaron/characters/helmer.html', 'Helmer', 'helmer'),
     new Button(undefined, 'campaigns/the-story-of-aaron/locations/ashborne.html', 'Ashborne', 'ashborne'),
 ];

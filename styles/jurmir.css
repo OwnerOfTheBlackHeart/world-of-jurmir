@@ -1,8 +1,28 @@
+p
+{
+    width: 80%;
+    min-width: 300px;
+    max-width: 750px;
+}
+
 .table-container 
 {
+    
 }
 
 .table-column
 {
     display: inline-block;
+    vertical-align: top;
+}
+
+ul.notes-books > li > span
+{
+    font-weight: bold;
+    font-style: italic;
+}
+
+ul.notes-books > li > ul > li
+{
+    list-style-type: disc;
 }
