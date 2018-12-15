@@ -5,6 +5,14 @@ p
     max-width: 750px;
 }
 
+.homebrew-list > li 
+{
+    list-style-type: disc;
+    width: 80%;
+    min-width: 300px;
+    max-width: 750px;
+}
+
 .table-container 
 {
     
