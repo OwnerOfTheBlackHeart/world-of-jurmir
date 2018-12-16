@@ -35,15 +35,15 @@ class LinkButton extends HTMLElement
         super();
 
         this.link;
-        this.buttonInfo;
+        this.buttonPageInfo;
     }
 
     click()
     {
         // Only load by name when we have an internal link
-        if (!((this.buttonInfo == undefined) || (this.buttonInfo.external)))
+        if (PageInfo.IsInternalPage(this.buttonPageInfo))
         {
-            LoadByName(this.linkName);
+            SetHashByPageInfo(this.buttonPageInfo);
         }
     }
 
@@ -75,20 +75,17 @@ class LinkButton extends HTMLElement
 
     UpdateLink()
     {
-        this.buttonInfo = buttons.find((value) =>
-        {
-            return value.name === this.linkName;
-        });
+        this.buttonPageInfo = PageInfo.GetPageInfoFromName(this.linkName);
 
-        if (this.buttonInfo != undefined)
+        if (this.buttonPageInfo != undefined)
         {
-            if (this.buttonInfo.external)
+            if (this.buttonPageInfo.external)
             {
-                this.SetExternalLink(this.buttonInfo.url);
+                this.SetExternalLink(this.buttonPageInfo.url);
             }
             else
             {
-                this.SetInternalLink(this.buttonInfo.url);
+                this.SetInternalLink(this.buttonPageInfo.url);
             }
         }
         else

@@ -1,3 +1,8 @@
+const PageLoadCallbacks = 
+{
+    onLoad: undefined // onLoad(url)
+}
+
 /*
  * LoadIntoId()
  * This function loads the page at the given URI into the
@@ -24,6 +29,8 @@ function LoadIntoId(url, id, title)
             // Change page title
             document.title = title;
         }
+
+        if (PageLoadCallbacks.onLoad != undefined) { PageLoadCallbacks.onLoad(url); }
     });
 }
 
@@ -48,9 +55,7 @@ function LoadPage(url, id, title)
  */
 function LoadPageAtStart(id, defaultPage, GetTitle)
 {
-    let uri = parent.location.hash || defaultPage;
-	
-	if (uri != defaultPage) uri = uri.slice(1);
+    let uri = Utilities.GetCurrentPage() || defaultPage;
 	
 	LoadIntoId(uri, id, GetTitle(uri));
 	return uri;

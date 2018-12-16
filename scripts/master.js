@@ -5,17 +5,15 @@ const page_area = "page_area";
 
 const basic_title = " - World of Jurmir Reference Document";
 
-// const buttons = 
-// 	{
-// 		'home.html':'home_button',
-// 		'GameProgramming/GP_Objectives.html':'game_button',
-// 		'AdvancingComputerScience/ACS_Objectives.html':'acs_button'
-// 	};
+var backButton;
+var backLog = [];
+var currentPage;
+var defaultPage = "home";
 
 function SetActive(page)
 {
 	// Cleanse our active button and set our active button
-	for (const button of buttons)
+	for (const button of pages)
 	{
         if (button.button != undefined)
         {
@@ -31,20 +29,31 @@ function SetActiveAndLoad(page, title)
 	LoadPage(page, undefined, title);
 }
 
-function LoadByName(button_name)
+function LoadByName(page_name)
 {
-    let found = buttons.find(button => {
-        return button.name === button_name;
-    });
+    let found = PageInfo.GetPageInfoFromName(page_name);
 
-    if (found != undefined)
+    LoadByPageInfo(found);
+}
+
+function LoadByPageInfo(pageInfo)
+{
+    if (pageInfo != undefined)
     {
-        let page = found.url;
+        let page = pageInfo.url;
 
         if ((page != undefined) && (page != ""))
         {
-            SetActiveAndLoad(page, found.title + basic_title);
+            SetActiveAndLoad(page, pageInfo.title + basic_title);
         }
+    }
+}
+
+function SetHashByPageInfo(pageInfo)
+{
+    if (pageInfo != undefined)
+    {
+        parent.location.hash = pageInfo.url;
     }
 }
 
@@ -66,7 +75,7 @@ function ResetButtonActive(button)
 function SetupButtons(currentPage)
 {
     // Update buttons from ids to actual buttons
-	for (const button of buttons) { button.UpdateButton(); }
+	for (const button of pages) { button.UpdateButton(); }
 	
     // Update our buttons active status if we aren't on the index page
 	SetActive(currentPage);
@@ -74,10 +83,17 @@ function SetupButtons(currentPage)
 
 function GetPageTitle(uri)
 {
-    for (const button of buttons)
+    let button = PageInfo.GetPageInfoFromUri(uri);
+
+    if (button != undefined)
     {
-        if (button.url === uri) { return button.title + basic_title; }
+        return button.title + basic_title;
     }
 
     return undefined;
 }
+
+window.onhashchange = function()
+{
+    LoadByPageInfo(Utilities.GetCurrentPageInfo());
+};
