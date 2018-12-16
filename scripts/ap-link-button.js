@@ -1,21 +1,6 @@
 class LinkButton extends HTMLElement 
 {
-    get homeButton()
-    {
-        return this.hasAttribute('homeButton');
-    }
-
-    set homeButton(val)
-    {
-        if (val) 
-        {
-            this.setAttribute('homeButton', '');
-        }
-        else
-        {
-            this.removeAttribute('homeButton');
-        }
-    }
+    static get observedAttributes() { return ['linkName', 'disabled']; }
     
     get linkName()
     {
@@ -49,12 +34,17 @@ class LinkButton extends HTMLElement
         // Always call super first in constructor
         super();
 
-        this.button;
+        this.link;
+        this.buttonInfo;
     }
 
     click()
     {
-        LoadByName(this.linkName);
+        // Only load by name when we have an internal link
+        if (!((this.buttonInfo == undefined) || (this.buttonInfo.external)))
+        {
+            LoadByName(this.linkName);
+        }
     }
 
     connectedCallback()
@@ -65,15 +55,7 @@ class LinkButton extends HTMLElement
         this.link = document.createElement('a');
         this.link.innerHTML = innerData;
         
-        let buttonData = buttons.find((value) =>
-        {
-            return value.name === this.linkName;
-        });
-
-        if (buttonData != undefined)
-        {
-            this.link.setAttribute('href', 'index.html#' + buttonData.url);
-        }
+        this.UpdateLink();
 
         this.innerHTML = "";
         this.appendChild(this.link);       
@@ -81,7 +63,52 @@ class LinkButton extends HTMLElement
 
     attributeChangedCallback(attrName, oldVal, newVal)
     {
+        if (attrName === "linkName")
+        {
+            this.UpdateLink();
+        }
+        else if (attrName === "disabled")
+        {
+            // Put in disabled code here...
+        }
+    }
 
+    UpdateLink()
+    {
+        this.buttonInfo = buttons.find((value) =>
+        {
+            return value.name === this.linkName;
+        });
+
+        if (this.buttonInfo != undefined)
+        {
+            if (this.buttonInfo.external)
+            {
+                this.SetExternalLink(this.buttonInfo.url);
+            }
+            else
+            {
+                this.SetInternalLink(this.buttonInfo.url);
+            }
+        }
+        else
+        {
+            this.SetExternalLink(this.linkName);
+        }
+    }
+
+    SetExternalLink(url)
+    {
+        this.link.setAttribute('href', url);
+        this.link.setAttribute('target', '_blank');
+        this.link.setAttribute('rel', 'external');
+    }
+
+    SetInternalLink(url)
+    {
+        this.link.setAttribute('href', 'index.html#' + url);
+        this.link.setAttribute('target', '_self');
+        this.link.removeAttribute('rel');
     }
   }
 

@@ -13,6 +13,14 @@ p
     max-width: 750px;
 }
 
+.homebrew-list > li > ul > li
+{
+    list-style-type: circle;
+    width: 80%;
+    min-width: 300px;
+    max-width: 750px;
+}
+
 .table-container 
 {
     

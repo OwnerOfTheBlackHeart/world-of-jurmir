@@ -1,12 +1,14 @@
 class Button
 {
-    constructor(id, url, title, name)
+    constructor(id, url, title, name, external)
     {
         this.button;
         this.id = id;
         this.url = url;
         this.title = title;
         this.name = name;
+
+        this.external = external || false;
     }
 
     UpdateButton()
@@ -38,5 +40,12 @@ const buttons = [
     new Button(undefined, 'campaigns/the-story-of-aaron/characters/helmer.html', 'Helmer', 'helmer'),
     new Button(undefined, 'campaigns/the-story-of-aaron/characters/hunts-on-stone.html', 'Hunts on Stone', 'hunts-on-stone'),
     new Button(undefined, 'campaigns/the-story-of-aaron/locations/ashborne.html', 'Ashborne', 'ashborne'),
+    new Button(undefined, 'campaigns/the-story-of-aaron/enemies/kobold-heavy.html', 'Kobold Heavy', '3-5-kobold-heavy'),
+    new Button(undefined, 'campaigns/the-story-of-aaron/enemies/wild-elf-warrior.html', 'Wild Elf Warrior', 'wild-elf-warrior'),
     new Button(undefined, 'homebrew/ranger-fix.html', 'Ranger Class Fix for D&D 3.5e', 'ranger-fix'),
+
+
+
+
+    new Button(undefined, 'https://www.google.com', '', 'google', true),
 ];
