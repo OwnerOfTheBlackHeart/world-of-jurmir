@@ -6,7 +6,7 @@
 	</tr>
 	<tr>
 		<th>Hit Dice:</th>
-		<td>2d8+6 (21 hp)</td>
+		<td>2d8+1d8+12 (33 hp)</td>
 	</tr>
 	<tr>
 		<th>Initiative:</th>
@@ -22,15 +22,26 @@
 	</tr>
 	<tr>
 		<th>Base Attack/Grapple:</th>
-		<td>+1/+3</td>
+		<td>+2/+4</td>
 	</tr>
 	<tr>
 		<th>Attack:</th>
-		<td>Shortspear +3 melee (1d6+2) or javelin +5 ranged (1d6+2) or claw +3 melee or bite -2 melee (1d4+1)</td>
+		<td>
+			Shortspear +4 melee (1d6+2) or 
+			javelin +6 ranged (1d6+2) or 
+			longbow +6 ranged (1d8/&times;3) or
+			claw +4 melee (1d4+2) or 
+			bite -1 melee (1d4+1)
+		</td>
 	</tr>
 	<tr>
 		<th>Full Attack:</th>
-		<td>Claws +3/+3 melee (1d4+2) and bite -2 melee (1d4+1); or shortspear +3 melee (1d6+2) and bite -2 melee (1d4+1); or javelin +5 ranged (1d6+2)</td>
+		<td>
+			Claws +4/+4 melee (1d4+2) and bite -1 melee (1d4+1); 
+			or shortspear +4 melee (1d6+2) and bite -1 melee (1d4+1); 
+			or javelin +6 ranged (1d6+2);
+			or longbow +6 ranged (1d8/&times;3);
+		</td>
 	</tr>
 	<tr>
 		<th>Space/Reach:</th>
@@ -42,27 +53,30 @@
 	</tr>
 	<tr>
 		<th>Special Qualities:</th>
-		<td>Hold breath</td>
+		<td>Hold breath, 1st favored enemy (Humanoid (human)), wild empathy</td>
 	</tr>
 	<tr>
 		<th>Saves:</th>
-		<td>Fort +3, Ref +7, Will +2</td>
+		<td>Fort +6, Ref +9, Will +2</td>
 	</tr>
 	<tr>
 		<th>Abilities:</th>
-        <td>Str 15, Dex 18, Con 17, Int 14, Wis 14, Cha 10</td>
+        <td>Str 15, Dex 18, Con 18, Int 14, Wis 14, Cha 10</td>
 	</tr>
 	<tr>
 		<th>Skills:</th>
-		<td>Survival +5, Climb +12 (10 with shield), Jump +12 (10 with shield), Balance +14 (12 with shield)</td>
+		<td>
+			Survival +6, Climb +13 (11 with shield), Jump +13 (11 with shield), Balance +14 (12 with shield),
+			Handle Animal +1, Heal +3, Listen +3, Spot +3, Search +3
+		</td>
 	</tr>
 	<tr>
 		<th>Feats:</th>
-		<td>Improved Natural Armor</td>
+		<td>Improved Natural Armor, Track</td>
 	</tr>
 	<tr>
 		<th>Challenge Rating:</th>
-		<td>3</td>
+		<td>4</td>
 	</tr>
 	<tr>
 		<th>Languages:</th>
@@ -74,11 +88,11 @@
 	</tr>	
 	<tr>
 		<th>Class Levels:</th>
-		<td>Humanoid 2</td>
+		<td>Humanoid 2, Ranger 1</td>
 	</tr>
 	<tr>
 		<th>Experience:</th>
-		<td>3,000 / 6,000</td>
+		<td>6,080 / 10,000</td>
 	</tr>
 	<tr>
 		<th>Level Adjustment:</th>
@@ -90,10 +104,15 @@
 	<div class="table-column">
 		<ap-skill-chart>
 			[
-				["Survival", 3, ""],
-				["Climb", 6, "+4 racial"],
-				["Jump", 6, "+4 racial"],
-				["Balance", 6, "+4 racial"]
+				["Survival", 4, ""],
+				["Climb", 7, "+4 racial"],
+				["Jump", 7, "+4 racial"],
+				["Balance", 6, "+4 racial"],
+				["Handle Animal", 1, ""],
+				["Heal", 1, ""],
+				["Listen", 1, ""],
+				["Spot", 1, ""],
+				["Search", 1, ""],
 			]
 		</ap-skill-chart>
 	</div>
@@ -102,7 +121,8 @@
 			[
 				[0, 0, 0, 0],
 				["Shortspear", 1, [0, 1, 0, 0], 3],
-				["Javelin", 5, [0, 1, 0, 0], 2],
+				["Masterwork Longbow", 1, [0, 375, 0, 0], 3],
+				["Javelin", 2, [0, 1, 0, 0], 2],
 				["Heavy wooden shield", 1, [0, 7, 0, 0], 10]
 			]
 		</ap-enc-chart>
@@ -113,6 +133,23 @@
 	<i>Hold Breath (Ex):</i>
 	A lizardfolk can hold its breath for a number of rounds equal to four times its 
 	Constitution score before it risks sufficating or drowning.
+</p>
+
+<p>
+	<i>Wild Empathy (Ex):</i>
+	A ranger can improve the attitude of an animal. This ability functions just like a Diplomacy check to improve 
+	the attitude of a person. The ranger rolls 1d20 and adds his ranger level and his Charisma modifier to determine 
+	the wild empathy check result. The typical domestic animal has a starting attitude of indifferent, while wild 
+	animals are usually unfriendly.
+</p>
+<p>
+	To use wild empathy, the ranger and the animal must be able to study each other, which means that they must be 
+	within 30 feet of one another under normal visibility conditions. Generally, influencing an animal in this way 
+	takes 1 minute, but, as with influencing people, it might take more or less time.
+</p>
+<p>
+	The ranger can also use this ability to influence a magical beast with an Intelligence score of 1 or 2, but he
+	takes a -4 penalty on the check.
 </p>
 
 <h2>Description</h2>

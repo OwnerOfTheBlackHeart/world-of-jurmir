@@ -7,7 +7,7 @@
 	</tr>
 	<tr>
 		<th>Hit Dice:</th>
-		<td>3d6 (14)</td>
+		<td>3d6+1d6 (18)</td>
 	</tr>
 	<tr>
 		<th>Initiative:</th>
@@ -19,19 +19,19 @@
 	</tr>
 	<tr>
 		<th>Armor Class:</th>
-		<td>11 (+1 dex), touch 11, flat-footed 10</td>
+		<td>12 (+2 dex), touch 12, flat-footed 10</td>
 	</tr>
 	<tr>
 		<th>Base Attack/Grapple:</th>
-		<td>+1/+3</td>
+		<td>+2/+4</td>
 	</tr>
 	<tr>
 		<th>Attack:</th>
-		<td>Spear +3 melee (1d8+3/x3) or light crossbow +2 ranged (1d8 19-20/×2)</td>
+		<td>Spear +4 melee (1d8+3/x3) or light crossbow +5 ranged (1d8 19-20/×2)</td>
 	</tr>
 	<tr>
 		<th>Full Attack:</th>
-		<td>Spear +3 melee (1d8+3/x3) or light crossbow +3 ranged (1d8 19-20/×2)</td>
+		<td>Spear +4 melee (1d8+3/x3) or light crossbow +5 ranged (1d8 19-20/×2)</td>
 	</tr>
 	<tr>
 		<th>Space/Reach:</th>
@@ -39,25 +39,28 @@
 	</tr>
 	<tr>
 		<th>Special Attacks:</th>
-		<td></td>
+		<td>Sneak Attack +1d6, Steal Spell (0th, 1st)</td>
 	</tr>
 	<tr>
 		<th>Special Qualities:</th>
         <td>
-            Darkvision 30 ft
+            Darkvision 30 ft, Trapfinding
         </td>
 	</tr>
 	<tr>
 		<th>Saves:</th>
-		<td>Fort +3, Ref +2, Will +3</td>
+		<td>Fort +3, Ref +3, Will +5</td>
 	</tr>
 	<tr>
 		<th>Abilities:</th>
-		<td>Str 14, Dex 13, Con 11, Int 14, Wis 11, Cha 15</td>
+		<td>Str 14, Dex 14, Con 11, Int 14, Wis 11, Cha 15</td>
 	</tr>
 	<tr>
 		<th>Skills:</th>
-		<td>Concentration +6, Hide +7, Move Silently +7, Spot +6, Knowledge (planes) +8</td>
+		<td>
+			Concentration +7, Hide +9, Move Silently +9, Spot +7, Knowledge (planes) +8,
+			Gather Information +4, Disable Device +3, Open Lock +3
+		</td>
 	</tr>
 	<tr>
 		<th>Feats:</th>
@@ -65,7 +68,7 @@
 	</tr>
 	<tr>
 		<th>Challenge Rating:</th>
-		<td>3</td>
+		<td>4</td>
     </tr>
     <tr>
         <th>Languages:</th>
@@ -77,16 +80,16 @@
 	</tr>
 	<tr>
 		<th>Class Levels:</th>
-		<td>Shadowcaster 3</td>
+		<td>Shadowcaster 3, Spelltheif 1</td>
 	</tr>
 	<tr>
 		<th>Experience:</th>
-		<td>3,000 / 6,000</td>
+		<td>6,080 / 10,000</td>
 	</tr>
 </table>
 
 <p>
-	<i>Fundememntals, Supernatural abilities, 3 per day</i><br/>
+	<i>Fundementals, Supernatural abilities, 3 per day</i><br/>
 	Arrow of Dusk (141), Sight Obscured (150), Caul of Shadows (143)
 </p>
 <p>
@@ -94,15 +97,37 @@
 	Steel Shadows (150), Voice of Shadow (152/153), Sight Eclipsed (150)
 </p>
 
+<p>
+	<i>Steal Spell (Su):</i>
+	A spellthief can siphon spell energy away from his target and use it himself. A spellthief
+	who hits an opponent with a successful sneak attack	can choose to forgo dealing 1d6 points
+	of sneak attack	damage and instead steal a spell, or the potential to cast a specific known 
+	spell, from his target. If the target is willing, a spellthief can steal a spell with a 
+	touch as a standard action.
+</p>
+<p>
+	The target of a steal spell attack loses one 0-level or	1st-level spell from memory if she 
+	prepares spells ahead of time, or one 0-level or 1st-level spell slot if she is a spontaneous 
+	caster. A spontaneous caster also loses the	ability to cast the stolen spell for 1 minute. 
+	If the target has no spells prepared (or has no remaining spell slots, if she is a spontaneous
+	caster), this ability has no effect. A spellthief can choose which spell to steal; otherwise, 
+	the	DM determines the stolen spell randomly. If a spellthief tries to steal a spell that isn’t 
+	available, the stolen spell (or	spell slot) is determined randomly from among those the
+	target has available.
+</p>
+
 <div class="table-container">
 	<div class="table-column">
 		<ap-skill-chart>
 			[
-				["Concentration", 6, ""],
-				["Hide", 6, ""],
-				["Move Silently", 6, ""],
-				["Spot", 6, ""],
-				["Knowledge (Planes)", 6, ""]
+				["Concentration", 7, ""],
+				["Hide", 7, ""],
+				["Move Silently", 7, ""],
+				["Spot", 7, ""],
+				["Knowledge (Planes)", 6, ""],
+				["Gather Information", 2, ""]
+				["Disable Device", 1, ""]
+				["Open Lock", 1, ""]
 			]
 		</ap-skill-chart>
 	</div>
@@ -112,7 +137,7 @@
 				[0, 21, 3, 0],
 				["Spear", 1, [0, 2, 0, 0], 6],
 				["Light crossbow", 1, [0, 35, 0, 0], 4],
-				["Crossbow bolts", 20, [0, 0, 0, 5], 0.05],
+				["Crossbow bolts", 15, [0, 0, 0, 5], 0.05],
 				["Spellbook, 100 page", 1, [0, 15, 0, 0], 3],
 				["Explorer's outfit", 1, [0, 10, 0, 0], 8],
 				["Scholar's outfit", 1, [0, 5, 0, 0], 6],

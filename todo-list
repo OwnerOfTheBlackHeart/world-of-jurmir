@@ -20,7 +20,7 @@ Ashborne stuff
 Determine where magic items can be bought
     Determine the exact rarity of magic items
 
-Prep out of town adventures/missions/places
+Prep out of town adventures/missions/places (Character lvl+2)
     Small goblin fight
         1 - hobgoblin
         1 - bugbear
@@ -34,7 +34,7 @@ Prep out of town adventures/missions/places
     Orc
         3 - orcs
         1 - 3 HD orc
-    Old ruins of a library or school in the grasslands
+    Old ruins of a castle or arcane school in the grasslands
         Controlled by wild elves
     Small orcish scout camp in the hills
     A group of wild dogs has been harrassing merchants
@@ -49,3 +49,60 @@ Build some stuff to help with building a caravan
     Point out donkeys and mules
     Don't forget ponies and dogs
     Ponies, dogs, and donkeys can go indoors
+
+Build an encounter chart...
+    And an event chart
+        A merchant appears
+        Find a boat ran aground
+        Find the ruins of a caravan
+        Find the remains of a battle
+        TRAVELLING WIZARD!!
+        Druid
+        Evidence of cultist activity
+        Evidence of drow activity
+
+Make an inquisitor character (cleric/paladin, rogue, ranger)
+    May become either an ally or an enemy
+
+Make some big bads...
+    Orc cheiftan
+    Goblin cheiftan
+    Gnoll warlord
+    Drowess - Will "sell" one of her servants for Helmer
+
+Determine other nearby locations and nations
+    Cities, towns, and small settlements
+
+Reorganize locations
+    Major government, lower government, location
+
+Figure out how to handle Aaron's new "fortress"
+    How will they acquire the people they need?
+    Fix/upgrade the place?
+        Wall
+        Main building
+        Ampatheater
+        Dormitories
+        Main kitchen
+        Servants quarters
+        Lab
+    How will it be made sustainable?
+        Adventurer training?
+        School of magic?
+        Offer beds for an army?
+
+Figure out time rewards (if they spend time studying)
+    +2 to concentration
+    1 spell from the fertility school
+    1 spell from a predetermined spell list (1st and 2nd level)
+    Let Cody decide for Chione
+
+Have a full gnoll hunting party attack the fortress
+    If the Aaron doesn't stay, the gnolls just take the fortress
+
+Start tracking time
+    Starting date 21st of month 5 of year 1487
+    7 days to a week, 4 weeks to a month, 12 months to a year
+    Build an element to build the time display
+    Build a class for calculating the times
+
