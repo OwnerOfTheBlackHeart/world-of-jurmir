@@ -59,6 +59,8 @@ const pages = [
     new PageInfo(undefined, 'pantheon/kriotz.html', 'Kriotz', 'kriotz'),
     new PageInfo(undefined, 'pantheon/kyranious.html', 'Kyranious', 'kyranious'),
     new PageInfo(undefined, 'pantheon/zoltan.html', 'Zoltan', 'zoltan'),
+    new PageInfo(undefined, 'pantheon/lagos.html', 'Lagos of Chronos', 'lagos'),
+    new PageInfo(undefined, 'pantheon/hrefna.html', 'Hrefna Aridottir', 'hrefna'),
     new PageInfo(undefined, 'pantheon/god-types.html', 'God Types', 'god-types'),
     new PageInfo(undefined, 'pantheon/history/creation-story.html', 'The Story of Creation', 'creation-story'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/chione.html', 'Chione of Ashborne', 'chione'),

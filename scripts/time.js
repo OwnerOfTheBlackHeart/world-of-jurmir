@@ -15,11 +15,12 @@ class Time
     toString(doesIncludeSeason = false)
     {
         let toReturn = "";
-        let month = TimeRef.monthList[this.month];
+        let tempTime = this.DistributeDays();
+        let month = TimeRef.monthList[tempTime.month];
 
-        toReturn += (this.day + 1) + " ";
+        toReturn += (tempTime.day + 1) + " ";
         toReturn += month[0] + ", ";
-        toReturn += this.year;
+        toReturn += tempTime.year;
 
         if (doesIncludeSeason)
         {
@@ -130,7 +131,7 @@ class Time
 const TimeRef = Object.freeze({
     daysPerWeek: 7,
     weeksPerMonth: 4,
-    monthsPerYear: 12,
+    monthsPerYear: 9,
     Seasons: {
         Summer: {name: "summer", value: 1},
         Spring: {name: "spring", value: 2},
@@ -158,17 +159,14 @@ const TimeRef = Object.freeze({
 
     // [month name, season]
     monthList: [
+        ["Kyrious", 4], // Winter
         ["Sith", 4], // Winter
-        ["", 4], // Winter
         ["Fephun", 2], // Spring
         ["Orthia", 2], // Spring
         ["Kriotzous", 2], // Spring
         ["Durnio", 1], // Summer
-        ["", 1], // Summer
         ["Zolter", 1], // Summer
-        ["{{named after the harvest god}}", 3], // Fall
-        ["", 3], // Fall
-        ["", 3], // Fall
-        ["Kyrious", 4] // Winter
+        ["Hrefia", 3], // Fall
+        ["Lagosa", 3] // Fall
     ]
 });
