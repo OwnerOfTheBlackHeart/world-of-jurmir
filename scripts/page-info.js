@@ -45,6 +45,7 @@ const pages = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/main.html', 'The Story of Aaron', 'aaron-main'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/notes.html', 'The Story of Aaron Notes', 'aaron-notes'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/caravan.html', "Aaron's Caravan", 'aaron-caravan'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/timeline.html', "Story of Aaron Timeline", 'aaron-timeline'),
     new PageInfo(undefined, 'pantheon/planes/material-plane.html', 'The Material Plane', 'material-plane'),
     new PageInfo(undefined, 'pantheon/planes/dysvegr.html', 'Dysvegr', 'dysvegr'),
     new PageInfo(undefined, 'pantheon/planes/horgrverold.html', 'Horgrverold', 'horgrverold'),

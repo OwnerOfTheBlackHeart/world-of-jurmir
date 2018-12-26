@@ -7,12 +7,8 @@ Sex Roll
     8 to 11 - Female
     12 - Feminine herm
 
-Build code to allow a back button
-    Build code to allow the ap-link-button to be updated
-
 Characters that could be helpful
     A healer
-    A ranger
 
 Ashborne stuff 
     Need at least 1 shopkeep and shop
@@ -46,9 +42,7 @@ Determine if modern soldiers and/or aliens should be involved
     Determine expected level
 
 Build some stuff to help with building a caravan
-    Point out donkeys and mules
-    Don't forget ponies and dogs
-    Ponies, dogs, and donkeys can go indoors
+    Build a system to handle the caravan
 
 Build an encounter chart...
     And an event chart
@@ -78,18 +72,9 @@ Reorganize locations
 
 Figure out how to handle Aaron's new "fortress"
     How will they acquire the people they need?
-    Fix/upgrade the place?
-        Wall
-        Main building
-        Ampatheater
-        Dormitories
-        Main kitchen
-        Servants quarters
-        Lab
     How will it be made sustainable?
-        Adventurer training?
+        Adventurer training? - Cody seems to like this idea
         School of magic?
-        Offer beds for an army?
 
 Figure out time rewards (if they spend time studying)
     +2 to concentration
@@ -99,10 +84,8 @@ Figure out time rewards (if they spend time studying)
 
 Have a full gnoll hunting party attack the fortress
     If the Aaron doesn't stay, the gnolls just take the fortress
+    5 gnolls, 2 hyenias
 
-Start tracking time
-    Starting date 21st of month 5 of year 1487
-    7 days to a week, 4 weeks to a month, 12 months to a year
-    Build an element to build the time display
-    Build a class for calculating the times
+Make guild recruits that aren't to party standard
+    1st to 3rd
 
