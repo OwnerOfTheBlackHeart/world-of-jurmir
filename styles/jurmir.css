@@ -21,6 +21,13 @@ p
     max-width: 750px;
 }
 
+table.spellbook-table
+{
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+}
+
 .table-container 
 {
     

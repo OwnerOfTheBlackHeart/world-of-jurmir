@@ -84,6 +84,8 @@ const pages = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/drow-cleric.html', 'Drow Cleric', 'drow-cleric'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/goblin-lieutenant.html', 'Goblin Lieutenant', 'goblin-lieutenant'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/goblin-sergeant.html', 'Goblin Sergeant', 'goblin-sergeant'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/spellbooks/main.html', 'Spellbooks', 'aaron-spellbooks'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/spellbooks/oasis-inquisitor.html', 'The Oasis Inquisitor\'s Spellbook', 'oasis-inquisitor-spellbook'),
     new PageInfo(undefined, 'homebrew/ranger-fix.html', 'Ranger Class Fix for D&D 3.5e', 'ranger-fix'),
 
     new PageInfo(undefined, 'https://drive.google.com/open?id=1ig8Abc2VDQf-OX7RUamdHbAtrCKBdyVNs7tkjTxr8Ao', '', 'pregnancy', true),
