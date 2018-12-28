@@ -75,6 +75,7 @@ const pages = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/lyrna/arx.html', 'The Holy City of Arx', 'arx'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/lyrna/ruined-wizardry-school.html', 'Ruined Wizardry School', 'ruined-wizardry-school'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/lyrna/the-oasis.html', 'The Oasis Guild Fortress', 'oasis'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/lyrna/oasis-library.html', 'The Library in Oasis', 'oasis-library'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/sokjin/main.html', 'The _____ of Sokjin', 'sokjin'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/sokjin/danghae.html', 'The City of Danghae', 'danghae'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/kobold-heavy.html', 'Kobold Heavy', '3-5-kobold-heavy'),
