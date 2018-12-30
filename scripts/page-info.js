@@ -70,6 +70,7 @@ const pages = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/hunts-on-stone.html', 'Hunts on Stone', 'hunts-on-stone'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/paavu.html', 'Paavu Flesheater Ogolakanu', 'paavu'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/drik-tik.html', 'Drik-Tik', 'drik-tik'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/rass.html', 'Rass the Half-Gnoll Lizard', 'rass'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/lyrna/main.html', 'The Kingdom of Lyrna', 'lyrna'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/lyrna/ashborne.html', 'Ashborne', 'ashborne'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/lyrna/arx.html', 'The Holy City of Arx', 'arx'),
@@ -87,6 +88,7 @@ const pages = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/spellbooks/main.html', 'Spellbooks', 'aaron-spellbooks'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/spellbooks/oasis-inquisitor.html', 'The Oasis Inquisitor\'s Spellbook', 'oasis-inquisitor-spellbook'),
     new PageInfo(undefined, 'homebrew/ranger-fix.html', 'Ranger Class Fix for D&D 3.5e', 'ranger-fix'),
+    new PageInfo(undefined, 'homebrew/half-races-catalog.html', 'Half Races Catalog', 'half-races-catalog'),
 
     new PageInfo(undefined, 'https://drive.google.com/open?id=1ig8Abc2VDQf-OX7RUamdHbAtrCKBdyVNs7tkjTxr8Ao', '', 'pregnancy', true),
     new PageInfo(undefined, 'https://drive.google.com/drive/folders/14hpbIxtHNWXO2PcbTgnrV0cKlz2SzyLV?usp=sharing', '', '3.5-homebrew', true),
