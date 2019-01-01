@@ -92,6 +92,7 @@ const pages = [
     new PageInfo(undefined, 'homebrew/ranger-fix.html', 'Ranger Class Fix for D&D 3.5e', 'ranger-fix'),
     new PageInfo(undefined, 'homebrew/half-races-catalog.html', 'Half Races Catalog', 'half-races-catalog'),
     new PageInfo(undefined, 'homebrew/guild-management-system.html', 'Guild Management System', 'guild-management-system'),
+    new PageInfo(undefined, 'homebrew/gms-consequences.html', 'Guild Management System Consequences', 'gms-consequences'),
 
     new PageInfo(undefined, 'https://drive.google.com/open?id=1ig8Abc2VDQf-OX7RUamdHbAtrCKBdyVNs7tkjTxr8Ao', '', 'pregnancy', true),
     new PageInfo(undefined, 'https://drive.google.com/drive/folders/14hpbIxtHNWXO2PcbTgnrV0cKlz2SzyLV?usp=sharing', '', '3.5-homebrew', true),

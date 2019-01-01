@@ -49,3 +49,13 @@ ul.notes-books > li > ul > li
 {
     list-style-type: disc;
 }
+
+ap-link-button > a:link, ap-link-button > a:visited
+{
+    text-decoration: underline;
+}
+
+li > ap-link-button > a:link, li > ap-link-button > a:visited
+{
+    text-decoration: none;
+}
