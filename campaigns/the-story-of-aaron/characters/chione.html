@@ -99,7 +99,6 @@
 		<ap-enc-chart strength="14">
 			[
 				[2, 0, 7, 0],
-				["Haversack Gold", 1, [0, 292, 0, 20], 0],
 				["Chainshirt", 1, [0, 100, 0, 0], 25],
 				["Buckler", 1, [0, 15, 0, 0], 5],
 				["Warhammer", 1, [0, 12, 0, 0], 5],
@@ -108,10 +107,17 @@
 				["Component pouch", 1, [0, 5, 0, 0], 2],
 				["Peasant's outfit", 1, [0, 0, 1, 0], 2],
 				["Backpack", 1, [0, 2, 0, 0], 2],
-				["Bedroll (in Haversack)", 1, [0, 0, 1, 0], 0],
-				["Blanket, winter (in Haversack)", 1, [0, 0, 5, 0], 0],
 				["Waterskin", 1, [0, 1, 0, 0], 4],
-				["Handy Haversack", 1, [0, 2000, 0, 0], 5]
+				["Handy Haversack", 1, [0, 2000, 0, 0], 5],
+				{
+					"name":"Handy Haversack",
+                    "carryWeight":120,
+                    "contents":[
+                        [0, 292, 0, 20],
+                        ["Bedroll", 1, [0, 0, 1, 0], 5],
+						["Blanket, winter", 1, [0, 0, 5, 0], 3]
+                    ]
+				}
 			]
 		</ap-enc-chart>
 	</div>
