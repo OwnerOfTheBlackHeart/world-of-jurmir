@@ -44,5 +44,13 @@ var Utilities =
     GetCurrentPageInfo: function()
     {
         return PageInfo.GetPageInfoFromUri(Utilities.GetCurrentPage());
+    },
+
+    StringToObject: function(jsonIn)
+    {
+        jsonIn = jsonIn.replace(/<.+?>/g, function(x) {
+            return x.replace(/"/g, '\\"');
+        });
+        return JSON.parse(jsonIn);;
     }
 }

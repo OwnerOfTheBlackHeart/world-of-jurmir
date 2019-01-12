@@ -8,7 +8,7 @@ class SkillChart extends HTMLElement
 
     connectedCallback()
     {
-        this.skills = JSON.parse(this.innerHTML);
+        this.skills = Utilities.StringToObject(this.innerHTML);
         this.innerHTML = "";
         this.Render();
     }

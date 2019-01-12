@@ -81,12 +81,18 @@ const pages = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/lyrna/oasis-library.html', 'The Library in Oasis', 'oasis-library'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/sokjin/main.html', 'The _____ of Sokjin', 'sokjin'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/sokjin/danghae.html', 'The City of Danghae', 'danghae'),
+
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/kobold-heavy.html', 'Kobold Heavy', '3-5-kobold-heavy'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/wild-elf-warrior.html', 'Wild Elf Warrior', 'wild-elf-warrior'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/urban-surface-drow.html', 'Urban Surface Drow', 'urban-surface-drow'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/drow-cleric.html', 'Drow Cleric', 'drow-cleric'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/goblin-lieutenant.html', 'Goblin Lieutenant', 'goblin-lieutenant'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/goblin-sergeant.html', 'Goblin Sergeant', 'goblin-sergeant'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/gnoll-warlord.html', 'Gnoll Warlord', 'gnoll-warlord'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/gnoll-ambusher.html', 'Gnoll Ambusher', 'gnoll-ambusher'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/paladin.html', 'Paladin of Durn', 'paladin'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/ordained-cleric.html', 'Ordained Cleric of Durn', 'ordained-cleric'),
+
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/spellbooks/main.html', 'Spellbooks', 'aaron-spellbooks'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/spellbooks/oasis-inquisitor.html', 'The Oasis Inquisitor\'s Spellbook', 'oasis-inquisitor-spellbook'),
     new PageInfo(undefined, 'homebrew/ranger-fix.html', 'Ranger Class Fix for D&D 3.5e', 'ranger-fix'),

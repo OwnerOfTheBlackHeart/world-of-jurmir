@@ -53,7 +53,7 @@ class EncumbranceChart extends HTMLElement
 
         if ((this.innerHTML != undefined) && (this.innerHTML != ""))
         {
-            this.inventory = JSON.parse(this.innerHTML);
+            this.inventory = Utilities.StringToObject(this.innerHTML);
         }
         else
         {

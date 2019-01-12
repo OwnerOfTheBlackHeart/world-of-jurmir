@@ -28,7 +28,7 @@ class BasicTable extends HTMLElement
 
         if (Utilities.IsGoodString(this.innerHTML))
         {
-            this.rows = JSON.parse(this.innerHTML);
+            this.rows = Utilities.StringToObject(this.innerHTML);
         }
     }
 

@@ -36,7 +36,7 @@ class SpellbookTable extends HTMLElement
         if (Utilities.IsGoodString(this.innerHTML))
         {
             // [spell name, spell level]
-            this.rows = JSON.parse(this.innerHTML);
+            this.rows = Utilities.StringToObject(this.innerHTML);
         }
     }
 
