@@ -24,11 +24,6 @@ li {
 	padding: 0;
 }
 
-.column {
-	float: left;
-	clear: right;
-}
-
 hr {
 	width: 100px;
 	margin: 5px 0 5px 30px;

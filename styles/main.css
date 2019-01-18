@@ -478,12 +478,6 @@ lists nested under hovered list items */
 	font-size: 90%;
 }
 
-#pageIndex .column {
-	float: left;
-	width: 25%;
-	clear: right;
-}
-
 .spell, .psionicPower {
 	font-style: italic;
 }
