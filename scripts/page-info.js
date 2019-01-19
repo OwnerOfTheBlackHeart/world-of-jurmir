@@ -46,6 +46,7 @@ const pages = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/notes.html', 'The Story of Aaron Notes', 'aaron-notes'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/caravan.html', "Aaron's Caravan", 'aaron-caravan'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/timeline.html', "Story of Aaron Timeline", 'aaron-timeline'),
+
     new PageInfo(undefined, 'pantheon/planes/material-plane.html', 'The Material Plane', 'material-plane'),
     new PageInfo(undefined, 'pantheon/planes/dysvegr.html', 'Dysvegr', 'dysvegr'),
     new PageInfo(undefined, 'pantheon/planes/horgrverold.html', 'Horgrverold', 'horgrverold'),
@@ -53,6 +54,7 @@ const pages = [
     new PageInfo(undefined, 'pantheon/planes/hell.html', 'Hell', 'hell'),
     new PageInfo(undefined, 'pantheon/planes/the-void.html', 'The Void', 'the-void'),
     new PageInfo(undefined, 'pantheon/planes/planes-connection.html', 'How the Planes Connect', 'planes-connect'),
+
     new PageInfo(undefined, 'pantheon/sithrak.html', 'Sithrak', 'sithrak'),
     new PageInfo(undefined, 'pantheon/durn.html', 'Durn', 'durn'),
     new PageInfo(undefined, 'pantheon/feph.html', 'Feph', 'feph'),
@@ -64,6 +66,7 @@ const pages = [
     new PageInfo(undefined, 'pantheon/lindo.html', 'Lindo, Sailor of the River Cain', 'lindo'),
     new PageInfo(undefined, 'pantheon/zigies.html', 'Zigies, the Clockwork God', 'zigies'),
     new PageInfo(undefined, 'pantheon/god-types.html', 'God Types', 'god-types'),
+
     new PageInfo(undefined, 'pantheon/history/creation-story.html', 'The Story of Creation', 'creation-story'),
     new PageInfo(undefined, 'pantheon/history/the-drow.html', 'How the Drow Came to Be', 'the-drow'),
 
@@ -99,6 +102,13 @@ const pages = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/gnolls/gnoll-ambusher.html', 'Gnoll Ambusher', 'gnoll-ambusher'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/the-church/paladin.html', 'Paladin of Durn', 'paladin'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/the-church/ordained-cleric.html', 'Ordained Cleric of Durn', 'ordained-cleric'),
+    
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/plotlines/index.html', 'Plotline Index', 'aaron-plotline-index'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/plotlines/durns-inquisition.html', 'Durn\'s Inquisition', 'aaron-durn-inquisition'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/plotlines/invasion-of-regra.html', 'The Invasion of Regra', 'aaron-regra-invasion'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/plotlines/revival-of-the-red-king.html', 'Revival of the Red King', 'aaron-red-king-revival'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/plotlines/rise-of-general-rorshath.html', 'Rise of General Rorshath', 'aaron-general-rorshath'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/plotlines/white-skull-and-blackmane.html', 'White Skull and Blackmane', 'aaron-white-skull'),
 
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/spellbooks/main.html', 'Spellbooks', 'aaron-spellbooks'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/spellbooks/oasis-inquisitor.html', 'The Oasis Inquisitor\'s Spellbook', 'oasis-inquisitor-spellbook'),
