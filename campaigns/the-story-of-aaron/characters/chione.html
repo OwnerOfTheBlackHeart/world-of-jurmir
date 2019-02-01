@@ -3,13 +3,13 @@
 <ap-basic-table character-table>
 	[
 		["Size/Type:", "Medium Outsider (Native)"],
-		["Hit Dice:", "1d10+3d8+12 (42)"],
+		["Hit Dice:", "2d10+2d8+12 (44)"],
 		["Initiative:", "+2"],
-		["Speed:", "30 ft. (6 squares)"],
-		["Armor Class:", "17 (+2 dex, +4 chain shirt, +1 buckler), touch 12, flat-footed 15"],
+		["Speed:", "20 ft. (4 squares)"],
+		["Armor Class:", "19 (+2 dex, +5 +1 wyvernhide scale mail, +2 +1 wyvernhide buckler), touch 12, flat-footed 17"],
 		["Base Attack/Grapple:", "+4/+6"],
-		["Attack:", "Warhammer +7 melee (1d8+2/x3) or composite longbow (14) +6 ranged (1d8+2/x3)"],
-		["Full Attack:", "Warhammer +7 melee (1d8+2/x3) or composite longbow (14) +6 ranged (1d8+2/x3)"],
+		["Attack:", "Wyvernbone warhammer +8 melee (1d8+2/x3) or composite longbow (14) +6 ranged (1d8+2/x3)"],
+		["Full Attack:", "Wyvernbone warhammer +8 melee (1d8+2/x3) or composite longbow (14) +6 ranged (1d8+2/x3)"],
 		["Space/Reach:", "5 ft./5 ft."],
 		["Special Attacks:", "Darkness (1/day), <i>Arcane Channeling</i>, Power Attack"],
 		["Special Qualities:", "Darkvision 60 ft,",
@@ -17,14 +17,14 @@
 			"Arcane Attunement, Armored Mage (Medium)"],
 		["Saves:", "Fort +7, Ref +3, Will +5"],
 		["Abilities:", "Str 14, Dex 15, Con 16, Int 18, Wis 12, Cha 13"],
-		["Skills:", "Concentration +10, Decipher Script +11, Sense Motive +8, Spellcraft +11, Climb +7 (6 armor), Knowledge (Geography) +11,",
-			"Perform (Sex) +5, Diplomacy +3"],
-		["Feats:", "Weapon Focus (Warhammer), Sudden Widen, Combat Casting, Power Attack"],
+		["Skills:", "Concentration +10, Decipher Script +11, Sense Motive +8, Spellcraft +11, Climb +7 (4 armor), Knowledge (Geography) +11,",
+			"Perform (Sex) +6, Diplomacy +3"],
+		["Feats:", "Weapon Focus (Warhammer), Sudden Widen, Combat Casting, Power Attack, Cleave"],
 		["Challenge Rating:", "5 (+1 from race)"],
 		["Languages:", "Common, infernal, draconic, goblin, orc, elven"],
 		["Alignment:", "Neutral Evil"],
-		["Class Levels:", "Duskblade 4, Fighter 1 (G)"],
-		["Experience:", "7,060 / 10,000"],
+		["Class Levels:", "Duskblade 4, Fighter 2 (G)"],
+		["Experience:", "9,140 / 10,000"],
 		["Level Adjustment:", "+1 (negated)"]
 	]
 </ap-basic-table>
@@ -44,6 +44,7 @@
         <li>Kelgore’s Fire Bolt (PHB2 - 116)</li>
 		<li>Shocking Grasp</li>
 		<li>Chill Touch</li>
+		<li>Blades of Fire (SC - 32)</li>
 	</ul>
 </div>
 
@@ -80,6 +81,16 @@
     the effect of the spell is resolved.
 </p>
 
+<p>
+	<i>Wyvernhide:</i>
+	Items made of wyvernhide are easier to enchant. When enchanting
+	a wyvernhide suit of armor with an enchantment bonus, the price
+	of the bonus (not any abilities added on to the armor) is halved.
+</p>
+<p>
+	Wyvernhide and wyvernbone are always considered masterwork.
+</p>
+
 <div class="table-container">
 	<div class="table-column">
 		<ap-skill-chart>
@@ -90,7 +101,7 @@
 				["Spellcraft", 7, ""],
 				["Climb", 7, ""],
 				["Knowledge (Geography)", 7, ""],
-				["Perform (Sex)", 4, ""],
+				["Perform (Sex)", 5, ""],
 				["Diplomacy", 0, "+2 synergy"]
 			]
 		</ap-skill-chart>
@@ -99,23 +110,25 @@
 		<ap-enc-chart strength="14">
 			[
 				[2, 0, 7, 0],
-				["Chainshirt", 1, [0, 100, 0, 0], 25],
-				["Buckler", 1, [0, 15, 0, 0], 5],
-				["Warhammer", 1, [0, 12, 0, 0], 5],
+				["+1 wyvernhide scale mail", 1, [0, 400, 0, 0], 35],
+				["+1 wyvernhide buckler", 1, [0, 230, 0, 0], 5],
+				["Wyvernbone warhammer", 1, [0, 624, 0, 0], 5],
 				["Composite longbow (14)", 1, [0, 300, 0, 0], 3],
-				["Arrows", 20, [0, 0, 0, 5], 0.15],
+				["Arrows", 10, [0, 0, 0, 5], 0.15],
 				["Component pouch", 1, [0, 5, 0, 0], 2],
-				["Peasant's outfit", 1, [0, 0, 1, 0], 2],
 				["Handy Haversack", 1, [0, 2000, 0, 0], 5],
 				{
 					"name":"Handy Haversack",
                     "carryWeight":120,
                     "contents":[
-                        [0, 292, 0, 20],
+                        [0, 350, 0, 20],
                         ["Bedroll", 1, [0, 0, 1, 0], 5],
 						["Blanket, winter", 1, [0, 0, 5, 0], 3],
 						["Backpack", 1, [0, 2, 0, 0], 2],
-						["Waterskin", 1, [0, 1, 0, 0], 4]
+						["Waterskin", 1, [0, 1, 0, 0], 4],
+						["Peasant's outfit", 1, [0, 0, 1, 0], 2],
+						["Arrows", 10, [0, 0, 0, 5], 0.15],
+						["Manacles, masterwork", 1, [0, 50, 0, 0], 2]
                     ]
 				}
 			]
