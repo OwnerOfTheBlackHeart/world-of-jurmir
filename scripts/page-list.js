@@ -29,10 +29,14 @@ const pages = [
     new PageInfo(undefined, 'homebrew/half-races-catalog.html', 'Half Races Catalog', 'half-races-catalog'),
     new PageInfo(undefined, 'homebrew/guild-management-system.html', 'Guild Management System', 'guild-management-system'),
     new PageInfo(undefined, 'homebrew/gms-consequences.html', 'Guild Management System Consequences', 'gms-consequences'),
+    new PageInfo(undefined, 'homebrew/3_5-feats.html', '3.5/Pathfinder Homebrew Feats', '3.5-homebrew-feats'),
 
     new PageInfo(undefined, 'https://drive.google.com/open?id=1ig8Abc2VDQf-OX7RUamdHbAtrCKBdyVNs7tkjTxr8Ao', '', 'pregnancy', true),
     new PageInfo(undefined, 'https://drive.google.com/drive/folders/14hpbIxtHNWXO2PcbTgnrV0cKlz2SzyLV?usp=sharing', '', '3.5-homebrew', true),
     new PageInfo(undefined, 'https://drive.google.com/drive/folders/1BJhOezdxdbN7pBTSjqmTLgEm2blqt6qP?usp=sharing', '', 'aaron-map', true),
     new PageInfo(undefined, 'http://www.d20srd.org/srd/monsters/elf.htm', '', 'drow-traits', true),
     new PageInfo(undefined, 'http://www.d20srd.org/srd/classes/ranger.htm', '', '3.5-ranger-page', true),
+    
+    new PageInfo(undefined, 'images/chione.png', '', 'chione-image'),
+    new PageInfo(undefined, 'images/sbj-map.png', '', 'sbj-map'),
 ].concat(aaronNav, sbjNav);
