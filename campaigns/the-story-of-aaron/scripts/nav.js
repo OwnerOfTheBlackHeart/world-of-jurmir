@@ -4,13 +4,14 @@ const aaronNav = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/caravan.html', "Aaron's Caravan", 'aaron-caravan'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/timeline.html', "Story of Aaron Timeline", 'aaron-timeline'),
 
-    new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/chione.html', 'Chione of Ashborne', 'chione'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/chione.html', 'Chione of Ashborne, Hammer of Aaron', 'chione'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/erik.html', 'Erik Ericson, Son of Eric', 'erik'),
-    new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/helmer.html', 'Helmer', 'helmer'),
-    new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/hunts-on-stone.html', 'Hunts on Stone', 'hunts-on-stone'),
-    new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/paavu.html', 'Paavu Flesheater Ogolakanu', 'paavu'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/helmer.html', 'Helmer the Dragon Elf', 'helmer'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/hunts-on-stone.html', 'Hunts on Stone, Lizardfolk Ranger', 'hunts-on-stone'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/paavu.html', 'Paavu Flesheater Ogolakanu, Slayer of Great Beasts', 'paavu'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/drik-tik.html', 'Drik-Tik', 'drik-tik'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/rass.html', 'Rass the Half-Gnoll Lizard', 'rass'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/luta.html', 'Luta Dagdottir, Two Weapon Fighter/Rogue', 'luta'),
 
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/anterin.html', 'Anterin Beltith, enslaved drow male', 'anterin'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/ereltha.html', 'Ereltha Tuin of House Duskryn', 'ereltha'),
@@ -56,4 +57,7 @@ const aaronNav = [
 
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/spellbooks/main.html', 'Spellbooks', 'aaron-spellbooks'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/spellbooks/oasis-inquisitor.html', 'The Oasis Inquisitor\'s Spellbook', 'oasis-inquisitor-spellbook'),
+
+    new PageInfo(undefined, 'images/chione.png', '', 'chione-image'),
+    new PageInfo(undefined, 'images/luta.png', '', 'luta-image')
 ];

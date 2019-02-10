@@ -111,3 +111,9 @@ li > ap-link-button > a:link, li > ap-link-button > a:visited
     background-color: #303030;
     color: white;
 }
+
+ap-image.character-picture
+{
+    float: right;
+    margin-left: 5px;
+}

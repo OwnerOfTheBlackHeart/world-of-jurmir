@@ -13,3 +13,8 @@ sbjNav.forEach(pageInfo =>
         pageInfo.name = nameStart + pageInfo.name;
     }
 );
+
+// For links that don't need the starting stuff, like images
+sbjNav.push([
+    new PageInfo(undefined, 'images/sbj-map.png', '', 'sbj-map')
+]);

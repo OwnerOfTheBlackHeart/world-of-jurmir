@@ -12,20 +12,31 @@ class LinkImage extends HTMLElement
         this.setAttribute('linkName', val);
     }
 
-    get disabled()
+    get height()
     {
-        return this.hasAttribute('disabled');
+        return this.getAttribute('height');
     }
 
-    set disabled(val)
+    set height(val)
     {
-        if (val) 
+        this.setAttribute('height', val);
+        if (this.image)
         {
-            this.setAttribute('disabled', '');
+            this.image.height = val;
         }
-        else
+    }
+
+    get width()
+    {
+        return this.getAttribute('width');
+    }
+
+    set width(val)
+    {
+        this.setAttribute('width', val);
+        if (this.image)
         {
-            this.removeAttribute('disabled');
+            this.image.width = val;
         }
     }
 
@@ -40,7 +51,7 @@ class LinkImage extends HTMLElement
 
     click()
     {
-        // Only load by name when we have an internal link
+        // Make it so that it opens the image in a new tab when you click on it?
         // if (PageInfo.IsInternalPage(this.imagePageInfo))
         // {
         //     SetHashByPageInfo(this.imagePageInfo);
@@ -51,7 +62,9 @@ class LinkImage extends HTMLElement
     {
         this.addEventListener('click', this.click);
 
-        this.image = document.createElement('img');    
+        this.image = document.createElement('img');
+        if (this.width) this.image.width = this.width;
+        if (this.height) this.image.height = this.height;
         this.UpdateLink();
 
         this.innerHTML = "";

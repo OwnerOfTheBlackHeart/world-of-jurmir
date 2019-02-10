@@ -36,7 +36,4 @@ const pages = [
     new PageInfo(undefined, 'https://drive.google.com/drive/folders/1BJhOezdxdbN7pBTSjqmTLgEm2blqt6qP?usp=sharing', '', 'aaron-map', true),
     new PageInfo(undefined, 'http://www.d20srd.org/srd/monsters/elf.htm', '', 'drow-traits', true),
     new PageInfo(undefined, 'http://www.d20srd.org/srd/classes/ranger.htm', '', '3.5-ranger-page', true),
-    
-    new PageInfo(undefined, 'images/chione.png', '', 'chione-image'),
-    new PageInfo(undefined, 'images/sbj-map.png', '', 'sbj-map'),
 ].concat(aaronNav, sbjNav);
