@@ -10,15 +10,15 @@ var backLog = [];
 var currentPage;
 var defaultPage = "home";
 
-function SetActive(page)
+function SetActive(pageUrl)
 {
 	// Cleanse our active button and set our active button
-	for (const button of pages)
+	for (const page of pages)
 	{
-        if (button.button != undefined)
+        if (page.button != undefined)
         {
-            if (page != button.url) ResetButtonActive(button.button);
-            else SetButtonActive(button.button);
+            if (pageUrl != page.url) ResetButtonActive(page.button);
+            else SetButtonActive(page.button);
         }
 	}
 }
@@ -97,3 +97,25 @@ window.onhashchange = function()
 {
     LoadByPageInfo(Utilities.GetCurrentPageInfo());
 };
+
+// ****************** AUTH FUNCTIONS *************************
+function onAuthButtonClick()
+{
+    let authInput = document.getElementById('auth-input');
+    Auth.SetAuthByAccessCode(authInput.value);
+    authInput.value = "";
+}
+
+function RunOnAuthChanged()
+{
+    console.log("RunOnAuthChanged ran");
+    Auth.currentAuth = Auth.currentAuth;
+}
+
+function OnAuthKeyDown(event)
+{
+    if (event.key === "Enter")
+    {
+        onAuthButtonClick();
+    }
+}

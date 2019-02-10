@@ -1,7 +1,7 @@
 class LinkButton extends HTMLElement 
 {
     static get observedAttributes() { return ['linkName', 'disabled']; }
-    
+
     get linkName()
     {
         return this.getAttribute('linkName');
@@ -107,6 +107,6 @@ class LinkButton extends HTMLElement
         this.link.setAttribute('target', '_self');
         this.link.removeAttribute('rel');
     }
-  }
+}
 
-  customElements.define('ap-link-button', LinkButton);
+customElements.define('ap-link-button', LinkButton);
