@@ -74,15 +74,16 @@ li > ap-link-button > a:link, li > ap-link-button > a:visited
 #auth-info
 {
     position: absolute;
-    top: 0px;
+    top: 5px;
     right: 0px;
 }
 
 .header-nav-list
 {
-    display: inline;
+    display: inline-block;
     
     margin: 0;
+    margin-top: 5px;
     padding: 0;
 }
 
