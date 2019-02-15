@@ -64,5 +64,6 @@ class Auth
 
 const authList = Object.freeze([
     new Auth("GM", "my players will never see this", ["all"]),
-    new Auth("Cody", "Al1ce", ["cody"])
+    new Auth("Cody", "Al1ce", ["cody"]),
+    new Auth("Dan", "Coolguy420", ["dan"]),
 ]);

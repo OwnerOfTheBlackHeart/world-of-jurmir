@@ -14,6 +14,10 @@ const sbjNav = [
     new PageInfo(undefined, 'locations/voqua/the-red-raven.html', 'The Crashsite of the Red Raven', 'red-raven'),
 
     new PageInfo(undefined, 'vehicles/the-x-saber.html', 'The X Saber', 'x-saber'),
+
+    new PageInfo(undefined, 'plotlines/main.html', 'Stars Beyond Jurmir Plotlines', 'plotlines'),
+    new PageInfo(undefined, 'plotlines/crash-of-the-red-raven.html', 'The Crash of the Red Raven', 'crash-of-the-red-raven'),
+    new PageInfo(undefined, 'plotlines/the-x-saber.html', 'The X Saber', 'x-saber-plot'),
 ];
 
 sbjNav.forEach(pageInfo => 
