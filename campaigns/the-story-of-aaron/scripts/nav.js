@@ -58,6 +58,9 @@ const aaronNav = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/spellbooks/main.html', 'Spellbooks', 'aaron-spellbooks'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/spellbooks/oasis-inquisitor.html', 'The Oasis Inquisitor\'s Spellbook', 'oasis-inquisitor-spellbook'),
 
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/guild-folder/missions.html', 'Guild Missions', 'aaron-guild-missions'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/guild-folder/guild-members.html', 'Guild Members', 'aaron-guild-members'),
+
     new PageInfo(undefined, 'images/chione.png', '', 'chione-image'),
     new PageInfo(undefined, 'images/luta.png', '', 'luta-image')
 ];
