@@ -17,6 +17,7 @@ const aaronNav = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/ereltha.html', 'Ereltha Tuin of House Duskryn', 'ereltha'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/lydriia.html', 'Lydriia Blunduin, brainwashed drow cleric', 'lydriia'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/charda.html', 'Charda Diliriy, Chione\'s Drow Slave', 'charda'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/signy.html', 'Signy Validottir, Oasis Wet Nurse', 'signy'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/white-skull-and-blackmane/white-skull.html', 'White Skull, Gnoll Exile', 'white-skull'),
 
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/lyrna/main.html', 'The Country of Lyrna', 'lyrna'),
@@ -60,6 +61,7 @@ const aaronNav = [
 
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/guild-folder/missions.html', 'Guild Missions', 'aaron-guild-missions'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/guild-folder/guild-members.html', 'Guild Members', 'aaron-guild-members'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/guild-folder/oasis-servants.html', 'Guild Members', 'oasis-servants'),
 
     new PageInfo(undefined, 'images/chione.png', '', 'chione-image'),
     new PageInfo(undefined, 'images/luta.png', '', 'luta-image')
