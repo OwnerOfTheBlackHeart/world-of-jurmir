@@ -29,6 +29,6 @@ sbjNav.forEach(pageInfo =>
 );
 
 // For links that don't need the starting stuff, like images
-sbjNav.push([
-    new PageInfo(undefined, 'images/sbj-map.png', '', 'sbj-map')
-]);
+sbjNav.push(
+    new PageInfo(undefined, 'images/sbj-map.png', '', 'sbj-map', true)
+);
