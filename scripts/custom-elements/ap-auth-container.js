@@ -1,61 +1,39 @@
-class AuthContainer extends HTMLElement 
-{
-    get permissions()
-    {
+class AuthContainer extends HTMLElement {
+    get permissions() {
         return this.getAttribute('permissions');
     }
-
-    set permissions(val)
-    {
+    set permissions(val) {
         this.setAttribute('permissions', val);
     }
-
-    constructor() 
-    {
-        // Always call super first in constructor
+    constructor() {
         super();
-
         this.startingDisplay = this.style.display || "block";
-
         AuthContainers.push(this);
     }
-
-    connectedCallback()
-    {
+    connectedCallback() {
         this.Render();
     }
-
-    disconnectedCallback()
-    {
+    disconnectedCallback() {
         AuthContainers = AuthContainers.filter(container => container != this);
     }
-
-    Render() 
-    {
-        if (this.permissions)
-        {
-            if (Auth.CheckAccessLevel(this.permissions)) // We have permissions
-            {
+    Render() {
+        if (this.permissions) {
+            if (Auth.CheckAccessLevel(this.permissions)) {
                 this.style.display = this.startingDisplay;
             }
-            else // We don't have permissions
-            {
+            else {
                 this.style.display = 'none';
             }
         }
-        else
-        {
+        else {
             this.style.display = 'none';
         }
     }
-
-    static UpdateAll()
-    {
+    static UpdateAll() {
         AuthContainers.forEach(container => container.Render());
     }
 }
-
 customElements.define('ap-auth-container', AuthContainer);
-
 let AuthContainers = [];
 Auth.onAuthChangedList.push(AuthContainer.UpdateAll);
+//# sourceMappingURL=ap-auth-container.js.map

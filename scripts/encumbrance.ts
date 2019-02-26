@@ -1,27 +1,41 @@
-class EncSet {
-    constructor(str, light, medium, heavy) {
+class EncSet
+{
+    str: number;
+    light: number;
+    medium: number;
+    heavy: number;
+
+    constructor(str?: number, light?: number, medium?: number, heavy?: number)
+    {
         this.str = str;
         this.light = light;
         this.medium = medium;
         this.heavy = heavy;
     }
-    copy(toCopy) {
+
+    copy(toCopy?: EncSet)
+    {
         const toReturn = new EncSet();
-        if (toCopy != undefined) {
+
+        if (toCopy != undefined)
+        {
             toReturn.str = toCopy.str;
             toReturn.light = toCopy.light;
             toReturn.medium = toCopy.medium;
             toReturn.heavy = toCopy.heavy;
         }
-        else {
+        else
+        {
             toReturn.str = this.str;
             toReturn.light = this.light;
             toReturn.medium = this.medium;
             toReturn.heavy = this.heavy;
         }
+
         return toReturn;
     }
 }
+
 const EncChart = Object.freeze([
     new EncSet(1, 3, 6, 10),
     new EncSet(2, 6, 13, 20),
@@ -53,7 +67,9 @@ const EncChart = Object.freeze([
     new EncSet(28, 400, 800, 1200),
     new EncSet(29, 466, 933, 1400),
 ]);
-class Encumbrance {
+
+class Encumbrance
+{
     get strength() { return this._strength; }
     get multiplier() { return this._multiplier; }
     get light() { return this.set.light * this._multiplier; }
@@ -61,45 +77,47 @@ class Encumbrance {
     get heavy() { return this.set.heavy * this._multiplier; }
     get lift() { return this.heavy * 2; }
     get drag() { return this.heavy * 5; }
-    constructor(strength, multiplier) {
+
+    _strength: number;
+    _multiplier: number;
+    set: EncSet;
+
+    constructor(strength?: number, multiplier?: number)
+    {   
         this.set;
-        if (strength == undefined) {
-            this._strength = 10;
-        }
-        else {
-            this._strength = strength;
-        }
-        if (multiplier == undefined) {
-            this._multiplier = 1;
-        }
-        else {
-            this._multiplier = multiplier;
-        }
+
+        if (strength == undefined) { this._strength = 10; }
+        else { this._strength = strength; }
+
+        if (multiplier == undefined) { this._multiplier = 1; }
+        else { this._multiplier = multiplier; }
+        
         this.Update();
     }
-    Update(strength, multiplier) {
-        if (strength != undefined) {
-            this._strength = strength;
+
+    Update(strength?: number, multiplier?: number)
+    {
+        if (strength != undefined) { this._strength = strength; }
+        if (multiplier != undefined) { this._multiplier = multiplier; }
+
+        if (this.strength <= 29)
+        {
+            this.set = EncChart[this.strength-1].copy();
         }
-        if (multiplier != undefined) {
-            this._multiplier = multiplier;
-        }
-        if (this.strength <= 29) {
-            this.set = EncChart[this.strength - 1].copy();
-        }
-        else {
+        else
+        {
             let str = this.strength;
             let setMult = 1;
-            while (str > 29) {
+            while (str > 29)
+            {
                 setMult *= 4;
                 str -= 10;
             }
-            this.set = EncChart[str - 1].copy();
+
+            this.set = EncChart[str-1].copy();
             this.set.light *= setMult;
             this.set.medium *= setMult;
             this.set.heavy *= setMult;
         }
     }
-}
-;
-//# sourceMappingURL=encumbrance.js.map
+};
