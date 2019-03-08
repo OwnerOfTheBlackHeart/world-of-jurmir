@@ -118,3 +118,7 @@ ap-image.character-picture
     float: right;
     margin-left: 5px;
 }
+
+.power {
+    font-weight: bold;
+}

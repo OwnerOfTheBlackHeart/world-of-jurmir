@@ -10,6 +10,7 @@ const aaronNav = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/paavu.html', 'Paavu Flesheater Ogolakanu, Slayer of Great Beasts', 'paavu'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/drik-tik.html', 'Drik-Tik', 'drik-tik'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/rass.html', 'Rass the Half-Gnoll Lizard', 'rass'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/bhintel.html', 'Bhintel Coboryn, Eldritch Trap', 'bhintel'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/luta.html', 'Luta Dagdottir, Two Weapon Fighter/Rogue', 'luta'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/anterin.html', 'Anterin Beltith, enslaved drow male', 'anterin'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/ereltha.html', 'Ereltha Tuin of House Duskryn', 'ereltha'),
