@@ -43,6 +43,16 @@ const aaronNav = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/gnolls/gnoll-ambusher.html', 'Gnoll Ambusher', 'gnoll-ambusher'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/the-church/paladin.html', 'Paladin of Durn', 'paladin'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/the-church/ordained-cleric.html', 'Ordained Cleric of Durn', 'ordained-cleric'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/abductor.html', 'Red King Cult Abductor', 'red-king-abductor'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/basic-cultist.html', 'Red King Cultist', 'red-king-cultist'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/cult-guard.html', 'Red King Cult Guard', 'red-king-cult-guard'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/cult-priest.html', 'Red King Cult Priest', 'red-king-priest'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/red-knight.html', 'Red Knight', 'red-knight'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/red-lady.html', 'Red Lady', 'red-lady'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/red-page.html', 'Red Page', 'red-page'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/red-princess.html', 'Red Princess', 'red-princess'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/red-queen.html', 'Red Queen', 'red-queen'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/red-squire.html', 'Red Squire', 'red-squire'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/plotlines/index.html', 'Plotline Index', 'aaron-plotline-index'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/plotlines/durns-inquisition.html', 'Durn\'s Inquisition', 'aaron-durn-inquisition'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/plotlines/invasion-of-regra.html', 'The Invasion of Regra', 'aaron-regra-invasion'),
@@ -55,6 +65,10 @@ const aaronNav = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/guild-folder/guild-members.html', 'Guild Members', 'aaron-guild-members'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/guild-folder/oasis-servants.html', 'Guild Members', 'oasis-servants'),
     new PageInfo(undefined, 'images/chione.png', '', 'chione-image'),
-    new PageInfo(undefined, 'images/luta.png', '', 'luta-image')
+    new PageInfo(undefined, 'images/luta.png', '', 'luta-image'),
+    new PageInfo(undefined, 'images/red-king-cult-guard.jpg', '', 'cult-guard-image'),
+    new PageInfo(undefined, 'images/red-knight.jpg', '', 'red-knight-image'),
+    new PageInfo(undefined, 'images/red-princess.jpg', '', 'red-princess-image'),
+    new PageInfo(undefined, 'images/red-king-abductor.jpg', '', 'red-king-abductor-image'),
 ];
 //# sourceMappingURL=nav.js.map
