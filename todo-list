@@ -64,17 +64,25 @@ If Cody wants to buy a prostitute in Arx:
 Expand the characters of the drow male and the drow female
 
 Make Red Queen (angel or demon), Princess, Lady (succubus) and Knight (deathknight)
-    When a human woman fully submits themselves to the Red King in/before the Void, she becomes a Red Queen.
+    When a human woman fully submits themselves to the Red King in/before the Void (bearing a monstrosity in the process), she becomes a Red Queen.
     When a part-human woman (half-elf, aasmar, etc.) does so, she becomes a Red Princess.
     When a non-human woman does so, she becomes a Red Lady.
     When a male human does so he becomes a Red Knight.
     When a male part-human does so he becomes a Red Squire.
     When a male non-human does so he becomes a Red Page.
 
-Make members of the Cult of the Red King
-    Higher grade cultist (4lvl rogue)
-    Basic cult priest (5lvl cleric)
-    Clut guards (4lvl fighter)
+Red Mothers (Queen, Princess, Lady) pregnancy
+    At the start of the pregnancy, a Red Mother has a 50% chance of having a silent transformation or a slow transformation
+        Silent transformations happen the moment the mother gives birth to her monsterious child
+        Slow transformations begin within 2 months of submittion and often result in the start of a Cult of the Red King centered around the mother
+    Use the pregnancy rules for determining if the birth is successful or not
+        If a slow transformation, the mother may use her transformed form's stats
+        A failed birth results in transformation into a lesser form
+
+Children born of a Red Queen, Princess, or Lady acknowledge the Red King and any Red Nobility (Knight, Squire, and Page)
+    Have view on the mortal servants that vary between tools and food
+    While varied and unpredictable, they are typically called Red Decendents
+    The rare child will be born as a Red Prince or a Red Princess
 
 Stuff in and around Arx
     Drow scouts from House Duskryn

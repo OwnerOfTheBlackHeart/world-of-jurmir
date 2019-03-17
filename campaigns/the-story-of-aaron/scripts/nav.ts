@@ -82,5 +82,8 @@ const aaronNav = [
     new PageInfo(undefined, 'images/red-king-cult-guard.jpg', '', 'cult-guard-image'),
     new PageInfo(undefined, 'images/red-knight.jpg', '', 'red-knight-image'),
     new PageInfo(undefined, 'images/red-princess.jpg', '', 'red-princess-image'),
+    new PageInfo(undefined, 'images/red-queen.jpg', '', 'red-queen-image'),
+    new PageInfo(undefined, 'images/red-lady.jpg', '', 'red-lady-image'),
     new PageInfo(undefined, 'images/red-king-abductor.jpg', '', 'red-king-abductor-image'),
+    new PageInfo(undefined, 'images/red-king-priest.jpg', '', 'red-king-priest-image'),
 ];
