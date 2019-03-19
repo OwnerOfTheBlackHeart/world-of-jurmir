@@ -53,6 +53,7 @@ const aaronNav = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/red-princess.html', 'Red Princess', 'red-princess'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/red-queen.html', 'Red Queen', 'red-queen'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/red-squire.html', 'Red Squire', 'red-squire'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/pophagite.html', 'Phopagite, Eater of Slain', 'phopagite'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/plotlines/index.html', 'Plotline Index', 'aaron-plotline-index'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/plotlines/durns-inquisition.html', 'Durn\'s Inquisition', 'aaron-durn-inquisition'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/plotlines/invasion-of-regra.html', 'The Invasion of Regra', 'aaron-regra-invasion'),
