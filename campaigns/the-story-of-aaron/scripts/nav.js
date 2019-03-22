@@ -60,6 +60,7 @@ const aaronNav = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/plotlines/revival-of-the-red-king.html', 'Revival of the Red King', 'aaron-red-king-revival'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/plotlines/rise-of-general-rorshath.html', 'Rise of General Rorshath', 'aaron-general-rorshath'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/plotlines/white-skull-and-blackmane.html', 'White Skull and Blackmane', 'aaron-white-skull'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/plotlines/missions/huntsing-down-the-cult-1.html', 'Huntsing Down the Cult 1', 'huntsing-down-the-cult-1'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/spellbooks/main.html', 'Spellbooks', 'aaron-spellbooks'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/spellbooks/oasis-inquisitor.html', 'The Oasis Inquisitor\'s Spellbook', 'oasis-inquisitor-spellbook'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/guild-folder/missions.html', 'Guild Missions', 'aaron-guild-missions'),

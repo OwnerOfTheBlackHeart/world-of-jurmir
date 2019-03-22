@@ -33,5 +33,18 @@ const pages = [
     new PageInfo(undefined, 'https://drive.google.com/drive/folders/1BJhOezdxdbN7pBTSjqmTLgEm2blqt6qP?usp=sharing', '', 'aaron-map', true),
     new PageInfo(undefined, 'http://www.d20srd.org/srd/monsters/elf.htm', '', 'drow-traits', true),
     new PageInfo(undefined, 'http://www.d20srd.org/srd/classes/ranger.htm', '', '3.5-ranger-page', true),
+    new PageInfo(undefined, 'images/feph.jpg', '', 'feph-image'),
+    new PageInfo(undefined, 'images/fephinite-general.jpg', '', 'fephinite-general-image'),
+    new PageInfo(undefined, 'images/fephinite-inquisitor.jpg', '', 'fephinite-inquisitor-image'),
+    new PageInfo(undefined, 'images/feph-wander-form.jpg', '', 'feph-wander-form-image'),
+    new PageInfo(undefined, 'images/hrefna.jpg', '', 'hrefna-image'),
+    new PageInfo(undefined, 'images/kriotz.jpg', '', 'kriotz-image'),
+    new PageInfo(undefined, 'images/lagos.png', '', 'lagos-image'),
+    new PageInfo(undefined, 'images/lagos-close-up.jpg', '', 'lagos-close-up-image'),
+    new PageInfo(undefined, 'images/lindo.jpg', '', 'lindo-image'),
+    new PageInfo(undefined, 'images/sithrak.jpg', '', 'sithrak-image'),
+    new PageInfo(undefined, 'images/zigies.jpg', '', 'zigies-image'),
+    new PageInfo(undefined, 'images/zigies-constructor.jpg', '', 'zigies-constructor-image'),
+    new PageInfo(undefined, 'images/zoltan.png', '', 'zoltan-image'),
 ].concat(aaronNav, sbjNav);
 //# sourceMappingURL=page-list.js.map
