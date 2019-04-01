@@ -17,6 +17,8 @@ const aaronNav = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/lydriia.html', 'Lydriia Blunduin, brainwashed drow cleric', 'lydriia'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/charda.html', 'Charda Diliriy, Chione\'s Drow Slave', 'charda'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/signy.html', 'Signy Validottir, Oasis Wet Nurse', 'signy'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/ash-winfielde.html', 'Ash Wineielde, Captured Cult Abductor', 'ash-winfielde'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/dinzar.html', 'Dinzar Grifter, Pope of the Judges of Seablood', 'dinzar'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/white-skull-and-blackmane/white-skull.html', 'White Skull, Gnoll Exile', 'white-skull'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/lyrna/main.html', 'The Country of Lyrna', 'lyrna'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/lyrna/ashborne.html', 'The Town of Ashborne', 'ashborne'),
@@ -54,6 +56,8 @@ const aaronNav = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/red-queen.html', 'Red Queen', 'red-queen'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/red-squire.html', 'Red Squire', 'red-squire'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/pophagite.html', 'Phopagite, Eater of Slain', 'phopagite'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/jennlinn.html', 'Jennlinn Miirdhek, Red Lady of Seablood', 'jennlinn'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/dhako-smogfang.html', 'Dhako Smogfang, Monstrosity born of Jennlinn Miirdhek', 'dhako-smogfang'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/plotlines/index.html', 'Plotline Index', 'aaron-plotline-index'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/plotlines/durns-inquisition.html', 'Durn\'s Inquisition', 'aaron-durn-inquisition'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/plotlines/invasion-of-regra.html', 'The Invasion of Regra', 'aaron-regra-invasion'),
@@ -75,5 +79,7 @@ const aaronNav = [
     new PageInfo(undefined, 'images/red-lady.jpg', '', 'red-lady-image'),
     new PageInfo(undefined, 'images/red-king-abductor.jpg', '', 'red-king-abductor-image'),
     new PageInfo(undefined, 'images/red-king-priest.jpg', '', 'red-king-priest-image'),
+    new PageInfo(undefined, 'images/jennlinn.jpg', '', 'jennlinn-image'),
+    new PageInfo(undefined, 'images/dinzar.jpg', '', 'dinzar-image'),
 ];
 //# sourceMappingURL=nav.js.map

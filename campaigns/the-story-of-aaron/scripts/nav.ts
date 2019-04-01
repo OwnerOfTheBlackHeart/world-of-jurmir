@@ -21,6 +21,8 @@ const aaronNav = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/lydriia.html', 'Lydriia Blunduin, brainwashed drow cleric', 'lydriia'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/charda.html', 'Charda Diliriy, Chione\'s Drow Slave', 'charda'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/signy.html', 'Signy Validottir, Oasis Wet Nurse', 'signy'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/ash-winfielde.html', 'Ash Wineielde, Captured Cult Abductor', 'ash-winfielde'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/dinzar.html', 'Dinzar Grifter, Pope of the Judges of Seablood', 'dinzar'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/white-skull-and-blackmane/white-skull.html', 'White Skull, Gnoll Exile', 'white-skull'),
 
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/lyrna/main.html', 'The Country of Lyrna', 'lyrna'),
@@ -42,13 +44,18 @@ const aaronNav = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/sokjin/danghae.html', 'The City of Danghae', 'danghae'),
 
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/dragonkin/kobold-heavy.html', 'Kobold Heavy', '3-5-kobold-heavy'),
+
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/wild-elves/wild-elf-warrior.html', 'Wild Elf Warrior', 'wild-elf-warrior'),
+
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/drow/urban-surface-drow.html', 'Urban Surface Drow', 'urban-surface-drow'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/drow/drow-cleric.html', 'Drow Cleric', 'drow-cleric'),
+
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/goblinoids/goblin-lieutenant.html', 'Goblin Lieutenant', 'goblin-lieutenant'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/goblinoids/goblin-sergeant.html', 'Goblin Sergeant', 'goblin-sergeant'),
+
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/gnolls/gnoll-warlord.html', 'Gnoll Warlord', 'gnoll-warlord'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/gnolls/gnoll-ambusher.html', 'Gnoll Ambusher', 'gnoll-ambusher'),
+    
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/the-church/paladin.html', 'Paladin of Durn', 'paladin'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/the-church/ordained-cleric.html', 'Ordained Cleric of Durn', 'ordained-cleric'),
 
@@ -63,6 +70,8 @@ const aaronNav = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/red-queen.html', 'Red Queen', 'red-queen'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/red-squire.html', 'Red Squire', 'red-squire'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/pophagite.html', 'Phopagite, Eater of Slain', 'phopagite'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/jennlinn.html', 'Jennlinn Miirdhek, Red Lady of Seablood', 'jennlinn'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/enemies/red-king/dhako-smogfang.html', 'Dhako Smogfang, Monstrosity born of Jennlinn Miirdhek', 'dhako-smogfang'),
     
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/plotlines/index.html', 'Plotline Index', 'aaron-plotline-index'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/plotlines/durns-inquisition.html', 'Durn\'s Inquisition', 'aaron-durn-inquisition'),
@@ -89,4 +98,6 @@ const aaronNav = [
     new PageInfo(undefined, 'images/red-lady.jpg', '', 'red-lady-image'),
     new PageInfo(undefined, 'images/red-king-abductor.jpg', '', 'red-king-abductor-image'),
     new PageInfo(undefined, 'images/red-king-priest.jpg', '', 'red-king-priest-image'),
+    new PageInfo(undefined, 'images/jennlinn.jpg', '', 'jennlinn-image'),
+    new PageInfo(undefined, 'images/dinzar.jpg', '', 'dinzar-image'),
 ];

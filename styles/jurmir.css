@@ -122,3 +122,7 @@ ap-image.character-picture
 .power {
     font-weight: bold;
 }
+
+ap-auth-container {
+    font-style: italic;
+}
