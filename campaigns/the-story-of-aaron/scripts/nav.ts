@@ -37,7 +37,7 @@ const aaronNav = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/cestrad/main.html', 'The Country of Cestrad', 'cestrad'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/cestrad/mordain.html', 'The ____ of Mordain', 'mordain'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/cestrad/nyr.html', 'The ____ of Nyr', 'nyr'),
-    new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/cestrad/seablood.html', 'The Town of Seablood', 'seablood'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/cestrad/seablood.html', 'The City of Seablood', 'seablood'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/cestrad/fa`adin.html', 'The City of Fa`adin, Capital of Cestrad', 'faadin'),
 
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/sokjin/main.html', 'The _____ of Sokjin', 'sokjin'),

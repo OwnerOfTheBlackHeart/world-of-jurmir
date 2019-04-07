@@ -28,6 +28,7 @@ const pages = [
     new PageInfo(undefined, 'homebrew/gms-consequences.html', 'Guild Management System Consequences', 'gms-consequences'),
     new PageInfo(undefined, 'homebrew/3_5-feats.html', '3.5/Pathfinder Homebrew Feats', '3.5-homebrew-feats'),
     new PageInfo(undefined, 'homebrew/magic-items.html', 'Magic Items', 'magic-items'),
+    new PageInfo(undefined, 'homebrew/bright-one.html', 'The Bright One Prestige Class', 'bright-one'),
     new PageInfo(undefined, 'https://drive.google.com/open?id=1ig8Abc2VDQf-OX7RUamdHbAtrCKBdyVNs7tkjTxr8Ao', '', 'pregnancy', true),
     new PageInfo(undefined, 'https://drive.google.com/drive/folders/14hpbIxtHNWXO2PcbTgnrV0cKlz2SzyLV?usp=sharing', '', '3.5-homebrew', true),
     new PageInfo(undefined, 'https://drive.google.com/drive/folders/1BJhOezdxdbN7pBTSjqmTLgEm2blqt6qP?usp=sharing', '', 'aaron-map', true),

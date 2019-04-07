@@ -30,21 +30,25 @@ class Auth {
         this.accessCode = accessCode;
         this.permissions = permissions;
     }
-    static CheckAccessLevel(permission) {
-        if ((permission === "none") && !Auth.currentAuth) {
+    static CheckAccessLevel(permissions) {
+        if ((permissions === "none") && !Auth.currentAuth) {
             return true;
         }
-        else if (permission === "none") {
+        else if (permissions === "none") {
             return false;
         }
         else if (!Auth.currentAuth) {
             return false;
         }
-        else if ((permission === "any") && Auth.currentAuth) {
+        else if ((permissions === "any") && Auth.currentAuth) {
             return true;
         }
         else {
-            return Auth.currentAuth.permissions.includes("all") || Auth.currentAuth.permissions.includes(permission);
+            const permissionList = permissions.split(" ");
+            return Auth.currentAuth.permissions.some(authPermission => authPermission === "all") ||
+                Auth.currentAuth.permissions.some(authPermission => {
+                    return permissionList.some(permission => permission === authPermission);
+                });
         }
     }
     static SetAuthByAccessCode(accessCode) {
@@ -59,10 +63,15 @@ class Auth {
         Auth.currentAuth = foundAuth;
         return Auth.currentAuth;
     }
+    static UpdateCurrentAuth() {
+        if (Auth.currentAuth) {
+            Auth.currentAuth = authList.find(auth => auth.name === Auth.currentAuth.name);
+        }
+    }
 }
 const authList = Object.freeze([
     new Auth("GM", "my players will never see this", ["all"]),
-    new Auth("Cody", "Al1ce", ["cody"]),
+    new Auth("Cody", "Al1ce", ["cody", "luta", "huntsing-down-the-cult"]),
     new Auth("Dan", "Coolguy420", ["dan", "aaron-full"]),
 ]);
 //# sourceMappingURL=auth.js.map
