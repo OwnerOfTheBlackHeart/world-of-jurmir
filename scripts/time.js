@@ -23,8 +23,27 @@ class Time {
         let toReturn = "";
         let tempTime = this.DistributeDays();
         let month = TimeRef.months[tempTime.month];
-        toReturn += (tempTime.day + 1) + " ";
-        toReturn += month.name + ", ";
+        let numeralAbbreviation = " ";
+        if ([10, 11, 12].some(day => day === tempTime.day)) {
+            numeralAbbreviation = "th";
+        }
+        else {
+            switch (tempTime.day % 10) {
+                case 0:
+                    numeralAbbreviation = "st";
+                    break;
+                case 1:
+                    numeralAbbreviation = "nd";
+                    break;
+                case 2:
+                    numeralAbbreviation = "rd";
+                    break;
+                default:
+                    numeralAbbreviation = "th";
+            }
+        }
+        toReturn += month.name + " ";
+        toReturn += (tempTime.day + 1) + numeralAbbreviation + ", ";
         toReturn += tempTime.year;
         if (doesIncludeSeason) {
             toReturn += ": " + month.season;

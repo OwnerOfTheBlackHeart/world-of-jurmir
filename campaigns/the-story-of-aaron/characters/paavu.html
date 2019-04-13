@@ -5,7 +5,7 @@
 		["Hit Dice:", "5d12+25 (78 hp)"],
 		["Initiative:", "+1"],
 		["Speed:", "30 ft. (6 squares)"],
-		["Armor Class:", "18 (+1 dex, +5 breastplate, +2 heavy shield), touch 11, flat-footed 17"],
+		["Armor Class:", "21 (+1 dex, +8 +3 adamantine breastplate, +2 heavy shield), touch 11, flat-footed 20"],
 		["Base Attack/Grapple:", "+6/+14"],
 		["Attack:", "Mwk huge longsword +10 melee (3d6+4/19-20&times;2) or ",
 			"Mwk huge heavy crossbow +6 ranged (3d8/19-20&times;2)"],
@@ -18,7 +18,7 @@
             "Shield Ally"],
 		["Saves:", "Fort +7, Ref +3, Will +4"],
 		["Abilities:", "Str 18, Dex 12, Con 20, Int 10, Wis 8, Cha 12"],
-		["Skills:", "Survival +1, Climb +7 (+3 with armor), Handle Animal +7, Ride +6 (+2 with armor), Sense Motive +1"],
+		["Skills:", "Survival +1, Climb +7 (+4 with armor), Handle Animal +7, Ride +6 (+3 with armor), Sense Motive +1"],
 		["Feats:", "Mounted Combat, Monkey Grip, Weapon Focus (longsword), Endurance, Power Attack"],
 		["Challenge Rating:", "6"],
 		["Languages:", "Common, Gol-Kaa"],
@@ -44,19 +44,20 @@
 	<div class="table-column">
 		<ap-enc-chart strength="18">
 			[
-				[48, 55, 30, 50],
+				[0, 15, 0, 0],
 				["Mwk huge longsword", 1, [0, 360, 0, 0], 16],
-				["Mwk breastplate", 1, [0, 200, 0, 0], 25],
+				["+3 adamantine breastplate", 1, [0, 19350, 0, 0], 25],
 				["Mwk heavy steel shield", 1, [0, 20, 0, 0], 15],
                 ["Mwk huge heavy crossbow", 1, [0, 500, 0, 0], 32],
                 ["Cold iron bolts", 9, [0, 0, 8, 0], 0.4],
                 ["Backpack", 1, [0, 2, 0, 0], 0],
+                ["Potion of Protection from Arrows (30hp)", 1, [0, 300, 0, 0], 0.5]
                 {
                     "name":"Mule",
                     "strength":16,
                     "multiplier":3,
                     "contents":[
-                        [0, 310, 0, 0],
+                        [70, 1610, 1830, 13550],
                         ["Mule", 1, [0, 8, 0, 0], 0],
                         ["Pack saddle", 1, [0, 5, 0, 0], 15],
                         ["Bedroll", 1, [0, 0, 1, 0], 5],

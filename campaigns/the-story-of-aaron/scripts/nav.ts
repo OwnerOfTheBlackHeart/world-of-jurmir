@@ -16,14 +16,18 @@ const aaronNav = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/bhintel.html', 'Bhintel Coboryn, Eldritch Trap', 'bhintel'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/characters/luta.html', 'Luta Dagdottir, Two Weapon Fighter/Rogue', 'luta'),
 
-    new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/anterin.html', 'Anterin Beltith, enslaved drow male', 'anterin'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/ereltha.html', 'Ereltha Tuin of House Duskryn', 'ereltha'),
-    new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/lydriia.html', 'Lydriia Blunduin, brainwashed drow cleric', 'lydriia'),
-    new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/charda.html', 'Charda Diliriy, Chione\'s Drow Slave', 'charda'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/signy.html', 'Signy Validottir, Oasis Wet Nurse', 'signy'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/ash-winfielde.html', 'Ash Wineielde, Captured Cult Abductor', 'ash-winfielde'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/dinzar.html', 'Dinzar Grifter, Pope of the Judges of Seablood', 'dinzar'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/white-skull-and-blackmane/white-skull.html', 'White Skull, Gnoll Exile', 'white-skull'),
+
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/slaves-of-aaron/anterin.html', 'Anterin Beltith, enslaved drow male', 'anterin'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/slaves-of-aaron/lydriia.html', 'Lydriia Blunduin, brainwashed drow cleric', 'lydriia'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/slaves-of-aaron/charda.html', 'Charda Diliriy, Chione\'s Drow Slave', 'charda'),
+
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/clerics-of-aaron/earna-ashworthe.html', 'Earna Ashworthe, Priestess of Aaron', 'earna-ashworthe'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/npcs/clerics-of-aaron/scarlett-bronsone.html', 'Scarlett Bronsone, Priestess of Aaron', 'scarlett-bronsone'),
 
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/lyrna/main.html', 'The Country of Lyrna', 'lyrna'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/locations/lyrna/ashborne.html', 'The Town of Ashborne', 'ashborne'),
@@ -86,6 +90,7 @@ const aaronNav = [
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/spellbooks/oasis-inquisitor.html', 'The Oasis Inquisitor\'s Spellbook', 'oasis-inquisitor-spellbook'),
 
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/guild-folder/missions.html', 'Guild Missions', 'aaron-guild-missions'),
+    new PageInfo(undefined, 'campaigns/the-story-of-aaron/guild-folder/completed-missions.html', 'Completed Guild Missions', 'aaron-completed-guild-missions'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/guild-folder/guild-members.html', 'Guild Members', 'aaron-guild-members'),
     new PageInfo(undefined, 'campaigns/the-story-of-aaron/guild-folder/oasis-servants.html', 'Guild Members', 'oasis-servants'),
 
@@ -100,4 +105,5 @@ const aaronNav = [
     new PageInfo(undefined, 'images/red-king-priest.jpg', '', 'red-king-priest-image'),
     new PageInfo(undefined, 'images/jennlinn.jpg', '', 'jennlinn-image'),
     new PageInfo(undefined, 'images/dinzar.jpg', '', 'dinzar-image'),
+    new PageInfo(undefined, 'images/scarlett-bronsone.jpg', '', 'scarlett-bronsone-image'),
 ];
