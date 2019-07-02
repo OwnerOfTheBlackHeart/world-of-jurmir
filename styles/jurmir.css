@@ -126,3 +126,10 @@ ap-image.character-picture
 ap-auth-container {
     font-style: italic;
 }
+
+.statBlock .headerRow {
+	text-align: center;
+	padding-top: 4px;
+	border-bottom: 1px solid black;
+	text-transform: uppercase;
+}

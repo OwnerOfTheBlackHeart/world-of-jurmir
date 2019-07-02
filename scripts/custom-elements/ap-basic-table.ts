@@ -62,6 +62,9 @@ class BasicTable extends HTMLElement
             {
                 switch (row[0])
                 {
+					case 'header':
+						this.table.appendChild(this.BuildHeaderRow(row));
+						break;
                     default:
                         this.table.appendChild(this.BuildNormalRow(row));
                 }
@@ -78,8 +81,22 @@ class BasicTable extends HTMLElement
         node.appendChild(Utilities.CreateData(row[1]));
 
         return node;
-    }
+	}
+	
+	BuildHeaderRow(row: string[])
+	{
+		let node = document.createElement('tr');
+		let header = Utilities.CreateHeader(row[1]);
 
+		this.CleanRow(row);
+		node.appendChild(header);
+		header.setAttribute('colspan', '2');
+		header.classList.add('headerRow');
+
+		return node;
+	}
+
+	// Compresses strings to allow for multiline rows in JSON
     CleanRow(row: string[])
     {
         for (let i = 2; i < row.length; i++)

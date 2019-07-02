@@ -33,6 +33,9 @@ class BasicTable extends HTMLElement {
             }
             for (let row of this.rows) {
                 switch (row[0]) {
+                    case 'header':
+                        this.table.appendChild(this.BuildHeaderRow(row));
+                        break;
                     default:
                         this.table.appendChild(this.BuildNormalRow(row));
                 }
@@ -44,6 +47,15 @@ class BasicTable extends HTMLElement {
         this.CleanRow(row);
         node.appendChild(Utilities.CreateHeader(row[0]));
         node.appendChild(Utilities.CreateData(row[1]));
+        return node;
+    }
+    BuildHeaderRow(row) {
+        let node = document.createElement('tr');
+        let header = Utilities.CreateHeader(row[1]);
+        this.CleanRow(row);
+        node.appendChild(header);
+        header.setAttribute('colspan', '2');
+        header.classList.add('headerRow');
         return node;
     }
     CleanRow(row) {

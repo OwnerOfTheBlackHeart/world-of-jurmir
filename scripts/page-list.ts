@@ -25,7 +25,9 @@ const pages = [
     new PageInfo(undefined, 'pantheon/lindo.html', 'Lindo, Sailor of the River Cain', 'lindo'),
     new PageInfo(undefined, 'pantheon/zigies.html', 'Zigies, the Clockwork God', 'zigies'),
     new PageInfo(undefined, 'pantheon/god-types.html', 'God Types', 'god-types'),
-    new PageInfo(undefined, 'pantheon/the-red-king.html', 'The Red King, Eater of Gods', 'red-king'),
+	new PageInfo(undefined, 'pantheon/the-red-king.html', 'The Red King, Eater of Gods', 'red-king'),
+
+    new PageInfo(undefined, 'pantheon/starfinder/fos.html', 'Fos, God of Community', 'fos'),
 
     new PageInfo(undefined, 'pantheon/history/creation-story.html', 'The Story of Creation', 'creation-story'),
     new PageInfo(undefined, 'pantheon/history/the-drow.html', 'How the Drow Came to Be', 'the-drow'),
