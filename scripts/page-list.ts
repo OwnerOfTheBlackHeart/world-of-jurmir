@@ -28,6 +28,7 @@ const pages = [
 	new PageInfo(undefined, 'pantheon/the-red-king.html', 'The Red King, Eater of Gods', 'red-king'),
 
     new PageInfo(undefined, 'pantheon/starfinder/fos.html', 'Fos, God of Community', 'fos'),
+    new PageInfo(undefined, 'pantheon/starfinder/hipha.html', 'Hipha, Goddess of Technology and Knowledge', 'hipha'),
 
     new PageInfo(undefined, 'pantheon/history/creation-story.html', 'The Story of Creation', 'creation-story'),
     new PageInfo(undefined, 'pantheon/history/the-drow.html', 'How the Drow Came to Be', 'the-drow'),
