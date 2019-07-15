@@ -20,7 +20,7 @@ const sbjNav = [
     new PageInfo(undefined, 'locations/jurmirian-zone/estifoa/main.html', 'Estifoa', 'estifoa'),
     new PageInfo(undefined, 'locations/jurmirian-zone/lyrna-2/main.html', 'Lyrna 2', 'lyrna-2'),
     new PageInfo(undefined, 'locations/expansion-zone/starblood/main.html', 'Starblood', 'starblood'),
-    new PageInfo(undefined, 'vehicles/the-x-saber.html', 'The X Saber', 'x-saber'),
+    new PageInfo(undefined, 'vehicles/x-saber.html', 'The X Saber', 'x-saber'),
     new PageInfo(undefined, 'vehicles/jurmirian-navy/named-ships/the-arx.html', 'The JMS Arx', 'the-arx'),
     new PageInfo(undefined, 'vehicles/jurmirian-navy/named-ships/the-dobbs.html', 'The JMS Dobbs', 'the-dobbs'),
     new PageInfo(undefined, 'vehicles/jurmirian-navy/named-ships/the-zita-lethos.html', 'The JMS Zita Lethos', 'the-zita-lethos'),

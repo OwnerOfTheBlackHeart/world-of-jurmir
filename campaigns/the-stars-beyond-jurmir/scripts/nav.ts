@@ -31,7 +31,7 @@ const sbjNav = [
 
 	new PageInfo(undefined, 'locations/expansion-zone/starblood/main.html', 'Starblood', 'starblood'),
 
-	new PageInfo(undefined, 'vehicles/the-x-saber.html', 'The X Saber', 'x-saber'),
+	new PageInfo(undefined, 'vehicles/x-saber.html', 'The X Saber', 'x-saber'),
 
 	new PageInfo(undefined, 'vehicles/jurmirian-navy/named-ships/the-arx.html', 'The JMS Arx', 'the-arx'),
     new PageInfo(undefined, 'vehicles/jurmirian-navy/named-ships/the-dobbs.html', 'The JMS Dobbs', 'the-dobbs'),
