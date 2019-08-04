@@ -24,6 +24,7 @@ const sbjNav = [
 	new PageInfo(undefined, 'locations/outer-colonies/ikenoz/main.html', 'Ikenoz', 'ikenoz'),
 	new PageInfo(undefined, 'locations/outer-colonies/ninus/main.html', 'The Ninus Solar System', 'ninus'),
 	new PageInfo(undefined, 'locations/outer-colonies/umexi/main.html', 'Umexi Monitoring Station', 'umexi'),
+	new PageInfo(undefined, 'locations/outer-colonies/marata/main.html', 'Marata, Moon of Bretheda', 'marata'),
 
 	new PageInfo(undefined, 'locations/jurmirian-zone/jurmir/main.html', 'Jurmir', 'jurmir'),
 	new PageInfo(undefined, 'locations/jurmirian-zone/estifoa/main.html', 'Estifoa', 'estifoa'),
