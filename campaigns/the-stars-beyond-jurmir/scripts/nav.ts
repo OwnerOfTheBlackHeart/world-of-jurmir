@@ -6,6 +6,7 @@ const nameStart = "sbj-";
 const sbjNav = [
     new PageInfo(undefined, 'main.html', 'The Stars Beyond Jurmir', 'main'),
     new PageInfo(undefined, 'notes.html', 'The Stars Beyond Jurmir Notes', 'notes'),
+    new PageInfo(undefined, 'timeline.html', 'The Stars Beyond Jurmir Timeline', 'timeline'),
 
     new PageInfo(undefined, 'enemies/drow/drow-fighter.html', 'Drow Fighter', 'drow-fighter'),
     new PageInfo(undefined, 'enemies/drow/drow-heavy-fighter.html', 'Drow Heavy Fighter', 'drow-heavy-fighter'),
