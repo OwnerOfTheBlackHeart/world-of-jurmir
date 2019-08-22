@@ -1,3 +1,12 @@
+Build object that allows for the making of sublists easily
+    {
+        "blah": 4,
+        "mark": {
+            "money": 1500,
+            "looks": 3
+        }
+    }
+
 Jurmir itself still remains
     The moon of Abuul is the primary human military base and a major part of Jurmir's defenses
 
