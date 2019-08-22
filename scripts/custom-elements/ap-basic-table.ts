@@ -1,6 +1,6 @@
 /// <reference path="../utilities.ts" />
 
-class BasicTable extends HTMLElement 
+class BasicTable extends HTMLElement
 {
     get characterTable()
     {
@@ -9,7 +9,7 @@ class BasicTable extends HTMLElement
 
     set characterTable(val)
     {
-        if (val) 
+        if (val)
         {
             this.setAttribute('character-table', '');
         }
@@ -23,7 +23,7 @@ class BasicTable extends HTMLElement
     table: HTMLTableElement;
     mainNode: HTMLElement;
 
-    constructor() 
+    constructor()
     {
         // Always call super first in constructor
         super();
@@ -40,7 +40,7 @@ class BasicTable extends HTMLElement
 
     connectedCallback()
     {
-        this.Render();        
+        this.Render();
     }
 
     Render()
@@ -82,7 +82,7 @@ class BasicTable extends HTMLElement
 
         return node;
 	}
-	
+
 	BuildHeaderRow(row: string[])
 	{
 		let node = document.createElement('tr');
