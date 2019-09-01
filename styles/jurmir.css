@@ -133,3 +133,7 @@ ap-auth-container {
 	border-bottom: 1px solid black;
 	text-transform: uppercase;
 }
+
+ul.circle, ul.circle li {
+    list-style-type: circle;
+}
