@@ -1,7 +1,7 @@
 /// <reference path="../../../scripts/page-info.ts" />
 
-const urlStart = "campaigns/the-stars-beyond-jurmir/";
-const nameStart = "sbj-";
+const sbjUrlStart = "campaigns/the-stars-beyond-jurmir/";
+const sbjNameStart = "sbj-";
 
 const sbjNav = [
     new PageInfo(undefined, "main.html", "The Stars Beyond Jurmir", "main"),
@@ -59,9 +59,9 @@ const sbjNav = [
 
 sbjNav.forEach(pageInfo =>
     {
-        if (!pageInfo.external) { pageInfo.url = urlStart + pageInfo.url; }
+        if (!pageInfo.external) { pageInfo.url = sbjUrlStart + pageInfo.url; }
 
-        pageInfo.name = nameStart + pageInfo.name;
+        pageInfo.name = sbjNameStart + pageInfo.name;
     }
 );
 

@@ -1,5 +1,5 @@
-const urlStart = "campaigns/the-stars-beyond-jurmir/";
-const nameStart = "sbj-";
+const sbjUrlStart = "campaigns/the-stars-beyond-jurmir/";
+const sbjNameStart = "sbj-";
 const sbjNav = [
     new PageInfo(undefined, "main.html", "The Stars Beyond Jurmir", "main"),
     new PageInfo(undefined, "notes.html", "The Stars Beyond Jurmir Notes", "notes"),
@@ -40,9 +40,9 @@ const sbjNav = [
 ];
 sbjNav.forEach(pageInfo => {
     if (!pageInfo.external) {
-        pageInfo.url = urlStart + pageInfo.url;
+        pageInfo.url = sbjUrlStart + pageInfo.url;
     }
-    pageInfo.name = nameStart + pageInfo.name;
+    pageInfo.name = sbjNameStart + pageInfo.name;
 });
 sbjNav.push(new PageInfo(undefined, "images/sbj-map.png", "", "sbj-map", true));
 //# sourceMappingURL=nav.js.map

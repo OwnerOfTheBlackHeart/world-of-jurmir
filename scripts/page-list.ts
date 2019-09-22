@@ -1,6 +1,7 @@
 /// <reference path="./page-info.ts" />
 /// <reference path="../campaigns/the-story-of-aaron/scripts/nav.ts" />
 /// <reference path="../campaigns/the-stars-beyond-jurmir/scripts/nav.ts" />
+/// <reference path="../campaigns/noble-rising/scripts/nav.ts" />
 
 const pages = [
     new PageInfo('home_button', 'home.html', 'Home', 'home'),
@@ -61,4 +62,4 @@ const pages = [
     new PageInfo(undefined, 'images/zigies.jpg', '', 'zigies-image'),
     new PageInfo(undefined, 'images/zigies-constructor.jpg', '', 'zigies-constructor-image'),
     new PageInfo(undefined, 'images/zoltan.png', '', 'zoltan-image'),
-].concat(aaronNav, sbjNav);
+].concat(aaronNav, sbjNav, nobleNav);
