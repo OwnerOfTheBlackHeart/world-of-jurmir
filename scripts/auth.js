@@ -71,7 +71,7 @@ class Auth {
 }
 const authList = Object.freeze([
     new Auth("GM", "my players will never see this", ["all"]),
-    new Auth("Cody", "Al1ce", ["cody", "luta", "huntsing-down-the-cult"]),
+    new Auth("Cody", "Al1ce", ["cody", "luta", "huntsing-down-the-cult", "nesserr-black-personality"]),
     new Auth("Dan", "Coolguy420", ["dan", "aaron-full"]),
 ]);
 //# sourceMappingURL=auth.js.map

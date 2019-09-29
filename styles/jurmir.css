@@ -5,7 +5,7 @@ p
     max-width: 750px;
 }
 
-.homebrew-list > li 
+.homebrew-list > li, .list > li 
 {
     list-style-type: disc;
     width: 80%;
@@ -13,7 +13,8 @@ p
     max-width: 750px;
 }
 
-.homebrew-list > li > ul > li
+.homebrew-list > li > ul > li,
+.list > li > ul > li
 {
     list-style-type: circle;
     width: 80%;
