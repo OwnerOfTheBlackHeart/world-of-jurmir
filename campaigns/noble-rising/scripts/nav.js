@@ -13,6 +13,9 @@ const nobleNav = [
     new PageInfo(undefined, "spellbooks/main.html", "Noble Rising Spellbooks", "spellbooks"),
     new PageInfo(undefined, "enemies/bandits/human-commoner.html", "Human Commoner", "human-commoner"),
     new PageInfo(undefined, "enemies/bandits/catfolk-adept.html", "Catfolk Adept", "catfolk-adept"),
+    new PageInfo(undefined, "images/fang-at-desk.jpg", "", "fang-img", true),
+    new PageInfo(undefined, "http://www.d20srd.org/srd/monsters/elf.htm", "", "srd-elf", true),
+    new PageInfo(undefined, "http://www.d20srd.org/srd/equipment/goodsAndServices.htm#thunderstone", "", "srd-tunderstone", true),
 ];
 nobleNav.forEach(pageInfo => {
     if (!pageInfo.external) {
@@ -20,5 +23,4 @@ nobleNav.forEach(pageInfo => {
     }
     pageInfo.name = nobleNameStart + pageInfo.name;
 });
-nobleNav.push(new PageInfo(undefined, "images/fang-at-desk.jpg", "", "noble-fang-img", true));
 //# sourceMappingURL=nav.js.map
