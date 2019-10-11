@@ -49,5 +49,7 @@ const pages = [
     new PageInfo(undefined, 'images/zigies.jpg', '', 'zigies-image'),
     new PageInfo(undefined, 'images/zigies-constructor.jpg', '', 'zigies-constructor-image'),
     new PageInfo(undefined, 'images/zoltan.png', '', 'zoltan-image'),
+    new PageInfo(undefined, 'images/the-red-king.jpeg', '', 'the-red-king-image'),
+    new PageInfo(undefined, 'images/kyranious.jpg', '', 'kyranious-image'),
 ].concat(aaronNav, sbjNav, nobleNav);
 //# sourceMappingURL=page-list.js.map

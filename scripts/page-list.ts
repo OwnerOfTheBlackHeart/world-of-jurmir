@@ -48,7 +48,6 @@ const pages = [
     new PageInfo(undefined, 'http://www.d20srd.org/srd/monsters/elf.htm', '', 'drow-traits', true),
     new PageInfo(undefined, 'http://www.d20srd.org/srd/classes/ranger.htm', '', '3.5-ranger-page', true),
 
-
     new PageInfo(undefined, 'images/feph.jpg', '', 'feph-image'),
     new PageInfo(undefined, 'images/fephinite-general.jpg', '', 'fephinite-general-image'),
     new PageInfo(undefined, 'images/fephinite-inquisitor.jpg', '', 'fephinite-inquisitor-image'),
@@ -62,4 +61,6 @@ const pages = [
     new PageInfo(undefined, 'images/zigies.jpg', '', 'zigies-image'),
     new PageInfo(undefined, 'images/zigies-constructor.jpg', '', 'zigies-constructor-image'),
     new PageInfo(undefined, 'images/zoltan.png', '', 'zoltan-image'),
+    new PageInfo(undefined, 'images/the-red-king.jpeg', '', 'the-red-king-image'),
+    new PageInfo(undefined, 'images/kyranious.jpg', '', 'kyranious-image'),
 ].concat(aaronNav, sbjNav, nobleNav);
