@@ -19,17 +19,15 @@ class BasicTable extends HTMLElement
         }
     }
 
-    rows: string[][];
+    rows: string[][] = [];
     table: HTMLTableElement;
     mainNode: HTMLElement;
 
     constructor()
     {
         // Always call super first in constructor
-        super();
-
-        this.rows = [];
-        this.table;
+		super();
+		
         this.mainNode = this;
 
         if (Utilities.IsGoodString(this.innerHTML))

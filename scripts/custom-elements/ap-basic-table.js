@@ -1,4 +1,12 @@
 class BasicTable extends HTMLElement {
+    constructor() {
+        super();
+        this.rows = [];
+        this.mainNode = this;
+        if (Utilities.IsGoodString(this.innerHTML)) {
+            this.rows = Utilities.StringToObject(this.innerHTML);
+        }
+    }
     get characterTable() {
         return this.hasAttribute('character-table');
     }
@@ -8,15 +16,6 @@ class BasicTable extends HTMLElement {
         }
         else {
             this.removeAttribute('character-table');
-        }
-    }
-    constructor() {
-        super();
-        this.rows = [];
-        this.table;
-        this.mainNode = this;
-        if (Utilities.IsGoodString(this.innerHTML)) {
-            this.rows = Utilities.StringToObject(this.innerHTML);
         }
     }
     connectedCallback() {
