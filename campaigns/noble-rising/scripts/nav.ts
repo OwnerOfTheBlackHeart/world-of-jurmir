@@ -17,6 +17,8 @@ const nobleNav = [
 
 	new PageInfo(undefined, "plotlines/main.html", "Noble Rising Plotline Index", "plotline-index"),
 
+	new PageInfo(undefined, "plotlines/missions/hunting-down-goblins-in-the-fields.html", "Hunting Down the Goblins in the Fields", "hunting-down-goblins-in-the-fields"),
+
 	new PageInfo(undefined, "spellbooks/main.html", "Noble Rising Spellbooks", "spellbooks"),
 	new PageInfo(undefined, "spellbooks/yasrena-spellbook.html", "Yasrena's Spellbook", "yasrena-spellbook"),
 

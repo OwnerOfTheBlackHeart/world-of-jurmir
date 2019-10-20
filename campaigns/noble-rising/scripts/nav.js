@@ -10,6 +10,7 @@ const nobleNav = [
     new PageInfo(undefined, "locations/taaira-ruzara/main.html", "The County of Taaira Ruzara", "taaira-ruzara"),
     new PageInfo(undefined, "locations/taaira-ruzara/desserr.html", "Desserr, Capital City of Taaira Ruzara", "desserr"),
     new PageInfo(undefined, "plotlines/main.html", "Noble Rising Plotline Index", "plotline-index"),
+    new PageInfo(undefined, "plotlines/missions/hunting-down-goblins-in-the-fields.html", "Hunting Down the Goblins in the Fields", "hunting-down-goblins-in-the-fields"),
     new PageInfo(undefined, "spellbooks/main.html", "Noble Rising Spellbooks", "spellbooks"),
     new PageInfo(undefined, "spellbooks/yasrena-spellbook.html", "Yasrena's Spellbook", "yasrena-spellbook"),
     new PageInfo(undefined, "enemies/bandits/human-commoner.html", "Human Commoner", "human-commoner"),
