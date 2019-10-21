@@ -244,10 +244,6 @@ table.layout td {
 	white-space: normal;
 }
 
-ol li ol li {
-	list-style-type: lower-alpha;
-}
-
 li {
 	margin-top: 5px;
 }
