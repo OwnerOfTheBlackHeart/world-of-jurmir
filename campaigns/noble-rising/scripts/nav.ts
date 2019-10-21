@@ -29,11 +29,13 @@ const nobleNav = [
 	new PageInfo(undefined, "npcs/reth-mailynath.html", "Reth Mailynath, Adamantine Slayer", "reth-mailynath"),
 	new PageInfo(undefined, "npcs/truzk.html", "Truzk, Ancient Lizardfolk", "truzk"),
 	new PageInfo(undefined, "npcs/yasrena.html", "Yasrena Telenna, Drow Escapee", "yasrena"),
+	new PageInfo(undefined, "npcs/camilia.html", "Camilia Famia, Wild Beauty", "camilia"),
 
 	new PageInfo(undefined, "images/fang-at-desk.jpg", "", "fang-img", true),
 	new PageInfo(undefined, "images/mysterious-stranger.jpg", "", "mysterious-stranger-img", true),
 	new PageInfo(undefined, "images/truzk.jpg", "", "truzk-img", true),
 	new PageInfo(undefined, "images/yasrena.jpg", "", "yasrena-img", true),
+	new PageInfo(undefined, "images/camilia.png", "", "camilia-img", true),
 	new PageInfo(undefined, "http://www.d20srd.org/srd/monsters/elf.htm", "", "srd-elf", true),
 	new PageInfo(undefined, "http://www.d20srd.org/srd/equipment/goodsAndServices.htm#thunderstone", "", "srd-tunderstone", true),
 ];
