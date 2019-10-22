@@ -31,6 +31,8 @@ const nobleNav = [
 	new PageInfo(undefined, "npcs/yasrena.html", "Yasrena Telenna, Drow Escapee", "yasrena"),
 	new PageInfo(undefined, "npcs/camilia.html", "Camilia Famia, Wild Beauty", "camilia"),
 
+	new PageInfo(undefined, "npcs/animal-companions/cackles.html", "Cackles the Spotted Hyena", "cackles"),
+
 	new PageInfo(undefined, "images/fang-at-desk.jpg", "", "fang-img", true),
 	new PageInfo(undefined, "images/mysterious-stranger.jpg", "", "mysterious-stranger-img", true),
 	new PageInfo(undefined, "images/truzk.jpg", "", "truzk-img", true),
