@@ -1,4 +1,5 @@
-class SpellbookData {
+import * as Utilities from "../utilities.js";
+export class SpellbookData {
     constructor() {
         this.pagesUsed = 0;
         this.spellLevels = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
@@ -13,7 +14,7 @@ class SpellbookData {
         }
     }
 }
-class SpellbookTable extends HTMLElement {
+export class SpellbookTable extends HTMLElement {
     constructor() {
         super();
         this.spells = [[], [], [], [], [], [], [], [], [], []];
@@ -32,13 +33,13 @@ class SpellbookTable extends HTMLElement {
             for (let row of this.rows) {
                 this.spells[row[1]].push(row);
             }
-            let table = document.createElement('table');
+            let table = document.createElement("table");
             this.mainNode.appendChild(table);
-            let pageNumberNode = document.createElement('td');
+            let pageNumberNode = document.createElement("td");
             this.BuildPagesUsed(table, pageNumberNode);
             for (let spellLevel of this.spells) {
                 if (spellLevel.length > 0) {
-                    table = document.createElement('table');
+                    table = document.createElement("table");
                     table.className = "spellbook-table";
                     this.mainNode.appendChild(table);
                     this.BuildHeader(table, spellLevel[0][1]);
@@ -49,27 +50,27 @@ class SpellbookTable extends HTMLElement {
         }
     }
     BuildPagesUsed(table, pageNumberNode) {
-        let node = document.createElement('tr');
-        node.appendChild(Utilities.CreateHeader('Total Pages'));
+        let node = document.createElement("tr");
+        node.appendChild(Utilities.CreateHeader("Total Pages"));
         node.appendChild(pageNumberNode);
         table.appendChild(node);
     }
     BuildHeader(table, spellLevel) {
-        let node = document.createElement('tr');
-        let spellLevelNode = document.createElement('th');
+        let node = document.createElement("tr");
+        let spellLevelNode = document.createElement("th");
         spellLevelNode.innerHTML = "Spell Level " + spellLevel;
         spellLevelNode.setAttribute("colspan", "2");
         node.appendChild(spellLevelNode);
         table.appendChild(node);
-        node = document.createElement('tr');
-        node.appendChild(Utilities.CreateHeader('Spell'));
-        node.appendChild(Utilities.CreateHeader('Spell Level'));
+        node = document.createElement("tr");
+        node.appendChild(Utilities.CreateHeader("Spell"));
+        node.appendChild(Utilities.CreateHeader("Spell Level"));
         table.appendChild(node);
     }
     BuildBody(table, rows, spellbookData) {
         let node;
         for (let row of rows) {
-            node = document.createElement('tr');
+            node = document.createElement("tr");
             node.appendChild(Utilities.CreateData(row[0]));
             node.appendChild(Utilities.CreateData(row[1]));
             table.appendChild(node);
@@ -77,5 +78,5 @@ class SpellbookTable extends HTMLElement {
         }
     }
 }
-customElements.define('ap-spellbook-table', SpellbookTable);
+customElements.define("ap-spellbook-table", SpellbookTable);
 //# sourceMappingURL=ap-spellbook-table.js.map

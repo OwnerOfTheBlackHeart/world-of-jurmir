@@ -1,201 +1,192 @@
-class Time 
-{
-    day: number;
-    month: number;
-    year: number;
+export class Time {
+	day: number;
+	month: number;
+	year: number;
 
-    constructor(day?: number, month?: number, year?: number)
-    {
-        if (day != undefined) { this.day = day; }
-        else { this.day = 0; }
+	constructor(day?: number, month?: number, year?: number) {
+		if (day != undefined) {
+			this.day = day;
+		} else {
+			this.day = 0;
+		}
 
-        if (month != undefined) { this.month = month; }
-        else { this.month = 0; }
+		if (month != undefined) {
+			this.month = month;
+		} else {
+			this.month = 0;
+		}
 
-        if (year != undefined) { this.year = year; }
-        else { this.year = 0; }
-    }
+		if (year != undefined) {
+			this.year = year;
+		} else {
+			this.year = 0;
+		}
+	}
 
-    toString(doesIncludeSeason = false)
-    {
-        let toReturn = "";
-        let tempTime = this.DistributeDays();
-        let month = TimeRef.months[tempTime.month];
-        let numeralAbbreviation = " ";
-        
-        if ([10, 11, 12].some(day => day === tempTime.day))
-        {
-            numeralAbbreviation = "th";
-        }
-        else
-        {
-            switch(tempTime.day % 10) 
-            {
-                case 0:
-                    numeralAbbreviation = "st";
-                    break;
-                case 1:
-                    numeralAbbreviation = "nd";
-                    break;
-                case 2:
-                    numeralAbbreviation = "rd";
-                    break;
-                default:
-                    numeralAbbreviation = "th";
-            }
-        }
+	toString(doesIncludeSeason = false) {
+		let toReturn = "";
+		let tempTime = this.DistributeDays();
+		let month = TimeRef.months[tempTime.month];
+		let numeralAbbreviation = " ";
 
-        toReturn += month.name + " ";
-        toReturn += (tempTime.day + 1) + numeralAbbreviation + ", ";
-        toReturn += tempTime.year;
+		if ([10, 11, 12].some(day => day === tempTime.day)) {
+			numeralAbbreviation = "th";
+		} else {
+			switch (tempTime.day % 10) {
+				case 0:
+					numeralAbbreviation = "st";
+					break;
+				case 1:
+					numeralAbbreviation = "nd";
+					break;
+				case 2:
+					numeralAbbreviation = "rd";
+					break;
+				default:
+					numeralAbbreviation = "th";
+			}
+		}
 
-        if (doesIncludeSeason)
-        {
-            toReturn += ": " + month.season;
-        }
+		toReturn += month.name + " ";
+		toReturn += tempTime.day + 1 + numeralAbbreviation + ", ";
+		toReturn += tempTime.year;
 
-        return toReturn;
-    }
+		if (doesIncludeSeason) {
+			toReturn += ": " + month.season;
+		}
 
-    Add(time2: Time)
-    {
-        return Time.Add(this, time2);
-    }
+		return toReturn;
+	}
 
-    Subtract(time2: Time)
-    {
-        return Time.Subtract(this, time2);
-    }
+	Add(time2: Time) {
+		return Time.Add(this, time2);
+	}
 
-    ToDays()
-    {
-        return Time.ToDays(this);
-    }
+	Subtract(time2: Time) {
+		return Time.Subtract(this, time2);
+	}
 
-    DistributeDays()
-    {
-        let tempTime = new Time();
-        let days = this.ToDays();
-        let multiplier = 0;
+	ToDays() {
+		return Time.ToDays(this);
+	}
 
-        // Years
-        multiplier = Time.YearsToDays(1);
-        tempTime.year = Math.floor(days / multiplier);
-        days -= multiplier * tempTime.year;
+	DistributeDays() {
+		let tempTime = new Time();
+		let days = this.ToDays();
+		let multiplier = 0;
 
-        // Months
-        multiplier = Time.MonthsToDays(1);
-        tempTime.month = Math.floor(days / multiplier);
-        days -= multiplier * tempTime.month;
-        tempTime.day = days;
+		// Years
+		multiplier = Time.YearsToDays(1);
+		tempTime.year = Math.floor(days / multiplier);
+		days -= multiplier * tempTime.year;
 
-        return tempTime;
-    }
+		// Months
+		multiplier = Time.MonthsToDays(1);
+		tempTime.month = Math.floor(days / multiplier);
+		days -= multiplier * tempTime.month;
+		tempTime.day = days;
 
-    static Add(time1: Time, time2: Time)
-    {
-        let toReturn = new Time();
-        toReturn.day = time1.ToDays() + time2.ToDays();
+		return tempTime;
+	}
 
-        toReturn = toReturn.DistributeDays();
+	static Add(time1: Time, time2: Time) {
+		let toReturn = new Time();
+		toReturn.day = time1.ToDays() + time2.ToDays();
 
-        return toReturn;
-    }
+		toReturn = toReturn.DistributeDays();
 
-    static Subtract(time1: Time, time2: Time)
-    {
-        let toReturn = new Time();
-        toReturn.day = time1.ToDays() - time2.ToDays();
+		return toReturn;
+	}
 
-        toReturn = toReturn.DistributeDays();        
+	static Subtract(time1: Time, time2: Time) {
+		let toReturn = new Time();
+		toReturn.day = time1.ToDays() - time2.ToDays();
 
-        return toReturn;
-    }
+		toReturn = toReturn.DistributeDays();
 
-    static ToDays(time: Time)
-    {
-        let tempTime = Time.CleanTime(time);
-        let toReturn = tempTime.day;
+		return toReturn;
+	}
 
-        toReturn += Time.YearsToDays(tempTime.year);
-        toReturn += Time.MonthsToDays(tempTime.month);
+	static ToDays(time: Time) {
+		let tempTime = Time.CleanTime(time);
+		let toReturn = tempTime.day;
 
-        return toReturn;
-    }
+		toReturn += Time.YearsToDays(tempTime.year);
+		toReturn += Time.MonthsToDays(tempTime.month);
 
-    static WeeksToDays(weeks: number)
-    {
-        return weeks * TimeRef.daysPerWeek;
-    }
+		return toReturn;
+	}
 
-    static MonthsToDays(months: number)
-    {
-        return Time.WeeksToDays(months * TimeRef.weeksPerMonth);
-    }
+	static WeeksToDays(weeks: number) {
+		return weeks * TimeRef.daysPerWeek;
+	}
 
-    static YearsToMonths(years: number)
-    {
-        return years * TimeRef.monthsPerYear;
-    }
+	static MonthsToDays(months: number) {
+		return Time.WeeksToDays(months * TimeRef.weeksPerMonth);
+	}
 
-    static YearsToDays(years: number)
-    {
-        return Time.MonthsToDays(Time.YearsToMonths(years));
-    }
+	static YearsToMonths(years: number) {
+		return years * TimeRef.monthsPerYear;
+	}
 
-    static CleanTime(time: Time)
-    {
-        let toReturn = new Time();
+	static YearsToDays(years: number) {
+		return Time.MonthsToDays(Time.YearsToMonths(years));
+	}
 
-        toReturn.day = Math.max(time.day, 0);
-        toReturn.month = Math.max(time.month, 0);
-        toReturn.year = Math.max(time.year, 0);
+	static CleanTime(time: Time) {
+		let toReturn = new Time();
 
-        return toReturn;
-    }
+		toReturn.day = Math.max(time.day, 0);
+		toReturn.month = Math.max(time.month, 0);
+		toReturn.year = Math.max(time.year, 0);
+
+		return toReturn;
+	}
 }
 
-enum Season
-{
-    Summer = "summer",
-    Spring = "spring",
-    Fall = "fall",
-    Winter = "winter"
+export enum Season {
+	Summer = "summer",
+	Spring = "spring",
+	Fall = "fall",
+	Winter = "winter"
 }
 
-class Month
-{
-    name: string;
-    position: number;
-    season: Season;
+export class Month {
+	name: string;
+	position: number;
+	season: Season;
 
-    constructor(name: string, position: number, season: Season)
-    {
-        this.name = name;
-        this.position = position;
-        this.season = season;
-    }
+	constructor(name: string, position: number, season: Season) {
+		this.name = name;
+		this.position = position;
+		this.season = season;
+	}
 
-    static readonly Kyrious = new Month('Kyrious', 0, Season.Winter);
-    static readonly Sith = new Month('Sith', 1, Season.Winter);
-    static readonly Fephun = new Month('Fephun', 2, Season.Spring);
-    static readonly Orthia = new Month('Orthia', 3, Season.Spring);
-    static readonly Kriotzous = new Month('Kriotzous', 4, Season.Spring);
-    static readonly Durnio = new Month('Durnio', 5, Season.Summer);
-    static readonly Zolter = new Month('Zolter', 6, Season.Summer);
-    static readonly Hrefia = new Month('Hrefia', 7, Season.Fall);
-    static readonly Lagosa = new Month('Lagosa', 8, Season.Fall);
+	static readonly Kyrious = new Month("Kyrious", 0, Season.Winter);
+	static readonly Sith = new Month("Sith", 1, Season.Winter);
+	static readonly Fephun = new Month("Fephun", 2, Season.Spring);
+	static readonly Orthia = new Month("Orthia", 3, Season.Spring);
+	static readonly Kriotzous = new Month("Kriotzous", 4, Season.Spring);
+	static readonly Durnio = new Month("Durnio", 5, Season.Summer);
+	static readonly Zolter = new Month("Zolter", 6, Season.Summer);
+	static readonly Hrefia = new Month("Hrefia", 7, Season.Fall);
+	static readonly Lagosa = new Month("Lagosa", 8, Season.Fall);
 }
 
-class TimeRef 
-{
-    static readonly daysPerWeek = 7;
-    static readonly weeksPerMonth = 4;
-    static readonly monthsPerYear = 9;
+export class TimeRef {
+	static readonly daysPerWeek = 7;
+	static readonly weeksPerMonth = 4;
+	static readonly monthsPerYear = 9;
 
-    static readonly months = [
-        Month.Kyrious, Month.Sith, Month.Fephun,
-        Month.Orthia, Month.Kriotzous, Month.Durnio,
-        Month.Zolter, Month.Hrefia, Month.Lagosa
-    ]; 
+	static readonly months = [
+		Month.Kyrious,
+		Month.Sith,
+		Month.Fephun,
+		Month.Orthia,
+		Month.Kriotzous,
+		Month.Durnio,
+		Month.Zolter,
+		Month.Hrefia,
+		Month.Lagosa
+	];
 }

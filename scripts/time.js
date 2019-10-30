@@ -1,4 +1,4 @@
-class Time {
+export class Time {
     constructor(day, month, year) {
         if (day != undefined) {
             this.day = day;
@@ -43,7 +43,7 @@ class Time {
             }
         }
         toReturn += month.name + " ";
-        toReturn += (tempTime.day + 1) + numeralAbbreviation + ", ";
+        toReturn += tempTime.day + 1 + numeralAbbreviation + ", ";
         toReturn += tempTime.year;
         if (doesIncludeSeason) {
             toReturn += ": " + month.season;
@@ -111,37 +111,43 @@ class Time {
         return toReturn;
     }
 }
-var Season;
+export var Season;
 (function (Season) {
     Season["Summer"] = "summer";
     Season["Spring"] = "spring";
     Season["Fall"] = "fall";
     Season["Winter"] = "winter";
 })(Season || (Season = {}));
-class Month {
+export class Month {
     constructor(name, position, season) {
         this.name = name;
         this.position = position;
         this.season = season;
     }
 }
-Month.Kyrious = new Month('Kyrious', 0, Season.Winter);
-Month.Sith = new Month('Sith', 1, Season.Winter);
-Month.Fephun = new Month('Fephun', 2, Season.Spring);
-Month.Orthia = new Month('Orthia', 3, Season.Spring);
-Month.Kriotzous = new Month('Kriotzous', 4, Season.Spring);
-Month.Durnio = new Month('Durnio', 5, Season.Summer);
-Month.Zolter = new Month('Zolter', 6, Season.Summer);
-Month.Hrefia = new Month('Hrefia', 7, Season.Fall);
-Month.Lagosa = new Month('Lagosa', 8, Season.Fall);
-class TimeRef {
+Month.Kyrious = new Month("Kyrious", 0, Season.Winter);
+Month.Sith = new Month("Sith", 1, Season.Winter);
+Month.Fephun = new Month("Fephun", 2, Season.Spring);
+Month.Orthia = new Month("Orthia", 3, Season.Spring);
+Month.Kriotzous = new Month("Kriotzous", 4, Season.Spring);
+Month.Durnio = new Month("Durnio", 5, Season.Summer);
+Month.Zolter = new Month("Zolter", 6, Season.Summer);
+Month.Hrefia = new Month("Hrefia", 7, Season.Fall);
+Month.Lagosa = new Month("Lagosa", 8, Season.Fall);
+export class TimeRef {
 }
 TimeRef.daysPerWeek = 7;
 TimeRef.weeksPerMonth = 4;
 TimeRef.monthsPerYear = 9;
 TimeRef.months = [
-    Month.Kyrious, Month.Sith, Month.Fephun,
-    Month.Orthia, Month.Kriotzous, Month.Durnio,
-    Month.Zolter, Month.Hrefia, Month.Lagosa
+    Month.Kyrious,
+    Month.Sith,
+    Month.Fephun,
+    Month.Orthia,
+    Month.Kriotzous,
+    Month.Durnio,
+    Month.Zolter,
+    Month.Hrefia,
+    Month.Lagosa
 ];
 //# sourceMappingURL=time.js.map

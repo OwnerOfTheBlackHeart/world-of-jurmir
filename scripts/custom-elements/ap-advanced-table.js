@@ -1,4 +1,5 @@
-class AdvancedTable extends HTMLElement {
+import * as Utilities from "../utilities.js";
+export class AdvancedTable extends HTMLElement {
     constructor() {
         super();
         this.rows = [];
@@ -8,14 +9,14 @@ class AdvancedTable extends HTMLElement {
         }
     }
     get characterTable() {
-        return this.hasAttribute('character-table');
+        return this.hasAttribute("character-table");
     }
     set characterTable(val) {
         if (val) {
-            this.setAttribute('character-table', '');
+            this.setAttribute("character-table", "");
         }
         else {
-            this.removeAttribute('character-table');
+            this.removeAttribute("character-table");
         }
     }
     connectedCallback() {
@@ -24,14 +25,14 @@ class AdvancedTable extends HTMLElement {
     Render() {
         this.innerHTML = "";
         if (this.rows.length > 0) {
-            this.table = document.createElement('table');
+            this.table = document.createElement("table");
             this.mainNode.appendChild(this.table);
             if (this.characterTable) {
-                this.table.setAttribute('class', 'statBlock');
-                this.table.setAttribute('cellspacing', '0');
+                this.table.setAttribute("class", "statBlock");
+                this.table.setAttribute("cellspacing", "0");
             }
             this.rows.forEach(row => {
-                const tableRow = document.createElement('tr');
+                const tableRow = document.createElement("tr");
                 this.table.appendChild(tableRow);
                 row.forEach(field => {
                     tableRow.appendChild(this.BuildCell(field));
@@ -61,5 +62,5 @@ class AdvancedTable extends HTMLElement {
         return cell;
     }
 }
-customElements.define('ap-advanced-table', AdvancedTable);
+customElements.define("ap-advanced-table", AdvancedTable);
 //# sourceMappingURL=ap-advanced-table.js.map

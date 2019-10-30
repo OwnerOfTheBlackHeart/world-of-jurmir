@@ -1,26 +1,31 @@
-class LinkButton extends HTMLElement {
-    static get observedAttributes() { return ['linkName', 'disabled']; }
-    get linkName() {
-        return this.getAttribute('linkName');
-    }
-    set linkName(val) {
-        this.setAttribute('linkName', val);
-    }
-    get disabled() {
-        return this.hasAttribute('disabled');
-    }
-    set disabled(val) {
-        if (val) {
-            this.setAttribute('disabled', '');
-        }
-        else {
-            this.removeAttribute('disabled');
-        }
-    }
+import { PageInfo } from "../page-info.js";
+import { SetHashByPageInfo } from "../master.js";
+import { GetPageInfoFromName } from "../page-list.js";
+export class LinkButton extends HTMLElement {
     constructor() {
         super();
         this.link;
         this.pageInfo;
+    }
+    static get observedAttributes() {
+        return ["linkName", "disabled"];
+    }
+    get linkName() {
+        return this.getAttribute("linkName");
+    }
+    set linkName(val) {
+        this.setAttribute("linkName", val);
+    }
+    get disabled() {
+        return this.hasAttribute("disabled");
+    }
+    set disabled(val) {
+        if (val) {
+            this.setAttribute("disabled", "");
+        }
+        else {
+            this.removeAttribute("disabled");
+        }
     }
     click() {
         if (PageInfo.IsInternalPage(this.pageInfo)) {
@@ -28,9 +33,9 @@ class LinkButton extends HTMLElement {
         }
     }
     connectedCallback() {
-        this.addEventListener('click', this.click);
+        this.addEventListener("click", this.click);
         let innerData = this.innerHTML;
-        this.link = document.createElement('a');
+        this.link = document.createElement("a");
         this.link.innerHTML = innerData;
         this.UpdateLink();
         this.innerHTML = "";
@@ -44,7 +49,7 @@ class LinkButton extends HTMLElement {
         }
     }
     UpdateLink() {
-        this.pageInfo = PageInfo.GetPageInfoFromName(this.linkName);
+        this.pageInfo = GetPageInfoFromName(this.linkName);
         if (this.pageInfo != undefined) {
             if (this.pageInfo.external) {
                 this.SetExternalLink(this.pageInfo.url);
@@ -58,15 +63,15 @@ class LinkButton extends HTMLElement {
         }
     }
     SetExternalLink(url) {
-        this.link.setAttribute('href', url);
-        this.link.setAttribute('target', '_blank');
-        this.link.setAttribute('rel', 'external');
+        this.link.setAttribute("href", url);
+        this.link.setAttribute("target", "_blank");
+        this.link.setAttribute("rel", "external");
     }
     SetInternalLink(url) {
-        this.link.setAttribute('href', 'index.html#' + url);
-        this.link.setAttribute('target', '_self');
-        this.link.removeAttribute('rel');
+        this.link.setAttribute("href", "index.html#" + url);
+        this.link.setAttribute("target", "_self");
+        this.link.removeAttribute("rel");
     }
 }
-customElements.define('ap-link-button', LinkButton);
+customElements.define("ap-link-button", LinkButton);
 //# sourceMappingURL=ap-link-button.js.map

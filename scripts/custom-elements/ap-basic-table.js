@@ -1,3 +1,4 @@
+import * as Utilities from "../utilities.js";
 class BasicTable extends HTMLElement {
     constructor() {
         super();
@@ -8,14 +9,14 @@ class BasicTable extends HTMLElement {
         }
     }
     get characterTable() {
-        return this.hasAttribute('character-table');
+        return this.hasAttribute("character-table");
     }
     set characterTable(val) {
         if (val) {
-            this.setAttribute('character-table', '');
+            this.setAttribute("character-table", "");
         }
         else {
-            this.removeAttribute('character-table');
+            this.removeAttribute("character-table");
         }
     }
     connectedCallback() {
@@ -24,15 +25,15 @@ class BasicTable extends HTMLElement {
     Render() {
         this.innerHTML = "";
         if (this.rows.length > 0) {
-            this.table = document.createElement('table');
+            this.table = document.createElement("table");
             this.mainNode.appendChild(this.table);
             if (this.characterTable) {
-                this.table.setAttribute('class', 'statBlock');
-                this.table.setAttribute('cellspacing', '0');
+                this.table.setAttribute("class", "statBlock");
+                this.table.setAttribute("cellspacing", "0");
             }
             for (let row of this.rows) {
                 switch (row[0]) {
-                    case 'header':
+                    case "header":
                         this.table.appendChild(this.BuildHeaderRow(row));
                         break;
                     default:
@@ -42,26 +43,26 @@ class BasicTable extends HTMLElement {
         }
     }
     BuildNormalRow(row) {
-        let node = document.createElement('tr');
+        let node = document.createElement("tr");
         this.CleanRow(row);
         node.appendChild(Utilities.CreateHeader(row[0]));
         node.appendChild(Utilities.CreateData(row[1]));
         return node;
     }
     BuildHeaderRow(row) {
-        let node = document.createElement('tr');
+        let node = document.createElement("tr");
         let header = Utilities.CreateHeader(row[1]);
         this.CleanRow(row);
         node.appendChild(header);
-        header.setAttribute('colspan', '2');
-        header.classList.add('headerRow');
+        header.setAttribute("colspan", "2");
+        header.classList.add("headerRow");
         return node;
     }
     CleanRow(row) {
         for (let i = 2; i < row.length; i++) {
-            row[1] = row[1].concat(' ', row[i]);
+            row[1] = row[1].concat(" ", row[i]);
         }
     }
 }
-customElements.define('ap-basic-table', BasicTable);
+customElements.define("ap-basic-table", BasicTable);
 //# sourceMappingURL=ap-basic-table.js.map

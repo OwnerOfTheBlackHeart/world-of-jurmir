@@ -1,84 +1,72 @@
-/// <reference path="../auth.ts" />
+import { Auth } from "../auth.js";
 
 const AuthDisplayBaseString = Object.freeze("Welcome ");
 const AuthDisplayNoPermissionsString = Object.freeze("UNDEFINED USER");
 const AuthDisplayRemovePermissionsString = Object.freeze("Deauthorize");
 
-class AuthDisplay extends HTMLElement 
-{
-    displaySpan: HTMLSpanElement;
+export class AuthDisplay extends HTMLElement {
+	displaySpan: HTMLSpanElement;
 
-    constructor() 
-    {
-        // Always call super first in constructor
-        super();
-        AuthDisplayContainers.push(this);
-    }
+	constructor() {
+		// Always call super first in constructor
+		super();
+		AuthDisplayContainers.push(this);
+	}
 
-    connectedCallback()
-    {
-        this.Render();
-    }
+	connectedCallback() {
+		this.Render();
+	}
 
-    disconnectedCallback()
-    {
-        AuthDisplayContainers = AuthDisplayContainers.filter(display => display != this);
-    }
+	disconnectedCallback() {
+		AuthDisplayContainers = AuthDisplayContainers.filter(display => display != this);
+	}
 
-    Render() 
-    {
-        this.displaySpan = undefined;
-        this.innerHTML = "";
-        const textSpanNode = document.createElement('span');
-        textSpanNode.className = "permission"
-        textSpanNode.innerHTML = AuthDisplayBaseString.substr(0);
-        this.appendChild(textSpanNode);
-        
-        const displaySpanNode = document.createElement('span');
-        displaySpanNode.className = "username permission";
-        this.displaySpan = displaySpanNode;
-        this.appendChild(displaySpanNode);
+	Render() {
+		this.displaySpan = undefined;
+		this.innerHTML = "";
+		const textSpanNode = document.createElement("span");
+		textSpanNode.className = "permission";
+		textSpanNode.innerHTML = AuthDisplayBaseString.substr(0);
+		this.appendChild(textSpanNode);
 
-        this.appendChild(document.createElement('br'));
+		const displaySpanNode = document.createElement("span");
+		displaySpanNode.className = "username permission";
+		this.displaySpan = displaySpanNode;
+		this.appendChild(displaySpanNode);
 
-        const deauthButtonNode = document.createElement('button');
-        deauthButtonNode.className = "deauth-button permission"
-        deauthButtonNode.innerHTML = AuthDisplayRemovePermissionsString.substr(0);
-        deauthButtonNode.onclick = () => { Auth.currentAuth = undefined; }
-        this.appendChild(deauthButtonNode);
+		this.appendChild(document.createElement("br"));
 
-        if (Auth.currentAuth)
-        {
-            displaySpanNode.innerHTML = Auth.currentAuth.name;
-        }
-        else
-        {
-            displaySpanNode.innerHTML = AuthDisplayNoPermissionsString.substr(0);
-        }
-    }
+		const deauthButtonNode = document.createElement("button");
+		deauthButtonNode.className = "deauth-button permission";
+		deauthButtonNode.innerHTML = AuthDisplayRemovePermissionsString.substr(0);
+		deauthButtonNode.onclick = () => {
+			Auth.currentAuth = undefined;
+		};
+		this.appendChild(deauthButtonNode);
 
-    Update()
-    {
-        if (this.displaySpan)
-        {
-            if (Auth.currentAuth)
-            {
-                this.displaySpan.innerHTML = Auth.currentAuth.name;
-            }
-            else
-            {
-                this.displaySpan.innerHTML = '';
-            }
-        }
-    }
+		if (Auth.currentAuth) {
+			displaySpanNode.innerHTML = Auth.currentAuth.name;
+		} else {
+			displaySpanNode.innerHTML = AuthDisplayNoPermissionsString.substr(0);
+		}
+	}
 
-    static UpdateAll()
-    {
-        AuthDisplayContainers.forEach(display => display.Update());
-    }
+	Update() {
+		if (this.displaySpan) {
+			if (Auth.currentAuth) {
+				this.displaySpan.innerHTML = Auth.currentAuth.name;
+			} else {
+				this.displaySpan.innerHTML = "";
+			}
+		}
+	}
+
+	static UpdateAll() {
+		AuthDisplayContainers.forEach(display => display.Update());
+	}
 }
 
-customElements.define('ap-auth-display', AuthDisplay);
+customElements.define("ap-auth-display", AuthDisplay);
 
 let AuthDisplayContainers: AuthDisplay[] = [];
 Auth.onAuthChangedList.push(AuthDisplay.UpdateAll);

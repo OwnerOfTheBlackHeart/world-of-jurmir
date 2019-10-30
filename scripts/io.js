@@ -1,9 +1,12 @@
-const PageLoadCallbacks = {
+import * as Utilities from "./utilities.js";
+export const PageLoadCallbacks = {
     onLoad: []
 };
-function LoadIntoId(url, id, title) {
+export function LoadIntoId(url, id, title, loadCallback) {
     id = id || "page_area";
-    fetch(url).then(response => response.text()).then(html => {
+    fetch(url)
+        .then(response => response.text())
+        .then(html => {
         let page_area = document.getElementById(id);
         page_area.innerHTML = html;
         document.body.scrollTop = document.documentElement.scrollTop = 0;
@@ -13,15 +16,20 @@ function LoadIntoId(url, id, title) {
         if (PageLoadCallbacks.onLoad.length > 0) {
             PageLoadCallbacks.onLoad.forEach(callback => callback(url));
         }
+        if (loadCallback) {
+            loadCallback();
+        }
     });
 }
-function LoadPage(url, id, title) {
+export function LoadPage(url, id, title) {
     parent.location.hash = url;
     LoadIntoId(url, id, title);
 }
-function LoadPageAtStart(id, defaultPage, GetTitle) {
+export function LoadPageAtStart(id, defaultPage, GetTitle) {
     let uri = Utilities.GetCurrentPage() || defaultPage;
     LoadIntoId(uri, id, GetTitle(uri));
     return uri;
 }
+window.LoadIntoId = LoadIntoId;
+window.LoadPageAtStart = LoadPageAtStart;
 //# sourceMappingURL=io.js.map

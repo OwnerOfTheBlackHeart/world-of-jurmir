@@ -1,254 +1,245 @@
-/// <reference path="./utilities.ts" />
-/// <reference path="./encumbrance.ts" />
-/// <reference path="./coins.ts" />
+import * as Utilities from "./utilities.js";
+import { Coin } from "./coins.js";
+import { Encumbrance } from "./encumbrance.js";
 
-class EncItem
-{
-    name: string;
-    count: number;
-    value: Coin;
-    weight: number;
+export class EncItem {
+	name: string;
+	count: number;
+	value: Coin;
+	weight: number;
 
-    constructor(data?: any[])
-    {
-        this.name = data[0];
-        this.count = data[1];
-        this.value = new Coin(data[2]);
-        this.weight = data[3];
-    }
+	constructor(data?: any[]) {
+		this.name = data[0];
+		this.count = data[1];
+		this.value = new Coin(data[2]);
+		this.weight = data[3];
+	}
 }
 
-class Inventory
-{
-    strength: number;
-    multiplier: number;
-    carryWeight: number;
-    contents: any[];
-    name: string;
-    
-    coins: Coin;
-    value: Coin;
+export class Inventory {
+	strength: number;
+	multiplier: number;
+	carryWeight: number;
+	contents: any[];
+	name: string;
 
-    weight: number;
-    enc: Encumbrance;
+	coins: Coin;
+	value: Coin;
 
-    constructor(inv?: Inventory)
-    {
-        this.strength = inv.strength;
-        this.multiplier = inv.multiplier;
-        this.carryWeight = inv.carryWeight;
-        this.contents = inv.contents;
-        this.name = inv.name;
+	weight: number;
+	enc: Encumbrance;
 
-        this.coins = Coin.NewCoin();
-        this.value = Coin.NewCoin();
-        this.weight = 0;
-        this.enc = undefined;
+	constructor(inv?: Inventory) {
+		this.strength = inv.strength;
+		this.multiplier = inv.multiplier;
+		this.carryWeight = inv.carryWeight;
+		this.contents = inv.contents;
+		this.name = inv.name;
 
-        this.ComputeInventory();
-    }
+		this.coins = Coin.NewCoin();
+		this.value = Coin.NewCoin();
+		this.weight = 0;
+		this.enc = undefined;
 
-    ComputeInventory()
-    {
-        this.weight = 0;
+		this.ComputeInventory();
+	}
 
-        // We have strength, so we have an encumbrance object
-        if (this.strength != undefined)
-        {
-            this.enc = new Encumbrance(this.strength, this.multiplier);
-        }
+	ComputeInventory() {
+		this.weight = 0;
 
-        // Check for coins on first row
-        if(!Array.isArray(this.contents[0][2]))
-        {
-            this.coins = this.coins.Add(new Coin(this.contents[0]));
-            this.contents.shift();
-        }
+		// We have strength, so we have an encumbrance object
+		if (this.strength != undefined) {
+			this.enc = new Encumbrance(this.strength, this.multiplier);
+		}
 
-        // Add the weight and value of the coins
-        this.value = this.coins.Copy();
-        this.weight += this.coins.weight;
+		// Check for coins on first row
+		if (!Array.isArray(this.contents[0][2])) {
+			this.coins = this.coins.Add(new Coin(this.contents[0]));
+			this.contents.shift();
+		}
 
-        // Calculate weight and value
-        let item: EncItem;
-        this.contents.forEach((data) =>
-        {
-            item = new EncItem(data);
+		// Add the weight and value of the coins
+		this.value = this.coins.Copy();
+		this.weight += this.coins.weight;
 
-            this.weight += item.weight * item.count;
-            this.value = this.value.Add(item.value.Multiply(item.count));
-        });
-    }
+		// Calculate weight and value
+		let item: EncItem;
+		this.contents.forEach(data => {
+			item = new EncItem(data);
 
-    BuildTable(mainNode: HTMLElement)
-    {
-        this.BuildTitle(mainNode);
+			this.weight += item.weight * item.count;
+			this.value = this.value.Add(item.value.Multiply(item.count));
+		});
+	}
 
-        // Gold Table
-        this.BuildGoldTable(mainNode, this.coins);
+	BuildTable(mainNode: HTMLElement) {
+		this.BuildTitle(mainNode);
 
-        // Encumbrance Table
-        if (this.enc != undefined) { this.BuildEncTable(mainNode, this.enc); }
-        else if (this.carryWeight != undefined)
-        {
-            this.BuildCarryWeightTable(mainNode, this.carryWeight);
-        }
+		// Gold Table
+		this.BuildGoldTable(mainNode, this.coins);
 
-        // Item Table
-        this.BuildItemTable(mainNode, this.contents);
+		// Encumbrance Table
+		if (this.enc != undefined) {
+			this.BuildEncTable(mainNode, this.enc);
+		} else if (this.carryWeight != undefined) {
+			this.BuildCarryWeightTable(mainNode, this.carryWeight);
+		}
 
-        return mainNode;
-    }
+		// Item Table
+		this.BuildItemTable(mainNode, this.contents);
 
-    BuildTitle(node: HTMLElement)
-    {
-        let title = document.createElement('h4');
-        title.innerHTML = this.name;
-        node.appendChild(title);
-    }
+		return mainNode;
+	}
 
-    BuildItemRow(item: EncItem)
-    {
-        let node = document.createElement('tr');
+	BuildTitle(node: HTMLElement) {
+		let title = document.createElement("h4");
+		title.innerHTML = this.name;
+		node.appendChild(title);
+	}
 
-        node.appendChild(Utilities.CreateData(item.name));
-        node.appendChild(Utilities.CreateData(item.count.toString(), "count-column"));
-        node.appendChild(Utilities.CreateData(item.value.toString()));
-        node.appendChild(Utilities.CreateData("" + item.weight + " lbs"));
-        node.appendChild(Utilities.CreateData(item.value.Multiply(item.count).Condense().toString()));
-        node.appendChild(Utilities.CreateData("" + (item.weight * item.count) + " lbs"));
-        
-        return node;
-    }
+	BuildItemRow(item: EncItem) {
+		let node = document.createElement("tr");
 
-    BuildItemTable(node: HTMLElement, contents: any[])
-    {
-        if (contents.length > 0)
-        {
-            let itemTable = document.createElement('table');
-            itemTable.className = "item-table";
-            let row = document.createElement('tr');
-            let totalsRow = document.createElement('tr');
-            itemTable.appendChild(totalsRow);
- 
-            // Table Start
-            row.appendChild(Utilities.CreateHeader('Item'));
-            row.appendChild(Utilities.CreateHeader('Count'));
-            row.appendChild(Utilities.CreateHeader('Value'));
-            row.appendChild(Utilities.CreateHeader('Weight'));
-            row.appendChild(Utilities.CreateHeader('Row Value'));
-            row.appendChild(Utilities.CreateHeader('Row Weight'));
-            itemTable.appendChild(row);
-            
-            let item;
-            contents.forEach((data) =>
-            {
-                item = new EncItem(data);
-                itemTable.appendChild(this.BuildItemRow(item));
-            });
+		node.appendChild(Utilities.CreateData(item.name));
+		node.appendChild(Utilities.CreateData(item.count.toString(), "count-column"));
+		node.appendChild(Utilities.CreateData(item.value.toString()));
+		node.appendChild(Utilities.CreateData("" + item.weight + " lbs"));
+		node.appendChild(
+			Utilities.CreateData(
+				item.value
+					.Multiply(item.count)
+					.Condense()
+					.toString()
+			)
+		);
+		node.appendChild(Utilities.CreateData("" + item.weight * item.count + " lbs"));
 
-            // Build totals row
-            this.BuildTotalsRow(this.value, this.weight, totalsRow);
+		return node;
+	}
 
-            node.appendChild(itemTable);
-        }
+	BuildItemTable(node: HTMLElement, contents: any[]) {
+		if (contents.length > 0) {
+			let itemTable = document.createElement("table");
+			itemTable.className = "item-table";
+			let row = document.createElement("tr");
+			let totalsRow = document.createElement("tr");
+			itemTable.appendChild(totalsRow);
 
-        return node;
-    }
+			// Table Start
+			row.appendChild(Utilities.CreateHeader("Item"));
+			row.appendChild(Utilities.CreateHeader("Count"));
+			row.appendChild(Utilities.CreateHeader("Value"));
+			row.appendChild(Utilities.CreateHeader("Weight"));
+			row.appendChild(Utilities.CreateHeader("Row Value"));
+			row.appendChild(Utilities.CreateHeader("Row Weight"));
+			itemTable.appendChild(row);
 
-    BuildGoldTable(node: HTMLElement, coins: Coin)
-    {
-        if (coins != undefined)
-        {
-            let table = document.createElement('table');
-            table.className = "gold-table";
+			let item;
+			contents.forEach(data => {
+				item = new EncItem(data);
+				itemTable.appendChild(this.BuildItemRow(item));
+			});
 
-            let subNode = document.createElement('tr');
+			// Build totals row
+			this.BuildTotalsRow(this.value, this.weight, totalsRow);
 
-            subNode.appendChild(Utilities.CreateHeader('PP'));
-            subNode.appendChild(Utilities.CreateHeader('GP'));
-            subNode.appendChild(Utilities.CreateHeader('SP'));
-            subNode.appendChild(Utilities.CreateHeader('CP'));
-            subNode.appendChild(Utilities.CreateHeader('Value'));
-            subNode.appendChild(Utilities.CreateHeader('Weight'));
-            table.appendChild(subNode);
-            
-            subNode = document.createElement('tr');
-            subNode.appendChild(Utilities.CreateData(coins.pp.toString(), "coins-cell"));
-            subNode.appendChild(Utilities.CreateData(coins.gp.toString(), "coins-cell"));
-            subNode.appendChild(Utilities.CreateData(coins.sp.toString(), "coins-cell"));
-            subNode.appendChild(Utilities.CreateData(coins.cp.toString(), "coins-cell"));
+			node.appendChild(itemTable);
+		}
 
-            subNode.appendChild(Utilities.CreateData(coins.Condense().toString()));
-            subNode.appendChild(Utilities.CreateData(coins.weight + " lbs"));
-            table.appendChild(subNode);
-            node.appendChild(table);
-        }
+		return node;
+	}
 
-        return node;
-    }
+	BuildGoldTable(node: HTMLElement, coins: Coin) {
+		if (coins != undefined) {
+			let table = document.createElement("table");
+			table.className = "gold-table";
 
-    BuildEncTable(node: HTMLElement, enc: Encumbrance)
-    {
-        let encTable = document.createElement('table');
-        encTable.className = "encumbrance-table";
+			let subNode = document.createElement("tr");
 
-        let row = document.createElement('tr');
-        encTable.appendChild(row);
-        
-        row.appendChild(Utilities.CreateHeader('Strength'));
-        row.appendChild(Utilities.CreateHeader('Light Load'));
-        row.appendChild(Utilities.CreateHeader('Medium Load'));
-        row.appendChild(Utilities.CreateHeader('Heavy Load'));
-        row.appendChild(Utilities.CreateHeader('Lift Load'));
-        row.appendChild(Utilities.CreateHeader('Drag Load'));
+			subNode.appendChild(Utilities.CreateHeader("PP"));
+			subNode.appendChild(Utilities.CreateHeader("GP"));
+			subNode.appendChild(Utilities.CreateHeader("SP"));
+			subNode.appendChild(Utilities.CreateHeader("CP"));
+			subNode.appendChild(Utilities.CreateHeader("Value"));
+			subNode.appendChild(Utilities.CreateHeader("Weight"));
+			table.appendChild(subNode);
 
-        row = document.createElement('tr');
-        encTable.appendChild(row);
+			subNode = document.createElement("tr");
+			subNode.appendChild(Utilities.CreateData(coins.pp.toString(), "coins-cell"));
+			subNode.appendChild(Utilities.CreateData(coins.gp.toString(), "coins-cell"));
+			subNode.appendChild(Utilities.CreateData(coins.sp.toString(), "coins-cell"));
+			subNode.appendChild(Utilities.CreateData(coins.cp.toString(), "coins-cell"));
 
-        row.appendChild(Utilities.CreateData(enc.strength.toString()));
-        row.appendChild(Utilities.CreateData(enc.light + " lbs"));
-        row.appendChild(Utilities.CreateData(enc.medium + " lbs"));
-        row.appendChild(Utilities.CreateData(enc.heavy + " lbs"));
-        row.appendChild(Utilities.CreateData(enc.lift + " lbs"));
-        row.appendChild(Utilities.CreateData(enc.drag + " lbs"));
+			subNode.appendChild(Utilities.CreateData(coins.Condense().toString()));
+			subNode.appendChild(Utilities.CreateData(coins.weight + " lbs"));
+			table.appendChild(subNode);
+			node.appendChild(table);
+		}
 
-        node.appendChild(encTable);
-        return node;
-    }
+		return node;
+	}
 
-    BuildCarryWeightTable(node: HTMLElement, carryWeight: number)
-    {
-        let cwTable = document.createElement('table');
+	BuildEncTable(node: HTMLElement, enc: Encumbrance) {
+		let encTable = document.createElement("table");
+		encTable.className = "encumbrance-table";
 
-        let row = document.createElement('tr');
-        cwTable.appendChild(row);
+		let row = document.createElement("tr");
+		encTable.appendChild(row);
 
-        row.appendChild(Utilities.CreateHeader('Carry Weight'));
-        row.appendChild(Utilities.CreateData(carryWeight + " lbs"));
+		row.appendChild(Utilities.CreateHeader("Strength"));
+		row.appendChild(Utilities.CreateHeader("Light Load"));
+		row.appendChild(Utilities.CreateHeader("Medium Load"));
+		row.appendChild(Utilities.CreateHeader("Heavy Load"));
+		row.appendChild(Utilities.CreateHeader("Lift Load"));
+		row.appendChild(Utilities.CreateHeader("Drag Load"));
 
-        node.appendChild(cwTable);
-        return node;
-    }
+		row = document.createElement("tr");
+		encTable.appendChild(row);
 
-    BuildTotalsRow(totalValue: Coin, totalWeight: number, row: HTMLTableRowElement)
-    {
-        let node;
-        let data;
+		row.appendChild(Utilities.CreateData(enc.strength.toString()));
+		row.appendChild(Utilities.CreateData(enc.light + " lbs"));
+		row.appendChild(Utilities.CreateData(enc.medium + " lbs"));
+		row.appendChild(Utilities.CreateData(enc.heavy + " lbs"));
+		row.appendChild(Utilities.CreateData(enc.lift + " lbs"));
+		row.appendChild(Utilities.CreateData(enc.drag + " lbs"));
 
-        if (row != undefined) { node = row; }
-        else { node = document.createElement('tr'); }
+		node.appendChild(encTable);
+		return node;
+	}
 
-        node.appendChild(Utilities.CreateHeader('Total Value'));
-        data = Utilities.CreateData(totalValue.Condense().toString());
-        data.setAttribute('colspan', '2');
-        node.appendChild(data);
+	BuildCarryWeightTable(node: HTMLElement, carryWeight: number) {
+		let cwTable = document.createElement("table");
 
-        node.appendChild(Utilities.CreateHeader('Total Weight'));
-        data = Utilities.CreateData("" + totalWeight + " lbs");
-        data.setAttribute('colspan', '2');
-        node.appendChild(data);
+		let row = document.createElement("tr");
+		cwTable.appendChild(row);
 
-        return node;
-    }
+		row.appendChild(Utilities.CreateHeader("Carry Weight"));
+		row.appendChild(Utilities.CreateData(carryWeight + " lbs"));
+
+		node.appendChild(cwTable);
+		return node;
+	}
+
+	BuildTotalsRow(totalValue: Coin, totalWeight: number, row: HTMLTableRowElement) {
+		let node;
+		let data;
+
+		if (row != undefined) {
+			node = row;
+		} else {
+			node = document.createElement("tr");
+		}
+
+		node.appendChild(Utilities.CreateHeader("Total Value"));
+		data = Utilities.CreateData(totalValue.Condense().toString());
+		data.setAttribute("colspan", "2");
+		node.appendChild(data);
+
+		node.appendChild(Utilities.CreateHeader("Total Weight"));
+		data = Utilities.CreateData("" + totalWeight + " lbs");
+		data.setAttribute("colspan", "2");
+		node.appendChild(data);
+
+		return node;
+	}
 }

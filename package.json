@@ -6,12 +6,18 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ashleygwilliams/my_package.git"
+		"url": "https://github.com/OwnerOfTheBlackHeart/world-of-jurmir.git"
 	},
-	"homepage": "https://github.com/ashleygwilliams/my_package",
+	"homepage": "https://github.com/OwnerOfTheBlackHeart/world-of-jurmir",
 	"devDependencies": {
-		"typescript": "^3.3.3333",
-		"eslint": "^5.14.1",
-		"tslint": "^5.13.0"
+		"eslint": "^5.16.0",
+		"tslint": "^5.20.0",
+		"typescript": "^3.6.4"
+	},
+	"prettier": {
+		"semi": true,
+		"useTabs": true,
+		"singleQuote": false,
+		"printWidth": 140
 	}
 }

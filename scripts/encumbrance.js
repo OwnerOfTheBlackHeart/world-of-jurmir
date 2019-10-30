@@ -1,4 +1,4 @@
-class EncSet {
+export class EncSet {
     constructor(str, light, medium, heavy) {
         this.str = str;
         this.light = light;
@@ -51,16 +51,9 @@ const EncChart = Object.freeze([
     new EncSet(26, 306, 613, 920),
     new EncSet(27, 346, 693, 1040),
     new EncSet(28, 400, 800, 1200),
-    new EncSet(29, 466, 933, 1400),
+    new EncSet(29, 466, 933, 1400)
 ]);
-class Encumbrance {
-    get strength() { return this._strength; }
-    get multiplier() { return this._multiplier; }
-    get light() { return this.set.light * this._multiplier; }
-    get medium() { return this.set.medium * this._multiplier; }
-    get heavy() { return this.set.heavy * this._multiplier; }
-    get lift() { return this.heavy * 2; }
-    get drag() { return this.heavy * 5; }
+export class Encumbrance {
     constructor(strength, multiplier) {
         this.set;
         if (strength == undefined) {
@@ -76,6 +69,27 @@ class Encumbrance {
             this._multiplier = multiplier;
         }
         this.Update();
+    }
+    get strength() {
+        return this._strength;
+    }
+    get multiplier() {
+        return this._multiplier;
+    }
+    get light() {
+        return this.set.light * this._multiplier;
+    }
+    get medium() {
+        return this.set.medium * this._multiplier;
+    }
+    get heavy() {
+        return this.set.heavy * this._multiplier;
+    }
+    get lift() {
+        return this.heavy * 2;
+    }
+    get drag() {
+        return this.heavy * 5;
     }
     Update(strength, multiplier) {
         if (strength != undefined) {
@@ -101,5 +115,4 @@ class Encumbrance {
         }
     }
 }
-;
 //# sourceMappingURL=encumbrance.js.map

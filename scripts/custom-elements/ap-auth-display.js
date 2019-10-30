@@ -1,7 +1,8 @@
+import { Auth } from "../auth.js";
 const AuthDisplayBaseString = Object.freeze("Welcome ");
 const AuthDisplayNoPermissionsString = Object.freeze("UNDEFINED USER");
 const AuthDisplayRemovePermissionsString = Object.freeze("Deauthorize");
-class AuthDisplay extends HTMLElement {
+export class AuthDisplay extends HTMLElement {
     constructor() {
         super();
         AuthDisplayContainers.push(this);
@@ -15,19 +16,21 @@ class AuthDisplay extends HTMLElement {
     Render() {
         this.displaySpan = undefined;
         this.innerHTML = "";
-        const textSpanNode = document.createElement('span');
+        const textSpanNode = document.createElement("span");
         textSpanNode.className = "permission";
         textSpanNode.innerHTML = AuthDisplayBaseString.substr(0);
         this.appendChild(textSpanNode);
-        const displaySpanNode = document.createElement('span');
+        const displaySpanNode = document.createElement("span");
         displaySpanNode.className = "username permission";
         this.displaySpan = displaySpanNode;
         this.appendChild(displaySpanNode);
-        this.appendChild(document.createElement('br'));
-        const deauthButtonNode = document.createElement('button');
+        this.appendChild(document.createElement("br"));
+        const deauthButtonNode = document.createElement("button");
         deauthButtonNode.className = "deauth-button permission";
         deauthButtonNode.innerHTML = AuthDisplayRemovePermissionsString.substr(0);
-        deauthButtonNode.onclick = () => { Auth.currentAuth = undefined; };
+        deauthButtonNode.onclick = () => {
+            Auth.currentAuth = undefined;
+        };
         this.appendChild(deauthButtonNode);
         if (Auth.currentAuth) {
             displaySpanNode.innerHTML = Auth.currentAuth.name;
@@ -42,7 +45,7 @@ class AuthDisplay extends HTMLElement {
                 this.displaySpan.innerHTML = Auth.currentAuth.name;
             }
             else {
-                this.displaySpan.innerHTML = '';
+                this.displaySpan.innerHTML = "";
             }
         }
     }
@@ -50,7 +53,7 @@ class AuthDisplay extends HTMLElement {
         AuthDisplayContainers.forEach(display => display.Update());
     }
 }
-customElements.define('ap-auth-display', AuthDisplay);
+customElements.define("ap-auth-display", AuthDisplay);
 let AuthDisplayContainers = [];
 Auth.onAuthChangedList.push(AuthDisplay.UpdateAll);
 //# sourceMappingURL=ap-auth-display.js.map

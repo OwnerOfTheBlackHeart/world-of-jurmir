@@ -1,23 +1,45 @@
-/// <reference path="../../../scripts/page-info.ts" />
+import { PageInfo } from "../../../scripts/page-info.js";
 
 const nobleUrlStart = "campaigns/noble-rising/";
 const nobleNameStart = "noble-";
 
-const nobleNav = [
+export const nobleNav = [
 	new PageInfo(undefined, "main.html", "Noble Rising", "main"),
 	new PageInfo(undefined, "notes.html", "Noble Rising Notes", "notes"),
 	new PageInfo(undefined, "timeline.html", "Noble Rising Timeline", "timeline"),
 	new PageInfo(undefined, "gm-notes.html", "Private GM Notes", "gm-notes"),
+
+	new PageInfo(undefined, "organizations/hands-of-kriotz.html", "Hands of Kriotz", "hands-of-kriotz"),
+	new PageInfo(undefined, "organizations/claws-of-kyranious.html", "Claws of Kyranious", "claws-of-kyranious"),
+	new PageInfo(undefined, "organizations/silver-daggers.html", "Silver Daggers Thieves' Guild", "silver-daggers"),
 
 	new PageInfo(undefined, "locations/tiathiloth/main.html", "The County of Tiathiloth", "tiathiloth"),
 	new PageInfo(undefined, "locations/tiathiloth/mensharra.html", "Mensharra, Capital City of Tiathiloth", "mensharra"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/main.html", "The County of Taaira Ruzara", "taaira-ruzara"),
 	new PageInfo(undefined, "locations/taaira-ruzara/desserr.html", "Desserr, Capital City of Taaira Ruzara", "desserr"),
+	new PageInfo(undefined, "locations/taaira-ruzara/antys.html", "Antys, Livingwood Glade", "antys"),
+	new PageInfo(undefined, "locations/taaira-ruzara/keldhall.html", "Keldhall, Human Trade Town", "keldhall"),
+	new PageInfo(undefined, "locations/taaira-ruzara/mam-daruhm.html", "Mam Daruhm, Dwarven Fortress City", "mam-daruhm"),
 
 	new PageInfo(undefined, "plotlines/main.html", "Noble Rising Plotline Index", "plotline-index"),
+	new PageInfo(undefined, "plotlines/the-grafter.html", "The Grafter", "the-grafter"),
+	new PageInfo(undefined, "plotlines/hunting-ulath.html", "Hunting the God Ulath", "hunting-ulath"),
+	new PageInfo(undefined, "plotlines/rise-of-the-bandit-king.html", "Rise of the Bandit King", "rise-of-the-bandit-king"),
 
-	new PageInfo(undefined, "plotlines/missions/hunting-down-goblins-in-the-fields.html", "Hunting Down the Goblins in the Fields", "hunting-down-goblins-in-the-fields"),
+	new PageInfo(
+		undefined,
+		"plotlines/missions/hunting-down-goblins-in-the-fields.html",
+		"Hunting Down the Goblins in the Fields",
+		"hunting-down-goblins-in-the-fields"
+	),
+	new PageInfo(
+		undefined,
+		"plotlines/missions/finding-the-lizard-cult.html",
+		"Finding the Lizard Cult in Desserr",
+		"finding-the-lizard-cult"
+	),
+	new PageInfo(undefined, "plotlines/missions/amassing-bandits.html", "Amassing Bandits", "amassing-bandits"),
 
 	new PageInfo(undefined, "spellbooks/main.html", "Noble Rising Spellbooks", "spellbooks"),
 	new PageInfo(undefined, "spellbooks/yasrena-spellbook.html", "Yasrena's Spellbook", "yasrena-spellbook"),
@@ -30,7 +52,7 @@ const nobleNav = [
 	new PageInfo(undefined, "npcs/reth-mailynath.html", "Reth Mailynath, Adamantine Slayer", "reth-mailynath"),
 	new PageInfo(undefined, "npcs/truzk.html", "Truzk, Ancient Lizardfolk", "truzk"),
 	new PageInfo(undefined, "npcs/yasrena.html", "Yasrena Telenna, Drow Escapee", "yasrena"),
-	
+
 	new PageInfo(undefined, "characters/camilia.html", "Camilia Famia, Wild Beauty", "camilia"),
 	new PageInfo(undefined, "characters/animal-companions/cackles.html", "Cackles the Spotted Hyena", "cackles"),
 
@@ -40,13 +62,13 @@ const nobleNav = [
 	new PageInfo(undefined, "images/yasrena.jpg", "", "yasrena-img", true),
 	new PageInfo(undefined, "images/camilia.png", "", "camilia-img", true),
 	new PageInfo(undefined, "http://www.d20srd.org/srd/monsters/elf.htm", "", "srd-elf", true),
-	new PageInfo(undefined, "http://www.d20srd.org/srd/equipment/goodsAndServices.htm#thunderstone", "", "srd-tunderstone", true),
+	new PageInfo(undefined, "http://www.d20srd.org/srd/equipment/goodsAndServices.htm#thunderstone", "", "srd-tunderstone", true)
 ];
 
-nobleNav.forEach(pageInfo =>
-    {
-        if (!pageInfo.external) { pageInfo.url = nobleUrlStart + pageInfo.url; }
+nobleNav.forEach(pageInfo => {
+	if (!pageInfo.external) {
+		pageInfo.url = nobleUrlStart + pageInfo.url;
+	}
 
-        pageInfo.name = nobleNameStart + pageInfo.name;
-    }
-);
+	pageInfo.name = nobleNameStart + pageInfo.name;
+});

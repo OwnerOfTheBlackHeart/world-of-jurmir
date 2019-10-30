@@ -1,4 +1,5 @@
-class SkillChart extends HTMLElement {
+import * as Utilities from "../utilities.js";
+export class SkillChart extends HTMLElement {
     constructor() {
         super();
     }
@@ -9,7 +10,7 @@ class SkillChart extends HTMLElement {
     }
     Render() {
         let baseNode = this;
-        let table = document.createElement('table');
+        let table = document.createElement("table");
         baseNode.appendChild(table);
         this.BuildHeaders(table);
         if (this.skills.length > 0) {
@@ -19,7 +20,7 @@ class SkillChart extends HTMLElement {
         }
     }
     BuildHeaders(node) {
-        let tableRow = document.createElement('tr');
+        let tableRow = document.createElement("tr");
         node.appendChild(tableRow);
         tableRow.appendChild(Utilities.CreateHeader("Skill"));
         tableRow.appendChild(Utilities.CreateHeader("Ranks"));
@@ -27,7 +28,7 @@ class SkillChart extends HTMLElement {
         return node;
     }
     BuildRow(node, row) {
-        let tableRow = document.createElement('tr');
+        let tableRow = document.createElement("tr");
         node.appendChild(tableRow);
         tableRow.appendChild(Utilities.CreateData(row[0]));
         tableRow.appendChild(Utilities.CreateData(row[1]));
@@ -35,6 +36,5 @@ class SkillChart extends HTMLElement {
         return node;
     }
 }
-;
-customElements.define('ap-skill-chart', SkillChart);
+customElements.define("ap-skill-chart", SkillChart);
 //# sourceMappingURL=ap-skill-chart.js.map

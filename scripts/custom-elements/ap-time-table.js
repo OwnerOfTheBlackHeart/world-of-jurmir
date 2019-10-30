@@ -1,26 +1,6 @@
-class TimeTable extends HTMLElement {
-    get showSeason() {
-        return this.hasAttribute('show-season');
-    }
-    set showSeason(val) {
-        if (val) {
-            this.setAttribute('show-season', '');
-        }
-        else {
-            this.removeAttribute('show-season');
-        }
-    }
-    get showAllMonths() {
-        return this.hasAttribute('show-all-months');
-    }
-    set showAllMonths(val) {
-        if (val) {
-            this.setAttribute('show-all-months', '');
-        }
-        else {
-            this.removeAttribute('show-all-months');
-        }
-    }
+import * as Utilities from "../utilities.js";
+import { TimeRef, Time } from "../time.js";
+export class TimeTable extends HTMLElement {
     constructor() {
         super();
         this.rows = [];
@@ -30,13 +10,35 @@ class TimeTable extends HTMLElement {
             this.rows = Utilities.StringToObject(this.innerHTML);
         }
     }
+    get showSeason() {
+        return this.hasAttribute("show-season");
+    }
+    set showSeason(val) {
+        if (val) {
+            this.setAttribute("show-season", "");
+        }
+        else {
+            this.removeAttribute("show-season");
+        }
+    }
+    get showAllMonths() {
+        return this.hasAttribute("show-all-months");
+    }
+    set showAllMonths(val) {
+        if (val) {
+            this.setAttribute("show-all-months", "");
+        }
+        else {
+            this.removeAttribute("show-all-months");
+        }
+    }
     connectedCallback() {
         this.Render();
     }
     Render() {
         this.innerHTML = "";
         if (this.rows.length > 0) {
-            this.table = document.createElement('table');
+            this.table = document.createElement("table");
             this.mainNode.appendChild(this.table);
             for (let row of this.rows) {
                 switch (row[0]) {
@@ -49,7 +51,7 @@ class TimeTable extends HTMLElement {
             }
         }
         else if (this.showAllMonths) {
-            this.table = document.createElement('table');
+            this.table = document.createElement("table");
             this.mainNode.appendChild(this.table);
             this.BuildAllMonths(this.table);
         }
@@ -71,23 +73,23 @@ class TimeTable extends HTMLElement {
         return node;
     }
     BuildAllMonths(table) {
-        let node = document.createElement('tr');
-        let data = Utilities.CreateHeader('List of Months');
+        let node = document.createElement("tr");
+        let data = Utilities.CreateHeader("List of Months");
         table.appendChild(node);
         node.appendChild(data);
         data.setAttribute("colspan", "3");
-        node = document.createElement('tr');
-        data = Utilities.CreateHeader('#');
+        node = document.createElement("tr");
+        data = Utilities.CreateHeader("#");
         table.appendChild(node);
         node.appendChild(data);
-        data = Utilities.CreateHeader('Month Name');
+        data = Utilities.CreateHeader("Month Name");
         table.appendChild(node);
         node.appendChild(data);
-        data = Utilities.CreateHeader('Season');
+        data = Utilities.CreateHeader("Season");
         table.appendChild(node);
         node.appendChild(data);
         for (let i = 0; i < TimeRef.months.length; i++) {
-            node = document.createElement('tr');
+            node = document.createElement("tr");
             table.appendChild(node);
             data = Utilities.CreateData((TimeRef.months[i].position + 1).toString());
             node.appendChild(data);
@@ -98,6 +100,5 @@ class TimeTable extends HTMLElement {
         }
     }
 }
-;
-customElements.define('ap-time-table', TimeTable);
+customElements.define("ap-time-table", TimeTable);
 //# sourceMappingURL=ap-time-table.js.map

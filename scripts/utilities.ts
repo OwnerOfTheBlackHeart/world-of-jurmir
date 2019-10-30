@@ -1,58 +1,47 @@
-/// <reference path="./page-info.ts" />
+import { PageInfo } from "./page-info.js";
+import { GetPageInfoFromUri } from "./page-list.js";
 
-var Utilities =
-{
-    IsGoodString: function(str: string)
-    {
-        return (str != undefined) && (str != "");
-    },
+export function IsGoodString(str: string): boolean {
+	return str !== undefined && str !== "";
+}
 
-    CreateHeader: function(data: string, className?: string)
-    {
-        let header = document.createElement('th');
-        header.innerHTML = data;
+export function CreateHeader(data: string, className?: string) {
+	let header = document.createElement("th");
+	header.innerHTML = data;
 
-        if (Utilities.IsGoodString(className))
-        {
-            header.className = className;
-        }
+	if (IsGoodString(className)) {
+		header.className = className;
+	}
 
-        return header;
-    },
+	return header;
+}
 
-    CreateData: function(data: string, className?: string)
-    {
-        let dataElement = document.createElement('td');
-        dataElement.innerHTML = data;
+export function CreateData(data: string, className?: string) {
+	let dataElement = document.createElement("td");
+	dataElement.innerHTML = data;
 
-        if (Utilities.IsGoodString(className))
-        {
-            dataElement.className = className;
-        }
+	if (IsGoodString(className)) {
+		dataElement.className = className;
+	}
 
-        return dataElement;
-    },
+	return dataElement;
+}
 
-    GetCurrentPage: function()
-    {
-        let uri = parent.location.hash;
-        if (Utilities.IsGoodString(uri))
-        {
-            uri = uri.slice(1);
-        }
-        return uri;
-    },
+export function GetCurrentPage() {
+	let uri = parent.location.hash;
+	if (IsGoodString(uri)) {
+		uri = uri.slice(1);
+	}
+	return uri;
+}
 
-    GetCurrentPageInfo: function()
-    {
-        return PageInfo.GetPageInfoFromUri(Utilities.GetCurrentPage());
-    },
+export function GetCurrentPageInfo() {
+	return GetPageInfoFromUri(GetCurrentPage());
+}
 
-    StringToObject: function(jsonIn: string)
-    {
-        jsonIn = jsonIn.replace(/<.+?>/g, function(x) {
-            return x.replace(/"/g, '\\"');
-        });
-        return JSON.parse(jsonIn);;
-    }
+export function StringToObject(jsonIn: string) {
+	jsonIn = jsonIn.replace(/<.+?>/g, function(x) {
+		return x.replace(/"/g, '\\"');
+	});
+	return JSON.parse(jsonIn);
 }

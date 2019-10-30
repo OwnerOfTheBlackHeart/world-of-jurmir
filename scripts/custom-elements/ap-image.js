@@ -1,39 +1,42 @@
-class LinkImage extends HTMLElement {
-    static get observedAttributes() { return ['linkName', 'disabled']; }
-    get linkName() {
-        return this.getAttribute('linkName');
-    }
-    set linkName(val) {
-        this.setAttribute('linkName', val);
-    }
-    get height() {
-        return Number(this.getAttribute('height'));
-    }
-    set height(val) {
-        this.setAttribute('height', val.toString());
-        if (this.image) {
-            this.image.height = val;
-        }
-    }
-    get width() {
-        return Number(this.getAttribute('width'));
-    }
-    set width(val) {
-        this.setAttribute('width', val.toString());
-        if (this.image) {
-            this.image.width = val;
-        }
-    }
+import { GetPageInfoFromName } from "../page-list.js";
+export class LinkImage extends HTMLElement {
     constructor() {
         super();
         this.image;
         this.imagePageInfo;
     }
+    static get observedAttributes() {
+        return ["linkName", "disabled"];
+    }
+    get linkName() {
+        return this.getAttribute("linkName");
+    }
+    set linkName(val) {
+        this.setAttribute("linkName", val);
+    }
+    get height() {
+        return Number(this.getAttribute("height"));
+    }
+    set height(val) {
+        this.setAttribute("height", val.toString());
+        if (this.image) {
+            this.image.height = val;
+        }
+    }
+    get width() {
+        return Number(this.getAttribute("width"));
+    }
+    set width(val) {
+        this.setAttribute("width", val.toString());
+        if (this.image) {
+            this.image.width = val;
+        }
+    }
     click() {
     }
     connectedCallback() {
-        this.addEventListener('click', this.click);
-        this.image = document.createElement('img');
+        this.addEventListener("click", this.click);
+        this.image = document.createElement("img");
         if (this.width)
             this.image.width = this.width;
         if (this.height)
@@ -50,7 +53,7 @@ class LinkImage extends HTMLElement {
         }
     }
     UpdateLink() {
-        this.imagePageInfo = PageInfo.GetPageInfoFromName(this.linkName);
+        this.imagePageInfo = GetPageInfoFromName(this.linkName);
         if (this.imagePageInfo != undefined) {
             this.image.src = this.imagePageInfo.url;
         }
@@ -59,5 +62,5 @@ class LinkImage extends HTMLElement {
         }
     }
 }
-customElements.define('ap-image', LinkImage);
+customElements.define("ap-image", LinkImage);
 //# sourceMappingURL=ap-image.js.map

@@ -1,9 +1,8 @@
-/// <reference path="./page-info.ts" />
+import * as Utilities from "./utilities.js";
 
-const PageLoadCallbacks = 
-{
-    onLoad: [] as ((url: string) => void)[]
-}
+export const PageLoadCallbacks = {
+	onLoad: [] as ((url: string) => void)[]
+};
 
 /*
  * LoadIntoId()
@@ -12,28 +11,33 @@ const PageLoadCallbacks =
  * is given, then an object with the id "page_area" will be
  * used.
  */
-function LoadIntoId(url: string, id?: string, title?: string)
-{
+export function LoadIntoId(url: string, id?: string, title?: string, loadCallback?: () => void) {
 	// Set default
-    id = id || "page_area";
-    
-    fetch(url).then(response => response.text()).then(html =>
-    {
-        let page_area = document.getElementById(id);
-	
-        page_area.innerHTML = html;
-        
-        // Scroll to the top of the page
-        document.body.scrollTop = document.documentElement.scrollTop = 0;
+	id = id || "page_area";
 
-        if (title)
-        {
-            // Change page title
-            document.title = title;
-        }
+	fetch(url)
+		.then(response => response.text())
+		.then(html => {
+			let page_area = document.getElementById(id);
 
-        if (PageLoadCallbacks.onLoad.length > 0) { PageLoadCallbacks.onLoad.forEach(callback => callback(url)); }
-    });
+			page_area.innerHTML = html;
+
+			// Scroll to the top of the page
+			document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+			if (title) {
+				// Change page title
+				document.title = title;
+			}
+
+			if (PageLoadCallbacks.onLoad.length > 0) {
+				PageLoadCallbacks.onLoad.forEach(callback => callback(url));
+			}
+
+			if (loadCallback) {
+				loadCallback();
+			}
+		});
 }
 
 /*
@@ -42,8 +46,7 @@ function LoadIntoId(url: string, id?: string, title?: string)
  * with the given id. It also changes the hash string
  * of the page to match the new page.
  */
-function LoadPage(url: string, id?: string, title?: string)
-{
+export function LoadPage(url: string, id?: string, title?: string) {
 	parent.location.hash = url;
 	LoadIntoId(url, id, title);
 }
@@ -51,14 +54,24 @@ function LoadPage(url: string, id?: string, title?: string)
 /*
  * LoadPageAtStart()
  * This function is a wrapper for LoadPage() that should
- * be run at the load of an HTML page. This will pull the 
+ * be run at the load of an HTML page. This will pull the
  * hash string and open the given page.
  * Returns the uri from the hash.
  */
-function LoadPageAtStart(id: string, defaultPage: string, GetTitle: (uri: string) => string)
-{
-    let uri = Utilities.GetCurrentPage() || defaultPage;
-	
+export function LoadPageAtStart(id: string, defaultPage: string, GetTitle: (uri: string) => string) {
+	let uri = Utilities.GetCurrentPage() || defaultPage;
+
 	LoadIntoId(uri, id, GetTitle(uri));
 	return uri;
 }
+
+// ********** MAKE FUNCTIONS HTML ACCESSIBLE *****************
+declare global {
+	interface Window {
+		LoadIntoId: (url: string, id?: string, title?: string) => void;
+		LoadPageAtStart: (id: string, defaultPage: string, GetTitle: (uri: string) => string) => string;
+	}
+}
+
+window.LoadIntoId = LoadIntoId;
+window.LoadPageAtStart = LoadPageAtStart;

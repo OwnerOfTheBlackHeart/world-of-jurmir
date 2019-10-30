@@ -1,6 +1,7 @@
+import { PageInfo } from "../../../scripts/page-info.js";
 const sbjUrlStart = "campaigns/the-stars-beyond-jurmir/";
 const sbjNameStart = "sbj-";
-const sbjNav = [
+export const sbjNav = [
     new PageInfo(undefined, "main.html", "The Stars Beyond Jurmir", "main"),
     new PageInfo(undefined, "notes.html", "The Stars Beyond Jurmir Notes", "notes"),
     new PageInfo(undefined, "timeline.html", "The Stars Beyond Jurmir Timeline", "timeline"),
@@ -36,7 +37,7 @@ const sbjNav = [
     new PageInfo(undefined, "vehicles/jurmirian-navy/models/paavu-class.html", "Paavu Class Heavy Frigate", "paavu-class"),
     new PageInfo(undefined, "plotlines/main.html", "Stars Beyond Jurmir Plotlines", "plotlines"),
     new PageInfo(undefined, "plotlines/crash-of-the-red-raven.html", "The Crash of the Red Raven", "crash-of-the-red-raven"),
-    new PageInfo(undefined, "plotlines/the-x-saber.html", "The X Saber", "x-saber-plot"),
+    new PageInfo(undefined, "plotlines/the-x-saber.html", "The X Saber", "x-saber-plot")
 ];
 sbjNav.forEach(pageInfo => {
     if (!pageInfo.external) {
