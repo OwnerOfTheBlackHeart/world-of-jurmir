@@ -77,7 +77,7 @@ export class EncumbranceChart extends HTMLElement {
         row.appendChild(Utilities.CreateHeader("Total Value"));
         row.appendChild(Utilities.CreateData(totalValue.Condense().toString()));
         row.appendChild(Utilities.CreateHeader("Total Weight"));
-        row.appendChild(Utilities.CreateData("" + totalWeight + " lbs"));
+        row.appendChild(Utilities.CreateData("" + Utilities.numberWithCommas(totalWeight, 2) + " lbs"));
         row = document.createElement("tr");
         table.appendChild(row);
         let data = Utilities.CreateHeader("Total Coins");
@@ -101,7 +101,7 @@ export class EncumbranceChart extends HTMLElement {
         data.setAttribute("colspan", "2");
         node.appendChild(data);
         node.appendChild(Utilities.CreateHeader("Total Weight"));
-        data = Utilities.CreateData("" + totalWeight + " lbs");
+        data = Utilities.CreateData("" + Utilities.numberWithCommas(totalWeight, 2) + " lbs");
         data.setAttribute("colspan", "2");
         node.appendChild(data);
         return node;

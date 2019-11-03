@@ -1,4 +1,3 @@
-import { PageInfo } from "./page-info.js";
 import { GetPageInfoFromUri } from "./page-list.js";
 
 export function IsGoodString(str: string): boolean {
@@ -44,4 +43,12 @@ export function StringToObject(jsonIn: string) {
 		return x.replace(/"/g, '\\"');
 	});
 	return JSON.parse(jsonIn);
+}
+
+export function numberWithCommas(x: number, places?: number): string {
+	if (places === undefined) {
+		return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	} else {
+		return x.toFixed(places).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	}
 }

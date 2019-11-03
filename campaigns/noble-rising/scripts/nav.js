@@ -28,6 +28,14 @@ export const nobleNav = [
     new PageInfo(undefined, "spellbooks/kali-spellbook.html", "Kali's Spellbook", "kali-spellbook"),
     new PageInfo(undefined, "enemies/bandits/human-commoner.html", "Human Commoner", "human-commoner"),
     new PageInfo(undefined, "enemies/bandits/catfolk-adept.html", "Catfolk Adept", "catfolk-adept"),
+    new PageInfo(undefined, "enemies/minor-gods/ulath/ulath.html", "Ulath", "ulath"),
+    new PageInfo(undefined, "enemies/minor-gods/ulath/ulath-abductor.html", "Ulath Abductor", "ulath-abductor"),
+    new PageInfo(undefined, "enemies/minor-gods/ulath/ulath-guard.html", "Ulath Guard", "ulath-guard"),
+    new PageInfo(undefined, "enemies/minor-gods/ulath/ulath-priest.html", "Ulath Priest", "ulath-priest"),
+    new PageInfo(undefined, "enemies/minor-gods/ulath/ulath-worshipper.html", "Ulath Worshipper", "ulath-worshipper"),
+    new PageInfo(undefined, "enemies/hands-of-kriotz/enforcer.html", "Hands of Kriotz Enforcer", "kriotz-enforcer"),
+    new PageInfo(undefined, "enemies/hands-of-kriotz/priest.html", "Hands of Kriotz Priest", "kriotz-priest"),
+    new PageInfo(undefined, "enemies/hands-of-kriotz/cleric.html", "Hands of Kriotz Cleric", "kriotz-cleric"),
     new PageInfo(undefined, "npcs/mysterious-stranger.html", "The Mysterious Stranger", "mysterious-stranger"),
     new PageInfo(undefined, "npcs/reth-mailynath.html", "Reth Mailynath, Adamantine Slayer", "reth-mailynath"),
     new PageInfo(undefined, "npcs/truzk.html", "Truzk, Ancient Lizardfolk", "truzk"),
@@ -39,6 +47,7 @@ export const nobleNav = [
     new PageInfo(undefined, "images/truzk.jpg", "", "truzk-img", true),
     new PageInfo(undefined, "images/yasrena.jpg", "", "yasrena-img", true),
     new PageInfo(undefined, "images/camilia.png", "", "camilia-img", true),
+    new PageInfo(undefined, "images/ulath.png", "", "ulath-img", true),
     new PageInfo(undefined, "http://www.d20srd.org/srd/monsters/elf.htm", "", "srd-elf", true),
     new PageInfo(undefined, "http://www.d20srd.org/srd/equipment/goodsAndServices.htm#thunderstone", "", "srd-tunderstone", true)
 ];

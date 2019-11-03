@@ -1,3 +1,5 @@
+import { numberWithCommas } from "./utilities.js";
+
 export const singleCoinWeight = 0.02;
 
 export class Coin {
@@ -25,16 +27,16 @@ export class Coin {
 		let toReturn = "";
 
 		if (this.pp > 0) {
-			toReturn += this.pp + "pp, ";
+			toReturn += numberWithCommas(this.pp, 0) + "pp, ";
 		}
 		if (this.gp > 0) {
-			toReturn += this.gp + "gp, ";
+			toReturn += numberWithCommas(this.gp, 0) + "gp, ";
 		}
 		if (this.sp > 0) {
-			toReturn += this.sp + "sp, ";
+			toReturn += numberWithCommas(this.sp, 0) + "sp, ";
 		}
 		if (this.cp > 0) {
-			toReturn += this.cp + "cp, ";
+			toReturn += numberWithCommas(this.cp, 0) + "cp, ";
 		}
 
 		return toReturn.trim().slice(0, -1);

@@ -34,4 +34,12 @@ export function StringToObject(jsonIn) {
     });
     return JSON.parse(jsonIn);
 }
+export function numberWithCommas(x, places) {
+    if (places === undefined) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+    else {
+        return x.toFixed(places).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+}
 //# sourceMappingURL=utilities.js.map

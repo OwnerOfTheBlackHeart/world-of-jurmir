@@ -1,2 +1,108 @@
-<h1>The Mysterious Stranger, Orish Ranger</h1>
+<h1>The Mysterious Stranger, Orish Rogue/Fighter</h1>
 <ap-image linkName="noble-mysterious-stranger-img" class="character-picture" height="500">Picture of the Mysterious Stranger</ap-image>
+<ap-basic-table character-table>
+	[
+		["Size/Type:", "Medium Humanoid (Orc)"],
+		["Hit Dice:", "5d6+11d10+48 (132)"],
+		["Initiative:", "+10"],
+		["Speed:", "30 ft. (6 squares)"],
+		["Armor Class:", "23 (+10 dex, +3 monk's belt), touch 23, flat-footed 10"],
+		["Base Attack/Grapple:", "+14/+16"],
+		["Attack:", 
+			"+3 burning revolver +29 ranged (2d8+7+1d6 fire, 45ft) or ", 
+			"+1 shocking hunting rifle +27 ranged (2d10+5+1d6 electricity, 120ft) ", 
+			"or punch +18 melee (1d8+6)"
+		],
+		["Full Attack:", 
+			"+3 burning revolver +27/+27/+22/+17 ranged (2d8+7+1d6 fire, 45ft) or ", 
+			"+1 shocking hunting rifle +25/+25/+20/+15 ranged (2d10+5+1d6 electricity, 120ft) ", 
+			"or punch +18/+13/+8 melee (1d8+6)"
+		],
+		["Space/Reach:", "5 ft./5 ft."],
+		["Special Attacks:", "Sneak Attack +3d6"],
+		["Special Qualities:", "Darkvision 60 ft, trapfinding, evasion, trapsense +1, uncanny dodge, light sensitivity"],
+		["Saves:", "Fort +11, Ref +17, Will +6"],
+		["Abilities:", "Str 14, Dex 30, Con 16, Int 14, Wis 14, Cha 10"],
+		["Abilities (Base):", "Str 14, Dex 24, Con 16, Int 14, Wis 14, Cha 10"],
+		["Skills:", 
+			"Escape Artist +18, Gather Information +10, Diplomacy +2, Sense Motive +10, Spot +10, Listen +10, Hide +18, ",
+			"Move Silently +18, Knowledge (local) +10, Use Rope +18, Balance +18, Handle Animal +11, Intimidate +11, Ride +23",
+			"Swim +13"
+		],
+		["Feats:", 
+			"Rapid Reload (revolver), Quick Draw, Point Blank Shot, Precise Shot, Far Shot, Rapid Shot, Weapon Focus (revolver), ",
+			"Weapon Mastery (hunting rifle, unarmed attack), Weapon Specialization (revolver), Greater Weapon Focus (revolver), ",
+			"Greater Weapon Specialization (revolver), Deadly Aim"
+		],
+		["Challenge Rating:", "16"],
+		["Languages:", "Common, orc, giant, undercommon"],
+		["Alignment:", "Neutral"],
+		["Class Levels:", "Rogue 5, Fighter 11"]
+	]
+</ap-basic-table>
+
+<div class="table-container">
+	<div class="table-column">
+		<ap-skill-chart>
+			[
+				["Escape Artist", 8, "+2 to escape rope"],
+				["Gather Information", 8, "+2 synergy"],
+				["Diplomacy", 0, "+2 synergy"],
+				["Sense Motive", 8, ""],
+				["Spot", 8, ""],
+				["Listen", 8, ""],
+				["Hide", 8, ""],
+				["Move Silently", 8, ""],
+				["Knowledge (local)", 8, ""],
+				["Use Rope", 8, "+2 to bind people"],
+				["Balance", 8, ""],
+				["Handle Animal", 11, ""],
+				["Intimidate", 11, ""],
+				["Ride", 11, "+2 synergy"],
+				["Swim", 11, ""]
+			]
+		</ap-skill-chart>
+	</div>
+	<div class="table-column">
+		<ap-enc-chart strength="14">
+			[
+				[25, 20, 3, 0],
+				["+3 burning revolver", 1, [0, 32450, 0, 0], 3],
+				["+1 shocking hunting rifle", 1, [0, 8550, 0, 0], 8],
+				["Bullets", 30, [0, 0, 1, 0], 0.10],
+				["Cape of the Mountebank (disappear in smoke)", 1, [0, 10080, 0, 0], 1],
+				["Manual of Quickness of Action (used)", 1, [0, 137500, 0, 0], 1],
+				["Gloves of Dexterity (+6)", 1, [0, 36000, 0, 0], 1],
+				["Monk's Belt", 1, [0, 13000, 0, 0], 1],
+				["Potion of Barkskin +5", 3, [0, 1200, 0, 0], 0.5],
+				["Potion of Good hope", 2, [0, 1050, 0, 0], 0.5],
+				["Potion of Displacement", 2, [0, 750, 0, 0], 0.5],
+				["Potion of Owl’s Wisdom", 2, [0, 300, 0, 0], 0.5],
+				["Potion of Cure Serious Wounds", 5, [0, 750, 0, 0], 0.5],
+				["Handy Haversack", 1, [0, 2000, 0, 0], 5],
+				{
+					"name":"Handy Haversack",
+                    "carryWeight":120,
+                    "contents":[
+                        [775, 783, 0, 0],
+                        ["Bedroll", 1, [0, 0, 1, 0], 5],
+						["Blanket, winter", 1, [0, 0, 5, 0], 3],
+						["Backpack", 1, [0, 2, 0, 0], 2],
+						["Waterskin", 1, [0, 1, 0, 0], 4],
+						["Peasant's outfit", 1, [0, 0, 1, 0], 2],
+						["Manacles, masterwork", 1, [0, 50, 0, 0], 2],
+						["Bullets", 100, [0, 0, 1, 0], 0.10]
+                    ]
+				}
+			]
+		</ap-enc-chart>
+	</div>
+</div>
+
+<h2>Combat</h2>
+<p>
+	The Mysterious Stranger appears at the beginning of combat and attacks with his revolver if an enemy is within range.
+	If an enemy is too far away, the Mysterious Stranger will pull his lever action rifle and open fire. He defends himself
+	at melee range through the use of haymakers and kicks. At the end of combat, the Mysterious Stranger uses his Cape of the
+	Mountebank to disappear into smoke.
+</p>
