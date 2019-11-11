@@ -4,7 +4,7 @@ import { LoadPage, LoadPageAtStart, LoadIntoId } from "./io.js";
 import "./custom-elements/custom-elements.js";
 import { GetPageInfoFromUri, GetPageInfoFromName } from "./page-list.js";
 const indexPage = "home.html";
-const page_area = "page_area";
+const pageArea = "page-area";
 const basic_title = " - World of Jurmir Reference Document";
 var currentPage;
 var defaultPage = "home";
@@ -56,6 +56,6 @@ LoadIntoId("header.html", "header", undefined, () => {
     document.getElementById("authorize-button").onclick = onAuthButtonClick;
 });
 LoadIntoId("footer.html", "footer");
-LoadPageAtStart("page_area", indexPage, GetPageTitle);
+LoadPageAtStart(pageArea, indexPage, GetPageTitle);
 Auth.UpdateCurrentAuth();
 //# sourceMappingURL=master.js.map

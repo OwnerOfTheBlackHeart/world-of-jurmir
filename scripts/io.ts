@@ -8,19 +8,19 @@ export const PageLoadCallbacks = {
  * LoadIntoId()
  * This function loads the page at the given URI into the
  * innerHTML of the object whose id is given. If no id object
- * is given, then an object with the id "page_area" will be
+ * is given, then an object with the id "page-area" will be
  * used.
  */
 export function LoadIntoId(url: string, id?: string, title?: string, loadCallback?: () => void) {
 	// Set default
-	id = id || "page_area";
+	id = id || "page-area";
 
 	fetch(url)
 		.then(response => response.text())
 		.then(html => {
-			let page_area = document.getElementById(id);
+			let pageArea = document.getElementById(id);
 
-			page_area.innerHTML = html;
+			pageArea.innerHTML = html;
 
 			// Scroll to the top of the page
 			document.body.scrollTop = document.documentElement.scrollTop = 0;

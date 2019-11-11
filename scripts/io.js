@@ -3,12 +3,12 @@ export const PageLoadCallbacks = {
     onLoad: []
 };
 export function LoadIntoId(url, id, title, loadCallback) {
-    id = id || "page_area";
+    id = id || "page-area";
     fetch(url)
         .then(response => response.text())
         .then(html => {
-        let page_area = document.getElementById(id);
-        page_area.innerHTML = html;
+        let pageArea = document.getElementById(id);
+        pageArea.innerHTML = html;
         document.body.scrollTop = document.documentElement.scrollTop = 0;
         if (title) {
             document.title = title;
