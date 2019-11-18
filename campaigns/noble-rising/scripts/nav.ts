@@ -42,7 +42,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "plotlines/missions/amassing-bandits.html", "Amassing Bandits", "amassing-bandits"),
 	new PageInfo(undefined, "plotlines/missions/rats-in-the-grain-house.html", "Rats in the Grain House", "rats-in-the-grain-house"),
 	new PageInfo(undefined, "plotlines/missions/the-grafted-wolf.html", "The Grafted Wolf", "the-grafted-wolf"),
-	new PageInfo(undefined, "plotlines/missions/truzks-hunt.html", "Truzk's Hunt", "truzks-hunt"),
+	new PageInfo(undefined, "plotlines/missions/truzks-search.html", "Truzk's Hunt", "truzks-search"),
 
 	new PageInfo(undefined, "spellbooks/main.html", "Noble Rising Spellbooks", "spellbooks"),
 	new PageInfo(undefined, "spellbooks/yasrena-spellbook.html", "Yasrena's Spellbook", "yasrena-spellbook"),
@@ -65,7 +65,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "npcs/reth-mailynath.html", "Reth Mailynath, Adamantine Slayer", "reth-mailynath"),
 	new PageInfo(undefined, "npcs/truzk.html", "Truzk, Ancient Lizardfolk", "truzk"),
 	new PageInfo(undefined, "npcs/yasrena.html", "Yasrena Telenna, Drow Escapee", "yasrena"),
-	new PageInfo(undefined, "npcs/dolph.html", "Yasrena Telenna, Drow Escapee", "yasrena"),
+	new PageInfo(undefined, "npcs/dolph.html", "Dolph Lundgren, Grafted Gnome Monk", "dolph"),
 
 	new PageInfo(undefined, "characters/camilia.html", "Camilia Famia, Wild Beauty", "camilia"),
 	new PageInfo(undefined, "characters/animal-companions/cackles.html", "Cackles the Spotted Hyena", "cackles"),

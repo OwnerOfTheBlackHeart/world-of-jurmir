@@ -55,11 +55,17 @@ body {
 
 }
 
-p
-{
-    width: 80%;
+p, li {
     min-width: 300px;
     max-width: 750px;
+}
+
+p {
+	width: 80%;
+}
+
+li > .list {
+    padding: 0 0 0 12px;
 }
 
 .homebrew-list > li, .list > li 
@@ -150,8 +156,9 @@ li > ap-link-button > a:link, li > ap-link-button > a:visited
     padding: 0;
     margin: 0;
     margin-right: -4px;
-    background-color: rgba(0, 0, 0, 0.25);
-    /* background-color: #505050; */
+	background-color: rgba(0, 0, 0, 0.25);
+	min-width: 0;
+	max-width: none;
 }
 
 .header-nav-list > li > ap-link-button > a
