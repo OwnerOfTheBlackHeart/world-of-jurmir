@@ -56,6 +56,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "enemies/minor-gods/ulath/ulath-guard.html", "Ulath Guard", "ulath-guard"),
 	new PageInfo(undefined, "enemies/minor-gods/ulath/ulath-priest.html", "Ulath Priest", "ulath-priest"),
 	new PageInfo(undefined, "enemies/minor-gods/ulath/ulath-worshipper.html", "Ulath Worshipper", "ulath-worshipper"),
+	new PageInfo(undefined, "enemies/minor-gods/ulath/heavy-trog.html", "Heavy Troglodyte", "heavy-trog"),
 
 	new PageInfo(undefined, "enemies/hands-of-kriotz/enforcer.html", "Hands of Kriotz Enforcer", "kriotz-enforcer"),
 	new PageInfo(undefined, "enemies/hands-of-kriotz/priest.html", "Hands of Kriotz Priest", "kriotz-priest"),
