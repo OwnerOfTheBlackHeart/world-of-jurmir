@@ -62,6 +62,9 @@ export const nobleNav = [
 	new PageInfo(undefined, "enemies/hands-of-kriotz/priest.html", "Hands of Kriotz Priest", "kriotz-priest"),
 	new PageInfo(undefined, "enemies/hands-of-kriotz/cleric.html", "Hands of Kriotz Cleric", "kriotz-cleric"),
 
+	new PageInfo(undefined, "enemies/mutated-animals/flying-wolf.html", "Flying Wolf", "flying-wolf"),
+	new PageInfo(undefined, "enemies/mutated-animals/scale-wolf.html", "Scaly Wolf", "scale-wolf"),
+
 	new PageInfo(undefined, "npcs/mysterious-stranger.html", "The Mysterious Stranger", "mysterious-stranger"),
 	new PageInfo(undefined, "npcs/reth-mailynath.html", "Reth Mailynath, Adamantine Slayer", "reth-mailynath"),
 	new PageInfo(undefined, "npcs/truzk.html", "Truzk, Ancient Lizardfolk", "truzk"),
