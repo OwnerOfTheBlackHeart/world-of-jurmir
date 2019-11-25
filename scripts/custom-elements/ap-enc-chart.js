@@ -3,18 +3,6 @@ import { Encumbrance } from "../encumbrance.js";
 import * as Utilities from "../utilities.js";
 import { Inventory } from "../inventory.js";
 export class EncumbranceChart extends HTMLElement {
-    get strength() {
-        return Number(this.getAttribute("strength"));
-    }
-    set strength(val) {
-        this.setAttribute("strength", val.toString());
-    }
-    get multiplier() {
-        return Number(this.getAttribute("multiplier"));
-    }
-    set multiplier(val) {
-        this.setAttribute("multiplier", val.toString());
-    }
     constructor() {
         super();
         if (!this.hasAttribute("strength")) {
@@ -34,6 +22,18 @@ export class EncumbranceChart extends HTMLElement {
             this.inventory = [];
         }
         this.innerHTML = "";
+    }
+    get strength() {
+        return Number(this.getAttribute("strength"));
+    }
+    set strength(val) {
+        this.setAttribute("strength", val.toString());
+    }
+    get multiplier() {
+        return Number(this.getAttribute("multiplier"));
+    }
+    set multiplier(val) {
+        this.setAttribute("multiplier", val.toString());
     }
     connectedCallback() {
         this.Render();
