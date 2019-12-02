@@ -49,6 +49,31 @@ body {
 	grid-row: 3 / 4;
 }
 
+.subtitle {
+    color: gray;
+    margin: 0 0 5px 0;
+}
+
+h1.subtitle {
+    font-size: 1.5em;
+}
+
+h2.subtitle {
+    font-size: 1.25em;
+}
+
+h3.subtitle {
+    font-size: 1em;
+}
+
+h4.subtitle {
+    font-size: 0.9em;
+}
+
+h5.subtitle, h6.subtitle {
+    font-size: 0.85em;
+}
+
 .full-hr {
 	width: 100%;
 	margin: 5px 0px 5px 0px;

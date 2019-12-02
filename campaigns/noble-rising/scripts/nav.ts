@@ -18,6 +18,7 @@ export const nobleNav = [
 
 	new PageInfo(undefined, "locations/taaira-ruzara/main.html", "The County of Taaira Ruzara", "taaira-ruzara"),
 	new PageInfo(undefined, "locations/taaira-ruzara/desserr.html", "Desserr, Capital City of Taaira Ruzara", "desserr"),
+	new PageInfo(undefined, "locations/taaira-ruzara/desserr-nobility.html", "Desserr Nobility", "desserr-nobility"),
 	new PageInfo(undefined, "locations/taaira-ruzara/antys.html", "Antys, Livingwood Glade", "antys"),
 	new PageInfo(undefined, "locations/taaira-ruzara/keldhall.html", "Keldhall, Human Trade Town", "keldhall"),
 	new PageInfo(undefined, "locations/taaira-ruzara/mam-daruhm.html", "Mam Daruhm, Dwarven Fortress City", "mam-daruhm"),
@@ -42,7 +43,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "plotlines/missions/amassing-bandits.html", "Amassing Bandits", "amassing-bandits"),
 	new PageInfo(undefined, "plotlines/missions/rats-in-the-grain-house.html", "Rats in the Grain House", "rats-in-the-grain-house"),
 	new PageInfo(undefined, "plotlines/missions/the-grafted-wolf.html", "The Grafted Wolf", "the-grafted-wolf"),
-	new PageInfo(undefined, "plotlines/missions/truzks-search.html", "Truzk's Hunt", "truzks-search"),
+	new PageInfo(undefined, "plotlines/missions/turzks-search.html", "Turzk's Hunt", "turzks-search"),
 
 	new PageInfo(undefined, "spellbooks/main.html", "Noble Rising Spellbooks", "spellbooks"),
 	new PageInfo(undefined, "spellbooks/yasrena-spellbook.html", "Yasrena's Spellbook", "yasrena-spellbook"),
@@ -67,16 +68,18 @@ export const nobleNav = [
 
 	new PageInfo(undefined, "npcs/mysterious-stranger.html", "The Mysterious Stranger", "mysterious-stranger"),
 	new PageInfo(undefined, "npcs/reth-mailynath.html", "Reth Mailynath, Adamantine Slayer", "reth-mailynath"),
-	new PageInfo(undefined, "npcs/truzk.html", "Truzk, Ancient Lizardfolk", "truzk"),
+	new PageInfo(undefined, "npcs/turzk.html", "Turzk, Ancient Lizardfolk", "turzk"),
 	new PageInfo(undefined, "npcs/yasrena.html", "Yasrena Telenna, Drow Escapee", "yasrena"),
 	new PageInfo(undefined, "npcs/dolph.html", "Dolph Lundgren, Grafted Gnome Monk", "dolph"),
 
 	new PageInfo(undefined, "characters/camilia.html", "Camilia Famia, Wild Beauty", "camilia"),
 	new PageInfo(undefined, "characters/animal-companions/cackles.html", "Cackles the Spotted Hyena", "cackles"),
 
+	new PageInfo(undefined, "misc/kali-rituals.html", "Kali Rituals", "kali-rituals"),
+
 	new PageInfo(undefined, "images/fang-at-desk.jpg", "", "fang-img", true),
 	new PageInfo(undefined, "images/mysterious-stranger.jpg", "", "mysterious-stranger-img", true),
-	new PageInfo(undefined, "images/truzk.jpg", "", "truzk-img", true),
+	new PageInfo(undefined, "images/turzk.jpg", "", "turzk-img", true),
 	new PageInfo(undefined, "images/yasrena.jpg", "", "yasrena-img", true),
 	new PageInfo(undefined, "images/camilia.png", "", "camilia-img", true),
 	new PageInfo(undefined, "images/ulath.png", "", "ulath-img", true),

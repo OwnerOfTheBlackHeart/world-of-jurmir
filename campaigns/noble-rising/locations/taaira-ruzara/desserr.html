@@ -1,45 +1,20 @@
 <h1>The Capital City of Desserr</h1>
-<p>Capital city of the great uncle</p>
+<h1 class="subtitle">Capital city of the great uncle</h1>
 
 <h2>Town Information</h2>
-<table class="statBlock" cellspacing="0">
-    <tr>
-        <th>Town Size:</th>
-        <td>Small City</td>
-    </tr>
-    <tr>
-        <th>Population:</th>
-        <td>Approximately 8,000 people</td>
-    </tr>
-    <tr>
-        <th>Gold Limit:</th>
-        <td>15,000 gp</td>
-    </tr>
-    <tr>
-        <th>Power Center(s)</th>
-        <td>Conventional, Magical</td>
-    </tr>
-    <tr>
-        <th>Power Center Alignment</th>
-        <td>Neutral Good</td>
-    </tr>
-    <tr>
-        <th>Guard Captain Power</th>
-        <td>Highest level fighter</td>
-    </tr>
-    <tr>
-        <th>Guard Count</th>
-        <td>80 guards (40 shift 1, 25 shift 2, 15 shift 3), 400 militiamen</td>
-    </tr>
-    <tr>
-        <th>Demographics Type</th>
-        <td>Integrated</td>
-    </tr>
-    <tr>
-        <th>Political System</th>
-        <td>Feudalism</td>
-    </tr>
-</table>
+<ap-basic-table character-table>
+	[
+		["Town Size:", "Small City"],
+		["Population:", "Approximately 8,000 people"],
+		["Gold Limit:", "15,000 gp"],
+		["Power Center(s):", "Conventional, Magical"],
+		["Power Center Alignment:", "Neutral Good"],
+		["Guard Captain Power:", "Highest level fighter"],
+		["Guard Count:", "80 guards (40 shift 1, 25 shift 2, 15 shift 3), 400 militiamen"],
+		["Demographics Type:", "Integrated"],
+		["Political System:", "Feudalism"]
+	]
+</ap-basic-table>
 <ap-auth-container permissions="gm desserr-population desserr-full noble-full">
 	<h2>Population Breakdown</h2>
 	<ul class="homebrew-list">
@@ -213,17 +188,7 @@
 </p>
 
 <h2>Notable Peoples</h2>
-<h3>Count Zesharr Black</h3>
-<p>
-	Zesharr is an old catfolk with black fur that is white around his face, hands, and feet. He stands at 5' 5" and
-	weighs 141 pounds. He keeps his hair shorter and styles it into spikes using specially prepared animal fat and
-	he often smells of a mix of said animal fat and the sweet perfumes he prefers.
-</p>
-<p>
-	Zesharr has a friendly disposition and generally likes to help those around him. Zesharr is the uncle of Count 
-	Nesserr Black of Mensharra. Zesharr runs his court later in the day, usually starting between 10 and noon and
-	ending after dark, in order to make his court more convenient to working people.
-</p>
+<h3><ap-link-button linkName="noble-desserr-nobility">Desserr Nobility</ap-link-button></h3>
 
 <h3>Nasshurr Diving Hawk</h3>
 <p>
@@ -317,32 +282,6 @@
 	</p>
 </ap-auth-container>
 
-<h3>Reyrona Dathana</h2>
-<p>
-	Reyrona is a 5' 2" elven woman with porcelain skin, lower back length dark brown hair, light green eyes and a
-	manicured physique. She dresses in bright purples and pinks with the occasional orange, gold, or yellow, and everything
-	she wears is made of the highest quality leathers, furs, and silks. She owns Desserr Tailoring.
-</p>
-<p>
-	Reyrona is known to have a high opinion of herself and judges people by the amount of gold they appear willing
-	to spend. She is a noble in Zesharr's court and is friendly with most people she has seen within the court, but
-	also rude to those who have disrupted court.
-</p>
-<p>
-	Reyrona goes to court every other weekday.
-</p>
-<ap-auth-container permissions="gm desserr-full reyrona-other-properties noble-full">
-	<p>
-		Reyrona owns 5 silk farms, 2 leather farms, and 3 sheep farms. She also has connections with various local sources
-		of fabrics.
-	</p>
-</ap-auth-container>
-<ap-auth-container permissions="gm desserr-full reyrona-skill-bonuses noble-full">
-	<p>
-		Knowledge (notability) +12, preform (sex) +10, con +1, will +7, fort +4
-	</p>
-</ap-auth-container>
-
 <h3>Emmie Burton</h2>
 <p>
 	Emmie is a young, 5' 4" human female with caramel skin, long black hair kept in a tight pony tail, brown eyes 
@@ -405,25 +344,8 @@
 	</p>
 </ap-auth-container>
 
-<h3>Tossarr Burning Cloud</h3>
-<p>
-	Tossarr is a 5' tall, plump catfolk with fur patterns like those of a cheetah. He wears pants and a shirt that clearly
-	mark him as male, yet his build and face can make determining his sex difficult. His hair is kept in a greased mullet.
-	Tossarr is known as a capable hunter and his ownership of animal farms which provide meat, milk, and leather.
-</p>
-<ap-auth-container permissions="gm desserr-full tossarr-wants noble-full">
-	<p>
-		Tossarr does want to become a true man but doesn't have the money to pay for the magics involved to make such a 
-		change permanent.
-	</p>
-</ap-auth-container>
-<ap-auth-container permissions="gm desserr-full tossarr-sex noble-full">
-	<p>
-		Tossarr is a feminine male.
-	</p>
-</ap-auth-container>
-
 <h2>Notable Locations</h2>
+
 <h3>Count Zesharr Black's Castle</h3>
 <p>
 	In the center of town, on a raised hill is the castle, which is made of round stone. The castle itself is made up
