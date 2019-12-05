@@ -14,5 +14,18 @@
 	},
 	"[typescript]": {
 		"editor.formatOnSave": true
-	}
+    },
+    "cSpell.checkLimit": 500,
+    "cSpell.maxNumberOfProblems": 1000,
+    "cSpell.maxDuplicateProblems": 3,
+    "cSpell.words": [
+        "Feph",
+        "Keldhall",
+        "Kriotz",
+        "Lindo",
+        "chainshirt",
+        "halfling",
+        "livingwood",
+        "transformatives"
+    ]
 }

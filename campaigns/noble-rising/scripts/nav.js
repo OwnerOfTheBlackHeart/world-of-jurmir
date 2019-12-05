@@ -17,6 +17,7 @@ export const nobleNav = [
     new PageInfo(undefined, "locations/taaira-ruzara/antys.html", "Antys, Livingwood Glade", "antys"),
     new PageInfo(undefined, "locations/taaira-ruzara/keldhall.html", "Keldhall, Human Trade Town", "keldhall"),
     new PageInfo(undefined, "locations/taaira-ruzara/mam-daruhm.html", "Mam Daruhm, Dwarven Fortress City", "mam-daruhm"),
+    new PageInfo(undefined, "locations/taaira-ruzara/baytide.html", "The Village of Baytide", "baytide"),
     new PageInfo(undefined, "plotlines/main.html", "Noble Rising Plotline Index", "plotline-index"),
     new PageInfo(undefined, "plotlines/the-grafter.html", "The Grafter", "the-grafter"),
     new PageInfo(undefined, "plotlines/hunting-ulath.html", "Hunting the God Ulath", "hunting-ulath"),

@@ -88,9 +88,10 @@ const authList = Object.freeze([
 		"huntsing-down-the-cult",
 		"nesserr-black-personality",
 		"camilia-alignment",
-		"camilia-personality"
+		"camilia-personality",
+		"nera"
 	]),
 	new Auth("Dan", "Coolguy420", ["dan", "aaron-full"]),
 	new Auth("Keith", "Random26", ["wolf"]),
-	new Auth("Liam", "SawIt", ["aaron-full", "kali-spell-list", "kali-rituals"])
+	new Auth("Liam", "SawIt", ["aaron-full", "kali-spell-list", "kali-rituals", "kali"])
 ]);
