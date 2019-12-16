@@ -52,6 +52,8 @@ export const nobleNav = [
     new PageInfo(undefined, "characters/camilia.html", "Camilia Famia, Wild Beauty", "camilia"),
     new PageInfo(undefined, "characters/animal-companions/cackles.html", "Cackles the Spotted Hyena", "cackles"),
     new PageInfo(undefined, "misc/kali-rituals.html", "Kali Rituals", "kali-rituals"),
+    new PageInfo(undefined, "misc/the-buried-turd.html", "The Buried Turd", "the-buried-turd"),
+    new PageInfo(undefined, "misc/the-farm.html", "The Farm", "the-farm"),
     new PageInfo(undefined, "images/fang-at-desk.jpg", "", "fang-img", true),
     new PageInfo(undefined, "images/mysterious-stranger.jpg", "", "mysterious-stranger-img", true),
     new PageInfo(undefined, "images/turzk.jpg", "", "turzk-img", true),
