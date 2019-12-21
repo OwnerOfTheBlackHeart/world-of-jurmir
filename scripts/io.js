@@ -10,6 +10,7 @@ export function LoadIntoId(url, id, title, loadCallback) {
         let pageArea = document.getElementById(id);
         pageArea.innerHTML = html;
         document.body.scrollTop = document.documentElement.scrollTop = 0;
+        pageArea.scrollTop = 0;
         if (title) {
             document.title = title;
         }

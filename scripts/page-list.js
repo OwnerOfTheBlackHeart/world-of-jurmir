@@ -40,6 +40,7 @@ export const pages = [
     new PageInfo(undefined, "https://drive.google.com/drive/folders/1BJhOezdxdbN7pBTSjqmTLgEm2blqt6qP?usp=sharing", "", "aaron-map", true),
     new PageInfo(undefined, "http://www.d20srd.org/srd/monsters/elf.htm", "", "drow-traits", true),
     new PageInfo(undefined, "http://www.d20srd.org/srd/classes/ranger.htm", "", "3.5-ranger-page", true),
+    new PageInfo(undefined, "http://www.d20srd.org/srd/equipment/goodsAndServices.htm#toolsAndSkillKits", "", "srd-tools-and-kits", true),
     new PageInfo(undefined, "images/feph.jpg", "", "feph-image"),
     new PageInfo(undefined, "images/fephinite-general.jpg", "", "fephinite-general-image"),
     new PageInfo(undefined, "images/fephinite-inquisitor.jpg", "", "fephinite-inquisitor-image"),

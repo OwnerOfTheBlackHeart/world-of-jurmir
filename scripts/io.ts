@@ -24,6 +24,7 @@ export function LoadIntoId(url: string, id?: string, title?: string, loadCallbac
 
 			// Scroll to the top of the page
 			document.body.scrollTop = document.documentElement.scrollTop = 0;
+			pageArea.scrollTop = 0;
 
 			if (title) {
 				// Change page title
