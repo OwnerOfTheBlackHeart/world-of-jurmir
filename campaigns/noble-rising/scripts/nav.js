@@ -52,6 +52,7 @@ export const nobleNav = [
     new PageInfo(undefined, "npcs/dolph.html", "Dolph Lundgren, Grafted Gnome Monk", "dolph"),
     new PageInfo(undefined, "characters/camilia.html", "Camilia Famia, Wild Beauty", "camilia"),
     new PageInfo(undefined, "characters/animal-companions/cackles.html", "Cackles the Spotted Hyena", "cackles"),
+    new PageInfo(undefined, "characters/zarsra.html", "Zarsra Telyn, Drow Slave of Sariel", "zarsra"),
     new PageInfo(undefined, "misc/kali-rituals.html", "Kali Rituals", "kali-rituals"),
     new PageInfo(undefined, "misc/the-buried-turd.html", "The Buried Turd", "the-buried-turd"),
     new PageInfo(undefined, "misc/the-farm.html", "The Farm", "the-farm"),
@@ -60,6 +61,7 @@ export const nobleNav = [
     new PageInfo(undefined, "images/turzk.jpg", "", "turzk-img", true),
     new PageInfo(undefined, "images/yasrena.jpg", "", "yasrena-img", true),
     new PageInfo(undefined, "images/camilia.png", "", "camilia-img", true),
+    new PageInfo(undefined, "images/zarsra.jpg", "", "zarsra-img", true),
     new PageInfo(undefined, "images/ulath.png", "", "ulath-img", true),
     new PageInfo(undefined, "http://www.d20srd.org/srd/monsters/elf.htm", "", "srd-elf", true),
     new PageInfo(undefined, "http://www.d20srd.org/srd/equipment/goodsAndServices.htm#thunderstone", "", "srd-tunderstone", true)

@@ -92,6 +92,6 @@ const authList = Object.freeze([
 		"nera"
 	]),
 	new Auth("Dan", "Coolguy420", ["dan", "aaron-full"]),
-	new Auth("Keith", "Random26", ["wolf"]),
+	new Auth("Keith", "Random26", ["wolf", "sariel"]),
 	new Auth("Liam", "SawIt", ["aaron-full", "kali-spell-list", "kali-rituals", "kali"])
 ]);
