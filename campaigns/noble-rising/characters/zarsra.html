@@ -11,16 +11,17 @@
 		["Hit Dice:", "2d10+4 (22 / 22)"],
 		["Initiative:", "+3"],
 		["Speed:", "30 ft. (6 squares)"],
-		["Armor Class:", "13 (+3 dex), touch 13, flat-footed 10"],
+		["Armor Class:", "17 (+3 dex, +4 chainshirt), touch 13, flat-footed 14"],
 		["Base Attack/Grapple:", "+2/+4"],
-		["Attack:", "Unarmed attack +5 melee (1d3+2)"],
-		["Full Attack:", "Unarmed attack +5 melee (1d3+2)"],
+		["Attack:", "Rapier +5 melee (1d6+2/18-20x2) or dagger +5 melee (1d4+2/19-20x2)"],
+		["Full Attack:", "Rapier +3 melee (1d6+2/18-20x2) and rapier +3 melee (1d6+1/18-20x2); or "],
+		["Full Attack:", "Rapier +3 melee (1d6+2/18-20x2) and dagger +3 melee (1d4+1/19-20x2)"],
 		["Space/Reach:", "5 ft./5 ft."],
 		["Special Attacks:", "Poison, spell-like abilities"],
-		["Special Qualities:", "Darkvision 120 ft, <ap-link-button linkName="lesser-drow">Drow traits</ap-link-button>, spell resistance 13"],
+		["Special Qualities:", "Darkvision 120 ft, <ap-link-button linkName="lesser-drow">Drow traits</ap-link-button>, Light Blindness"],
 		["Saves:", "Fort +5, Ref +3, Will +1"],
 		["Abilities:", "Str 14, Dex 16, Con 14, Int 13, Wis 13, Cha 14"],
-		["Skills:", "Climb +7, Intimidate +7, Craft (armorsmithing) +6, Listen +3, Search +3, Spot +3"],
+		["Skills:", "Climb +7 (+5 in armor), Intimidate +7, Craft (armorsmithing) +6, Listen +3, Search +3, Spot +3"],
 		["Feats:", "Two-Weapon Fighting, Oversized Two-Weapon Fighting (CA 111), Weapon Finesse"],
 		["Languages:", "Common, Elven, Undercommon, Draconic"],
 		["Alignment:", "Lawful Evil"],
@@ -29,10 +30,16 @@
 	]
 </ap-basic-table>
 
+<p>
+	<i class="power">Light Blindness:</i> Abrupt exposure to bright light (such as sunlight or a daylight spell) blinds drow for 1 round. 
+	On subsequent rounds, they are dazzled as long as they remain in the affected area.
+</p>
+
 <div class="table-container">
 	<div class="table-column">
 		<ap-skill-chart>
 			[
+				["Armor Check Penalty", -2, ""],
 				["Climb", 5, ""],
 				["Intimidate", 5, ""],
 				["Craft (armorsmithing)", 5, ""],
@@ -45,7 +52,30 @@
 	<div class="table-column">
 		<ap-enc-chart strength="14">
 			[
-                [0, 0, 0, 0]
+				[0, 0, 0, 0],
+				["Dayglasses (sunglasses)", 1, [0, 50, 0, 0], 0.5],
+				["Rapier", 2, [0, 20, 0, 0], 2],
+				["Dagger", 1, [0, 2, 0, 0], 1],
+				["Chainshirt", 1, [0, 100, 0, 0], 25],
+				["Backpack", 1, [0, 2, 0, 0], 2],
+				["Waterskin", 1, [0, 1, 0, 0], 4],
+				["Hemp Rope, ft", 50, [0, 0, 0, 2], 0.2],
+				["Flint and steel", 1, [0, 1, 0, 0], 0],
+				["Grappling Hook", 1, [0, 1, 0, 0], 4],
+				{
+					"name":"Non-Combat Inventory (to be determined)",
+                    "carryWeight":0,
+                    "contents":[
+						[0, 0, 0, 0],
+						["Dayglasses (sunglasses)", 1, [0, 50, 0, 0], 0.5],
+                        ["Traveler's Outfit, human quality, blue", 1, [0, 1, 0, 0], 5],
+						["Traveler's Outfit, human quality, brown", 1, [0, 1, 0, 0], 5],
+						["Traveler's Outfit, elven quality, green", 1, [0, 4, 0, 0], 5],
+						["Cotton Dress, elven quality, red", 1, [0, 6, 0, 0], 3],
+						["Bedroll", 1, [0, 0, 1, 0], 5],
+						["Winter blanket", 1, [0, 0, 5, 0], 3]
+                    ]
+				}
 			]
 		</ap-enc-chart>
 	</div>
@@ -55,9 +85,33 @@
 	Zarsra is a 5' tall and 115 lbs in weight drow with short cut, pale blue hair, almost glowing red eyes, bark black skin, and
 	a typical elven build with a little in the breasts and butt. On close inspection, Zarsra has tight, quick moving muscle just
 	below her skin. Zarsra has 3 scars: A slash mark between her breasts, a claw mark across the top and back of her right shoulder
-	and a burn mark on her left ass cheek. Zarsra currently only has the cloak given to her by Sariel to wear. Zarsra is 135 years
+	and a burn mark on her left ass cheek. Zarsra is 135 years
 	old.
 </p>
+<p>
+	Zarsra has several outfits that she will wear based on the situation:
+</p>
+<ul class="list">
+	<li>
+		Her favorite "casual" outfit. A green, linen, sleeveless shirt that exposes some of Zarsra's cleavage with a matching wool
+		jacket that covers up her torso and arms completely with a green wool skirt, a pair of brown leather boots, a sturdy leather 
+		belt and a cloak with an ample hood. The shirt, jacket, and skirt have artistic depictions of trees, deer, and wolves embroidered
+		into them, the belt is made from weaved leather strips, the cloak has a simple forest embroidered into it and the boots have 
+		depictions of flowers indented into them. Not fitted, but close.
+	</li>
+	<li>
+		A blue, wool tunic that reaches down to her knees with sleeves that end at her elbows, a solid leather belt, a pair of
+		plain leather boots and a plain brown cloak. Not fitted, but close.
+	</li>
+	<li>
+		A brown, hemp, long sleeve shirt and breaches, a blue vest, an undyed hemp belt, a pair of plain leather boots, and a plain 
+		brown cloak. Not fitted, but close.
+	</li>
+	<li>
+		Not an outfit on its own, but her favorite to wear. A red, cotton dress that goes down to her mid-calf with no sleeves that
+		shows off a little cleavage. Zarsra typically wears the cloak and boots from her casual outfit.
+	</li>
+</ul>
 <ap-auth-container permissions="gm zarsra-personality noble-full">
     <p>
 		Zarsra is a follower of her superiors, first and foremost. She is cautious and distrusting of new people and is slow to
