@@ -1,5 +1,10 @@
 let onAuthChangedValue = [];
 export class Auth {
+    constructor(name, accessCode, permissions) {
+        this.name = name;
+        this.accessCode = accessCode;
+        this.permissions = permissions;
+    }
     static get currentAuth() {
         if (localStorage.currentAuth && !(localStorage.currentAuth === "undefined")) {
             return JSON.parse(localStorage.currentAuth);
@@ -24,11 +29,6 @@ export class Auth {
     }
     static set onAuthChangedList(val) {
         onAuthChangedValue = val;
-    }
-    constructor(name, accessCode, permissions) {
-        this.name = name;
-        this.accessCode = accessCode;
-        this.permissions = permissions;
     }
     static CheckAccessLevel(permissions) {
         if (permissions === "none" && !Auth.currentAuth) {

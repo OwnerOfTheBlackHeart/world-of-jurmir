@@ -50,6 +50,7 @@ export const pages = [
 	new PageInfo(undefined, "http://www.d20srd.org/srd/classes/ranger.htm", "", "3.5-ranger-page", true),
 
 	new PageInfo(undefined, "http://www.d20srd.org/srd/equipment/goodsAndServices.htm#toolsAndSkillKits", "", "srd-tools-and-kits", true),
+	new PageInfo(undefined, "http://www.d20srd.org/srd/wilderness.htm#tableBuildings", "", "srd-buildings", true),
 
 	new PageInfo(undefined, "images/feph.jpg", "", "feph-image"),
 	new PageInfo(undefined, "images/fephinite-general.jpg", "", "fephinite-general-image"),
