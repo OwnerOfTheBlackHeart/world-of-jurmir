@@ -93,12 +93,17 @@ li > .list {
     padding: 0 0 0 12px;
 }
 
+.list, .homebrew-list {
+	padding: 0 0 0 12px;
+}
+
 .homebrew-list > li, .list > li 
 {
     list-style-type: disc;
     width: 80%;
     min-width: 300px;
-    max-width: 750px;
+	max-width: 750px;
+	margin-top: 0;
 }
 
 .homebrew-list > li > ul > li,
@@ -107,7 +112,8 @@ li > .list {
     list-style-type: circle;
     width: 80%;
     min-width: 300px;
-    max-width: 750px;
+	max-width: 750px;
+	margin-top: 0;
 }
 
 table.spellbook-table
