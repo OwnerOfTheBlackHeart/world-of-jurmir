@@ -1,5 +1,10 @@
 import { GetPageInfoFromName } from "../page-list.js";
 export class LinkImage extends HTMLElement {
+    constructor() {
+        super();
+        this.image;
+        this.imagePageInfo;
+    }
     static get observedAttributes() {
         return ["linkName", "disabled"];
     }
@@ -26,11 +31,6 @@ export class LinkImage extends HTMLElement {
         if (this.image) {
             this.image.width = val;
         }
-    }
-    constructor() {
-        super();
-        this.image;
-        this.imagePageInfo;
     }
     click() {
     }

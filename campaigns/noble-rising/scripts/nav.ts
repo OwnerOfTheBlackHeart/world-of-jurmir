@@ -12,6 +12,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "organizations/hands-of-kriotz.html", "Hands of Kriotz", "hands-of-kriotz"),
 	new PageInfo(undefined, "organizations/claws-of-kyranious.html", "Claws of Kyranious", "claws-of-kyranious"),
 	new PageInfo(undefined, "organizations/silver-daggers.html", "Silver Daggers Thieves' Guild", "silver-daggers"),
+	new PageInfo(undefined, "organizations/tae-gilonnalia-empire.html", "The Tae`Gilonnalia Empire", "tae-gilonnalia-empire"),
 
 	new PageInfo(undefined, "locations/tiathiloth/main.html", "The County of Tiathiloth", "tiathiloth"),
 	new PageInfo(undefined, "locations/tiathiloth/mensharra.html", "Mensharra, Capital City of Tiathiloth", "mensharra"),
@@ -53,6 +54,10 @@ export const nobleNav = [
 
 	new PageInfo(undefined, "enemies/bandits/human-commoner.html", "Human Commoner", "human-commoner"),
 	new PageInfo(undefined, "enemies/bandits/catfolk-adept.html", "Catfolk Adept", "catfolk-adept"),
+	new PageInfo(undefined, "enemies/bandits/catfolk-fighter.html", "Catfolk Barbarian", "catfolk-fighter"),
+	new PageInfo(undefined, "enemies/bandits/catfolk-ranger.html", "Catfolk Ranger", "catfolk-ranger"),
+	new PageInfo(undefined, "enemies/bandits/catfolk-sorcerer.html", "Catfolk Sorcerer", "catfolk-sorcerer"),
+	new PageInfo(undefined, "enemies/bandits/mutant-bandit-chief.html", "Mutant Bandit Chief", "mutant-bandit-chief"),
 
 	new PageInfo(undefined, "enemies/minor-gods/ulath/ulath.html", "Ulath, God of Reptiles and the Foul", "ulath"),
 	new PageInfo(undefined, "enemies/minor-gods/ulath/ulath-abductor.html", "Ulath Abductor", "ulath-abductor"),
@@ -67,6 +72,8 @@ export const nobleNav = [
 
 	new PageInfo(undefined, "enemies/mutated-animals/flying-wolf.html", "Flying Wolf", "flying-wolf"),
 	new PageInfo(undefined, "enemies/mutated-animals/scale-wolf.html", "Scaly Wolf", "scale-wolf"),
+	new PageInfo(undefined, "enemies/mutated-animals/mutant-dire-wolf.html", "Mutant Dire Wolf", "mutant-dire-wolf"),
+	new PageInfo(undefined, "enemies/mutated-animals/mutant-swindlespitter.html", "Mutant Swindlespitter", "mutant-swindlespitter"),
 
 	new PageInfo(undefined, "npcs/mysterious-stranger.html", "The Mysterious Stranger", "mysterious-stranger"),
 	new PageInfo(undefined, "npcs/reth-mailynath.html", "Reth Mailynath, Adamantine Slayer", "reth-mailynath"),
