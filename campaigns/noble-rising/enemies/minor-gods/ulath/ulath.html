@@ -5,28 +5,47 @@
 	<ap-basic-table character-table>
 		[
 			["Size/Type:", "Medium Humanoid (Reptilian, Minor God)"],
-			["Hit Dice:", "2d8+1d10+12 (26)"],
+			["Hit Dice:", "2d8+2d10+2d4+24 (46)"],
 			["Initiative:", "-1"],
 			["Speed:", "30 ft. (6 squares)"],
 			["Armor Class:", "16 (-1 dex, +7 natural armor), touch 9, flat-footed 16"],
-			["Base Attack/Grapple:", "+2/+5"],
-			["Attack:", "Diseased spear +6 melee (1d8+4, x3) or claw +5 melee (1d4+3)"],
-			["Full Attack:", "Diseased spear +6 melee (1d8+4, x3) and bite +3 (1d6+1); or"],
-			["Full Attack:", "2 claws +5 (1d4+3) and bite +3 (1d6+1)"],
+			["Base Attack/Grapple:", "+4/+7"],
+			["Attack:", "Diseased spear +8 melee (1d8+4, x3) or claw +7 melee (1d4+3)"],
+			["Full Attack:", "Diseased spear +8 melee (1d8+4, x3) and bite +5 (1d6+1); or"],
+			["Full Attack:", "2 claws +7 (1d4+3) and bite +5 (1d6+1)"],
 			["Space/Reach:", "5 ft./5 ft."],
-			["Special Attacks:", "Stench, diseased spear"],
+			["Special Attacks:", "Stench, diseased spear, power attack, cleave"],
 			["Special Qualities:", "Darkvision 90 ft, Regeneration 2, Damage Reduction 5/magic, Energy Resistance (all but force) 5"],
-			["Saves:", "Fort +9, Ref -1, Will -1"],
-			["Abilities:", "Str 16, Dex 8, Con 18, Int 10, Wis 8, Cha 14"],
-			["Skills:", "Hide +8, Listen +4, Diplomacy +3"],
-			["Feats:", "Multiattack, Improved Natural Attack (bite), Improved Natural Armor, Weapon Focus (spear)"],
-			["Challenge Rating:", "3"],
+			["Saves:", "Fort +10, Ref -1, Will +2"],
+			["Abilities:", "Str 16, Dex 8, Con 19, Int 10, Wis 8, Cha 14"],
+			["Skills:", "Hide +8, Listen +4, Diplomacy +3, Intimidate +6, Concentration +8"],
+			["Feats:", 
+				"Multiattack, Improved Natural Attack (bite), Improved Natural Armor, Weapon Focus (spear), Power Attack,",
+				"Cleave"
+			],
+			["Challenge Rating:", "5"],
 			["Treasure:", "None"],
-			["Languages:", "Draconic, "],
+			["Languages:", "Draconic"],
 			["Alignment:", "Chaotic Evil"],
-			["Class Levels:", "Humanoid 2, Fighter 1"]
+			["Class Levels:", "Humanoid 2, Fighter 2, Sorcerer 2"]
 		]
 	</ap-basic-table>
+
+	<div style="margin: 14.4px">
+		<i class="power">Level 0 spells (DC 13), 6 per day</i>
+		<ul>
+			<li>Acid Splash</li>
+			<li>Daze</li>
+			<li>Touch of Fatigue</li>
+			<li>Mage Hand</li>
+			<li>Message</li>
+		</ul><br/>
+		<i class="power">Level 1 spells (DC 14), 5 per day</i>
+		<ul>
+			<li>Mage Armor</li>
+			<li>Burning Hands</li>
+		</ul>
+	</div>
 
 	<p>
 		<i class="power">Stench (EX):</i>
@@ -52,7 +71,9 @@
 				[
 					["Hide", 5, "+4 racial, +8 in rocky or underground surroundings"],
 					["Listen", 5, ""],
-					["Diplomacy", 1, ""]
+					["Diplomacy", 1, ""],
+					["Intimidate", 4, ""],
+					["Concentration", 4, ""]
 				]
 			</ap-skill-chart>
 		</div>

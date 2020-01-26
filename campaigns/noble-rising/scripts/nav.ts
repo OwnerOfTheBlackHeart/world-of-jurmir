@@ -54,7 +54,7 @@ export const nobleNav = [
 
 	new PageInfo(undefined, "enemies/bandits/human-commoner.html", "Human Commoner", "human-commoner"),
 	new PageInfo(undefined, "enemies/bandits/catfolk-adept.html", "Catfolk Adept", "catfolk-adept"),
-	new PageInfo(undefined, "enemies/bandits/catfolk-fighter.html", "Catfolk Barbarian", "catfolk-fighter"),
+	new PageInfo(undefined, "enemies/bandits/catfolk-barbarian.html", "Catfolk Barbarian", "catfolk-barbarian"),
 	new PageInfo(undefined, "enemies/bandits/catfolk-ranger.html", "Catfolk Ranger", "catfolk-ranger"),
 	new PageInfo(undefined, "enemies/bandits/catfolk-sorcerer.html", "Catfolk Sorcerer", "catfolk-sorcerer"),
 	new PageInfo(undefined, "enemies/bandits/mutant-bandit-chief.html", "Mutant Bandit Chief", "mutant-bandit-chief"),
