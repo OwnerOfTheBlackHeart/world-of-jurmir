@@ -80,6 +80,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "npcs/turzk.html", "Turzk, Ancient Lizardfolk", "turzk"),
 	new PageInfo(undefined, "npcs/yasrena.html", "Yasrena Telenna, Drow Escapee", "yasrena"),
 	new PageInfo(undefined, "npcs/dolph.html", "Dolph Lundgren, Grafted Gnome Monk", "dolph"),
+	new PageInfo(undefined, "npcs/phidove.html", "Phidove Amakiir (Gemflower), Elven Info Broker", "phidove"),
 
 	new PageInfo(undefined, "characters/camilia.html", "Camilia Famia, Wild Beauty", "camilia"),
 	new PageInfo(undefined, "characters/animal-companions/cackles.html", "Cackles the Spotted Hyena", "cackles"),
@@ -97,6 +98,8 @@ export const nobleNav = [
 	new PageInfo(undefined, "images/camilia.png", "", "camilia-img", true),
 	new PageInfo(undefined, "images/zarsra.jpg", "", "zarsra-img", true),
 	new PageInfo(undefined, "images/ulath.png", "", "ulath-img", true),
+	new PageInfo(undefined, "images/morasha.jpg", "", "morasha-img", true),
+	new PageInfo(undefined, "images/phidove.jpg", "", "phidove-img", true),
 	new PageInfo(undefined, "http://www.d20srd.org/srd/monsters/elf.htm", "", "srd-elf", true),
 	new PageInfo(undefined, "http://www.d20srd.org/srd/equipment/goodsAndServices.htm#thunderstone", "", "srd-tunderstone", true)
 ];

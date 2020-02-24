@@ -47,6 +47,7 @@ export const pages = [
 	new PageInfo(undefined, "https://drive.google.com/drive/folders/14hpbIxtHNWXO2PcbTgnrV0cKlz2SzyLV?usp=sharing", "", "3.5-homebrew", true),
 	new PageInfo(undefined, "https://drive.google.com/drive/folders/1BJhOezdxdbN7pBTSjqmTLgEm2blqt6qP?usp=sharing", "", "aaron-map", true),
 	new PageInfo(undefined, "http://www.d20srd.org/srd/monsters/elf.htm", "", "drow-traits", true),
+	new PageInfo(undefined, "http://www.d20srd.org/srd/monsters/elf.htm", "", "elf-traits", true),
 	new PageInfo(undefined, "http://www.d20srd.org/srd/classes/ranger.htm", "", "3.5-ranger-page", true),
 
 	new PageInfo(undefined, "http://www.d20srd.org/srd/equipment/goodsAndServices.htm#toolsAndSkillKits", "", "srd-tools-and-kits", true),

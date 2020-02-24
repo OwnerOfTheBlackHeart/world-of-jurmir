@@ -19,6 +19,17 @@ export class AdvancedTable extends HTMLElement {
             this.removeAttribute("character-table");
         }
     }
+    get classTable() {
+        return this.hasAttribute("class-table");
+    }
+    set classTable(val) {
+        if (val) {
+            this.setAttribute("class-table", "");
+        }
+        else {
+            this.removeAttribute("class-table");
+        }
+    }
     connectedCallback() {
         this.Render();
     }
@@ -28,7 +39,10 @@ export class AdvancedTable extends HTMLElement {
             this.table = document.createElement("table");
             this.mainNode.appendChild(this.table);
             if (this.characterTable) {
-                this.table.setAttribute("class", "statBlock");
+                this.table.classList.add("statBlock");
+                this.table.setAttribute("cellspacing", "0");
+            }
+            else if (this.classTable) {
                 this.table.setAttribute("cellspacing", "0");
             }
             this.rows.forEach(row => {
@@ -57,6 +71,22 @@ export class AdvancedTable extends HTMLElement {
             }
             if (field.rowSpan) {
                 cell.rowSpan = field.rowSpan;
+            }
+            if (field.style) {
+                cell.setAttribute('style', `${cell.getAttribute('style')}; ${field.style}`);
+            }
+            if (field.class) {
+                field.class.forEach(cssClass => {
+                    cell.classList.add(cssClass);
+                });
+            }
+            if (field.align) {
+                cell.setAttribute("align", field.align);
+            }
+            if (field.attributes) {
+                for (let key in field.attributes) {
+                    cell.setAttribute(key, field.attributes[key]);
+                }
             }
         }
         return cell;
