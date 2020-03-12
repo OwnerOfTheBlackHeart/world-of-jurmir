@@ -1,52 +1,95 @@
 <h1>The Buried Turd / Brown Eye / Winking Eye</h1>
 <ap-link-button linkName="noble-brown-eye-whores">Whores</ap-link-button>
 
-<ap-auth-container permissions="gm desser-full noble-full brothel-stats">
+<ap-auth-container permissions="gm desser-full noble-full brothel-stats nera">
 	<p>
 		A brothel has has 7 bonuses: Comfort, Quality, Quantity, Fetish, Services, Operation
-		Costs, and Customer Base. When you roll for brothel profit, add all modifiers together
-		in order to determine the bonus to the profit roll.
+		Costs, and Customer Base. Comfort is the level of comfort for the customers, quality
+		is the average quality of the "product", quantity is the amount of 	"product" available 
+		to the customers, fetish is the amount of niche fetishes appealed to, services is the
+		number of non-whoring services available, operation costs is the measures that reduce
+		the cost of operating the business, and customer base is the volume or quality of
+		customers available to the business.
+	</p>
+	<p>
+		To determine the profit for a given month, roll a d20 and add the seven bonuses / penalties. 
+		For each point higher than 10, multiply the net roll by the profit multiplier from the table 
+		below. If you roll below 10, multiply the net roll by the loss multiplier from the table below. 
+		If a 10 is rolled, then the business breaks even.
 	</p>
 	<ul>
-		<li>Comfort: 5</li>
+		<li>Comfort: 6</li>
 		<li>Quality: 0</li>
 		<li>Quantity: -1</li>
 		<li>Fetish: 0</li>
-		<li>Services: 2</li>
-		<li>Operation Cost: 1</li>
+		<li>Services: 4</li>
+		<li>Operation Cost: 0</li>
 		<li>Customer Base: -2</li>
 	</ul>
+	<ap-advanced-table>
+		[
+			[{"value": "Service Count", "isHeader": true}, {"value": "Profit Multiplier", "isHeader": true}, {"value": "Loss Multiplier", "isHeader": true}],
+			["1", "5gp", "3"],
+			["2", "8gp", "3"],
+			["3", "10gp", "4"],
+			["4", "15gp", "5"],
+			["5", "30gp", "6"],
+			["6", "50gp", "10"],
+			["7", "75gp", "15"],
+			["8", "100gp", "25"],
+			["9", "150gp", "40"],
+			["10", "200gp", "75"]
+		]
+	</ap-advanced-table>
+	<ap-advanced-table>
+		[
+			[{"value": "Quantity", "isHeader": true}, {"value": "# of Whores", "isHeader": true}],
+			["0", "-3"],
+			["1", "-2"],
+			["2 to 9", "-1"],
+			["10 to 15", "0"],
+			["16 to 19", "1"],
+			["20 to 24", "2"],
+			["25 to 49", "3"],
+			["50 to 74", "4"],
+			["75 to 99", "5"],
+			["100 to 149", "6"],
+			["150 to 199", "7"],
+			["200 to 299", "8"],
+			["300 to 499", "9"],
+			["500+", "10"]
+		]
+	</ap-advanced-table>
 </ap-auth-container>
 
 <h2>Full Base Upgrades</h2>
 <ul class="list">
-	<li>Clean the base, 2gp, 1 week (worked off)</li>
-	<li>Decorate base, poor, 35gp</li>
-	<li>Decorate base, common, 80gp</li>
-	<li>Decorate base, good, 200gp</li>
-	<li>Decorate base, lesser noble, 500gp, purchased</li>
-	<li>Decorate base, noble, 2,000gp</li>
-	<li>Decorate base, greater noble, 9,000gp</li>
+	<li>Clean the base, 2gp, 1 week <b>(worked off)</b>, decreases comfort penalty by 1</li>
+	<li>Decorate base, poor, 35gp, +1 comfort</li>
+	<li>Decorate base, common, 80gp, +2 comfort</li>
+	<li>Decorate base, good, 200gp, +3 comfort</li>
+	<li>Decorate base, lesser noble, 500gp, +4 comfort, <b>purchased</b></li>
+	<li>Decorate base, noble, 2,000gp, +5 comfort</li>
+	<li>Decorate base, greater noble, 9,000gp, +6 comfort</li>
 	<li>Extra room</li>
 </ul>
 
 <h2>Room 1 - Antechamber</h2>
 <p>
-	A basic stone walled room with a gutter running down the center of the room. Sewer water flows through
-	the gutter slowly, but constantly. The center line of the antechamber is covered in filth while the edges
-	are clean, gently raising from the center.
+	A basic stone walled room with a gutter running down the center of the room. When it is hot
+	inside the Brown Eye, cold, clean water is drizzled through the gutter.
 </p>
 <h3>Possible Upgrades</h3>
 <ul class="list">
-	<li>Reception desk, 200gp, 1 day, max 4, 1 purchased</li>
-	<li>Clog flow, 5gp, 1 day, purchased</li>
+	<li>Reception desk, 200gp, 1 day, max 4, +3 max customer base per, <b>1 purchased</b></li>
+	<li>Clog flow, 5gp, 1 day, decreases comfort penalty by 1, <b>purchased</b></li>
 	<li>Hidden Entrance, DC 10, 5gp, 1 day</li>
 	<li>Hidden Entrance, DC 15, 25gp, 3 days</li>
 	<li>Hidden Entrance, DC 20, 100gp, 1 week</li>
 	<li>Hidden Entrance, DC 25, 250gp, 2 weeks</li>
 	<li>Hidden Entrance, DC 30, 1,000gp, 1 month</li>
-	<li>Front door, 35gp, 1 week, lock separate, purchased (no lock)</li>
-	<li>In wall pillory</li>
+	<li>Front door, 35gp, 1 week, lock separate, <b>purchased</b> (no lock)</li>
+	<li>In wall pillory, 250gp, 1 week, max 6, +1 fetish per 2</li>
 	<li>Locks (very simple), 260 gp, 2 days</li>
 	<li>Locks (average), 520gp, 2 days</li>
 	<li>Locks (good), 1,040gp, 2 days</li>
@@ -61,8 +104,8 @@
 </p>
 <h3>Possible Upgrades</h3>
 <ul class="list">
-	<li>Everwarm pool, 5,000gp, 1 month</li>
-	<li>Everclear pool, 1,000gp, 1 week, purchased</li>
+	<li>Everwarm pool, 5,000gp, 1 month, +2 comfort</li>
+	<li>Everclear pool, 1,000gp, 1 week, +1 comfort, <b>purchased</b></li>
 	<li>Drain pool, 10gp, 1 week</li>
 	<li>Fill pool, 5gp, 1 week</li>
 </ul>
@@ -74,10 +117,10 @@
 </p>
 <h3>Possible Upgrades</h3>
 <ul class="list">
-	<li>Storage room, 500gp, 1 week, purchased</li>
-	<li>Shop, 200gp, 2 weeks, purchased (general goods)</li>
-	<li>Pawn shop, 300gp, 1 week, requires shop</li>
-	<li>Smuggling ring, 500gp, 1 month, requires pawn shop</li>
+	<li>Storage room, 500gp, 1 week, +1 service, <b>purchased</b></li>
+	<li>Shop, 200gp, 2 weeks, +1 service, <b>purchased</b> (general goods)</li>
+	<li>Pawn shop, 300gp, 1 week, +1 service, requires shop</li>
+	<li>Smuggling ring, 500gp, +1 service, 1 month, requires pawn shop</li>
 </ul>
 
 <h2>Room 4 - Refectory</h2>
@@ -88,8 +131,8 @@
 </p>
 <h3>Possible Upgrades</h3>
 <ul class="list">
-	<li>Fireless oven, 2,000gp, 1 week</li>
-	<li>Fireless spit, 1,500gp, 1 week</li>
+	<li>Fireless oven, 2,000gp, 1 week, +1 operation cost</li>
+	<li>Fireless spit, 1,500gp, 1 week, +1 operation cost</li>
 </ul>
 
 <h2>Room 5 - Training Room</h2>
@@ -100,7 +143,7 @@
 <h3>Possible Upgrades</h3>
 <ul class="list">
 	<li>Armory, 1,500gp, 1 month</li>
-	<li>Guard station, 75gp, 3 days, purchased</li>
+	<li>Guard station, 75gp, 3 days, <b>purchased</b></li>
 </ul>
 
 <h2>Room 6 - Workshop</h2>
@@ -114,9 +157,9 @@
 </p>
 <h3>Possible Upgrades</h3>
 <ul class="list">
-	<li>Expand room</li>
-	<li>Secret door</li>
-	<li>Shop door for dropping off goods</li>
+	<li>Expand room, 2,500gp, 1 month</li>
+	<li>Secret door, 650gp, 1 week</li>
+	<li>Shop door for dropping off goods, 500gp, 2 days, +1 service</li>
 </ul>
 
 <h2>Room 7 - Larder</h2>
@@ -136,12 +179,12 @@
 <ul class="list">
 	<li>Initial room slots - 1 max, 1 used</li>
 	<li>Expand Room, 2,000 gp, 1 month, +4 room slots</li>
-	<li>Wine Cellar, 600gp, 2 weeks, 2 room slots (can hold more than just wine)</li>
-	<li>Kitchen, 70gp, 1 week, 2 room slots</li>
-	<li>Fireless kitchen, 3,000gp, 2 weeks, requires kitchen, reduces to 1 room slot</li>
-	<li>Fungus garden, poor, 100gp, 2 weeks, 1 room slot</li>
-	<li>Fungus garden, common, 250gp, 2 weeks, 2 room slots</li>
-	<li>Fungus garden, good, 600gp, 2 weeks, 3 room slots</li>
+	<li>Wine Cellar, 600gp, 2 weeks, 2 room slots (can hold more than just wine), +1 comfort</li>
+	<li>Kitchen, 70gp, 1 week, 2 room slots, +1 service</li>
+	<li>Fireless kitchen, 3,000gp, 2 weeks, requires kitchen, reduces to 1 room slot, +2 operation cost</li>
+	<li>Fungus garden, poor, 100gp, 2 weeks, 1 room slot, +1 operation cost per 3</li>
+	<li>Fungus garden, common, 250gp, 2 weeks, 2 room slots, +1 operation cost and comfort per 2</li>
+	<li>Fungus garden, good, 600gp, 2 weeks, 3 room slots, +1 operation cost and comfort</li>
 	<li>Ice room, 230gp, 1 week, 1 room slot</li>
 	<li>Shelf storage, 125gp, 1 room slot</li>
 	<li>Buttery, 200gp, 1 room slot</li>
@@ -156,14 +199,14 @@
 </p>
 <h3>Possible Upgrades</h3>
 <ul class="list">
-	<li>Bar, 350gp, 4 days, purchased</li>
-	<li>Stage, 650gp, 1 week, purchased</li>
-	<li>Dining area, poor, 200gp, 3 days</li>
-	<li>Dining area, common, 350gp, 4 days</li>
-	<li>Dining area, good, 1,000gp, 1 week</li>
-	<li>Dancing poles, 225gp, 8 days, require stage</li>
+	<li>Bar, 350gp, 4 days, <b>purchased</b>, +1 service</li>
+	<li>Stage, 650gp, 1 week, <b>purchased</b>, +1 comfort</li>
+	<li>Dining area, poor, 200gp, 3 days, +1 comfort</li>
+	<li>Dining area, common, 350gp, 4 days, +2 comfort</li>
+	<li>Dining area, good, 1,000gp, 1 week, +3 comfort</li>
+	<li>Dancing poles, 225gp, 8 days, require stage, +1 fetish</li>
 	<li>Backstage, 800gp, 10 days, require stage</li>
-	<li>BDSM cages, 300gp, 2 weeks</li>
+	<li>BDSM cages, 300gp, 2 weeks, +1 fetish</li>
 </ul>
 
 <h2>Room 9 - Barracks</h2>
@@ -175,7 +218,7 @@
 <ul class="list">
 	<li>Bedroll, 1sp per, currently 12 (dirty)</li>
 	<li>Wooden cot, 3gp per</li>
-	<li>Single person bed, 10gp per, 5 purchased</li>
+	<li>Single person bed, 10gp per, <b>5 purchased</b></li>
 	<li>Double bed, 2 bed slots, 50gp per</li>
 	<li>Fancy double bed, 3 bed slots, 200gp per</li>
 	<li>Fancy triple bed, 4 bed slots, 300gp per</li>
@@ -195,16 +238,20 @@
 	are 2 books: The Inquiries on Filth and Pleasures of the Cannibal. There is also 14gp worth of misc magical ingredients.
 </p>
 <h3>Possible Upgrades, 75 bed slots</h3>
+<p>
+	More advanced logic for the beds to be implemented in time. Likely they will represent max quantity and having better average
+	beds will result in a comfort bonus.
+</p>
 <ul class="list">
 	<li>Bedroll, 1sp per</li>
 	<li>Wooden cot, 3gp per</li>
-	<li>Single person bed, 10gp per, 3 purchased</li>
+	<li>Single person bed, 10gp per, <b>3 purchased</b></li>
 	<li>Double bed, 2 bed slots, 50gp per</li>
 	<li>Fancy double bed, 3 bed slots, 200gp per</li>
 	<li>Fancy triple bed, 4 bed slots, 300gp per</li>
 	<li>Cordoned off room, 1 bed slot, 50gp</li>
 	<li>
-		Cordoned off room, 2 bed slots, 75gp, 3 purchased
+		Cordoned off room, 2 bed slots, 75gp, <b>3 purchased</b>
 		<ul class="list">
 			<li>3 have double beds</li>
 		</ul>
