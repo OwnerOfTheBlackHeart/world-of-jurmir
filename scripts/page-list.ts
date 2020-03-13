@@ -41,6 +41,7 @@ export const pages = [
 	new PageInfo(undefined, "homebrew/3_5-feats.html", "3.5/Pathfinder Homebrew Feats", "3.5-homebrew-feats"),
 	new PageInfo(undefined, "homebrew/magic-items.html", "Magic Items", "magic-items"),
 	new PageInfo(undefined, "homebrew/bright-one.html", "The Bright One Prestige Class", "bright-one"),
+	new PageInfo(undefined, "homebrew/dread-aberromancer.html", "The Dread Aberromancer Prestige Class", "dread-aberromancer"),
 	new PageInfo(undefined, "homebrew/lesser-drow.html", "Lesser Drow", "lesser-drow"),
 
 	new PageInfo(undefined, "https://drive.google.com/open?id=1ig8Abc2VDQf-OX7RUamdHbAtrCKBdyVNs7tkjTxr8Ao", "", "pregnancy", true),

@@ -54,6 +54,22 @@ const EncChart = Object.freeze([
     new EncSet(29, 466, 933, 1400)
 ]);
 export class Encumbrance {
+    constructor(strength, multiplier) {
+        this.set;
+        if (strength == undefined) {
+            this._strength = 10;
+        }
+        else {
+            this._strength = strength;
+        }
+        if (multiplier == undefined) {
+            this._multiplier = 1;
+        }
+        else {
+            this._multiplier = multiplier;
+        }
+        this.Update();
+    }
     get strength() {
         return this._strength;
     }
@@ -74,22 +90,6 @@ export class Encumbrance {
     }
     get drag() {
         return this.heavy * 5;
-    }
-    constructor(strength, multiplier) {
-        this.set;
-        if (strength == undefined) {
-            this._strength = 10;
-        }
-        else {
-            this._strength = strength;
-        }
-        if (multiplier == undefined) {
-            this._multiplier = 1;
-        }
-        else {
-            this._multiplier = multiplier;
-        }
-        this.Update();
     }
     Update(strength, multiplier) {
         if (strength != undefined) {
