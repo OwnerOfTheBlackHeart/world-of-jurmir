@@ -29,6 +29,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "plotlines/the-grafter.html", "The Grafter", "the-grafter"),
 	new PageInfo(undefined, "plotlines/hunting-ulath.html", "Hunting the God Ulath", "hunting-ulath"),
 	new PageInfo(undefined, "plotlines/rise-of-the-bandit-king.html", "Rise of the Bandit King", "rise-of-the-bandit-king"),
+	new PageInfo(undefined, "plotlines/the-methnaes-situation.html", "The Methnaes Situation", "the-methnaes-situation"),
 
 	new PageInfo(
 		undefined,
@@ -80,6 +81,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "npcs/turzk.html", "Turzk, Ancient Lizardfolk", "turzk"),
 	new PageInfo(undefined, "npcs/yasrena.html", "Yasrena Telenna, Drow Escapee", "yasrena"),
 	new PageInfo(undefined, "npcs/dolph.html", "Dolph Lundgren, Grafted Gnome Monk", "dolph"),
+	new PageInfo(undefined, "npcs/zigni.html", "Zigni Lundgren, Kobold Beast Grafter", "zigni"),
 	new PageInfo(undefined, "npcs/phidove.html", "Phidove Amakiir (Gemflower), Elven Info Broker", "phidove"),
 
 	new PageInfo(undefined, "characters/camilia.html", "Camilia Famia, Wild Beauty", "camilia"),
