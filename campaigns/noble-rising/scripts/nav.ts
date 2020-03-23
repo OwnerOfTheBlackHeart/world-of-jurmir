@@ -92,6 +92,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "misc/the-buried-turd.html", "The Buried Turd", "the-buried-turd"),
 	new PageInfo(undefined, "misc/the-farm.html", "The Farm", "the-farm"),
 	new PageInfo(undefined, "misc/brown-eye-whores.html", "Brown Eye Whores", "brown-eye-whores"),
+	new PageInfo(undefined, "misc/whore-house-events.html", "Whore House Events", "whore-house-events"),
 
 	new PageInfo(undefined, "images/fang-at-desk.jpg", "", "fang-img", true),
 	new PageInfo(undefined, "images/mysterious-stranger.jpg", "", "mysterious-stranger-img", true),

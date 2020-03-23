@@ -12,52 +12,100 @@
 		customers available to the business.
 	</p>
 	<p>
-		To determine the profit for a given month, roll a d20 and add the seven bonuses / penalties. 
-		For each point higher than 10, multiply the net roll by the profit multiplier from the table 
-		below. If you roll below 10, multiply the net roll by the loss multiplier from the table below. 
-		If a 10 is rolled, then the business breaks even.
+		To determine the profit for a given month, roll a d100 on the 
+		<ap-link-button linkName="noble-whore-house-events">events</ap-link-button> table to get the 
+		major event for the month and, after applying the modifier for the month's event, roll a d20 
+		and add the seven bonuses / penalties. For each point higher than 10, multiply the net roll 
+		by the profit multiplier from the table below. If you roll below 10, multiply the net roll 
+		by the loss multiplier from the table below. If a 10 is rolled, then the business breaks even.
+	</p>
+	<p>
+		Unnamed whores are useful in that they are easily purchased and are an easy way to move the quantity
+		value. Unnamed whores have a purchase cost based on their attractiveness (1 to 10) as well as a cost to improve
+		their attractiveness. Whores who are supernaturally attractive (11+) can only be obtained through
+		modifying existing whores.
+	</p>
+	<p>
+		Whores that are acquired through RP are known as named whores and have special abilities (such as
+		bards counting as 3 whores for the sake of average quality or a cleric being a powerful healer).
 	</p>
 	<ul>
 		<li>Comfort: 6</li>
-		<li>Quality: 0</li>
+		<li>Quality: 1</li>
 		<li>Quantity: -1</li>
 		<li>Fetish: 0</li>
 		<li>Services: 4</li>
 		<li>Operation Cost: 0</li>
 		<li>Customer Base: -2</li>
 	</ul>
+	<div class="table-container">
+		<div class="table-column">
+			<ap-advanced-table>
+				[
+					[{"value": "Service Count", "isHeader": true}, {"value": "Profit Multiplier", "isHeader": true}, {"value": "Loss Multiplier", "isHeader": true}],
+					["1", "5gp", "3gp"],
+					["2", "8gp", "3gp"],
+					["3", "10gp", "4gp"],
+					["4", "15gp", "5gp"],
+					["5", "30gp", "6gp"],
+					["6", "50gp", "10gp"],
+					["7", "75gp", "15gp"],
+					["8", "100gp", "25gp"],
+					["9", "150gp", "40gp"],
+					["10", "200gp", "75gp"],
+					["11", "250gp", "100gp"],
+					["12", "300gp", "125gp"],
+					["13", "400gp", "150gp"],
+					["14", "500gp", "200gp"],
+					["15", "650gp", "250gp"]
+				]
+			</ap-advanced-table>
+		</div>
+		<div class="table-column">
+			<ap-advanced-table>
+				[
+					[{"value": "# of Whores", "isHeader": true}, {"value": "Quantity", "isHeader": true}],
+					["0", "-3"],
+					["1", "-2"],
+					["2 to 9", "-1"],
+					["10 to 15", "0"],
+					["16 to 19", "1"],
+					["20 to 24", "2"],
+					["25 to 49", "3"],
+					["50 to 74", "4"],
+					["75 to 99", "5"],
+					["100 to 149", "6"],
+					["150 to 199", "7"],
+					["200 to 299", "8"],
+					["300 to 499", "9"],
+					["500+", "10"]
+				]
+			</ap-advanced-table>
+		</div>
+	</div>
 	<ap-advanced-table>
 		[
-			[{"value": "Service Count", "isHeader": true}, {"value": "Profit Multiplier", "isHeader": true}, {"value": "Loss Multiplier", "isHeader": true}],
-			["1", "5gp", "3"],
-			["2", "8gp", "3"],
-			["3", "10gp", "4"],
-			["4", "15gp", "5"],
-			["5", "30gp", "6"],
-			["6", "50gp", "10"],
-			["7", "75gp", "15"],
-			["8", "100gp", "25"],
-			["9", "150gp", "40"],
-			["10", "200gp", "75"]
-		]
-	</ap-advanced-table>
-	<ap-advanced-table>
-		[
-			[{"value": "Quantity", "isHeader": true}, {"value": "# of Whores", "isHeader": true}],
-			["0", "-3"],
-			["1", "-2"],
-			["2 to 9", "-1"],
-			["10 to 15", "0"],
-			["16 to 19", "1"],
-			["20 to 24", "2"],
-			["25 to 49", "3"],
-			["50 to 74", "4"],
-			["75 to 99", "5"],
-			["100 to 149", "6"],
-			["150 to 199", "7"],
-			["200 to 299", "8"],
-			["300 to 499", "9"],
-			["500+", "10"]
+			[
+				{"value": "Average Attractiveness<br/>(Round Down)", "isHeader": true}, 
+				{"value": "Quality", "isHeader": true},
+				{"value": "Purchase Cost", "isHeader": true},
+				{"value": "Improvement Cost", "isHeader": true}
+			],
+			["1", "-4", "1sp", "2sp"],
+			["2", "-3", "3sp", "3sp"],
+			["3", "-2", "5sp", "6sp"],
+			["4", "-1", "1gp", "4gp"],
+			["5", "0", "5gp", "6gp"],
+			["6", "1", "10gp", "12gp"],
+			["7", "2", "20gp", "35gp"],
+			["8", "3", "50gp", "60gp"],
+			["9", "4", "100gp", "200gp"],
+			["10", "5", "250gp", "250gp"],
+			["11", "6", "-", "300gp"],
+			["12", "7", "-", "500gp"],
+			["13", "8", "-", "1,000gp"],
+			["14", "9", "-", "5,000gp"],
+			["15", "10", "-", "-"]
 		]
 	</ap-advanced-table>
 </ap-auth-container>
@@ -72,7 +120,11 @@
 	<li>Decorate base, noble, 2,000gp, +5 comfort</li>
 	<li>Decorate base, greater noble, 9,000gp, +6 comfort</li>
 	<li>Anti-Pregnancy Field, 8,000gp, 2 weeks, +4 operations</li>
-	<li>Extra room</li>
+	<li>Locks (very simple), 260 gp, 2 days</li>
+	<li>Locks (average), 520gp, 2 days</li>
+	<li>Locks (good), 1,040gp, 2 days</li>
+	<li>Locks (amazing), 1,950gp, 2 days</li>
+	<li>Extra room, 3,000gp, 2 weeks</li>
 </ul>
 
 <h2>Room 1 - Antechamber</h2>
@@ -91,10 +143,6 @@
 	<li>Hidden Entrance, DC 30, 1,000gp, 1 month</li>
 	<li>Front door, 35gp, 1 week, lock separate, <b>purchased</b> (no lock)</li>
 	<li>In wall pillory, 250gp, 1 week, max 6, +1 fetish per 2</li>
-	<li>Locks (very simple), 260 gp, 2 days</li>
-	<li>Locks (average), 520gp, 2 days</li>
-	<li>Locks (good), 1,040gp, 2 days</li>
-	<li>Locks (amazing), 1,950gp, 2 days</li>
 </ul>
 
 <h2>Room 2 - Swamp Bath</h2>
@@ -121,7 +169,9 @@
 	<li>Storage room, 500gp, 1 week, +1 service, <b>purchased</b></li>
 	<li>Shop, 200gp, 2 weeks, +1 service, <b>purchased</b> (general goods)</li>
 	<li>Pawn shop, 300gp, 1 week, +1 service, requires shop</li>
-	<li>Smuggling ring, 500gp, +1 service, 1 month, requires pawn shop</li>
+	<li>Money Changer, 1,000gp, 1 week, +1 service, requires shop</li>
+	<li>Smuggling ring, 500gp, 1 month, +1 service, requires pawn shop</li>
+	<li>Magic Items Shop, 20,000gp, +1 service, 1 month, requires pawn shop</li>
 </ul>
 
 <h2>Room 4 - Refectory</h2>
@@ -145,6 +195,7 @@
 <ul class="list">
 	<li>Armory, 1,500gp, 1 month</li>
 	<li>Guard station, 75gp, 3 days, <b>purchased</b></li>
+	<li>Guard training regimen, 250gp, -1 operations cost</li>
 </ul>
 
 <h2>Room 6 - Workshop</h2>
@@ -179,7 +230,7 @@
 </p>
 <ul class="list">
 	<li>Initial room slots - 1 max, 1 used</li>
-	<li>Expand Room, 2,000 gp, 1 month, +4 room slots</li>
+	<li>Expand Room, 2,500 gp, 1 month, +4 room slots</li>
 	<li>Wine Cellar, 600gp, 2 weeks, 2 room slots (can hold more than just wine), +1 comfort</li>
 	<li>Kitchen, 70gp, 1 week, 2 room slots, +1 service</li>
 	<li>Fireless kitchen, 3,000gp, 2 weeks, requires kitchen, reduces to 1 room slot, +2 operation cost</li>
