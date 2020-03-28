@@ -3,9 +3,13 @@ export class AdvancedTable extends HTMLElement {
     constructor() {
         super();
         this.rows = [];
+        this.columns = [];
         this.mainNode = this;
         if (Utilities.IsGoodString(this.innerHTML)) {
-            this.rows = Utilities.StringToObject(this.innerHTML);
+            const jsonRows = Utilities.StringToObject(this.innerHTML);
+            if (jsonRows && Array.isArray(jsonRows) && jsonRows[0] && Array.isArray(jsonRows[0])) {
+                this.rows = jsonRows.map(row => row.map(field => (typeof field === "string" ? { value: field } : field)));
+            }
         }
     }
     get characterTable() {
@@ -45,48 +49,66 @@ export class AdvancedTable extends HTMLElement {
             else if (this.classTable) {
                 this.table.setAttribute("cellspacing", "0");
             }
+            this.columns = this.rows[0];
             this.rows.forEach(row => {
                 const tableRow = document.createElement("tr");
                 this.table.appendChild(tableRow);
-                row.forEach(field => {
-                    tableRow.appendChild(this.BuildCell(field));
+                row.forEach((field, colIndex) => {
+                    tableRow.appendChild(this.BuildCell(field, this.columns[colIndex]));
                 });
             });
         }
     }
-    BuildCell(field) {
+    BuildCell(field, column) {
         let cell;
-        if (typeof field === "string") {
-            cell = Utilities.CreateData(field);
+        if (field.isHeader) {
+            cell = Utilities.CreateHeader(field.value);
         }
         else {
-            if (field.isHeader) {
-                cell = Utilities.CreateHeader(field.value);
-            }
-            else {
-                cell = Utilities.CreateData(field.value);
-            }
-            if (field.colSpan) {
-                cell.colSpan = field.colSpan;
-            }
-            if (field.rowSpan) {
-                cell.rowSpan = field.rowSpan;
-            }
-            if (field.style) {
-                cell.setAttribute('style', `${cell.getAttribute('style')}; ${field.style}`);
-            }
-            if (field.class) {
-                field.class.forEach(cssClass => {
-                    cell.classList.add(cssClass);
-                });
-            }
-            if (field.align) {
-                cell.setAttribute("align", field.align);
-            }
-            if (field.attributes) {
-                for (let key in field.attributes) {
-                    cell.setAttribute(key, field.attributes[key]);
+            cell = Utilities.CreateData(field.value);
+        }
+        if (field.colSpan) {
+            cell.colSpan = field.colSpan;
+        }
+        else if (column.columnColSpan) {
+            cell.colSpan = column.columnColSpan;
+        }
+        if (field.rowSpan) {
+            cell.rowSpan = field.rowSpan;
+        }
+        else if (column.columnRowSpan) {
+            cell.rowSpan = column.columnRowSpan;
+        }
+        if (field.style) {
+            cell.setAttribute("style", `${cell.getAttribute("style")}; ${field.style}`);
+        }
+        else if (column.columnStyle) {
+            cell.setAttribute("style", `${cell.getAttribute("style")}; ${column.columnStyle}`);
+        }
+        if (column.columnClass) {
+            column.columnClass.forEach(cssClass => {
+                cell.classList.add(cssClass);
+            });
+        }
+        if (field.class) {
+            field.class.forEach(cssClass => {
+                if (cssClass && cssClass[0] === "~") {
+                    cell.classList.remove(cssClass.slice(1));
                 }
+                else {
+                    cell.classList.add(cssClass);
+                }
+            });
+        }
+        if (field.align) {
+            cell.setAttribute("align", field.align);
+        }
+        else if (column.columnAlign) {
+            cell.setAttribute("align", column.columnAlign);
+        }
+        if (field.attributes) {
+            for (let key in field.attributes) {
+                cell.setAttribute(key, field.attributes[key]);
             }
         }
         return cell;
