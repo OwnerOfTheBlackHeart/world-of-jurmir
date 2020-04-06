@@ -76,6 +76,10 @@ export const nobleNav = [
 	new PageInfo(undefined, "enemies/mutated-animals/mutant-dire-wolf.html", "Mutant Dire Wolf", "mutant-dire-wolf"),
 	new PageInfo(undefined, "enemies/mutated-animals/mutant-swindlespitter.html", "Mutant Swindlespitter", "mutant-swindlespitter"),
 
+	new PageInfo(undefined, "enemies/nen/nen-drone.html", "Nen Drone", "nen-drone"),
+	new PageInfo(undefined, "enemies/nen/nen-warrior.html", "Nen Warrior", "nen-warrior"),
+	new PageInfo(undefined, "enemies/nen/nen-queen.html", "Nen Queen", "nen-queen"),
+
 	new PageInfo(undefined, "npcs/mysterious-stranger.html", "The Mysterious Stranger", "mysterious-stranger"),
 	new PageInfo(undefined, "npcs/reth-mailynath.html", "Reth Mailynath, Adamantine Slayer", "reth-mailynath"),
 	new PageInfo(undefined, "npcs/turzk.html", "Turzk, Ancient Lizardfolk", "turzk"),
