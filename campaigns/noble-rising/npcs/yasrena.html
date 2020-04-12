@@ -3,28 +3,35 @@
 <ap-basic-table character-table>
 	[
 		["Size/Type:", "Medium Humanoid (Elf)"],
-		["Hit Dice:", "1d10+3d4+8 (26)"],
+		["Hit Dice:", "1d10+6d4+14 (39)"],
 		["Initiative:", "+4"],
 		["Speed:", "30 ft. (6 squares)"],
 		["Armor Class:", "16 (+4 dex, +2 bracers of armor), touch 14, flat-footed 12"],
-		["Base Attack/Grapple:", "+2/+6"],
-		["Attack:", "Bloodstone longsword +8 melee (1d8+4/19-20x2) or ray +6 ranged"],
-		["Full Attack:", "Bloodstone longsword +8 melee (1d8+4/19-20x2) or ray +6 ranged"],
+		["Base Attack/Grapple:", "+4/+8"],
+		["Attack:", "Bloodstone longsword (+1) +10 melee (1d8+4/19-20x2) or ray +8 ranged"],
+		["Full Attack:", "Bloodstone longsword (+1) +10 melee (1d8+4/19-20x2) or ray +8 ranged"],
 		["Space/Reach:", "5 ft./5 ft."],
-		["Special Attacks:", "Bloodstone Bleed"],
-		["Special Qualities:", "Darkvision 120 ft, <ap-link-button linkName="drow-traits">drow traits</ap-link-button>, ",
-			"spell resistance 14, summon familiar (bat), scribe scroll, universalist, light blindness"],
-		["Saves:", "Fort +5, Ref +4, Will +4"],
+		["Special Attacks:", "Bloodstone Bleed (2)"],
+		["Special Qualities:", 
+			"Darkvision 120 ft, <ap-link-button linkName="drow-traits">drow traits</ap-link-button>, ",
+			"spell resistance 18, summon familiar (bat), scribe scroll, universalist, light blindness"
+		],
+		["Saves:", "Fort +6, Ref +5, Will +6"],
 		["Abilities:", "Str 18, Dex 18, Con 14, Int 18, Wis 13, Cha 17"],
-		["Skills:", "Handle Animal +7, Intimidate +7, Craft (weapon) +8, Climb +8, Jump +6, Ride +7, Swim +8, ",
-			"Concentration +6, Knowledge (arcane) +11, Knowledge (religion) +8, Decipher Script +5, Spellcraft +9, ",
-			"Listen +6, Spot +3, Search +3"],
-		["Feats:", "Weapon focus (longsword), spell penetration, scribe scroll, eschew materials"],
-		["Challenge Rating:", "6"],
+		["Skills:", 
+			"Handle Animal +7, Intimidate +7, Craft (weapon) +10, Climb +8, Jump +6, Ride +7, Swim +8, ",
+			"Concentration +10, Knowledge (arcane) +14, Knowledge (religion) +12, Decipher Script +8, Spellcraft +11, ",
+			"Listen +6, Spot +3, Search +3"
+		],
+		["Feats:", 
+			"Weapon focus (longsword), spell penetration, scribe scroll, eschew materials, craft magic arms And armor,",
+			"greater spell penetration (+4 to caster level vs spell resistance)"
+		],
+		["Challenge Rating:", "8"],
 		["Languages:", "Common, elven, undercommon, drow sign language, abyssal, draconic, gnome"],
 		["Alignment:", "True Neutral"],
-		["Class Levels:", "Fighter 1, <ap-link-button linkName="noble-yasrena-spellbook">Wizard 3</ap-link-button>"],
-        ["Level Adjustment:", "+2"]
+		["Class Levels:", "Fighter 1, <ap-link-button linkName="noble-yasrena-spellbook">Wizard 6</ap-link-button>"],
+        ["Level Adjustment:", "+2 (1 negated)"]
 	]
 </ap-basic-table>
 
@@ -47,16 +54,25 @@
 		<li>Mending</li>
 		<li>Arcane Mark</li>
 	</ul><br/>
-	Level 1 spells (DC 15, 3 per day)
+	Level 1 spells (DC 15, 4 per day)
 	<ul>
 		<li>Mage Armor</li>
 		<li>Expeditious Retreat or Mount</li>
 		<li>Disguise Self or Burning Hands</li>
+		<li>Shocking Grasp or Corrosive Grasp (SC 54)</li>
 	</ul><br/>
-	Level 2 spells (DC 16, 2 per day)
+	Level 2 spells (DC 16, 4 per day)
 	<ul>
 		<li>Bull's Strength</li>
 		<li>Burning Sword (SC 41)</li>
+		<li>Blast of Force (SC 32)</li>
+		<li>Alter Self or Mirror Image</li>
+	</ul>
+	Level 3 spells (DC 17, 3 per day)
+	<ul>
+		<li>Summon Monster III or Phantom Steed</li>
+		<li>Nondetection or Haste</li>
+		<li>Fireball or Sound Lance (SC 197)</li>
 	</ul>
 </div>
 
@@ -66,16 +82,16 @@
 			[
 				["Handle Animal", 4, ""],
 				["Intimidate", 4, ""],
-				["Craft (Weapon)", 4, ""],
+				["Craft (Weapon)", 6, ""],
 				["Climb", 4, ""],
                 ["Jump", 2, ""],
                 ["Ride", 2, ""],
 				["Swim", 4, ""],
-				["Concentration", 4, ""],
-				["Knowledge (arcane)", 7, ""],
-				["Knowledge (religion)", 4, ""],
-				["Decipher Script", 1, ""],
-				["Spellcraft", 3, "+2 synergy"],
+				["Concentration", 8, ""],
+				["Knowledge (arcane)", 10, ""],
+				["Knowledge (religion)", 8, ""],
+				["Decipher Script", 4, ""],
+				["Spellcraft", 5, "+2 synergy"],
 				["Listen", 0, "+3 familiar, +2 racial"],
 				["Spot", 0, "+2 racial"],
 				["Search", 0, "+2 racial"]
@@ -110,8 +126,13 @@
 
 <h2>Combat</h2>
 <p>
-    In combat, Bhintel does his best to maintain range, using his eldritch blast when he can and his crossbow when
-    he can't. When forced to engage in melee, he prefers to focus his eldritch blast through his spear.
+	In combat, Yasrena likes to start fights at a range, using her spells to create an initial advantage and act as
+	artillery against her enemies. Once she is satisfied with the amount of damage she has dealt to her enemies,
+	Yasrena will dive in to finish off her enemies with her enchanted bloodstone blade.
+</p>
+<p>
+	If her enemies engage Yasrena before she has a chance to cast her spells, she will fight with her sword and melee
+	spells (if she has them prepared).
 </p>
 
 <h2>History and Motivation</h2>
