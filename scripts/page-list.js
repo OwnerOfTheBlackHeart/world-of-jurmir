@@ -37,6 +37,7 @@ export const pages = [
     new PageInfo(undefined, "homebrew/bright-one.html", "The Bright One Prestige Class", "bright-one"),
     new PageInfo(undefined, "homebrew/dread-aberromancer.html", "The Dread Aberromancer Prestige Class", "dread-aberromancer"),
     new PageInfo(undefined, "homebrew/lesser-drow.html", "Lesser Drow", "lesser-drow"),
+    new PageInfo(undefined, "homebrew/transformatives.html", "Transformatives", "transformatives"),
     new PageInfo(undefined, "misc-info/sexual-characteristics.html", "Sexual Characteristics", "sexual-characteristics"),
     new PageInfo(undefined, "https://drive.google.com/open?id=1ig8Abc2VDQf-OX7RUamdHbAtrCKBdyVNs7tkjTxr8Ao", "", "pregnancy", true),
     new PageInfo(undefined, "https://drive.google.com/drive/folders/14hpbIxtHNWXO2PcbTgnrV0cKlz2SzyLV?usp=sharing", "", "3.5-homebrew", true),
@@ -60,15 +61,15 @@ export const pages = [
     new PageInfo(undefined, "images/zigies-constructor.jpg", "", "zigies-constructor-image"),
     new PageInfo(undefined, "images/zoltan.png", "", "zoltan-image"),
     new PageInfo(undefined, "images/the-red-king.jpeg", "", "the-red-king-image"),
-    new PageInfo(undefined, "images/kyranious.jpg", "", "kyranious-image")
+    new PageInfo(undefined, "images/kyranious.jpg", "", "kyranious-image"),
 ].concat(aaronNav, sbjNav, nobleNav);
 export function GetPageInfoFromUri(uri) {
-    return pages.find(pageInfo => {
+    return pages.find((pageInfo) => {
         return pageInfo.url === uri;
     });
 }
 export function GetPageInfoFromName(name) {
-    return pages.find(pageInfo => {
+    return pages.find((pageInfo) => {
         return pageInfo.name === name;
     });
 }

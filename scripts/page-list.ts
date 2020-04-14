@@ -43,6 +43,7 @@ export const pages = [
 	new PageInfo(undefined, "homebrew/bright-one.html", "The Bright One Prestige Class", "bright-one"),
 	new PageInfo(undefined, "homebrew/dread-aberromancer.html", "The Dread Aberromancer Prestige Class", "dread-aberromancer"),
 	new PageInfo(undefined, "homebrew/lesser-drow.html", "Lesser Drow", "lesser-drow"),
+	new PageInfo(undefined, "homebrew/transformatives.html", "Transformatives", "transformatives"),
 
 	new PageInfo(undefined, "misc-info/sexual-characteristics.html", "Sexual Characteristics", "sexual-characteristics"),
 
@@ -70,17 +71,17 @@ export const pages = [
 	new PageInfo(undefined, "images/zigies-constructor.jpg", "", "zigies-constructor-image"),
 	new PageInfo(undefined, "images/zoltan.png", "", "zoltan-image"),
 	new PageInfo(undefined, "images/the-red-king.jpeg", "", "the-red-king-image"),
-	new PageInfo(undefined, "images/kyranious.jpg", "", "kyranious-image")
+	new PageInfo(undefined, "images/kyranious.jpg", "", "kyranious-image"),
 ].concat(aaronNav, sbjNav, nobleNav);
 
 export function GetPageInfoFromUri(uri: string) {
-	return pages.find(pageInfo => {
+	return pages.find((pageInfo) => {
 		return pageInfo.url === uri;
 	});
 }
 
 export function GetPageInfoFromName(name: string) {
-	return pages.find(pageInfo => {
+	return pages.find((pageInfo) => {
 		return pageInfo.name === name;
 	});
 }
