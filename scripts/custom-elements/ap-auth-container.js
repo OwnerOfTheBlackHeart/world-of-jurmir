@@ -1,15 +1,15 @@
 import { Auth } from "../auth.js";
 export class AuthContainer extends HTMLElement {
+    constructor() {
+        super();
+        this.startingDisplay = this.style.display || "block";
+        AuthContainers.push(this);
+    }
     get permissions() {
         return this.getAttribute("permissions");
     }
     set permissions(val) {
         this.setAttribute("permissions", val);
-    }
-    constructor() {
-        super();
-        this.startingDisplay = this.style.display || "block";
-        AuthContainers.push(this);
     }
     connectedCallback() {
         this.Render();

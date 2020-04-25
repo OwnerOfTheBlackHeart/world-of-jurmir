@@ -63,6 +63,7 @@ export const nobleNav = [
     new PageInfo(undefined, "npcs/dolph.html", "Dolph Lundgren, Grafted Gnome Monk", "dolph"),
     new PageInfo(undefined, "npcs/zigni.html", "Zigni Lundgren, Kobold Beast Grafter", "zigni"),
     new PageInfo(undefined, "npcs/phidove.html", "Phidove Amakiir (Gemflower), Elven Info Broker", "phidove"),
+    new PageInfo(undefined, "npcs/pildrylth.html", "Pildrylth the Calm, Tyrant of the Forest", "pildrylth"),
     new PageInfo(undefined, "characters/camilia.html", "Camilia Famia, Wild Beauty", "camilia"),
     new PageInfo(undefined, "characters/animal-companions/cackles.html", "Cackles the Spotted Hyena", "cackles"),
     new PageInfo(undefined, "characters/zarsra.html", "Zarsra Telyn, Drow Slave of Sariel", "zarsra"),
@@ -80,10 +81,11 @@ export const nobleNav = [
     new PageInfo(undefined, "images/ulath.png", "", "ulath-img", true),
     new PageInfo(undefined, "images/morasha.jpg", "", "morasha-img", true),
     new PageInfo(undefined, "images/phidove.jpg", "", "phidove-img", true),
+    new PageInfo(undefined, "images/pildrylth.jpg", "", "pildrylth-img", true),
     new PageInfo(undefined, "http://www.d20srd.org/srd/monsters/elf.htm", "", "srd-elf", true),
-    new PageInfo(undefined, "http://www.d20srd.org/srd/equipment/goodsAndServices.htm#thunderstone", "", "srd-tunderstone", true)
+    new PageInfo(undefined, "http://www.d20srd.org/srd/equipment/goodsAndServices.htm#thunderstone", "", "srd-tunderstone", true),
 ];
-nobleNav.forEach(pageInfo => {
+nobleNav.forEach((pageInfo) => {
     if (!pageInfo.external) {
         pageInfo.url = nobleUrlStart + pageInfo.url;
     }

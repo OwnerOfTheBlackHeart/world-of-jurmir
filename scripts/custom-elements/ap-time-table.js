@@ -1,6 +1,15 @@
 import * as Utilities from "../utilities.js";
 import { TimeRef, Time } from "../time.js";
 export class TimeTable extends HTMLElement {
+    constructor() {
+        super();
+        this.rows = [];
+        this.table;
+        this.mainNode = this;
+        if (Utilities.IsGoodString(this.innerHTML)) {
+            this.rows = Utilities.StringToObject(this.innerHTML);
+        }
+    }
     get showSeason() {
         return this.hasAttribute("show-season");
     }
@@ -21,15 +30,6 @@ export class TimeTable extends HTMLElement {
         }
         else {
             this.removeAttribute("show-all-months");
-        }
-    }
-    constructor() {
-        super();
-        this.rows = [];
-        this.table;
-        this.mainNode = this;
-        if (Utilities.IsGoodString(this.innerHTML)) {
-            this.rows = Utilities.StringToObject(this.innerHTML);
         }
     }
     connectedCallback() {
