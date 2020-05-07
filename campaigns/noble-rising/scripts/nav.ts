@@ -98,6 +98,9 @@ export const nobleNav = [
 	new PageInfo(undefined, "characters/camilia.html", "Camilia Famia, Wild Beauty", "camilia"),
 	new PageInfo(undefined, "characters/animal-companions/cackles.html", "Cackles the Spotted Hyena", "cackles"),
 	new PageInfo(undefined, "characters/zarsra.html", "Zarsra Telyn, Drow Slave of Sariel", "zarsra"),
+	new PageInfo(undefined, "characters/skellyball.html", "Skellyball, Rollable Human Skeleton", "skellyball"),
+
+	new PageInfo(undefined, "characters/misc/skellyball-powers.html", "Skellyball Powers", "skellyball-powers"),
 
 	new PageInfo(undefined, "misc/kali-rituals.html", "Kali Rituals", "kali-rituals"),
 	new PageInfo(undefined, "misc/the-buried-turd.html", "The Buried Turd", "the-buried-turd"),
