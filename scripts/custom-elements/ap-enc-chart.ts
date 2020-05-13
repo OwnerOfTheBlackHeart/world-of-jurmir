@@ -82,7 +82,7 @@ export class EncumbranceChart extends HTMLElement {
 					name: "Main Inventory",
 					strength: this.strength,
 					multiplier: this.multiplier,
-					contents: items
+					contents: items,
 				} as Inventory)
 			);
 		}
@@ -102,20 +102,20 @@ export class EncumbranceChart extends HTMLElement {
 		let row = document.createElement("tr");
 		table.appendChild(row);
 
-		row.appendChild(Utilities.CreateHeader("Total Value"));
-		row.appendChild(Utilities.CreateData(totalValue.Condense().toString()));
+		row.appendChild(Utilities.CreateTableHeader("Total Value"));
+		row.appendChild(Utilities.CreateTableData(totalValue.Condense().toString()));
 
-		row.appendChild(Utilities.CreateHeader("Total Weight"));
-		row.appendChild(Utilities.CreateData("" + Utilities.numberWithCommas(totalWeight, 2) + " lbs"));
+		row.appendChild(Utilities.CreateTableHeader("Total Weight"));
+		row.appendChild(Utilities.CreateTableData("" + Utilities.numberWithCommas(totalWeight, 2) + " lbs"));
 
 		row = document.createElement("tr");
 		table.appendChild(row);
 
-		let data = Utilities.CreateHeader("Total Coins");
+		let data = Utilities.CreateTableHeader("Total Coins");
 		data.setAttribute("colspan", "2");
 		row.appendChild(data);
 
-		data = Utilities.CreateData(totalCoins.toString());
+		data = Utilities.CreateTableData(totalCoins.toString());
 		data.setAttribute("colspan", "2");
 		row.appendChild(data);
 	}
@@ -130,13 +130,13 @@ export class EncumbranceChart extends HTMLElement {
 			node = document.createElement("tr");
 		}
 
-		node.appendChild(Utilities.CreateHeader("Total Value"));
-		data = Utilities.CreateData(totalValue.Condense().toString());
+		node.appendChild(Utilities.CreateTableHeader("Total Value"));
+		data = Utilities.CreateTableData(totalValue.Condense().toString());
 		data.setAttribute("colspan", "2");
 		node.appendChild(data);
 
-		node.appendChild(Utilities.CreateHeader("Total Weight"));
-		data = Utilities.CreateData("" + Utilities.numberWithCommas(totalWeight, 2) + " lbs");
+		node.appendChild(Utilities.CreateTableHeader("Total Weight"));
+		data = Utilities.CreateTableData("" + Utilities.numberWithCommas(totalWeight, 2) + " lbs");
 		data.setAttribute("colspan", "2");
 		node.appendChild(data);
 

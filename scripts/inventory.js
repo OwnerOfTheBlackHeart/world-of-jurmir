@@ -34,7 +34,7 @@ export class Inventory {
         this.value = this.coins.Copy();
         this.weight += this.coins.weight;
         let item;
-        this.contents.forEach(data => {
+        this.contents.forEach((data) => {
             item = new EncItem(data);
             this.weight += item.weight * item.count;
             this.value = this.value.Add(item.value.Multiply(item.count));
@@ -59,15 +59,12 @@ export class Inventory {
     }
     BuildItemRow(item) {
         let node = document.createElement("tr");
-        node.appendChild(Utilities.CreateData(item.name));
-        node.appendChild(Utilities.CreateData(item.count.toString(), "count-column"));
-        node.appendChild(Utilities.CreateData(item.value.toString()));
-        node.appendChild(Utilities.CreateData("" + item.weight + " lbs"));
-        node.appendChild(Utilities.CreateData(item.value
-            .Multiply(item.count)
-            .Condense()
-            .toString()));
-        node.appendChild(Utilities.CreateData("" + item.weight * item.count + " lbs"));
+        node.appendChild(Utilities.CreateTableData(item.name));
+        node.appendChild(Utilities.CreateTableData(item.count.toString(), "count-column"));
+        node.appendChild(Utilities.CreateTableData(item.value.toString()));
+        node.appendChild(Utilities.CreateTableData("" + item.weight + " lbs"));
+        node.appendChild(Utilities.CreateTableData(item.value.Multiply(item.count).Condense().toString()));
+        node.appendChild(Utilities.CreateTableData("" + item.weight * item.count + " lbs"));
         return node;
     }
     BuildItemTable(node, contents) {
@@ -77,15 +74,15 @@ export class Inventory {
             let row = document.createElement("tr");
             let totalsRow = document.createElement("tr");
             itemTable.appendChild(totalsRow);
-            row.appendChild(Utilities.CreateHeader("Item"));
-            row.appendChild(Utilities.CreateHeader("Count"));
-            row.appendChild(Utilities.CreateHeader("Value"));
-            row.appendChild(Utilities.CreateHeader("Weight"));
-            row.appendChild(Utilities.CreateHeader("Row Value"));
-            row.appendChild(Utilities.CreateHeader("Row Weight"));
+            row.appendChild(Utilities.CreateTableHeader("Item"));
+            row.appendChild(Utilities.CreateTableHeader("Count"));
+            row.appendChild(Utilities.CreateTableHeader("Value"));
+            row.appendChild(Utilities.CreateTableHeader("Weight"));
+            row.appendChild(Utilities.CreateTableHeader("Row Value"));
+            row.appendChild(Utilities.CreateTableHeader("Row Weight"));
             itemTable.appendChild(row);
             let item;
-            contents.forEach(data => {
+            contents.forEach((data) => {
                 item = new EncItem(data);
                 itemTable.appendChild(this.BuildItemRow(item));
             });
@@ -99,20 +96,20 @@ export class Inventory {
             let table = document.createElement("table");
             table.className = "gold-table";
             let subNode = document.createElement("tr");
-            subNode.appendChild(Utilities.CreateHeader("PP"));
-            subNode.appendChild(Utilities.CreateHeader("GP"));
-            subNode.appendChild(Utilities.CreateHeader("SP"));
-            subNode.appendChild(Utilities.CreateHeader("CP"));
-            subNode.appendChild(Utilities.CreateHeader("Value"));
-            subNode.appendChild(Utilities.CreateHeader("Weight"));
+            subNode.appendChild(Utilities.CreateTableHeader("PP"));
+            subNode.appendChild(Utilities.CreateTableHeader("GP"));
+            subNode.appendChild(Utilities.CreateTableHeader("SP"));
+            subNode.appendChild(Utilities.CreateTableHeader("CP"));
+            subNode.appendChild(Utilities.CreateTableHeader("Value"));
+            subNode.appendChild(Utilities.CreateTableHeader("Weight"));
             table.appendChild(subNode);
             subNode = document.createElement("tr");
-            subNode.appendChild(Utilities.CreateData(Utilities.numberWithCommas(coins.pp, 0), "coins-cell"));
-            subNode.appendChild(Utilities.CreateData(Utilities.numberWithCommas(coins.gp, 0), "coins-cell"));
-            subNode.appendChild(Utilities.CreateData(Utilities.numberWithCommas(coins.sp, 0), "coins-cell"));
-            subNode.appendChild(Utilities.CreateData(Utilities.numberWithCommas(coins.cp, 0), "coins-cell"));
-            subNode.appendChild(Utilities.CreateData(coins.Condense().toString()));
-            subNode.appendChild(Utilities.CreateData(Utilities.numberWithCommas(coins.weight, 2) + " lbs"));
+            subNode.appendChild(Utilities.CreateTableData(Utilities.numberWithCommas(coins.pp, 0), "coins-cell"));
+            subNode.appendChild(Utilities.CreateTableData(Utilities.numberWithCommas(coins.gp, 0), "coins-cell"));
+            subNode.appendChild(Utilities.CreateTableData(Utilities.numberWithCommas(coins.sp, 0), "coins-cell"));
+            subNode.appendChild(Utilities.CreateTableData(Utilities.numberWithCommas(coins.cp, 0), "coins-cell"));
+            subNode.appendChild(Utilities.CreateTableData(coins.Condense().toString()));
+            subNode.appendChild(Utilities.CreateTableData(Utilities.numberWithCommas(coins.weight, 2) + " lbs"));
             table.appendChild(subNode);
             node.appendChild(table);
         }
@@ -123,20 +120,20 @@ export class Inventory {
         encTable.className = "encumbrance-table";
         let row = document.createElement("tr");
         encTable.appendChild(row);
-        row.appendChild(Utilities.CreateHeader("Strength"));
-        row.appendChild(Utilities.CreateHeader("Light Load"));
-        row.appendChild(Utilities.CreateHeader("Medium Load"));
-        row.appendChild(Utilities.CreateHeader("Heavy Load"));
-        row.appendChild(Utilities.CreateHeader("Lift Load"));
-        row.appendChild(Utilities.CreateHeader("Drag Load"));
+        row.appendChild(Utilities.CreateTableHeader("Strength"));
+        row.appendChild(Utilities.CreateTableHeader("Light Load"));
+        row.appendChild(Utilities.CreateTableHeader("Medium Load"));
+        row.appendChild(Utilities.CreateTableHeader("Heavy Load"));
+        row.appendChild(Utilities.CreateTableHeader("Lift Load"));
+        row.appendChild(Utilities.CreateTableHeader("Drag Load"));
         row = document.createElement("tr");
         encTable.appendChild(row);
-        row.appendChild(Utilities.CreateData(Utilities.numberWithCommas(enc.strength, 0)));
-        row.appendChild(Utilities.CreateData(Utilities.numberWithCommas(enc.light, 2) + " lbs"));
-        row.appendChild(Utilities.CreateData(Utilities.numberWithCommas(enc.medium, 2) + " lbs"));
-        row.appendChild(Utilities.CreateData(Utilities.numberWithCommas(enc.heavy, 2) + " lbs"));
-        row.appendChild(Utilities.CreateData(Utilities.numberWithCommas(enc.lift, 2) + " lbs"));
-        row.appendChild(Utilities.CreateData(Utilities.numberWithCommas(enc.drag, 2) + " lbs"));
+        row.appendChild(Utilities.CreateTableData(Utilities.numberWithCommas(enc.strength, 0)));
+        row.appendChild(Utilities.CreateTableData(Utilities.numberWithCommas(enc.light, 2) + " lbs"));
+        row.appendChild(Utilities.CreateTableData(Utilities.numberWithCommas(enc.medium, 2) + " lbs"));
+        row.appendChild(Utilities.CreateTableData(Utilities.numberWithCommas(enc.heavy, 2) + " lbs"));
+        row.appendChild(Utilities.CreateTableData(Utilities.numberWithCommas(enc.lift, 2) + " lbs"));
+        row.appendChild(Utilities.CreateTableData(Utilities.numberWithCommas(enc.drag, 2) + " lbs"));
         node.appendChild(encTable);
         return node;
     }
@@ -144,8 +141,8 @@ export class Inventory {
         let cwTable = document.createElement("table");
         let row = document.createElement("tr");
         cwTable.appendChild(row);
-        row.appendChild(Utilities.CreateHeader("Carry Weight"));
-        row.appendChild(Utilities.CreateData(Utilities.numberWithCommas(carryWeight, 2) + " lbs"));
+        row.appendChild(Utilities.CreateTableHeader("Carry Weight"));
+        row.appendChild(Utilities.CreateTableData(Utilities.numberWithCommas(carryWeight, 2) + " lbs"));
         node.appendChild(cwTable);
         return node;
     }
@@ -158,12 +155,12 @@ export class Inventory {
         else {
             node = document.createElement("tr");
         }
-        node.appendChild(Utilities.CreateHeader("Total Value"));
-        data = Utilities.CreateData(totalValue.Condense().toString());
+        node.appendChild(Utilities.CreateTableHeader("Total Value"));
+        data = Utilities.CreateTableData(totalValue.Condense().toString());
         data.setAttribute("colspan", "2");
         node.appendChild(data);
-        node.appendChild(Utilities.CreateHeader("Total Weight"));
-        data = Utilities.CreateData("" + Utilities.numberWithCommas(totalWeight, 2) + " lbs");
+        node.appendChild(Utilities.CreateTableHeader("Total Weight"));
+        data = Utilities.CreateTableData("" + Utilities.numberWithCommas(totalWeight, 2) + " lbs");
         data.setAttribute("colspan", "2");
         node.appendChild(data);
         return node;

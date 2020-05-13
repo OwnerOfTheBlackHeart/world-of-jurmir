@@ -2,7 +2,7 @@ import { GetPageInfoFromUri } from "./page-list.js";
 export function IsGoodString(str) {
     return str !== undefined && str !== "";
 }
-export function CreateHeader(data, className) {
+export function CreateTableHeader(data, className) {
     let header = document.createElement("th");
     header.innerHTML = data;
     if (IsGoodString(className)) {
@@ -10,7 +10,7 @@ export function CreateHeader(data, className) {
     }
     return header;
 }
-export function CreateData(data, className) {
+export function CreateTableData(data, className) {
     let dataElement = document.createElement("td");
     dataElement.innerHTML = data;
     if (IsGoodString(className)) {
@@ -41,5 +41,58 @@ export function numberWithCommas(x, places) {
     else {
         return x.toFixed(places).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
+}
+export function getDescendantProperty(parent, childPath, defaultValue = undefined) {
+    if (parent === undefined || parent === null || childPath === undefined || childPath === null) {
+        return defaultValue;
+    }
+    else if (childPath === "") {
+        return parent;
+    }
+    else {
+        const pathSteps = childPath.split(".");
+        if (!pathSteps || pathSteps.length === 0) {
+            return parent;
+        }
+        const found = pathSteps.reduce((previousDescendant, childName) => {
+            if (previousDescendant !== undefined) {
+                return previousDescendant[childName];
+            }
+            else {
+                return undefined;
+            }
+        }, parent);
+        if (found === undefined) {
+            return defaultValue;
+        }
+        else {
+            return found;
+        }
+    }
+}
+export function setDescendantProperty(parent, childPath, newValue) {
+    if (!childPath) {
+        return parent;
+    }
+    const pathSteps = childPath.split(".");
+    if (!pathSteps || pathSteps.length === 0) {
+        return parent;
+    }
+    parent = (parent === undefined ? {} : parent);
+    const maxIndex = pathSteps.length - 1;
+    pathSteps.reduce((previousDescendant, childName, index) => {
+        if (index === maxIndex) {
+            previousDescendant[childName] = newValue;
+            return previousDescendant[childName];
+        }
+        else {
+            let next = previousDescendant[childName];
+            if (next === undefined || next === null) {
+                next = previousDescendant[childName] = {};
+            }
+            return next;
+        }
+    }, parent);
+    return parent;
 }
 //# sourceMappingURL=utilities.js.map

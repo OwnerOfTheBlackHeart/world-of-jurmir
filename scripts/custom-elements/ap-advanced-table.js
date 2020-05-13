@@ -8,7 +8,7 @@ export class AdvancedTable extends HTMLElement {
         if (Utilities.IsGoodString(this.innerHTML)) {
             const jsonRows = Utilities.StringToObject(this.innerHTML);
             if (jsonRows && Array.isArray(jsonRows) && jsonRows[0] && Array.isArray(jsonRows[0])) {
-                this.rows = jsonRows.map(row => row.map(field => (typeof field === "string" ? { value: field } : field)));
+                this.rows = jsonRows.map((row) => row.map((field) => (typeof field === "string" ? { value: field } : field)));
             }
         }
     }
@@ -50,7 +50,7 @@ export class AdvancedTable extends HTMLElement {
                 this.table.setAttribute("cellspacing", "0");
             }
             this.columns = this.rows[0];
-            this.rows.forEach(row => {
+            this.rows.forEach((row) => {
                 const tableRow = document.createElement("tr");
                 this.table.appendChild(tableRow);
                 row.forEach((field, colIndex) => {
@@ -62,10 +62,10 @@ export class AdvancedTable extends HTMLElement {
     BuildCell(field, column) {
         let cell;
         if (field.isHeader) {
-            cell = Utilities.CreateHeader(field.value);
+            cell = Utilities.CreateTableHeader(field.value);
         }
         else {
-            cell = Utilities.CreateData(field.value);
+            cell = Utilities.CreateTableData(field.value);
         }
         if (field.colSpan) {
             cell.colSpan = field.colSpan;
@@ -86,12 +86,12 @@ export class AdvancedTable extends HTMLElement {
             cell.setAttribute("style", `${cell.getAttribute("style")}; ${column.columnStyle}`);
         }
         if (column.columnClass) {
-            column.columnClass.forEach(cssClass => {
+            column.columnClass.forEach((cssClass) => {
                 cell.classList.add(cssClass);
             });
         }
         if (field.class) {
-            field.class.forEach(cssClass => {
+            field.class.forEach((cssClass) => {
                 if (cssClass && cssClass[0] === "~") {
                     cell.classList.remove(cssClass.slice(1));
                 }

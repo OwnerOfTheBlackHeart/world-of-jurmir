@@ -1,12 +1,12 @@
 <h1>Story of Aaron Timeline</h1>
 <div class="table-container">
     <div class="table-column">
-        <ap-time-table>
-            [
-                ["header", "Current Date"],
-                [20, 8, 3488]
-            ]
-        </ap-time-table>
+        <ap-advanced-table>
+			[
+				[{"isHeader":"true", "value":"Current Date"}],
+				["<ap-display-global property-path="sbjCurrentDate"></ap-display-global>"]
+			]
+		</ap-advanced-table>
     </div>
 	<div class="table-column">
         <ap-time-table show-all-months></ap-time-table>
@@ -15,7 +15,7 @@
 <div class="table-container">
 	<div class="table-column">
         <h3>Stars Beyond Jurmir Timeline</h3>
-        <ap-time-table>
+        <ap-time-table current-date-value="sbjCurrentDate">
             [
                 ["header", "Timeline"],
                 [20, 8, 3488, "Start date, the Red Raven is shot down"]
@@ -24,7 +24,7 @@
     </div>
     <div class="table-column">
         <h3>Birth Timeline</h3>
-        <ap-time-table>
+        <ap-time-table current-date-value="sbjCurrentDate">
             [
                 ["header", "Timeline"]
             ]

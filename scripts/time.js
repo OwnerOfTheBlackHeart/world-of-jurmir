@@ -24,7 +24,7 @@ export class Time {
         let tempTime = this.DistributeDays();
         let month = TimeRef.months[tempTime.month];
         let numeralAbbreviation = " ";
-        if ([10, 11, 12].some(day => day === tempTime.day)) {
+        if ([10, 11, 12].some((day) => day === tempTime.day)) {
             numeralAbbreviation = "th";
         }
         else {
@@ -91,6 +91,45 @@ export class Time {
         toReturn += Time.MonthsToDays(tempTime.month);
         return toReturn;
     }
+    static BuildDiffString(currentTime, toDiffTime) {
+        if (!currentTime || !toDiffTime) {
+            return undefined;
+        }
+        let offset;
+        let daysDifference = currentTime.ToDays() - toDiffTime.ToDays();
+        let toReturn = "";
+        if (daysDifference > 0) {
+            offset = currentTime.Subtract(toDiffTime).DistributeDays();
+        }
+        else if (daysDifference < 0) {
+            offset = toDiffTime.Subtract(currentTime).DistributeDays();
+        }
+        else {
+            return "Current date";
+        }
+        if (offset.day > 0) {
+            toReturn += offset.day.toString() + (offset.day > 1 ? " days" : " day");
+        }
+        if (offset.month > 0) {
+            if (toReturn.length > 0) {
+                toReturn += ", ";
+            }
+            toReturn += offset.month.toString() + (offset.month > 1 ? " months" : " month");
+        }
+        if (offset.year > 0) {
+            if (toReturn.length > 0) {
+                toReturn += ", ";
+            }
+            toReturn += offset.year.toString() + (offset.year > 1 ? " years" : " year");
+        }
+        if (daysDifference > 0) {
+            toReturn += " ago";
+        }
+        else if (daysDifference < 0) {
+            toReturn += " from now";
+        }
+        return toReturn;
+    }
     static WeeksToDays(weeks) {
         return weeks * TimeRef.daysPerWeek;
     }
@@ -148,6 +187,6 @@ TimeRef.months = [
     Month.Durnio,
     Month.Zolter,
     Month.Hrefia,
-    Month.Lagosa
+    Month.Lagosa,
 ];
 //# sourceMappingURL=time.js.map

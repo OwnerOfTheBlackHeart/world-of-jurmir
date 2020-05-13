@@ -1,5 +1,6 @@
 import * as Utilities from "../utilities.js";
 import { TimeRef, Time } from "../time.js";
+import { globals } from "../globals.js";
 export class TimeTable extends HTMLElement {
     constructor() {
         super();
@@ -8,6 +9,9 @@ export class TimeTable extends HTMLElement {
         this.mainNode = this;
         if (Utilities.IsGoodString(this.innerHTML)) {
             this.rows = Utilities.StringToObject(this.innerHTML);
+        }
+        if (this.currentDateValue) {
+            this.currentDate = Utilities.getDescendantProperty(globals, this.currentDateValue);
         }
     }
     get showSeason() {
@@ -31,6 +35,12 @@ export class TimeTable extends HTMLElement {
         else {
             this.removeAttribute("show-all-months");
         }
+    }
+    get currentDateValue() {
+        return this.getAttribute("current-date-value");
+    }
+    set currentDateValue(val) {
+        this.setAttribute("current-date-value", val);
     }
     connectedCallback() {
         this.Render();
@@ -58,44 +68,47 @@ export class TimeTable extends HTMLElement {
     }
     BuildHeaderRow(row) {
         let node = document.createElement("tr");
-        let data = Utilities.CreateHeader(row[1]);
+        let data = Utilities.CreateTableHeader(row[1]);
         node.appendChild(data);
-        data.setAttribute("colspan", "2");
+        data.setAttribute("colspan", "3");
         return node;
     }
     BuildNormalRow(row) {
         let date = new Time(row[0], row[1], row[2]);
         let node = document.createElement("tr");
-        node.appendChild(Utilities.CreateData(date.toString(this.showSeason)));
+        if (this.currentDate) {
+            node.appendChild(Utilities.CreateTableData(Time.BuildDiffString(this.currentDate, date)));
+        }
+        node.appendChild(Utilities.CreateTableData(date.toString(this.showSeason)));
         if (row[3] != undefined) {
-            node.appendChild(Utilities.CreateData(row[3]));
+            node.appendChild(Utilities.CreateTableData(row[3]));
         }
         return node;
     }
     BuildAllMonths(table) {
         let node = document.createElement("tr");
-        let data = Utilities.CreateHeader("List of Months");
+        let data = Utilities.CreateTableHeader("List of Months");
         table.appendChild(node);
         node.appendChild(data);
         data.setAttribute("colspan", "3");
         node = document.createElement("tr");
-        data = Utilities.CreateHeader("#");
+        data = Utilities.CreateTableHeader("#");
         table.appendChild(node);
         node.appendChild(data);
-        data = Utilities.CreateHeader("Month Name");
+        data = Utilities.CreateTableHeader("Month Name");
         table.appendChild(node);
         node.appendChild(data);
-        data = Utilities.CreateHeader("Season");
+        data = Utilities.CreateTableHeader("Season");
         table.appendChild(node);
         node.appendChild(data);
         for (let i = 0; i < TimeRef.months.length; i++) {
             node = document.createElement("tr");
             table.appendChild(node);
-            data = Utilities.CreateData((TimeRef.months[i].position + 1).toString());
+            data = Utilities.CreateTableData((TimeRef.months[i].position + 1).toString());
             node.appendChild(data);
-            data = Utilities.CreateData(TimeRef.months[i].name);
+            data = Utilities.CreateTableData(TimeRef.months[i].name);
             node.appendChild(data);
-            data = Utilities.CreateData(TimeRef.months[i].season);
+            data = Utilities.CreateTableData(TimeRef.months[i].season);
             node.appendChild(data);
         }
     }

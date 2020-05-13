@@ -29,7 +29,7 @@ export class Time {
 		let month = TimeRef.months[tempTime.month];
 		let numeralAbbreviation = " ";
 
-		if ([10, 11, 12].some(day => day === tempTime.day)) {
+		if ([10, 11, 12].some((day) => day === tempTime.day)) {
 			numeralAbbreviation = "th";
 		} else {
 			switch (tempTime.day % 10) {
@@ -117,6 +117,53 @@ export class Time {
 		return toReturn;
 	}
 
+	static BuildDiffString(currentTime: Time, toDiffTime: Time) {
+		if (!currentTime || !toDiffTime) {
+			return undefined;
+		}
+
+		let offset: Time;
+		let daysDifference = currentTime.ToDays() - toDiffTime.ToDays();
+		let toReturn = "";
+
+		// Get offset or return 0
+		if (daysDifference > 0) {
+			offset = currentTime.Subtract(toDiffTime).DistributeDays();
+		} else if (daysDifference < 0) {
+			offset = toDiffTime.Subtract(currentTime).DistributeDays();
+		} else {
+			return "Current date";
+		}
+
+		// Build days, months, and years
+		if (offset.day > 0) {
+			toReturn += offset.day.toString() + (offset.day > 1 ? " days" : " day");
+		}
+
+		if (offset.month > 0) {
+			if (toReturn.length > 0) {
+				toReturn += ", ";
+			}
+			toReturn += offset.month.toString() + (offset.month > 1 ? " months" : " month");
+		}
+
+		if (offset.year > 0) {
+			if (toReturn.length > 0) {
+				toReturn += ", ";
+			}
+			toReturn += offset.year.toString() + (offset.year > 1 ? " years" : " year");
+		}
+
+		// Ago or From Now
+		if (daysDifference > 0) {
+			toReturn += " ago";
+		} else if (daysDifference < 0) {
+			toReturn += " from now";
+		}
+
+		return toReturn;
+	}
+
 	static WeeksToDays(weeks: number) {
 		return weeks * TimeRef.daysPerWeek;
 	}
@@ -148,7 +195,7 @@ export enum Season {
 	Summer = "summer",
 	Spring = "spring",
 	Fall = "fall",
-	Winter = "winter"
+	Winter = "winter",
 }
 
 export class Month {
@@ -187,6 +234,6 @@ export class TimeRef {
 		Month.Durnio,
 		Month.Zolter,
 		Month.Hrefia,
-		Month.Lagosa
+		Month.Lagosa,
 	];
 }

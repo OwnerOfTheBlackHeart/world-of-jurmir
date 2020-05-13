@@ -60,15 +60,15 @@ class BasicTable extends HTMLElement {
 		let node = document.createElement("tr");
 
 		this.CleanRow(row);
-		node.appendChild(Utilities.CreateHeader(row[0]));
-		node.appendChild(Utilities.CreateData(row[1]));
+		node.appendChild(Utilities.CreateTableHeader(row[0]));
+		node.appendChild(Utilities.CreateTableData(row[1]));
 
 		return node;
 	}
 
 	BuildHeaderRow(row: string[]) {
 		let node = document.createElement("tr");
-		let header = Utilities.CreateHeader(row[1]);
+		let header = Utilities.CreateTableHeader(row[1]);
 
 		this.CleanRow(row);
 		node.appendChild(header);

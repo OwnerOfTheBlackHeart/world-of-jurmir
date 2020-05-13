@@ -1,5 +1,6 @@
 import * as Utilities from "../utilities.js";
 import { TimeRef, Time } from "../time.js";
+import { globals } from "../globals.js";
 
 export class TimeTable extends HTMLElement {
 	get showSeason() {
@@ -26,9 +27,18 @@ export class TimeTable extends HTMLElement {
 		}
 	}
 
+	get currentDateValue() {
+		return this.getAttribute("current-date-value");
+	}
+
+	set currentDateValue(val) {
+		this.setAttribute("current-date-value", val);
+	}
+
 	rows: any[];
 	table: HTMLTableElement;
 	mainNode: HTMLElement;
+	currentDate: Time;
 
 	constructor() {
 		// Always call super first in constructor
@@ -40,6 +50,10 @@ export class TimeTable extends HTMLElement {
 
 		if (Utilities.IsGoodString(this.innerHTML)) {
 			this.rows = Utilities.StringToObject(this.innerHTML);
+		}
+
+		if (this.currentDateValue) {
+			this.currentDate = Utilities.getDescendantProperty<Time>(globals, this.currentDateValue);
 		}
 	}
 
@@ -73,21 +87,30 @@ export class TimeTable extends HTMLElement {
 
 	BuildHeaderRow(row: any[]) {
 		let node = document.createElement("tr");
-		let data = Utilities.CreateHeader(row[1]);
+		let data = Utilities.CreateTableHeader(row[1]);
 
 		node.appendChild(data);
-		data.setAttribute("colspan", "2");
+		data.setAttribute("colspan", "3");
 
 		return node;
 	}
 
 	BuildNormalRow(row: any[]) {
+		// Setup
 		let date = new Time(row[0], row[1], row[2]);
 		let node = document.createElement("tr");
-		node.appendChild(Utilities.CreateData(date.toString(this.showSeason)));
 
+		// Offset
+		if (this.currentDate) {
+			node.appendChild(Utilities.CreateTableData(Time.BuildDiffString(this.currentDate, date)));
+		}
+
+		// Date Display
+		node.appendChild(Utilities.CreateTableData(date.toString(this.showSeason)));
+
+		// Notes Column
 		if (row[3] != undefined) {
-			node.appendChild(Utilities.CreateData(row[3]));
+			node.appendChild(Utilities.CreateTableData(row[3]));
 		}
 
 		return node;
@@ -96,22 +119,22 @@ export class TimeTable extends HTMLElement {
 	BuildAllMonths(table: HTMLTableElement) {
 		// The header
 		let node = document.createElement("tr");
-		let data = Utilities.CreateHeader("List of Months");
+		let data = Utilities.CreateTableHeader("List of Months");
 
 		table.appendChild(node);
 		node.appendChild(data);
 		data.setAttribute("colspan", "3");
 
 		node = document.createElement("tr");
-		data = Utilities.CreateHeader("#");
+		data = Utilities.CreateTableHeader("#");
 		table.appendChild(node);
 		node.appendChild(data);
 
-		data = Utilities.CreateHeader("Month Name");
+		data = Utilities.CreateTableHeader("Month Name");
 		table.appendChild(node);
 		node.appendChild(data);
 
-		data = Utilities.CreateHeader("Season");
+		data = Utilities.CreateTableHeader("Season");
 		table.appendChild(node);
 		node.appendChild(data);
 
@@ -121,15 +144,15 @@ export class TimeTable extends HTMLElement {
 			table.appendChild(node);
 
 			// Month Number
-			data = Utilities.CreateData((TimeRef.months[i].position + 1).toString());
+			data = Utilities.CreateTableData((TimeRef.months[i].position + 1).toString());
 			node.appendChild(data);
 
 			// Month Name
-			data = Utilities.CreateData(TimeRef.months[i].name);
+			data = Utilities.CreateTableData(TimeRef.months[i].name);
 			node.appendChild(data);
 
 			// Month Season
-			data = Utilities.CreateData(TimeRef.months[i].season);
+			data = Utilities.CreateTableData(TimeRef.months[i].season);
 			node.appendChild(data);
 		}
 	}

@@ -6,12 +6,12 @@
 </p>
 <div class="table-container">
     <div class="table-column">
-        <ap-time-table>
-            [
-                ["header", "Current Date"],
-                [2, 1, 1488]
-            ]
-        </ap-time-table>
+		<ap-advanced-table>
+			[
+				[{"isHeader":"true", "value":"Current Date"}],
+				["<ap-display-global property-path="nobleCurrentDate"></ap-display-global>"]
+			]
+		</ap-advanced-table>
     </div>
 	<div class="table-column">
         <ap-time-table show-all-months></ap-time-table>
@@ -20,7 +20,7 @@
 <div class="table-container">
 	<div class="table-column">
         <h3>Noble Timeline</h3>
-        <ap-time-table>
+        <ap-time-table current-date-value="nobleCurrentDate">
             [
                 ["header", "Timeline"],
                 [15, 7, 1487, "Start date"],
@@ -64,7 +64,7 @@
 	<ap-auth-container permissions="gm events-timeline noble-full">
 		<div class="table-column">
 			<h3>Events Timeline</h3>
-			<ap-time-table>
+			<ap-time-table current-date-value="nobleCurrentDate">
 				[
 					["header", "Timeline"],
 					[12, 6, 1487, "<ap-link-button linkName="noble-rise-of-the-bandit-king">The Bandit King is Declared</ap-link-button>"],
@@ -84,7 +84,7 @@
         <!-- 
             Elf/Catfolk hybrids, child will be adult at 64, 19 months and 3 weeks pregnancy, 6 month trimesters
         -->
-        <ap-time-table>
+        <ap-time-table current-date-value="nobleCurrentDate">
             [
                 ["header", "Timeline"],
                 [4, 8, 1487, "Reyrona was impregnated by Nera, non-identical twins"],

@@ -8,3 +8,4 @@ import "./ap-link-button.js";
 import "./ap-skill-chart.js";
 import "./ap-spellbook-table.js";
 import "./ap-time-table.js";
+import "./ap-display-global.js";

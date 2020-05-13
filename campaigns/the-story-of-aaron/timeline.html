@@ -1,12 +1,12 @@
 <h1>Story of Aaron Timeline</h1>
 <div class="table-container">
     <div class="table-column">
-        <ap-time-table>
-            [
-                ["header", "Current Date"],
-                [8, 5, 1488]
-            ]
-        </ap-time-table>
+        <ap-advanced-table>
+			[
+				[{"isHeader":"true", "value":"Current Date"}],
+				["<ap-display-global property-path="aaronCurrentDate"></ap-display-global>"]
+			]
+		</ap-advanced-table>
     </div>
 	<div class="table-column">
         <ap-time-table show-all-months></ap-time-table>
@@ -15,7 +15,7 @@
 <div class="table-container">
 	<div class="table-column">
         <h3>Aaron Timeline</h3>
-        <ap-time-table>
+        <ap-time-table current-date-value="aaronCurrentDate">
             [
                 ["header", "Timeline"],
                 [20, 4, 1487, "Start date, super jam session"],
@@ -52,7 +52,7 @@
     </div>
     <div class="table-column">
         <h3>Birth Timeline</h3>
-        <ap-time-table>
+        <ap-time-table current-date-value="aaronCurrentDate">
             [
                 ["header", "Timeline"],
                 [22, 4, 1487, "Asny impregnated"],
@@ -82,7 +82,7 @@
     </div>
     <div class="table-column">
         <h3>Guild Missions Timeline</h3>
-        <ap-time-table>
+        <ap-time-table current-date-value="aaronCurrentDate">
             [
                 ["header", "Timeline"],
                 [12, 6, 1487, "Sent out Stop Gnoll Attacks on Farms"],

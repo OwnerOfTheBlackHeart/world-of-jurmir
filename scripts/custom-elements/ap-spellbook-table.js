@@ -51,7 +51,7 @@ export class SpellbookTable extends HTMLElement {
     }
     BuildPagesUsed(table, pageNumberNode) {
         let node = document.createElement("tr");
-        node.appendChild(Utilities.CreateHeader("Total Pages"));
+        node.appendChild(Utilities.CreateTableHeader("Total Pages"));
         node.appendChild(pageNumberNode);
         table.appendChild(node);
     }
@@ -63,16 +63,16 @@ export class SpellbookTable extends HTMLElement {
         node.appendChild(spellLevelNode);
         table.appendChild(node);
         node = document.createElement("tr");
-        node.appendChild(Utilities.CreateHeader("Spell"));
-        node.appendChild(Utilities.CreateHeader("Spell Level"));
+        node.appendChild(Utilities.CreateTableHeader("Spell"));
+        node.appendChild(Utilities.CreateTableHeader("Spell Level"));
         table.appendChild(node);
     }
     BuildBody(table, rows, spellbookData) {
         let node;
         for (let row of rows) {
             node = document.createElement("tr");
-            node.appendChild(Utilities.CreateData(row[0]));
-            node.appendChild(Utilities.CreateData(row[1]));
+            node.appendChild(Utilities.CreateTableData(row[0]));
+            node.appendChild(Utilities.CreateTableData(row[1]));
             table.appendChild(node);
             spellbookData.AddSpell(row[0], row[1]);
         }
