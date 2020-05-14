@@ -38,7 +38,7 @@ export function GetCurrentPageInfo() {
 	return GetPageInfoFromUri(GetCurrentPage());
 }
 
-export function StringToObject(jsonIn: string) {
+export function StringToObject<T = any>(jsonIn: string): T {
 	jsonIn = jsonIn.replace(/<.+?>/g, function (x) {
 		return x.replace(/"/g, '\\"');
 	});

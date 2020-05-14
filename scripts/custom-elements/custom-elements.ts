@@ -9,3 +9,4 @@ import "./ap-skill-chart.js";
 import "./ap-spellbook-table.js";
 import "./ap-time-table.js";
 import "./ap-display-global.js";
+import "./ap-whores-display.js";
