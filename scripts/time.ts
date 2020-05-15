@@ -136,8 +136,8 @@ export class Time {
 		}
 
 		// Build days, months, and years
-		if (offset.day > 0) {
-			toReturn += offset.day.toString() + (offset.day > 1 ? " days" : " day");
+		if (offset.year > 0) {
+			toReturn += offset.year.toString() + (offset.year > 1 ? " years" : " year");
 		}
 
 		if (offset.month > 0) {
@@ -147,11 +147,11 @@ export class Time {
 			toReturn += offset.month.toString() + (offset.month > 1 ? " months" : " month");
 		}
 
-		if (offset.year > 0) {
+		if (offset.day > 0) {
 			if (toReturn.length > 0) {
-				toReturn += ", ";
+				toReturn += " and ";
 			}
-			toReturn += offset.year.toString() + (offset.year > 1 ? " years" : " year");
+			toReturn += offset.day.toString() + (offset.day > 1 ? " days" : " day");
 		}
 
 		// Ago or From Now

@@ -240,3 +240,22 @@ ol > li {
 ol > li > ol > li {
 	list-style-type: lower-alpha;
 }
+
+.birthday-header {
+	margin-top: 0;
+}
+
+.birthday-age-input, .birthday-generate-button, .birthday-reset-button {
+	width: 125px;
+	padding-left: 0;
+	padding-right: 0;
+	box-sizing: border-box;
+}
+
+.birthday-age-input {
+	text-align: right;
+}
+
+.birthday-display {
+	color: #275ae6;
+}
