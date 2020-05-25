@@ -14,6 +14,12 @@ export const nobleNav = [
 	new PageInfo(undefined, "organizations/silver-daggers.html", "Silver Daggers Thieves' Guild", "silver-daggers"),
 	new PageInfo(undefined, "organizations/tae-gilonnalia-empire.html", "The Tae`Gilonnalia Empire", "tae-gilonnalia-empire"),
 
+	new PageInfo(undefined, "organizations/kobold-clans/main.html", "Kobold Clans", "kobold-clans"),
+	new PageInfo(undefined, "organizations/kobold-clans/hidden-pond-clan.html", "Hidden Pond Clan", "hidden-pond-clan"),
+	new PageInfo(undefined, "organizations/kobold-clans/spelllake-clan.html", "Spelllake Clan", "spelllake-clan"),
+	new PageInfo(undefined, "organizations/kobold-clans/strongwald-clan.html", "Strongwald Clan", "strongwald-clan"),
+	new PageInfo(undefined, "organizations/kobold-clans/vertbridge-clan.html", "Vertbridge Clan", "vertbridge-clan"),
+
 	new PageInfo(undefined, "locations/tiathiloth/main.html", "The County of Tiathiloth", "tiathiloth"),
 	new PageInfo(undefined, "locations/tiathiloth/mensharra.html", "Mensharra, Capital City of Tiathiloth", "mensharra"),
 
@@ -94,6 +100,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "npcs/zigni.html", "Zigni Lundgren, Kobold Beast Grafter", "zigni"),
 	new PageInfo(undefined, "npcs/phidove.html", "Phidove Amakiir (Gemflower), Elven Info Broker", "phidove"),
 	new PageInfo(undefined, "npcs/pildrylth.html", "Pildrylth the Calm, Tyrant of the Forest", "pildrylth"),
+	new PageInfo(undefined, "npcs/kane.html", "Sir Kane Houghton, Knight of the Order of the Full Moon", "kane"),
 
 	new PageInfo(undefined, "characters/camilia.html", "Camilia Famia, Wild Beauty", "camilia"),
 	new PageInfo(undefined, "characters/animal-companions/cackles.html", "Cackles the Spotted Hyena", "cackles"),
