@@ -32,6 +32,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "locations/taaira-ruzara/settlements/keldhall.html", "Keldhall, Human Trade Town", "keldhall"),
 	new PageInfo(undefined, "locations/taaira-ruzara/settlements/mam-daruhm.html", "Mam Daruhm, Dwarven Fortress City", "mam-daruhm"),
 	new PageInfo(undefined, "locations/taaira-ruzara/settlements/baytide.html", "The Village of Baytide", "baytide"),
+	new PageInfo(undefined, "locations/taaira-ruzara/settlements/deathfall.html", "The Village of Deathfall", "deathfall"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/ruins/asokmoat.html", "The Black City of Asokmoat", "asokmoat"),
 	new PageInfo(undefined, "locations/taaira-ruzara/ruins/eight-great-towers.html", "Red Wing Burrow", "eight-great-towers"),
@@ -104,6 +105,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "npcs/pildrylth.html", "Pildrylth the Calm, Tyrant of the Forest", "pildrylth"),
 	new PageInfo(undefined, "npcs/kane.html", "Sir Kane Houghton, Knight of the Order of the Full Moon", "kane"),
 	new PageInfo(undefined, "npcs/sebas.html", "Sebas, Awakened Tiger Wizard", "sebas"),
+	new PageInfo(undefined, "npcs/ivy-cooke.html", "Ivy Cooke, Tiefling with Her Own Plans", "ivy-cooke"),
 
 	new PageInfo(undefined, "characters/camilia.html", "Camilia Famia, Wild Beauty", "camilia"),
 	new PageInfo(undefined, "characters/animal-companions/cackles.html", "Cackles the Spotted Hyena", "cackles"),
@@ -117,6 +119,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "misc/the-farm.html", "The Farm", "the-farm"),
 	new PageInfo(undefined, "misc/brown-eye-whores.html", "Brown Eye Whores", "brown-eye-whores"),
 	new PageInfo(undefined, "misc/whore-house-events.html", "Whore House Events", "whore-house-events"),
+	new PageInfo(undefined, "misc/paintings-gallery.html", "Paintings Gallery", "paintings-gallery"),
 
 	new PageInfo(undefined, "images/fang-at-desk.jpg", "", "fang-img", true),
 	new PageInfo(undefined, "images/mysterious-stranger.jpg", "", "mysterious-stranger-img", true),
@@ -129,6 +132,8 @@ export const nobleNav = [
 	new PageInfo(undefined, "images/phidove.jpg", "", "phidove-img", true),
 	new PageInfo(undefined, "images/pildrylth.jpg", "", "pildrylth-img", true),
 	new PageInfo(undefined, "images/sebas.png", "", "sebas-img", true),
+	new PageInfo(undefined, "images/ivy-cooke.jpg", "", "ivy-cooke-img", true),
+	new PageInfo(undefined, "images/sariel-revealing-painting.jpg", "", "sariel-revealing-painting-img", true),
 	new PageInfo(undefined, "http://www.d20srd.org/srd/monsters/elf.htm", "", "srd-elf", true),
 	new PageInfo(undefined, "http://www.d20srd.org/srd/equipment/goodsAndServices.htm#thunderstone", "", "srd-tunderstone", true),
 ];
