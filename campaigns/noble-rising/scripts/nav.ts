@@ -106,6 +106,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "npcs/kane.html", "Sir Kane Houghton, Knight of the Order of the Full Moon", "kane"),
 	new PageInfo(undefined, "npcs/sebas.html", "Sebas, Awakened Tiger Wizard", "sebas"),
 	new PageInfo(undefined, "npcs/ivy-cooke.html", "Ivy Cooke, Tiefling with Her Own Plans", "ivy-cooke"),
+	new PageInfo(undefined, "npcs/quilynn-loreweaver.html", "Dame Quilynn Loreweaver, Mayor Captain of Deathfall", "quilynn-loreweaver"),
 
 	new PageInfo(undefined, "characters/camilia.html", "Camilia Famia, Wild Beauty", "camilia"),
 	new PageInfo(undefined, "characters/animal-companions/cackles.html", "Cackles the Spotted Hyena", "cackles"),
@@ -133,6 +134,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "images/pildrylth.jpg", "", "pildrylth-img", true),
 	new PageInfo(undefined, "images/sebas.png", "", "sebas-img", true),
 	new PageInfo(undefined, "images/ivy-cooke.jpg", "", "ivy-cooke-img", true),
+	new PageInfo(undefined, "images/quilynn-loreweaver.jpg", "", "quilynn-loreweaver-img", true),
 	new PageInfo(undefined, "images/sariel-revealing-painting.jpg", "", "sariel-revealing-painting-img", true),
 	new PageInfo(undefined, "http://www.d20srd.org/srd/monsters/elf.htm", "", "srd-elf", true),
 	new PageInfo(undefined, "http://www.d20srd.org/srd/equipment/goodsAndServices.htm#thunderstone", "", "srd-tunderstone", true),
