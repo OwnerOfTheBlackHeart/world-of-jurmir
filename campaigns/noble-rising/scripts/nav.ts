@@ -95,6 +95,12 @@ export const nobleNav = [
 	new PageInfo(undefined, "enemies/nen/nen-warrior.html", "Nen Warrior", "nen-warrior"),
 	new PageInfo(undefined, "enemies/nen/nen-queen.html", "Nen Queen", "nen-queen"),
 
+	new PageInfo(undefined, "enemies/future/bjork-2.html", "Bjork 2", "bjork-2"),
+
+	new PageInfo(undefined, "enemies/orcs/orc-sergeant.html", "Orc Sergeant", "orc-sergeant"),
+	new PageInfo(undefined, "enemies/orcs/orc-lieutenant.html", "Orc Lieutenant", "orc-lieutenant"),
+	new PageInfo(undefined, "enemies/orcs/orc-captain.html", "Orc Captain", "orc-captain"),
+
 	new PageInfo(undefined, "npcs/mysterious-stranger.html", "The Mysterious Stranger", "mysterious-stranger"),
 	new PageInfo(undefined, "npcs/reth-mailynath.html", "Reth Mailynath, Adamantine Slayer", "reth-mailynath"),
 	new PageInfo(undefined, "npcs/turzk.html", "Turzk, Ancient Lizardfolk", "turzk"),
