@@ -259,3 +259,15 @@ ol > li > ol > li {
 .birthday-display {
 	color: #275ae6;
 }
+
+.previous-date {
+	color: darkred;
+}
+
+.current-date {
+	
+}
+
+.future-date {
+	color: darkgreen;
+}

@@ -102,7 +102,18 @@ export class TimeTable extends HTMLElement {
 
 		// Offset
 		if (this.currentDate) {
-			node.appendChild(Utilities.CreateTableData(Time.BuildDiffString(this.currentDate, date)));
+			const diffString = Time.BuildDiffString(this.currentDate, date);
+			const dataNode = Utilities.CreateTableData(diffString);
+
+			if (diffString.search("ago") >= 0) {
+				dataNode.classList.add("previous-date");
+			} else if (diffString.search("from now") >= 0) {
+				dataNode.classList.add("future-date");
+			} else {
+				dataNode.classList.add("current-date");
+			}
+
+			node.appendChild(dataNode);
 		}
 
 		// Date Display

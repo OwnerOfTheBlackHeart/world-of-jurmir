@@ -77,7 +77,18 @@ export class TimeTable extends HTMLElement {
         let date = new Time(row[0], row[1], row[2]);
         let node = document.createElement("tr");
         if (this.currentDate) {
-            node.appendChild(Utilities.CreateTableData(Time.BuildDiffString(this.currentDate, date)));
+            const diffString = Time.BuildDiffString(this.currentDate, date);
+            const dataNode = Utilities.CreateTableData(diffString);
+            if (diffString.search("ago") >= 0) {
+                dataNode.classList.add("previous-date");
+            }
+            else if (diffString.search("from now") >= 0) {
+                dataNode.classList.add("future-date");
+            }
+            else {
+                dataNode.classList.add("current-date");
+            }
+            node.appendChild(dataNode);
         }
         node.appendChild(Utilities.CreateTableData(date.toString(this.showSeason)));
         if (row[3] != undefined) {
