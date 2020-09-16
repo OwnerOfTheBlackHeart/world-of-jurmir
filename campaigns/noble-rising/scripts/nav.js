@@ -109,6 +109,7 @@ export const nobleNav = [
     new PageInfo(undefined, "images/ivy-cooke.jpg", "", "ivy-cooke-img", true),
     new PageInfo(undefined, "images/quilynn-loreweaver.jpg", "", "quilynn-loreweaver-img", true),
     new PageInfo(undefined, "images/sariel-revealing-painting.jpg", "", "sariel-revealing-painting-img", true),
+    new PageInfo(undefined, "http://anthonyparsch.com/images/noble-map.png", "", "map-img", true),
     new PageInfo(undefined, "http://www.d20srd.org/srd/monsters/elf.htm", "", "srd-elf", true),
     new PageInfo(undefined, "http://www.d20srd.org/srd/equipment/goodsAndServices.htm#thunderstone", "", "srd-tunderstone", true),
 ];
