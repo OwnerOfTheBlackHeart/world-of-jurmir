@@ -19,6 +19,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "organizations/kobold-clans/spelllake-clan.html", "Spelllake Clan", "spelllake-clan"),
 	new PageInfo(undefined, "organizations/kobold-clans/strongwald-clan.html", "Strongwald Clan", "strongwald-clan"),
 	new PageInfo(undefined, "organizations/kobold-clans/vertbridge-clan.html", "Vertbridge Clan", "vertbridge-clan"),
+	new PageInfo(undefined, "organizations/kobold-clans/howlingcliff-clan.html", "Howlingcliff Clan", "howlingcliff-clan"),
 
 	new PageInfo(undefined, "locations/tiathiloth/main.html", "The County of Tiathiloth", "tiathiloth"),
 	new PageInfo(undefined, "locations/tiathiloth/mensharra.html", "Mensharra, Capital City of Tiathiloth", "mensharra"),
