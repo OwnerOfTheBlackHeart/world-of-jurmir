@@ -24,9 +24,12 @@ export const nobleNav = [
 	new PageInfo(undefined, "locations/tiathiloth/main.html", "The County of Tiathiloth", "tiathiloth"),
 	new PageInfo(undefined, "locations/tiathiloth/mensharra.html", "Mensharra, Capital City of Tiathiloth", "mensharra"),
 
+	new PageInfo(undefined, "locations/methnaes/main.html", "The Duchy of Methnaes", "methnaes"),
+
 	new PageInfo(undefined, "locations/taaira-ruzara/main.html", "The County of Taaira Ruzara", "taaira-ruzara"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/misc/desserr-nobility.html", "Desserr Nobility", "desserr-nobility"),
+	new PageInfo(undefined, "locations/taaira-ruzara/misc/regional-nobility.html", "Regional Nobility", "regional-nobility"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/settlements/desserr.html", "Desserr, Capital City of Taaira Ruzara", "desserr"),
 	new PageInfo(undefined, "locations/taaira-ruzara/settlements/antys.html", "Antys, Livingwood Glade", "antys"),
