@@ -8,11 +8,13 @@ Desserr Area:
 	Lady Jayni Greenbottle
 		Halfling
 		Aiming for the plains east of Desserr
+		Lady Nimlyth Dathana and Lady Reyrona Dathana
 	Lady Venra Amakiir
 		Elf
 		Owns land east of Desserr
 		Produces alchemical and magical components
 		Wants the plains east of Desserr
+		Supports Sir Nyil Norretlarn
 	Lord Tossarr Burning Cloud
         Cheetahfolk
         Owns animal farms near Desserr
@@ -41,10 +43,12 @@ Keldhall/Baytide:
 		Trades heavily with Keldhall
 		Occasionally deals with livingwood and darkwood
 		Aiming for the Keldhall to Baytide region.
+		Supports Lady Nimlyth Dathana
 	Lord Dinser Hunting Bear
         Pantherfolk
         Trades in rare metals with the dwarves and Antys
         Wants the Keldhall and Mam Daruhm area
+		Supports Lady Nimlyth Dathana
 	Sir Merhiss Dying Tiger
         Cheetahfolk
         Owns Baytide
@@ -60,18 +64,22 @@ Antys:
 		Elf
 		Is a druid
 		Wants Antys and as much land as possible
+		Supports Sir Nyil Norretlarn
 	Lady Reyrona Dathana
         Elf
         Sister of Lady Nimlyth Dathana
 		Wants Lady Nimlyth Dathana to rule the Antys area
+		Supports Lord Dinser Hunting Bear
     Lady Nimlyth Dathana
         Elf
         Sister of Lady Reyrona Dathana
         Wants control of the Antys area
+		Lord Dinser Hunting Bear
 	Brother Elyarus Liadon
 		Elf
 		Represents the 5 elven churches
 		Wants Antys and the elven lands around it
+		Supports Sir Nyil Norretlarn
 
 Coasts:
 	Lord Zossashar Raging Badger
@@ -94,6 +102,7 @@ Mount of Decay:
         Owns farmland around Desserr
         Secretly trades in slaves
         Wants the area north of the Mount of Decay
+		Supports Lady Gelna Lightfoot
 	Sales Officer Brudorl Baenett
 		Drow
 		Represents Underdark Breweries
@@ -114,6 +123,7 @@ Misc:
 	Sir Nyil Norretlarn
 		Elf
 		Wants the dense southeastern forest (by Mirstone).
+		Supports Lord Traemar Ellonki Hlaesithek'Vara
     Dame Dirharra Running Lion
         Lionfolk
         Count Zesharr's personal bodyguard
@@ -132,6 +142,8 @@ Misc:
 		Halfling
 		Owns several ships and docks
 		She wants the Ang River region
+		Supports Lady Jennla Ungart
+		Supports Lady Kishorra Running Lion
 	Lord Yarnan Doornail
 		Halfling
 		Owns housing within Desserr
