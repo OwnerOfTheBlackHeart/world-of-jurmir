@@ -4,25 +4,26 @@
 	<ap-basic-table character-table>
 		[
 			["Size/Type:", "Medium Humanoid (Elf)"],
-			["Hit Dice:", "1d10+6d4+14 (39)"],
+			["Hit Dice:", "1d10+6d4+1d8+16 (43)"],
 			["Initiative:", "+4"],
 			["Speed:", "30 ft. (6 squares)"],
-			["Armor Class:", "16 (+4 dex, +2 bracers of armor), touch 14, flat-footed 12"],
-			["Base Attack/Grapple:", "+4/+8"],
-			["Attack:", "Bloodstone longsword (+1) +10 melee (1d8+4/19-20x2) or ray +8 ranged"],
-			["Full Attack:", "Bloodstone longsword (+1) +10 melee (1d8+4/19-20x2) or ray +8 ranged"],
+			["Armor Class:", "18 (+4 dex, +4 +2 leather armor), touch 14, flat-footed 14"],
+			["Base Attack/Grapple:", "+5/+9"],
+			["Attack:", "Bloodstone longsword (+1) +11 melee (1d8+4/19-20x2) or ray +9 ranged"],
+			["Full Attack:", "Bloodstone longsword (+1) +11 melee (1d8+4/19-20x2) or ray +9 ranged"],
 			["Space/Reach:", "5 ft./5 ft."],
 			["Special Attacks:", "Bloodstone Bleed (2)"],
 			["Special Qualities:", 
 				"Darkvision 120 ft, <ap-link-button linkName="drow-traits">drow traits</ap-link-button>, ",
-				"spell resistance 18, summon familiar (bat), scribe scroll, universalist, light blindness"
+				"spell resistance 19, summon familiar (bat), scribe scroll, universalist, light blindness, ",
+				"ignore spell failure 10%"
 			],
-			["Saves:", "Fort +6, Ref +5, Will +6"],
-			["Abilities:", "Str 18, Dex 18, Con 14, Int 18, Wis 13, Cha 17"],
+			["Saves:", "Fort +8, Ref +5, Will +8"],
+			["Abilities:", "Str 18, Dex 18, Con 14, Int 18, Wis 13, Cha 18"],
 			["Skills:", 
-				"Handle Animal +7, Intimidate +7, Craft (weapon) +10, Climb +8, Jump +6, Ride +7, Swim +8, ",
-				"Concentration +10, Knowledge (arcane) +14, Knowledge (religion) +12, Decipher Script +8, Spellcraft +11, ",
-				"Listen +6, Spot +3, Search +3"
+				"Handle Animal +8, Intimidate +8, Craft (weapon) +10, Climb +9, Jump +6, Ride +7, Swim +8, ",
+				"Concentration +11, Knowledge (arcane) +15, Knowledge (religion) +13, Knowledge (planes) +5, ",
+				"Decipher Script +8, Spellcraft +12, Listen +6, Spot +3, Search +3"
 			],
 			["Feats:", 
 				"Weapon focus (longsword), spell penetration, scribe scroll, eschew materials, craft magic arms and armor,",
@@ -31,7 +32,7 @@
 			["Challenge Rating:", "8"],
 			["Languages:", "Common, elven, undercommon, drow sign language, abyssal, draconic, gnome"],
 			["Alignment:", "True Neutral"],
-			["Class Levels:", "Fighter 1, <ap-link-button linkName="noble-yasrena-spellbook">Wizard 6</ap-link-button>"],
+			["Class Levels:", "Fighter 1, <ap-link-button linkName="noble-yasrena-spellbook">Wizard 6</ap-link-button>, Spellsword (CW 79) 1"],
 			["Level Adjustment:", "+2 (1 negated)"]
 		]
 	</ap-basic-table>
@@ -55,9 +56,9 @@
 			<li>Mending</li>
 			<li>Arcane Mark</li>
 		</ul><br/>
-		Level 1 spells (DC 15, 4 per day)
+		Level 1 spells (DC 15, 5 per day)
 		<ul>
-			<li>Mage Armor</li>
+			<li>2 Magic Missile</li>
 			<li>Expeditious Retreat or Mount</li>
 			<li>Disguise Self or Burning Hands</li>
 			<li>Shocking Grasp or Corrosive Grasp (SC 54)</li>
@@ -74,6 +75,11 @@
 			<li>Summon Monster III or Phantom Steed</li>
 			<li>Nondetection or Haste</li>
 			<li>Fireball or Sound Lance (SC 197)</li>
+		</ul><br/>
+		Level 4 spells (DC 18, 2 per day)
+		<ul>
+			<li>Secure Shelter</li>
+			<li>Summon Monster IV</li>
 		</ul>
 	</div>
 
@@ -84,15 +90,16 @@
 					["Handle Animal", 4, ""],
 					["Intimidate", 4, ""],
 					["Craft (Weapon)", 6, ""],
-					["Climb", 4, ""],
+					["Climb", 5, ""],
 					["Jump", 2, ""],
 					["Ride", 2, ""],
 					["Swim", 4, ""],
-					["Concentration", 8, ""],
-					["Knowledge (arcane)", 10, ""],
-					["Knowledge (religion)", 8, ""],
+					["Concentration", 9, ""],
+					["Knowledge (arcane)", 11, ""],
+					["Knowledge (religion)", 9, ""],
+					["Knowledge (planes)", 1, ""],
 					["Decipher Script", 4, ""],
-					["Spellcraft", 5, "+2 synergy"],
+					["Spellcraft", 6, "+2 synergy"],
 					["Listen", 0, "+3 familiar, +2 racial"],
 					["Spot", 0, "+2 racial"],
 					["Search", 0, "+2 racial"]
@@ -159,12 +166,5 @@
 		She now seeks knowledge and magic, on a pilgrimage to ancient ruins and holy sites of Kriotz. Yasrena is also
 		looking for tools with which to protect her from those drow houses who might still hunt her. Eventually, she
 		would like to find a place that she could safely settle down and worship the Goddess of Knowledge and Magic.
-	</p>
-
-	<p>
-		Spellsword (Complete Warrior variant, p. 79)<br/>
-		Base Attack Bonus: +4<br/>
-		Skills: Knowledge (arcana) 6 ranks<br/>
-		Spells: Able to cast 2nd-level arcane spells.
 	</p>
 </ap-auth-container>
