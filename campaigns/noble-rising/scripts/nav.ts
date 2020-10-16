@@ -107,6 +107,8 @@ export const nobleNav = [
 	new PageInfo(undefined, "enemies/orcs/orc-lieutenant.html", "Orc Lieutenant", "orc-lieutenant"),
 	new PageInfo(undefined, "enemies/orcs/orc-captain.html", "Orc Captain", "orc-captain"),
 
+	new PageInfo(undefined, "enemies/undead/pseudo-reaper.html", "Pseudo Reaper, Guardian of the River Cain", "pseudo-reaper"),
+
 	new PageInfo(undefined, "npcs/mysterious-stranger.html", "The Mysterious Stranger", "mysterious-stranger"),
 	new PageInfo(undefined, "npcs/reth-mailynath.html", "Reth Mailynath, Adamantine Slayer", "reth-mailynath"),
 	new PageInfo(undefined, "npcs/turzk.html", "Turzk, Ancient Lizardfolk", "turzk"),
@@ -147,6 +149,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "images/sebas.png", "", "sebas-img", true),
 	new PageInfo(undefined, "images/ivy-cooke.jpg", "", "ivy-cooke-img", true),
 	new PageInfo(undefined, "images/quilynn-loreweaver.jpg", "", "quilynn-loreweaver-img", true),
+	new PageInfo(undefined, "images/reaper.jpg", "", "reaper-img", true),
 	new PageInfo(undefined, "images/sariel-revealing-painting.jpg", "", "sariel-revealing-painting-img", true),
 	new PageInfo(undefined, "http://anthonyparsch.com/images/noble-map.png", "", "map-img", true),
 
