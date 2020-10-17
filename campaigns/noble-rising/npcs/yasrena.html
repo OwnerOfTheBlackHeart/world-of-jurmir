@@ -4,36 +4,36 @@
 	<ap-basic-table character-table>
 		[
 			["Size/Type:", "Medium Humanoid (Elf)"],
-			["Hit Dice:", "1d10+6d4+1d8+16 (43)"],
+			["Hit Dice:", "1d10+6d4+3d8+20 (54)"],
 			["Initiative:", "+4"],
 			["Speed:", "30 ft. (6 squares)"],
-			["Armor Class:", "18 (+4 dex, +4 +2 leather armor), touch 14, flat-footed 14"],
-			["Base Attack/Grapple:", "+5/+9"],
-			["Attack:", "Bloodstone longsword (+1) +11 melee (1d8+4/19-20x2) or ray +9 ranged"],
-			["Full Attack:", "Bloodstone longsword (+1) +11 melee (1d8+4/19-20x2) or ray +9 ranged"],
+			["Armor Class:", "21 (+4 dex, +7 +2 mithral breastplate), touch 14, flat-footed 17"],
+			["Base Attack/Grapple:", "+7/+11"],
+			["Attack:", "Bloodstone longsword (+1) +13 melee (1d8+4/19-20x2) or ray +11 ranged"],
+			["Full Attack:", "Bloodstone longsword (+1) +13 melee (1d8+4/19-20x2) or ray +11 ranged"],
 			["Space/Reach:", "5 ft./5 ft."],
 			["Special Attacks:", "Bloodstone Bleed (2)"],
 			["Special Qualities:", 
 				"Darkvision 120 ft, <ap-link-button linkName="drow-traits">drow traits</ap-link-button>, ",
 				"spell resistance 19, summon familiar (bat), scribe scroll, universalist, light blindness, ",
-				"ignore spell failure 10%"
+				"ignore spell failure 15%"
 			],
-			["Saves:", "Fort +8, Ref +5, Will +8"],
+			["Saves:", "Fort +9, Ref +6, Will +9"],
 			["Abilities:", "Str 18, Dex 18, Con 14, Int 18, Wis 13, Cha 18"],
 			["Skills:", 
-				"Handle Animal +8, Intimidate +8, Craft (weapon) +10, Climb +9, Jump +6, Ride +7, Swim +8, ",
-				"Concentration +11, Knowledge (arcane) +15, Knowledge (religion) +13, Knowledge (planes) +5, ",
-				"Decipher Script +8, Spellcraft +12, Listen +6, Spot +3, Search +3"
+				"Handle Animal +8, Intimidate +8, Craft (weapon) +10, Climb +8, Jump +5, Ride +6, Swim +6, ",
+				"Concentration +13, Knowledge (arcane) +17, Knowledge (religion) +15, Knowledge (planes) +9, ",
+				"Decipher Script +8, Spellcraft +14, Listen +6, Spot +3, Search +3"
 			],
 			["Feats:", 
 				"Weapon focus (longsword), spell penetration, scribe scroll, eschew materials, craft magic arms and armor,",
-				"greater spell penetration (+4 to caster level vs spell resistance)"
+				"greater spell penetration (+4 to caster level vs spell resistance), empower spell"
 			],
-			["Challenge Rating:", "8"],
+			["Challenge Rating:", "10"],
 			["Languages:", "Common, elven, undercommon, drow sign language, abyssal, draconic, gnome"],
 			["Alignment:", "True Neutral"],
-			["Class Levels:", "Fighter 1, <ap-link-button linkName="noble-yasrena-spellbook">Wizard 6</ap-link-button>, Spellsword (CW 79) 1"],
-			["Level Adjustment:", "+2 (1 negated)"]
+			["Class Levels:", "Fighter 1, <ap-link-button linkName="noble-yasrena-spellbook">Wizard 6</ap-link-button>, Spellsword (CW 79) 3"],
+			["Level Adjustment:", "+2 (2 negated)"]
 		]
 	</ap-basic-table>
 
@@ -70,16 +70,18 @@
 			<li>Blast of Force (SC 32)</li>
 			<li>Alter Self or Mirror Image</li>
 		</ul><br/>
-		Level 3 spells (DC 17, 3 per day)
+		Level 3 spells (DC 17, 4 per day)
 		<ul>
 			<li>Summon Monster III or Phantom Steed</li>
 			<li>Nondetection or Haste</li>
-			<li>Fireball or Sound Lance (SC 197)</li>
+			<li>Fireball</li>
+			<li>Sound Lance (SC 197)</li>
 		</ul><br/>
-		Level 4 spells (DC 18, 2 per day)
+		Level 4 spells (DC 18, 3 per day)
 		<ul>
 			<li>Secure Shelter</li>
 			<li>Summon Monster IV</li>
+			<li>Blast of Flame (SC 32)</li>
 		</ul>
 	</div>
 
@@ -87,6 +89,7 @@
 		<div class="table-column">
 			<ap-skill-chart>
 				[
+					["Armor check penalty", -1, "Doubled for swim"],
 					["Handle Animal", 4, ""],
 					["Intimidate", 4, ""],
 					["Craft (Weapon)", 6, ""],
@@ -94,12 +97,12 @@
 					["Jump", 2, ""],
 					["Ride", 2, ""],
 					["Swim", 4, ""],
-					["Concentration", 9, ""],
-					["Knowledge (arcane)", 11, ""],
-					["Knowledge (religion)", 9, ""],
-					["Knowledge (planes)", 1, ""],
+					["Concentration", 11, ""],
+					["Knowledge (arcane)", 13, ""],
+					["Knowledge (religion)", 11, ""],
+					["Knowledge (planes)", 5, ""],
 					["Decipher Script", 4, ""],
-					["Spellcraft", 6, "+2 synergy"],
+					["Spellcraft", 8, "+2 synergy"],
 					["Listen", 0, "+3 familiar, +2 racial"],
 					["Spot", 0, "+2 racial"],
 					["Search", 0, "+2 racial"]
