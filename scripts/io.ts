@@ -1,7 +1,7 @@
 import * as Utilities from "./utilities.js";
 
 export const PageLoadCallbacks = {
-	onLoad: [] as ((url: string) => void)[]
+	onLoad: [] as ((url: string) => void)[],
 };
 
 /*
@@ -16,15 +16,15 @@ export function LoadIntoId(url: string, id?: string, title?: string, loadCallbac
 	id = id || "page-area";
 
 	fetch(url)
-		.then(response => response.text())
-		.then(html => {
+		.then((response) => response.text())
+		.then((html) => {
 			let pageArea = document.getElementById(id);
 
 			pageArea.innerHTML = html;
 
 			// Scroll to the top of the page
-			document.body.scrollTop = document.documentElement.scrollTop = 0;
-			pageArea.scrollTop = 0;
+			document.body.scrollTop = document.documentElement.scrollTop = pageArea.scrollTop = 0;
+			// pageArea.scrollTop = 0;
 
 			if (title) {
 				// Change page title
@@ -32,7 +32,7 @@ export function LoadIntoId(url: string, id?: string, title?: string, loadCallbac
 			}
 
 			if (PageLoadCallbacks.onLoad.length > 0) {
-				PageLoadCallbacks.onLoad.forEach(callback => callback(url));
+				PageLoadCallbacks.onLoad.forEach((callback) => callback(url));
 			}
 
 			if (loadCallback) {
