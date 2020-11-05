@@ -1,21 +1,20 @@
 import * as Utilities from "./utilities.js";
 export const PageLoadCallbacks = {
-    onLoad: []
+    onLoad: [],
 };
 export function LoadIntoId(url, id, title, loadCallback) {
     id = id || "page-area";
     fetch(url)
-        .then(response => response.text())
-        .then(html => {
+        .then((response) => response.text())
+        .then((html) => {
         let pageArea = document.getElementById(id);
         pageArea.innerHTML = html;
-        document.body.scrollTop = document.documentElement.scrollTop = 0;
-        pageArea.scrollTop = 0;
+        document.body.scrollTop = document.documentElement.scrollTop = pageArea.scrollTop = 0;
         if (title) {
             document.title = title;
         }
         if (PageLoadCallbacks.onLoad.length > 0) {
-            PageLoadCallbacks.onLoad.forEach(callback => callback(url));
+            PageLoadCallbacks.onLoad.forEach((callback) => callback(url));
         }
         if (loadCallback) {
             loadCallback();
