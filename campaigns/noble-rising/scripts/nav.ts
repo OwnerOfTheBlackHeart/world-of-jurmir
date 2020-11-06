@@ -26,17 +26,47 @@ export const nobleNav = [
 
 	new PageInfo(undefined, "locations/methnaes/main.html", "The Duchy of Methnaes", "methnaes"),
 
-	new PageInfo(undefined, "locations/taaira-ruzara/main.html", "The County of Taaira Ruzara", "taaira-ruzara"),
+	new PageInfo(undefined, "locations/taaira-ruzara/main.html", "The Duchy of Taaira Ruzara", "taaira-ruzara"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/misc/desserr-nobility.html", "Desserr Nobility", "desserr-nobility"),
 	new PageInfo(undefined, "locations/taaira-ruzara/misc/regional-nobility.html", "Regional Nobility", "regional-nobility"),
 
-	new PageInfo(undefined, "locations/taaira-ruzara/settlements/desserr.html", "Desserr, Capital City of Taaira Ruzara", "desserr"),
-	new PageInfo(undefined, "locations/taaira-ruzara/settlements/antys.html", "Antys, Livingwood Glade", "antys"),
-	new PageInfo(undefined, "locations/taaira-ruzara/settlements/keldhall.html", "Keldhall, Human Trade Town", "keldhall"),
-	new PageInfo(undefined, "locations/taaira-ruzara/settlements/mam-daruhm.html", "Mam Daruhm, Dwarven Fortress City", "mam-daruhm"),
-	new PageInfo(undefined, "locations/taaira-ruzara/settlements/baytide.html", "The Village of Baytide", "baytide"),
-	new PageInfo(undefined, "locations/taaira-ruzara/settlements/deathfall.html", "The Village of Deathfall", "deathfall"),
+	new PageInfo(undefined, "locations/taaira-ruzara/cats-retreat/main.html", "The County of Cat's Retreat", "cats-retreat"),
+
+	new PageInfo(undefined, "locations/taaira-ruzara/deaavh-hilluk/main.html", "The County of Deaavh Hilluk", "deaavh-hilluk"),
+
+	new PageInfo(undefined, "locations/taaira-ruzara/desserr/main.html", "Desserr County", "desserr-county"),
+	new PageInfo(undefined, "locations/taaira-ruzara/desserr/desserr.html", "Desserr, Capital City of Taaira Ruzara", "desserr"),
+
+	new PageInfo(undefined, "locations/taaira-ruzara/dhaer-quesss-shal/main.html", "Dhaer'quess's Shal County", "dhaer-quesss-shal"),
+
+	new PageInfo(undefined, "locations/taaira-ruzara/forslag/main.html", "Forslag County", "forslag"),
+	new PageInfo(undefined, "locations/taaira-ruzara/forslag/keldhall.html", "Keldhall, Human Trade Town", "keldhall"),
+	new PageInfo(undefined, "locations/taaira-ruzara/forslag/mam-daruhm.html", "Mam Daruhm, Dwarven Fortress City", "mam-daruhm"),
+
+	new PageInfo(undefined, "locations/taaira-ruzara/lindado/main.html", "Lindado County", "lindado"),
+
+	new PageInfo(undefined, "locations/taaira-ruzara/little-river/main.html", "Little River County", "little-river"),
+
+	new PageInfo(undefined, "locations/taaira-ruzara/nelluon-enial/main.html", "Nelloun Enial County", "nelluon-enial"),
+
+	new PageInfo(undefined, "locations/taaira-ruzara/rivers-pass/main.html", "The County of River's Pass", "rivers-pass"),
+
+	new PageInfo(undefined, "locations/taaira-ruzara/russia/main.html", "The County of Russia", "russia"),
+	new PageInfo(undefined, "locations/taaira-ruzara/russia/sharnwick.html", "The Village of Sharnwick", "sharnwick"),
+
+	new PageInfo(undefined, "locations/taaira-ruzara/shanta-revar/main.html", "Shanta Revar County", "shanta-revar"),
+	new PageInfo(undefined, "locations/taaira-ruzara/shanta-revar/antys.html", "Antys, Livingwood Glade", "antys"),
+	new PageInfo(undefined, "locations/taaira-ruzara/shanta-revar/baytide.html", "The Village of Baytide", "baytide"),
+
+	new PageInfo(undefined, "locations/taaira-ruzara/verth-di-lokipk/main.html", "The County of Verth Di Lokipk", "verth-di-lokipk"),
+	new PageInfo(undefined, "locations/taaira-ruzara/verth-di-lokipk/deathfall.html", "The Village of Deathfall", "deathfall"),
+
+	new PageInfo(undefined, "locations/taaira-ruzara/wolfs-run/main.html", "Wolf's Run County", "wolfs-run"),
+
+	new PageInfo(undefined, "locations/taaira-ruzara/wolfs-run/rivers-plains/main.html", "The Barony of Rivers Plains", "rivers-plains"),
+	new PageInfo(undefined, "locations/taaira-ruzara/wolfs-run/rivers-plains/cherryvale.html", "The Ex-Village of Cherryvale", "cherryvale"),
+	new PageInfo(undefined, "locations/taaira-ruzara/wolfs-run/rivers-plains/elderfield.html", "The Ex-Village of Elderfield", "elderfield"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/ruins/asokmoat.html", "The Black City of Asokmoat", "asokmoat"),
 	new PageInfo(undefined, "locations/taaira-ruzara/ruins/eight-great-towers.html", "Red Wing Burrow", "eight-great-towers"),
