@@ -2,3 +2,98 @@
 <p>
 	Nera's barony.
 </p>
+
+<h1>Barony Resource Management</h1>
+<p>
+	The following rules will eventually be moved to a separate page.
+</p>
+
+<h2>Resources</h2>
+<ap-advanced-table>
+	[
+		[{ "value": "", "isHeader": true, "columnAlign":"right" }, { "value": "Resource Count", "isHeader": true, "align":"center", "columnAlign":"left" }],
+		[{ "value": "Goods", "isHeader": true }, "0"],
+		[{ "value": "Labor", "isHeader": true }, "2"],
+		[{ "value": "Influence", "isHeader": true }, "1"],
+		[{ "value": "Magic", "isHeader": true }, "0"]
+	]
+</ap-advanced-table>
+<p>
+	<i class="power">Goods:</i> Goods represent physical items necessary for an activity, which can be permanent fixtures or consumable items. For building an inn, 
+	Goods are the materials used to build the structure, the tables and chairs, and the food and beverages you plan to sell. Goods as capital 
+	are an abstraction so that you don’t need to keep track of gathering things like stones for a building’s foundation, timber for the walls, 
+	ingredients for the menu, and so on. Goods might also represent natural resources (such as fertile soil or a spring), in which case you’re 
+	not literally moving these items to a specific location — instead, you’re spending capital to acquire a location with those resources.
+</p>
+<p class="indent-1">
+	<i class="power">Food:</i> A special subvariety of Goods, Food represents the raw food that feeds a community. Excess food is automatically converted to goods
+	at a rate of 5 Food to 1 Good. 1 unit of Food feeds 10 population, rounding up. If you don't have enough Food income to feed your population generated, you lose 1 Goods per
+	10 population, rounding up, 
+</p>
+<p>
+	<i class="power">Influence:</i> Influence represents your ability to get other people in the settlement to perform favors for you or use their skills to 
+	accomplish things (as opposed to Labor, which involves hard physical work). This includes getting a merchant to change the terms of a contract, or convincing 
+	a politician to do you a favor.
+</p>
+<p>
+	<i class="power">Labor:</i> Labor represents using workers to accomplish tasks. This includes hiring carpenters to construct a building, hiring thugs to 
+	extort shopkeepers, using assistants to help you craft items or tend injuries, or hiring employees to run your business while you’re away.
+</p>
+<p>
+	<i class="power">Magic:</i> Magic represents magical power at your disposal. Some activities, such as healing sick peasants in the slums or constructing a 
+	magical library, specifically require you to spend Magic.
+</p>
+
+<h2>Acquiring Resources</h2>
+<ap-advanced-table>
+	[
+		[{ "value": "", "isHeader": true, "columnAlign":"right" }, { "value": "Purchase Cost", "isHeader": true, "align":"center", "columnAlign":"left" }],
+		[{ "value": "Goods", "isHeader": true }, "200gp"],
+		[{ "value": "Food", "isHeader": true }, "50gp"],
+		[{ "value": "Labor", "isHeader": true }, "200gp"],
+		[{ "value": "Influence", "isHeader": true }, "300gp"],
+		[{ "value": "Magic", "isHeader": true }, "1,000gp"]
+	]
+</ap-advanced-table>
+
+<h3>Purchasing Resources</h3>
+<p>
+	Resources can be purchased with gold, which is more expensive than building up the resources over time. When purchasing resources, you gain the resources
+	immediately. This may represent paying carpenters from the next settlement over to help bolster your own carpenters, or it might represent buying the wood
+	from another barony.
+</p>
+<p>
+	The prices listed in the table above represent the cost of buying one unit of resources. Excess Goods, Labor and Magic can be sold for profit, at a return
+	of half their purchase cost.
+</p>
+
+<h3>Earning Resources</h3>
+<p>
+	Resources can be passively earned over time by buildings or improvements that are manned, once per month. Buildings that are not manned do not produce
+	resources.
+</p>
+
+<h2>Population</h2>
+<ap-advanced-table>
+	[
+		[{ "value": "Population Type", "isHeader": true, "columnAlign":"right" }, { "value": "Purchase Cost", "isHeader": true, "align":"center", "columnAlign":"left" }],
+		[{ "value": "Untrained", "isHeader": true, "align":"right" }, "5gp"],
+		[{ "value": "Trained", "isHeader": true, "align":"right" }, "15gp"],
+		[{ "value": "Arcane", "isHeader": true, "align":"right" }, "100gp"],
+		[{ "value": "Divine", "isHeader": true, "align":"right" }, "75gp"],
+		[{ "value": "Combatant, minor", "isHeader": true, "align":"right" }, "10gp"],
+		[{ "value": "Combatant, medium", "isHeader": true, "align":"right" }, "500gp"],
+		[{ "value": "Combatant, major", "isHeader": true, "align":"right" }, "15,000gp"],
+		[{ "value": "Combatant, heroic", "isHeader": true, "align":"right" }, "500,000gp"]
+	]
+</ap-advanced-table>
+<p>
+	Combatants range in level from 1st to 12th, with minors being 1st to 3rd, mediums being 4th to 6th, majors being 7th to 9th, and heroics being
+	10th to 12th. Within each combatant category, there is 5 lower level combatants for each level higher. For example, if you have 12 Combatant, minors, then you have
+	10 at level 1 and 2 at level 2. You would get your first level 3 once you have 31 combatant, minors, which would be 25 at level 1, 5 at level 2, and 1 at level 3.
+</p>
+
+<h2>Buildings</h2>
+<p>
+	TODO
+</p>
