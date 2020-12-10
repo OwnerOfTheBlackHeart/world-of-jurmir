@@ -17,157 +17,26 @@
 </ap-basic-table>
 <ap-auth-container permissions="gm desserr-population desserr-full noble-full">
 	<h2>Population Breakdown</h2>
-	<ul class="homebrew-list">
-		<li>
-			<b>Adepts</b>
-			<ul>
-				<li>1 level 11</li>
-				<li>1 level 8</li>
-				<li>2 level 5</li>
-				<li>2 level 4</li>
-				<li>40 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Aristocrats</b>
-			<ul>
-				<li>2 level 10</li>
-				<li>4 level 5</li>
-				<li>39 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Commoner</b>
-			<ul>
-				<li>2 level 17</li>
-				<li>4 level 8</li>
-				<li>7,189 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Expert</b>
-			<ul>
-				<li>1 level 13</li>
-				<li>1 level 10</li>
-				<li>2 level 6</li>
-				<li>2 level 5</li>
-				<li>237 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Warrior</b>
-			<ul>
-				<li>1 level 11</li>
-				<li>1 level 10</li>
-				<li>4 level 5</li>
-				<li>395 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Barbarian</b>
-			<ul>
-				<li>1 level 9</li>
-				<li>1 level 8</li>
-				<li>4 level 4</li>
-				<li>8 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Bard</b>
-			<ul>
-				<li>2 level 9</li>
-				<li>4 level 4</li>
-				<li>8 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Cleric</b>
-			<ul>
-				<li>2 level 11</li>
-				<li>4 level 5</li>
-				<li>8 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Druid</b>
-			<ul>
-				<li>1 level 12 - Jorel Sylwynn</li>
-				<li>1 level 11</li>
-				<li>2 level 6</li>
-				<li>2 level 5</li>
-				<li>8 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Fighter</b>
-			<ul>
-				<li>1 level 8 (captain of the guard)</li>
-				<li>1 level 7</li>
-				<li>2 level 4</li>
-				<li>2 level 3</li>
-				<li>8 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Monk</b>
-			<ul>
-				<li>1 level 10</li>
-				<li>1 level 9</li>
-				<li>2 level 5</li>
-				<li>2 level 4</li>
-				<li>8 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Paladin</b>
-			<ul>
-				<li>1 level 9</li>
-				<li>1 level 7</li>
-				<li>2 level 4</li>
-				<li>2 level 3</li>
-				<li>8 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Ranger</b>
-			<ul>
-				<li>1 level 8</li>
-				<li>1 level 7</li>
-				<li>2 level 4</li>
-				<li>2 level 3</li>
-				<li>8 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Rogue</b>
-			<ul>
-				<li>1 level 11 (leader of the thief's guild)</li>
-				<li>1 level 10</li>
-				<li>4 level 5</li>
-				<li>8 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Sorcerer</b>
-			<ul>
-				<li>1 level 10</li>
-				<li>1 level 9</li>
-				<li>2 level 5</li>
-				<li>2 level 4</li>
-				<li>8 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Wizard</b>
-			<ul>
-				<li>1 level 10</li>
-				<li>1 level 9</li>
-				<li>2 level 5</li>
-				<li>2 level 4</li>
-				<li>8 level 1</li>
-			</ul>
-		</li>
-	</ul>
+	<ap-population-table>
+		[
+			{"class":"Adepts", "11": 1, "8": 1, "5": 2, "4": 2, "2": 8, "1": 40},
+			{"class":"Aristocrats", "10": 2, "5": 4, "2": 8, "1": 39},
+			{"class":"Commoner", "17": 2, "8": 4, "4": 8, "2": 16, "1": 6997},
+			{"class":"Expert", "13": 1, "10": 1, "6": 2, "5": 2, "3": 4, "2": 4, "1": 237},
+			{"class":"Warrior", "11": 1, "10": 1, "5": 4, "2": 8, "1": 395},
+			{"class":"Barbarian", "9": 1, "8": 1, "4": 4, "2": 8, "1": 16},
+			{"class":"Bard", "9": 2, "4": 4, "2": 8, "1": 16},
+			{"class":"Cleric", "11": 2, "5": 4, "2": 8, "1": 16},
+			{"class":"Druid", "12": 1, "11": 1, "6": 2, "5": 2, "3": 4, "2": 4, "1": 16},
+			{"class":"Fighter", "8": 1, "7": 1, "4": 2, "3": 2, "2": 4, "1": 12},
+			{"class":"Monk", "10": 1, "9": 1, "5": 2, "4": 2, "2": 8, "1": 16},
+			{"class":"Paladin", "9": 1, "7": 1, "4": 2, "3": 2, "2": 4, "1": 12},
+			{"class":"Ranger", "8": 1, "7": 1, "4": 2, "3": 2, "2": 4, "1": 12},
+			{"class":"Rogue", "11": 1, "10": 1, "5": 4, "2": 8, "1": 16},
+			{"class":"Sorcerer", "10": 1, "9": 1, "5": 2, "4": 2, "2": 8, "1": 16},
+			{"class":"Wizard", "10": 1, "9": 1, "5": 2, "4": 2, "2": 8, "1": 16}
+		]
+	</ap-population-table>
 </ap-auth-container>
 <h2>Organizations and Monsters</h2>
 <h3>The Slayers' Guild</h3>

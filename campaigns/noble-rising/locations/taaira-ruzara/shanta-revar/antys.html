@@ -18,152 +18,26 @@
 
 <ap-auth-container permissions="gm antys-population antys-full noble-full">
 	<h2>Population Breakdown</h2>
-	<ul class="homebrew-list">
-		<li>
-			<b>Adepts</b>
-			<ul>
-				<li>1 level 6</li>
-				<li>2 level 3</li>
-				<li>22 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Aristocrats</b>
-			<ul>
-				<li>1 level 6</li>
-				<li>2 level 3</li>
-				<li>22 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Commoner</b>
-			<ul>
-				<li>1 level 15 (militia leader)</li>
-				<li>2 level 7</li>
-				<li>4 level 3</li>
-				<li>3,832 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Expert</b>
-			<ul>
-				<li>1 level 12</li>
-				<li>2 level 6</li>
-				<li>4 level 3</li>
-				<li>126 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Warrior</b>
-			<ul>
-				<li>1 level 9 (council guard commander)</li>
-				<li>2 level 4 (council guards)</li>
-				<li>4 level 2</li>
-				<li>210 level 1 (42 guards)</li>
-			</ul>
-		</li>
-		<li>
-			<b>Barbarian</b>
-			<ul>
-				<li>1 level 4</li>
-				<li>2 level 2</li>
-				<li>4 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Bard</b>
-			<ul>
-				<li>1 level 5</li>
-				<li>2 level 2</li>
-				<li>4 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Cleric</b>
-			<ul>
-				<li>5 level 12 (high priests)</li>
-				<li>1 level 7</li>
-				<li>10 level 6</li>
-				<li>22 level 3</li>
-				<li>44 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Druid</b>
-			<ul>
-				<li>4 level 12 (elder druids)</li>
-				<li>9 level 6</li>
-				<li>18 level 3</li>
-				<li>36 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Fighter</b>
-			<ul>
-				<li>1 level 9</li>
-				<li>2 level 4 (captain of the guard)</li>
-				<li>4 level 2 (guards)</li>
-				<li>8 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Monk</b>
-			<ul>
-				<li>1 level 5</li>
-				<li>2 level 2</li>
-				<li>4 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Paladin</b>
-			<ul>
-				<li>1 level 5</li>
-				<li>2 level 2</li>
-				<li>4 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Ranger</b>
-			<ul>
-				<li>1 level 6</li>
-				<li>1 level 4</li>
-				<li>2 level 3</li>
-				<li>2 level 2</li>
-				<li>8 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Rogue</b>
-			<ul>
-				<li>7 level 10 (Council of 7 councilors)</li>
-				<li>1 level 9</li>
-				<li>14 level 5</li>
-				<li>2 level 4</li>
-				<li>32 level 2</li>
-				<li>64 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Sorcerer</b>
-			<ul>
-				<li>1 level 6</li>
-				<li>2 level 3</li>
-				<li>4 level 1</li>
-			</ul>
-		</li>
-		<li>
-			<b>Wizard</b>
-			<ul>
-				<li>1 level 15 (arch-mage)</li>
-				<li>8 level 12 (arch-mage)</li>
-				<li>16 level 6</li>
-				<li>1 level 5</li>
-				<li>32 level 3</li>
-				<li>2 level 2</li>
-				<li>68 level 1</li>
-			</ul>
-		</li>
-	</ul>
+	<ap-population-table>
+		[
+			{"class":"Adepts", "1": 23, "3": 2, "6": 1},
+			{"class":"Aristocrats", "1": 23, "3": 2, "7": 1},
+			{"class":"Commoner", "1": 4164, "3": 4, "6": 2, "12": 1},
+			{"class":"Expert", "1": 137, "2": 4, "5": 2, "10": 1},
+			{"class":"Warrior", "1": 229, "3": 2, "7": 1},
+			{"class":"Barbarian", "1": 4, "3": 2, "6": 1},
+			{"class":"Bard", "1": 8, "2": 4, "4": 2, "9": 1},
+			{"class":"Cleric", "1": 4, "3": 2, "7": 1},
+			{"class":"Druid", "1": 4, "3": 2, "6": 1},
+			{"class":"Fighter", "1": 8, "2": 4, "5": 2, "11": 1},
+			{"class":"Monk", "1": 4, "3": 2, "7": 1},
+			{"class":"Paladin", "1": 4, "2": 2, "5": 1},
+			{"class":"Ranger", "1": 4, "3": 2, "6": 1},
+			{"class":"Rogue", "1": 8, "2": 4, "4": 2, "9": 1},
+			{"class":"Sorcerer", "1": 4, "2": 2, "4": 1},
+			{"class":"Wizard", "1": 4, "2": 2, "4": 1}
+		]
+	</ap-population-table>
 </ap-auth-container>
 
 <ap-auth-container permissions="gm antys-full noble-full antys-gm-notes">
