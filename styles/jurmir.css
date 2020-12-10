@@ -126,6 +126,23 @@ table.spellbook-table {
 	width: auto;
 }
 
+ap-population-table > table {
+	width: auto;
+}
+
+.population-name-cell {
+	text-align: right;
+}
+
+.population-value-cell {
+	text-align: center;
+}
+
+.population-name-header,
+.population-value-header {
+	width: 40px;
+}
+
 .table-container {
 }
 

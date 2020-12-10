@@ -121,6 +121,11 @@
 				["100", "The party runs into <ap-link-button linkName="noble-reth-mailynath">Reth</ap-link-button>."]
 			]
 		</ap-advanced-table>
+		dryad (forests)
+		nymph (forests)
+		satyr (forests)
+		Sprites (forests)
+		Treant
 	</div>
 </div>
 
@@ -130,14 +135,83 @@
 		<b>Forests</b>
 		<ap-advanced-table>
 			[
-				[{"value": "Roll", "isHeader": true}, {"value": "ENCOUNTER", "isHeader": true}],		
-				["11-20", "Kobolds"],	
-				["21-30", "Bandits"],
-				["31-40", "Wild animal attack"],
-				["41-50", "Roaming demon"],
-				["51-60", "Enemy soldiers"],
-				["61-70", "Goblins"],
-				["81-90", "Red king cultists"],
+				[{"value": "Roll", "isHeader": true, "columnAlign": "center"}, {"value": "ENCOUNTER", "isHeader": true}],		
+				["1", "Aranea"],
+				["2", "1d4+2 Aranea"],
+				["3", "Assassin Vine"],
+				["4", "Assassin Vine patch (1d3+1)"],
+				["5", "Digester"],
+				["6", "Digester pack (1d4+2)"],
+				["7", "Wolf"],
+				["8-9", "Wolf pair"],
+				["10-13", "Wolf pack (1d10+6)"],
+				["14", "Tiger"],
+				["15", "Leopard"],
+				["16", "Leopard pair"],
+				["17", "Monitor Lizard"],
+				["18", "Constrictor Snake"],
+				["19", "Constrictor Snake, Giant"],
+				["20", "Bear Black"],
+				["21", "Bear Black pair"],
+				["22", "Deinonychus"],
+				["23-24", "Deinonychus pair"],
+				["25-26", "Deinonychus pack (1d4+2)"],
+				["27", "Megaraptor"],
+				["28", "Megaraptor pair"],
+				["29-30", "Megaraptor pack (1d4+2)"],
+				["31", "Megaraptor and 1d4+2 deinonychus"],
+				["32", "Dire Badger"],
+				["33", "Dire Badger cete (1d4+1)"],
+				["34", "Dire Boar"],
+				["35", "Dire Boar heard (1d4+4)"],
+				["36", "Dire Rat pack (1d10+10)"],
+				["37", "Dire Tiger"],
+				["38", "Dire Tiger pair"],
+				["39", "Dire Wolf"],
+				["40", "Dire Wolf pack (1d4+4)"],
+				["41-43", "Dire Wolf and 1d4+4 wolves"],
+				["44", "Ettercap"],
+				["45", "Ettercap pair"],
+				["46", "1d2 Ettercaps + 1d3+1 medium monstrous spiders"],
+				["47", "Girallon"],
+				["48", "Girallon company (1d4+4)"],
+				["49-50", "Kobold gang (1d6+3)"],
+				["51", "2d10+10 kobolds + 1d3+1 dire weasels + <br/>1 <ap-link-button linkName="3-5-kobold-heavy">Kobold Heavy</ap-link-button> per 20 kobolds (round up)"],
+				["52", "Krenshar"],
+				["53", "Krenshar pair"],
+				["54", "Krenshar pride (2d3+4)"],
+				["55", "Wereboar"],
+				["56", "Wereboar pair"],
+				["57", "Wereboar brood (1d2+2)"],
+				["58", "1d3+1 wereboars + 1d4 boars"],
+				["59", "Weretiger"],
+				["60", "Weretiger pair"],
+				["61", "Werewolf"],
+				["62", "Werewolf pair"],
+				["63", "Werewolf pack (2d3+4)"],
+				["64", "1d4+1 werewolves + 1d4+4 wolves"],
+				["65", "Werewolf lord"],
+				["66", "Werewolf lord pair"],
+				["67", "1d2 werewolf lords + 1d3+1 werewolves + 1d4+4 wolves"],
+				["68", "Owlbear"],
+				["69", "Owlbear pair"],
+				["70", "Owlbear pack (3-8)"],
+				["71", "Skeleton, Advanced Megaraptor"],
+				["72", "Skeleton, Owlbear"],
+				["73", "Skeleton, Wolf"],
+				["74", "1d4+4 Wolf Skeletons"],
+				["75", "1d2 Advanced Megaraptor Skeletons + <br/>1d4+1 Owlbear Skeletons + 1d6+4 Wolf Skeletons"],
+				["77", "Kobold Zombie"],
+				["78", "Kobold Zombie swarm (1d10+10)"],
+				["79", "1d10+10 Kobold Zombies + 1d6+4 Wolf Skeletons"],
+				["80", "Spider Eater"],
+				["81", "Tendriculos"],
+				
+				["82-86", "Enemy soldiers table"],
+				["87-88", "Red king cultists table"],
+				["89-93", "Bandits table"],
+				["94-98", "Goblins table"],
+				["99", "Roaming demon table"],
 				["100", "<ap-link-button linkName="noble-mysterious-stranger">The Mysterious Stranger</ap-link-button> appears.<br/>Reroll for enemy."]
 			]
 		</ap-advanced-table>
@@ -147,13 +221,11 @@
 		<ap-advanced-table>
 			[
 				[{"value": "Roll", "isHeader": true}, {"value": "ENCOUNTER", "isHeader": true}],
-				["31-40", "Wild animal attack"],
-				["41-50", "Roaming demon"],
-				["51-60", "Enemy soldiers"],
-				["61-70", "Goblins"],
-				["81-90", "Red king cultists"],
 				["91-99", "Lizardfolk"],
 				["91-99", "Poison Dusk Lizardfolk (MM3)"],
+				
+				["94-98", "Goblins table"],
+				["99", "Roaming demon table"],
 				["100", "<ap-link-button linkName="noble-mysterious-stranger">The Mysterious Stranger</ap-link-button> appears.<br/>Reroll for enemy."]
 			]
 		</ap-advanced-table>
@@ -163,12 +235,12 @@
 		<ap-advanced-table>
 			[
 				[{"value": "Roll", "isHeader": true}, {"value": "ENCOUNTER", "isHeader": true}],
-				["21-30", "Bandits"],
-				["31-40", "Wild animal attack"],
-				["41-50", "Roaming demon"],
-				["51-60", "Enemy soldiers"],
-				["61-70", "Goblins"],
-				["81-90", "Red king cultists"],
+				
+				["82-86", "Enemy soldiers table"],
+				["87-88", "Red king cultists table"],
+				["89-93", "Bandits table"],
+				["94-98", "Goblins table"],
+				["99", "Roaming demon table"],
 				["100", "<ap-link-button linkName="noble-mysterious-stranger">The Mysterious Stranger</ap-link-button> appears.<br/>Reroll for enemy."]
 			]
 		</ap-advanced-table>
@@ -180,13 +252,80 @@
 				[{"value": "Roll", "isHeader": true}, {"value": "ENCOUNTER", "isHeader": true}],
 				["0", "Orcs"],
 				["11-20", "Kobolds"],
-				["31-40", "Wild animal attack"],
-				["41-50", "Roaming demon"],
-				["51-60", "Enemy soldiers"],
-				["61-70", "Goblins"],
-				["81-90", "Red king cultists"],
 				["91-99", "Blackscale Lizardfolk (MM3)"],
+				
+				["92-93", "Red king cultists table"],
+				["94-98", "Goblins table"],
+				["99", "Roaming demon table"],
 				["100", "<ap-link-button linkName="noble-mysterious-stranger">The Mysterious Stranger</ap-link-button> appears.<br/>Reroll for enemy."]
+			]
+		</ap-advanced-table>
+	</div>
+</div>
+
+<div class="table-container">
+	<div class="table-column">
+		<div class="table-column">
+			<b>Bandits</b>
+			<ap-advanced-table>
+				[
+					[{"value": "Roll", "isHeader": true}, {"value": "ENCOUNTER", "isHeader": true}],		
+					["11-20", "Kobolds"]
+				]
+			</ap-advanced-table>
+		</div>
+		<div class="table-column">
+			<b>Red King Cultists</b>
+			<ap-advanced-table>
+				[
+					[{"value": "Roll", "isHeader": true}, {"value": "ENCOUNTER", "isHeader": true}],		
+					["11-20", "Kobolds"]
+				]
+			</ap-advanced-table>
+		</div>
+		<div class="table-column">
+			<b>Undead</b>
+			<ap-advanced-table>
+				[
+					[{"value": "Roll", "isHeader": true}, {"value": "ENCOUNTER", "isHeader": true}],		
+					["11-20", "Allip"],
+					["11-20", "Ghoul"],
+					["11-20", "Ghast"],
+					["11-20", "Mohrg"],
+					["11-20", "Shadow"],
+					["11-20", "Shadow, greater"],
+					["11-20", "Specter"],
+					["11-20", "Vampire spawn"],
+					["11-20", "Wight"],
+					["11-20", "Wraith"],
+					["11-20", "Wraith, Dread"],
+					["11-20", "Zombie, human commoner"],
+				]
+			</ap-advanced-table>
+		</div>
+		<b>Roaming Demon/Devil</b>
+		<ap-advanced-table>
+			[
+				[{"value": "Roll", "isHeader": true}, {"value": "ENCOUNTER", "isHeader": true}],		
+				["11-20", "Kobolds"]
+			]
+		</ap-advanced-table>
+	</div>
+	<div class="table-column">
+		<b>Enemy Soldiers</b>
+		<ap-advanced-table>
+			[
+				[{"value": "Roll", "isHeader": true}, {"value": "ENCOUNTER", "isHeader": true}],		
+				["11-20", "Kobolds"]
+			]
+		</ap-advanced-table>
+	</div>
+	<div class="table-column">
+		<b>Goblins</b>
+		<ap-advanced-table>
+			[
+				[{"value": "Roll", "isHeader": true}, {"value": "ENCOUNTER", "isHeader": true}],		
+				["11-20", "Kobolds"]
 			]
 		</ap-advanced-table>
 	</div>

@@ -12,4 +12,5 @@ import "./ap-display-global.js";
 import "./ap-whores-display.js";
 import "./ap-birthday-generator.js";
 import "./ap-template-outlet.js";
+import "./ap-population-table.js";
 //# sourceMappingURL=custom-elements.js.map
