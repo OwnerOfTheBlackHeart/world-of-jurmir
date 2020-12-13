@@ -8,7 +8,14 @@ export class AdvancedTable extends HTMLElement {
         if (Utilities.IsGoodString(this.innerHTML)) {
             const jsonRows = Utilities.StringToObject(this.innerHTML);
             if (jsonRows && Array.isArray(jsonRows) && jsonRows[0] && Array.isArray(jsonRows[0])) {
-                this.rows = jsonRows.map((row) => row.map((field) => (typeof field === "string" ? { value: field } : field)));
+                this.rows = jsonRows.map((row) => row.reduce((fields, current) => {
+                    const field = typeof current === "string" ? { value: current, isCompressing: current.startsWith("~~") } : current;
+                    if (field.isCompressing === true) {
+                        fields.lastElement().value += field.value.slice(2);
+                        return fields;
+                    }
+                    return [...fields, field];
+                }, []));
             }
         }
     }

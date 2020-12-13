@@ -220,7 +220,7 @@
 		<b>Swamps</b>
 		<ap-advanced-table>
 			[
-				[{"value": "Roll", "isHeader": true}, {"value": "ENCOUNTER", "isHeader": true}],
+				[{"value": "Roll", "isHeader": true, "columnAlign": "center"}, {"value": "ENCOUNTER", "isHeader": true}],
 				["91-99", "Lizardfolk"],
 				["91-99", "Poison Dusk Lizardfolk (MM3)"],
 				
@@ -234,7 +234,52 @@
 		<b>Plains</b>
 		<ap-advanced-table>
 			[
-				[{"value": "Roll", "isHeader": true}, {"value": "ENCOUNTER", "isHeader": true}],
+				[{"value": "Roll", "isHeader": true, "columnAlign": "center"}, {"value": "ENCOUNTER", "isHeader": true}],
+				["1", "Ankheg"],
+				["2-3", "Ankheg cluster (1d3+1)"],
+				["4", "Bison"],
+				["5", "Bison herd (1d20+1d6+4)"],
+				["6-7", "Cheetah"],
+				["8-10", "Cheetah pair"],
+				["11", "Cheetah family (1d3+2)"],
+				["12", "Cockatrice"],
+				["13", "Cockatrice pair"],
+				["14", "Cockatrice flight (1d3+2)"],
+				["15", "Cockatrice flock (1d8+5)"],
+				["16-17", "Triceratops"],
+				["18-19", "Triceratops pair"],
+				["20-22", "Triceratops herd (1d4+4)"],
+				["23-25", "Tyrannosaurus"],
+				["26-27", "Tyrannosaurus pair"],
+				["28-29", "Dire lion"],
+				["30-31", "Dire lion pair"],
+				["32-34", "Dire lion pride (2d3+4)"],
+				["35-36", "1d2 dire lions + 2d3+4 lions"],
+				["37-39", "Wild dog"],
+				["40-43", "Wild dog pack (1d8+4)"],
+				["44-45", "Wild big dog (riding)"],
+				["46-47", "Wild big dog (riding) pack (1d8+4)"],
+				["48-49", "Elephant"],
+				["50-52", "Elephant herd (1d20+1d6+4)"],
+				["53", "Giant ant worker gang (2d3)"],
+				["54", "1d6+5 giant ant workers + 1 giant ant soldier"],
+				["55", "Giant ant soldier"],
+				["56", "Giant ant soldier gang (1d3+1)"],
+				["57", "Giant ant hive <br/>(1 giant ant queen + <br/>10d10 giant ant workers + <br/>5d4 giant ant soldiers)"],
+				["58-60", "Giant bee"],
+				["61-62", "Giant bee buzz (1d4+1)"],
+				["63", "Giant bee hive (1d10+10)"],
+				["64", "Giant fire beetle cluster (1d4+1)"],
+				["65", "Giant fire beetle colony (1d6+5)"],
+				["66", "Gorgon"],
+				["67", "Gorgon pair"],
+				["68", "Gorgon pack (1d2+2)"],
+				["69", "Gorgon herd (2d5+3)"],
+				["70-71", "Rhinoceros"],
+				["72-74", "Rhinoceros herd (2d6)"],
+				["75-76", "Worg"],
+				["77-78", "Worg pair"],
+				["79-81", "Worg pack (1d6+5)"],
 				
 				["82-86", "Enemy soldiers table"],
 				["87-88", "Red king cultists table"],
@@ -249,7 +294,23 @@
 		<b>Mountains</b>
 		<ap-advanced-table>
 			[
-				[{"value": "Roll", "isHeader": true}, {"value": "ENCOUNTER", "isHeader": true}],
+				[{"value": "Roll", "isHeader": true, "columnAlign": "center"}, {"value": "ENCOUNTER", "isHeader": true}],
+				["0", "Orcs"],
+				["11-20", "Kobolds"],
+				["91-99", "Blackscale Lizardfolk (MM3)"],
+				
+				["92-93", "Red king cultists table"],
+				["94-98", "Goblins table"],
+				["99", "Roaming demon table"],
+				["100", "<ap-link-button linkName="noble-mysterious-stranger">The Mysterious Stranger</ap-link-button> appears.<br/>Reroll for enemy."]
+			]
+		</ap-advanced-table>
+	</div>
+	<div class="table-column">
+		<b>Underground</b>
+		<ap-advanced-table>
+			[
+				[{"value": "Roll", "isHeader": true, "columnAlign": "center"}, {"value": "ENCOUNTER", "isHeader": true}],
 				["0", "Orcs"],
 				["11-20", "Kobolds"],
 				["91-99", "Blackscale Lizardfolk (MM3)"],
@@ -269,7 +330,7 @@
 			<b>Bandits</b>
 			<ap-advanced-table>
 				[
-					[{"value": "Roll", "isHeader": true}, {"value": "ENCOUNTER", "isHeader": true}],		
+					[{"value": "Roll", "isHeader": true, "columnAlign": "center"}, {"value": "ENCOUNTER", "isHeader": true}],		
 					["11-20", "Kobolds"]
 				]
 			</ap-advanced-table>
@@ -278,8 +339,62 @@
 			<b>Red King Cultists</b>
 			<ap-advanced-table>
 				[
-					[{"value": "Roll", "isHeader": true}, {"value": "ENCOUNTER", "isHeader": true}],		
-					["11-20", "Kobolds"]
+					[{"value": "Roll", "isHeader": true, "columnAlign": "center"}, {"value": "ENCOUNTER", "isHeader": true}],		
+					["1-10", "2d4 <ap-link-button linkName="red-king-cultist">RK Cultist</ap-link-button>"],
+					["11-25", 
+						"3d4 <ap-link-button linkName="red-king-cultist">RK Cultist</ap-link-button> + ",
+						"~~<ap-link-button linkName="red-king-cult-guard">RK Guard</ap-link-button>"
+					],
+					["26-50", "1d6 <ap-link-button linkName="red-king-abductor">RK Abductor</ap-link-button>"],
+					["51-55", 
+						"<ap-link-button linkName="red-king-priest">RK Priest</ap-link-button> + ",
+						"~~1d4 <ap-link-button linkName="red-king-cult-guard">RK Guard</ap-link-button>"
+					],
+					["56-70", 
+						"<ap-link-button linkName="red-king-priest">RK Priest</ap-link-button> + ",
+						"~~2d4 <ap-link-button linkName="red-king-cult-guard">RK Guard</ap-link-button> +<br/>", 
+						"~~1d6 <ap-link-button linkName="red-king-abductor">RK Abductor</ap-link-button> + ",
+						"~~2d6+6 <ap-link-button linkName="red-king-cultist">RK Cultist</ap-link-button>"
+					],
+					["71-76", 
+						"1d4 <ap-link-button linkName="red-king-priest">RK Priest</ap-link-button> + ",
+						"~~2d8 <ap-link-button linkName="red-king-cult-guard">RK Guard</ap-link-button> +<br/>", 
+						"~~2d6 <ap-link-button linkName="red-king-abductor">RK Abductor</ap-link-button> + ",
+						"~~4d6+12 <ap-link-button linkName="red-king-cultist">RK Cultist</ap-link-button>"
+					],
+					["77-79", 
+						"<ap-link-button linkName="red-lady">Red Lady</ap-link-button> + <ap-link-button linkName="red-page">Red Page</ap-link-button> + <br/>",
+						"~~1 <ap-link-button linkName="red-king-priest">RK Priest</ap-link-button> + ",
+						"~~2d4 <ap-link-button linkName="red-king-cult-guard">RK Guard</ap-link-button> +<br/>",
+						"~~1d6 <ap-link-button linkName="red-king-abductor">RK Abductor</ap-link-button> + ",
+						"~~2d6+6 <ap-link-button linkName="red-king-cultist">RK Cultist</ap-link-button>"
+					],
+					["80-85", 
+						"<ap-link-button linkName="red-princess">Red Princess</ap-link-button> + ",
+						"~~<ap-link-button linkName="red-king-priest">RK Priest</ap-link-button> + <br/>",
+						"~~<ap-link-button linkName="red-king-cult-guard">RK Guard</ap-link-button> + ", 
+						"~~2d3 <ap-link-button linkName="red-king-abductor">RK Abductor</ap-link-button>"
+					],
+					["86-89", 
+						"<ap-link-button linkName="red-princess">Red Princess</ap-link-button> + <ap-link-button linkName="red-squire">Red Squire</ap-link-button> + <br/>",
+						"~~1d4 <ap-link-button linkName="red-king-priest">RK Priest</ap-link-button> + ",
+						"~~2d8 <ap-link-button linkName="red-king-cult-guard">RK Guard</ap-link-button> +<br/>", 
+						"~~2d6 <ap-link-button linkName="red-king-abductor">RK Abductor</ap-link-button> + ",
+						"~~4d6+12 <ap-link-button linkName="red-king-cultist">RK Cultist</ap-link-button>"
+					],
+					["90", "<ap-link-button linkName="red-queen">Red Queen</ap-link-button>"],
+					["91", 
+						"<ap-link-button linkName="red-queen">Red Queen</ap-link-button> + <ap-link-button linkName="red-knight">Red Knight</ap-link-button> +<br/>",
+						"~~3d6 <ap-link-button linkName="red-king-priest">RK Priest</ap-link-button> + ",
+						"~~6d8 <ap-link-button linkName="red-king-cult-guard">RK Guard</ap-link-button> +<br/>",
+						"~~6d6 <ap-link-button linkName="red-king-abductor">RK Abductor</ap-link-button> + ",
+						"~~4d20+50 <ap-link-button linkName="red-king-cultist">RK Cultist</ap-link-button>"
+					],
+					["92-93", "<ap-link-button linkName="red-page">Red Page</ap-link-button>"],
+					["94-95", "<ap-link-button linkName="red-squire">Red Squire</ap-link-button>"],
+					["96-97", "<ap-link-button linkName="red-knight">Red Knight</ap-link-button>"],
+					["98-99", "<ap-link-button linkName="phopagite">Phopagite, Eater of Slain</ap-link-button>"],
+					["100", "1d4 <ap-link-button linkName="phopagite">Phopagite, Eater of Slain</ap-link-button>"]
 				]
 			</ap-advanced-table>
 		</div>
@@ -287,7 +402,7 @@
 			<b>Undead</b>
 			<ap-advanced-table>
 				[
-					[{"value": "Roll", "isHeader": true}, {"value": "ENCOUNTER", "isHeader": true}],		
+					[{"value": "Roll", "isHeader": true, "columnAlign": "center"}, {"value": "ENCOUNTER", "isHeader": true}],		
 					["11-20", "Allip"],
 					["11-20", "Ghoul"],
 					["11-20", "Ghast"],
@@ -299,35 +414,37 @@
 					["11-20", "Wight"],
 					["11-20", "Wraith"],
 					["11-20", "Wraith, Dread"],
-					["11-20", "Zombie, human commoner"],
+					["11-20", "Zombie, human commoner"]
 				]
 			</ap-advanced-table>
 		</div>
-		<b>Roaming Demon/Devil</b>
-		<ap-advanced-table>
-			[
-				[{"value": "Roll", "isHeader": true}, {"value": "ENCOUNTER", "isHeader": true}],		
-				["11-20", "Kobolds"]
-			]
-		</ap-advanced-table>
-	</div>
-	<div class="table-column">
-		<b>Enemy Soldiers</b>
-		<ap-advanced-table>
-			[
-				[{"value": "Roll", "isHeader": true}, {"value": "ENCOUNTER", "isHeader": true}],		
-				["11-20", "Kobolds"]
-			]
-		</ap-advanced-table>
-	</div>
-	<div class="table-column">
-		<b>Goblins</b>
-		<ap-advanced-table>
-			[
-				[{"value": "Roll", "isHeader": true}, {"value": "ENCOUNTER", "isHeader": true}],		
-				["11-20", "Kobolds"]
-			]
-		</ap-advanced-table>
+		<div class="table-column">
+			<b>Roaming Demon/Devil</b>
+			<ap-advanced-table>
+				[
+					[{"value": "Roll", "isHeader": true, "columnAlign": "center"}, {"value": "ENCOUNTER", "isHeader": true}],		
+					["11-20", "Kobolds"]
+				]
+			</ap-advanced-table>
+		</div>
+		<div class="table-column">
+			<b>Enemy Soldiers</b>
+			<ap-advanced-table>
+				[
+					[{"value": "Roll", "isHeader": true, "columnAlign": "center"}, {"value": "ENCOUNTER", "isHeader": true}],		
+					["11-20", "Kobolds"]
+				]
+			</ap-advanced-table>
+		</div>
+		<div class="table-column">
+			<b>Goblins</b>
+			<ap-advanced-table>
+				[
+					[{"value": "Roll", "isHeader": true, "columnAlign": "center"}, {"value": "ENCOUNTER", "isHeader": true}],		
+					["11-20", "goblins and worgs"]
+				]
+			</ap-advanced-table>
+		</div>
 	</div>
 </div>
 

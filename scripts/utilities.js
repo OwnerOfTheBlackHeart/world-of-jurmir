@@ -1,4 +1,7 @@
 import { GetPageInfoFromUri } from "./page-list.js";
+Array.prototype.lastElement = function () {
+    return this[this.length - 1];
+};
 export function IsGoodString(str) {
     return str !== undefined && str !== "";
 }

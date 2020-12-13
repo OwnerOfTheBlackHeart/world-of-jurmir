@@ -10,9 +10,11 @@
         "**/*.js.map": true
 	},
 	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.formatOnSave": true
 	},
 	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.formatOnSave": true
     },
     "cSpell.checkLimit": 500,

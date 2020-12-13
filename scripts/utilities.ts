@@ -1,5 +1,17 @@
 import { GetPageInfoFromUri } from "./page-list.js";
 
+// Adding a useful function to Array<T>
+declare global {
+	interface Array<T> {
+		lastElement(): T;
+	}
+}
+
+Array.prototype.lastElement = function () {
+	return this[this.length - 1];
+};
+
+// Global functions
 export function IsGoodString(str: string): boolean {
 	return str !== undefined && str !== "";
 }

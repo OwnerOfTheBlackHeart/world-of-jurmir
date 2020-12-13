@@ -120,6 +120,11 @@ li > .list {
 	margin-top: 0;
 }
 
+table tr,
+table td {
+	vertical-align: middle;
+}
+
 table.spellbook-table {
 	display: inline-block;
 	vertical-align: top;

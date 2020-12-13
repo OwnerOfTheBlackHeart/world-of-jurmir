@@ -41,7 +41,18 @@ export class AdvancedTable extends HTMLElement {
 			const jsonRows: (TableField | string)[][] = Utilities.StringToObject(this.innerHTML);
 
 			if (jsonRows && Array.isArray(jsonRows) && jsonRows[0] && Array.isArray(jsonRows[0])) {
-				this.rows = jsonRows.map((row) => row.map((field) => (typeof field === "string" ? { value: field } : field)));
+				this.rows = jsonRows.map((row) =>
+					row.reduce<TableField[]>((fields, current) => {
+						const field: TableField = typeof current === "string" ? { value: current, isCompressing: current.startsWith("~~") } : current;
+
+						if (field.isCompressing === true) {
+							fields.lastElement().value += field.value.slice(2);
+							return fields;
+						}
+
+						return [...fields, field];
+					}, [])
+				);
 			}
 		}
 	}
@@ -138,6 +149,7 @@ export class AdvancedTable extends HTMLElement {
 
 interface TableField {
 	value: string;
+	isCompressing?: boolean;
 	isHeader?: boolean;
 	colSpan?: number;
 	rowSpan?: number;
