@@ -2,32 +2,30 @@
 <ap-image linkName="noble-red-squire-img" class="character-picture" height="500">Picture of a Red Squire</ap-image>
 <ap-basic-table character-table>
 	[
-		["Size/Type:", "Large Outsider (Chaotic, Extraplanar, Evil)"],
-		["Hit Dice:", "14d8+70 (133 hp)"],
-		["Initiative:", "+8"],
-		["Speed:", "30 ft. (6 squares), fly 90 ft. (good)"],
-		["Armor Class:", "32 (-1 size, +4 Dex, +19 natural), touch 13, flat-footed 28"],
-		["Base Attack/Grapple:", "+14/+25"],
-		["Attack:", "+3 greatsword +23 melee (3d6+13/19-20) or slam +20 melee (2d8+10)"],
-		["Full Attack:", "+3 greatsword +23/+18/+13 melee (3d6+13/19-20) or slam +20 melee (2d8+10)"],
-		["Space/Reach:", "10 ft./10 ft."],
-		["Special Attacks:", "Spell-like abilities, spells"],
-        ["Special Qualities:", "Change shape, damage reduction 10/good, darkvision 60 ft., low-light vision, immunity to acid,",
-            "cold, poison, and petrification, protective aura, regeneration 10, resistance to electricity 10 and fire 10,",
-            "spell resistance 30, tongues, blessings of the queen"],
-		["Saves:", "Fort +14, Ref +13, Will +15"],
-		["Abilities:", "Str 25, Dex 19, Con 20, Int 22, Wis 23, Cha 22"],
-        ["Skills:", "Bluff +23, Concentration +22, Craft or Knowledge (any two) +23, Diplomacy +25, Disguise +25 (+35 when shapechanged,",
-            "+27 to act in character, +37 for both), Escape Artist +21, Hide +17, Intimidate +25,",
-            "Listen +23, Move Silently +21, Sense Motive +23, Search +23, Spot +23, Use Rope +4 (+6 with bindings)"],
-		["Feats:", "Blind-Fight, Cleave, Improved Initiative, Improved Sunder, Power Attack"],
-		["Environment:", "Any"],
+        ["Size/Type:", "Medium Outsider (Chaotic, Extraplanar, Evil)"],
+        ["Hit Dice:", "10d8+40 (85 hp)"],
+        ["Initiative:", "+8"],
+        ["Speed:", "30 ft. (6 squares)"],
+        ["Armor Class:", "19 (+4 Dex, +2 +1 padded armor, +3 natural), touch 14, flat-footed 15"],
+        ["Base Attack/Grapple:", "+10/+14"],
+        ["Attack:", "Bastard sword +15 melee (1d10+6+1d6 fire) or guisarme +14 melee (2d4+6+1d6 fire/x3)"],
+        ["Full Attack:", "Bastard sword +15/+10 melee (1d10+6+1d6 fire) or guisarme +14/+9 melee (2d4+6+1d6 fire/x3)"],
+        ["Space/Reach:", "5 ft./5 ft. (10 ft. with guisarme)"],
+        ["Special Attacks:", "Battle frenzy, the king's fury, wrathful stare (DC 15)"],
+        ["Special Qualities:", 
+            "Damage reduction 5/silver or good, darkvision 60 ft., immunity to fire and poison, ",
+            "resistance to acid 10 and cold 10, see in darkness, spell resistance 21, telepathy 100 ft."],
+        ["Saves:", "Fort +11, Ref +10, Will +7"],
+        ["Abilities:", "Str 18, Dex 18, Con 18, Int 6, Wis 10, Cha 10"],
+        ["Skills:", "Climb +17, Diplomacy +2, Hide +16, Listen +13, Move Silently +16, Sense Motive +13, Spot +13"],
+        ["Feats:", "Improved Initiative, Power Attack, Weapon Focus (bastard sword), Cleave"],
+        ["Environment:", "Any"],
         ["Organization:", ""],
-		["Challenge Rating:", "16"],
-		["Languages:", "All"],
-		["Treasure:", "Standard"],
-		["Alignment:", "Chaotic evil"]
-	]
+        ["Challenge Rating:", "7"],
+        ["Languages:", "Common, 1 racial, Voidspeak"],
+        ["Treasure:", "Standard"],
+        ["Alignment:", "Chaotic evil"]
+    ]
 </ap-basic-table>
 
 <p>
@@ -37,91 +35,44 @@
 </p>
 
 <p>
-    <i class="power">Regeneration:</i>
-    A red queen takes damage from good-aligned weapons and from spells and effects with the good descriptor.
+    <i class="power">Battle Frenzy (Ex):</i>
+    Twice per day, a red squire can work itself into a battle frenzy similar to the barbarian’s rage (+6 Strength, +6 Constitution, 
+    +3 morale bonus on Will saves, -2 AC penalty). The frenzy lasts for 8 rounds, and the bearded devil suffers no ill effects afterward.
+</p>
+
+<p>
+    <i class="power">The King's Fury (Su):</i>
+    When a red squire hits with an attack, it deals damage as if the attack had the flaming enchantment. If the target is human, partially human (excepting hobgoblins),
+    or is bearing a holy symbol of the Red King, the attack is treated as if it has the merciful enchantment instead of the flaming enchantment.
+</p>
+
+<p>
+    <i class="power">Wrathful Stare (Su):</i>
+    A red squire may, as a standard action, focus all their rage into a single creature. The creature must make a DC 15 will save, being stunned for 1d4 turns
+    on a failure or until the end of the target's next turn on a success. A red squire can use wrathful stare once per day, but the ability is recharged when
+    the red squire kills a creature. The DC for wrathful stare is charisma based.
+</p>
+<p>
+    A red squire may knock out a creature via the king's fury and attempt to use wrathful stare the following turn, as if it had killed a creature, only to waste the
+    standard action.
 </p>
 
 <p>
     <i class="power">Spell-like abilities:</i><br/>
-    At will—<i>continual flame, dispel magic, unholy blight (DC 20), invisibility (self only), lesser restoration (DC 18), remove curse, bestow curse (DC 19), 
-    remove disease (DC 19), remove fear (DC 17), speak with dead (DC 19)</i>;<br/><br/>
-    3/day—<i>blade barrier (DC 22), flame strike (DC 21), power word stun, raise dead, waves of fatigue</i>;<br/><br/>
-    1/day—<i>earthquake (DC 24), greater restoration (DC 23), mass charm monster (DC 24), waves of exhaustion</i>. <br/><br/>
-    Caster level 17th. The save DCs are Charisma-based.
-    <br/><br/>
-    <b>The following abilities are always active on the red queen's person, as the spells (caster level 17th)</b><br/>
-    <i>Detect evil, detect snares and pits, discern lies (DC 20), see invisibility, and true seeing</i>. They can be dispelled, but the red queen can reactivate them 
-    as a free action.
+    At will—<i>greater teleport (self plus 50 pounds of objects only)</i>. Caster level 16th.
 </p>
-
-<p>
-    <i class="power">Change Shape (Su):</i>
-    An red princess can assume the form of any Small or Medium humanoid.
-</p>
-
-<p>
-    <i class="power">Tongues (Su):</i>
-    A red princess has a permanent tongues ability (as the spell, caster level 12th). red princesses usually use verbal communication 
-    with mortals.
-</p>
-
-<p>
-    <i class="power">Bessings of the Queen (Su):</i>
-    Any human, human blooded creature, or servant of the Red King within 60 feet of a red queen that perceives them as an ally gains a +4 morale bonus
-    to attack rolls and skill rolls so long as the red queen is alive. This does not stack from multiple red queens, but two red queens can grant each
-    other this bonus. All creatures under the effect of the Blessings of the Queen can communicate telepathically.
-</p>
-<p>
-    Also, any human, or human blooded creature, affected by this power gains DR 5/cold iron and energy resistance 5 to cold, fire, acid, and electricity.
-</p>
-
-<div style="margin: 14.4px">
-    <i class="power">Spells:</i><br>
-    Red queens can cast divine spells as 17th-level clerics. A red queen has access to two of the following domains: Evil, Stength, Death, Destruction. 
-    The save DCs are Wisdom-based.<br/><br/>
-    Level 0 spells (DC 16, 6) - <i>Create Water, Guidance (2), Detect Magic, Mending</i><br/><br/>
-
-    Level 1 spells (DC 17, 7+1) - <i>inflict light wounds (D), bless (2), cause fear, divine favor (2), entropic shield, shield of faith</i><br/><br/>
-
-    Level 2 spells (DC 18, 7+1) - <i>desecrate (D), align weapon, bear’s endurance, bull’s strength (2), sound burst, eagle’s splendor, hold person</i><br/><br/>
-
-    Level 3 spells (DC 16, 6+1) - <i>contagion (D), searing light, invisibility purge, prayer (2), summon monster III, wind wall</i><br/><br/>
-
-    Level 4 spells (DC 16, 6+1) - <i>inflict critical wounds (D), death ward, dismissal, giant vermin, divine power, summon monster IV</i><br/><br/>
-
-    Level 5 spells (DC 16, 5+1) - <i>mass inflict light wounds (D), break enchantment, dispel good, slay living, plane shift, righteous might</i><br/><br/>
-
-    Level 6 spells (DC 16, 5+1) - <i>harm (D), banishment, greater dispel magic, harm, heroes’ feast, mass inflict moderate wounds</i><br/><br/>
-
-    Level 7 spells (DC 16, 3+1) - <i>disintegrate (D), blasphemy, control weather, regenerate</i><br/><br/>
-
-    Level 8 spells (DC 16, 2+1) - <i>earthquake (D), mass inflict critical wounds, fire storm</i><br/><br/>
-
-    Level 9 spells (DC 16, 1+1) - <i>implosion (D, 2)</i><br/><br/>
-
-    Domains: Destruction and Evil.
-</div>
 
 <div class="table-container">
 	<div class="table-column">
 		<ap-skill-chart>
             [
-				["Concentration", 17, ""],
-				["Diplomacy", 17, "+2 synergy"],
-				["Disguise", 17, "+2 synergy when in character, +10 circumstance bonus when using change shape"],
-				["Bluff", 17, ""],
-				["Escape Artist", 17, ""],
+				["Climb", 13, ""],
+				["Diplomacy", 0, "+2 synergy"],
 				["Hide", 13, ""],
-				["Intimidate", 17, "+2 synergy"],
-				["Craft or Knowledge (any one)", 17, ""],
-				["Craft or Knowledge (any one)", 17, ""],
-				["Listen", 17, ""],
-				["Move Silently", 17, ""],
-				["Search", 17, ""],
-				["Spot", 17, ""],
-				["Sense Motive", 17, ""],
-				["Slight of Hand", 0, "+2 synergy"],
-				["Use Rope", 0, "+2 with bindings"]
+				["Listen", 13, ""],
+				["Move Silently", 13, ""],
+				["Sense Motive", 13, ""],
+				["Spot", 13, ""]
 			]
 		</ap-skill-chart>
 	</div>
@@ -129,21 +80,18 @@
 
 <h2>Description</h2>
 <p>
-    Every red queen is different, but the most common are 9 foot tall beautiful women with gray skin and hair, red eyes, and tattered red 
-    bat wings. Red queens travel as often alone (usually to find a place to create a cult following) as serving as a general to the armies
-    of the Red King. Red queens personalities are also as variable as a humans, but they are always confident and loyal to the Red King.
+    Every red squire is different, but the most common are 5' 5" tall men clad in a gambeson with a metal helmet. Red squires are the body guards of
+    red princesses and have very little will of their own, obeying commands without any resistance or comment. Without a red princess to command them, red
+    squires travel about and attack anything in their way.
 </p>
 <p>
-	Every red queen was once a red princess who either gave birth to a pophagite, another powerful monstrosity, or distinguished herself on 
-	the battlefield in such a manner as to capture the attention of the Red King. Being that giving birth to a pophagite is the most common
-	option, it leads to the commonness of pale skin and tattered bat wings in red queens. Most red queens also possess flight, as is listed 
-	in the statblock above.
+    Red squires are created by red princesses from their flock, and red squires are loyal only to the red princess that created them. A red princess can only have
+    one squire at a time and a red squire who has lost their red princess wonders with only vengeful blood lust.
 </p>
 
 <h2>Combat</h2>
 <p>
-    Most red queens prefer to be at the front of a fight, whether as a leader or as a lone fighter. While they often use their spells to
-    gain the advantage, red queens gain great pleasure from killing the enemies of the Red King with their +3 greatswords. They particularly
-    enjoy slaying angels and dragons. Red queens will prioritize the lives of women of the Red King (queen, princess, and lady) over any 
-    creature that isn't themselves.
+    Red squires always put themselves in front of their red princess, doing everything in their power to prevent harm to her. If fighting on their own,
+    they will charge at any creature they see, raging before striking wildly with their bastard sword. If fighting with other creatures, a red squire will
+    utilize their guisarme if it is tactically more useful than their bastard sword.
 </p>

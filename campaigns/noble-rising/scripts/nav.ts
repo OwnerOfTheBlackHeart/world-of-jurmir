@@ -66,7 +66,7 @@ export const nobleNav = [
 
 	new PageInfo(undefined, "locations/taaira-ruzara/wolfs-run/rivers-plains/main.html", "The Barony of Rivers Plains", "rivers-plains"),
 	new PageInfo(undefined, "locations/taaira-ruzara/wolfs-run/rivers-plains/cherryvale.html", "The Ex-Village of Cherryvale", "cherryvale"),
-	new PageInfo(undefined, "locations/taaira-ruzara/wolfs-run/rivers-plains/elderfield.html", "The Ex-Village of Elderfield", "elderfield"),
+	new PageInfo(undefined, "locations/taaira-ruzara/wolfs-run/rivers-plains/blackhide.html", "The Ex-Village of Blackhide", "blackhide"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/ruins/asokmoat.html", "The Black City of Asokmoat", "asokmoat"),
 	new PageInfo(undefined, "locations/taaira-ruzara/ruins/eight-great-towers.html", "Red Wing Burrow", "eight-great-towers"),
@@ -96,6 +96,8 @@ export const nobleNav = [
 	new PageInfo(undefined, "plotlines/missions/turzks-search.html", "Turzk's Hunt", "turzks-search"),
 	new PageInfo(undefined, "plotlines/missions/red-wings-fang.html", "Red Wing's Fang", "red-wings-fang"),
 	new PageInfo(undefined, "plotlines/missions/finding-zigni.html", "Finding Zigni", "finding-zigni"),
+
+	new PageInfo(undefined, "plotlines/missions/methnaes/sariels-investigation.html", "Sariel's Investigation", "sariels-investigation"),
 
 	new PageInfo(undefined, "spellbooks/main.html", "Noble Rising Spellbooks", "spellbooks"),
 	new PageInfo(undefined, "spellbooks/yasrena-spellbook.html", "Yasrena's Spellbook", "yasrena-spellbook"),
@@ -183,6 +185,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "images/sariel-revealing-painting.jpg", "", "sariel-revealing-painting-img", true),
 	new PageInfo(undefined, "http://anthonyparsch.com/images/noble-map.png", "", "map-img", true),
 
+	new PageInfo(undefined, "images/creatures/red-knight.jpg", "", "red-knight-img", true),
 	new PageInfo(undefined, "images/creatures/red-squire.jpg", "", "red-squire-img", true),
 	new PageInfo(undefined, "images/creatures/red-page.jpg", "", "red-page-img", true),
 
