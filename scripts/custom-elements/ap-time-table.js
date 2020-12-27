@@ -4,11 +4,24 @@ import { globals } from "../globals.js";
 export class TimeTable extends HTMLElement {
     constructor() {
         super();
+        this.headerTitle = "";
         this.rows = [];
         this.table;
         this.mainNode = this;
         if (Utilities.IsGoodString(this.innerHTML)) {
-            this.rows = Utilities.StringToObject(this.innerHTML);
+            const data = Utilities.StringToObject(this.innerHTML);
+            if (data[0][0] === "header") {
+                this.headerTitle = data[0][1];
+                data.shift();
+            }
+            const dates = [];
+            data.forEach((row) => {
+                dates.push({
+                    time: new Time(row[0], row[1], row[2]),
+                    note: row[3],
+                });
+            });
+            this.rows = dates;
         }
         if (this.currentDateValue) {
             this.currentDate = Utilities.getDescendantProperty(globals, this.currentDateValue);
@@ -42,22 +55,33 @@ export class TimeTable extends HTMLElement {
     set currentDateValue(val) {
         this.setAttribute("current-date-value", val);
     }
+    get disableSort() {
+        return this.hasAttribute("disable-sort");
+    }
+    set disableSort(val) {
+        if (val) {
+            this.setAttribute("disable-sort", "");
+        }
+        else {
+            this.removeAttribute("disable-sort");
+        }
+    }
     connectedCallback() {
         this.Render();
     }
     Render() {
         this.innerHTML = "";
         if (this.rows.length > 0) {
+            if (!this.disableSort) {
+                this.rows.sort((a, b) => Time.Compare(a.time, b.time));
+            }
             this.table = document.createElement("table");
             this.mainNode.appendChild(this.table);
+            if (this.headerTitle) {
+                this.table.appendChild(this.BuildHeaderRow(this.headerTitle));
+            }
             for (let row of this.rows) {
-                switch (row[0]) {
-                    case "header":
-                        this.table.appendChild(this.BuildHeaderRow(row));
-                        break;
-                    default:
-                        this.table.appendChild(this.BuildNormalRow(row));
-                }
+                this.table.appendChild(this.BuildNormalRow(row));
             }
         }
         else if (this.showAllMonths) {
@@ -66,18 +90,17 @@ export class TimeTable extends HTMLElement {
             this.BuildAllMonths(this.table);
         }
     }
-    BuildHeaderRow(row) {
+    BuildHeaderRow(title) {
         let node = document.createElement("tr");
-        let data = Utilities.CreateTableHeader(row[1]);
+        let data = Utilities.CreateTableHeader(title);
         node.appendChild(data);
         data.setAttribute("colspan", "3");
         return node;
     }
-    BuildNormalRow(row) {
-        let date = new Time(row[0], row[1], row[2]);
+    BuildNormalRow(dateRow) {
         let node = document.createElement("tr");
         if (this.currentDate) {
-            const diffString = Time.BuildDiffString(this.currentDate, date);
+            const diffString = Time.BuildDiffString(this.currentDate, dateRow.time);
             const dataNode = Utilities.CreateTableData(diffString);
             if (diffString.search("ago") >= 0) {
                 dataNode.classList.add("previous-date");
@@ -90,9 +113,9 @@ export class TimeTable extends HTMLElement {
             }
             node.appendChild(dataNode);
         }
-        node.appendChild(Utilities.CreateTableData(date.toString(this.showSeason)));
-        if (row[3] != undefined) {
-            node.appendChild(Utilities.CreateTableData(row[3]));
+        node.appendChild(Utilities.CreateTableData(dateRow.time.toString(this.showSeason)));
+        if (dateRow.note != undefined) {
+            node.appendChild(Utilities.CreateTableData(dateRow.note));
         }
         return node;
     }

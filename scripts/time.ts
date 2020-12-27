@@ -89,6 +89,26 @@ export class Time {
 		return tempTime;
 	}
 
+	Compare(b: Time) {
+		if (!b) {
+			return 1;
+		}
+
+		if (this.year === b.year) {
+			if (this.month === b.month) {
+				if (this.day === b.day) {
+					return 0;
+				} else {
+					return this.day - b.day;
+				}
+			} else {
+				return this.month - b.month;
+			}
+		} else {
+			return this.year - b.year;
+		}
+	}
+
 	static Add(time1: Time, time2: Time) {
 		let toReturn = new Time();
 		toReturn.day = time1.ToDays() + time2.ToDays();
@@ -188,6 +208,18 @@ export class Time {
 		toReturn.year = Math.max(time.year, 0);
 
 		return toReturn;
+	}
+
+	static Compare(a: Time, b: Time) {
+		if (a === b) {
+			return 0;
+		} else if (a && !b) {
+			return 1;
+		} else if (!a && b) {
+			return -1;
+		} else {
+			return a.Compare(b);
+		}
 	}
 }
 

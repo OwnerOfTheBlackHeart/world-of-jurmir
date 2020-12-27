@@ -2,6 +2,11 @@ import * as Utilities from "../utilities.js";
 import { TimeRef, Time } from "../time.js";
 import { globals } from "../globals.js";
 
+interface TimeRow {
+	time: Time;
+	note: string;
+}
+
 export class TimeTable extends HTMLElement {
 	get showSeason() {
 		return this.hasAttribute("show-season");
@@ -35,7 +40,20 @@ export class TimeTable extends HTMLElement {
 		this.setAttribute("current-date-value", val);
 	}
 
-	rows: any[];
+	get disableSort() {
+		return this.hasAttribute("disable-sort");
+	}
+
+	set disableSort(val) {
+		if (val) {
+			this.setAttribute("disable-sort", "");
+		} else {
+			this.removeAttribute("disable-sort");
+		}
+	}
+
+	headerTitle: string;
+	rows: TimeRow[];
 	table: HTMLTableElement;
 	mainNode: HTMLElement;
 	currentDate: Time;
@@ -44,12 +62,27 @@ export class TimeTable extends HTMLElement {
 		// Always call super first in constructor
 		super();
 
+		this.headerTitle = "";
 		this.rows = [];
 		this.table;
 		this.mainNode = this;
 
 		if (Utilities.IsGoodString(this.innerHTML)) {
-			this.rows = Utilities.StringToObject(this.innerHTML);
+			const data = Utilities.StringToObject<any[]>(this.innerHTML);
+			if (data[0][0] === "header") {
+				this.headerTitle = data[0][1];
+				data.shift();
+			}
+
+			const dates: TimeRow[] = [];
+			data.forEach((row) => {
+				dates.push({
+					time: new Time(row[0], row[1], row[2]),
+					note: row[3],
+				});
+			});
+
+			this.rows = dates;
 		}
 
 		if (this.currentDateValue) {
@@ -65,17 +98,19 @@ export class TimeTable extends HTMLElement {
 		this.innerHTML = "";
 
 		if (this.rows.length > 0) {
+			if (!this.disableSort) {
+				this.rows.sort((a, b) => Time.Compare(a.time, b.time));
+			}
+
 			this.table = document.createElement("table");
 			this.mainNode.appendChild(this.table);
 
+			if (this.headerTitle) {
+				this.table.appendChild(this.BuildHeaderRow(this.headerTitle));
+			}
+
 			for (let row of this.rows) {
-				switch (row[0]) {
-					case "header":
-						this.table.appendChild(this.BuildHeaderRow(row));
-						break;
-					default:
-						this.table.appendChild(this.BuildNormalRow(row));
-				}
+				this.table.appendChild(this.BuildNormalRow(row));
 			}
 		} else if (this.showAllMonths) {
 			this.table = document.createElement("table");
@@ -85,9 +120,9 @@ export class TimeTable extends HTMLElement {
 		}
 	}
 
-	BuildHeaderRow(row: any[]) {
+	BuildHeaderRow(title: string) {
 		let node = document.createElement("tr");
-		let data = Utilities.CreateTableHeader(row[1]);
+		let data = Utilities.CreateTableHeader(title);
 
 		node.appendChild(data);
 		data.setAttribute("colspan", "3");
@@ -95,14 +130,13 @@ export class TimeTable extends HTMLElement {
 		return node;
 	}
 
-	BuildNormalRow(row: any[]) {
+	BuildNormalRow(dateRow: TimeRow) {
 		// Setup
-		let date = new Time(row[0], row[1], row[2]);
 		let node = document.createElement("tr");
 
-		// Offset
+		// Date Diff String
 		if (this.currentDate) {
-			const diffString = Time.BuildDiffString(this.currentDate, date);
+			const diffString = Time.BuildDiffString(this.currentDate, dateRow.time);
 			const dataNode = Utilities.CreateTableData(diffString);
 
 			if (diffString.search("ago") >= 0) {
@@ -117,11 +151,11 @@ export class TimeTable extends HTMLElement {
 		}
 
 		// Date Display
-		node.appendChild(Utilities.CreateTableData(date.toString(this.showSeason)));
+		node.appendChild(Utilities.CreateTableData(dateRow.time.toString(this.showSeason)));
 
 		// Notes Column
-		if (row[3] != undefined) {
-			node.appendChild(Utilities.CreateTableData(row[3]));
+		if (dateRow.note != undefined) {
+			node.appendChild(Utilities.CreateTableData(dateRow.note));
 		}
 
 		return node;
