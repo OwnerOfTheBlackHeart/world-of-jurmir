@@ -69,8 +69,8 @@ export const nobleNav = [
 	new PageInfo(undefined, "locations/taaira-ruzara/wolfs-run/rivers-plains/blackhide.html", "The Ex-Village of Blackhide", "blackhide"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/ruins/asokmoat.html", "The Black City of Asokmoat", "asokmoat"),
-	new PageInfo(undefined, "locations/taaira-ruzara/ruins/eight-great-towers.html", "Red Wing Burrow", "eight-great-towers"),
-	new PageInfo(undefined, "locations/taaira-ruzara/ruins/red-wing-burrow.html", "The Eight Great Towers", "red-wing-burrow"),
+	new PageInfo(undefined, "locations/taaira-ruzara/ruins/eight-great-towers.html", "The Eight Great Towers", "eight-great-towers"),
+	new PageInfo(undefined, "locations/taaira-ruzara/ruins/red-wing-burrow.html", "Red Wing Burrow", "red-wing-burrow"),
 
 	new PageInfo(undefined, "plotlines/main.html", "Noble Rising Plotline Index", "plotline-index"),
 	new PageInfo(undefined, "plotlines/the-grafter.html", "The Grafter", "the-grafter"),
@@ -153,6 +153,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "npcs/sebas.html", "Sebas, Awakened Tiger Wizard", "sebas"),
 	new PageInfo(undefined, "npcs/ivy-cooke.html", "Ivy Cooke, Tiefling with Her Own Plans", "ivy-cooke"),
 	new PageInfo(undefined, "npcs/quilynn-loreweaver.html", "Dame Quilynn Loreweaver, Mayor Captain of Deathfall", "quilynn-loreweaver"),
+	new PageInfo(undefined, "npcs/belben-huntinghawk.html", "High Gravekeeper Belben Huntinghawk", "belben-huntinghawk"),
 
 	new PageInfo(undefined, "characters/camilia.html", "Camilia Famia, Wild Beauty", "camilia"),
 	new PageInfo(undefined, "characters/animal-companions/cackles.html", "Cackles the Spotted Hyena", "cackles"),
@@ -183,6 +184,9 @@ export const nobleNav = [
 	new PageInfo(undefined, "images/quilynn-loreweaver.jpg", "", "quilynn-loreweaver-img", true),
 	new PageInfo(undefined, "images/reaper.jpg", "", "reaper-img", true),
 	new PageInfo(undefined, "images/sariel-revealing-painting.jpg", "", "sariel-revealing-painting-img", true),
+
+	new PageInfo(undefined, "images/npcs/ivy-cooke-alt.png", "", "ivy-cooke-alt", true),
+
 	new PageInfo(undefined, "http://anthonyparsch.com/images/noble-map.png", "", "map-img", true),
 
 	new PageInfo(undefined, "images/creatures/red-knight.jpg", "", "red-knight-img", true),
