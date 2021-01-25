@@ -1,10 +1,13 @@
 <h1>Noble Rising Spellbooks</h1>
 <ul class="list">
-	<ap-auth-container permissions="gm noble-yasrena-spellbook noble-full">
+	<ap-auth-container permissions="gm noble-yasrena-spellbook noble-full noble-spellbooks-full">
 		<li><ap-link-button linkName="noble-yasrena-spellbook">Yasrena's Spellbook</ap-link-button></li>
 	</ap-auth-container>
-	<ap-auth-container permissions="gm kali-spell-list noble-full">
+	<ap-auth-container permissions="gm kali-spell-list noble-full noble-spellbooks-full kali">
 		<li><ap-link-button linkName="noble-kali-spellbook">Kali's Spellbook</ap-link-button></li>
 		<li><ap-link-button linkName="noble-auction-spellbook">Kali's Auction Spellbook</ap-link-button></li>
+	</ap-auth-container>
+	<ap-auth-container permissions="gm monster-spellbooks noble-full noble-spellbooks-full">
+		<li><ap-link-button linkName="noble-vampire-wizard-spellbook">Vampire Wizard's Spellbook</ap-link-button></li>
 	</ap-auth-container>
 </ul>
