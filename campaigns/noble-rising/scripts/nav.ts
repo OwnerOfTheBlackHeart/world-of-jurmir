@@ -58,6 +58,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "locations/taaira-ruzara/shanta-revar/main.html", "Shanta Revar County", "shanta-revar"),
 	new PageInfo(undefined, "locations/taaira-ruzara/shanta-revar/antys.html", "Antys, Livingwood Glade", "antys"),
 	new PageInfo(undefined, "locations/taaira-ruzara/shanta-revar/baytide.html", "The Village of Baytide", "baytide"),
+	new PageInfo(undefined, "locations/taaira-ruzara/shanta-revar/inar.html", "The Hidden Village of Inar", "inar"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/verth-di-lokipk/main.html", "The County of Verth Di Lokipk", "verth-di-lokipk"),
 	new PageInfo(undefined, "locations/taaira-ruzara/verth-di-lokipk/deathfall.html", "The Village of Deathfall", "deathfall"),

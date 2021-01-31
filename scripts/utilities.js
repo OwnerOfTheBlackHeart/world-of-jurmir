@@ -1,4 +1,7 @@
 import { GetPageInfoFromUri } from "./page-list.js";
+Array.prototype.firstElement = function () {
+    return this[0];
+};
 Array.prototype.lastElement = function () {
     return this[this.length - 1];
 };
@@ -97,5 +100,21 @@ export function setDescendantProperty(parent, childPath, newValue) {
         }
     }, parent);
     return parent;
+}
+export function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+export function isInRange(value, min, max) {
+    return value >= min && value <= max;
+}
+export function compressStringArray(value) {
+    if (!value || value.length === 0) {
+        return "";
+    }
+    else if (value.length === 1) {
+        return value[0];
+    }
+    const first = value.shift();
+    return value.reduce((previous, current) => (previous += ", " + current), first);
 }
 //# sourceMappingURL=utilities.js.map

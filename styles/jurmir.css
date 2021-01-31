@@ -125,6 +125,12 @@ table td {
 	vertical-align: middle;
 }
 
+table.invisible,
+table.invisible td {
+	background-color: transparent;
+	border: none;
+}
+
 table.spellbook-table {
 	display: inline-block;
 	vertical-align: top;
@@ -309,4 +315,9 @@ ol > li > ol > li {
 
 .future-date {
 	color: darkgreen;
+}
+
+#race-select-box,
+#sex-select-box {
+	width: 150px;
 }

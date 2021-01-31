@@ -13,4 +13,5 @@ import "./ap-whores-display.js";
 import "./ap-birthday-generator.js";
 import "./ap-template-outlet.js";
 import "./ap-population-table.js";
+import "./ap-sex-generator.js";
 //# sourceMappingURL=custom-elements.js.map

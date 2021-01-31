@@ -16,7 +16,7 @@ export class Auth {
     static set currentAuth(val) {
         if (val instanceof Auth || val === undefined) {
             localStorage.currentAuth = JSON.stringify(val);
-            Auth.onAuthChangedList.forEach(onAuthChanged => onAuthChanged(val));
+            Auth.onAuthChangedList.forEach((onAuthChanged) => onAuthChanged(val));
         }
     }
     static get onAuthChangedList() {
@@ -45,9 +45,9 @@ export class Auth {
         }
         else {
             const permissionList = permissions.split(" ");
-            return (Auth.currentAuth.permissions.some(authPermission => authPermission === "all") ||
-                Auth.currentAuth.permissions.some(authPermission => {
-                    return permissionList.some(permission => permission === authPermission);
+            return (Auth.currentAuth.permissions.some((authPermission) => authPermission === "all") ||
+                Auth.currentAuth.permissions.some((authPermission) => {
+                    return permissionList.some((permission) => permission === authPermission);
                 }));
         }
     }
@@ -56,7 +56,7 @@ export class Auth {
             Auth.currentAuth = undefined;
             return undefined;
         }
-        let foundAuth = authList.find(auth => auth.accessCode === accessCode);
+        let foundAuth = authList.find((auth) => auth.accessCode === accessCode);
         if (!foundAuth) {
             return undefined;
         }
@@ -65,7 +65,7 @@ export class Auth {
     }
     static UpdateCurrentAuth() {
         if (Auth.currentAuth) {
-            Auth.currentAuth = authList.find(auth => auth.name === Auth.currentAuth.name);
+            Auth.currentAuth = authList.find((auth) => auth.name === Auth.currentAuth.name);
         }
     }
 }
@@ -78,10 +78,11 @@ const authList = Object.freeze([
         "nesserr-black-personality",
         "camilia-alignment",
         "camilia-personality",
-        "nera"
+        "nera",
     ]),
     new Auth("Dan", "Coolguy420", ["dan", "aaron-full"]),
     new Auth("Keith", "Random26", ["wolf", "sariel"]),
-    new Auth("Liam", "SawIt", ["aaron-full", "kali-spell-list", "kali-rituals", "kali"])
+    new Auth("Liam", "SawIt", ["aaron-full", "kali-spell-list", "kali-rituals", "kali"]),
+    new Auth("M3t4", "Noble Rising", ["pigman", "m3t4"]),
 ]);
 //# sourceMappingURL=auth.js.map
