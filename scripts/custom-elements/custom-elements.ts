@@ -14,3 +14,4 @@ import "./ap-birthday-generator.js";
 import "./ap-template-outlet.js";
 import "./ap-population-table.js";
 import "./ap-sex-generator.js";
+import "./ap-sex-tables.js";

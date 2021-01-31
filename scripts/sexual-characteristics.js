@@ -5,7 +5,7 @@ export var Sex;
     Sex["feminineMale"] = "Feminine Male";
     Sex["masculineFemale"] = "Masculine Female";
     Sex["female"] = "Female";
-    Sex["feminineHerm"] = "Feminine herm";
+    Sex["feminineHerm"] = "Feminine Herm";
 })(Sex || (Sex = {}));
 export function BreastSizeInchesToString(inchesSize) {
     return inchesSize + '"';

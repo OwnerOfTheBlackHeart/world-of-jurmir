@@ -6,7 +6,7 @@ export enum Sex {
 	feminineMale = "Feminine Male",
 	masculineFemale = "Masculine Female",
 	female = "Female",
-	feminineHerm = "Feminine herm",
+	feminineHerm = "Feminine Herm",
 }
 
 export interface SexRollRange {
