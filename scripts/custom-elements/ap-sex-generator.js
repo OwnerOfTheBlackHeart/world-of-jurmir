@@ -46,6 +46,16 @@ class SexGeneratorElement extends HTMLElement {
         row.appendChild(data);
         row = document.createElement("tr");
         table.appendChild(row);
+        row.appendChild(Utilities.CreateTableData("<b>Generate Count:</b>"));
+        data = document.createElement("td");
+        this.generateCountInput = document.createElement("input");
+        this.generateCountInput.type = "number";
+        this.generateCountInput.valueAsNumber = 1;
+        this.generateCountInput.id = "generate-count-input";
+        data.appendChild(this.generateCountInput);
+        row.appendChild(data);
+        row = document.createElement("tr");
+        table.appendChild(row);
         data = document.createElement("td");
         data.colSpan = 2;
         const button = document.createElement("button");
@@ -91,16 +101,23 @@ class SexGeneratorElement extends HTMLElement {
         });
     }
     OnGenerateClick() {
-        const sexInfo = this.GenerateSexualCharacteristics();
         this.output.innerHTML = "";
-        const p = document.createElement("p");
-        this.output.appendChild(p);
-        p.innerHTML = '<i class="power">Race:</i> ' + sexInfo.race + '<br/>\n<i class="power">Sex:</i> ' + sexInfo.sex;
+        const generateCount = this.generateCountInput.valueAsNumber;
+        for (let i = 0; i < generateCount; i++) {
+            const sexInfo = this.GenerateSexualCharacteristics();
+            this.DisplaySexualCharacteristics(sexInfo);
+        }
+    }
+    DisplaySexualCharacteristics(sexInfo) {
+        const div = document.createElement("div");
+        div.classList.add("tile");
+        this.output.appendChild(div);
+        div.innerHTML = '<i class="power">Race:</i> ' + sexInfo.race + '<br/>\n<i class="power">Sex:</i> ' + sexInfo.sex;
         if (sexInfo.dickLength) {
-            p.innerHTML += '<br/>\n<i class="power">Dick Length:</i> ' + sexInfo.dickLength + '"';
+            div.innerHTML += '<br/>\n<i class="power">Dick Length:</i> ' + sexInfo.dickLength + '"';
         }
         if (sexInfo.cupSize) {
-            p.innerHTML += '<br/>\n<i class="power">Cup Size:</i> ' + sexInfo.cupSize;
+            div.innerHTML += '<br/>\n<i class="power">Cup Size:</i> ' + sexInfo.cupSize;
         }
     }
     GenerateSexualCharacteristics() {

@@ -141,6 +141,8 @@ export function compressStringArray(value: string[]): string {
 		return value[0];
 	}
 
+	value = [...value];
+
 	const first = value.shift();
 
 	return value.reduce((previous, current) => (previous += ", " + current), first);

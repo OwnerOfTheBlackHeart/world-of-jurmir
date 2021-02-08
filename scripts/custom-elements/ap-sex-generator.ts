@@ -13,6 +13,7 @@ class SexGeneratorElement extends HTMLElement {
 	raceSelect: HTMLSelectElement;
 	sexSelect: HTMLSelectElement;
 	isHeroicCheckbox: HTMLInputElement;
+	generateCountInput: HTMLInputElement;
 	output: HTMLDivElement;
 
 	races: RaceSexualFeatureRolls[];
@@ -67,6 +68,18 @@ class SexGeneratorElement extends HTMLElement {
 		isHeroicLabel.htmlFor = "is-heroic-checkbox";
 		isHeroicLabel.textContent = "Heroic Dick Size";
 		data.appendChild(isHeroicLabel);
+		row.appendChild(data);
+
+		row = document.createElement("tr");
+		table.appendChild(row);
+
+		row.appendChild(Utilities.CreateTableData("<b>Generate Count:</b>"));
+		data = document.createElement("td");
+		this.generateCountInput = document.createElement("input");
+		this.generateCountInput.type = "number";
+		this.generateCountInput.valueAsNumber = 1;
+		this.generateCountInput.id = "generate-count-input";
+		data.appendChild(this.generateCountInput);
 		row.appendChild(data);
 
 		row = document.createElement("tr");
@@ -133,21 +146,28 @@ class SexGeneratorElement extends HTMLElement {
 	}
 
 	OnGenerateClick() {
-		const sexInfo = this.GenerateSexualCharacteristics();
-
 		this.output.innerHTML = "";
+		const generateCount = this.generateCountInput.valueAsNumber;
 
-		const p = document.createElement("p");
-		this.output.appendChild(p);
+		for (let i = 0; i < generateCount; i++) {
+			const sexInfo = this.GenerateSexualCharacteristics();
+			this.DisplaySexualCharacteristics(sexInfo);
+		}
+	}
 
-		p.innerHTML = '<i class="power">Race:</i> ' + sexInfo.race + '<br/>\n<i class="power">Sex:</i> ' + sexInfo.sex;
+	DisplaySexualCharacteristics(sexInfo: SexInfo) {
+		const div = document.createElement("div");
+		div.classList.add("tile");
+		this.output.appendChild(div);
+
+		div.innerHTML = '<i class="power">Race:</i> ' + sexInfo.race + '<br/>\n<i class="power">Sex:</i> ' + sexInfo.sex;
 
 		if (sexInfo.dickLength) {
-			p.innerHTML += '<br/>\n<i class="power">Dick Length:</i> ' + sexInfo.dickLength + '"';
+			div.innerHTML += '<br/>\n<i class="power">Dick Length:</i> ' + sexInfo.dickLength + '"';
 		}
 
 		if (sexInfo.cupSize) {
-			p.innerHTML += '<br/>\n<i class="power">Cup Size:</i> ' + sexInfo.cupSize;
+			div.innerHTML += '<br/>\n<i class="power">Cup Size:</i> ' + sexInfo.cupSize;
 		}
 	}
 

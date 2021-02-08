@@ -114,6 +114,7 @@ export function compressStringArray(value) {
     else if (value.length === 1) {
         return value[0];
     }
+    value = [...value];
     const first = value.shift();
     return value.reduce((previous, current) => (previous += ", " + current), first);
 }
