@@ -7,9 +7,6 @@ export function onAuthButtonClick() {
     Auth.SetAuthByAccessCode(authInput.value);
     authInput.value = "";
 }
-export function RunOnAuthChanged() {
-    Auth.currentAuth = Auth.currentAuth;
-}
 export function OnAuthKeyDown(event) {
     if (event.key === "Enter") {
         onAuthButtonClick();

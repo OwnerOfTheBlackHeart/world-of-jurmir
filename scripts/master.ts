@@ -10,10 +10,6 @@ export function onAuthButtonClick() {
 	authInput.value = "";
 }
 
-export function RunOnAuthChanged() {
-	Auth.currentAuth = Auth.currentAuth;
-}
-
 export function OnAuthKeyDown(event: KeyboardEvent) {
 	if (event.key === "Enter") {
 		onAuthButtonClick();

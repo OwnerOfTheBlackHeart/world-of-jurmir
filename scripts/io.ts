@@ -7,6 +7,11 @@ export const pageNameQueryStringParameter = "pageName";
 let titlePostfix = "";
 var loadedPage: PageInfo;
 
+/**
+ * Sets the postfix used in the title when a new page is loaded
+ *
+ * @param postFix The new title postfix
+ */
 export function SetTitlePostfix(postFix: string) {
 	if (!postFix) {
 		titlePostfix = "";
@@ -16,10 +21,11 @@ export function SetTitlePostfix(postFix: string) {
 }
 
 /**
+ * Loads the HTML at the URL into the first match of the querySelector.
  *
- * @param url
- * @param querySelector
- * @param context
+ * @param url The URL to get the HTML from
+ * @param querySelector The CSS selector string used to find the element to be injected into
+ * @param context The context value passed through the promise
  */
 export async function LoadIntoElement<T>(
 	url: string,
@@ -39,6 +45,13 @@ export async function LoadIntoElement<T>(
 	});
 }
 
+/**
+ * Loads a page into the page area, navigates to the object with an id matching the hash, and updates the page title.
+ *
+ * @param page The page to navigate to
+ * @param hash The CSS selector string of the object to be scrolled to
+ * @param context The context value passed through the promise
+ */
 async function LoadPageWithoutHistory<T>(
 	page: PageInfo,
 	hash?: string,
@@ -74,10 +87,11 @@ async function LoadPageWithoutHistory<T>(
 }
 
 /**
+ * Loads a page into the page area, navigates to the object with an id matching the hash, updates the page title, and updates the history.
  *
  * @param page The PageInfo of the page being navigated to
  * @param hash The hash value of the page url
- * @param context A pass through value
+ * @param context The context value passed through the promise
  */
 export async function LoadPage<T = any>(
 	page: PageInfo,
@@ -95,6 +109,11 @@ export async function LoadPage<T = any>(
 	return { ...toReturn, url };
 }
 
+/**
+ * Initialize the page area's contents.
+ *
+ * @param context The context value passed through the promise
+ */
 export async function OnInitialLoad<T = any>(context?: T): Promise<{ page: PageInfo; hash?: string; url: string; context?: T }> {
 	const pageName = GetActivePageName();
 	let page: PageInfo;
@@ -108,6 +127,12 @@ export async function OnInitialLoad<T = any>(context?: T): Promise<{ page: PageI
 	return LoadPage<T>(page, location.hash, context);
 }
 
+/**
+ * The callback for the event window.onpopstate.
+ * Reloads and rescrolls as necessary for the change in history state.
+ *
+ * @param ev The pop state event information
+ */
 export function OnPopState(ev: PopStateEvent) {
 	let state: { pageName: string; hash: string; context: any } = ev.state;
 	let page: PageInfo;
@@ -129,11 +154,20 @@ export function OnPopState(ev: PopStateEvent) {
 	LoadPageWithoutHistory(page, state.hash, state.context);
 }
 
+/**
+ * Retrieves the page name from the current URL query parameters
+ */
 export function GetActivePageName(): string {
 	const params = new URLSearchParams(location.search);
 	return params.get(pageNameQueryStringParameter);
 }
 
+/**
+ * Builds a SPA URL.
+ *
+ * @param pageName The name of the page to navigate to
+ * @param hash The hash value of the URL
+ */
 export function BuildUrl(pageName: string, hash?: string) {
 	let url = "";
 
