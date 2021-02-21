@@ -67,6 +67,7 @@ export class WhoresDisplayElement extends HTMLElement {
     }
     BuildUnnamedWhoreTable(whoreGroups) {
         const table = document.createElement("table");
+        table.id = "unnamed-whores-table";
         let row = document.createElement("tr");
         let headerCell = Utilities.CreateTableHeader("Unnamed Whores");
         headerCell.colSpan = 2;

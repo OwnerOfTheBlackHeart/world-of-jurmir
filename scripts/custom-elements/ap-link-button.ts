@@ -100,7 +100,15 @@ export class LinkButton extends HTMLElement {
 		this.link.setAttribute("href", BuildUrl(name, this.hash));
 		this.link.setAttribute("target", "_self");
 		this.link.removeAttribute("rel");
-		this.link.onclick = (ev: MouseEvent) => ev.preventDefault();
+		this.link.onclick = this.OnInternalClick;
+	}
+
+	OnInternalClick(ev: MouseEvent) {
+		if (ev.ctrlKey) {
+			ev.stopPropagation();
+		} else {
+			ev.preventDefault();
+		}
 	}
 }
 

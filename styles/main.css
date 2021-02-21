@@ -452,11 +452,6 @@ lists nested under hovered list items */
 	background-color: #ffffff;
 }
 
-*:target {
-	padding-left: 15px !important;
-	background: url(../images/targetBkg.png) no-repeat left center;
-}
-
 #pageIndex {
 	margin: 0 0 10px 0;
 	border-color: #997a53;
