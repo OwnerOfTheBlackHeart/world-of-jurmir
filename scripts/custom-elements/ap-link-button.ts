@@ -1,6 +1,7 @@
 import { PageInfo } from "../page-info.js";
-import { SetHashByPageInfo } from "../master.js";
 import { GetPageInfoFromName } from "../page-list.js";
+import { BuildUrl, LoadPage } from "../io.js";
+import { makeValidHash } from "../utilities.js";
 
 export class LinkButton extends HTMLElement {
 	static get observedAttributes() {
@@ -15,6 +16,14 @@ export class LinkButton extends HTMLElement {
 
 	set linkName(val) {
 		this.setAttribute("linkName", val);
+	}
+
+	get hash() {
+		return makeValidHash(this.getAttribute("hash"));
+	}
+
+	set hash(val) {
+		this.setAttribute("hash", makeValidHash(val));
 	}
 
 	get disabled() {
@@ -40,7 +49,8 @@ export class LinkButton extends HTMLElement {
 	click() {
 		// Only load by name when we have an internal link
 		if (PageInfo.IsInternalPage(this.pageInfo)) {
-			SetHashByPageInfo(this.pageInfo);
+			// SetHashByPageInfo(this.pageInfo);
+			LoadPage(this.pageInfo, this.hash);
 		}
 	}
 
@@ -72,7 +82,7 @@ export class LinkButton extends HTMLElement {
 			if (this.pageInfo.external) {
 				this.SetExternalLink(this.pageInfo.url);
 			} else {
-				this.SetInternalLink(this.pageInfo.url);
+				this.SetInternalLink(this.pageInfo.name);
 			}
 		} else {
 			this.SetExternalLink(this.linkName);
@@ -83,12 +93,14 @@ export class LinkButton extends HTMLElement {
 		this.link.setAttribute("href", url);
 		this.link.setAttribute("target", "_blank");
 		this.link.setAttribute("rel", "external");
+		this.link.onclick = () => {};
 	}
 
-	SetInternalLink(url: string) {
-		this.link.setAttribute("href", "index.html#" + url);
+	SetInternalLink(name: string) {
+		this.link.setAttribute("href", BuildUrl(name, this.hash));
 		this.link.setAttribute("target", "_self");
 		this.link.removeAttribute("rel");
+		this.link.onclick = (ev: MouseEvent) => ev.preventDefault();
 	}
 }
 

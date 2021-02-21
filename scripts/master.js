@@ -1,43 +1,7 @@
-import * as Utilities from "./utilities.js";
 import { Auth } from "./auth.js";
-import { LoadPage, LoadPageAtStart, LoadIntoId } from "./io.js";
 import "./custom-elements/custom-elements.js";
-import { GetPageInfoFromUri, GetPageInfoFromName } from "./page-list.js";
-const indexPage = "home.html";
-const pageArea = "page-area";
-const basic_title = " - World of Jurmir Reference Document";
-var currentPage;
-var defaultPage = "home";
-export function SetActiveAndLoad(url, title) {
-    LoadPage(url, undefined, title);
-}
-export function LoadByName(page_name) {
-    let found = GetPageInfoFromName(page_name);
-    LoadByPageInfo(found);
-}
-export function LoadByPageInfo(pageInfo) {
-    if (pageInfo != undefined) {
-        let page = pageInfo.url;
-        if (page != undefined && page != "") {
-            SetActiveAndLoad(page, pageInfo.title + basic_title);
-        }
-    }
-}
-export function SetHashByPageInfo(pageInfo) {
-    if (pageInfo != undefined) {
-        parent.location.hash = pageInfo.url;
-    }
-}
-export function GetPageTitle(uri) {
-    let pageInfo = GetPageInfoFromUri(uri);
-    if (pageInfo != undefined) {
-        return pageInfo.title + basic_title;
-    }
-    return undefined;
-}
-window.onhashchange = function () {
-    LoadByPageInfo(Utilities.GetCurrentPageInfo());
-};
+import { globals } from "./globals.js";
+import * as io from "./io.js";
 export function onAuthButtonClick() {
     let authInput = document.getElementById("auth-input");
     Auth.SetAuthByAccessCode(authInput.value);
@@ -51,11 +15,13 @@ export function OnAuthKeyDown(event) {
         onAuthButtonClick();
     }
 }
-LoadIntoId("header.html", "header", undefined, () => {
+io.SetTitlePostfix(globals.titlePostfix);
+io.LoadIntoElement("header.html", "#header").then(() => {
     document.getElementById("auth-input").onkeyup = OnAuthKeyDown;
     document.getElementById("authorize-button").onclick = onAuthButtonClick;
 });
-LoadIntoId("footer.html", "footer");
-LoadPageAtStart(pageArea, indexPage, GetPageTitle);
+io.LoadIntoElement("footer.html", "#footer");
+io.OnInitialLoad();
 Auth.UpdateCurrentAuth();
+onpopstate = io.OnPopState;
 //# sourceMappingURL=master.js.map

@@ -48,6 +48,7 @@ export class WhoresDisplayElement extends HTMLElement {
         }
         let currentNode = document.createElement("h3");
         currentNode.innerText = whore.name;
+        currentNode.id = whore.name.trim().toLowerCase().replace(" ", "-");
         baseNode.appendChild(currentNode);
         currentNode = document.createElement("p");
         currentNode.innerHTML = `<b>Sex:</b> ${whore.sex} <br/><b>Race:</b> ${whore.race} <br/><b>Attractiveness:</b> ${whore.attractiveness} 

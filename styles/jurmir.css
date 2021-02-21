@@ -38,18 +38,24 @@ body {
 	min-height: 50px;
 	grid-column: 1 / 2;
 	grid-row: 1 / 2;
+
+	position: relative;
 }
 
 #page-area {
 	grid-column: 1 / 2;
 	grid-row: 2 / 3;
 	overflow: auto;
+
+	position: relative;
 }
 
 #footer {
 	padding-bottom: 10px;
 	grid-column: 1 / 2;
 	grid-row: 3 / 4;
+
+	position: relative;
 }
 
 .subtitle {
@@ -182,6 +188,9 @@ ul.notes-books > li > span {
 
 ul.notes-books > li > ul > li {
 	list-style-type: disc;
+}
+ap-link-button {
+	vertical-align: text-top;
 }
 
 ap-link-button > a:link,

@@ -118,4 +118,21 @@ export function compressStringArray(value) {
     const first = value.shift();
     return value.reduce((previous, current) => (previous += ", " + current), first);
 }
+export function showElement(element, scrolledTo) {
+    if (element && scrolledTo) {
+        element.scrollTop = scrolledTo.offsetTop;
+        element.scrollLeft = scrolledTo.offsetLeft;
+    }
+}
+export function showId(parentId, childId) {
+    const parent = document.getElementById(parentId);
+    const child = document.getElementById(childId);
+    showElement(parent, child);
+}
+export function makeValidHash(hash) {
+    if (hash && hash[0] !== "#") {
+        hash = "#" + hash;
+    }
+    return hash;
+}
 //# sourceMappingURL=utilities.js.map

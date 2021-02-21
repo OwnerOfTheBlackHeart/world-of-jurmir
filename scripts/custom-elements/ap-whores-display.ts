@@ -67,6 +67,7 @@ export class WhoresDisplayElement extends HTMLElement {
 		// Header
 		let currentNode: HTMLElement = document.createElement("h3");
 		currentNode.innerText = whore.name;
+		currentNode.id = whore.name.trim().toLowerCase().replace(" ", "-");
 		baseNode.appendChild(currentNode);
 
 		// Body

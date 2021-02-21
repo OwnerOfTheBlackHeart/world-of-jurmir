@@ -1,16 +1,16 @@
 {
     "compilerOptions": {
-		"module": "es6",
-		"moduleResolution": "classic",
-		"target": "es6",
-        "noImplicitAny": true,
-        "removeComments": true,
-        "preserveConstEnums": true,
-		"sourceMap": true
+      "module": "es6",
+      "moduleResolution": "classic",
+      "target": "es6",
+          "noImplicitAny": true,
+          "removeComments": true,
+          "preserveConstEnums": true,
+      "sourceMap": true
     },
     "include": [
-		"scripts/**/*",
-		"campaigns/*/scripts/*"
+      "scripts/**/*",
+      "campaigns/*/scripts/*"
     ],
     "exclude": [
         "node_modules",

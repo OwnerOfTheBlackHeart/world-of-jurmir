@@ -147,3 +147,25 @@ export function compressStringArray(value: string[]): string {
 
 	return value.reduce((previous, current) => (previous += ", " + current), first);
 }
+
+export function showElement(element: HTMLElement, scrolledTo: HTMLElement) {
+	if (element && scrolledTo) {
+		element.scrollTop = scrolledTo.offsetTop;
+		element.scrollLeft = scrolledTo.offsetLeft;
+	}
+}
+
+export function showId(parentId: string, childId: string) {
+	const parent = document.getElementById(parentId);
+	const child = document.getElementById(childId);
+
+	showElement(parent, child);
+}
+
+export function makeValidHash(hash: string) {
+	if (hash && hash[0] !== "#") {
+		hash = "#" + hash;
+	}
+
+	return hash;
+}

@@ -11,8 +11,8 @@
 	"homepage": "https://github.com/OwnerOfTheBlackHeart/world-of-jurmir",
 	"devDependencies": {
 		"eslint": "^5.16.0",
-		"tslint": "^5.20.0",
-		"typescript": "^3.6.4"
+		"tslint": "^5.20.1",
+		"typescript": "^3.9.9"
 	},
 	"prettier": {
 		"semi": true,
