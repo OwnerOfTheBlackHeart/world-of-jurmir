@@ -1,4 +1,41 @@
+<h1>Mam Daruhm</h1>
 
+<h2>Town Information</h2>
+<ap-basic-table character-table>
+	[
+		["Town Size:", "Metropolis"],
+		["Population:", "Approximately 27,000 people"],
+		["Gold Limit:", "100,000 gp (135,000,000 total)"],
+		["Power Center(s):", "Non-standard (CG), Magical (LE), Conventional (LG), Conventional (LE)"],
+		["Guard Captain Power:", "Second highest level fighter"],
+		["Guard Count:", "270 guards (94 evening shift, 81 day shift, 95 night shift), 1,350 militiamen"],
+		["Demographics Type:", "Mixed"],
+		["Political System:", "Monarchy"]
+	]
+</ap-basic-table>
+<ap-auth-container permissions="gm desserr-population desserr-full noble-full">
+	<h2>Population Breakdown</h2>
+	<ap-population-table>
+		[
+			{"class":"Adepts", "15": 2, "14": 1, "13": 1, "7": 6, "6": 2, "3": 16, "1": 130},
+			{"class":"Aristocrats", "15": 3, "13": 1, "7": 6, "6": 2, "3": 16, "1": 130},
+			{"class":"Commoner", "12": 2, "11": 6, "6": 4, "5": 12, "3": 8, "2": 24, "1": 23613},
+			{"class":"Expert", "10": 4, "9": 4, "5": 8, "4": 8, "2": 32, "1": 779},
+			{"class":"Warrior", "9": 4, "8": 4, "4": 16, "2": 32, "1": 1298},
+			{"class":"Barbarian", "16": 1, "14": 2, "13": 1, "8": 2, "7": 4, "6": 2, "4": 4, "3": 12, "2": 8, "1": 40},
+			{"class":"Bard", "16": 1, "15": 2, "13": 1, "8": 2, "7": 4, "6": 2, "4": 4, "3": 12, "2": 8, "1": 40},
+			{"class":"Cleric", "15": 1, "14": 3, "7": 8, "3": 16, "1": 32},
+			{"class":"Druid", "17": 1, "14": 1, "13": 2, "8": 2, "7": 2, "6": 4, "4": 4, "3": 12, "2": 8, "1": 40},
+			{"class":"Fighter", "19": 1, "18": 1, "17": 1, "13": 1, "9": 4, "8": 2, "6": 2, "4": 12, "3": 4, "2": 24, "1": 56},
+			{"class":"Monk", "15": 3, "14": 1, "7": 8, "16": 3, "1": 32},
+			{"class":"Paladin", "15": 1, "14": 2, "13": 1, "7": 6, "6": 2, "3": 16, "1": 32},
+			{"class":"Ranger", "15": 2, "14": 1, "13": 1, "7": 6, "6": 2, "3": 16, "1": 32},
+			{"class":"Rogue", "18": 1, "17": 1, "16": 1, "15": 1, "9": 2, "8": 4, "7": 2, 4": 12, "3": 4, "2": 24, "1": 56},
+			{"class":"Sorcerer","15": 3, "13": 1, "7": 2, "6": 6, "3": 16, "1": 32 },
+			{"class":"Wizard", "16": 1, "15": 2, "13": 1, "8": 2, "7": 4, "6": 2, "4": 4, "3": 12, "2": 8, "1": 40}
+		]
+	</ap-population-table>
+</ap-auth-container>
 
 <h2>Important People</h2>
 <ap-template-outlet templatePath="noble-rising/nobles/jennla-ungart"></ap-template-outlet>
