@@ -9,13 +9,21 @@ export class AuthContainer extends HTMLElement {
 		this.setAttribute("permissions", val);
 	}
 
+	get defaultDisplay() {
+		return this.getAttribute("defaultDisplay");
+	}
+
+	set defaultDisplay(val) {
+		this.setAttribute("defaultDisplay", val);
+	}
+
 	startingDisplay: string;
 
 	constructor() {
 		// Always call super first in constructor
 		super();
 
-		this.startingDisplay = this.style.display || "block";
+		this.startingDisplay = this.style.display || this.defaultDisplay || "block";
 
 		AuthContainers.push(this);
 	}
@@ -25,7 +33,7 @@ export class AuthContainer extends HTMLElement {
 	}
 
 	disconnectedCallback() {
-		AuthContainers = AuthContainers.filter(container => container != this);
+		AuthContainers = AuthContainers.filter((container) => container != this);
 	}
 
 	Render() {
@@ -43,7 +51,7 @@ export class AuthContainer extends HTMLElement {
 	}
 
 	static UpdateAll() {
-		AuthContainers.forEach(container => container.Render());
+		AuthContainers.forEach((container) => container.Render());
 	}
 }
 

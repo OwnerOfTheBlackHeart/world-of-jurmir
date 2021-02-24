@@ -169,11 +169,7 @@ export function GetActivePageName(): string {
  * @param hash The hash value of the URL
  */
 export function BuildUrl(pageName: string, hash?: string) {
-	let url = "";
-
-	if (pageName !== pages[0].name) {
-		url += `?${pageNameQueryStringParameter}=${pageName}`;
-	}
+	let url = `?${pageNameQueryStringParameter}=${pageName}`;
 
 	if (hash) {
 		url += Utilities.makeValidHash(hash);
