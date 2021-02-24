@@ -1,4 +1,4 @@
-<h1>Mam Daruhm</h1>
+<h1>Mam Daruhm, Dwarven Fortress City</h1>
 
 <h2>Town Information</h2>
 <ap-basic-table character-table>
@@ -6,13 +6,18 @@
 		["Town Size:", "Metropolis"],
 		["Population:", "Approximately 27,000 people"],
 		["Gold Limit:", "100,000 gp (135,000,000 total)"],
-		["Power Center(s):", "Non-standard (CG), Magical (LE), Conventional (LG), Conventional (LE)"],
+		["Power Center(s):", 
+			"Non-standard (Guard Captain) <ap-auth-container permissions="gm mam-daruhm-full noble-full" defaultDisplay="inline">(CG)</ap-auth-container>, ",
+			"Magical (Zigies Sect) <ap-auth-container permissions="gm mam-daruhm-full noble-full" defaultDisplay="inline">(LE)</ap-auth-container>, ",
+			"Conventional (Baroness) <ap-auth-container permissions="gm mam-daruhm-full noble-full" defaultDisplay="inline">(LN)</ap-auth-container>, ",
+			"Conventional (Mayor) <ap-auth-container permissions="gm mam-daruhm-full noble-full" defaultDisplay="inline">(LE)</ap-auth-container>"
+		],
 		["Guard Captain Power:", "Second highest level fighter"],
 		["Guard Count:", "270 guards (94 evening shift, 81 day shift, 95 night shift), 1,350 militiamen"],
 		["Demographics Type:", "Mixed"],
 		["Political System:", "Monarchy"]
 	]
-</ap-basic-table>
+</ap-basic-table>)
 <ap-auth-container permissions="gm desserr-population desserr-full noble-full">
 	<h2>Population Breakdown</h2>
 	<ap-population-table>
@@ -30,12 +35,49 @@
 			{"class":"Monk", "15": 3, "14": 1, "7": 8, "16": 3, "1": 32},
 			{"class":"Paladin", "15": 1, "14": 2, "13": 1, "7": 6, "6": 2, "3": 16, "1": 32},
 			{"class":"Ranger", "15": 2, "14": 1, "13": 1, "7": 6, "6": 2, "3": 16, "1": 32},
-			{"class":"Rogue", "18": 1, "17": 1, "16": 1, "15": 1, "9": 2, "8": 4, "7": 2, 4": 12, "3": 4, "2": 24, "1": 56},
+			{"class":"Rogue", "18": 1, "17": 1, "16": 1, "15": 1, "9": 2, "8": 4, "7": 2, "4": 12, "3": 4, "2": 24, "1": 56},
 			{"class":"Sorcerer","15": 3, "13": 1, "7": 2, "6": 6, "3": 16, "1": 32 },
 			{"class":"Wizard", "16": 1, "15": 2, "13": 1, "8": 2, "7": 4, "6": 2, "4": 4, "3": 12, "2": 8, "1": 40}
 		]
 	</ap-population-table>
 </ap-auth-container>
 
+<h2>Organizations and Monsters</h2>
+<h3>Teamsters' and Porters' Economic Alliance of Taaira Ruzara</h3>
+<p>
+	The Teamsters' and Porters' Economic Alliance of Taaira Ruzara is an organization made up of several guilds across
+	Taaira Ruzara that cover porters and teamsters who handles collecting and distributing transportation jobs, both
+	singular and recurring. The Alliance also serves to ensure that trade routes and roads are maintained and protected,
+	though the guild does not offer any mercenary services to help in this task. For protection, the Alliance typically
+	relies on local guards and slayers.
+</p>
+<ap-auth-container permissions="gm mam-daruhm-full noble-full tpea-member-relations">
+	<p>
+		The Teamsters' and Porters' Economic Alliance of Taaira Ruzara is actually interested in protecting its members.
+	</p>
+</ap-auth-container>
+
+<h3>Seekers of the Bloodless God</h3>
+<p>
+	A local sect of the Church of Zigies that handles executing criminals sentenced to death.
+</p>
+<ap-auth-container permissions="gm mam-daruhm-full noble-full sbg-beliefs">
+	<p>
+		A cult of Zigies that believes that some of the missing materials that Zigies requires to be finished are a form of blood metal.
+	</p>
+</ap-auth-container>
+
 <h2>Important People</h2>
 <ap-template-outlet templatePath="noble-rising/nobles/jennla-ungart"></ap-template-outlet>
+
+<h3>Mayor XXX</h3>
+<p>
+
+</p>
+
+<h3>Guard Captain XXX</h3>
+<p>
+
+</p>
+
+<h2>Notable Locations</h2>

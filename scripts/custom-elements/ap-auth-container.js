@@ -2,7 +2,7 @@ import { Auth } from "../auth.js";
 export class AuthContainer extends HTMLElement {
     constructor() {
         super();
-        this.startingDisplay = this.style.display || "block";
+        this.startingDisplay = this.style.display || this.defaultDisplay || "block";
         AuthContainers.push(this);
     }
     get permissions() {
@@ -11,11 +11,17 @@ export class AuthContainer extends HTMLElement {
     set permissions(val) {
         this.setAttribute("permissions", val);
     }
+    get defaultDisplay() {
+        return this.getAttribute("defaultDisplay");
+    }
+    set defaultDisplay(val) {
+        this.setAttribute("defaultDisplay", val);
+    }
     connectedCallback() {
         this.Render();
     }
     disconnectedCallback() {
-        AuthContainers = AuthContainers.filter(container => container != this);
+        AuthContainers = AuthContainers.filter((container) => container != this);
     }
     Render() {
         if (this.permissions) {
@@ -31,7 +37,7 @@ export class AuthContainer extends HTMLElement {
         }
     }
     static UpdateAll() {
-        AuthContainers.forEach(container => container.Render());
+        AuthContainers.forEach((container) => container.Render());
     }
 }
 customElements.define("ap-auth-container", AuthContainer);
