@@ -84,5 +84,6 @@ const authList = Object.freeze([
     new Auth("Keith", "Random26", ["wolf", "sariel"]),
     new Auth("Liam", "SawIt", ["aaron-full", "kali-spell-list", "kali-rituals", "kali"]),
     new Auth("M3t4", "Noble Rising", ["pigman", "m3t4"]),
+    new Auth("Austin", "hearMeRoar", ["austin", "aaron-full", "draggin"]),
 ]);
 //# sourceMappingURL=auth.js.map

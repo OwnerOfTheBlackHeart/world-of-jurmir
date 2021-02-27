@@ -189,8 +189,17 @@ ul.notes-books > li > span {
 ul.notes-books > li > ul > li {
 	list-style-type: disc;
 }
+
+a:hover {
+	text-decoration: underline;
+}
+
 ap-link-button {
 	vertical-align: text-top;
+}
+
+:not(ap-link-button) > a {
+	font-weight: bold;
 }
 
 ap-link-button > a:link,
