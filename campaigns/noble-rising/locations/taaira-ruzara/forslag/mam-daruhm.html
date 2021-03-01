@@ -7,17 +7,17 @@
 		["Population:", "Approximately 27,000 people"],
 		["Gold Limit:", "100,000 gp (135,000,000 total)"],
 		["Power Center(s):", 
-			"Non-standard (Guard Captain) <ap-auth-container permissions="gm mam-daruhm-full noble-full" defaultDisplay="inline">(CG)</ap-auth-container>, ",
-			"Magical (Zigies Sect) <ap-auth-container permissions="gm mam-daruhm-full noble-full" defaultDisplay="inline">(LE)</ap-auth-container>, ",
-			"Conventional (Baroness) <ap-auth-container permissions="gm mam-daruhm-full noble-full" defaultDisplay="inline">(LN)</ap-auth-container>, ",
-			"Conventional (Mayor) <ap-auth-container permissions="gm mam-daruhm-full noble-full" defaultDisplay="inline">(LE)</ap-auth-container>"
+			"Non-standard (<a href="#utruna-trollhide">Guard Captain</a><ap-auth-container permissions="gm mam-daruhm-full noble-full" inline>, CG</ap-auth-container>), ",
+			"Magical (<a href="#bloodless-god">Zigies Sect</a><ap-auth-container permissions="gm mam-daruhm-full noble-full" inline>, LE</ap-auth-container>), ",
+			"Conventional (<a href="#jennla-ungart">Baroness</a><ap-auth-container permissions="gm mam-daruhm-full noble-full" inline>, LN</ap-auth-container>), ",
+			"Conventional (<a href="#gavam-runemace">Mayor</a><ap-auth-container permissions="gm mam-daruhm-full noble-full" inline>, LE</ap-auth-container>)"
 		],
 		["Guard Captain Power:", "Second highest level fighter"],
 		["Guard Count:", "270 guards (94 evening shift, 81 day shift, 95 night shift), 1,350 militiamen"],
 		["Demographics Type:", "Mixed"],
 		["Political System:", "Monarchy"]
 	]
-</ap-basic-table>)
+</ap-basic-table>
 <ap-auth-container permissions="gm desserr-population desserr-full noble-full">
 	<h2>Population Breakdown</h2>
 	<ap-population-table>
@@ -43,7 +43,7 @@
 </ap-auth-container>
 
 <h2>Organizations and Monsters</h2>
-<h3>Teamsters' and Porters' Economic Alliance of Taaira Ruzara</h3>
+<h3 id="tpea">Teamsters' and Porters' Economic Alliance of Taaira Ruzara</h3>
 <p>
 	The Teamsters' and Porters' Economic Alliance of Taaira Ruzara is an organization made up of several guilds across
 	Taaira Ruzara that cover porters and teamsters who handles collecting and distributing transportation jobs, both
@@ -57,27 +57,318 @@
 	</p>
 </ap-auth-container>
 
-<h3>Seekers of the Bloodless God</h3>
+<h3 id="bloodless-god">Seekers of the Bloodless God</h3>
 <p>
-	A local sect of the Church of Zigies that handles executing criminals sentenced to death.
+	A local sect of the Church of Zigies that handles executing criminals sentenced to death. They operate out of a factory known as
+	<a href="#the-bloodworks">The Bloodworks</a>, where executions are held and corpses (of any kind) are process into clean fertilizer.
 </p>
 <ap-auth-container permissions="gm mam-daruhm-full noble-full sbg-beliefs">
 	<p>
-		A cult of Zigies that believes that some of the missing materials that Zigies requires to be finished are a form of blood metal.
+		The Seekers of the Bloodless God believe that a major component missing from Zigies requires a large volume of a material known as
+		soul iron, which is produced by draining a living victim of all their blood and alchemically extracting the metals from the blood, which
+		returns approximately 0.15% of their weight back.
+	</p>
+	<p>
+		Soul iron has a moderate necromancy aura.
+	</p>
+</ap-auth-container>
+<ap-auth-container permissions="gm mam-daruhm-full noble-full sbg-deals">
+	<p>
+		The Seekers of the Bloodless God have a deal with <a href="#gavam-runemace">Mayor Gavam Runemace</a> to handle all executions. They also 
+		encourage <a href="#gavam-runemace">Mayor Runemace</a> to write more laws punishable by death. They are actively seeking to remove 
+		<a href="#utruna-trollhide">Guard Captain Utruna Trollhide</a>, who ignores such laws.
 	</p>
 </ap-auth-container>
 
 <h2>Important People</h2>
 <ap-template-outlet templatePath="noble-rising/nobles/jennla-ungart"></ap-template-outlet>
 
-<h3>Mayor XXX</h3>
+<h3 id="gavam-runemace">Mayor Gavam Runemace</h3>
 <p>
+	Gavam is a 4' 2" tall, male dwarf with a light build, for a dwarf, light brown skin, brown eyes and back length black hair, kept in a simple braid
+	with gold and platinum rings braided in. He dresses in fine, sturdy leathers and furs with finely cut gems imbedded in. Gavam's beard is styled into
+	a large bun with red gold <ap-link-button linkName="sithrak">Sithrak</ap-link-button> totems weaved in.
+</p>
+<ap-auth-container permissions="gm mam-daruhm-full noble-full gavam-personality">
+	<p>
+		Gavam is a spiteful son of a bitch who seeks to have the sin within Mam Daruhm, which he views as his city, purged from the populace. He supports
+		laws that force citizens to live simpler, more community focused lives, though he has trouble getting the guards under control.
+	</p>
+</ap-auth-container>
+<ap-auth-container permissions="gm mam-daruhm-full noble-full gavam-dick-size">
+	<p>
+		Gavam is a masculine hermaphrodite and has an 3 inch dick.
+	</p>
+</ap-auth-container>
 
+<h3 id="utruna-trollhide">Guard Captain Utruna Trollhide</h3>
+<p>
+	Utruna is a 3' 9" tall, female dwarf with deeply tanned, red tinted skin, dark green eyes, mud colored hair, F cup titties, and a meaty, warrior's build.
+	When on duty, Utruna wears her enchanted full plate armor, with the story of her clan etched into it, with her flaming greatsword on her back (in a magic
+	sheath) and her hair tucked into her helmet. When she is off duty, Utruna lets her shoulder length hair flow freely while wearing a sleeveless, blue, silk
+	dress, that extends to her knees, and a pocketed leather vest.
+</p>
+<ap-auth-container permissions="gm mam-daruhm-full noble-full utruna-trollhide-level">
+	<p>
+		Utruna is a 18th level fighter.
+	</p>
+</ap-auth-container>
+
+<h3 id="nustar-grimshield">Craftmaster Nustar Grimshield</h3>
+<p>
+	Nustar is a 4' 2" tall, male dwarf with tanned yellow skin, a bony build, brown eyes, ass length silver hair, which is kept in a tight ponytail, and a matching silver beard
+	that extends to his bellybutton and kept well combed. Nustar wears a set of copper-colored silk robes with a silver-colored leather apron that never seems to stain.
+</p>
+<p>
+	Nustar is the Craftmaster of the <a href="#clockwork-factorum">Clockwork Factorum</a>.
+</p>
+<ap-auth-container permissions="gm mam-daruhm-full noble-full nustar-dick-size">
+	<p>
+		Nustar has an 6 inch dick.
+	</p>
+</ap-auth-container>
+
+<h3 id="nuzzire-jadesunder">Forewoman Nuzzire Jadesunder</h3>
+<p>
+	Nuzzire is a 4' 4" tall, female dwarf with masculine features, browned skin, deep green eyes, a slight build, D cup titties, shoulder length gray hair kept in a bun, 
+	and a gray beard that extends to just past her neck with iron totems weaved in. She typically wears a set of copper and red silk robes with a dark leather apron that 
+	has lighter patches around the edges.
+</p>
+<p>
+	Leader of the <a href="#bloodless-god">The Seekers of the Bloodless God</a>
 </p>
 
-<h3>Guard Captain XXX</h3>
+<h3 id="khu-warsky">Khu Warsky</h3>
 <p>
-
+	Khu is a 3' 10", female dwarf with wrinkling, light tan skin, dark blue eyes, D cup titties, a slight build, and light brown hair, bordering on blond, that she keeps 
+	in a set of 3  lower back length, braided ponytails with silver rings. She typically wears a sturdy leather dress with a yellow and green wool coat. Her combat gear
+	consists of a suit of enchanted adamantine full plate, an enchanted warhammer and battleaxe and an enchanted tower shield, along with several magic items for boosting 
+	her strength and dexterity.
 </p>
+<p>
+	Owns and operates <a href="#warsky-warrior-supply">Clan Warsky Warrior Supply</a>.
+</p>
+<ap-auth-container permissions="gm mam-daruhm-full noble-full khu-warsky-level">
+	<p>
+		Da is a 19th level fighter and is good friends with <a href="da-ironbash">Da Ironbash</a>.
+	</p>
+</ap-auth-container>
+
+<h3 id="da-ironbash">Da Ironbash</h3>
+<p>
+	Da is a 4' 2" tall, female dwarf with wrinkled, brown skin, plenty of fat on her bones, dark brown eyes, F cup titties, and long white hair that reaches down to her lower
+	back, then folded up and into itself. Da typically wears a set of silk robes that show off her width with an almost comical pointed hat, through the color of her outfit
+	seems to change from day to day.
+</p>
+<p>
+	Da owns and operates <a href="#wizards-wardrobe">the Wizard's Wardrobe</a>.
+</p>
+<ap-auth-container permissions="gm mam-daruhm-full noble-full da-ironbash-level">
+	<p>
+		Da is a 16th level wizard and is good friends with <a href="khu-warsky">Khu Warsky</a>.
+	</p>
+</ap-auth-container>
+
+<h3 id="ber-emerstrength">Overseer Ber Emberstrength</h3>
+<p>
+	Ber is a 4' 2" tall, male dwarf with tan skin that is rarely seen through the dust from the mine, a skinny build, deep yellow eyes, short, messy black hair and a beard
+	kept at exactly 3 and a half inches. He typically wears a simple, gray wool shirt with pocketed leather overalls and a clipboard.
+</p>
+<p>
+	The Overseer of the <a href="#magmaspire-mines">Magmaspire Mines</a>.
+</p>
+<ap-auth-container permissions="gm mam-daruhm-full noble-full ber-dick-size">
+	<p>
+		Ber has an 6 inch dick.
+	</p>
+</ap-auth-container>
+
+<h3 id="fek-plainglide">Fek Plainglide</h3>
+<p>
+	Fek is a 4' 3" tall, male dwarf with dark tan skin, a skinny build, hazel eyes, dark brown hair that is looped around 6 iron rings and a beard with the center straight
+	and combed, while the sides are braided through 3 iron rings each. Fek typically wears a set of orange silk robes with 8 golden rings, that have emeralds, rubies and 
+	sapphires worked in and a set of 3 matching silver necklaces.
+</p>
+<p>
+	Fek owns and operates <a href="#whatchya-need">Whatchya Need General Goods</a>.
+</p>
+<ap-auth-container permissions="gm mam-daruhm-full noble-full fek-dick-size">
+	<p>
+		Fek has an 9 inch dick.
+	</p>
+</ap-auth-container>
+
+<h3 id="zolor-struc">Keeper Zolor Struc</h3>
+<p>
+	Zolor is a 4' 3" tall, male dwarf with light brown-yellow skin, dark purple eyes, oak brown hair that drapes down to his lower back with silver and gold totems woven into
+	it, and a two inch long beard from which dangles 12 platinum rings studded with gems. He typically wears a vibrant silk shirt (red, blue, yellow, purple), a pocketed leather
+	vest, and patterned wool pants with 2 silver rings on each finger and 2 necklaces, one silver with a black pearl inlaid in it and the other gold with a amethyst, pink pearl
+	and an amber inlaid.
+</p>
+<p>
+	Zolor runs <a href="#warehouses">the warehouses</a> (will buy food for a small premium)
+</p>
+<ap-auth-container permissions="gm mam-daruhm-full noble-full zolor-dick-size">
+	<p>
+		Zolor has an 9 inch dick.
+	</p>
+</ap-auth-container>
+<ap-auth-container permissions="gm mam-daruhm-full noble-full zolor-relations">
+	<p>
+		Zolor is the 2nd cousin of <a href="#sabhe-yals">Sabhe Yals</a>.
+	</p>
+</ap-auth-container>
+
+<h3 id="sabhe-yals">Sabhe Yals</h3>
+<p>
+	Sabhe is a 4' 2" tall, chubby female dwarf with pale brown-yellow skin, purple eyes, deep red hair that flows down to her ass and a crooked smile. She typically wears
+	a loose, brown wool dress with a leather apron. Sabhe is usually smiling and likes to hear drunken tales of humorous events.
+</p>
+<p>
+	Works as the tavernkeeper at <a href="#the-wet-beard">the Wet Beard</a>.
+</p>
+<ap-auth-container permissions="gm mam-daruhm-full noble-full sabhe-dick-size">
+	<p>
+		Sabhe is a feminine hermaphrodite and has an 10 inch dick.
+	</p>
+</ap-auth-container>
+<ap-auth-container permissions="gm mam-daruhm-full noble-full sabhe-relations">
+	<p>
+		Sabhe is the 2nd cousin of <a href="#zolor-struc">Zolor Struc</a>.
+	</p>
+</ap-auth-container>
 
 <h2>Notable Locations</h2>
+<h3 id="clockwork-factorum">The Clockwork Factorum</h3>
+<p>
+	The Clockwork Factorum is a massive, rectangular, 2 story building carved from the stone around it with a perfectly smooth exterior
+	and a 7 foot tall, bronze statue of <ap-link-button linkName="zigies">Zigies</ap-link-button> angel form hanging over the 9 foot tall
+	entry doors. Immediately inside the Factorum is a hallway with three doors: a person sized wooden door leading to the factory itself,
+	a person sized, steel bar door leading to a "shop" where projects can be ordered, and a pair of doors nearly as large as the entry doors
+	that leads to the sanctuary.
+</p>
+<p>
+	The factory itself is overwhelming for the uninitiated, temporarily blinding and deafening them until they exit and look away. To those
+	initiated into the worship of <ap-link-button linkName="zigies">Zigies</ap-link-button>, the factory is a beautiful work of art made from
+	brass, bronze, steel and steam that remains in a constant state of motion. Stations exist for nearly every form of crafting available,
+	all of which contain moving machines that make the task easier and quicker. 
+	<ap-auth-container permissions="gm mam-daruhm-full noble-full clockwork-factorum-machines" inline>
+		Crafting at one of the stations within the Clockwork Factorum doubles the progress, or loss, from a crafting check.
+	</ap-auth-container>
+</p>
+<p>
+	The shop is fairly basic, with depictions of <ap-link-button linkName="zigies">Zigies's</ap-link-button> awakening and the creation of the
+	first warforged carved into the walls, a slate counter and an adamantine plated warforged that is cleaning whenever no one is at the counter. 
+	Clipboards and sheets of parchment sit in organized bins behind the counter.
+</p>
+<p>
+	The sanctuary is a 60 foot by 700 foot chamber with an 8 foot tall ceiling and 4 rows of stone pews with copper colored cushions. The
+	carvings in the walls and ceiling are inlaid with silver. The altar resembles a large blacksmith's forge with a spotless bronze table attached,
+	but no tools, clothe coverings or tools are present outside of ceremonies. The room is shaped in such a way that if one is at the altar 
+	and speaks loudly, the entire room can hear them.
+</p>
+<p>
+	The Clockwork Factorum is headed by <a href="#nustar-grimshield">Craftmaster Nustar Grimshield</a>.
+</p>
+
+<h3 id="the-bloodworks">The Bloodworks</h3>
+<p>
+	The Bloodworks is a warehouse sized, 1 story building made from stone bricks with depictions of the creation <ap-link-button linkName="zigies">Zigies's</ap-link-button>
+	carved into the outer walls. The entry door is a 3 person wide steel door that leads into an open room with a raised platform, upon which sits an empty
+	stone cross with several bloody knives and a drain below it. Several feet behind the cross is a door that leads into the alchemical factory, which
+	is indented 2 stories into the ground with 4 large tanks, a small maze of brass and steel tubes, seemingly countless alembics, a stack of 6 drying plates and a forge.
+	A set of two boilers power the Bloodworks.
+</p>
+<p>
+	The Bloodworks is the headquarters of the <a href="#bloodless-god">Seekers of the Bloodless God</a>.
+</p>
+
+<h3 id="magmaspire-mines">Magmaspire Mines</h3>
+<p>
+	Located at the bottom of Mam Daruhm, Magmaspire Mines is made up of the main entrance and the mine itself. The entrance has two wooden buildings built on steel bases with
+	wheels, 8 bins filled with raw ore and 4 bins filled with coal, 16 piles of ore that, when the mine is in operation, are worked by dwarves with sledgehammers, a large,
+	industrial smelter and, occasionally, a wagon that picks up the processed metal.
+</p>
+<p>
+	The mine itself is a twisting complex of tunnels, with wood and stone railways, that snakes around, and through, a massive, cooled magma spire. Inside the spire is where
+	most of the gold group metals are found, while the iron, tin and zinc are found in different varieties outside the spire. The swarm of dwarves that works the mine are
+	constantly working, using pickaxes, chisels and hammers to break up and work the stone. Navigation instructions are written on the walls in paint that can only be seen
+	with darkvision.
+</p>
+<p>
+	Magmaspire Mines produces gold, copper, lead, mercury, silver, iron, tin, and zinc.
+</p>
+<p>
+	The Magmaspire Mines are managed by <a href="#ber-emerstrength">Overseer Ber Emberstrength</a>.
+</p>
+
+<h3 id="warehouses">The Warehouses</h3>
+<p>
+	Located near the entrance of Mam Daruhm is the Warehouses, a group of 30 two-story, stone buildings 25 feet wide by 60 feet deep. Each warehouse has a main door that is
+	large enough for a whole wagon to fit through and a single person side door, both of which have a stopping bar, as well as a 20 foot deep loft at the front and back of
+	the warehouse.
+</p>
+<p>
+	The Warehouses are available for rent, but they also serve as a place for traders to sell to the city in bulk. Most guilds in the city keep a representative near the
+	Warehouses to purchase goods for the guild to resell to its members.
+</p>
+<p>
+	Managed by <a href="#zolor-struc">Keeper Zolor Struc</a>.
+</p>
+<p>
+	<a href="whatchya-need">Whatchya Need General Goods</a> is located nearby.
+</p>
+
+<h3 id="warsky-warrior-supply">Clan Warsky Warrior Supply</h3>
+<p>
+	Clan Warsky Warrior Supply is a squat, square stone building with a silver painted, wooden door and a large iron sign that states "Clan Warsky Warrior Supply" over 
+	a stylized waraxe and shield. Upon entry is the display room, where weapons and armor can be seen from across the heavy wooden counter with steel bars, with a set
+	of 2 changing/fitting rooms off to the right and a pile of straw training dummies off to the left. A barred stone door connects the merchandise and customer sides
+	of the shop.
+</p>
+<p>
+	Clan Warsky Warrior Supply sells weapons, armor, and supplies for their maintenance.
+</p>
+<p>
+	Owned and operated by <a href="#khu-warsky">Khu Warsky</a>.
+</p>
+
+<h3 id="wizards-wardrobe">The Wizard's Wardrobe</h3>
+<p>
+	The Wizard's Wardrobe is a 4 story tower made of a single slab of stone with a mithral door an adamantine sign of a robe with the words "The Wizard's Wardrobe" cut
+	from it. The first floor of the Wizard's Wardrobe is a small room with mannequins wearing various robes, dresses, coats, capes, cloaks, and hats, which is surrounded
+	by a stone counter, behind which sits shelves filled with magical reagents for alchemy, magic item creation, and spell casting. A set of stairs in the back of the
+	room leads up to the second floor, which has rectangular display cases made of stone and glass that displays magic items. 
+	<ap-auth-container permissions="gm mam-daruhm-full noble-full wizards-wardrobe-cases" inline>
+		The glass used in the display cases has been magically reinforced to have the same hardness as iron and is 3 inches thick (12 hit points, instead of 3). If the
+		glass is broken, or damaged, the room begins to flash red and a loud wailing can be heard.
+	</ap-auth-container>
+</p>
+<p>
+	The Wizard's Wardrobe sells magic items, robes/wizard fashion, and spell casting supplies.
+</p>
+<p>
+	Owned and operated by <a href="#da-ironbash">Da Ironbash</a>.
+</p>
+
+<h3 id="whatchya-need">Whatchya Need General Goods</h3>
+<p>
+	Whatchya Need General Goods is a wattle and daub building, built in the human style, located near <a href="#warehouses">the Warehouses</a> with a small and simple
+	woven twig sign that shows the words "Whatchya Need" forming the handle of a basket. The front has a granite and marble counter, with iron bars above it, built into
+	the wall. Behind the counter is shelves covered in dried foods, animal feeds, rope, basic tools, sacks, and other basic supplies for travelers.
+</p>
+<p>
+	Owned and operated by <a href="#fek-plainglide">Fek Plainglide</a>.
+</p>
+
+<h3 id="the-wet-beard">The Wet Beard</h3>
+<p>
+	The Wet Beard is a large, 3 story, round stone building with two ground floor windows that always glow with light and sound. The main room contains round, iron tables
+	that seat 6 with lightly constructed wooden chairs (that are perpetually new), hammocks with lockable chests (average) along the outer wall, a stone brick bar with
+	lightly constructed wooden stools (that are perpetually new), and a set of stairs leading up to the second floor. The second floor is made up of meeting rooms and
+	2 bed bedrooms that are available for rent while the 3rd floor is made up of rooms that comfortably sleep 10 people, but can fit up to 30. Every room on the second
+	and third floors has a chamber pot, a small font filled with clean water, and a small iron oven/heater, firewood not included.
+</p>
+<p>
+	<a href="#sabhe-yals">Sabhe Yals</a> is the barkeeper for most of the day.
+</p>

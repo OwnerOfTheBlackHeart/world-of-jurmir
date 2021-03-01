@@ -1,4 +1,6 @@
+import { pageAreaQuerySelector } from "../io.js";
 import { templateGroups } from "../template-groups.js";
+import { showElement } from "../utilities.js";
 export class TemplateOutlet extends HTMLElement {
     constructor() {
         super();
@@ -10,6 +12,13 @@ export class TemplateOutlet extends HTMLElement {
                 .then((html) => {
                 if (html && this.templateUrl !== "") {
                     this.innerHTML = html;
+                }
+                if (location.hash) {
+                    const element = this.querySelector(location.hash);
+                    if (element) {
+                        const pageArea = document.querySelector(pageAreaQuerySelector);
+                        showElement(pageArea, element);
+                    }
                 }
             });
         }

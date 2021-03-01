@@ -1,5 +1,7 @@
+import { pageAreaQuerySelector } from "../io.js";
 import { TemplateFolderGroup, TemplateFolderInfo } from "../template-folder-info.js";
 import { templateGroups } from "../template-groups.js";
+import { showElement } from "../utilities.js";
 
 export class TemplateOutlet extends HTMLElement {
 	templateUrl: string;
@@ -25,6 +27,15 @@ export class TemplateOutlet extends HTMLElement {
 				.then((html) => {
 					if (html && this.templateUrl !== "") {
 						this.innerHTML = html;
+					}
+
+					if (location.hash) {
+						const element = this.querySelector<HTMLElement>(location.hash);
+
+						if (element) {
+							const pageArea = document.querySelector<HTMLElement>(pageAreaQuerySelector);
+							showElement(pageArea, element);
+						}
 					}
 				});
 		} else {

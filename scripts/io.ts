@@ -2,7 +2,7 @@ import { PageInfo } from "./page-info.js";
 import { GetPageInfoFromName, pages } from "./page-list.js";
 import * as Utilities from "./utilities.js";
 
-const pageAreaQuerySelector = "#page-area";
+export const pageAreaQuerySelector = "#page-area";
 export const pageNameQueryStringParameter = "pageName";
 let titlePostfix = "";
 var loadedPage: PageInfo;

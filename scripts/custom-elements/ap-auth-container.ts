@@ -17,13 +17,25 @@ export class AuthContainer extends HTMLElement {
 		this.setAttribute("defaultDisplay", val);
 	}
 
+	get inline() {
+		return this.hasAttribute("inline");
+	}
+
+	set inline(val: boolean) {
+		this.toggleAttribute("inline", val);
+	}
+
 	startingDisplay: string;
 
 	constructor() {
 		// Always call super first in constructor
 		super();
 
-		this.startingDisplay = this.style.display || this.defaultDisplay || "block";
+		if (this.inline) {
+			this.startingDisplay = "inline";
+		} else {
+			this.startingDisplay = this.style.display || this.defaultDisplay || "block";
+		}
 
 		AuthContainers.push(this);
 	}
