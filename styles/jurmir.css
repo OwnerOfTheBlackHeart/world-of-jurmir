@@ -190,7 +190,9 @@ ul.notes-books > li > ul > li {
 	list-style-type: disc;
 }
 
-a:hover {
+a:hover,
+li > ap-link-button > a:link:hover,
+li > ap-link-button > a:visited:hover {
 	text-decoration: underline;
 }
 
