@@ -98,6 +98,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "plotlines/missions/red-wings-fang.html", "Red Wing's Fang", "red-wings-fang"),
 	new PageInfo(undefined, "plotlines/missions/finding-zigni.html", "Finding Zigni", "finding-zigni"),
 	new PageInfo(undefined, "plotlines/missions/zitts-rod.html", "Zitt's Rod", "zitts-rod"),
+	new PageInfo(undefined, "plotlines/missions/journey-to-the-river-cain.html", "Journey to the River Cain", "journey-to-the-river-cain"),
 
 	new PageInfo(undefined, "plotlines/missions/methnaes/sariels-investigation.html", "Sariel's Investigation", "sariels-investigation"),
 
