@@ -1,19 +1,13 @@
 {
-    "compilerOptions": {
-      "module": "es6",
-      "moduleResolution": "classic",
-      "target": "es6",
-          "noImplicitAny": true,
-          "removeComments": true,
-          "preserveConstEnums": true,
-      "sourceMap": true
-    },
-    "include": [
-      "scripts/**/*",
-      "campaigns/*/scripts/*"
-    ],
-    "exclude": [
-        "node_modules",
-        "**/*.spec.ts"
-    ]
+	"compilerOptions": {
+		"module": "Esnext",
+		"moduleResolution": "classic",
+		"target": "es2017",
+		"noImplicitAny": true,
+		"removeComments": true,
+		"preserveConstEnums": true,
+		"sourceMap": true
+	},
+	"include": ["scripts/**/*", "campaigns/*/scripts/*"],
+	"exclude": ["node_modules", "**/*.spec.ts"]
 }

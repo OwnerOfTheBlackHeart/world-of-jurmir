@@ -3,9 +3,9 @@ import { Sex } from "./sexual-characteristics.js";
 import { Time } from "./time.js";
 export const globals = {
     titlePostfix: " - World of Jurmir Reference Document",
-    nobleCurrentDate: new Time(19, 2, 1488),
-    aaronCurrentDate: new Time(8, 5, 1488),
-    sbjCurrentDate: new Time(20, 8, 3488),
+    nobleCurrentDate: undefined,
+    aaronCurrentDate: undefined,
+    sbjCurrentDate: undefined,
     sexRanges: [
         { from: 1, to: 1, value: Sex.masculineHerm, hasBoobs: false, hasDick: true },
         { from: 2, to: 5, value: Sex.male, hasBoobs: false, hasDick: true },
@@ -58,4 +58,12 @@ export const globals = {
         { races: ["Lizardfolk", "Gnoll"], dickLength: new DiceRoll("1d8+4"), heroicDickLength: new DiceRoll("1d12+4"), breastSize: undefined },
     ],
 };
+export async function LoadGlobalsJson() {
+    const [dateData] = await Promise.all([
+        fetch("data/dates.json", { cache: "no-store" }).then((response) => response.json()),
+    ]);
+    globals.nobleCurrentDate = new Time(dateData.nobleCurrentDate.day, dateData.nobleCurrentDate.month, dateData.nobleCurrentDate.year);
+    globals.aaronCurrentDate = new Time(dateData.aaronCurrentDate.day, dateData.aaronCurrentDate.month, dateData.aaronCurrentDate.year);
+    globals.sbjCurrentDate = new Time(dateData.sbjCurrentDate.day, dateData.sbjCurrentDate.month, dateData.sbjCurrentDate.year);
+}
 //# sourceMappingURL=globals.js.map
