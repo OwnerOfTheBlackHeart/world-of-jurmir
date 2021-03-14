@@ -216,14 +216,15 @@ li > ap-link-button > a:visited {
 
 li > ap-link-button,
 li > ap-link-button > a {
-	display: inline-block;
+	/* display: inline-block; */
+	display: inline;
 }
 
 li > ap-link-button > a {
 	overflow-x: hidden;
 	white-space: normal;
-	padding-left: 12px;
-	text-indent: -12px;
+	/* padding-left: 12px;
+	text-indent: -12px; */
 }
 
 #auth-info {

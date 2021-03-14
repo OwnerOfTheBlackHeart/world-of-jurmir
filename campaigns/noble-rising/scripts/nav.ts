@@ -152,6 +152,11 @@ export const nobleNav = [
 	new PageInfo(undefined, "enemies/undead/commoner-ghost.html", "Commoner's Ghost", "commoner-ghost"),
 	new PageInfo(undefined, "enemies/undead/elf-warrior-ghost.html", "Elf Warrior's Ghost", "elf-warrior-ghost"),
 
+	new PageInfo(undefined, "enemies/goblins/bugbear-lieutenant.html", "Bugbear Lieutenant", "bugbear-lieutenant"),
+	new PageInfo(undefined, "enemies/goblins/bugbear-sergeant.html", "Bugbear Sergeant", "bugbear-sergeant"),
+	new PageInfo(undefined, "enemies/goblins/hobgoblin-lieutenant.html", "Hobgoblin Lieutenant", "hobgoblin-lieutenant"),
+	new PageInfo(undefined, "enemies/goblins/hobgoblin-sergeant.html", "Hobgoblin Sergeant", "hobgoblin-sergeant"),
+
 	new PageInfo(undefined, "npcs/mysterious-stranger.html", "The Mysterious Stranger", "mysterious-stranger"),
 	new PageInfo(undefined, "npcs/reth-mailynath.html", "Reth Mailynath, Adamantine Slayer", "reth-mailynath"),
 	new PageInfo(undefined, "npcs/turzk.html", "Turzk, Ancient Lizardfolk", "turzk"),
