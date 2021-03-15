@@ -78,7 +78,7 @@ export class TimeTable extends HTMLElement {
 			data.forEach((row) => {
 				dates.push({
 					time: new Time(row[0], row[1], row[2]),
-					note: row[3],
+					note: row[3], // TODO: Make this so that it can take multiple columns and combine them into one note
 				});
 			});
 
