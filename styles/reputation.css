@@ -1,0 +1,44 @@
+.reputation-container {
+	display: inline-block;
+	vertical-align: text-top;
+	margin-left: 16px;
+	margin-bottom: 16px;
+	width: 12em;
+}
+
+ap-reputation-display {
+	margin-right: 16px;
+}
+
+.reputation-organization-name {
+	font-size: large;
+}
+
+.reputation-enemies-title,
+.reputation-allies-title {
+	text-align: center;
+	font-weight: bold;
+	font-size: larger;
+}
+
+.reputation-container-row {
+	border: 2px solid black;
+	padding: 8px;
+}
+
+.reputation-organization-name-row {
+	text-align: center;
+}
+
+.reputation-allies-enemy-tile {
+	height: 7em;
+	overflow: auto;
+}
+
+a.reputation-link {
+	display: block;
+}
+
+.float-right {
+	float: right;
+}

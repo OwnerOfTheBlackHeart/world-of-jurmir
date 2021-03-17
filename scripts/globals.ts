@@ -62,6 +62,23 @@ export const globals = {
 		},
 		{ races: ["Lizardfolk", "Gnoll"], dickLength: new DiceRoll("1d8+4"), heroicDickLength: new DiceRoll("1d12+4"), breastSize: undefined },
 	] as RaceSexualFeatureRolls[],
+	reputationRanks: [
+		{ level: -4, xpRange: { upper: -31 }, title: "Nemesis" },
+		{ level: -3, xpRange: { lower: -30, upper: -16 }, title: "Enemy" },
+		{ level: -2, xpRange: { lower: -15, upper: -6 }, title: "Unwelcome" },
+		{ level: -1, xpRange: { lower: -5, upper: -1 }, title: "Untrusted" },
+		{ level: 0, xpRange: { lower: 0, upper: 9 }, title: "Outsider" },
+		{ level: 1, xpRange: { lower: 10, upper: 24 }, title: "Citizen" },
+		{ level: 2, xpRange: { lower: 25, upper: 39 }, title: "Supporter" },
+		{ level: 3, xpRange: { lower: 40, upper: 59 }, title: "Friend" },
+		{ level: 4, xpRange: { lower: 60, upper: 84 }, title: "Valued Friend" },
+		{ level: 5, xpRange: { lower: 85, upper: 114 }, title: "Friend of the People" },
+		{ level: 6, xpRange: { lower: 115, upper: 149 }, title: "Example of Our Virtues" },
+		{ level: 7, xpRange: { lower: 150, upper: 189 }, title: "Representative" },
+		{ level: 8, xpRange: { lower: 190, upper: 234 }, title: "Hero" },
+		{ level: 9, xpRange: { lower: 235, upper: 284 }, title: "Leader's Equal" },
+		{ level: 10, xpRange: { lower: 285 }, title: "Accepted Heir" },
+	] as ReputationRank[],
 };
 
 export async function LoadGlobalsJson() {
@@ -90,4 +107,15 @@ interface DateInitializer {
 	day: number;
 	month: number;
 	year: number;
+}
+
+export interface ReputationRank {
+	level: number;
+	xpRange: XpRange;
+	title: string;
+}
+
+export interface XpRange {
+	lower?: number;
+	upper?: number;
 }

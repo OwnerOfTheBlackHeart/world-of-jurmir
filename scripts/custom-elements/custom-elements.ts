@@ -15,3 +15,5 @@ import "./ap-template-outlet.js";
 import "./ap-population-table.js";
 import "./ap-sex-generator.js";
 import "./ap-sex-tables.js";
+import "./ap-reputation-display.js";
+import "./ap-reputation-ranks-table.js";

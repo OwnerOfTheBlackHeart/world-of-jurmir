@@ -1,1 +1,122 @@
 <h1>Reputation</h1>
+<p>
+    <ap-reputation-ranks-table class="float-right"></ap-reputation-ranks-table>
+    The information presented below is meant to help create a system for tracking and managing reputation among multiple factions.
+    The first major objective of the campaign is to get to Accepted Heir (reputation rank 10) with at least 4 of the major factions,
+    which is done by completing missions and adventures for each faction.
+</p>
+<p>
+    Each faction has 3 main pieces of information: The current reputation XP/points, their allies, and their enemies. You acquire
+    reputation XP/points by completing missions for a faction, with the number of points gained up completion being equal to the CR 
+    of the highest CR encounter you overcame (not avoided) as part of the mission. When you gain reputation XP/points with a faction,
+    you lose half as many reputation XP/points (rounded down) from their enemy factions. Missions which grant you only 1 faction 
+    XP/point are generally considered beneath notice. If the mission also benefited any factions that are allies of the faction you
+    completed the mission for, the allied factions gain one quarter as many reputation XP/points (rounded down). Missions which grant
+    you 3, or less, faction XP/points are generally considered beneath the notice of allied factions.
+</p>
+<p>
+    As you gain, or lose, reputation with factions, your faction rank with them will change. To determine your faction rank, compare the
+    amount of reputation points with the faction in question against the reputation ranks table. Most members of a faction will be vaguely
+    aware of you if you have a rank of 5, or higher, while well informed members will recognize you at rank 4, gossips and other socialites
+    that keep careful track of people will recognize you at rank 3 and members that are in the area you have helped will recognize you at
+    rank 2.
+</p>
+<p>
+    Depending on the faction and the situation, your rank may offer you benefits such as favors, housing, food and drink, gifts, or donations
+    to your current mission. If you get a high enough reputation rank in some factions, they may offer you land and/or property in order
+    to keep you working with them.
+</p>
+<h2 id="current-reputation">Current Reputation</h2>
+<div>
+    <ap-reputation-display>
+        [
+            {
+                "organization": {"name": "Du Indos", "id": "du-indos"},
+                "value": 10,
+                "enemies": [],
+                "allies": []
+            },
+            {
+                "organization": {"name": "Sirine"},
+                "value": 25,
+                "enemies": [
+                    {"name": "Akrida"},
+                    {"name": "Idanthus"}
+                ],
+                "allies": [
+                    {"name": "Eisiger Fel", "id": "eisiger-fel"}
+                ]
+            },
+            {
+                "organization": {"name": "Idanthus"},
+                "value": 0,
+                "enemies": [
+                    {"name": "Sirine"},
+                    {"name": "Grunbaum"}
+                ],
+                "allies": [
+                    {"name": "Eisiger Fel", "id": "eisiger-fel"},
+                    {"name": "Akrida"},
+                    {"name": "Gefro Kuste", "id": "gefro-kuste"}
+                ]
+            },
+            {
+                "organization": {"name": "Grunbaum"},
+                "value": 0,
+                "enemies": [
+                    {"name": "Idanthus"},
+                    {"name": "Ruvanna"}
+                ],
+                "allies": [
+                    {"name": "Eisiger Fel", "id": "eisiger-fel"}
+                ]
+            },
+            {
+                "organization": {"name": "Ruvanna"},
+                "value": 0,
+                "enemies": [
+                    {"name": "Grunbaum"},
+                    {"name": "Gefro Kuste", "id": "gefro-kuste"}
+                ],
+                "allies": []
+            },
+            {
+                "organization": {"name": "Gefro Kuste", "id": "gefro-kuste"},
+                "value": 0,
+                "enemies": [
+                    {"name": "Ruvanna"},
+                    {"name": "Eisiger Fel", "id": "eisiger-fel"}
+                ],
+                "allies": [
+                    {"name": "Akrida"},
+                    {"name": "Idanthus"}
+                ]
+            },
+            {
+                "organization": {"name": "Eisiger Fel", "id": "eisiger-fel"},
+                "value": 0,
+                "enemies": [
+                    {"name": "Akrida"},
+                    {"name": "Gefro Kuste", "id": "gefro-kuste"}
+                ],
+                "allies": [
+                    {"name": "Sirine"},
+                    {"name": "Idanthus"},
+                    {"name": "Grunbaum"}
+                ]
+            },
+            {
+                "organization": {"name": "Akrida"},
+                "value": 0,
+                "enemies": [
+                    {"name": "Sirine"},
+                    {"name": "Eisiger Fel", "id": "eisiger-fel"}
+                ],
+                "allies": [
+                    {"name": "Gefro Kuste", "id": "gefro-kuste"},
+                    {"name": "Idanthus"}
+                ]
+            }
+        ]
+    </ap-reputation-display>
+</div>
