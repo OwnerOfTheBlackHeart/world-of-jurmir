@@ -3,7 +3,9 @@ import { Sex } from "./sexual-characteristics.js";
 import { Time } from "./time.js";
 export const globals = {
     titlePostfix: " - World of Jurmir Reference Document",
+    forceRefresh: false,
     nobleCurrentDate: undefined,
+    princeCurrentDate: undefined,
     aaronCurrentDate: undefined,
     sbjCurrentDate: undefined,
     sexRanges: [
@@ -59,11 +61,16 @@ export const globals = {
     ],
 };
 export async function LoadGlobalsJson() {
-    const [dateData] = await Promise.all([
+    const [dateData, forceRefresh] = await Promise.all([
         fetch("data/dates.json", { cache: "no-store" }).then((response) => response.json()),
+        fetch("force-refresh.txt", { cache: "no-store" })
+            .then((response) => response.text())
+            .then((forceRefreshString) => forceRefreshString.trim().toLowerCase() === "true"),
     ]);
     globals.nobleCurrentDate = new Time(dateData.nobleCurrentDate.day, dateData.nobleCurrentDate.month, dateData.nobleCurrentDate.year);
+    globals.princeCurrentDate = new Time(dateData.princeCurrentDate.day, dateData.princeCurrentDate.month, dateData.princeCurrentDate.year);
     globals.aaronCurrentDate = new Time(dateData.aaronCurrentDate.day, dateData.aaronCurrentDate.month, dateData.aaronCurrentDate.year);
     globals.sbjCurrentDate = new Time(dateData.sbjCurrentDate.day, dateData.sbjCurrentDate.month, dateData.sbjCurrentDate.year);
+    globals.forceRefresh = forceRefresh;
 }
 //# sourceMappingURL=globals.js.map

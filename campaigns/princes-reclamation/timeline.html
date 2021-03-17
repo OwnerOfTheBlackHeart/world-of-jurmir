@@ -1,0 +1,62 @@
+<h1>Prince's Reclamation Timeline</h1>
+<p>
+    There is one lunar cycle per month, with the 1st of the month being a new moon,
+    the 15th of the month being a full moon and the 28th of the month being almost
+    a new moon.
+</p>
+<div class="table-container">
+    <div class="table-column">
+		<ap-advanced-table>
+			[
+				[{"isHeader":"true", "value":"Current Date"}],
+				["<ap-display-global property-path="princeCurrentDate"></ap-display-global>"]
+			]
+		</ap-advanced-table>
+    </div>
+	<div class="table-column">
+        <ap-time-table show-all-months></ap-time-table>
+	</div>
+	<div class="table-column">
+		<ap-birthday-generator current-date-value="princeCurrentDate"></ap-birthday-generator>
+	</div>
+</div>
+<div class="table-container">
+	<div class="table-column">
+        <h3>Birthday Timeline</h3>
+        <ap-time-table current-date-value="princeCurrentDate">
+            [
+				["header", "Timeline"],
+				[3, 4, 1512, "Placeholder"]
+            ]
+        </ap-time-table>
+	</div>
+	<div class="table-column">
+        <h3>prince Timeline</h3>
+        <ap-time-table current-date-value="princeCurrentDate">
+            [
+                ["header", "Timeline"],
+                [3, 4, 1512, "Start date"]
+            ]
+        </ap-time-table>
+	</div>
+	<ap-auth-container permissions="gm prince-events-timeline prince-full">
+		<div class="table-column">
+			<h3>Events Timeline</h3>
+			<ap-time-table current-date-value="princeCurrentDate">
+				[
+					["header", "Timeline"],
+					[3, 4, 1512, "<ap-link-button linkName="prince-rise-of-the-bandit-king">Placeholder</ap-link-button>"]
+				]
+			</ap-time-table>
+		</div>
+	</ap-auth-container>
+    <div class="table-column">
+        <h3>Birth Timeline</h3>
+        <ap-time-table current-date-value="princeCurrentDate">
+            [
+                ["header", "Timeline"],
+				[3, 4, 1512, "Placeholder"]
+            ]
+        </ap-time-table>
+    </div>
+</div>

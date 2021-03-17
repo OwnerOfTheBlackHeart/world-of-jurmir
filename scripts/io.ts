@@ -1,3 +1,4 @@
+import { globals } from "./globals.js";
 import { PageInfo } from "./page-info.js";
 import { GetPageInfoFromName, pages } from "./page-list.js";
 import * as Utilities from "./utilities.js";
@@ -32,7 +33,7 @@ export async function LoadIntoElement<T>(
 	querySelector: string,
 	context?: any
 ): Promise<{ url: string; html: string; element: HTMLElement; status: number; context?: T }> {
-	return fetch(url).then(async (response) => {
+	return appFetch(url).then(async (response) => {
 		const html = await response.text();
 		const element = document.querySelector<HTMLElement>(querySelector);
 
@@ -176,4 +177,21 @@ export function BuildUrl(pageName: string, hash?: string) {
 	}
 
 	return url;
+}
+
+/**
+ * A wrapper around fetch to automatically handle force refreshing
+ *
+ * @param input The URL or Request representing the resource to be retrieved
+ * @param init Any RequestInit parameters for the given request
+ * @returns The fetch promise
+ */
+export async function appFetch(input: RequestInfo, init?: RequestInit) {
+	init = init ? init : {};
+
+	if (globals.forceRefresh) {
+		init = { ...init, cache: "no-store" };
+	}
+
+	return fetch(input, init);
 }

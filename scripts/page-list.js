@@ -2,6 +2,7 @@ import { PageInfo } from "./page-info.js";
 import { nobleNav } from "../campaigns/noble-rising/scripts/nav.js";
 import { sbjNav } from "../campaigns/the-stars-beyond-jurmir/scripts/nav.js";
 import { aaronNav } from "../campaigns/the-story-of-aaron/scripts/nav.js";
+import { princeNav } from "../campaigns/princes-reclamation/scripts/nav.js";
 export const pages = [
     new PageInfo("home_button", "home.html", "Home", "home"),
     new PageInfo(undefined, "templates/character.html", "Character Template", "template-character"),
@@ -63,7 +64,7 @@ export const pages = [
     new PageInfo(undefined, "images/zoltan.png", "", "zoltan-image"),
     new PageInfo(undefined, "images/the-red-king.jpeg", "", "the-red-king-image"),
     new PageInfo(undefined, "images/kyranious.jpg", "", "kyranious-image"),
-].concat(aaronNav, sbjNav, nobleNav);
+].concat(aaronNav, sbjNav, nobleNav, princeNav);
 export function GetPageInfoFromUri(uri) {
     return pages.find((pageInfo) => {
         return pageInfo.url === uri;

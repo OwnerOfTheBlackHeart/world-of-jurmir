@@ -1,4 +1,4 @@
-import { pageAreaQuerySelector } from "../io.js";
+import { appFetch, pageAreaQuerySelector } from "../io.js";
 import { templateGroups } from "../template-groups.js";
 import { showElement } from "../utilities.js";
 export class TemplateOutlet extends HTMLElement {
@@ -7,7 +7,7 @@ export class TemplateOutlet extends HTMLElement {
         this.innerHTML = "";
         this.templateUrl = this.buildTemplateUrl(this.templatePath);
         if (this.templateUrl && this.templateUrl !== "") {
-            fetch(this.templateUrl)
+            appFetch(this.templateUrl)
                 .then((response) => response.text())
                 .then((html) => {
                 if (html && this.templateUrl !== "") {

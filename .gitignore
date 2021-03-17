@@ -1,4 +1,4 @@
 **/*.js.map
 node_modules
 aspnet_client
-force-refresh.bool
+force-refresh.txt

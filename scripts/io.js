@@ -1,3 +1,4 @@
+import { globals } from "./globals.js";
 import { GetPageInfoFromName, pages } from "./page-list.js";
 import * as Utilities from "./utilities.js";
 export const pageAreaQuerySelector = "#page-area";
@@ -13,7 +14,7 @@ export function SetTitlePostfix(postFix) {
     }
 }
 export async function LoadIntoElement(url, querySelector, context) {
-    return fetch(url).then(async (response) => {
+    return appFetch(url).then(async (response) => {
         const html = await response.text();
         const element = document.querySelector(querySelector);
         if (element && html) {
@@ -96,5 +97,12 @@ export function BuildUrl(pageName, hash) {
         url += Utilities.makeValidHash(hash);
     }
     return url;
+}
+export async function appFetch(input, init) {
+    init = init ? init : {};
+    if (globals.forceRefresh) {
+        init = Object.assign(Object.assign({}, init), { cache: "no-store" });
+    }
+    return fetch(input, init);
 }
 //# sourceMappingURL=io.js.map
