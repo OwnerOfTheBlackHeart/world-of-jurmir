@@ -50,7 +50,12 @@ export class TemplateOutlet extends HTMLElement {
         if (!templateFolder) {
             return undefined;
         }
-        return `${templateGroup.basePath}/${templateFolder.path}/${names[2]}.${templateFolder.fileType}`;
+        if (templateGroup.basePath) {
+            return `${templateGroup.basePath}/${templateFolder.path}/${names[2]}.${templateFolder.fileType}`;
+        }
+        else {
+            return `${templateFolder.path}/${names[2]}.${templateFolder.fileType}`;
+        }
     }
 }
 customElements.define("ap-template-outlet", TemplateOutlet);
