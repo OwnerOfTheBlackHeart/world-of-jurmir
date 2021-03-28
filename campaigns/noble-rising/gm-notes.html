@@ -218,9 +218,8 @@
 				["80", "Spider Eater"],
 				["81", "Tendriculos"],
 				
-				["82-86", "Enemy soldiers table"],
-				["87-88", "Red king cultists table"],
-				["89-93", "Bandits table"],
+				["82-90", "Enemy soldiers table"],
+				["91-93", "Red king cultists table"],
 				["94-98", "Goblins table"],
 				["99", "Roaming demon table"],
 				["100", "<ap-link-button linkName="noble-mysterious-stranger">The Mysterious Stranger</ap-link-button> appears.<br/>Reroll for enemy."]
@@ -355,9 +354,8 @@
 				["77-78", "Worg pair"],
 				["79-80", "Worg pack (1d6+5)"],
 				["81", "Polar bear"],				
-				["82-86", "Enemy soldiers table"],
-				["87-88", "Red king cultists table"],
-				["89-93", "Bandits table"],
+				["82-90", "Enemy soldiers table"],
+				["91-93", "Red king cultists table"],
 				["94-98", "Goblins table"],
 				["99", "Roaming demon table"],
 				["100", "<ap-link-button linkName="noble-mysterious-stranger">The Mysterious Stranger</ap-link-button> appears.<br/>Reroll for enemy."]
@@ -468,15 +466,6 @@
 <div class="table-container">
 	<div class="table-column">
 		<div class="table-column">
-			<b>Bandits</b>
-			<ap-advanced-table>
-				[
-					[{"value": "Roll", "isHeader": true, "columnAlign": "center"}, {"value": "ENCOUNTER", "isHeader": true}],		
-					["11-20", "Kobolds"]
-				]
-			</ap-advanced-table>
-		</div>
-		<div class="table-column">
 			<b>Red King Cultists</b>
 			<ap-advanced-table>
 				[
@@ -573,12 +562,41 @@
 			<ap-advanced-table>
 				[
 					[{"value": "Roll", "isHeader": true, "columnAlign": "center"}, {"value": "ENCOUNTER", "isHeader": true}],		
-					["11-20", "Methnaes squad: <br/>1d3+1 elves, <br/>1d4-2 drow, <br/>1d4-2 dwarves"],
-					["11-20", "Methnaes patrol: <br/>1d4+4 elves, <br/>1d4-1 drow, <br/>1d4-1 dwarves, <br/>2 improved elf soldier, <br/>1 drow leader"],
-					["11-20", "Kobolds"],
-					["11-20", "Kobolds"],
-					["11-20", "Kobolds"],
-					["11-20", "Lyrnan soldiers"]
+					["1-10", "Methnaes squad: <br/>1d3+1 elves, <br/>1d4-2 drow, <br/>1d4-2 dwarves"],
+					["11-15", 
+						"Methnaes patrol: <br/>1d4+4 elves, <br/>1d4-1 drow, <br/>1d4-1 dwarves,",
+						"~~ <br/><ap-link-button linkName="noble-elf-fighter-2">2 improved elf soldiers</ap-link-button>,",
+						"~~ <br/>1 <ap-link-button linkName="drow-cleric">drow leader</ap-link-button>"
+					],
+					["16-25", 
+						"Lyrnan squad: 2d4 <ap-link-button linkName="paladin">paladins</ap-link-button><br/>",
+						"~~ and 1 <ap-link-button linkName="ordained-cleric">ordained cleric</ap-link-button>"
+					],
+					["26-30", 
+						"Lyrnan patrol: 1d4 <ap-link-button linkName="ordained-cleric">ordained clerics</ap-link-button><br/>",
+						"~~ and 2d4 <ap-link-button linkName="paladin">paladins</ap-link-button> each"
+					],
+					["31-60", 
+						"1d6+1 <ap-link-button linkName="noble-human-commoner">human commoners (spear)</ap-link-button><br/>",
+						"~~ and 1d6+1 <ap-link-button linkName="noble-human-commoner">human commoners (crossbow)</ap-link-button>"
+					],
+					["61-80", 
+						"1d6+1 <ap-link-button linkName="noble-human-commoner">human commoners (spear)</ap-link-button><br/>",
+						"~~ and 1d6+1 <ap-link-button linkName="noble-human-commoner">human commoners (crossbow)</ap-link-button><br/>",
+						"~~ and 1 <ap-link-button linkName="noble-elf-fighter-2">elf fighter</ap-link-button>"
+					],
+					["81-95", 
+						"1d6+1 <ap-link-button linkName="noble-human-commoner">human commoners (spear)</ap-link-button><br/>",
+						"~~ and 1d6+1 <ap-link-button linkName="noble-human-commoner">human commoners (crossbow)</ap-link-button><br/>",
+						"~~ and 1 <ap-link-button linkName="noble-elf-fighter-2">elf fighter</ap-link-button><br/>",
+						"~~ and 1 <ap-link-button linkName="noble-catfolk-adept">catfolk adept</ap-link-button>"
+					],
+					["96-100", 
+						"1d8-2 <ap-link-button linkName="noble-catfolk-barbarian">catfolk barbarians</ap-link-button><br/>",
+						"~~ and 1d6-1 <ap-link-button linkName="noble-catfolk-ranger">catfolk rangers</ap-link-button><br/>",
+						"~~ and 1d6 <ap-link-button linkName="noble-catfolk-adept">catfolk adepts</ap-link-button><br/>",
+						"~~ and 1d4-1 <ap-link-button linkName="noble-catfolk-sorcerer">catfolk sorcerers</ap-link-button>"
+					]
 				]
 			</ap-advanced-table>
 		</div>
