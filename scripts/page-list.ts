@@ -34,6 +34,7 @@ export const pages = [
 
 	new PageInfo(undefined, "pantheon/history/creation-story.html", "The Story of Creation", "creation-story"),
 	new PageInfo(undefined, "pantheon/history/the-drow.html", "How the Drow Came to Be", "the-drow"),
+	new PageInfo(undefined, "pantheon/history/the-giants.html", "The Story of the Giants and Goliaths", "the-giants"),
 
 	new PageInfo(undefined, "homebrew/ranger-fix.html", "Ranger Class Fix for D&D 3.5e", "ranger-fix"),
 	new PageInfo(undefined, "homebrew/half-races-catalog.html", "Half Races Catalog", "half-races-catalog"),
