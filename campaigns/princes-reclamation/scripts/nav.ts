@@ -33,6 +33,7 @@ export const princeNav = [
 	new PageInfo(undefined, "locations/sirine/tralone.html", "Tralone, Capital City of Sirine", "tralone"),
 	new PageInfo(undefined, "locations/sirine/zelthaus.html", "Zelthaus, the Dusty Village", "zelthaus"),
 	new PageInfo(undefined, "locations/sirine/regensburg.html", "Regensburg, the Trade City", "regensburg"),
+	new PageInfo(undefined, "locations/sirine/kajas-house.html", "Kaja's House", "kajas-house"),
 
 	new PageInfo(undefined, "locations/eisiger-fel/main.html", "Eisiger Fel, the Frozen Peaks", "eisiger-fel"),
 	new PageInfo(undefined, "locations/eisiger-fel/granmel.html", "Granmel, Village in the Pass", "granmel"),
