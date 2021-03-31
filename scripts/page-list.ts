@@ -41,6 +41,7 @@ export const pages = [
 	new PageInfo(undefined, "homebrew/guild-management-system.html", "Guild Management System", "guild-management-system"),
 	new PageInfo(undefined, "homebrew/gms-consequences.html", "Guild Management System Consequences", "gms-consequences"),
 	new PageInfo(undefined, "homebrew/3_5-feats.html", "3.5/Pathfinder Homebrew Feats", "3.5-homebrew-feats"),
+	new PageInfo(undefined, "homebrew/3_5-spells.html", "3.5/Pathfinder Homebrew Spells", "3.5-homebrew-spells"),
 	new PageInfo(undefined, "homebrew/magic-items.html", "Magic Items", "magic-items"),
 	new PageInfo(undefined, "homebrew/bright-one.html", "The Bright One Prestige Class", "bright-one"),
 	new PageInfo(undefined, "homebrew/dread-aberromancer.html", "The Dread Aberromancer Prestige Class", "dread-aberromancer"),
