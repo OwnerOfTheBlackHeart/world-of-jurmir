@@ -41,7 +41,7 @@ export class LinkButton extends HTMLElement {
     }
     connectedCallback() {
         this.addEventListener("click", this.click);
-        let innerData = this.innerHTML;
+        let innerData = this.innerHTML.trim();
         this.link = document.createElement("a");
         this.link.innerHTML = innerData;
         this.UpdateLink();
