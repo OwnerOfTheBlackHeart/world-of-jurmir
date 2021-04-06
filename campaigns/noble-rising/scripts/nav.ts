@@ -184,6 +184,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "misc/brown-eye-whores.html", "Brown Eye Whores", "brown-eye-whores"),
 	new PageInfo(undefined, "misc/whore-house-events.html", "Whore House Events", "whore-house-events"),
 	new PageInfo(undefined, "misc/paintings-gallery.html", "Paintings Gallery", "paintings-gallery"),
+	new PageInfo(undefined, "misc/sins-hunt-found-info.html", "Sin's Hunt Found Info", "sins-hunt-found-info"),
 
 	new PageInfo(undefined, "images/fang-at-desk.jpg", "", "fang-img", true),
 	new PageInfo(undefined, "images/mysterious-stranger.jpg", "", "mysterious-stranger-img", true),
