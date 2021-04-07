@@ -58,7 +58,7 @@ export const aaronNav = [
     new PageInfo(undefined, "campaigns/the-story-of-aaron/enemies/red-king/red-princess.html", "Red Princess", "red-princess"),
     new PageInfo(undefined, "campaigns/the-story-of-aaron/enemies/red-king/red-queen.html", "Red Queen", "red-queen"),
     new PageInfo(undefined, "campaigns/the-story-of-aaron/enemies/red-king/red-squire.html", "Red Squire", "red-squire"),
-    new PageInfo(undefined, "campaigns/the-story-of-aaron/enemies/red-king/pophagite.html", "Phopagite, Eater of Slain", "phopagite"),
+    new PageInfo(undefined, "campaigns/the-story-of-aaron/enemies/red-king/pophagite.html", "Pophagite, Eater of Slain", "pophagite"),
     new PageInfo(undefined, "campaigns/the-story-of-aaron/enemies/red-king/jennlinn.html", "Jennlinn Miirdhek, Red Lady of Seablood", "jennlinn"),
     new PageInfo(undefined, "campaigns/the-story-of-aaron/enemies/red-king/dhako-smogfang.html", "Dhako Smogfang, Monstrosity born of Jennlinn Miirdhek", "dhako-smogfang"),
     new PageInfo(undefined, "campaigns/the-story-of-aaron/plotlines/index.html", "Plotline Index", "aaron-plotline-index"),
@@ -85,6 +85,6 @@ export const aaronNav = [
     new PageInfo(undefined, "images/red-king-priest.jpg", "", "red-king-priest-image"),
     new PageInfo(undefined, "images/jennlinn.jpg", "", "jennlinn-image"),
     new PageInfo(undefined, "images/dinzar.jpg", "", "dinzar-image"),
-    new PageInfo(undefined, "images/scarlett-bronsone.jpg", "", "scarlett-bronsone-image")
+    new PageInfo(undefined, "images/scarlett-bronsone.jpg", "", "scarlett-bronsone-image"),
 ];
 //# sourceMappingURL=nav.js.map
