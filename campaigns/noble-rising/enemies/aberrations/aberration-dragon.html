@@ -1,9 +1,246 @@
 <h1>Aberration Dragon</h1>
 <ap-image linkName="noble-aberration-dragon-img" class="character-picture" height="500">Picture of an Aberration Dragon</ap-image>
-<!--
-    Swallow whole, 1 size smaller
-    Insanity/deafness breath, psionic damage?
-    Base stats off of black dragons
-    No fly or wing attacks, but spider climb
-    1 size larger bite damage?
--->
+<p>
+    Aberration dragons are a strange mockery of dragons, appearing as if a wingless dragon without wings and with a massive mouth that goes halfway along
+    the back of the creature with half of the mouth appearing to use the aberration dragon's ribs as teeth. An aberration dragon appears to have no eyes.
+</p>
+<p>
+    Aberration dragons live underground in large tunnels they dig out, designed to confuse intruders and offer the aberration dragon plenty of time
+    to stalk, analyse and attack its prey. Aberration dragons love to construct pitfall traps and magical alarms in their lairs so that they are always
+    aware of when prey has entered their home. Aberration dragons typically make their "private quarters" in areas inaccessible to intruders, such as a
+    chamber that is only accessible through a hole in the ceiling.
+</p>
+<p>
+    Much like normal dragons, aberration dragons create large hordes of valuable goods. Unlike normal dragons, aberration dragons prefer treasure that is
+    useful to humanoids, such as magic items, weapons, armor, advanced materials like adamantine, and platinum coins, which they do not collect for their
+    own joy, but instead as bait for greedy humanoids. The horde of an aberration dragon is kept at the deepest part of their lairs and far away from the
+    parts of the lair where the aberration dragon actually lives.
+</p>
+<p>
+    Aberration dragons are highly intelligent and build up large repositories of knowledge over the courses of their lives. They value forbidden knowledge
+    above all else, followed closely by arcane knowledge, then historical knowledge. Those seeking dark knowledge have been rumored to seek out aberration 
+    dragons to trade knowledge or food with, though the success of such endeavors is unknown.
+</p>
+
+<h2 id="space-reach">Space/Reach, Attacks, and Damage</h2>
+<p>
+    All natural attacks are the same as the natural attacks for <ap-link-button linkName="http://www.d20srd.org/srd/monsters/dragonTrue.htm">dragons</ap-link-button>.
+</p>
+<ap-advanced-table>
+    [
+        [
+            { "value":"Size", "isHeader":true },
+            { "value":"Space/Reach", "isHeader":true },
+            { "value":"1 Bite", "isHeader":true, "columnAlign":"center" },
+            { "value":"2 Claws", "isHeader":true, "columnAlign":"center" },
+            { "value":"1 Tail Slap", "isHeader":true, "columnAlign":"center" },
+            { "value":"1 Crush", "isHeader":true, "columnAlign":"center" },
+            { "value":"1 Tail Sweep", "isHeader":true, "columnAlign":"center" }
+        ],
+        ["Tiny", "2½ ft./0 ft.", "1d6", "1d3", "—", "—", "—"],
+        ["Small", "5 ft./5 ft.", "1d8", "1d4", "—", "—", "—"],
+        ["Medium", "5 ft./5 ft.", "2d6", "1d6", "—", "—", "—"],
+        ["Large", "10 ft./5 ft.", "2d8", "1d8", "1d8", "—", "—"],
+        ["Huge", "15 ft./10 ft.", "4d6", "2d6", "2d6", "2d8", "—"],
+        ["Gargantuan", "20 ft./15 ft.", "4d8", "2d8", "2d8", "4d6", "2d6"]
+    ]
+</ap-advanced-table>
+
+<h2 id="breath-weapons">Breath Weapons</h2>
+<div class="table-float-container">
+    <ap-advanced-table style="float: right; margin-left: 8px;">
+        [
+            [
+                { "value":"Size", "isHeader":true },
+                { "value":"Line<sup>1</sup> (Length)", "isHeader":true, "columnAlign":"center" },
+                { "value":"Cone<sup>2</sup> (Length)", "isHeader":true, "columnAlign":"center" }
+            ],
+            ["Tiny", "30 ft.", "15 ft."],
+            ["Small", "40 ft.", "20 ft."],
+            ["Medium", "60 ft.", "30 ft."],
+            ["Large", "80 ft.", "40 ft."],
+            ["Huge", "100 ft.", "50 ft."],
+            ["Gargantuan", "120 ft.", "60 ft."]
+        ]
+    </ap-advanced-table>
+    <p>
+        An aberration dragon possesses 2 breath weapons: A line of psychic energy that deals wisdom damage and a cone of 
+        <ap-link-button linkName="https://www.d20srd.org/srd/spells/confusion.htm">confusion</ap-link-button>. The saves are intelligence based.
+    </p>
+    <p>
+        Using a breath weapon is a standard action. Once a dragon breathes, it can’t breathe again until 1d4 rounds later. Even though an aberration dragon has more than one type of 
+        breath weapon, it still can breathe only once every 1d4 rounds. A blast from a breath weapon always starts at any intersection adjacent to the dragon and extends in a 
+        direction of the dragon’s choice, with an area as noted on the table below. If the breath weapon deals damage, creatures caught in the area can attempt Wisdom saves 
+        to take half damage; the DC depends on the aberration dragon’s age, and is given in each individual entry. Saves against the nondamaging breath weapon use the 
+        same DC Wisdom save. The save DC against a breath weapon is 10 + ½ aberration dragon’s HD + aberration dragon’s Int modifier.
+    </p>
+    <p>
+        The size of an aberration dragons breath weapons depends on its size.
+    </p>
+</div>
+
+<h2 id="environment-and-cr">Environment and CR</h2>
+<table class="statBlock" cellspacing="0">
+    <tr>
+        <th>Type:</th>
+        <td><ap-link-button linkName="https://www.d20srd.org/srd/typesSubtypes.htm#aberrationType">Aberration</ap-link-button></td>
+    </tr>
+    <tr>
+        <th>Environment:</th>
+        <td>Warm marshes</td>
+    </tr>
+    <tr>
+        <th>Organization:</th>
+        <td>
+            Wyrmling, very young, young, juvenile, and young adult: solitary or clutch (2-5); adult, mature adult, old, very old, ancient, wyrm, or great wyrm: 
+            solitary, pair, or family (1-2 and 2-5 offspring)
+        </td>
+    </tr>
+    <tr>
+        <th>Challenge Rating:</th>
+        <td>Wyrmling 3; very young 4; young 5; juvenile 7; young adult 9; adult 11; mature adult 14; old 16; very old 18; ancient 19; wyrm 20; great wyrm 22</td>
+    </tr>
+    <tr>
+        <th>Treasure:</th>
+        <td>Triple standard</td>
+    </tr>
+    <tr>
+        <th>Alignment:</th>
+        <td>Chaotic evil or neutral evil</td>
+    </tr>
+    <tr>
+        <th>Advancement:</th>
+        <td>
+            Wyrmling 5-6 HD; very young 8-9 HD; young 11-12 HD; juvenile 14-15 HD; young adult 17-18 HD; adult 20-21 HD; mature adult 23-24 HD; old 26-27 HD; 
+            very old 29-30 HD; ancient 32-33 HD; wyrm 35-36 HD; great wyrm 38+ HD
+        </td>
+    </tr>
+</table>
+
+<h2 id="by-age">Aberration Dragons by Age</h2>
+<ap-advanced-table classTable>
+    [
+        [
+            { "value":"Age", "isHeader":true },
+            { "value":"Size", "isHeader":true, "columnAlign":"center" },
+            { "value":"Hit Dice (hp)", "isHeader":true, "columnAlign":"center" },
+            { "value":"Str", "isHeader":true, "columnAlign":"center" },
+            { "value":"Dex", "isHeader":true, "columnAlign":"center" },
+            { "value":"Con", "isHeader":true, "columnAlign":"center" },
+            { "value":"Int", "isHeader":true, "columnAlign":"center" },
+            { "value":"Wis", "isHeader":true, "columnAlign":"center" },
+            { "value":"Cha", "isHeader":true, "columnAlign":"center" },
+            { "value":"Base Attack/<br/>Grapple", "isHeader":true, "columnAlign":"center" },
+            { "value":"Attack", "isHeader":true, "columnAlign":"center" },
+            { "value":"Fort<br/>Save", "isHeader":true, "columnAlign":"center" },
+            { "value":"Ref<br/>Save", "isHeader":true, "columnAlign":"center" },
+            { "value":"Will<br/>Save", "isHeader":true, "columnAlign":"center" },
+            { "value":"Breath<br/>Weapon (DC)", "isHeader":true, "columnAlign":"center" },
+            { "value":"Frightful<br/>Presence (DC)", "isHeader":true, "columnAlign":"center" }
+        ],
+        ["Wyrmling", "T", "4d12+4 (30)", "11", "10", "13", "11", "10", "10", "+3/-5", "+5", "+2", "+1", "+4", "1d2 (12)", "—"],
+        ["Very young", "S", "7d12+7 (52)", "13", "10", "13", "13", "12", "12", "+5/+2", "+7", "+3", "+2", "+6", "1d2 (14)", "—"],
+        ["Young", "M", "10d12+20 (85)", "15", "10", "15", "13", "12", "12", "+7/+9", "+9", "+5", "+3", "+8", "1d2 (16)", "—"],
+        ["Juvenile", "M", "13d12+26 (110)", "17", "10", "15", "15", "14", "14", "+9/+12", "+12", "+7", "+4", "+10", "1d3 (18)", "—"],
+        ["Young adult", "L", "16d12+48 (152)", "19", "10", "17", "15", "14", "14", "+12/+20", "+15", "+8", "+5", "+12", "1d3 (20)", "20"],
+        ["Adult", "L", "19d12+76 (199)", "23", "10", "19", "19", "16", "16", "+14/+24", "+19", "+10", "+6", "+14", "1d4 (23)", "22"],
+        ["Mature adult", "H", "22d12+110 (253)", "27", "10", "21", "19", "18", "18", "+16/+32", "+22", "+12", "+7", "+17", "1d6 (25)", "25"],
+        ["Old", "H", "25d12+125 (287)", "29", "10", "21", "21", "20", "20", "+18/+35", "+25", "+13", "+8", "+19", "1d8 (27)", "27"],
+        ["Very old", "H", "28d12+168 (350)", "31", "10", "23", "23", "22", "22", "+21/+39", "+29", "+15", "+9", "+22", "1d8 (30)", "30"],
+        ["Ancient", "H", "31d12+186 (387)", "33", "10", "23", "25", "24", "24", "+23/+42", "+32", "+16", "+10", "+24", "2d6 (32)", "32"],
+        ["Wyrm", "G", "34d12+238 (459)", "35", "10", "25", "25", "24", "24", "+25/+49", "+33", "+18", "+11", "+26", "2d6 (34)", "34"],
+        ["Great wyrm", "G", "37d12+296 (536)", "37", "10", "27", "27", "26", "26", "+27/+52", "+36", "+20", "+12", "+28", "2d8 (36)", "36"]
+    ]
+</ap-advanced-table>
+
+<h2 id="abilities-by-age">Aberration Dragon Abilities by Age</h2>
+<ap-advanced-table classTable>
+    [
+        [
+            { "value":"Age", "isHeader":true },
+            { "value":"Speed", "isHeader":true },
+            { "value":"Initiative", "isHeader":true, "columnAlign":"center" },
+            { "value":"AC", "isHeader":true },
+            { "value":"Special Abilities", "isHeader":true },
+            { "value":"Caster<br/>Level", "isHeader":true, "columnAlign":"center" },
+            { "value":"SR", "isHeader":true, "columnAlign":"center" }
+        ],
+        [
+            "Wyrmling", 
+            "60 ft., spider climb 60 ft., burrow 60ft", 
+            "+0", 
+            "15 (+2 size,+3 natural), touch 12, flat-footed 15", 
+            "Immunity to ability score damage,<br/>spider climb, improved grab,<br/>blindsight 60ft", 
+            "—", 
+            "—"
+        ],
+        ["Very young", "60 ft., spider climb 60 ft., burrow 60ft", "+0", "17 (+1 size,+6 natural), touch 11, flat-footed 17", "Alarm", "—", "—"],
+        ["Young", "60 ft., spider climb 60 ft., burrow 60ft", "+0", "19 (+9 natural), touch 10, flat-footed 19", "Swallow whole", "—", "—"],
+        ["Juvenile", "60 ft., spider climb 60 ft., burrow 60ft", "+0", "22 (+12 natural), touch 10, flat-footed 22", "Darkness", "—", "—"],
+        ["Young adult", "60 ft., spider climb 60 ft., burrow 60ft", "+0", "24 (-1 size,+15 natural), touch 9, flat-footed 24", "DR 5/magic", "1st", "17"],
+        ["Adult", "60 ft., spider climb 60 ft., burrow 60ft", "+0", "27 (-1 size,+18 natural), touch 9, flat-footed 27", "Shape stone", "3rd", "18"],
+        ["Mature adult", "60 ft., spider climb 60 ft., burrow 60ft", "+0", "29 (-2 size,+21 natural), touch 8, flat-footed 29", "DR 10/magic", "5th", "21"],
+        ["Old", "60 ft., spider climb 60 ft., burrow 60ft", "+0", "32 (-2 size,+24 natural), touch 8, flat-footed 32", "Detect thoughts", "7th", "22"],
+        ["Very old", "60 ft., spider climb 60 ft., burrow 60ft", "+0", "35 (-2 size,+27 natural), touch 8, flat-footed 35", "DR 15/magic", "9th", "23"],
+        ["Ancient", "60 ft., spider climb 60 ft., burrow 60ft", "+0", "38 (-2 size,+30 natural), touch 8, flat-footed 38", "Wall of stone", "11th", "25"],
+        ["Wyrm", "60 ft., spider climb 60 ft., burrow 60ft", "+0", "39 (-4 size,+33 natural), touch 6, flat-footed 39", "DR 20/magic", "13th", "26"],
+        ["Great wyrm", "60 ft., spider climb 60 ft., burrow 60ft", "+0", "42 (-4 size,+36 natural), touch 6, flat-footed 42", "Charm aberrations", "15th", "28"]
+    ]
+</ap-advanced-table>
+
+<h3>Combat</h3>
+<p>
+    Aberration dragons prefer to fight carefully, hiding in the shadows of the ceiling of their cave-like liars while observing their prey. After they have studied
+    their prey, aberration dragons may attempt to distract or confuse their prey. Older aberration dragons like to use shape stone and wall of stone to force
+    parties to become separated, where they can attack smaller groups.
+</p>
+
+<p>
+    <i class="power">Improved Grab (Ex)</i><br/>
+    To use this ability, a young, or older, aberration dragon must hit an opponent of up to its size with its bite attack. It can then attempt to start a 
+    grapple as a free action without provoking an attack of opportunity. If it wins the grapple check, it establishes a hold and can try to swallow the foe the following round.
+</p>
+
+<p>
+    <i class="power">Swallow Whole (Ex)</i><br/>
+    A aberration dragon can try to swallow a grabbed opponent of up to one size smaller by making a successful grapple check. The swallowed creature takes a bite attack worth
+    of damage plus 1d6 acid damage per round. A swallowed creature can cut its way out by using a light slashing or piercing weapon to deal one tenth the aberration dragon's hit 
+    points of damage to the inside of the mouth (AC 10 + ½ its natural armor bonus). Once the creature exits, muscular action closes the mouth; another swallowed opponent must 
+    cut its own way out. An aberration dragon that has swallowed a target can't use its bite attack until the swallowed creature is killed or escapes.
+</p>
+
+<p>
+    <i class="power">Breath Weapon (Su)</i><br/>
+    An aberration dragon has two types of breath weapons: A line of wisdom damage and a cone of 
+    <ap-link-button linkName="https://www.d20srd.org/srd/spells/confusion.htm">confusion</ap-link-button>.
+</p>
+
+<p>
+    <i class="power">Spider Climb (Su)</i><br/>
+    An aberration dragon is treated as being constantly under the effects of the spell 
+    <ap-link-button linkName="https://www.d20srd.org/srd/spells/spiderClimb.htm">spider climb</ap-link-button> with a caster level equal to half the aberration dragon's
+    hit dice. If dispelled, this effect can be reactivated as a free action on the aberration dragon's turn.
+</p>
+
+<p>
+    <i class="power">Blindsight (Ex)</i><br/>
+    An aberration dragon's skin serves as a sensory organ that can ascertain prey by scent and vibration within 60 feet.
+</p>
+
+<p>
+    <i class="power">Charm Aberrations (Sp)</i><br/>
+    A great wyrm aberration dragon can use this ability 3 times per day. It works as a mass charm spell that affects only aberrations. The aberration dragon can 
+    communicate with any charmed aberrations as though casting a tongues spell. This ability is the equivalent of a 1st-level spell.
+</p>
+
+<p>
+    <i class="power">Spell-Like Abilities (Sp)</i><br/>
+    3/day—<i>alarm</i>, <i>darkness</i> (juvenile or older; radius 10 feet per age category), <i>shape stone</i> (adult or older), <i>detect thoughts</i> (old or older),
+    <i>wall of stone</i> (ancient or older)
+</p>
+
+<p>
+    <i class="power">Skills</i><br/>
+    Concentration, Escape Artist, Intimidate, Knowledge (arcana, history, dungeoneering, religion), Sense Motive, Hide, Move Silently, Climb, Jump, Profession (miner), 
+    and Use Magic Device are class skills for aberration dragons.
+</p>

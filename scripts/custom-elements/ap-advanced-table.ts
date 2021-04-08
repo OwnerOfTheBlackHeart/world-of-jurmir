@@ -37,7 +37,6 @@ export class AdvancedTable extends HTMLElement {
 		this.mainNode = this;
 
 		if (Utilities.IsGoodString(this.innerHTML)) {
-			// this.rows = Utilities.StringToObject(this.innerHTML);
 			const jsonRows: (TableField | string)[][] = Utilities.StringToObject(this.innerHTML);
 
 			if (jsonRows && Array.isArray(jsonRows) && jsonRows[0] && Array.isArray(jsonRows[0])) {
