@@ -350,3 +350,7 @@ ol > li > ol > li {
 	height: 100px;
 	vertical-align: top;
 }
+
+.indent-1 {
+	margin-left: 16px;
+}

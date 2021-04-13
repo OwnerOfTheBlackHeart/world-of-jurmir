@@ -48,6 +48,7 @@ export const pages = [
 	new PageInfo(undefined, "homebrew/lesser-drow.html", "Lesser Drow", "lesser-drow"),
 	new PageInfo(undefined, "homebrew/transformatives.html", "Transformatives", "transformatives"),
 	new PageInfo(undefined, "homebrew/downtime-training.html", "Downtime Training", "downtime-training"),
+	new PageInfo(undefined, "homebrew/town-building.html", "Town Building Rules", "town-building"),
 
 	new PageInfo(undefined, "misc-info/sexual-characteristics.html", "Sexual Characteristics", "sexual-characteristics"),
 
