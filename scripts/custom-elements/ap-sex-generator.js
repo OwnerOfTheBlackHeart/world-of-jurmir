@@ -3,6 +3,12 @@ import { DiceRoll } from "../roll.js";
 import * as Utilities from "../utilities.js";
 const randomOption = "Random";
 const noneOption = "None";
+export var ClassType;
+(function (ClassType) {
+    ClassType["random"] = "random";
+    ClassType["npc"] = "NPC";
+    ClassType["player"] = "Player";
+})(ClassType || (ClassType = {}));
 class SexGeneratorElement extends HTMLElement {
     constructor() {
         super();
@@ -35,6 +41,13 @@ class SexGeneratorElement extends HTMLElement {
         data = document.createElement("td");
         data.appendChild(this.settingSelect);
         row.appendChild(data);
+        this.classTypeContainer = document.createElement("tr");
+        this.classTypeContainer.style.display = "none";
+        table.appendChild(this.classTypeContainer);
+        this.classTypeContainer.appendChild(Utilities.CreateTableData("<b>Class Type:</b>"));
+        data = document.createElement("td");
+        data.appendChild(this.classTypeSelect);
+        this.classTypeContainer.appendChild(data);
         table.appendChild(this.BuildCommunityModifier());
         row = document.createElement("tr");
         table.appendChild(row);
@@ -76,9 +89,11 @@ class SexGeneratorElement extends HTMLElement {
         this.raceSelect = document.createElement("select");
         this.sexSelect = document.createElement("select");
         this.settingSelect = document.createElement("select");
+        this.classTypeSelect = document.createElement("select");
         this.raceSelect.id = "race-select-box";
         this.sexSelect.id = "sex-select-box";
         this.settingSelect.id = "setting-select-box";
+        this.classTypeSelect.id = "class-type-select-box";
         this.settingSelect.onchange = () => this.OnSettingChanged();
         let option;
         option = document.createElement("option");
@@ -117,6 +132,18 @@ class SexGeneratorElement extends HTMLElement {
             option.text = id;
             this.settingSelect.appendChild(option);
         });
+        option = document.createElement("option");
+        option.value = ClassType.random;
+        option.text = ClassType.random;
+        this.classTypeSelect.appendChild(option);
+        option = document.createElement("option");
+        option.value = ClassType.player;
+        option.text = ClassType.player;
+        this.classTypeSelect.appendChild(option);
+        option = document.createElement("option");
+        option.value = ClassType.npc;
+        option.text = ClassType.npc;
+        this.classTypeSelect.appendChild(option);
     }
     BuildCommunityModifier() {
         this.communityModifierContainer = document.createElement("tr");
@@ -134,10 +161,13 @@ class SexGeneratorElement extends HTMLElement {
     OnSettingChanged() {
         if (this.settingSelect.value === noneOption) {
             this.communityModifierContainer.style.display = "none";
+            this.classTypeContainer.style.display = "none";
         }
         else {
             this.communityModifierContainer.style.display = "table-row";
             this.communityModifierInput.valueAsNumber = 0;
+            this.classTypeContainer.style.display = "table-row";
+            this.classTypeSelect.value = ClassType.random;
         }
     }
     OnGenerateClick() {
@@ -218,7 +248,9 @@ class SexGeneratorElement extends HTMLElement {
             if (race.subName) {
                 toReturn.race += ` (${race.subName})`;
             }
-            const isPC = Utilities.getRndInteger(1, 100) <= race.pcChance;
+            const isPC = this.classTypeSelect.value === ClassType.random
+                ? Utilities.getRndInteger(1, 100) <= race.pcChance
+                : this.classTypeSelect.value === ClassType.player;
             let characterClass = isPC ? Utilities.getRandomItemFromRange(race.pcClasses) : Utilities.getRandomItemFromRange(race.npcClasses);
             toReturn.class = characterClass.name;
             toReturn.level = new DiceRoll(characterClass.levelRoll).roll().total + this.communityModifierInput.valueAsNumber;

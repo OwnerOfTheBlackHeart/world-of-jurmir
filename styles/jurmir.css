@@ -341,6 +341,7 @@ ol > li > ol > li {
 #race-select-box,
 #sex-select-box,
 #setting-select-box,
+#class-type-select-box,
 #generate-count-input,
 #community-modifier-input {
 	width: 150px;
