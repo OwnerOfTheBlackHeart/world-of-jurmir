@@ -1,0 +1,495 @@
+{
+	"ids": ["Noble Rising"],
+	"values": {
+		"Noble Rising": [
+			{
+				"name": "Catfolk",
+				"subName": "panther",
+				"pcChance": 5,
+				"from": 1,
+				"to": 20,
+				"npcClasses": [
+					{ "name": "Commoner", "from": 1, "to": 182, "levelRoll": "4d4" },
+					{ "name": "Warrior", "from": 183, "to": 192, "levelRoll": "2d4" },
+					{ "name": "Expert", "from": 193, "to": 198, "levelRoll": "3d4" },
+					{ "name": "Adept", "from": 199, "to": 199, "levelRoll": "1d6" },
+					{ "name": "Aristocrat", "from": 200, "to": 200, "levelRoll": "1d4" }
+				],
+				"pcClasses": [
+					{ "name": "Fighter", "from": 201, "to": 210, "levelRoll": "1d8" },
+					{ "name": "Monk", "from": 211, "to": 216, "levelRoll": "1d4" },
+					{ "name": "Paladin", "from": 217, "to": 218, "levelRoll": "1d3" },
+					{ "name": "Ranger", "from": 219, "to": 220, "levelRoll": "1d3" },
+					{ "name": "Rogue", "from": 221, "to": 230, "levelRoll": "1d8" },
+					{ "name": "Scout (CAdv, 10)", "from": 231, "to": 240, "levelRoll": "1d8" },
+
+					{ "name": "Bard", "from": 241, "to": 243, "levelRoll": "1d6" },
+					{ "name": "Cleric", "from": 244, "to": 244, "levelRoll": "1d6" },
+					{ "name": "Favored Soul (CDiv, 6)", "from": 245, "to": 245, "levelRoll": "1d6" },
+					{ "name": "Druid", "from": 246, "to": 246, "levelRoll": "1d6" },
+					{ "name": "Sorcerer", "from": 247, "to": 249, "levelRoll": "1d4" },
+					{ "name": "Wizard", "from": 250, "to": 250, "levelRoll": "1d4" }
+				]
+			},
+			{
+				"name": "Catfolk",
+				"subName": "lion",
+				"pcChance": 5,
+				"from": 21,
+				"to": 28,
+				"npcClasses": [
+					{ "name": "Commoner", "from": 1, "to": 182, "levelRoll": "4d4" },
+					{ "name": "Warrior", "from": 183, "to": 192, "levelRoll": "2d4" },
+					{ "name": "Expert", "from": 193, "to": 198, "levelRoll": "3d4" },
+					{ "name": "Adept", "from": 199, "to": 199, "levelRoll": "1d6" },
+					{ "name": "Aristocrat", "from": 200, "to": 200, "levelRoll": "1d4" }
+				],
+				"pcClasses": [
+					{ "name": "Barbarian", "from": 201, "to": 210, "levelRoll": "1d4" },
+					{ "name": "Fighter", "from": 211, "to": 220, "levelRoll": "1d8" },
+					{ "name": "Rogue", "from": 221, "to": 230, "levelRoll": "1d8" },
+					{ "name": "Scout (CAdv, 10)", "from": 231, "to": 240, "levelRoll": "1d8" },
+
+					{ "name": "Bard", "from": 241, "to": 242, "levelRoll": "1d6" },
+					{ "name": "Cleric", "from": 243, "to": 244, "levelRoll": "1d6" },
+					{ "name": "Favored Soul (CDiv, 6)", "from": 245, "to": 246, "levelRoll": "1d6" },
+					{ "name": "Druid", "from": 247, "to": 247, "levelRoll": "1d6" },
+					{ "name": "Sorcerer", "from": 248, "to": 249, "levelRoll": "1d4" },
+					{ "name": "Warlock (CArc, 5)", "from": 250, "to": 250, "levelRoll": "1d4" }
+				]
+			},
+			{
+				"name": "Catfolk",
+				"subName": "tiger",
+				"pcChance": 5,
+				"from": 29,
+				"to": 32,
+				"npcClasses": [
+					{ "name": "Commoner", "from": 1, "to": 182, "levelRoll": "4d4" },
+					{ "name": "Warrior", "from": 183, "to": 192, "levelRoll": "2d4" },
+					{ "name": "Expert", "from": 193, "to": 198, "levelRoll": "3d4" },
+					{ "name": "Adept", "from": 199, "to": 199, "levelRoll": "1d6" },
+					{ "name": "Aristocrat", "from": 200, "to": 200, "levelRoll": "1d4" }
+				],
+				"pcClasses": [
+					{ "name": "Barbarian", "from": 201, "to": 210, "levelRoll": "1d4" },
+					{ "name": "Fighter", "from": 211, "to": 215, "levelRoll": "1d8" },
+					{ "name": "Ranger", "from": 216, "to": 225, "levelRoll": "1d3" },
+					{ "name": "Rogue", "from": 226, "to": 230, "levelRoll": "1d8" },
+					{ "name": "Scout (CAdv, 10)", "from": 231, "to": 240, "levelRoll": "1d8" },
+
+					{ "name": "Bard", "from": 241, "to": 242, "levelRoll": "1d6" },
+					{ "name": "Cleric", "from": 243, "to": 243, "levelRoll": "1d6" },
+					{ "name": "Favored Soul (CDiv, 6)", "from": 244, "to": 244, "levelRoll": "1d6" },
+					{ "name": "Druid", "from": 245, "to": 247, "levelRoll": "1d6" },
+					{ "name": "Sorcerer", "from": 248, "to": 250, "levelRoll": "1d4" }
+				]
+			},
+			{
+				"name": "Catfolk",
+				"subName": "leopard",
+				"pcChance": 5,
+				"from": 33,
+				"to": 35,
+				"npcClasses": [
+					{ "name": "Commoner", "from": 1, "to": 182, "levelRoll": "4d4" },
+					{ "name": "Warrior", "from": 183, "to": 192, "levelRoll": "2d4" },
+					{ "name": "Expert", "from": 193, "to": 198, "levelRoll": "3d4" },
+					{ "name": "Adept", "from": 199, "to": 199, "levelRoll": "1d6" },
+					{ "name": "Aristocrat", "from": 200, "to": 200, "levelRoll": "1d4" }
+				],
+				"pcClasses": [
+					{ "name": "Barbarian", "from": 201, "to": 206, "levelRoll": "1d4" },
+					{ "name": "Rogue", "from": 207, "to": 218, "levelRoll": "1d8" },
+					{ "name": "Scout (CAdv, 10)", "from": 219, "to": 230, "levelRoll": "1d8" },
+
+					{ "name": "Bard", "from": 231, "to": 235, "levelRoll": "1d6" },
+					{ "name": "Sorcerer", "from": 236, "to": 240, "levelRoll": "1d4" },
+					{ "name": "Wizard", "from": 241, "to": 245, "levelRoll": "1d4" },
+					{ "name": "Duskblade (PH2, 19)", "from": 246, "to": 247, "levelRoll": "1d4" },
+					{ "name": "Warlock (CArc, 5)", "from": 248, "to": 248, "levelRoll": "1d4" },
+					{ "name": "Warmage (CArc, 10)", "from": 249, "to": 250, "levelRoll": "1d4" }
+				]
+			},
+			{
+				"name": "Catfolk",
+				"subName": "cheetah",
+				"pcChance": 5,
+				"from": 36,
+				"to": 40,
+				"npcClasses": [
+					{ "name": "Commoner", "from": 1, "to": 182, "levelRoll": "4d4" },
+					{ "name": "Warrior", "from": 183, "to": 192, "levelRoll": "2d4" },
+					{ "name": "Expert", "from": 193, "to": 198, "levelRoll": "3d4" },
+					{ "name": "Adept", "from": 199, "to": 199, "levelRoll": "1d6" },
+					{ "name": "Aristocrat", "from": 200, "to": 200, "levelRoll": "1d4" }
+				],
+				"pcClasses": [
+					{ "name": "Ranger", "from": 201, "to": 205, "levelRoll": "1d3" },
+					{ "name": "Rogue", "from": 206, "to": 215, "levelRoll": "1d8" },
+					{ "name": "Scout (CAdv, 10)", "from": 216, "to": 220, "levelRoll": "1d8" },
+
+					{ "name": "Bard", "from": 221, "to": 224, "levelRoll": "1d6" },
+					{ "name": "Cleric", "from": 225, "to": 228, "levelRoll": "1d6" },
+					{ "name": "Favored Soul (CDiv, 6)", "from": 229, "to": 230, "levelRoll": "1d6" },
+					{ "name": "Druid", "from": 231, "to": 234, "levelRoll": "1d6" },
+					{ "name": "Sorcerer", "from": 235, "to": 238, "levelRoll": "1d4" },
+					{ "name": "Wizard", "from": 239, "to": 242, "levelRoll": "1d4" },
+					{ "name": "Duskblade (PH2, 19)", "from": 243, "to": 245, "levelRoll": "1d4" },
+					{ "name": "Warlock (CArc, 5)", "from": 246, "to": 247, "levelRoll": "1d4" },
+					{ "name": "Warmage (CArc, 10)", "from": 248, "to": 250, "levelRoll": "1d4" }
+				]
+			},
+			{
+				"name": "Human",
+				"pcChance": 5,
+				"from": 41,
+				"to": 45,
+				"npcClasses": [
+					{ "name": "Commoner", "from": 1, "to": 182, "levelRoll": "4d4" },
+					{ "name": "Warrior", "from": 183, "to": 192, "levelRoll": "2d4" },
+					{ "name": "Expert", "from": 193, "to": 198, "levelRoll": "3d4" },
+					{ "name": "Aristocrat", "from": 199, "to": 200, "levelRoll": "1d4" }
+				],
+				"pcClasses": [
+					{ "name": "Barbarian", "from": 1, "to": 20, "levelRoll": "1d4" },
+					{ "name": "Fighter", "from": 21, "to": 40, "levelRoll": "1d8" },
+					{ "name": "Monk", "from": 41, "to": 55, "levelRoll": "1d4" },
+					{ "name": "Rogue", "from": 56, "to": 75, "levelRoll": "1d8" },
+					{ "name": "Scout (CAdv, 10)", "from": 76, "to": 95, "levelRoll": "1d8" },
+
+					{ "name": "Cleric", "from": 96, "to": 96, "levelRoll": "1d6" },
+					{ "name": "Favored Soul (CDiv, 6)", "from": 97, "to": 97, "levelRoll": "1d6" },
+					{ "name": "Druid", "from": 98, "to": 98, "levelRoll": "1d6" },
+					{ "name": "Sorcerer", "from": 99, "to": 100, "levelRoll": "1d4" }
+				]
+			},
+			{
+				"name": "Dwarf",
+				"pcChance": 5,
+				"from": 46,
+				"to": 50,
+				"npcClasses": [
+					{ "name": "Commoner", "from": 1, "to": 182, "levelRoll": "4d4" },
+					{ "name": "Warrior", "from": 183, "to": 192, "levelRoll": "2d4" },
+					{ "name": "Expert", "from": 193, "to": 198, "levelRoll": "3d4" },
+					{ "name": "Adept", "from": 199, "to": 199, "levelRoll": "1d6" },
+					{ "name": "Aristocrat", "from": 200, "to": 200, "levelRoll": "1d4" }
+				],
+				"pcClasses": [
+					{ "name": "Barbarian", "from": 1, "to": 20, "levelRoll": "1d4" },
+					{ "name": "Fighter", "from": 21, "to": 40, "levelRoll": "1d8" },
+					{ "name": "Monk", "from": 41, "to": 50, "levelRoll": "1d4" },
+					{ "name": "Paladin", "from": 51, "to": 65, "levelRoll": "1d3" },
+					{ "name": "Rogue", "from": 66, "to": 75, "levelRoll": "1d8" },
+
+					{ "name": "Cleric", "from": 76, "to": 85, "levelRoll": "1d6" },
+					{ "name": "Favored Soul (CDiv, 6)", "from": 86, "to": 95, "levelRoll": "1d6" },
+					{ "name": "Druid", "from": 96, "to": 96, "levelRoll": "1d6" },
+					{ "name": "Wizard", "from": 97, "to": 99, "levelRoll": "1d4" },
+					{ "name": "Warlock (CArc, 5)", "from": 100, "to": 100, "levelRoll": "1d4" }
+				]
+			},
+			{
+				"name": "Elf",
+				"pcChance": 5,
+				"from": 51,
+				"to": 65,
+				"npcClasses": [
+					{ "name": "Commoner", "from": 1, "to": 182, "levelRoll": "4d4" },
+					{ "name": "Warrior", "from": 183, "to": 192, "levelRoll": "2d4" },
+					{ "name": "Expert", "from": 193, "to": 198, "levelRoll": "3d4" },
+					{ "name": "Adept", "from": 199, "to": 199, "levelRoll": "1d6" },
+					{ "name": "Aristocrat", "from": 200, "to": 200, "levelRoll": "1d4" }
+				],
+				"pcClasses": [
+					{ "name": "Fighter", "from": 1, "to": 5, "levelRoll": "1d8" },
+					{ "name": "Ranger", "from": 6, "to": 15, "levelRoll": "1d3" },
+					{ "name": "Rogue", "from": 16, "to": 30, "levelRoll": "1d8" },
+					{ "name": "Scout (CAdv, 10)", "from": 31, "to": 40, "levelRoll": "1d8" },
+
+					{ "name": "Bard", "from": 41, "to": 50, "levelRoll": "1d6" },
+					{ "name": "Cleric", "from": 51, "to": 55, "levelRoll": "1d6" },
+					{ "name": "Favored Soul (CDiv, 6)", "from": 56, "to": 60, "levelRoll": "1d6" },
+					{ "name": "Druid", "from": 61, "to": 70, "levelRoll": "1d6" },
+					{ "name": "Sorcerer", "from": 71, "to": 75, "levelRoll": "1d4" },
+					{ "name": "Wizard", "from": 76, "to": 86, "levelRoll": "1d4" },
+					{ "name": "Duskblade (PH2, 19)", "from": 87, "to": 93, "levelRoll": "1d4" },
+					{ "name": "Warlock (CArc, 5)", "from": 94, "to": 95, "levelRoll": "1d4" },
+					{ "name": "Warmage (CArc, 10)", "from": 96, "to": 100, "levelRoll": "1d4" }
+				]
+			},
+			{
+				"name": "Gnome",
+				"pcChance": 5,
+				"from": 66,
+				"to": 69,
+				"npcClasses": [
+					{ "name": "Commoner", "from": 1, "to": 182, "levelRoll": "4d4" },
+					{ "name": "Warrior", "from": 183, "to": 192, "levelRoll": "2d4" },
+					{ "name": "Expert", "from": 193, "to": 198, "levelRoll": "3d4" },
+					{ "name": "Adept", "from": 199, "to": 199, "levelRoll": "1d6" },
+					{ "name": "Aristocrat", "from": 200, "to": 200, "levelRoll": "1d4" }
+				],
+				"pcClasses": [
+					{ "name": "Barbarian", "from": 1, "to": 5, "levelRoll": "1d4" },
+					{ "name": "Monk", "from": 6, "to": 10, "levelRoll": "1d4" },
+					{ "name": "Rogue", "from": 11, "to": 25, "levelRoll": "1d8" },
+					{ "name": "Scout (CAdv, 10)", "from": 26, "to": 35, "levelRoll": "1d8" },
+
+					{ "name": "Bard", "from": 36, "to": 55, "levelRoll": "1d6" },
+					{ "name": "Cleric", "from": 56, "to": 65, "levelRoll": "1d6" },
+					{ "name": "Favored Soul (CDiv, 6)", "from": 66, "to": 70, "levelRoll": "1d6" },
+					{ "name": "Druid", "from": 71, "to": 85, "levelRoll": "1d6" },
+					{ "name": "Sorcerer", "from": 86, "to": 90, "levelRoll": "1d4" },
+					{ "name": "Wizard", "from": 91, "to": 100, "levelRoll": "1d4" }
+				]
+			},
+			{
+				"name": "Half-elf",
+				"pcChance": 10,
+				"from": 70,
+				"to": 75,
+				"npcClasses": [
+					{ "name": "Commoner", "from": 1, "to": 182, "levelRoll": "4d4" },
+					{ "name": "Warrior", "from": 183, "to": 192, "levelRoll": "2d4" },
+					{ "name": "Expert", "from": 193, "to": 198, "levelRoll": "3d4" },
+					{ "name": "Adept", "from": 199, "to": 199, "levelRoll": "1d6" },
+					{ "name": "Aristocrat", "from": 200, "to": 200, "levelRoll": "1d4" }
+				],
+				"pcClasses": [
+					{ "name": "Fighter", "from": 1, "to": 5, "levelRoll": "1d8" },
+					{ "name": "Monk", "from": 6, "to": 10, "levelRoll": "1d4" },
+					{ "name": "Ranger", "from": 11, "to": 25, "levelRoll": "1d3" },
+					{ "name": "Rogue", "from": 26, "to": 40, "levelRoll": "1d8" },
+					{ "name": "Scout (CAdv, 10)", "from": 41, "to": 45, "levelRoll": "1d8" },
+
+					{ "name": "Bard", "from": 46, "to": 55, "levelRoll": "1d6" },
+					{ "name": "Cleric", "from": 56, "to": 60, "levelRoll": "1d6" },
+					{ "name": "Druid", "from": 61, "to": 70, "levelRoll": "1d6" },
+					{ "name": "Sorcerer", "from": 71, "to": 75, "levelRoll": "1d4" },
+					{ "name": "Wizard", "from": 76, "to": 85, "levelRoll": "1d4" },
+					{ "name": "Duskblade (PH2, 19)", "from": 86, "to": 95, "levelRoll": "1d4" },
+					{ "name": "Warmage (CArc, 10)", "from": 96, "to": 100, "levelRoll": "1d4" }
+				]
+			},
+			{
+				"name": "Half-orc",
+				"pcChance": 10,
+				"from": 76,
+				"to": 80,
+				"npcClasses": [
+					{ "name": "Commoner", "from": 1, "to": 182, "levelRoll": "4d4" },
+					{ "name": "Warrior", "from": 183, "to": 192, "levelRoll": "2d4" },
+					{ "name": "Expert", "from": 193, "to": 198, "levelRoll": "3d4" },
+					{ "name": "Adept", "from": 199, "to": 199, "levelRoll": "1d6" },
+					{ "name": "Aristocrat", "from": 200, "to": 200, "levelRoll": "1d4" }
+				],
+				"pcClasses": [
+					{ "name": "Barbarian", "from": 1, "to": 20, "levelRoll": "1d4" },
+					{ "name": "Fighter", "from": 21, "to": 40, "levelRoll": "1d8" },
+					{ "name": "Monk", "from": 41, "to": 50, "levelRoll": "1d4" },
+					{ "name": "Ranger", "from": 51, "to": 65, "levelRoll": "1d3" },
+					{ "name": "Rogue", "from": 66, "to": 80, "levelRoll": "1d8" },
+
+					{ "name": "Cleric", "from": 81, "to": 83, "levelRoll": "1d6" },
+					{ "name": "Druid", "from": 84, "to": 85, "levelRoll": "1d6" },
+					{ "name": "Sorcerer", "from": 86, "to": 89, "levelRoll": "1d4" },
+					{ "name": "Wizard", "from": 90, "to": 90, "levelRoll": "1d4" },
+					{ "name": "Dragon Shaman (PH2, 12)", "from": 91, "to": 95, "levelRoll": "1d4" },
+					{ "name": "Warlock (CArc, 5)", "from": 96, "to": 100, "levelRoll": "1d4" }
+				]
+			},
+			{
+				"name": "Halfling",
+				"pcChance": 5,
+				"from": 81,
+				"to": 86,
+				"npcClasses": [
+					{ "name": "Commoner", "from": 1, "to": 182, "levelRoll": "4d4" },
+					{ "name": "Warrior", "from": 183, "to": 192, "levelRoll": "2d4" },
+					{ "name": "Expert", "from": 193, "to": 198, "levelRoll": "3d4" },
+					{ "name": "Adept", "from": 199, "to": 199, "levelRoll": "1d6" },
+					{ "name": "Aristocrat", "from": 200, "to": 200, "levelRoll": "1d4" }
+				],
+				"pcClasses": [
+					{ "name": "Barbarian", "from": 1, "to": 1, "levelRoll": "1d4" },
+					{ "name": "Ranger", "from": 2, "to": 11, "levelRoll": "1d3" },
+					{ "name": "Rogue", "from": 12, "to": 31, "levelRoll": "1d8" },
+					{ "name": "Scout (CAdv, 10)", "from": 32, "to": 46, "levelRoll": "1d8" },
+
+					{ "name": "Bard", "from": 47, "to": 61, "levelRoll": "1d6" },
+					{ "name": "Cleric", "from": 62, "to": 84, "levelRoll": "1d6" },
+					{ "name": "Favored Soul (CDiv, 6)", "from": 85, "to": 85, "levelRoll": "1d6" },
+					{ "name": "Sorcerer", "from": 86, "to": 90, "levelRoll": "1d4" },
+					{ "name": "Wizard", "from": 91, "to": 100, "levelRoll": "1d4" }
+				]
+			},
+			{
+				"name": "Orc",
+				"pcChance": 5,
+				"from": 87,
+				"to": 89,
+				"npcClasses": [
+					{ "name": "Commoner", "from": 1, "to": 182, "levelRoll": "4d4" },
+					{ "name": "Warrior", "from": 183, "to": 192, "levelRoll": "2d4" },
+					{ "name": "Expert", "from": 193, "to": 198, "levelRoll": "3d4" },
+					{ "name": "Adept", "from": 199, "to": 199, "levelRoll": "1d6" },
+					{ "name": "Aristocrat", "from": 200, "to": 200, "levelRoll": "1d4" }
+				],
+				"pcClasses": [
+					{ "name": "Barbarian", "from": 1, "to": 30, "levelRoll": "1d4" },
+					{ "name": "Fighter", "from": 31, "to": 60, "levelRoll": "1d8" },
+					{ "name": "Monk", "from": 61, "to": 64, "levelRoll": "1d4" },
+					{ "name": "Ranger", "from": 65, "to": 79, "levelRoll": "1d3" },
+					{ "name": "Scout (CAdv, 10)", "from": 80, "to": 84, "levelRoll": "1d8" },
+
+					{ "name": "Bard", "from": 85, "to": 85, "levelRoll": "1d6" },
+					{ "name": "Cleric", "from": 86, "to": 96, "levelRoll": "1d6" },
+					{ "name": "Druid", "from": 97, "to": 99, "levelRoll": "1d6" },
+					{ "name": "Sorcerer", "from": 100, "to": 100, "levelRoll": "1d4" }
+				]
+			},
+			{
+				"name": "Aasimar",
+				"pcChance": 20,
+				"from": 90,
+				"to": 92,
+				"npcClasses": [
+					{ "name": "Commoner", "from": 1, "to": 182, "levelRoll": "4d4" },
+					{ "name": "Warrior", "from": 183, "to": 192, "levelRoll": "2d4" },
+					{ "name": "Expert", "from": 193, "to": 198, "levelRoll": "3d4" },
+					{ "name": "Adept", "from": 199, "to": 199, "levelRoll": "1d6" },
+					{ "name": "Aristocrat", "from": 200, "to": 200, "levelRoll": "1d4" }
+				],
+				"pcClasses": [
+					{ "name": "Fighter", "from": 1, "to": 10, "levelRoll": "1d8" },
+					{ "name": "Monk", "from": 11, "to": 25, "levelRoll": "1d4" },
+					{ "name": "Paladin", "from": 26, "to": 40, "levelRoll": "1d3" },
+
+					{ "name": "Bard", "from": 41, "to": 50, "levelRoll": "1d6" },
+					{ "name": "Cleric", "from": 51, "to": 65, "levelRoll": "1d6" },
+					{ "name": "Favored Soul (CDiv, 6)", "from": 66, "to": 80, "levelRoll": "1d6" },
+					{ "name": "Sorcerer", "from": 81, "to": 85, "levelRoll": "1d4" },
+					{ "name": "Wizard", "from": 86, "to": 95, "levelRoll": "1d4" },
+					{ "name": "Duskblade (PH2, 19)", "from": 96, "to": 100, "levelRoll": "1d4" }
+				]
+			},
+			{
+				"name": "Tiefling",
+				"pcChance": 20,
+				"from": 93,
+				"to": 95,
+				"npcClasses": [
+					{ "name": "Commoner", "from": 1, "to": 182, "levelRoll": "4d4" },
+					{ "name": "Warrior", "from": 183, "to": 192, "levelRoll": "2d4" },
+					{ "name": "Expert", "from": 193, "to": 198, "levelRoll": "3d4" },
+					{ "name": "Adept", "from": 199, "to": 199, "levelRoll": "1d6" },
+					{ "name": "Aristocrat", "from": 200, "to": 200, "levelRoll": "1d4" }
+				],
+				"pcClasses": [
+					{ "name": "Barbarian", "from": 1, "to": 5, "levelRoll": "1d4" },
+					{ "name": "Fighter", "from": 6, "to": 10, "levelRoll": "1d8" },
+					{ "name": "Ranger", "from": 11, "to": 17, "levelRoll": "1d3" },
+					{ "name": "Rogue", "from": 18, "to": 34, "levelRoll": "1d8" },
+					{ "name": "Scout (CAdv, 10)", "from": 35, "to": 39, "levelRoll": "1d8" },
+
+					{ "name": "Cleric", "from": 40, "to": 40, "levelRoll": "1d6" },
+					{ "name": "Favored Soul (CDiv, 6)", "from": 41, "to": 41, "levelRoll": "1d6" },
+					{ "name": "Druid", "from": 42, "to": 46, "levelRoll": "1d6" },
+					{ "name": "Sorcerer", "from": 47, "to": 58, "levelRoll": "1d4" },
+					{ "name": "Wizard", "from": 59, "to": 70, "levelRoll": "1d4" },
+					{ "name": "Duskblade (PH2, 19)", "from": 71, "to": 85, "levelRoll": "1d4" },
+					{ "name": "Warlock (CArc, 5)", "from": 86, "to": 95, "levelRoll": "1d4" },
+					{ "name": "Warmage (CArc, 10)", "from": 96, "to": 100, "levelRoll": "1d4" }
+				]
+			},
+			{
+				"name": "Lizardfolk",
+				"pcChance": 25,
+				"from": 93,
+				"to": 95,
+				"npcClasses": [
+					{ "name": "Commoner", "from": 1, "to": 182, "levelRoll": "4d4" },
+					{ "name": "Warrior", "from": 183, "to": 192, "levelRoll": "2d4" },
+					{ "name": "Expert", "from": 193, "to": 198, "levelRoll": "3d4" },
+					{ "name": "Adept", "from": 199, "to": 199, "levelRoll": "1d6" },
+					{ "name": "Aristocrat", "from": 200, "to": 200, "levelRoll": "1d4" }
+				],
+				"pcClasses": [
+					{ "name": "Barbarian", "from": 1, "to": 20, "levelRoll": "1d4" },
+					{ "name": "Fighter", "from": 21, "to": 35, "levelRoll": "1d8" },
+					{ "name": "Ranger", "from": 36, "to": 60, "levelRoll": "1d3" },
+					{ "name": "Rogue", "from": 61, "to": 70, "levelRoll": "1d8" },
+
+					{ "name": "Bard", "from": 71, "to": 75, "levelRoll": "1d6" },
+					{ "name": "Druid", "from": 76, "to": 90, "levelRoll": "1d6" },
+					{ "name": "Sorcerer", "from": 91, "to": 95, "levelRoll": "1d4" },
+					{ "name": "Dragon Shaman (PH2, 12)", "from": 96, "to": 100, "levelRoll": "1d4" }
+				]
+			},
+			{
+				"name": "Drow (Drustkin)",
+				"pcChance": 10,
+				"from": 93,
+				"to": 95,
+				"npcClasses": [
+					{ "name": "Commoner", "from": 1, "to": 182, "levelRoll": "4d4" },
+					{ "name": "Warrior", "from": 183, "to": 192, "levelRoll": "2d4" },
+					{ "name": "Expert", "from": 193, "to": 198, "levelRoll": "3d4" },
+					{ "name": "Adept", "from": 199, "to": 199, "levelRoll": "1d6" },
+					{ "name": "Aristocrat", "from": 200, "to": 200, "levelRoll": "1d4" }
+				],
+				"pcClasses": [
+					{ "name": "Fighter", "from": 1, "to": 10, "levelRoll": "1d8" },
+					{ "name": "Monk", "from": 11, "to": 11, "levelRoll": "1d4" },
+					{ "name": "Ranger", "from": 12, "to": 16, "levelRoll": "1d3" },
+					{ "name": "Rogue", "from": 17, "to": 31, "levelRoll": "1d8" },
+					{ "name": "Scout (CAdv, 10)", "from": 32, "to": 36, "levelRoll": "1d8" },
+
+					{ "name": "Bard", "from": 37, "to": 46, "levelRoll": "1d6" },
+					{ "name": "Cleric", "from": 47, "to": 56, "levelRoll": "1d6" },
+					{ "name": "Favored Soul (CDiv, 6)", "from": 57, "to": 61, "levelRoll": "1d6" },
+					{ "name": "Druid", "from": 62, "to": 65, "levelRoll": "1d6" },
+					{ "name": "Sorcerer", "from": 66, "to": 70, "levelRoll": "1d4" },
+					{ "name": "Wizard", "from": 71, "to": 80, "levelRoll": "1d4" },
+					{ "name": "Duskblade (PH2, 19)", "from": 81, "to": 90, "levelRoll": "1d4" },
+					{ "name": "Warlock (CArc, 5)", "from": 91, "to": 95, "levelRoll": "1d4" },
+					{ "name": "Warmage (CArc, 10)", "from": 96, "to": 100, "levelRoll": "1d4" }
+				]
+			},
+			{
+				"name": "Half-drow",
+				"pcChance": 20,
+				"from": 93,
+				"to": 95,
+				"npcClasses": [
+					{ "name": "Commoner", "from": 1, "to": 182, "levelRoll": "4d4" },
+					{ "name": "Warrior", "from": 183, "to": 192, "levelRoll": "2d4" },
+					{ "name": "Expert", "from": 193, "to": 198, "levelRoll": "3d4" },
+					{ "name": "Adept", "from": 199, "to": 199, "levelRoll": "1d6" },
+					{ "name": "Aristocrat", "from": 200, "to": 200, "levelRoll": "1d4" }
+				],
+				"pcClasses": [
+					{ "name": "Barbarian", "from": 1, "to": 5, "levelRoll": "1d4" },
+					{ "name": "Fighter", "from": 6, "to": 10, "levelRoll": "1d8" },
+					{ "name": "Monk", "from": 11, "to": 15, "levelRoll": "1d4" },
+					{ "name": "Ranger", "from": 16, "to": 20, "levelRoll": "1d3" },
+					{ "name": "Rogue", "from": 21, "to": 35, "levelRoll": "1d8" },
+					{ "name": "Scout (CAdv, 10)", "from": 36, "to": 40, "levelRoll": "1d8" },
+
+					{ "name": "Bard", "from": 41, "to": 50, "levelRoll": "1d6" },
+					{ "name": "Cleric", "from": 51, "to": 53, "levelRoll": "1d6" },
+					{ "name": "Favored Soul (CDiv, 6)", "from": 54, "to": 55, "levelRoll": "1d6" },
+					{ "name": "Druid", "from": 56, "to": 60, "levelRoll": "1d6" },
+					{ "name": "Sorcerer", "from": 61, "to": 65, "levelRoll": "1d4" },
+					{ "name": "Wizard", "from": 66, "to": 75, "levelRoll": "1d4" },
+					{ "name": "Duskblade (PH2, 19)", "from": 76, "to": 85, "levelRoll": "1d4" },
+					{ "name": "Dragon Shaman (PH2, 12)", "from": 86, "to": 90, "levelRoll": "1d4" },
+					{ "name": "Warlock (CArc, 5)", "from": 91, "to": 95, "levelRoll": "1d4" },
+					{ "name": "Warmage (CArc, 10)", "from": 96, "to": 100, "levelRoll": "1d4" }
+				]
+			}
+		]
+	}
+}

@@ -169,3 +169,15 @@ export function makeValidHash(hash: string) {
 
 	return hash;
 }
+
+export function getRandomItemFromRange<T extends { from: number; to: number }>(items: T[], sort = false): T {
+	let sortedItems = [...items];
+
+	if (sort) {
+		sortedItems.sort((a, b) => a.from - b.from);
+	}
+
+	const value = getRndInteger(sortedItems.firstElement().from, sortedItems.lastElement().to);
+
+	return sortedItems.find((item) => isInRange(value, item.from, item.to));
+}

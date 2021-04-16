@@ -135,4 +135,12 @@ export function makeValidHash(hash) {
     }
     return hash;
 }
+export function getRandomItemFromRange(items, sort = false) {
+    let sortedItems = [...items];
+    if (sort) {
+        sortedItems.sort((a, b) => a.from - b.from);
+    }
+    const value = getRndInteger(sortedItems.firstElement().from, sortedItems.lastElement().to);
+    return sortedItems.find((item) => isInRange(value, item.from, item.to));
+}
 //# sourceMappingURL=utilities.js.map

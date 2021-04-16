@@ -1,10 +1,8 @@
 import { globals } from "../globals.js";
+import { DiceRoll } from "../roll.js";
 import * as Utilities from "../utilities.js";
-const instructions = Object.freeze(`
-To generate a birthday, enter the character's age in the input below and click the 'Generate Birthday' button.
-The birthday, along with how long ago it was, will be displayed directly below this sentence.
-`);
 const randomOption = "Random";
+const noneOption = "None";
 class SexGeneratorElement extends HTMLElement {
     constructor() {
         super();
@@ -31,6 +29,13 @@ class SexGeneratorElement extends HTMLElement {
         data = document.createElement("td");
         data.appendChild(this.sexSelect);
         row.appendChild(data);
+        row = document.createElement("tr");
+        table.appendChild(row);
+        row.appendChild(Utilities.CreateTableData("<b>Setting:</b>"));
+        data = document.createElement("td");
+        data.appendChild(this.settingSelect);
+        row.appendChild(data);
+        table.appendChild(this.BuildCommunityModifier());
         row = document.createElement("tr");
         table.appendChild(row);
         data = document.createElement("td");
@@ -70,8 +75,11 @@ class SexGeneratorElement extends HTMLElement {
         this.races = [];
         this.raceSelect = document.createElement("select");
         this.sexSelect = document.createElement("select");
+        this.settingSelect = document.createElement("select");
         this.raceSelect.id = "race-select-box";
         this.sexSelect.id = "sex-select-box";
+        this.settingSelect.id = "setting-select-box";
+        this.settingSelect.onchange = () => this.OnSettingChanged();
         let option;
         option = document.createElement("option");
         option.value = randomOption;
@@ -99,6 +107,38 @@ class SexGeneratorElement extends HTMLElement {
             option.text = sexRange.value;
             this.sexSelect.appendChild(option);
         });
+        option = document.createElement("option");
+        option.value = noneOption;
+        option.text = noneOption;
+        this.settingSelect.appendChild(option);
+        globals.randomRaceTables.ids.forEach((id) => {
+            option = document.createElement("option");
+            option.value = id;
+            option.text = id;
+            this.settingSelect.appendChild(option);
+        });
+    }
+    BuildCommunityModifier() {
+        this.communityModifierContainer = document.createElement("tr");
+        this.communityModifierContainer.style.display = "none";
+        this.communityModifierContainer.appendChild(Utilities.CreateTableData("<b>Level Modifier:</b>"));
+        const data = document.createElement("td");
+        this.communityModifierInput = document.createElement("input");
+        this.communityModifierInput.type = "number";
+        this.communityModifierInput.valueAsNumber = 1;
+        this.communityModifierInput.id = "community-modifier-input";
+        data.appendChild(this.communityModifierInput);
+        this.communityModifierContainer.appendChild(data);
+        return this.communityModifierContainer;
+    }
+    OnSettingChanged() {
+        if (this.settingSelect.value === noneOption) {
+            this.communityModifierContainer.style.display = "none";
+        }
+        else {
+            this.communityModifierContainer.style.display = "table-row";
+            this.communityModifierInput.valueAsNumber = 0;
+        }
     }
     OnGenerateClick() {
         this.output.innerHTML = "";
@@ -113,6 +153,9 @@ class SexGeneratorElement extends HTMLElement {
         div.classList.add("tile");
         this.output.appendChild(div);
         div.innerHTML = '<i class="power">Race:</i> ' + sexInfo.race + '<br/>\n<i class="power">Sex:</i> ' + sexInfo.sex;
+        if (sexInfo.class) {
+            div.innerHTML += '<br/><i class="power">Class:</i> ' + sexInfo.class + " (" + sexInfo.level + ")";
+        }
         if (sexInfo.dickLength) {
             div.innerHTML += '<br/>\n<i class="power">Dick Length:</i> ' + sexInfo.dickLength + '"';
         }
@@ -121,14 +164,31 @@ class SexGeneratorElement extends HTMLElement {
         }
     }
     GenerateSexualCharacteristics() {
+        let raceSexualFeatures;
         let race;
         let sex;
         if (this.raceSelect.value === randomOption) {
-            race = this.races[Utilities.getRndInteger(0, this.races.length - 1)];
+            let raceTable;
+            if (this.settingSelect.value !== noneOption) {
+                raceTable = globals.randomRaceTables.values[this.settingSelect.value];
+            }
+            if (raceTable) {
+                race = Utilities.getRandomItemFromRange(raceTable);
+                raceSexualFeatures = this.races.find((r) => r.races.firstElement() === race.name);
+            }
+            else {
+                raceSexualFeatures = this.races[Utilities.getRndInteger(0, this.races.length - 1)];
+            }
         }
         else {
             let toFind = this.raceSelect.value;
-            race = this.races.find((race) => race.races.firstElement() === toFind);
+            raceSexualFeatures = this.races.find((race) => race.races.firstElement() === toFind);
+            if (this.settingSelect.value !== noneOption) {
+                const raceTable = globals.randomRaceTables.values[this.settingSelect.value];
+                if (raceTable) {
+                    race = raceTable.find((r) => r.name === toFind);
+                }
+            }
         }
         if (this.sexSelect.value === randomOption) {
             sex = this.GetRandomSex();
@@ -136,13 +196,15 @@ class SexGeneratorElement extends HTMLElement {
         else {
             sex = globals.sexRanges.find((sexRange) => sexRange.value === this.sexSelect.value);
         }
-        const toReturn = { race: race.races.firstElement(), sex: sex.value };
+        const toReturn = { race: raceSexualFeatures.races.firstElement(), sex: sex.value };
         if (sex.hasDick) {
-            toReturn.dickLength = this.isHeroicCheckbox.checked ? race.heroicDickLength.roll().total : race.dickLength.roll().total;
+            toReturn.dickLength = this.isHeroicCheckbox.checked
+                ? raceSexualFeatures.heroicDickLength.roll().total
+                : raceSexualFeatures.dickLength.roll().total;
         }
         if (sex.hasBoobs) {
-            if (race.breastSize) {
-                const boobsRoll = race.breastSize.roll().total;
+            if (raceSexualFeatures.breastSize) {
+                const boobsRoll = raceSexualFeatures.breastSize.roll().total;
                 const breastSize = globals.breastSizes.find((size) => size.roll === boobsRoll);
                 toReturn.breastSize = breastSize.inchesSize;
                 toReturn.cupSize = breastSize.cupSize;
@@ -152,11 +214,19 @@ class SexGeneratorElement extends HTMLElement {
                 toReturn.cupSize = "N/A";
             }
         }
+        if (race) {
+            if (race.subName) {
+                toReturn.race += ` (${race.subName})`;
+            }
+            const isPC = Utilities.getRndInteger(1, 100) <= race.pcChance;
+            let characterClass = isPC ? Utilities.getRandomItemFromRange(race.pcClasses) : Utilities.getRandomItemFromRange(race.npcClasses);
+            toReturn.class = characterClass.name;
+            toReturn.level = new DiceRoll(characterClass.levelRoll).roll().total + this.communityModifierInput.valueAsNumber;
+        }
         return toReturn;
     }
     GetRandomSex() {
-        const roll = Utilities.getRndInteger(globals.sexRanges.firstElement().from, globals.sexRanges.lastElement().to);
-        return globals.sexRanges.find((sexRange) => Utilities.isInRange(roll, sexRange.from, sexRange.to));
+        return Utilities.getRandomItemFromRange(globals.sexRanges);
     }
 }
 customElements.define("ap-sex-generator", SexGeneratorElement);
