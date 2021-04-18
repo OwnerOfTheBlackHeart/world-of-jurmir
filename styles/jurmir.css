@@ -273,9 +273,15 @@ li > ap-link-button > a {
 	color: white;
 }
 
-ap-image.character-picture {
+.character-picture,
+.character-picture-container {
 	float: right;
 	margin-left: 5px;
+}
+
+.character-picture-container {
+	display: inline-block;
+	text-align: right;
 }
 
 .power {
