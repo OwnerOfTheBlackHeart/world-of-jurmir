@@ -158,6 +158,7 @@ export const nobleNav = [
     new PageInfo(undefined, "images/npcs/chonk.jpg", "", "chonk-img", true),
     new PageInfo(undefined, "images/npcs/lola-ward.jpg", "", "lola-ward-img", true),
     new PageInfo(undefined, "images/npcs/juliette-walker.jpg", "", "juliette-walker-img", true),
+    new PageInfo(undefined, "images/npcs/juliette-walker-alt.jpg", "", "juliette-walker-alt-img", true),
     new PageInfo(undefined, "http://anthonyparsch.com/images/noble-map.png", "", "map-img", true),
     new PageInfo(undefined, "images/creatures/red-knight.jpg", "", "red-knight-img", true),
     new PageInfo(undefined, "images/creatures/red-squire.jpg", "", "red-squire-img", true),
