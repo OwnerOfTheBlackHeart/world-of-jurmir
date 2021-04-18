@@ -1,6 +1,165 @@
 <h1>Lola Ward, Human Rogue</h1>
 <ap-image linkName="noble-lola-ward-img" class="character-picture" height="500">Picture of Lola</ap-image>
-Race: Human<br/>
-Sex: Female<br/>
-Class: Rogue (8)<br/>
-Cup Size: D<br/>
+<ap-basic-table character-table>
+	[
+		["Size/Type:", "Medium Humanoid (human)"],
+		["Hit Dice:", "6d6+6 (26 / 26)"],
+		["Initiative:", "+3"],
+		["Speed:", "30 ft. (6 squares)"],
+		["Armor Class:", "17 (+3 dex, +4 +1 studded leather), touch 13, flat-footed 14"],
+		["Base Attack/Grapple:", "+4/+5"],
+		["Attack:", "Mwk shortsword +9 melee (1d6+1/19-20x2) or mwk composite shortbow +8 ranged (1d6+1/x3)"],
+		["Full Attack:", "Mwk shortsword +7 melee (1d6+1/19-20x2) and mwk shortsword +7 melee (1d6+1/19-20x2); or"],
+		["Full Attack:", "Mwk composite shortbow +8 ranged (1d6+1/x3)"],
+		["Space/Reach:", "5 ft./5 ft."],
+		["Special Attacks:", "Sneak Attack +3d6"],
+        ["Special Qualities:", 
+            "Trapfinding, evasion, trapsense +2, uncanny dodge"
+        ],
+		["Saves:", "Fort +3, Ref +8, Will +3"],
+		["Abilities:", "Str 12, Dex 17, Con 13, Int 14, Wis 12, Cha 14"],
+		["Skills:", 
+            "Appraise +11, Balance +12, Climb +10, Disable Device +11, Listen +12, Move Silently +12, Open Lock +12, Perform (sex) +11, Perform (dance) +9, ",
+            "Search +9, Spot +12"
+        ],
+		["Feats:", "Two-Weapon Fighting, Alertness, Weapon Finesse, Weapon Focus (shortsword)"],
+		["Challenge Rating:", "6"],
+		["Languages:", "Common, Infernal, Halfling, Feline, Elven"],
+		["Alignment:", "NE"],
+        ["Class Levels:", "Rogue 6"],
+        ["Experience:", "15,000 / 21,000"]
+	]
+</ap-basic-table>
+
+<br/>
+
+<div class="table-container">
+	<div class="table-column">
+		<ap-skill-chart>
+			[
+				["Armor Check Penalty", 0, ""],
+                ["Appraise", 9, ""],
+                ["Balance", 9, ""],
+                ["Climb", 9, ""],
+                ["Disable Device", 9, ""],
+                ["Listen", 9, "+2 feat"],
+                ["Move Silently", 9, ""],
+                ["Open Lock", 9, ""],
+                ["Perform (sex)", 9, ""],
+                ["Perform (dance)", 7, ""],
+                ["Search", 7, ""],
+                ["Spot", 9, "+2 feat"],
+                ["Speak Language", 2, ""]
+			]
+		</ap-skill-chart>
+	</div>
+	<div class="table-column">
+		<ap-enc-chart strength="12">
+			[
+                [0, 0, 39, 50],
+                ["+1 studded leather armor", 1, [0, 1175, 0, 0], 20],
+                ["Mwk shortsword", 2, [0, 310, 0, 0], 2],
+                ["Mwk composite shortbow (12)", 1, [0, 475, 0, 0], 2],
+                ["Arrows", 20, [0, 0, 0, 5], 0.15],
+                ["Handy Haversack", 1, [0, 2000, 0, 0], 5],
+                {
+					"name":"Handy haversack main pouch",
+                    "carryWeight":80,
+                    "contents":[
+						[88, 65, 0, 0],
+                        ["Waterskin", 1, [0, 1, 0, 0], 4],
+                        ["Whetstone", 1, [0, 0, 0, 2], 1],
+                        ["Tent", 1, [0, 10, 0, 0], 20],
+                        ["Courtier's Outfit (with jewelry)", 1, [0, 80, 0, 0], 6],
+                        ["Explorer's Outfit", 1, [0, 10, 0, 0], 8],
+                        ["Entertainer's Outfit", 1, [0, 3, 0, 0], 4]
+                    ]
+				},
+                {
+					"name":"Handy haversack left pouch",
+                    "carryWeight":20,
+                    "contents":[
+						[0, 0, 0, 0],
+						["Bedroll", 1, [0, 0, 1, 0], 5],
+                        ["Blanket, winter", 1, [0, 0, 5, 0], 3],
+                        ["Soap (per lb.)", 1, [0, 0, 5, 0], 1],
+                        ["Rations (per day)", 5, [0, 0, 5, 0], 1],
+                        ["Potion of Heal Minor Wounds", 2, [0, 50, 0, 0], 0.1]
+                    ]
+				},
+                {
+					"name":"Handy haversack right pouch",
+                    "carryWeight":20,
+                    "contents":[
+						[0, 0, 0, 0],
+						["Thieves’ tools, masterwork", 1, [0, 100, 0, 0], 2],
+						["Climber's kit", 1, [0, 100, 0, 0], 5],
+						["Magnifying glass", 1, [0, 100, 0, 0], 0],
+						["Sack", 1, [0, 0, 1, 0], 0.5],
+                        ["Ink, ounce", 1, [0, 8, 0, 0], 0],
+                        ["Ink vial", 1, [0, 1, 0, 0], 0.1],
+                        ["Ink pen", 1, [0, 0, 1, 0], 0],
+                        ["Spellbook (journal)", 1, [0, 15, 0, 0], 3]
+                    ]
+				}
+			]
+		</ap-enc-chart>
+	</div>
+</div>
+
+<h2 id="description">Description</h2>
+<p>
+    Lola is 5' 5" and 133 lbs with lower back length black hair, brown eyes, D cup titties, and deeply tanned skin. She has runner's muscles
+    and a form with fine curves, though she does have a burn scar on her stomach, just to the left of her belly button. Lola's typical city
+    attire is a dark green shirt and leather vest with leather skirt, belt, sturdy boots, and a cloak, though she will occasionally wear a pair
+    of wool gloves for warmth. She often includes a simple scarf.
+</p>
+<p>
+	Lola's entertainer's outfit is a bright pink, long sleeve undershirt with a yellow sleeveless coat and dark purple pants with a pair of purple
+    leather shoes and wide-brimmed hat with some kind of large feather sticking out of it.
+</p>
+<p>
+	Lola's courtier's outfit is a silk and bone corset beneath a tight, blue shirt that tucks into a matching skirt, which flares out half a foot on
+    either side, a short headdress with clouds and a sun embroidered into it and a pair of leather boots with stiletto heels. Both the shirt and skirt 
+    have embroidery depicting dogs and cats playing. For jewelry, Lola adds several fine silver bracelets and rings with a small silver pendant that
+    has a tiger eye turquoise embedded in it.
+</p>
+<ap-auth-container permissions="gm lola-personality noble-full">
+    <p>
+        Lola is greedy, opportunistic and considers herself before all others, however, she will work with others when it benefits her, sometimes even for just building
+        up, or maintaining, her reputation. While she doesn't particularly care for rules or laws, she does understand the value of working with people
+        of higher status and will be loyal to them if she has a solid reason to (and if she eventually gains subordinates, she will expect the same from
+        them).
+    </p>
+    <p>
+        Lola is true to her word, but is loathe to give it, especially when she believes that she can't keep it or that it will severely inconvenience her.
+    </p>
+</ap-auth-container>
+
+<h2>Random Findings of Note</h2>
+<ul class="list">
+	<li>Has D cup titties</li>
+    <ap-auth-container permissions="gm elizabeth-books noble-full"><li>Has read 3 of Elizabeth's prior works</li></ap-auth-container>
+</ul>
+
+<h2 id="combat">Combat</h2>
+<p>
+    Lola prefers to skirt around the outside of combat, attacking with her bow, until she spots an opportunity to get around and behind an opponent, at which
+    point she will unleash a flurry with both her shortswords. If she can get into an enemy group undetected, she will move to kill off one, or two, enemies
+    before making her exit.
+</p>
+
+<h2 id="history-and-motivation">History and Motivation</h2>
+<ap-auth-container permissions="gm lola-history noble-full">
+    <p>
+        Lola started her life as a simple beggar, utilizing her status as a child in order to make enough coppers to feed herself. As she grew up, she quickly
+        found that her age was making begging harder and harder, and the food she was eating worth an equally increasing price. To solve that problem, Lola turned
+        to theft, sneaking into homes and businesses while the owners were away in order to steal money and food. While profitable, burglary proved to be unreliable,
+        so Lola sought out a small thieves’ guild in order to get a more reliable flow of marks. When even this proved to be too little, Lola found that her beauty
+        made her sought after by the wealthy and turned to being an escort/prostitute during times when marks were too few for her taste.
+    </p>
+    <p>
+        After some time, Lola discovered the Slayer's Guild and the wealth that her skills allowed her to earn while slaying. Since then, she has worked primarily
+        as a slayer, though she will go after a mark or escort a member of the upper class if the pay is good enough.
+    </p>
+</ap-auth-container>
