@@ -15,17 +15,48 @@
         ["Special Qualities:", 
             "Battle clarity, weapon aptitude, improved uncanny dodge, battle ardor"
         ],
-        ["Saves:", "Fort +8, Ref +3 (+4), Will +4"],
-        ["Abilities:", "Str 19, Dex 16, Con 16, Int 13, Wis 14, Cha 15"],
-        ["Skills:", "Climb +10, Craft (trapmaking) +10, Diplomacy +11, Intimidate +11, Jump +10, Knowledge (local) +10"],
+        ["Saves:", "Fort +8, Ref +3 (+5), Will +4"],
+        ["Abilities:", "Str 19, Dex 16, Con 16, Int 14, Wis 13, Cha 15"],
+        ["Skills:", "Climb +10, Concentration +12, Craft (trapmaking) +10, Diplomacy +11, Intimidate +11, Jump +10, Knowledge (local) +10"],
         ["Feats:", "Improved Shield Bash, Two-Weapon Defense, Monkey Grip (CW 103), Adjusted to Armor, Living in Armor"],
         ["Challenge Rating:", "6"],
-        ["Languages:", "Common, Feline"],
+        ["Languages:", "Common, Feline, Sylvan"],
         ["Alignment:", "N"],
-        ["Class Levels:", "Warblade 6"],
+        ["Class Levels:", "Warblade (ToB 21) 6"],
         ["Experience:", "15,000 / 21,000"]
     ]
 </ap-basic-table>
+
+<!-- LATER: Absolute Steel Stance - +10 move speed, +2 AC with movement -->
+<div style="margin: 14.4px">
+	<i class="power">Stances</i>
+	<ul>
+		<li>Leading the Charge (ToB 92) - 60ft radius, +1/level to damage from allied charges</li>
+		<li>Tactics of the Wolf (ToB 93) - When flanking a foe, Juliette and allies gain 1/2 her level to damage</li>
+	</ul>
+</div>
+
+<!-- Available disciplines Diamond Mind, Iron Heart, Stone Dragon, Tiger Claw, and White Raven -->
+<div style="margin: 14.4px">
+	<i class="power">Level 1 Manuevers</i>
+	<ul>
+        <li>(Readied) Moment of Perfect Mind (ToB 64) - Make concentration check in place of will</li>
+		<li>(Readied) Douse the Flames (ToB 91) - Make a single melee attack. If successful, the target cannot make AoTs.</li>
+        <!-- Consider Stone Bones (1st) - Gain DR -->
+	</ul><br/>
+	<i class="power">Level 2 Manuevers</i>
+	<ul>
+		<li>(Readied) Emerald Razor (ToB 63) - Make a single melee attack. Targets touch AC.</li>
+		<li>(Readied) Tactical Strike (ToB 93) - Make a single melee attack. +2d6 damage and adjacent allies move 5 ft.</li>
+        <!-- Consider Mountain Hammer (2nd) - +2d6 and overcome DR and hardness -->
+	</ul><br/>
+	<i class="power">Level 3 Manuevers</i>
+	<ul>
+		<li>Bonecrusher (ToB 81) - Make a single melee attack with +4d6 damage. On a hit, enemy make con save or +10 to confirm crits.</li>
+		<li>Flesh Ripper (ToB 87) - Make a single melee attack. On a hit, the enemy makes a con save or takes -4 attack and AC for 1 turn.</li>
+        <!-- Consider Lion’s Roar (3rd) - Defeat enemy, allies deal +5 damage -->
+	</ul>
+</div>
 
 <p>
     <i class="power">Battle Clarity (Ex):</i>
@@ -42,16 +73,16 @@
 
 <p>
     <i class="power">Battle Ardor (Ex):</i>
-    The sheer love of battle lends uncanny strength to Juliette's blows.She gains an insight bonus equal to her Intelligence bonus on rolls made to confirm critical hits.
+    The sheer love of battle lends uncanny strength to Juliette's blows. She gains an insight bonus equal to her Intelligence bonus on rolls made to confirm critical hits.
 </p>
 
 <div class="table-container">
 	<div class="table-column">
-        6 skills
 		<ap-skill-chart>
 			[
 				["Armor Check Penalty", -3, ""],
 				["Climb", 9, ""],
+                ["Concentration", 9, ""],
                 ["Craft (trapmaking)", 9, ""],
 				["Diplomacy", 9, ""],
 				["Intimidate", 9, ""],
@@ -86,7 +117,7 @@
     her arms, legs and belly are muscular.
 </p>
 <p>
-    Juliette's typical armor is a suit of chainmail with a black overshirt (possibly died recently in order to improve her odds of being accepted into Nera's service)
+    Juliette's typical armor is a suit of chainmail with a black overshirt (possibly dyed recently in order to improve her odds of being accepted into Nera's service)
     with a set of armor plates that protect her neck and shoulders. She carries a longsword on her left hip.
 </p>
 <ap-auth-container permissions="gm juliette-personality noble-full">
@@ -123,7 +154,7 @@
         with her parents, Juliette left Mirstone, taking her few belongings and her skills with her.
     </p>
     <p>
-        It didn't take her long to fall in with a group of bandits that preyed on the Cherryvale/Elderfield roads, which she stayed in for roughly 2 years
+        Shortly after leaving Mirstone, she fell in with a group of bandits that preyed on the Cherryvale/Elderfield roads, which she stayed in for roughly 2 years
         before the bandit group fell for a trap setup by the <ap-link-button linkName="noble-desserr">Desserr</ap-link-button> guard, which wiped out most 
         of that group. After that, Juliette jumped around with various small bandit groups, always seeming to know just when to need 
         (<ap-link-button linkName="noble-phidove">Phidove</ap-link-button> believes that she had an informant in the guard telling her when to run). 
