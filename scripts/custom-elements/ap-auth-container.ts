@@ -37,6 +37,10 @@ export class AuthContainer extends HTMLElement {
 			this.startingDisplay = this.style.display || this.defaultDisplay || "block";
 		}
 
+		if (this.startingDisplay === "inline" || this.startingDisplay === "inline-block") {
+			this.innerHTML = this.innerHTML.trim();
+		}
+
 		AuthContainers.push(this);
 	}
 
