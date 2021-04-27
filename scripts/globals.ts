@@ -1,7 +1,7 @@
 import { Race } from "./race.js";
 import { DiceRoll } from "./roll.js";
 import { BreastSizeRoll, RaceSexualFeatureRolls, Sex, SexRollRange } from "./sexual-characteristics.js";
-import { Time } from "./time.js";
+import { DateInitializer, Time } from "./time.js";
 
 // TODO: Give some time for everyone to update to at least chrome 89, then use a top level await
 
@@ -98,10 +98,10 @@ export async function LoadGlobalsJson() {
 		fetch("data/race-tables.json").then((response) => response.json() as Promise<OrderedRecord<string, Race[]>>),
 	]);
 
-	globals.nobleCurrentDate = new Time(dateData.nobleCurrentDate.day, dateData.nobleCurrentDate.month, dateData.nobleCurrentDate.year);
-	globals.princeCurrentDate = new Time(dateData.princeCurrentDate.day, dateData.princeCurrentDate.month, dateData.princeCurrentDate.year);
-	globals.aaronCurrentDate = new Time(dateData.aaronCurrentDate.day, dateData.aaronCurrentDate.month, dateData.aaronCurrentDate.year);
-	globals.sbjCurrentDate = new Time(dateData.sbjCurrentDate.day, dateData.sbjCurrentDate.month, dateData.sbjCurrentDate.year);
+	globals.nobleCurrentDate = Time.FromInitializer(dateData.nobleCurrentDate);
+	globals.princeCurrentDate = Time.FromInitializer(dateData.princeCurrentDate);
+	globals.aaronCurrentDate = Time.FromInitializer(dateData.aaronCurrentDate);
+	globals.sbjCurrentDate = Time.FromInitializer(dateData.sbjCurrentDate);
 
 	globals.randomRaceTables = randomRaceTables;
 
@@ -113,12 +113,6 @@ interface DatesJson {
 	princeCurrentDate: DateInitializer;
 	aaronCurrentDate: DateInitializer;
 	sbjCurrentDate: DateInitializer;
-}
-
-interface DateInitializer {
-	day: number;
-	month: number;
-	year: number;
 }
 
 export interface ReputationRank {

@@ -195,6 +195,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "misc/sins-hunt-found-info.html", "Sin's Hunt Found Info", "sins-hunt-found-info"),
 	new PageInfo(undefined, "misc/neras-captured.html", "Random People Nera Has Captured Or Is Working With", "neras-captured"),
 	new PageInfo(undefined, "misc/deathfall-warehouse.html", "Nera's Deathfall Warehouse", "deathfall-warehouse"),
+	new PageInfo(undefined, "misc/elizabeths-works.html", "Elizabeth's Works", "elizabeths-works"),
 
 	new PageInfo(undefined, "images/fang-at-desk.jpg", "", "fang-img", true),
 	new PageInfo(undefined, "images/mysterious-stranger.jpg", "", "mysterious-stranger-img", true),

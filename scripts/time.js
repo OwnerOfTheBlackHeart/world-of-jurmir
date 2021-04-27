@@ -93,6 +93,9 @@ export class Time {
             return this.year - b.year;
         }
     }
+    static FromInitializer(initializer) {
+        return new Time(initializer.day, initializer.month, initializer.year);
+    }
     static Add(time1, time2) {
         let toReturn = new Time();
         toReturn.day = time1.ToDays() + time2.ToDays();

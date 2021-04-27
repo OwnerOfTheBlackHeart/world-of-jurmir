@@ -109,6 +109,10 @@ export class Time {
 		}
 	}
 
+	static FromInitializer(initializer: DateInitializer) {
+		return new Time(initializer.day, initializer.month, initializer.year);
+	}
+
 	static Add(time1: Time, time2: Time) {
 		let toReturn = new Time();
 		toReturn.day = time1.ToDays() + time2.ToDays();
@@ -221,6 +225,12 @@ export class Time {
 			return a.Compare(b);
 		}
 	}
+}
+
+export interface DateInitializer {
+	day: number;
+	month: number;
+	year: number;
 }
 
 export enum Season {

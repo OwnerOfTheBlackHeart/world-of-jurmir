@@ -92,10 +92,10 @@ export async function LoadGlobalsJson() {
             .then((forceRefreshString) => forceRefreshString.trim().toLowerCase() === "true"),
         fetch("data/race-tables.json").then((response) => response.json()),
     ]);
-    globals.nobleCurrentDate = new Time(dateData.nobleCurrentDate.day, dateData.nobleCurrentDate.month, dateData.nobleCurrentDate.year);
-    globals.princeCurrentDate = new Time(dateData.princeCurrentDate.day, dateData.princeCurrentDate.month, dateData.princeCurrentDate.year);
-    globals.aaronCurrentDate = new Time(dateData.aaronCurrentDate.day, dateData.aaronCurrentDate.month, dateData.aaronCurrentDate.year);
-    globals.sbjCurrentDate = new Time(dateData.sbjCurrentDate.day, dateData.sbjCurrentDate.month, dateData.sbjCurrentDate.year);
+    globals.nobleCurrentDate = Time.FromInitializer(dateData.nobleCurrentDate);
+    globals.princeCurrentDate = Time.FromInitializer(dateData.princeCurrentDate);
+    globals.aaronCurrentDate = Time.FromInitializer(dateData.aaronCurrentDate);
+    globals.sbjCurrentDate = Time.FromInitializer(dateData.sbjCurrentDate);
     globals.randomRaceTables = randomRaceTables;
     globals.forceRefresh = forceRefresh;
 }

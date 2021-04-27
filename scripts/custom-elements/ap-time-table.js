@@ -16,10 +16,18 @@ export class TimeTable extends HTMLElement {
             }
             const dates = [];
             data.forEach((row) => {
-                dates.push({
-                    time: new Time(row[0], row[1], row[2]),
-                    note: row[3],
-                });
+                if (Number.isInteger(row[0])) {
+                    dates.push({
+                        time: new Time(row[0], row[1], row[2]),
+                        note: row[3],
+                    });
+                }
+                else {
+                    dates.push({
+                        time: Time.FromInitializer(row[0]),
+                        note: row[1],
+                    });
+                }
             });
             this.rows = dates;
         }
