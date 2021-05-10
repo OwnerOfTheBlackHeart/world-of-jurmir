@@ -1,0 +1,61 @@
+import { DiceRoll } from "../../roll.js";
+import { Bounds, getRandomItemFromRange, getRndInteger } from "../../utilities.js";
+import { BuildPopulationFromTownSize } from "./population.js";
+import { GetTownSizeByName, GetTownSizeByPopulationSize } from "./town-sizes.js";
+export var monstrousPowerCenterBounds = { lower: 96 };
+export function BuildSettlementFromPopulation(population) {
+    return BuildSettlementFromTownSize(GetTownSizeByPopulationSize(population), population);
+}
+export function BuildSettlementFromTownSizeName(name) {
+    return BuildSettlementFromTownSize(GetTownSizeByName(name));
+}
+export function BuildSettlementFromTownSize(townSize, population) {
+    const settlement = {};
+    settlement.townSize = townSize.name;
+    settlement.goldLimit = townSize.goldLimit;
+    settlement.powerCenters = BuildPowerCenters(townSize);
+    settlement.captain = getRandomItemFromRange(SettlementGuardCaptain).name;
+    const [distribution, tempPop] = BuildPopulationFromTownSize(townSize, population);
+    settlement.population = tempPop;
+    settlement.populationDistribution = distribution;
+    return settlement;
+}
+function BuildPowerCenters(townSize) {
+    const powerCenters = [];
+    let rolls = townSize.communityModifier.rolls ? townSize.communityModifier.rolls : 1;
+    for (; rolls > 0; --rolls) {
+        const roll = new DiceRoll({ diceSides: 20, diceCount: 1, bonus: townSize.communityModifier.powerCenterMod }).roll().total;
+        const powerCenter = PowerCenters.find((pc) => Bounds.isInBounds(roll, pc));
+        let powerCenterName;
+        if (powerCenter.canBeMonstrous && Bounds.isInBounds(getRndInteger(1, 100), monstrousPowerCenterBounds)) {
+            powerCenterName = "Monstrous";
+        }
+        else {
+            powerCenterName = powerCenter.type;
+        }
+        powerCenters.push(`${powerCenterName} (${getRandomItemFromRange(PowerCenterAlignment).name})`);
+    }
+    return powerCenters;
+}
+const PowerCenters = Object.freeze([
+    { type: "Conventional", upper: 13, canBeMonstrous: true },
+    { type: "Nonstandard", lower: 14, upper: 18 },
+    { type: "Magical", lower: 19 },
+]);
+const PowerCenterAlignment = Object.freeze([
+    { from: 1, to: 35, name: "LG" },
+    { from: 36, to: 39, name: "NG" },
+    { from: 40, to: 41, name: "CG" },
+    { from: 42, to: 61, name: "LN" },
+    { from: 62, to: 63, name: "N" },
+    { from: 64, to: 64, name: "CN" },
+    { from: 65, to: 90, name: "LE" },
+    { from: 91, to: 98, name: "NE" },
+    { from: 99, to: 100, name: "CE" },
+]);
+const SettlementGuardCaptain = Object.freeze([
+    { from: 1, to: 60, name: "Highest-level warrior" },
+    { from: 61, to: 80, name: "Second highest-level fighter" },
+    { from: 81, to: 100, name: "Highest-level fighter" },
+]);
+//# sourceMappingURL=settlements.js.map

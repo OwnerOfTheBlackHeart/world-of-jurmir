@@ -134,6 +134,10 @@ export function isInRange(value: number, min: number, max: number): boolean {
 	return value >= min && value <= max;
 }
 
+export function isInNumberRange(value: number, range: NumberRange): boolean {
+	return value >= range.from && value <= range.to;
+}
+
 export function compressStringArray(value: string[]): string {
 	if (!value || value.length === 0) {
 		return "";
@@ -170,7 +174,7 @@ export function makeValidHash(hash: string) {
 	return hash;
 }
 
-export function getRandomItemFromRange<T extends { from: number; to: number }>(items: T[], sort = false): T {
+export function getRandomItemFromRange<T extends NumberRange>(items: T[] | Readonly<T[]>, sort = false): T {
 	let sortedItems = [...items];
 
 	if (sort) {
@@ -180,4 +184,34 @@ export function getRandomItemFromRange<T extends { from: number; to: number }>(i
 	const value = getRndInteger(sortedItems.firstElement().from, sortedItems.lastElement().to);
 
 	return sortedItems.find((item) => isInRange(value, item.from, item.to));
+}
+
+export interface NumberRange {
+	from: number;
+	to: number;
+}
+
+export interface NamedNumberRange extends NumberRange {
+	name: string;
+}
+
+export const Bounds = Object.freeze({
+	isInBounds: function (value: number, bounds: NumberBounds): boolean {
+		if (bounds.lower == undefined && bounds.upper == undefined) {
+			return false;
+		} else if (bounds.lower == undefined) {
+			// only upper
+			return value <= bounds.upper;
+		} else if (bounds.upper == undefined) {
+			// only lower
+			return value >= bounds.lower;
+		} else {
+			return isInRange(value, bounds.lower, bounds.upper);
+		}
+	},
+});
+
+export interface NumberBounds {
+	upper?: number;
+	lower?: number;
 }

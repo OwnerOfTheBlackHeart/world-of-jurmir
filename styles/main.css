@@ -107,7 +107,6 @@ a.diceRoller {
 
 pre {
 	font: 1em "Courier New", Courier, mono;
-	background-image: url(../images/tables/odd.png);
 	padding: 20px;
 	display: table;
 	border: 1px solid #e5c3a1;
@@ -295,7 +294,6 @@ li {
 	border-color: #000000;
 	border-width: 1px;
 	border-style: solid;
-	background-image: url(../images/tables/even.png);
 	background-color: transparent;
 	cursor: pointer;
 }

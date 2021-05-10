@@ -58,12 +58,11 @@ form {
 	border-color: #000000;
 	border-width: 1px;
 	border-style: solid;
-	background-image: url(../images/tables/even.png);
 	background-color: transparent;
 }
 
-a.live:link, a.live:visited {
-	background-image: url(../images/liveLink.png);
+a.live:link,
+a.live:visited {
 	background-repeat: no-repeat;
 	background-position: right center;
 	padding-right: 15px;

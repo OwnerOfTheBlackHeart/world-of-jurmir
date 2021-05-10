@@ -2,6 +2,7 @@ import { Race } from "./race.js";
 import { DiceRoll } from "./roll.js";
 import { BreastSizeRoll, RaceSexualFeatureRolls, Sex, SexRollRange } from "./sexual-characteristics.js";
 import { DateInitializer, Time } from "./time.js";
+import { NumberBounds } from "./utilities.js";
 
 // TODO: Give some time for everyone to update to at least chrome 89, then use a top level await
 
@@ -117,11 +118,6 @@ interface DatesJson {
 
 export interface ReputationRank {
 	level: number;
-	xpRange: XpRange;
+	xpRange: NumberBounds;
 	title: string;
-}
-
-export interface XpRange {
-	lower?: number;
-	upper?: number;
 }

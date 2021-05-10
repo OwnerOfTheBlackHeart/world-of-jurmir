@@ -1,6 +1,6 @@
 import { Auth } from "../auth.js";
 
-export class AuthContainer extends HTMLElement {
+export class AuthContainerElement extends HTMLElement {
 	get permissions() {
 		return this.getAttribute("permissions");
 	}
@@ -71,7 +71,7 @@ export class AuthContainer extends HTMLElement {
 	}
 }
 
-customElements.define("ap-auth-container", AuthContainer);
+customElements.define("ap-auth-container", AuthContainerElement);
 
-let AuthContainers: AuthContainer[] = [];
-Auth.onAuthChangedList.push(AuthContainer.UpdateAll);
+let AuthContainers: AuthContainerElement[] = [];
+Auth.onAuthChangedList.push(AuthContainerElement.UpdateAll);

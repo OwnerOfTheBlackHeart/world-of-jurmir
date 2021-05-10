@@ -1,24 +1,19 @@
 <h1>The Capital City of Desserr</h1>
 <h1 class="subtitle">Capital city of the great uncle</h1>
 
-<h2 id="town-information">Town Information</h2>
-<ap-basic-table character-table>
-	[
-		["Town Size:", "Small City"],
-		["Population:", "Approximately 8,000 people"],
-		["Gold Limit:", "15,000 gp"],
-		["Power Center(s):", "Conventional, Magical"],
-		["Power Center Alignment:", "Neutral Good"],
-		["Guard Captain Power:", "Highest level fighter"],
-		["Guard Count:", "80 guards (40 evening shift, 25 day shift, 15 night shift), 400 militiamen"],
-		["Demographics Type:", "Integrated"],
-		["Political System:", "Feudalism"]
-	]
-</ap-basic-table>
-<ap-auth-container permissions="gm desserr-population desserr-full noble-full">
-	<h2 id="population-breakdown">Population Breakdown</h2>
-	<ap-population-table>
-		[
+<ap-settlement-display breakdown-permissions="gm desserr-population desserr-full noble-full">
+	{
+		"townSize": "Small City",
+		"goldLimit": 15000,
+		"powerCenters": [ 
+			"Conventional (NG)", 
+			"Magical <ap-auth-container permissions="gm voczec-alignment desserr-full noble-full" inline>(CE)</ap-auth-container>" 
+		],
+		"captain": "Highest level fighter",
+		"demographicsType": "Integrated",
+		"politicalSystem": "Feudalism",
+		"population": 8000,
+		"populationDistribution": [
 			{"class":"Adepts", "11": 1, "8": 1, "5": 2, "4": 2, "2": 8, "1": 40},
 			{"class":"Aristocrats", "10": 2, "5": 4, "2": 8, "1": 39},
 			{"class":"Commoner", "17": 2, "8": 4, "4": 8, "2": 16, "1": 6997},
@@ -36,8 +31,8 @@
 			{"class":"Sorcerer", "10": 1, "9": 1, "5": 2, "4": 2, "2": 8, "1": 16},
 			{"class":"Wizard", "10": 1, "9": 1, "5": 2, "4": 2, "2": 8, "1": 16}
 		]
-	</ap-population-table>
-</ap-auth-container>
+	}
+</ap-settlement-display>
 <h2 id="organizations-and-monsters">Organizations and Monsters</h2>
 <h3 id="slayers-guild">The Slayers' Guild</h3>
 <p>
@@ -107,6 +102,9 @@
 	Nasshurr is not the friendliest catfolk on the planet and prefers to be left alone while he works at the forge... 
 	unless business is involved. Nasshurr always has time for business.
 </p>
+<p>
+	Nasshurr owns <a href="#hawk-and-fang-goods">Hawk and Fang Goods</a>.
+</p>
 
 <h3 id="fang"><ap-link-button linkName="noble-fang-img">Fang</ap-link-button></h3>
 <p>
@@ -115,20 +113,34 @@
 	clothes, but he does have an enchanted collar with a green gem in it that allows Fang to speak and use 2 spectral
 	hands.
 </p>
+<p>
+	Fang works the front desk at <a href="#hawk-and-fang-goods">Hawk and Fang Goods</a>.
+</p>
 
 <h3 id="rish">Rish</h3>
 <p>
 	Angry irish halfing. About 2' 6" with crazy red hair and emerald green eyes with perfect teeth and many wrinkles on
-	his forehead. Has a gay, lizardfolk butt buddy with slate scales and a patterning of white that makes him look like 
-	a snowy cliff. Rish works at the Horseshoe Tavern during the night as the cook.
+	his forehead. 
+</p>
+<p>
+	Rish is butt buddies with <a href="#siccar">Siccar</a>.
+</p>
+<p>
+	Rish works at the <a href="#horse-shoe-tavern">Horseshoe Tavern</a> during the night as the cook.
 </p>
 
 <h3 id="siccar">Siccar</h3>
 <p>
-	TODO: Rish's butt buddy
+	Siccar is a 5' 11" tall, slate scaled lizardfolk with a patterning of white that makes him look like a snowy cliff.
+</p>
+<p>
+	Siccar is butt buddies with <a href="#rish">Rish</a>.
+</p>
+<p>
+	Siccar works at the <a href="#horse-shoe-tavern">Horseshoe Tavern</a> during the night as the bartender.
 </p>
 
-<h3 id="thunderhammer">Thunderhammer</h3>
+<h3 id="thunderhammer">Krumdar Thunderhammer</h3>
 <p>
 	Dwarf. Likes to drink, but is well cultured. Thinks highly of himself. Is interested in Sariel.
 </p>
@@ -146,6 +158,9 @@
 	making a sword so strong that it could be imbedded in stone or even a sword worthy of being enchanted. While he
 	does recognize that other weapons have their usefulness and place, he believes that swords are the most noble of
 	weapons.
+</p>
+<p>
+	Arthur owns and operates <a href="#arthurs-swordworks">Arthur's Swordworks</a>.
 </p>
 <ap-auth-container permissions="gm desserr-full arthur-pendragon-weapon noble-full kali">
 	<p>
@@ -181,13 +196,17 @@
 <p>
 	Leomaer is a 4' 11" tall, male elf with short, brown hair, light green eyes and perpetually sunburnt skin. He
 	is fat for an elf, appearing almost as wide around as a human a foot taller than him. When he is working the
-	stables of No, We're Not A Petting Zoo he typically wears a thick leather shirt with matching pants that is
-	extremely bland (he claims the stables ruin clothes too fast to have nice working garb). When not working, the
-	attire he wears is usually blue, yellow, or purple and made of silk or wool, depending on time of year.
+	stables of <a href="#no-were-not-a-petting-zoo">No, We're Not A Petting Zoo</a> he typically wears a thick leather 
+	shirt with matching pants that is extremely bland (he claims the stables ruin clothes too fast to have nice working 
+	garb). When not working, the attire he wears is usually blue, yellow, or purple and made of silk or wool, depending 
+	on time of year.
 </p>
 <p>
 	Leomaer tries to be approachable and friendly, but this will usually turn to general annoyance by the end of the
 	day.
+</p>
+<p>
+	Leomaer owns and operates <a href="#no-were-not-a-petting-zoo">No, We're Not A Petting Zoo</a>.
 </p>
 <ap-auth-container permissions="gm desserr-full leomaer-sex noble-full">
 	<p>
@@ -198,14 +217,19 @@
 <h3 id="emmie-burton">Emmie Burton</h2>
 <p>
 	Emmie is a young, 5' 4" human female with caramel skin, long black hair kept in a tight pony tail, brown eyes 
-	and a manicured	physique similar to Reyrona's. Emmie typically dresses in yellow, green and red silks during 
-	the warmer months or elven quality furs during colder months.
+	and a manicured	physique similar to <ap-link-button linkName="noble-desserr-nobility" hash="reyrona-dathana">Reyrona</ap-link-button>'s. 
+	Emmie typically dresses in yellow, green and red silks during the warmer months or elven quality furs during colder months.
 </p>
 <p>
 	Emmie is kind, gentle, and friendly. She is curious and likes to hear about places she hasn't been or events that
-	wasn't witness to. She is the adopted daughter of Reyrona and works the counter at Desserr Tailoring while Reyrona
-	is at court. When Reyrona is working, Emmie is usually making functional clothing. Emmie is the adopted daughter
-	of Reyrona.
+	wasn't witness to. She is the adopted daughter of <ap-link-button linkName="noble-desserr-nobility" hash="reyrona-dathana">Reyrona</ap-link-button> 
+	and works the counter at Desserr Tailoring while <ap-link-button linkName="noble-desserr-nobility" hash="reyrona-dathana">Reyrona</ap-link-button>
+	is at court. When <ap-link-button linkName="noble-desserr-nobility" hash="reyrona-dathana">Reyrona</ap-link-button> is working, Emmie is usually 
+	making functional clothing. Emmie is the adopted daughter of 
+	<ap-link-button linkName="noble-desserr-nobility" hash="reyrona-dathana">Reyrona</ap-link-button>.
+</p>
+<p>
+	Emmie works at <a href="#desserr-tailoring">Desserr Tailoring</a>.
 </p>
 
 <h3 id="urmmir-ungert">Urmmir Ungert</h3>
@@ -218,6 +242,9 @@
 	Urmmir is suspicious of new customers, especially those without money. However, with enough business his trust can be
 	won over. Urmmir is always happy to look at jems and metals that are brought into his store. He owns Pretty Gold
 	Things.
+</p>
+<p>
+	Urmmir owns and operates <a href="#pretty-gold-things">Pretty Gold Things</a>.
 </p>
 <ap-auth-container permissions="gm desserr-full urmmir-sex noble-full">
 	<p>
@@ -232,6 +259,9 @@
 	with sturdy leather apron. Outside of work, she typically wears dresses that are grassy greens with embroidering that
 	looks like flower fields. Prilin doesn't have eyebrows.
 </p>
+<p>
+	Prilin owns and operates <a href="#oops">Oops</a>.
+</p>
 <ap-auth-container permissions="gm desserr-full prilin-sex-and-nickname noble-full">
 	<p>
 		Prilin is a masculine female. Her nickname is Chuckle.
@@ -243,7 +273,10 @@
 	Lyla is a 5' 6" human woman with just a touch of fat on her bones. She has dusky skin, brown eyes, black hair in 
 	long braids, and soft facial features. She is normally wearing a sky blue, silk dress that closely fits her flat torso 
 	while widening out at the hips as well as makeup. When it is cold out, she will add a wolf pelt shawl and a wool cloak.
-	She works as the secretary for the Teamsters' and Porters' Economic Alliance of Taaira Ruzara.
+</p>
+<p>
+	Lyla works as the secretary for the <a href="#tpea">Teamsters' and Porters' Economic Alliance of Taaira Ruzara</a>
+	at the <a href="#alliance-hall">Alliance Hall</a>.
 </p>
 <ap-auth-container permissions="gm desserr-full lyla-wants noble-full">
 	<p>
@@ -265,7 +298,7 @@
 	south. Petris is calm, patient, and often tired seeming.
 </p>
 <p>
-	Petris owns the Fighting Fletcher.
+	Petris owns the <a href="#fighting-fletcher">Fighting Fletcher</a>.
 </p>
 <ap-auth-container permissions="gm desserr-full amash-meaning noble-full">
 	<p>
@@ -279,10 +312,10 @@
 	elven face, a thin layer of black fur, long, wide ears, piercing green eyes, and a wiry physique with tight muscle. 
 	She typically wears a leather vest with green cotton shorts and no shoes, but when it gets colder outside she will
 	wear rabbit fur shoes, wool pants and a wool coat over her vest. Thessana is a friendly and somewhat carefree girl
-	who enjoys running the Fighting Fletcher.
+	who enjoys running the <a href="#fighting-fletcher">Fighting Fletcher</a>.
 </p>
 <p>
-	Thessana works for her father, Petris Amash, at their family business the Fighting Fletcher.
+	Thessana works for her father, Petris Amash, at their family business the <a href="#fighting-fletcher">Fighting Fletcher</a>.
 </p>
 <ap-auth-container permissions="gm desserr-full amash-meaning noble-full">
 	<p>
@@ -297,7 +330,8 @@
 	Tarrashar is straight forward catfolk who likes to focus on his work.
 </p>
 <p>
-	Brother to Dame Dirharra Running Lion and Lady Kishorra Running Lion.
+	Brother to <ap-link-button linkName="noble-desserr-nobility" hash="dirharra-running-lion">Dame Dirharra Running Lion</ap-link-button> and 
+	<ap-link-button linkName="noble-regional-nobility" hash="kishorra-running-lion">Countess Kishorra Running Lion</ap-link-button>.
 </p>
 <ap-auth-container permissions="gm desserr-full tarrashar-dick-size noble-full">
 	<p>
@@ -333,8 +367,11 @@
 
 <h3 id="arthurs-swordworks">Arthur's Swordworks</h3>
 <p>
-	Owned by the human smith Arthur, this large mud brick building is about the size of a great hall and is filled with
+	Owned by the human smith <a href="#arthur-pendragon">Arthur</a>, this large mud brick building is about the size of a great hall and is filled with
 	swords of all sizes and shapes: Curved, straight, single and double edged, short, long and great, and even more.
+</p>
+<p>
+	Arthur's Swordworks is owned and operated by <a href="#arthur-pendragon">Arthur Pendragon</a>.
 </p>
 
 <h3 id="eye-of-newt">Eye of Newt</h3>
@@ -354,12 +391,15 @@
 	horses each with a fenced off yard big enough to hold 6 wagons. The second is a large, warehouse like building with
 	several animal stalls, a shop, and a second yard with several ready wooden vehicles, half elven works of art and half
 	human made. The store buys and sells animals, with a few work and riding horses available at all times. It also sells
-	animal feed, land vehicles, wheels, barding, and more animal related goods. Leomaer, the owner, can also be payed to
+	animal feed, land vehicles, wheels, barding, and more animal related goods. <a href="#leomaer">Leomaer</a>, the owner, can also be payed to
 	purchase, and provide short term care, for animals he doesn't have in stock.
 </p>
 <p>
 	No, We're Not A Petting Zoo was previously named Horses N' More, but after too many people treated the store's stock
 	as a petting zoo, he changed the name of the shop out of frustration.
+</p>
+<p>
+	No, We're Not A Petting Zoo is owned and operated by <a href="#leomaer">Leomaer</a>.
 </p>
 
 <h3 id="desserr-tailoring">Desserr Tailoring</h3>
@@ -372,7 +412,8 @@
 	back of the showroom has different fabrics that can be purchased in spools.
 </p>
 <p>
-	Desserr Tailoring is owned by Reyrona Dathana and also worked by Emmie Burton.
+	Desserr Tailoring is owned by <ap-link-button linkName="noble-desserr-nobility" hash="reyrona-dathana">Reyrona Dathana</ap-link-button> and 
+	also worked by <a href="#emmie-burton">Emmie Burton</a>.
 </p>
 
 <h3 id="pretty-gold-things">Pretty Gold Things</h3>
@@ -380,7 +421,10 @@
 	A smaller building made of cut stone, Pretty Gold Things is clearly dwarven. From the precise cut of the stone to the
 	masterfully worked iron sign, the work of a dwarf is obvious. Inside the shop is a stone counter with steel and glass
 	displays filled with gems, rings, necklaces and other forms of jewelry, all which can only be opened from behind the
-	counter. Pretty Gold Things is owned by Urmmir Ungert.
+	counter. 
+</p>
+<p>
+	Pretty Gold Things is owned by <a href="#urmmir-ungert">Urmmir Ungert</a>.
 </p>
 
 <h3 id="oops">Oops</h3>
@@ -395,18 +439,23 @@
 <p>
 	Explosive, reactive, and quickly decaying materials are made upon request and are only kept in storage for 24 hours.
 </p>
+<p>
+	Oops is owned and operated by <a href="#prilin-fockle">Prilin Fockle</a>.
+</p>
 
 <h3 id="hawk-and-fang-goods">Hawk and Fang Goods</h3>
 <p>
 	Hawk and Fang Goods is a general and adventuring goods store which sells mundane, trade, and basic alchemical goods.
-	It is owned by Nasshurr Diving Hawk, but the front is normally staffed by Fang, who happily greets anyone who walks
-	in the door.
 </p>
 <p>
 	While Hawk and Fang Goods appears as a small shop from the front, it is actually closer to an emporium with a large
 	main room that Fang can easily watch over from the elevated counter that houses the vast majority of the goods. At
 	the back of the main room is a door which leads to the smithy where Nasshurr is typically working and where most of
 	the armor and weapons are located.
+</p>
+<p>
+	It is owned by <a href="#nasshurr-diving-hawk">Nasshurr Diving Hawk</a>, but the front is normally staffed by <a href="#fang">Fang</a>, 
+	who happily greets anyone who walks	in the door.
 </p>
 
 <h3 id="horse-shoe-tavern">Horse Shoe Tavern</h3>
@@ -422,6 +471,9 @@
 	10 rooms a floor. Each room has a single bed, a kitchenette centered around an oven that doubles as a heater, an 
 	area for a chamber pot, a door with a good lock, a comfortable sitting chair and a table and chair setup like a desk.
 </p>
+<p>
+	At night, the bar is typically worked by <a href="#siccar">Siccar</a> while <a href="#rish">Rish</a> works the kitchen.
+</p>
 
 <h3 id="alliance-hall">Alliance Hall</h3>
 <p>
@@ -432,7 +484,7 @@
 	the hall, which contains the offices for the Alliance.
 </p>
 <p>
-	Lyla Hunter works as the secretary for the Alliance Hall.
+	<a href="#lyla-hunter">Lyla Hunter</a> works as the secretary for the Alliance Hall.
 </p>
 
 <h3 id="college-of-the-tuned-ear">The College of the Tuned Ear</h3>
@@ -475,7 +527,8 @@
 	complete with scarecrow and bullseye targets, available for both use and purchase.
 </p>
 <p>
-	The Fighting Fletcher is owned by Petris Amash, but is usually worked by his daughter Thessana Amash.
+	The Fighting Fletcher is owned by <a href="#petris-amash">Petris Amash</a>, but is usually worked by his daughter 
+	<a href="#thessana-amash">Thessana Amash</a>.
 </p>
 
 <h3 id="mistys">Misty's</h3>

@@ -17,3 +17,5 @@ import "./ap-sex-generator.js";
 import "./ap-sex-tables.js";
 import "./ap-reputation-display.js";
 import "./ap-reputation-ranks-table.js";
+import "./ap-settlement-generator.js";
+import "./ap-settlement-display.js";

@@ -107,6 +107,9 @@ export function getRndInteger(min, max) {
 export function isInRange(value, min, max) {
     return value >= min && value <= max;
 }
+export function isInNumberRange(value, range) {
+    return value >= range.from && value <= range.to;
+}
 export function compressStringArray(value) {
     if (!value || value.length === 0) {
         return "";
@@ -143,4 +146,20 @@ export function getRandomItemFromRange(items, sort = false) {
     const value = getRndInteger(sortedItems.firstElement().from, sortedItems.lastElement().to);
     return sortedItems.find((item) => isInRange(value, item.from, item.to));
 }
+export const Bounds = Object.freeze({
+    isInBounds: function (value, bounds) {
+        if (bounds.lower == undefined && bounds.upper == undefined) {
+            return false;
+        }
+        else if (bounds.lower == undefined) {
+            return value <= bounds.upper;
+        }
+        else if (bounds.upper == undefined) {
+            return value >= bounds.lower;
+        }
+        else {
+            return isInRange(value, bounds.lower, bounds.upper);
+        }
+    },
+});
 //# sourceMappingURL=utilities.js.map

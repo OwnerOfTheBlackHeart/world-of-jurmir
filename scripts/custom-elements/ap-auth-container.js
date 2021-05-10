@@ -1,5 +1,5 @@
 import { Auth } from "../auth.js";
-export class AuthContainer extends HTMLElement {
+export class AuthContainerElement extends HTMLElement {
     constructor() {
         super();
         if (this.inline) {
@@ -54,7 +54,7 @@ export class AuthContainer extends HTMLElement {
         AuthContainers.forEach((container) => container.Render());
     }
 }
-customElements.define("ap-auth-container", AuthContainer);
+customElements.define("ap-auth-container", AuthContainerElement);
 let AuthContainers = [];
-Auth.onAuthChangedList.push(AuthContainer.UpdateAll);
+Auth.onAuthChangedList.push(AuthContainerElement.UpdateAll);
 //# sourceMappingURL=ap-auth-container.js.map

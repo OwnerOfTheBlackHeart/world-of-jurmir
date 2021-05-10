@@ -75,16 +75,7 @@ export class ReputationDisplay extends HTMLElement {
 
 	GetReputationRank(reputation: number): ReputationRank {
 		return globals.reputationRanks.find((rank) => {
-			const range = rank.xpRange;
-			if (range.upper && range.lower) {
-				return range.upper >= reputation && range.lower <= reputation;
-			} else if (range.upper) {
-				return range.upper >= reputation;
-			} else if (range.lower) {
-				return range.lower <= reputation;
-			} else {
-				return false;
-			}
+			return Utilities.Bounds.isInBounds(reputation, rank.xpRange);
 		});
 	}
 
