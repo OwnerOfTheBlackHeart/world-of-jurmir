@@ -23,6 +23,21 @@ export const nobleNav = [
 
 	new PageInfo(undefined, "organizations/cults/to-build.html", "Cults to be Built", "cults-to-build"),
 
+	new PageInfo(
+		undefined,
+		"organizations/cults/devil/akkus/fallenfeather-sisterhood.html",
+		"The Fallenfeather Sisterhood",
+		"fallenfeather-sisterhood"
+	),
+	new PageInfo(undefined, "organizations/cults/devil/akkus/akkus.html", "Akkus, the Fallen Angel", "akkus"),
+
+	new PageInfo(
+		undefined,
+		"organizations/cults/demon/ilvith/servants-of-perfect-beauty.html",
+		"The Servants of Perfect Beauty",
+		"servants-of-perfect-beauty"
+	),
+
 	new PageInfo(undefined, "locations/tiathiloth/main.html", "The County of Tiathiloth", "tiathiloth"),
 	new PageInfo(undefined, "locations/tiathiloth/mensharra.html", "Mensharra, Capital City of Tiathiloth", "mensharra"),
 
@@ -104,6 +119,8 @@ export const nobleNav = [
 	new PageInfo(undefined, "plotlines/missions/keldhall-sewer-hunt.html", "Keldhall Sewer Hunt", "keldhall-sewer-hunt"),
 
 	new PageInfo(undefined, "plotlines/missions/methnaes/sariels-investigation.html", "Sariel's Investigation", "sariels-investigation"),
+
+	new PageInfo(undefined, "plotlines/missions/slayer/salamander-cave.html", "The Salamander Cave", "salamander-cave"),
 
 	new PageInfo(undefined, "spellbooks/main.html", "Noble Rising Spellbooks", "spellbooks"),
 	new PageInfo(undefined, "spellbooks/yasrena-spellbook.html", "Yasrena's Spellbook", "yasrena-spellbook"),
@@ -220,6 +237,9 @@ export const nobleNav = [
 	new PageInfo(undefined, "images/npcs/lola-ward.jpg", "", "lola-ward-img", true),
 	new PageInfo(undefined, "images/npcs/juliette-walker.jpg", "", "juliette-walker-img", true),
 	new PageInfo(undefined, "images/npcs/juliette-walker-alt.jpg", "", "juliette-walker-alt-img", true),
+
+	new PageInfo(undefined, "images/npcs/cults/akkus.jpg", "", "akkus-img", true),
+	new PageInfo(undefined, "images/npcs/cults/ilvith.jpg", "", "ilvith-img", true),
 
 	new PageInfo(undefined, "http://anthonyparsch.com/images/noble-map.png", "", "map-img", true),
 

@@ -84,6 +84,15 @@ h6.subtitle {
 	font-size: 0.85em;
 }
 
+ul h1,
+ul h2,
+ul h3,
+ul h4,
+ul h5,
+ul h6 {
+	margin-top: 10px;
+}
+
 .full-hr {
 	width: 100%;
 	margin: 5px 0px 5px 0px;
