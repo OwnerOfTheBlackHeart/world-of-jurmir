@@ -20,6 +20,8 @@ export const nobleNav = [
     new PageInfo(undefined, "organizations/cults/devil/akkus/fallenfeather-sisterhood.html", "The Fallenfeather Sisterhood", "fallenfeather-sisterhood"),
     new PageInfo(undefined, "organizations/cults/devil/akkus/akkus.html", "Akkus, the Fallen Angel", "akkus"),
     new PageInfo(undefined, "organizations/cults/demon/ilvith/servants-of-perfect-beauty.html", "The Servants of Perfect Beauty", "servants-of-perfect-beauty"),
+    new PageInfo(undefined, "organizations/cults/good/jeha/seekers-of-the-better-path.html", "Seekers of the Better Path", "seekers-of-the-better-path"),
+    new PageInfo(undefined, "organizations/cults/good/pearl-cat/followers-of-the-pearl-cat.html", "The Followers of the Pearl Cat", "followers-of-the-pearl-cat"),
     new PageInfo(undefined, "locations/tiathiloth/main.html", "The County of Tiathiloth", "tiathiloth"),
     new PageInfo(undefined, "locations/tiathiloth/mensharra.html", "Mensharra, Capital City of Tiathiloth", "mensharra"),
     new PageInfo(undefined, "locations/methnaes/main.html", "The Duchy of Methnaes", "methnaes"),

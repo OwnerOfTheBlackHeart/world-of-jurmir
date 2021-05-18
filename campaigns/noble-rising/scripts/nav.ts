@@ -38,6 +38,20 @@ export const nobleNav = [
 		"servants-of-perfect-beauty"
 	),
 
+	new PageInfo(
+		undefined,
+		"organizations/cults/good/jeha/seekers-of-the-better-path.html",
+		"Seekers of the Better Path",
+		"seekers-of-the-better-path"
+	),
+
+	new PageInfo(
+		undefined,
+		"organizations/cults/good/pearl-cat/followers-of-the-pearl-cat.html",
+		"The Followers of the Pearl Cat",
+		"followers-of-the-pearl-cat"
+	),
+
 	new PageInfo(undefined, "locations/tiathiloth/main.html", "The County of Tiathiloth", "tiathiloth"),
 	new PageInfo(undefined, "locations/tiathiloth/mensharra.html", "Mensharra, Capital City of Tiathiloth", "mensharra"),
 
