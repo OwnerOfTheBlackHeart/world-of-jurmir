@@ -40,6 +40,13 @@ export const nobleNav = [
 
 	new PageInfo(
 		undefined,
+		"organizations/cults/demon/kugmoxon/calmers-of-the-flame-lord.html",
+		"The Calmers of the Flame Lord",
+		"calmers-of-the-flame-lord"
+	),
+
+	new PageInfo(
+		undefined,
 		"organizations/cults/good/jeha/seekers-of-the-better-path.html",
 		"Seekers of the Better Path",
 		"seekers-of-the-better-path"
