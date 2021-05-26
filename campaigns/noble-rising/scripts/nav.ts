@@ -70,6 +70,8 @@ export const nobleNav = [
 	new PageInfo(undefined, "locations/taaira-ruzara/misc/regional-nobility.html", "Regional Nobility", "regional-nobility"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/cats-retreat/main.html", "The County of Cat's Retreat", "cats-retreat"),
+	new PageInfo(undefined, "locations/taaira-ruzara/cats-retreat/yine.html", "Yine, Capital City of Cat's Retreat", "yine"),
+	new PageInfo(undefined, "locations/taaira-ruzara/cats-retreat/blue-field.html", "Blue Field, Village of Blue Lilies", "blue-field"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/deaavh-hilluk/main.html", "The County of Deaavh Hilluk", "deaavh-hilluk"),
 
@@ -85,13 +87,20 @@ export const nobleNav = [
 	new PageInfo(undefined, "locations/taaira-ruzara/lindado/main.html", "Lindado County", "lindado"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/little-river/main.html", "Little River County", "little-river"),
+	new PageInfo(undefined, "locations/taaira-ruzara/little-river/old-castle.html", "Old Castle, Guardian of the Ang River", "old-castle"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/nelluon-enial/main.html", "Nelloun Enial County", "nelluon-enial"),
+	new PageInfo(undefined, "locations/taaira-ruzara/nelluon-enial/inmakadi.html", "Inmakadi, Elven Port Town", "inmakadi"),
+	new PageInfo(undefined, "locations/taaira-ruzara/nelluon-enial/kyho-elunore.html", "Kyho Elunore, Elven Trade Town", "kyho-elunore"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/rivers-pass/main.html", "The County of River's Pass", "rivers-pass"),
+	new PageInfo(undefined, "locations/taaira-ruzara/rivers-pass/new-castle.html", "New Castle, Fortress on the River and Sea", "new-castle"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/russia/main.html", "The County of Russia", "russia"),
 	new PageInfo(undefined, "locations/taaira-ruzara/russia/sharnwick.html", "The Village of Sharnwick", "sharnwick"),
+	new PageInfo(undefined, "locations/taaira-ruzara/russia/dawnflow.html", "Dawnflow, Russia's River Town", "dawnflow"),
+	new PageInfo(undefined, "locations/taaira-ruzara/russia/dalhurst.html", "Dalhurst, Capital of Russia", "dalhurst"),
+	new PageInfo(undefined, "locations/taaira-ruzara/russia/rocnest.html", "Rocnest, the Flying Town", "rocnest"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/shanta-revar/main.html", "Shanta Revar County", "shanta-revar"),
 	new PageInfo(undefined, "locations/taaira-ruzara/shanta-revar/antys.html", "Antys, Livingwood Glade", "antys"),
