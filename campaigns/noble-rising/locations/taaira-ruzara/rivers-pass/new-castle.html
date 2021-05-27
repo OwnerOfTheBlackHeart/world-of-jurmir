@@ -33,5 +33,38 @@
 <h2 id="organizations-and-monsters">Organizations and Monsters</h2>
 
 <h2 id="important-people">Important People</h2>
+<ap-template-outlet templatePath="noble-rising/nobles/diha-raging-wolf"></ap-template-outlet>
 
 <h2 id="notable-locations">Notable Locations</h2>
+<h3 id="castle-raging-wolf">Castle Raging Wolf</h3>
+<p>
+    Castle Raging Wolf is a "permanent" residence of <a href="#diha-raging-wolf">Countess Diha Raging Wolf</a> within New Castle.
+    Located on the northeastern side of the estuary, the castle itself is 2 stories of round stone with a further 2 stories of wooden scaffolding, 
+    with a 6 boat dock, an oversized courtyard, and a mud wall (with a round stone wall being built behind it). 
+</p>
+<p>
+    The first floor has 5 rooms: A fairly simple kitchen without any permanent structures, a guard's office where the guard captain typically works
+    with a stairway to the dungeons, a waiting room with 2 couches with coffee tables and a large rug, a great hall with half of the typical number
+    of tables and benches, and a meeting room with a nice, purple chair, two couches and a center table. The second floor houses 
+    <a href="#diha-raging-wolf">Countess Diha's</a> private rooms: A master bedroom, 2 guest rooms, a room with a loom, spinning wheel, tinderframe
+    and other fabric/clothes making machines, a den/library and a display room filled with mannequin's wearing clothes made from exotic materials.
+</p>
+<p>
+    Two basement entrances exist: One in the "kitchen" and the other in the guard captain's office. The entrance in the kitchen leads to an ice room
+    and a larder, while the entrance beneath the guard captain's office leads to a dungeon made up of a single hallway with 3 cells on either side.
+</p>
+<ap-auth-container permissions="gm noble-full new-castle-full castle-raging-wolf-timeline nera">
+    <ap-time-table current-date-value="nobleCurrentDate">
+        [
+            ["header", "Timeline"],
+            [{"day": 27, "month": 2, "year": 1488}, "Construction on Castle Raging Wolf started"],
+            [{"day": 13, "month": 3, "year": 1488}, "First 2 stories completed, <a href="#diha-raging-wolf">Diha</a> moves in"],
+            [{"day": 20, "month": 3, "year": 1488}, "Dock, moat and mud wall completed"],
+            [{"day": 17, "month": 4, "year": 1488}, "Stone wall complete"],
+            [{"day": 20, "month": 4, "year": 1488}, "Naval barracks and kitchen building complete"],
+            [{"day": 9, "month": 5, "year": 1488}, "3rd story complete"],
+            [{"day": 18, "month": 5, "year": 1488}, "Servant's housing complete"],
+            [{"day": 27, "month": 6, "year": 1488}, "4th story complete"]
+        ]
+    </ap-time-table>
+</ap-auth-container>
