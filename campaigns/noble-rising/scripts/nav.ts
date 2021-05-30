@@ -31,6 +31,8 @@ export const nobleNav = [
 	),
 	new PageInfo(undefined, "organizations/cults/devil/akkus/akkus.html", "Akkus, the Fallen Angel", "akkus"),
 
+	new PageInfo(undefined, "organizations/cults/devil/vano/liberation-guild.html", "The Liberation Guild", "liberation-guild"),
+
 	new PageInfo(
 		undefined,
 		"organizations/cults/demon/ilvith/servants-of-perfect-beauty.html",
@@ -47,6 +49,13 @@ export const nobleNav = [
 
 	new PageInfo(
 		undefined,
+		"organizations/cults/demon/ragrunnoth/ragrunnoths-ruminators.html",
+		"Ragrunnoth's Ruminators",
+		"ragrunnoths-ruminators"
+	),
+
+	new PageInfo(
+		undefined,
 		"organizations/cults/good/jeha/seekers-of-the-better-path.html",
 		"Seekers of the Better Path",
 		"seekers-of-the-better-path"
@@ -58,6 +67,8 @@ export const nobleNav = [
 		"The Followers of the Pearl Cat",
 		"followers-of-the-pearl-cat"
 	),
+
+	new PageInfo(undefined, "organizations/cults/good/muriel/muriels-cleansers.html", "Muriel's Cleansers", "muriels-cleansers"),
 
 	new PageInfo(undefined, "locations/tiathiloth/main.html", "The County of Tiathiloth", "tiathiloth"),
 	new PageInfo(undefined, "locations/tiathiloth/mensharra.html", "Mensharra, Capital City of Tiathiloth", "mensharra"),
