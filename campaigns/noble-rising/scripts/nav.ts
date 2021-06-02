@@ -68,7 +68,22 @@ export const nobleNav = [
 		"followers-of-the-pearl-cat"
 	),
 
+	new PageInfo(
+		undefined,
+		"organizations/cults/good/zarach/order-glowing-hound.html",
+		"The Order of the Glowing Hound",
+		"order-glowing-hound"
+	),
+
+	new PageInfo(undefined, "organizations/cults/good/seros/freedoms-light.html", "Freedom's Light", "freedoms-light"),
+
+	new PageInfo(undefined, "organizations/cults/good/baraq/speakers-of-clarity.html", "The Speakers of Clarity", "speakers-of-clarity"),
+
 	new PageInfo(undefined, "organizations/cults/good/muriel/muriels-cleansers.html", "Muriel's Cleansers", "muriels-cleansers"),
+
+	new PageInfo(undefined, "organizations/cults/evil/yephim/kings-hounds.html", "The King's Hounds", "kings-hounds"),
+
+	new PageInfo(undefined, "organizations/cults/evil/lecha/second-order.html", "The Second Order", "second-order"),
 
 	new PageInfo(undefined, "locations/tiathiloth/main.html", "The County of Tiathiloth", "tiathiloth"),
 	new PageInfo(undefined, "locations/tiathiloth/mensharra.html", "Mensharra, Capital City of Tiathiloth", "mensharra"),
