@@ -139,7 +139,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "locations/taaira-ruzara/wolfs-run/main.html", "Wolf's Run County", "wolfs-run"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/wolfs-run/rivers-plains/main.html", "The Barony of Rivers Plains", "rivers-plains"),
-	new PageInfo(undefined, "locations/taaira-ruzara/wolfs-run/rivers-plains/cherryvale.html", "The Ex-Village of Cherryvale", "cherryvale"),
+	new PageInfo(undefined, "locations/taaira-ruzara/wolfs-run/rivers-plains/freebrooke.html", "The Ex-Village of Freebrooke", "freebrooke"),
 	new PageInfo(undefined, "locations/taaira-ruzara/wolfs-run/rivers-plains/blackhide.html", "The Ex-Village of Blackhide", "blackhide"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/ruins/asokmoat.html", "The Black City of Asokmoat", "asokmoat"),
@@ -186,6 +186,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "spellbooks/kali-spellbook.html", "Kali's Spellbook", "kali-spellbook"),
 	new PageInfo(undefined, "spellbooks/auction-spellbook.html", "Kali's Auction Spellbook", "auction-spellbook"),
 	new PageInfo(undefined, "spellbooks/vampire-wizard-spellbook.html", "Vampire Wizard Spellbook", "vampire-wizard-spellbook"),
+	new PageInfo(undefined, "spellbooks/camilia-spellbook.html", "Camilia's Spellbook", "camilia-spellbook"),
 
 	new PageInfo(undefined, "enemies/bandits/human-commoner.html", "Human Commoner", "human-commoner"),
 	new PageInfo(undefined, "enemies/bandits/catfolk-adept.html", "Catfolk Adept", "catfolk-adept"),
@@ -238,6 +239,8 @@ export const nobleNav = [
 
 	new PageInfo(undefined, "enemies/aberrations/aberration-dragon.html", "Aberration Dragon", "aberration-dragon"),
 	new PageInfo(undefined, "enemies/aberrations/cryptstalker.html", "Cryptstalker", "cryptstalker"),
+
+	new PageInfo(undefined, "enemies/amofs/amof-race.html", "Amofs", "amof-race"),
 
 	new PageInfo(undefined, "npcs/mysterious-stranger.html", "The Mysterious Stranger", "mysterious-stranger"),
 	new PageInfo(undefined, "npcs/reth-mailynath.html", "Reth Mailynath, Adamantine Slayer", "reth-mailynath"),

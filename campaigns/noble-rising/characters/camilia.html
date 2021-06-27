@@ -3,7 +3,7 @@
 <ap-basic-table character-table>
 	[
 		["Size/Type:", "Medium Humanoid (human)"],
-		["Hit Dice:", "5d8+15 (35 / 35)"],
+		["Hit Dice:", "5d8+1d4+18 (40 / 40)"],
 		["Initiative:", "+2"],
 		["Speed:", "30 ft. (6 squares)"],
 		["Armor Class:", "16 (+2 dex, +4 +1 hide armor), touch 12, flat-footed 14"],
@@ -14,17 +14,19 @@
 		["Special Attacks:", "-"],
         ["Special Qualities:", 
             "From the gnoll lands, <ap-link-button linkName="noble-cackles">animal companion</ap-link-button>, nature sense, wild empathy,",
-            "woodland stride, trackless step, resist nature’s lure, wild shape (1/day)"
+            "woodland stride, trackless step, resist nature’s lure, wild shape (1/day), summon familiar"
         ],
-		["Saves:", "Fort +7, Ref +3, Will +8"],
+		["Saves:", "Fort +7, Ref +3, Will +10"],
 		["Abilities:", "Str 14, Dex 14, Con 16, Int 13, Wis 18, Cha 15"],
-		["Skills:", "Handle Animal +10, Knowledge (nature) +13, Spot +12, Listen +12, Survival +14, Heal +12"],
-		["Feats:", "Track, Martial Weapon Proficiency (longbow), Point Blank Shot"],
+		["Skills:", "Concentration +4, Decipher Script +2, Handle Animal +10, Knowledge (nature) +13, Spot +12, Listen +12, Survival +14, Heal +12, Spellcraft +3"],
+		["Feats:", 
+			"Track, Martial Weapon Proficiency (longbow), Point Blank Shot, Lost Tradition (Wizard/Wis), Scribe Scroll"
+		],
 		["Challenge Rating:", "5"],
 		["Languages:", "Common (broken), gnolish, druidic"],
 		["Alignment:", "? <ap-auth-container permissions="gm camilia-alignment noble-full">Neutral Evil (I rolled this shit)</ap-auth-container>"],
-        ["Class Levels:", "Druid 5"],
-        ["Experience:", "13,165 / 15,000"]
+        ["Class Levels:", "Druid 5, <ap-link-button linkName="noble-camilia-spellbook">Wizard</ap-link-button> 1"],
+        ["Experience:", "15,000 / 21,000"]
 	]
 </ap-basic-table>
 
@@ -48,7 +50,7 @@
 </p>
 
 <p>
-	<i class="power">Mutant Dire Wolf Healing (Su):</i> When magically healed, Camilia gains +2 point of healing
+	<i class="power">Mutant Dire Wolf Healing (Su):</i> When magically healed, Camilia gains +2 points of healing
 	per die.
 </p>
 
@@ -61,31 +63,51 @@
 	crit range, but does stack with enchantments that increase crit range (after the enchantments' effect).
 </p>
 
-<div style="margin: 14.4px">
-	Level 0 spells (DC 13, 5 per day)
-	<ul>
-		<li>Light</li>
-		<li>Mending</li>
-        <li>2 Create Water</li>
-        <li>Purify Food and Drink</li>
-	</ul><br/>
-	Level 1 spells (DC 14, 4 per day)
-	<ul>
-        <li>Cure light wounds - 2</li>
-		<li>Produce Flame</li>
-		<li>Goodberry</li>
-	</ul><br/>
-	Level 2 spells (DC 15, 3 per day)
-	<ul>
-		<li>Cat’s Grace</li>
-		<li>Summon Nature’s Ally II</li>
-		<li>Barkskin</li>
-	</ul>
-	Level 3 spells (DC 16, 2 per day)
-	<ul>
-		<li>Call Lightning</li>
-		<li>Cure Moderate Wounds</li>
-	</ul>
+<div class="table-container">
+	<div class="table-column">
+		<b>Druid Spells</b>
+		<div style="margin: 14.4px">
+			Level 0 spells (DC 14, 5 per day)
+			<ul>
+				<li>Light</li>
+				<li>Mending</li>
+				<li>2 Create Water</li>
+				<li>Purify Food and Drink</li>
+			</ul><br/>
+			Level 1 spells (DC 15, 4 per day)
+			<ul>
+				<li>Cure light wounds - 2</li>
+				<li>Produce Flame</li>
+				<li>Goodberry</li>
+			</ul><br/>
+			Level 2 spells (DC 16, 3 per day)
+			<ul>
+				<li>Cat’s Grace</li>
+				<li>Summon Nature’s Ally II</li>
+				<li>Barkskin</li>
+			</ul><br/>
+			Level 3 spells (DC 17, 2 per day)
+			<ul>
+				<li>Call Lightning</li>
+				<li>Cure Moderate Wounds</li>
+			</ul>
+		</div>
+	</div>
+	<div class="table-column">
+		<b>Wizard Spells</b>
+		<div style="margin: 14.4px">
+			Level 0 spells (DC 14, 3 per day)
+			<ul>
+				<li>2 Detect Magic</li>
+				<li>Light</li>
+			</ul><br/>
+			Level 1 spells (DC 15, 2 per day)
+			<ul>
+				<li>True Strike</li>
+				<li>Ray of Clumsiness</li>
+			</ul>
+		</div>
+	</div>
 </div>
 
 <div class="table-container">
@@ -93,12 +115,15 @@
 		<ap-skill-chart>
 			[
 				["Armor Check Penalty", 0, ""],
+				["Concentration", 1, ""],
+				["Decipher Script", 1, ""],
 				["Handle Animal", 8, ""],
 				["Knowledge (nature)", 8, "+2 Nature Sense, +2 synergy"],
 				["Spot", 8, ""],
 				["Survival", 8, "+2 Nature Sense, +2 checks in aboveground natural environments<br/>(aquatic, desert, forest, hill, marsh, mountains, and plains)"],
                 ["Listen", 8, ""],
-                ["Heal", 8, ""]
+                ["Heal", 8, ""],
+				["Spellcraft", 2, ""]
 			]
 		</ap-skill-chart>
 	</div>
@@ -112,6 +137,7 @@
 				["Tomahawk (throwing axe)", 1, [0, 8, 0, 0], 2],
 				["+1 critosaurus spear", 1, [0, 2302, 0, 0], 6],
                 ["Spell component pouch", 1, [0, 5, 0, 0], 2],
+                ["<ap-link-button linkName="noble-camilia-spellbook">Spellbook</ap-link-button>", 1, [0, 15, 0, 0], 3],
                 ["Peasant’s outfit (described in description)", 1, [0, 0, 1, 0], 2],
                 ["+1 Mutant dire wolf hide armor (mithral)", 1, [0, 2165, 0, 0], 12.5],
                 ["Pouch, belt", 1, [0, 1, 0, 0], 0.5],
