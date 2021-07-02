@@ -187,6 +187,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "spellbooks/auction-spellbook.html", "Kali's Auction Spellbook", "auction-spellbook"),
 	new PageInfo(undefined, "spellbooks/vampire-wizard-spellbook.html", "Vampire Wizard Spellbook", "vampire-wizard-spellbook"),
 	new PageInfo(undefined, "spellbooks/camilia-spellbook.html", "Camilia's Spellbook", "camilia-spellbook"),
+	new PageInfo(undefined, "spellbooks/nate-spellbook.html", "Nate's Spellbook", "nate-spellbook"),
 
 	new PageInfo(undefined, "enemies/bandits/human-commoner.html", "Human Commoner", "human-commoner"),
 	new PageInfo(undefined, "enemies/bandits/catfolk-adept.html", "Catfolk Adept", "catfolk-adept"),
@@ -264,6 +265,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "characters/animal-companions/cackles.html", "Cackles the Spotted Hyena", "cackles"),
 	new PageInfo(undefined, "characters/zarsra.html", "Zarsra Telyn, Drow Slave of Sariel", "zarsra"),
 	new PageInfo(undefined, "characters/skellyball.html", "Skellyball, Rollable Human Skeleton", "skellyball"),
+	new PageInfo(undefined, "characters/nate-sutton.html", "Nate Sutton, Wizard Follower of Elizabeth", "nate-sutton"),
 
 	new PageInfo(undefined, "characters/misc/skellyball-powers.html", "Skellyball Powers", "skellyball-powers"),
 

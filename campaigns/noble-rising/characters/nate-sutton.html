@@ -1,0 +1,157 @@
+<h1>Nate Sutton, Wizard Follower of Elizabeth</h1>
+<!-- <ap-image linkName="noble-camilia-img" class="character-picture" height="500">Picture of Camilia</ap-image> -->
+<ap-basic-table character-table>
+	[
+		["Size/Type:", "Medium Outsider (native)"],
+		["Hit Dice:", "4d4+4 (16 / 16)"],
+		["Initiative:", "+2"],
+		["Speed:", "30 ft. (6 squares)"],
+		["Armor Class:", "10 (+2 dex), touch 12, flat-footed 10"],
+		["Base Attack/Grapple:", "+2/+3"],
+		["Attack:", "Spear melee +3 (1d8+1x3) or crossbow ranged +4 (1d8/19-20x2)"],
+		["Full Attack:", "Spear melee +3 (1d8+1x3) or crossbow ranged +4 (1d8/19-20x2)"],
+		["Space/Reach:", "5 ft./5 ft."],
+		["Special Attacks:", "Daylight"],
+        ["Special Qualities:", 
+            "Darkvision 60ft., Resistance Acid 5, Cold 5, and Electricity 5, Scribe Scroll, School Specialization (+abjuration, -conjuration, -illusion)"
+        ],
+		["Saves:", "Fort +2, Ref +3, Will +3"],
+		["Abilities:", "Str 12, Dex 14, Con 12, Int 16 (18), Wis 8, Cha 11"],
+		["Skills:", 
+            "Concentration +8, Decipher Script +11, Knowledge (arcana) +11, Knowledge (dungeoneering) +6, Knowledge (history) +6, ",
+            "Knowledge (religion) +5, Knowledge (the planes) +6, Spellcraft +13, Spot +1, Listen +1"
+        ],
+		["Feats:", 
+			"Scribe Scroll, Spell Penetration, Craft Wondrous Item"
+		],
+		["Challenge Rating:", "4"],
+		["Languages:", "Common, Celestial, Draconic"],
+		["Alignment:", "True Neutral (previously NG)"],
+        ["Class Levels:", "<ap-link-button linkName="noble-nate-spellbook">Wizard</ap-link-button> 4"],
+        ["Experience:", "6,000 / 10,000"]
+	]
+</ap-basic-table>
+
+<!--
+    TODO:
+        Combat
+        History and Motivation
+-->
+
+<p>
+    <i class="power">Daylight (Sp):</i> An aasimar can use daylight once per day as a 1st-level caster or a caster of his class levels, whichever is higher.
+</p>
+
+<div class="table-container">
+	<div class="table-column">
+		<div style="margin: 14.4px">
+			Level 0 spells (DC 13, 4+1 per day)
+			<ul>
+				<li>Resistance (SS)</li>
+                <li>Detect Magic</li>
+                <li>Read Magic</li>
+                <li>2 Light</li>
+			</ul><br/>
+			Level 1 spells (DC 14, 4+1 per day)
+			<ul>
+				<li>Endure Elements (SS)</li>
+                <li>Shield</li>
+                <li>Magic Missile</li>
+                <li>Burning Hands</li>
+				<li>Enlarge Person (Pearl of Power)</li>
+			</ul><br/>
+			Level 2 spells (DC 15, 3+1 per day)
+			<ul>
+				<li>Protection from Arrows (SS)</li>
+                <li>Resist Energy</li>
+                <li>See Invisibility</li>
+                <li>Scorching Ray</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="table-container">
+	<div class="table-column">
+		<ap-skill-chart>
+			[
+				["Armor Check Penalty", 0, ""],
+                ["Concentration", 7, ""],
+                ["Decipher Script", 7, ""],
+                ["Knowledge (arcana)", 7, ""],
+                ["Knowledge (dungeoneering)", 2, ""],
+                ["Knowledge (history)", 2, ""],
+                ["Knowledge (religion)", 1, ""],
+                ["Knowledge (the planes)", 2, ""],
+                ["Spellcraft", 7, "+2 synergy"],
+				["Spot", 0, "+2 racial"],
+				["Listen", 0, "+2 racial"]
+			]
+		</ap-skill-chart>
+	</div>
+	<div class="table-column">
+		<ap-enc-chart strength="12">
+			[
+                [0, 0, 0, 0],
+                ["Spear", 1, [0, 2, 0, 0], 6],
+                ["Crossbow, light", 1, [0, 35, 0, 0], 4],
+                ["Bolts", 40, [0, 0, 1, 0], 0.1],
+                ["Spell component pouch", 1, [0, 5, 0, 0], 2],
+                ["Scholar’s outfit", 1, [0, 5, 0, 0], 6],
+                ["Headband of Intellect (+2)", 1, [0, 4000, 0, 0], 1],
+                ["Pearl of Power (1st)", 1, [0, 1000, 0, 0], 1],
+                ["<ap-link-button linkName="noble-nate-spellbook">Spellbook</ap-link-button>", 1, [0, 15, 0, 0], 3],
+                ["Pouch, belt", 5, [0, 1, 0, 0], 0.5],
+                ["Sack", 1, [0, 0, 1, 0], 0.5],
+                ["Bedroll", 1, [0, 0, 1, 0], 5],
+                ["Blanket, winter", 1, [0, 0, 5, 0], 3],
+                {
+                    "name":"Bank Account",
+                    "carryWeight":0,
+                    "contents":[
+						[0, 328, 3, 0]
+                    ]
+                }
+			]
+		</ap-enc-chart>
+	</div>
+</div>
+
+<h2 id="description">Description</h2>
+<p>
+    Nate is a 6' 2" tall, male aasimar with shoulder length brown hair, hazel eyes, pale, unsunned skin and the occasional
+    <ap-link-button linkName="https://www.youtube.com/watch?v=Xz63qzhYeKA">intense smoldering</ap-link-button>.
+</p>
+<ap-auth-container permissions="gm nate-personality elizabeth noble-full">
+    <p>
+        PLACEHOLDER
+    </p>
+</ap-auth-container>
+
+<h2>Random Findings of Note</h2>
+<ul class="list">
+    <li>Rolled a 7 on pretty roll</li>
+	<li>9" dick</li>
+    <ap-auth-container permissions="gm nate-loyalty noble-full elizabeth">
+        <li>Broken (loyal to Elizabeth as a priestess of <ap-link-button linkName="red-king">The Red King</ap-link-button>)</li>
+    </ap-auth-container>
+    <li>Student at <ap-link-button linkName="noble-desserr" hash="queen-venvyre-memorial-library">The Queen Venvyre Memorial Library</ap-link-button></li>
+</ul>
+
+<h2 id="combat">Combat</h2>
+<p>
+    PLACEHOLDER
+</p>
+
+<h2 id="history-and-motivation">History and Motivation</h2>
+<ap-auth-container permissions="gm camilia-history noble-full">
+    <p>
+        Prior to his induction into Elizabeth's fold, Nate was a student wizard at 
+        <ap-link-button linkName="noble-desserr" hash="queen-venvyre-memorial-library">The Queen Venvyre Memorial Library</ap-link-button>.
+    </p>
+</ap-auth-container>
+<ap-auth-container permissions="gm camilia-motivation noble-full">
+    <p>
+        PLACEHOLDER
+    </p>
+</ap-auth-container>
