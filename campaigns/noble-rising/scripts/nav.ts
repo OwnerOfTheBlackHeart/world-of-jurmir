@@ -111,6 +111,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "locations/taaira-ruzara/forslag/mam-daruhm.html", "Mam Daruhm, Dwarven Fortress City", "mam-daruhm"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/lindado/main.html", "Lindado County", "lindado"),
+	new PageInfo(undefined, "locations/taaira-ruzara/lindado/shrienhus.html", "Shrienhus, Town of Shrines", "shrienhus"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/little-river/main.html", "Little River County", "little-river"),
 	new PageInfo(undefined, "locations/taaira-ruzara/little-river/old-castle.html", "Old Castle, Guardian of the Ang River", "old-castle"),
@@ -142,7 +143,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "locations/taaira-ruzara/wolfs-run/rivers-plains/freebrooke.html", "The Ex-Village of Freebrooke", "freebrooke"),
 	new PageInfo(undefined, "locations/taaira-ruzara/wolfs-run/rivers-plains/blackhide.html", "The Ex-Village of Blackhide", "blackhide"),
 
-	new PageInfo(undefined, "locations/taaira-ruzara/ruins/asokmoat.html", "The Black City of Asokmoat", "asokmoat"),
+	new PageInfo(undefined, "locations/taaira-ruzara/ruins/askomoat.html", "The Black City of Askomoat", "askomoat"),
 	new PageInfo(undefined, "locations/taaira-ruzara/ruins/eight-great-towers.html", "The Eight Great Towers", "eight-great-towers"),
 	new PageInfo(undefined, "locations/taaira-ruzara/ruins/red-wing-burrow.html", "Red Wing Burrow", "red-wing-burrow"),
 
@@ -173,6 +174,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "plotlines/missions/zitts-rod.html", "Zitt's Rod", "zitts-rod"),
 	new PageInfo(undefined, "plotlines/missions/journey-to-the-river-cain.html", "Journey to the River Cain", "journey-to-the-river-cain"),
 	new PageInfo(undefined, "plotlines/missions/keldhall-sewer-hunt.html", "Keldhall Sewer Hunt", "keldhall-sewer-hunt"),
+	new PageInfo(undefined, "plotlines/missions/becoming-a-prophet.html", "Becoming a Prophet", "becoming-a-prophet"),
 
 	new PageInfo(undefined, "plotlines/missions/methnaes/sariels-investigation.html", "Sariel's Investigation", "sariels-investigation"),
 
