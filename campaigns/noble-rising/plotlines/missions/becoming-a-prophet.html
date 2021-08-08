@@ -67,6 +67,28 @@
     <li>Party goes to the dungeon</li>
 </ol>
 
+<h2 id="random-encounters">Travel in <ap-link-button linkName="noble-askomoat">Askomoat</ap-link-button></h2>
+<p>
+	Each hex within Askomoat represents 10 minutes of movement and requires a random encounter roll on the table below. If the party arrives at a notable
+	location containing a Crypttender, they can be given the Crypttender's Blessing, which makes it so they can travel an hour unmolested.
+</p>
+<ap-advanced-table>
+	[
+		[{"value": "Roll", "isHeader": true, "columnAlign": "center"}, {"value": "ENCOUNTER", "isHeader": true}],		
+		["1-25", "Nothing Happens"],
+		["26-35", "1d4+3 Adventurer Skeletons"],
+		["36-55", "1d10 Commoner Ghosts"],
+		["56-60", "1d4 Adventure Skeletons plus 1 Shadow"],
+		["61-63", "1d4 Adventure Skeletons plus 1d4 Shadows"],
+		["64-73", "1d4 Adventurer Skeletons plus 1d6 Wolf Skeletons"],
+		["74-86", "1d10 Commoner Ghosts plus 1d6 Wolf Skeletons"],
+		["87", "Greater Shadow"],
+		["88-92", "Spectre"],
+		["93-97", "1d3+1 Spectres"],
+		["98-100", "1d6+5 Spectres"]
+	]
+</ap-advanced-table>
+
 <!-- TODO -->
 <h2 id="combats">Combats</h2>
 <ul class="list">
