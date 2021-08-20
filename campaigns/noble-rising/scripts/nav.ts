@@ -219,6 +219,8 @@ export const nobleNav = [
 	new PageInfo(undefined, "enemies/mutated-animals/mutant-dire-wolf.html", "Mutant Dire Wolf", "mutant-dire-wolf"),
 	new PageInfo(undefined, "enemies/mutated-animals/mutant-swindlespitter.html", "Mutant Swindlespitter", "mutant-swindlespitter"),
 
+	new PageInfo(undefined, "enemies/kobolds/mutated-kobold.html", "Mutated Kobold", "mutated-kobold"),
+
 	new PageInfo(undefined, "enemies/nen/nen-drone.html", "Nen Drone", "nen-drone"),
 	new PageInfo(undefined, "enemies/nen/nen-warrior.html", "Nen Warrior", "nen-warrior"),
 	new PageInfo(undefined, "enemies/nen/nen-queen.html", "Nen Queen", "nen-queen"),
