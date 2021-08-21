@@ -100,6 +100,8 @@ export const nobleNav = [
 	new PageInfo(undefined, "locations/taaira-ruzara/cats-retreat/blue-field.html", "Blue Field, Village of Blue Lilies", "blue-field"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/deaavh-hilluk/main.html", "The County of Deaavh Hilluk", "deaavh-hilluk"),
+	new PageInfo(undefined, "locations/taaira-ruzara/deaavh-hilluk/zo-gedad.html", "Zo Gedad", "zo-gedad"),
+	new PageInfo(undefined, "locations/taaira-ruzara/deaavh-hilluk/kala.html", "Kala", "kala"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/desserr/main.html", "Desserr County", "desserr-county"),
 	new PageInfo(undefined, "locations/taaira-ruzara/desserr/desserr.html", "Desserr, Capital City of Taaira Ruzara", "desserr"),
@@ -112,6 +114,8 @@ export const nobleNav = [
 
 	new PageInfo(undefined, "locations/taaira-ruzara/lindado/main.html", "Lindado County", "lindado"),
 	new PageInfo(undefined, "locations/taaira-ruzara/lindado/shrienhus.html", "Shrienhus, Town of Shrines", "shrienhus"),
+	new PageInfo(undefined, "locations/taaira-ruzara/lindado/chillbreak.html", "Chillbreak", "chillbreak"),
+	new PageInfo(undefined, "locations/taaira-ruzara/lindado/dragonwatch.html", "Dragonwatch, the Aging City of Towers", "dragonwatch"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/little-river/main.html", "Little River County", "little-river"),
 	new PageInfo(undefined, "locations/taaira-ruzara/little-river/old-castle.html", "Old Castle, Guardian of the Ang River", "old-castle"),
@@ -138,6 +142,8 @@ export const nobleNav = [
 	new PageInfo(undefined, "locations/taaira-ruzara/verth-di-lokipk/deathfall.html", "The Village of Deathfall", "deathfall"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/wolfs-run/main.html", "Wolf's Run County", "wolfs-run"),
+	new PageInfo(undefined, "locations/taaira-ruzara/wolfs-run/boulderfort.html", "Boulderfort, Guardian of Howler's Valley", "boulderfort"),
+	new PageInfo(undefined, "locations/taaira-ruzara/wolfs-run/silverwood.html", "Silverwood", "silverwood"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/wolfs-run/rivers-plains/main.html", "The Barony of Rivers Plains", "rivers-plains"),
 	new PageInfo(undefined, "locations/taaira-ruzara/wolfs-run/rivers-plains/freebrooke.html", "The Ex-Village of Freebrooke", "freebrooke"),
