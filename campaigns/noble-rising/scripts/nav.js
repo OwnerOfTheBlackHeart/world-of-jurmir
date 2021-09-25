@@ -115,6 +115,7 @@ export const nobleNav = [
     new PageInfo(undefined, "enemies/bandits/catfolk-sorcerer.html", "Catfolk Sorcerer", "catfolk-sorcerer"),
     new PageInfo(undefined, "enemies/bandits/mutant-bandit-chief.html", "Mutant Bandit Chief", "mutant-bandit-chief"),
     new PageInfo(undefined, "enemies/bandits/elf-fighter-2.html", "Elf Fighter", "elf-fighter-2"),
+    new PageInfo(undefined, "enemies/red-king/kaitlyn-evans.html", "Kaitlyn Evans, Red Princess of Baytide", "kaitlyn-evans"),
     new PageInfo(undefined, "enemies/minor-gods/ulath/ulath.html", "Ulath, God of Reptiles and the Foul", "ulath"),
     new PageInfo(undefined, "enemies/minor-gods/ulath/ulath-abductor.html", "Ulath Abductor", "ulath-abductor"),
     new PageInfo(undefined, "enemies/minor-gods/ulath/ulath-guard.html", "Ulath Guard", "ulath-guard"),
