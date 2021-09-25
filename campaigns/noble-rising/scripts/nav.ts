@@ -206,6 +206,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "enemies/bandits/elf-fighter-2.html", "Elf Fighter", "elf-fighter-2"),
 
 	new PageInfo(undefined, "enemies/red-king/kaitlyn-evans.html", "Kaitlyn Evans, Red Princess of Baytide", "kaitlyn-evans"),
+	new PageInfo(undefined, "enemies/red-king/skrutenicencul.html", "Skrutenicencul, Kaitlyn Evans' Monstrous Child", "skrutenicencul"),
 
 	new PageInfo(undefined, "enemies/minor-gods/ulath/ulath.html", "Ulath, God of Reptiles and the Foul", "ulath"),
 	new PageInfo(undefined, "enemies/minor-gods/ulath/ulath-abductor.html", "Ulath Abductor", "ulath-abductor"),
