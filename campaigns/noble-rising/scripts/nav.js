@@ -101,6 +101,7 @@ export const nobleNav = [
     new PageInfo(undefined, "plotlines/missions/slayer/salamander-cave.html", "The Salamander Cave", "salamander-cave"),
     new PageInfo(undefined, "plotlines/missions/fey/the-goblin-party.html", "The Goblin Party", "goblin-party"),
     new PageInfo(undefined, "plotlines/missions/fey/goblin-party/urdes.html", "Urdes, the Goblin Rogue/Fighter", "urdes"),
+    new PageInfo(undefined, "plotlines/missions/fey/goblin-party/starr.html", "Starr the (masc female) Bugbear Barbarian/Druid", "starr"),
     new PageInfo(undefined, "spellbooks/main.html", "Noble Rising Spellbooks", "spellbooks"),
     new PageInfo(undefined, "spellbooks/yasrena-spellbook.html", "Yasrena's Spellbook", "yasrena-spellbook"),
     new PageInfo(undefined, "spellbooks/kali-spellbook.html", "Kali's Spellbook", "kali-spellbook"),
