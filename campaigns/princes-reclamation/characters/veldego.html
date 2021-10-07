@@ -1,5 +1,130 @@
-<h1>Veldego, Half-Dragon Psion</h1>
+<h1>Veldego, Half-Dragon Human Psion</h1>
 <ap-image linkName="prince-veldego-img" class="character-picture" height="500">Picture of Veldego</ap-image>
+<ap-basic-table character-table>
+	[
+		["Size/Type:", "Medium Dragon"],
+		["Hit Dice:", "1d4+3 (7 / 7)"],
+		["Initiative:", "+3"],
+		["Speed:", "30 ft. (6 squares), 20 ft. (4 squares) in armor"],
+		["Armor Class:", "21 (+3 dex, +4 natural armor, +4 dragonhide scale mail), touch 13, flat-footed 18"],
+		["Base Attack/Grapple:", "+0/+3"],
+		["Attack:", "Claw +3 melee (1d4+3)"],
+		["Full Attack:", "2 claws +3 melee (1d4+3) and bite -2 melee (1d6+1)"],
+		["Space/Reach:", "5 ft./5 ft."],
+		["Special Attacks:", "Breath weapon (30 ft. cone, 6d8 acid, DC 13 reflex halves, 1/day), powers"],
+        ["Special Qualities:", 
+            "Darkvision 60 ft., low-light vision, immunity to sleep, paralysis, and acid, energy resistance electricity 5, discipline (telepathy)"
+        ],
+		["Saves:", "Fort +3, Ref +3, Will +4"],
+		["Abilities:", "Str 16, Dex 16, Con 17, Int 19, Wis 15, Cha 17"],
+		["Skills:", 
+            "Concentration +7, Diplomacy +7, Gather Information +7, Knowledge (arcana) +5, Knowledge (history) +5, ", 
+            "Knowledge (local) +5, Knowledge (psionics) +5, Psicraft +8, Sense Motive +7"
+        ],
+		["Feats:", 
+			"Armor proficiency (light), armor proficiency (medium), Combat Manifestation"
+		],
+		["Challenge Rating:", "3"],
+		["Languages:", "Common, Draconic, Giant, Gnoll, Undercommon"],
+		["Alignment:", "Lawful evil"],
+        ["Class Levels:", "Psion 1"],
+		["Level Adjustment:", "+3"],
+        ["Experience:", "3,000 / 10,000"]
+	]
+</ap-basic-table>
+<!-- Speed Of Thought is a feat for lvl 3 -->
+
+<p>
+	<i class="power">Bronze Dragonhide Resistance (Su):</i> 
+    Veldego's armor grants her energy resistance electricity 5 and grants +1 damage per die to electric damage she deals.
+</p>
+
+<b>Psion Powers - 4 Points Per Day</b>
+<div style="margin: 14.4px">
+    Level 1 powers (DC 15, 1 point)
+    <ul>
+        <li>Charm, Psionic</li>
+        <li>Energy Ray</li>
+        <li>Call to Mind</li>
+        <!--
+            <li>Attraction</li>
+            <li>Mind Thrust</li>
+        -->
+    </ul>
+</div>
+
+<div class="table-container">
+	<div class="table-column">
+		<ap-skill-chart>
+			[
+				["Armor Check Penalty", -3, ""],
+				["Bluff", 0, ""],
+				["Concentration", 4, "+4 to manifest defensively"],
+				["Craft", 0, ""],
+				["Diplomacy", 4, ""],
+				["Gather Information", 4, ""],
+				["Knowledge (arcana)", 1, ""],
+				["Knowledge (history)", 1, ""],
+				["Knowledge (local)", 1, ""],
+				["Knowledge (psionics)", 1, ""],
+				["Profession", 0, ""],
+				["Psicraft", 4, ""],
+				["Sense Motive", 4, ""]
+			]
+		</ap-skill-chart>
+	</div>
+	<div class="table-column">
+        <!-- 
+            Gem sizes and scaling prices - https://olddungeonmaster.com/2012/06/10/gems/ 
+            Green gems - https://www.gempundit.com/gemstones/green
+            Orange gems - https://www.gempundit.com/gemstones/orange
+        -->
+		<ap-enc-chart strength="16">
+			[
+                [5, 20, 35, 50],
+                ["Dragonhide scale mail", 1, [0, 1350, 0, 0], 30],
+                ["Backpack", 1, [0, 2, 0, 0], 2],
+                ["Pouch, belt", 2, [0, 1, 0, 0], 0.5],
+                ["Vial (1oz)", 10, [0, 1, 0, 0], 0.1],
+                ["Signet ring", 1, [0, 5, 0, 0], 0.1],
+                ["Waterskin", 1, [0, 1, 0, 0], 4],
+                ["Ink", 1, [0, 8, 0, 0], 0.1],
+                ["Inkpen", 1, [0, 1, 0, 0], 0.05],
+                ["Paper", 50, [0, 0, 4, 0], 0.02],
+                ["Parchment", 50, [0, 0, 2, 0], 0.02],
+                ["Chalk", 5, [0, 0, 0, 1], 0.02],
+                ["Bag of Holding, type II", 1, [0, 5000, 0, 0], 25],
+				{
+					"name":"Bag of Holding",
+                    "carryWeight": 500,
+                    "contents":[
+						[50, 250, 100, 100],
+						["Sack", 10, [0, 0, 1, 0], 0.5],
+						["Flask", 5, [0, 0, 0, 3], 1.5],
+						["Rations, trail", 25, [0, 0, 5, 0], 1],
+						["Tent", 1, [0, 10, 0, 0], 20],
+                        ["Bedroll", 1, [0, 0, 1, 0], 5],
+                        ["Blanket, winter", 1, [0, 0, 5, 0], 3],
+						["Soap", 10, [0, 0, 5, 0], 1],
+						["NOTE: Gems are 1/4 inch spheres by default", 0, [0, 0, 0, 0], 0],
+                        ["Malachite", 8, [0, 9, 0, 0], 0.001],
+                        ["Peridot", 5, [0, 30, 0, 0], 0.001],
+                        ["Smoky quartz", 6, [0, 50, 0, 0], 0.001],
+                        ["Amber", 4, [0, 110, 0, 0], 0.001],
+                        ["Jade", 3, [0, 130, 0, 0], 0.001],
+                        ["Violet garnet", 1, [0, 800, 0, 0], 0.001],
+                        ["Orange sapphire", 3, [0, 900, 0, 0], 0.001],                        
+                        ["Fire opal", 1, [0, 900, 0, 0], 0.001],
+                        ["Emerald", 2, [0, 1200, 0, 0], 0.001],
+                        ["Clear, bright green emerald", 1, [0, 6000, 0, 0], 0.001]
+                    ]
+				}
+			]
+		</ap-enc-chart>
+	</div>
+</div>
+
+<h2 id="description">Description</h2>
 <p>
     Veldego is a female half-dragon human who may be found among the court of <ap-link-button linkName="prince-duke-umur">Duke Umur</ap-link-button>.
     While Veldego has a limited amount of martial skill, most of it comes from her half-dragon heritage. Instead, she prefers to think of herself as
@@ -14,22 +139,61 @@
 <p>
     Veldego has D cup tities.
 </p>
-<ap-auth-container permissions="gm prince-full veldego-sexual-characteristics dora">
-    <p>
-        Veldego is a feminine herm and has a 7 inch penis.
-    </p>
-</ap-auth-container>
-<ap-auth-container permissions="gm prince-full veldego-linage dora">
+
+<h2>Random Findings of Note</h2>
+<ul class="list">
+    <ap-auth-container permissions="gm prince-full veldego-sexual-characteristics dora">
+        <li>
+            Veldego is a feminine herm and has a 9 inch penis.
+        </li>
+    </ap-auth-container>
+</ul>
+
+<h2 id="combat">Combat</h2>
+<p>
+    While Veldego is capable of melee combat, she prefers to rely on charm and energy ray to get her through fights, while her own allies shield
+    her from danger. If she runs out of power points, or has particularly distracting allies, Veldego may dive into combat, striking at a lone,
+    weak enemy with as many attacks as she can manage.
+</p>
+
+<h2 id="history-and-motivation">History and Motivation</h2>
+<ap-auth-container permissions="gm veldego-history prince-full dora">
     <p>
         Veldego is the daughter of <ap-link-button linkName="prince-duke-umur">Duke Umur</ap-link-button> and Rochelle, a late native woman that
         <ap-link-button linkName="prince-duke-umur">Duke Umur</ap-link-button> liked because she had green hair. Because of the fact that
         <ap-link-button linkName="prince-duke-umur">Duke Umur</ap-link-button> can't add Veldego to his collection, because she is <b>HIS</b>
         daughter, he only cares for her as much as she can be useful to him.
     </p>
+    <p>
+        While <ap-link-button linkName="prince-duke-umur">Duke Umur</ap-link-button> may be a cruel, manipulative and power hungry damage, he was
+        a good father, teaching Veldego everything he believed she would need to survive with only the title Lady, even going so far as to encourage
+        her fascination with the rare and odd powers of psionics. This wouldn't last forever, as once she became an adult, capable of caring for herself,
+        devising and executing her own plots, and forming her own contact networks, Veldego ceased to be anything more than a trusted and valued
+        retainer to <ap-link-button linkName="prince-duke-umur">Duke Umur</ap-link-button>. 
+    </p>
+    <p>
+        Veldego's first plot, which <ap-link-button linkName="prince-duke-umur">Duke Umur</ap-link-button> supported heavily, was to steal enough
+        scales from <ap-link-button linkName="prince-duchess-myli">Duchess Myli</ap-link-button> to construct a suit of armor for herself. She started
+        the plot by hiring several kobold merchants to scout <ap-link-button linkName="prince-murrabi">Murrabi</ap-link-button> and the den of the
+        pair of metallic dragons. Once Veldego felt she had enough information, she sent out 9 kobolds and 1 human, "rented" to her by her father,
+        to establish themselves in <ap-link-button linkName="prince-gefro-kuste">Gefro Kuste's</ap-link-button> court. She then had her "spies"
+        seek to either join, or bribe, those in charge of cleaning <ap-link-button linkName="prince-duchess-myli">Duchess Myli</ap-link-button>'s
+        den and horde. Over the course of 5 years, Veldego's plot was able to get her the scales she needed, including one that was plucked off
+        of <ap-link-button linkName="prince-duchess-myli">Duchess Myli</ap-link-button> while she slept, which Veldego had placed directly under
+        the breast armor, so as to display the large scale openly.
+    </p>
 </ap-auth-container>
-<p>
-    Veldego is neutral evil.
-</p>
-<p>
-    Ability score roll: 17, 16, 15, 15, 15, 8
-</p>
+<ap-auth-container permissions="gm veldego-motivation prince-full dora">
+    <p>
+        Veldego's primary motivator is the draconic greed running through her veins, especially when it comes to gems, though she
+        will occasionally do things just to get new trophies to add to her, currently, small collection. She is also motivated by
+        her capacity to hold long, and sometimes unexpected, grudges and her own lusts, though of her "strong" motivators, lust is
+        her weakest.
+    </p>
+    <p>
+        Veldego's picked up some of her father's love of collecting people, resulting in a will to own/control those she takes a
+        strong liking to. This control can vary from her trying to get the target of her favor to perform tasks for her amusement to
+        establishing sexual dominance and control to downright enslavement, if there is a legal manner for her to do so. 
+        Veldego is not above using her telepathic powers in order to keep her slaves/servants happy, passive and under control.
+    </p>
+</ap-auth-container>
