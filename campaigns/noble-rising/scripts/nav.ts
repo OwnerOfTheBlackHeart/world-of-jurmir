@@ -189,6 +189,8 @@ export const nobleNav = [
 	new PageInfo(undefined, "plotlines/missions/fey/the-goblin-party.html", "The Goblin Party", "goblin-party"),
 	new PageInfo(undefined, "plotlines/missions/fey/goblin-party/urdes.html", "Urdes, the Goblin Rogue/Fighter", "urdes"),
 	new PageInfo(undefined, "plotlines/missions/fey/goblin-party/starr.html", "Starr the (masc female) Bugbear Barbarian/Druid", "starr"),
+	new PageInfo(undefined, "plotlines/missions/fey/goblin-party/verdak.html", "Verdak the Female Hobgoblin Monk/Wizard", "verdak"),
+	new PageInfo(undefined, "plotlines/missions/fey/goblin-party/khog.html", "Khog the Female Hobgoblin Blackguard Cleric", "khog"),
 
 	new PageInfo(undefined, "spellbooks/main.html", "Noble Rising Spellbooks", "spellbooks"),
 	new PageInfo(undefined, "spellbooks/yasrena-spellbook.html", "Yasrena's Spellbook", "yasrena-spellbook"),
@@ -197,6 +199,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "spellbooks/vampire-wizard-spellbook.html", "Vampire Wizard Spellbook", "vampire-wizard-spellbook"),
 	new PageInfo(undefined, "spellbooks/camilia-spellbook.html", "Camilia's Spellbook", "camilia-spellbook"),
 	new PageInfo(undefined, "spellbooks/nate-spellbook.html", "Nate's Spellbook", "nate-spellbook"),
+	new PageInfo(undefined, "spellbooks/verdak-spellbook.html", "Verdak's Spellbook", "verdak-spellbook"),
 
 	new PageInfo(undefined, "enemies/bandits/human-commoner.html", "Human Commoner", "human-commoner"),
 	new PageInfo(undefined, "enemies/bandits/catfolk-adept.html", "Catfolk Adept", "catfolk-adept"),
@@ -319,6 +322,7 @@ export const nobleNav = [
 
 	new PageInfo(undefined, "images/npcs/cults/akkus.jpg", "", "akkus-img", true),
 	new PageInfo(undefined, "images/npcs/cults/ilvith.jpg", "", "ilvith-img", true),
+	new PageInfo(undefined, "images/npcs/cults/vano.jpg", "", "vano-img", true),
 
 	new PageInfo(undefined, "http://anthonyparsch.com/images/noble-map.png", "", "map-img", true),
 

@@ -1,0 +1,133 @@
+<h1>Verdak the Female Hobgoblin Monk/Wizard</h1>
+<ap-basic-table character-table>
+	[
+		["Size/Type:", "Medium Humanoid (goblinoid)"],
+		["Hit Dice:", "8d8+32 (72 / 72)"],
+		["Initiative:", "+4"],
+		["Speed:", "50 ft. (10 squares)"],
+		["Armor Class:", "19 (+4 dex, +5 monk), touch 19, flat-footed 15"],
+		["Base Attack/Grapple:", "+6/+7"],
+		["Attack:", "Punch +11 melee (2d6+2) or ray +10 ranged"],
+		["Full Attack:", "Punch +10/+10/+5 melee (2d6+2) or ray +10 ranged"],
+		["Space/Reach:", "5 ft./5 ft."],
+		["Special Attacks:", "Stunning fist (DC 17, 8+1/day), ki strike (magic)"],
+        ["Special Qualities:", 
+            "Darkvision 60ft., evasion, still mind, purity of body, wholeness of body (16 hp), slow fall 40 ft."
+        ],
+		["Saves:", "Fort +10, Ref +10, Will +9"],
+		["Abilities:", "Str 13, Dex 18, Con 18, Int 18, Wis 16, Cha 12"],
+		["Skills:", "Climb +12, Concentration +15, Escape Artist +15, Jump +12, Listen +14, Sense Motive +14, Spot +14, Swim +12"],
+		["Feats:", 
+			"Scribe Scroll, Improved Unarmed Strike, Point Blank Shot, Stunning Fist, Deflect Arrows, Weapon Finesse, Craft Wand, Precise Shot, Improved Trip"
+		],
+		["Challenge Rating:", "10 (+1 gestalt, +1 rolled ability scores)"],
+		["Languages:", "Common, Goblin, Draconic, Infernal, Giant, Orc"],
+		["Alignment:", "Lawful Evil"],
+        ["Class Levels:", "<ap-link-button linkName="noble-verdak-spellbook">Wizard</ap-link-button> 8, Monk (G) 8"]
+	]
+</ap-basic-table>
+
+<b>Wizard Spells</b>
+<div style="margin: 14.4px">
+    Level 0 spells (DC 14, 4 per day)
+    <ul>
+        <li>2 Message</li>
+        <li>Detect Magic</li>
+        <li>Ghost Sound</li>
+    </ul><br/>
+    Level 1 spells (DC 15, 5 per day)
+    <ul>
+        <li>Shield</li>
+        <li>Mage Armor</li>
+        <li>Shocking Grasp</li>
+        <li>Ray of Enfeeblement</li>
+        <li>Magic Missile</li>
+    </ul><br/>
+    Level 2 spells (DC 15, 4 per day)
+    <ul>
+        <li>Mirror Image</li>
+        <li>2 Scorching Ray</li>
+        <li>Cat's Grace</li>
+    </ul><br/>
+    Level 3 spells (DC 15, 4 per day)
+    <ul>
+        <li>2 Fireball</li>
+        <li>Hold Person</li>
+        <li>Haste</li>
+    </ul><br/>
+    Level 4 spells (DC 15, 3 per day)
+    <ul>
+        <li>Globe of Invulnerability, Lesser</li>
+        <li>Dimension Door</li>
+        <li>Locate Creature</li>
+    </ul>
+</div>
+
+<div class="table-container">
+	<div class="table-column">
+		<ap-skill-chart>
+			[
+				["Armor Check Penalty", 0, ""],
+				["Balance", 0, ""],
+				["Climb", 11, ""],
+				["Concentration", 11, ""],
+				["Craft", 0, ""],
+				["Decipher Script", 0, ""],
+				["Diplomacy", 0, ""],
+				["Escape Artist", 11, ""],
+				["Hide", 0, ""],
+				["Jump", 11, ""],
+				["Knowledge", 0, ""],
+                ["Listen", 11, ""],
+                ["Move Silently", 0, "+4 racial"],
+				["Perform", 0, ""],
+				["Profession", 0, ""],
+				["Sense Motive", 11, ""],
+				["Spellcraft", 0, ""],
+                ["Spot", 11, ""],
+				["Swim", 11, ""],
+				["Tumble", 0, ""]
+			]
+		</ap-skill-chart>
+	</div>
+	<div class="table-column">
+		<ap-enc-chart strength="13">
+			[
+                [0, 0, 0, 0],
+                ["Spell component pouch", 1, [0, 5, 0, 0], 2],
+                ["<ap-link-button linkName="noble-verdak-spellbook">Spellbook</ap-link-button>", 1, [0, 15, 0, 0], 3],
+                ["Monks outfit", 1, [0, 5, 0, 0], 2],
+                ["Pouch, belt", 1, [0, 1, 0, 0], 0.5],
+                ["Sack", 1, [0, 0, 1, 0], 0.5],
+                ["Bedroll", 1, [0, 0, 1, 0], 5],
+                ["Blanket, winter", 1, [0, 0, 5, 0], 3],
+                ["Waterskin", 1, [0, 1, 0, 0], 4],
+                ["Monk's Belt", 1, [0, 13000, 0, 0], 1],
+                ["Amulet of the Mighty Fists (+1)", 1, [0, 6000, 0, 0], 1],
+                ["Wand of Magic missile (7th)", 1, [0, 5250, 0, 0], 0.0625],
+                ["Wand of Enlarge Person (8th)", 1, [0, 3000, 0, 0], 0.0625],
+                ["Wand of Mirror image", 1, [0, 4500, 0, 0], 0.0625],
+                ["Potion (cure minor wounds)", 11, [0, 50, 0, 0], 0.5],
+			]
+		</ap-enc-chart>
+	</div>
+</div>
+
+<h2 id="description">Description</h2>
+<p>
+    A scarred hobgoblin in simple ropes with belt full of wands and potions stands with ready to strike with a viscous smile plastered on her
+    face.
+</p>
+
+<h2 id="combat">Combat</h2>
+<p>
+    Verdak chooses her victims carefully, looking to take out casters and other vulnerable, ranged enemies quickly. The higher damage an
+    enemy does, the more highly Verdak will prioritize them. Once she's targeted an enemy, Verdak volleys attack spell after attack spell
+    to kill the enemy as quickly as possible. If she's run out of spells, or the enemy she's targeting is in an extra vulnerable position,
+    Verdak will charge in and attack with her fists.
+</p>
+<p>
+    Verdak is unlikely to fight to the death, and will flee when she hits bloodied, using her escape skills and spells to create distance
+    that her pursuers can't easily make up. Depending on the state of her pursuers, Verdak may come back to strike her enemies with a
+    fresh load of spells.
+</p>
