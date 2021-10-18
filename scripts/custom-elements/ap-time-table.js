@@ -18,13 +18,13 @@ export class TimeTable extends HTMLElement {
             data.forEach((row) => {
                 if (Number.isInteger(row[0])) {
                     dates.push({
-                        time: new Time(row[0], row[1], row[2]),
+                        time: new Time(row[0], row[1], row[2]).DistributeDays(),
                         note: row[3],
                     });
                 }
                 else {
                     dates.push({
-                        time: Time.FromInitializer(row[0]),
+                        time: Time.FromInitializer(row[0]).DistributeDays(),
                         note: row[1],
                     });
                 }
