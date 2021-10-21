@@ -99,6 +99,8 @@ export const nobleNav = [
     new PageInfo(undefined, "plotlines/missions/becoming-a-prophet.html", "Becoming a Prophet", "becoming-a-prophet"),
     new PageInfo(undefined, "plotlines/missions/methnaes/sariels-investigation.html", "Sariel's Investigation", "sariels-investigation"),
     new PageInfo(undefined, "plotlines/missions/slayer/salamander-cave.html", "The Salamander Cave", "salamander-cave"),
+    new PageInfo(undefined, "plotlines/missions/cults/investigating-chillbreak.html", "Investigating Chillbreak", "investigating-chillbreak"),
+    new PageInfo(undefined, "plotlines/missions/cults/lodestone-report.html", "Lodestone Report", "lodestone-report"),
     new PageInfo(undefined, "plotlines/missions/fey/the-goblin-party.html", "The Goblin Party", "goblin-party"),
     new PageInfo(undefined, "plotlines/missions/fey/goblin-party/urdes.html", "Urdes, the Goblin Rogue/Fighter", "urdes"),
     new PageInfo(undefined, "plotlines/missions/fey/goblin-party/starr.html", "Starr the (masc female) Bugbear Barbarian/Druid", "starr"),

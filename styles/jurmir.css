@@ -372,3 +372,8 @@ ol > li > ol > li {
 .indent-1 {
 	margin-left: 16px;
 }
+
+span[redacted] {
+	color: black;
+	background-color: black;
+}
