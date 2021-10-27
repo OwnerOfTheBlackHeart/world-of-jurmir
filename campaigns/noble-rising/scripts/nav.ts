@@ -188,6 +188,7 @@ export const nobleNav = [
 
 	new PageInfo(undefined, "plotlines/missions/cults/investigating-chillbreak.html", "Investigating Chillbreak", "investigating-chillbreak"),
 	new PageInfo(undefined, "plotlines/missions/cults/lodestone-report.html", "Lodestone Report", "lodestone-report"),
+	new PageInfo(undefined, "plotlines/missions/cults/acquiring-the-loadstone.html", "Acquiring the Lodestone", "acquiring-the-loadstone"),
 
 	new PageInfo(undefined, "plotlines/missions/fey/the-goblin-party.html", "The Goblin Party", "goblin-party"),
 	new PageInfo(undefined, "plotlines/missions/fey/goblin-party/urdes.html", "Urdes, the Goblin Rogue/Fighter", "urdes"),
@@ -241,6 +242,21 @@ export const nobleNav = [
 	new PageInfo(undefined, "enemies/minor-gods/akkus/fury.html", "Fury of the Fallenfeather Sisterhood", "fallenfeather-fury"),
 	new PageInfo(undefined, "enemies/minor-gods/akkus/fone.html", "Fone of the Fallenfeather Sisterhood", "fallenfeather-fone"),
 
+	new PageInfo(undefined, "enemies/minor-gods/cezvoc/cezvoc.html", "Cezvoc, God of Monsters and Dark Magic", "cezvoc"),
+	new PageInfo(undefined, "enemies/minor-gods/cezvoc/quina-numuas.html", "Quina Numuas, High Priestess of Chillbreak", "quina-numuas"),
+	new PageInfo(
+		undefined,
+		"enemies/minor-gods/cezvoc/yeshana-numuas.html",
+		"Yeshana Numuas, Cillbreak's Master of Summons",
+		"yeshana-numuas"
+	),
+	new PageInfo(
+		undefined,
+		"enemies/minor-gods/cezvoc/nall-dream-killer.html",
+		"Nall Dream Killer, Chillbreak's Cezvoc Recruiter",
+		"nall-dream-killer"
+	),
+
 	new PageInfo(undefined, "enemies/hands-of-kriotz/enforcer.html", "Hands of Kriotz Enforcer", "kriotz-enforcer"),
 	new PageInfo(undefined, "enemies/hands-of-kriotz/priest.html", "Hands of Kriotz Priest", "kriotz-priest"),
 	new PageInfo(undefined, "enemies/hands-of-kriotz/cleric.html", "Hands of Kriotz Cleric", "kriotz-cleric"),
@@ -277,6 +293,8 @@ export const nobleNav = [
 
 	new PageInfo(undefined, "enemies/aberrations/aberration-dragon.html", "Aberration Dragon", "aberration-dragon"),
 	new PageInfo(undefined, "enemies/aberrations/cryptstalker.html", "Cryptstalker", "cryptstalker"),
+	new PageInfo(undefined, "enemies/aberrations/skum-warrior.html", "Skum Warrior", "skum-warrior"),
+	new PageInfo(undefined, "enemies/aberrations/skum-heavy-warrior.html", "Skum Heavy Warrior", "skum-heavy-warrior"),
 
 	new PageInfo(undefined, "enemies/amofs/amof-race.html", "Amofs", "amof-race"),
 
@@ -297,6 +315,8 @@ export const nobleNav = [
 	new PageInfo(undefined, "npcs/retainers/sebas.html", "Sebas, Awakened Tiger Wizard", "sebas"),
 	new PageInfo(undefined, "npcs/retainers/lola-ward.html", "Lola Ward, Human Rogue", "lola-ward"),
 	new PageInfo(undefined, "npcs/retainers/juliette-walker.html", "Juliette Walker, Personal Blade of Nera", "juliette-walker"),
+
+	new PageInfo(undefined, "npcs/cults/xiiserra.html", "Xiiserra, Spellthief of the Calmers", "xiiserra"),
 
 	new PageInfo(undefined, "characters/camilia.html", "Camilia Famia, Wild Beauty", "camilia"),
 	new PageInfo(undefined, "characters/animal-companions/cackles.html", "Cackles the Spotted Hyena", "cackles"),

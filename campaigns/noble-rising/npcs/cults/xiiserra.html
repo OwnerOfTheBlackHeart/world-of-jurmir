@@ -1,0 +1,166 @@
+<h1>Xiiserra, Spellthief of the Calmers</h1>
+<ap-basic-table character-table>
+	[
+		["Size/Type:", "Medium Humanoid (catfolk)"],
+		["Hit Dice:", "8d6+14 (49 / 49)"],
+		["Initiative:", "+8"],
+		["Speed:", "30 ft. (6 squares)"],
+		["Armor Class:", "20 (+4 dex, +5 +1 mithral chainshirt, +1 natural armor), touch 14, flat-footed 16"],
+		["Base Attack/Grapple:", "+6/+6"],
+		["Attack:", "+1 flaming light mace +11 melee (1d6 plus 1d6 fire) or mwk light crossbow +11 ranged (1d8/19-20)"],
+		["Full Attack:", "+1 flaming light mace +11/+6 melee (1d6 plus 1d6 fire) or mwk light crossbow +11 ranged (1d8/19-20)"],
+		["Space/Reach:", "5 ft./5 ft."],
+		["Special Attacks:", "Sneak Attack +2d6, Steal Spell (4th), Steal Energy Resistance 10, Steal Spell Effect, Steal Spell-like Ability"],
+        ["Special Qualities:", 
+            "Low-light vision, trapfinding, absorb spell"
+        ],
+		["Saves:", "Fort +4, Ref +6, Will +5"],
+		["Abilities:", "Str 10, Dex 18, Con 14, Int 14, Wis 8, Cha 18"],
+		["Skills:", 
+            "Bluff +15, Diplomacy +6, Disable Device +15, Gather Information +15, Hide +20, Intimidate +6, Listen +1, Move Silently +17, Search +11, Spot +10, ",
+            "Use Magic Device +15"
+        ],
+		["Feats:", 
+			"Nimble Fingers, Weapon Finesse, Improved Initiative"
+		],
+		["Challenge Rating:", "8"],
+		["Languages:", "Common, Feline, Celestial, Infernal"],
+		["Alignment:", "CN"],
+        ["Class Levels:", "Spellthief 8"]
+	]
+</ap-basic-table>
+
+<b>Spellthief Spells</b>
+<div style="margin: 14.4px">
+    Level 1 spells (DC 15, 2 per day)
+    <ul>
+        <li>Endure Elements</li>
+        <li>Detect Secret Doors</li>
+        <li>Expeditious Retreat</li>
+        <li>Jump</li>
+    </ul><br/>
+    Level 2 spells (DC 16, 1 per day)
+    <ul>
+        <li>Locate Object</li>
+        <li>Darkvision</li>
+    </ul>
+</div>
+
+<div class="table-container">
+	<div class="table-column">
+		<ap-skill-chart>
+			[
+				["Armor Check Penalty", 0, ""],
+                ["Appraise", 0, ""],
+                ["Bluff", 11, ""],
+                ["Concentration", 0, ""],
+                ["Craft", 0, ""],
+                ["Decipher Script", 0, ""],
+                ["Diplomacy", 0, "+2 synergy"],
+                ["Disable Device", 11, "+2 feat"],
+                ["Escape Artist", 0, ""],
+                ["Gather Information", 11, ""],
+                ["Hide", 11, "+5 cloak of elvenkind"],
+                ["Intimidate", 0, "+2 synergy"],
+                ["Jump", 0, ""],
+                ["Knowledge (arcana)", 0, ""],
+                ["Knowledge (local)", 0, ""],
+                ["Listen", 0, "+2 racial"],
+                ["Move Silently", 11, "+2 racial"],
+                ["Open Lock", 0, "+2 feat"],
+                ["Search", 9, ""],
+                ["Slight of Hand", 0, "+2 synergy"],
+                ["Speak Language", 2, ""],
+                ["Spellcraft", 0, ""],
+                ["Spot", 11, ""],
+                ["Swim", 0, ""],
+                ["Tumble", 0, ""],
+                ["Use Magic Device", 11, ""]
+			]
+		</ap-skill-chart>
+	</div>
+	<div class="table-column">
+		<ap-enc-chart strength="10">
+			[
+                [0, 50, 20, 30],
+                ["+1 Mithral chain shirt", 1, [0, 2250, 0, 0], 12.5],
+                ["+1 flaming light mace", 1, [0, 8305, 0, 0], 4],
+                ["Masterwork light crossbow", 1, [0, 335, 0, 0], 4],
+                ["Crossbow bolt", 10, [0, 0, 1, 0], 0.1],
+                ["Spell component pouch", 1, [0, 5, 0, 0], 2],
+                ["Pouch, belt", 1, [0, 1, 0, 0], 0.5],
+                ["Cloak of Elvinkind", 1, [0, 2500, 0, 0], 1],
+                ["Scroll of true strike", 2, [0, 25, 0, 0], 0.1],
+                ["Handy Haversack", 1, [0, 2000, 0, 0], 5],
+                {
+					"name":"Handy haversack main pouch",
+                    "carryWeight":80,
+                    "contents":[
+						[0, 660, 8, 8],
+                        ["Crossbow bolt", 10, [0, 0, 1, 0], 0.1],
+                        ["Waterskin", 1, [0, 1, 0, 0], 4],
+                        ["Whetstone", 1, [0, 0, 0, 2], 1],
+                        ["Tent", 1, [0, 10, 0, 0], 20],
+                        ["Scroll of comprehend languages", 5, [0, 25, 0, 0], 0.1],
+                        ["Scroll of identify", 2, [0, 125, 0, 0], 0.1],
+                        ["Scroll of invisibility", 2, [0, 150, 0, 0], 0.1],
+                        ["Scroll of cat's grace", 2, [0, 150, 0, 0], 0.1],
+                        ["Light pick, 1d4x4, only for coupe de grace", 1, [0, 4, 0, 0], 3],
+                        ["Dagger", 1, [0, 2, 0, 0], 1],
+                    ]
+				},
+                {
+                    "name":"Handy haversack left pouch",
+                    "carryWeight":20,
+                    "contents":[
+                        [0, 0, 0, 0],
+                        ["Bedroll", 1, [0, 0, 1, 0], 5],
+                        ["Blanket, winter", 1, [0, 0, 5, 0], 3],
+                        ["Soap (per lb.)", 1, [0, 0, 5, 0], 1],
+                        ["Rations (per day)", 5, [0, 0, 5, 0], 1],
+                        ["Potion of Heal Minor Wounds", 4, [0, 50, 0, 0], 0.1]
+                    ]
+                },
+                {
+					"name":"Handy haversack right pouch",
+                    "carryWeight":20,
+                    "contents":[
+						[0, 0, 0, 0],
+						["Thieves’ tools, masterwork", 1, [0, 100, 0, 0], 2]
+                    ]
+				}
+			]
+		</ap-enc-chart>
+	</div>
+</div>
+
+<h2 id="description">Description</h2>
+<p>
+    Xiiserra is a 4' 11" tall female pantherfolk with spiked black hair that holds totems depicting fire and food, C cup titties, green eyes and
+    a sturdy build. When not wearing her ornate mithral chainshirt, Xiiserra wears either a modest set of orange and brown robes with embroidery depicting
+    a large feast or a fire orange binder (that does little to hide her bust) under a tight fitting wolf-hide vest with a giant viper skin skirt.
+    Xiiserra also wears a neutral gray cloth cloak.
+</p>
+
+<h2 id="combat">Combat</h2>
+<p>
+    Xiiserra will generally try to run if engaged in solo combat, using expeditious retreat to gain as much distance as she can. If she has allies, she will wait for
+    them to get in position, then move around and flank. If she believes she could take her target out in a single sneak attack, she'll attack with her crossbow,
+    possibly using one of her scrolls of true strike to ensure the attack hits.
+</p>
+<p>
+    Xiiserra normally saves her spells and scrolls for out of combat use, with the exception of mirror image, which she'll use if she expects to be attacked.
+</p>
+
+<h2 id="history-and-motivation">History and Motivation</h2>
+<ap-auth-container permissions="gm camilia-history noble-full">
+    <p>
+        Xiiserra is unlikely to tell her actual history, but will happily regale those who ask with some tale they'll believe.
+    </p>
+</ap-auth-container>
+<ap-auth-container permissions="gm camilia-motivation noble-full">
+    <p>
+        Xiiserra knows the risk of <ap-link-button linkName="noble-calmers-of-the-flame-lord">Kugmoxon</ap-link-button> awakening and the power he offers. While she
+        does her best to keep him "calmed," Xiiserra also tries to curry his favor and gain power from him.
+    </p>
+</ap-auth-container>
