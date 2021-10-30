@@ -205,6 +205,7 @@ export const nobleNav = [
     new PageInfo(undefined, "misc/deathfall-warehouse.html", "Nera's Deathfall Warehouse", "deathfall-warehouse"),
     new PageInfo(undefined, "misc/elizabeths-works.html", "Elizabeth's Works", "elizabeths-works"),
     new PageInfo(undefined, "misc/note-to-kali.html", "Note to Kali", "note-to-kali"),
+    new PageInfo(undefined, "misc/inquisitors.html", "Inquisitors", "inquisitors"),
     new PageInfo(undefined, "images/fang-at-desk.jpg", "", "fang-img", true),
     new PageInfo(undefined, "images/mysterious-stranger.jpg", "", "mysterious-stranger-img", true),
     new PageInfo(undefined, "images/turzk.jpg", "", "turzk-img", true),
