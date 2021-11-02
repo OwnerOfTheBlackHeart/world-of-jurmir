@@ -257,6 +257,8 @@ export const nobleNav = [
 		"nall-dream-killer"
 	),
 
+	new PageInfo(undefined, "enemies/minor-gods/hamahakki/hamahakki.html", "Hamahakki, Goddess of Venomous Spiders", "hamahakki"),
+
 	new PageInfo(undefined, "enemies/hands-of-kriotz/enforcer.html", "Hands of Kriotz Enforcer", "kriotz-enforcer"),
 	new PageInfo(undefined, "enemies/hands-of-kriotz/priest.html", "Hands of Kriotz Priest", "kriotz-priest"),
 	new PageInfo(undefined, "enemies/hands-of-kriotz/cleric.html", "Hands of Kriotz Cleric", "kriotz-cleric"),
@@ -323,6 +325,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "characters/zarsra.html", "Zarsra Telyn, Drow Slave of Sariel", "zarsra"),
 	new PageInfo(undefined, "characters/skellyball.html", "Skellyball, Rollable Human Skeleton", "skellyball"),
 	new PageInfo(undefined, "characters/nate-sutton.html", "Nate Sutton, Wizard Follower of Elizabeth", "nate-sutton"),
+	new PageInfo(undefined, "characters/laestra.html", "Laestra Nirylan, Enslaved Cleric of Hamahakki", "laestra"),
 
 	new PageInfo(undefined, "characters/misc/skellyball-powers.html", "Skellyball Powers", "skellyball-powers"),
 
@@ -361,6 +364,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "images/npcs/juliette-walker.jpg", "", "juliette-walker-img", true),
 	new PageInfo(undefined, "images/npcs/juliette-walker-alt.jpg", "", "juliette-walker-alt-img", true),
 	new PageInfo(undefined, "images/npcs/nevaeh-byrne.jpg", "", "nevaeh-byrne-img", true),
+	new PageInfo(undefined, "images/npcs/laestra.png", "", "laestra-img", true),
 
 	new PageInfo(undefined, "images/npcs/cults/akkus.jpg", "", "akkus-img", true),
 	new PageInfo(undefined, "images/npcs/cults/ilvith.jpg", "", "ilvith-img", true),
