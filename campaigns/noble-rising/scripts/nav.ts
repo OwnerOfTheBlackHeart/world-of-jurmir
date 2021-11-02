@@ -89,6 +89,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "locations/tiathiloth/mensharra.html", "Mensharra, Capital City of Tiathiloth", "mensharra"),
 
 	new PageInfo(undefined, "locations/methnaes/main.html", "The Duchy of Methnaes", "methnaes"),
+	new PageInfo(undefined, "locations/methnaes/barakuir.html", "Barakuir, Capital of Methnaes", "barakuir"),
 
 	new PageInfo(undefined, "locations/taaira-ruzara/main.html", "The Duchy of Taaira Ruzara", "taaira-ruzara"),
 
@@ -341,6 +342,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "misc/elizabeths-works.html", "Elizabeth's Works", "elizabeths-works"),
 	new PageInfo(undefined, "misc/note-to-kali.html", "Note to Kali", "note-to-kali"),
 	new PageInfo(undefined, "misc/inquisitors.html", "Inquisitors", "inquisitors"),
+	new PageInfo(undefined, "misc/nera-methnaes-agreement.html", "The Nera-Methnaes Agreement", "nera-methnaes-agreement"),
 
 	new PageInfo(undefined, "images/fang-at-desk.jpg", "", "fang-img", true),
 	new PageInfo(undefined, "images/mysterious-stranger.jpg", "", "mysterious-stranger-img", true),
@@ -365,6 +367,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "images/npcs/juliette-walker-alt.jpg", "", "juliette-walker-alt-img", true),
 	new PageInfo(undefined, "images/npcs/nevaeh-byrne.jpg", "", "nevaeh-byrne-img", true),
 	new PageInfo(undefined, "images/npcs/laestra.png", "", "laestra-img", true),
+	new PageInfo(undefined, "images/npcs/eclavana-ichiir.png", "", "eclavana-ichiir-img", true),
 
 	new PageInfo(undefined, "images/npcs/cults/akkus.jpg", "", "akkus-img", true),
 	new PageInfo(undefined, "images/npcs/cults/ilvith.jpg", "", "ilvith-img", true),
