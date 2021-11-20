@@ -288,6 +288,8 @@ export const nobleNav = [
 	new PageInfo(undefined, "enemies/undead/adventurer-skeleton.html", "Adventurer's Skeleton", "adventurer-skeleton"),
 	new PageInfo(undefined, "enemies/undead/commoner-ghost.html", "Commoner's Ghost", "commoner-ghost"),
 	new PageInfo(undefined, "enemies/undead/elf-warrior-ghost.html", "Elf Warrior's Ghost", "elf-warrior-ghost"),
+	new PageInfo(undefined, "enemies/undead/de-lange-corpse.html", "King Thys De Lange's Corpse", "de-lange-corpse"),
+	new PageInfo(undefined, "enemies/undead/de-lange-ghost.html", "King Thys De Lange's Ghost", "de-lange-ghost"),
 
 	new PageInfo(undefined, "enemies/goblins/bugbear-lieutenant.html", "Bugbear Lieutenant", "bugbear-lieutenant"),
 	new PageInfo(undefined, "enemies/goblins/bugbear-sergeant.html", "Bugbear Sergeant", "bugbear-sergeant"),
