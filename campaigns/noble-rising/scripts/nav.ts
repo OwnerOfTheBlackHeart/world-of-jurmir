@@ -39,6 +39,7 @@ export const nobleNav = [
 		"The Servants of Perfect Beauty",
 		"servants-of-perfect-beauty"
 	),
+	new PageInfo(undefined, "organizations/cults/demon/ilvith/ilvith.html", "Ilvith, Succubus Minor God of Beauty and Lust", "ilvith"),
 
 	new PageInfo(
 		undefined,
@@ -362,6 +363,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "images/quilynn-loreweaver.jpg", "", "quilynn-loreweaver-img", true),
 	new PageInfo(undefined, "images/reaper.jpg", "", "reaper-img", true),
 	new PageInfo(undefined, "images/sariel-revealing-painting.jpg", "", "sariel-revealing-painting-img", true),
+	new PageInfo(undefined, "images/ilvith-symbol.jpg", "", "ilvith-symbol-img", true),
 
 	new PageInfo(undefined, "images/npcs/ivy-cooke-alt.png", "", "ivy-cooke-alt", true),
 	new PageInfo(undefined, "images/npcs/chonk.jpg", "", "chonk-img", true),
