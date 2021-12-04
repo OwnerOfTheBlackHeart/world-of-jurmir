@@ -4,8 +4,6 @@ import { BreastSizeRoll, RaceSexualFeatureRolls, Sex, SexRollRange } from "./sex
 import { DateInitializer, Time } from "./time.js";
 import { NumberBounds } from "./utilities.js";
 
-// TODO: Give some time for everyone to update to at least chrome 89, then use a top level await
-
 export const globals = {
 	titlePostfix: " - World of Jurmir Reference Document",
 	forceRefresh: false,
@@ -14,6 +12,7 @@ export const globals = {
 	aaronCurrentDate: undefined as Time,
 	sbjCurrentDate: undefined as Time,
 	randomRaceTables: undefined as OrderedRecord<string, Race[]>,
+	xpAwardsTable: undefined as XpAwards,
 	sexRanges: [
 		{ from: 1, to: 1, value: Sex.masculineHerm, hasBoobs: false, hasDick: true },
 		{ from: 2, to: 5, value: Sex.male, hasBoobs: false, hasDick: true },
@@ -90,13 +89,16 @@ export const globals = {
 	] as ReputationRank[],
 };
 
+await LoadGlobalsJson();
+
 export async function LoadGlobalsJson() {
-	const [dateData, forceRefresh, randomRaceTables] = await Promise.all([
+	const [dateData, forceRefresh, randomRaceTables, xpAwardsTable] = await Promise.all([
 		fetch("data/dates.json", { cache: "no-store" }).then((response) => response.json() as Promise<DatesJson>),
 		fetch("force-refresh.txt", { cache: "no-store" })
 			.then((response) => response.text())
 			.then((forceRefreshString) => forceRefreshString.trim().toLowerCase() === "true"),
 		fetch("data/race-tables.json").then((response) => response.json() as Promise<OrderedRecord<string, Race[]>>),
+		fetch("data/xp-awards.json").then((response) => response.json() as Promise<XpAwards>),
 	]);
 
 	globals.nobleCurrentDate = Time.FromInitializer(dateData.nobleCurrentDate);
@@ -105,6 +107,7 @@ export async function LoadGlobalsJson() {
 	globals.sbjCurrentDate = Time.FromInitializer(dateData.sbjCurrentDate);
 
 	globals.randomRaceTables = randomRaceTables;
+	globals.xpAwardsTable = xpAwardsTable;
 
 	globals.forceRefresh = forceRefresh;
 }
@@ -121,3 +124,5 @@ export interface ReputationRank {
 	xpRange: NumberBounds;
 	title: string;
 }
+
+export type XpAwards = { [characterLevel: number]: { [monsterCR: number]: number } };

@@ -1,0 +1,109 @@
+.xp-calculator-container {
+	display: table;
+}
+
+.characters-select-panel,
+.enemies-select-panel,
+.output-panel {
+	display: table-cell;
+	vertical-align: top;
+
+	padding: 1rem;
+}
+
+.characters-select-panel,
+.output-panel {
+	border: 1px solid black;
+}
+
+.enemies-select-panel {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.characters-select-panel > h2,
+.enemies-select-panel > h2,
+.output-panel > h2 {
+	margin: 0;
+}
+
+/* Characters Panel */
+.campaign-select-container * {
+	vertical-align: middle;
+}
+
+.campaign-select-container h2 {
+	display: inline-block;
+	margin: 0 0.5rem 0 0;
+}
+
+/* Enemies Panel */
+.enemy-input-row {
+	margin-top: 0.5rem;
+}
+
+.enemy-input-subrow {
+	display: inline-block;
+}
+
+.enemy-input-subrow:first-child {
+	margin-right: 0.5rem;
+}
+
+.enemy-input-subrow > label {
+	display: block;
+	font-weight: bold;
+}
+
+.enemy-input-subrow > input {
+	width: 5rem;
+}
+
+.enemy-input-buttons-row {
+	margin-top: 0.5rem;
+}
+
+.enemy-input-buttons-row > button:not(:last-child) {
+	margin-right: 0.5rem;
+}
+
+/* Output Panel */
+.xp-display {
+	margin-top: 0.5rem;
+}
+
+/* Old Code */
+.xp-calculator-input-row {
+	margin-bottom: 1rem;
+}
+
+.xp-calculator-input-row label {
+	display: block;
+	font-weight: 700;
+}
+
+.xp-calculator-input-row input {
+	width: 6rem;
+}
+
+.xp-calculator-input {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 0.5rem;
+}
+
+.xp-calculator-output {
+	height: 10rem;
+	width: 10rem;
+
+	display: inline-block;
+	vertical-align: top;
+
+	border: 1px solid black;
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 0.25rem;
+}
+
+.xp-calculator-output > div {
+	margin-bottom: 0.25rem;
+}

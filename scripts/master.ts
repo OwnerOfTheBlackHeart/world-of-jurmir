@@ -1,6 +1,6 @@
 import { Auth } from "./auth.js";
 import "./custom-elements/custom-elements.js";
-import { globals, LoadGlobalsJson } from "./globals.js";
+import { globals } from "./globals.js";
 import * as io from "./io.js";
 
 // ****************** AUTH FUNCTIONS *************************
@@ -16,22 +16,16 @@ export function OnAuthKeyDown(event: KeyboardEvent) {
 	}
 }
 
-// ******************** "ON LOAD" ****************************
-async function InitialSiteLoad() {
-	await LoadGlobalsJson();
-
-	// index.html
-	await Promise.all([
-		io.LoadIntoElement("header.html", "#header").then(() => {
-			(document.getElementById("auth-input") as HTMLInputElement).onkeyup = OnAuthKeyDown;
-			(document.getElementById("authorize-button") as HTMLButtonElement).onclick = onAuthButtonClick;
-		}),
-		io.LoadIntoElement("footer.html", "#footer"),
-		io.OnInitialLoad(),
-	]);
-}
-
+// ************* NAVIGATION INITIALIZATION *******************
 io.SetTitlePostfix(globals.titlePostfix);
-InitialSiteLoad();
+
+// index.html
+io.LoadIntoElement("header.html", "#header").then(() => {
+	(document.getElementById("auth-input") as HTMLInputElement).onkeyup = OnAuthKeyDown;
+	(document.getElementById("authorize-button") as HTMLButtonElement).onclick = onAuthButtonClick;
+});
+io.LoadIntoElement("footer.html", "#footer");
+io.OnInitialLoad();
+
 Auth.UpdateCurrentAuth();
 onpopstate = io.OnPopState;

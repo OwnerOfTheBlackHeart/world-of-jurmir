@@ -1,0 +1,30 @@
+{
+	"Noble Rising": {
+		"Player Characters": [
+			{ "name": "Elizabeth", "ecl": 7 },
+			{ "name": "Sin", "ecl": 8 },
+			{ "name": "Draggin", "ecl": 7 },
+			{ "name": "Galadriel", "ecl": 6 },
+			{ "name": "Nera", "ecl": 9 },
+			{ "name": "Paedir", "ecl": 7 },
+			{ "name": "Sariel", "ecl": 7 },
+			{ "name": "Kali", "ecl": 7 },
+			{ "name": "Laestra", "ecl": 9 }
+		],
+		"Retainers": [
+			{ "name": "Camilia", "ecl": 6, "slave": true },
+			{ "name": "Juliette", "ecl": 6, "slave": true },
+			{ "name": "Zarsra", "ecl": 6, "slave": true },
+			{ "name": "Lola", "ecl": 7 }
+		],
+		"Slaves": [
+			{ "name": "Minion", "ecl": 6, "slave": true },
+			{ "name": "Priya", "ecl": 5, "slave": true },
+			{ "name": "Lily", "ecl": 6, "slave": true }
+		],
+		"Orcs": [
+			{ "name": "Maak", "ecl": 3, "slave": true },
+			{ "name": "Zagua", "ecl": 4, "slave": true }
+		]
+	}
+}

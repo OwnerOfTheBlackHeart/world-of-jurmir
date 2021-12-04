@@ -101,6 +101,12 @@ export function setDescendantProperty(parent, childPath, newValue) {
     }, parent);
     return parent;
 }
+export function addToRecordArray(record, key, data) {
+    if (!record[key]) {
+        record[key] = [];
+    }
+    record[key].push(data);
+}
 export function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }

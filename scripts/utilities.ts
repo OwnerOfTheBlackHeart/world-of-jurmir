@@ -126,6 +126,14 @@ export function setDescendantProperty<T>(parent: T, childPath: string, newValue:
 	return parent;
 }
 
+export function addToRecordArray<T, K extends string | number>(record: Record<K, T[]>, key: K, data: T) {
+	if (!record[key]) {
+		record[key] = [];
+	}
+
+	record[key].push(data);
+}
+
 export function getRndInteger(min: number, max: number): number {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }

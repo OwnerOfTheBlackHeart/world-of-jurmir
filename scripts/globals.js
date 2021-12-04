@@ -9,6 +9,7 @@ export const globals = {
     aaronCurrentDate: undefined,
     sbjCurrentDate: undefined,
     randomRaceTables: undefined,
+    xpAwardsTable: undefined,
     sexRanges: [
         { from: 1, to: 1, value: Sex.masculineHerm, hasBoobs: false, hasDick: true },
         { from: 2, to: 5, value: Sex.male, hasBoobs: false, hasDick: true },
@@ -84,19 +85,22 @@ export const globals = {
         { level: 10, xpRange: { lower: 285 }, title: "Accepted Heir" },
     ],
 };
+await LoadGlobalsJson();
 export async function LoadGlobalsJson() {
-    const [dateData, forceRefresh, randomRaceTables] = await Promise.all([
+    const [dateData, forceRefresh, randomRaceTables, xpAwardsTable] = await Promise.all([
         fetch("data/dates.json", { cache: "no-store" }).then((response) => response.json()),
         fetch("force-refresh.txt", { cache: "no-store" })
             .then((response) => response.text())
             .then((forceRefreshString) => forceRefreshString.trim().toLowerCase() === "true"),
         fetch("data/race-tables.json").then((response) => response.json()),
+        fetch("data/xp-awards.json").then((response) => response.json()),
     ]);
     globals.nobleCurrentDate = Time.FromInitializer(dateData.nobleCurrentDate);
     globals.princeCurrentDate = Time.FromInitializer(dateData.princeCurrentDate);
     globals.aaronCurrentDate = Time.FromInitializer(dateData.aaronCurrentDate);
     globals.sbjCurrentDate = Time.FromInitializer(dateData.sbjCurrentDate);
     globals.randomRaceTables = randomRaceTables;
+    globals.xpAwardsTable = xpAwardsTable;
     globals.forceRefresh = forceRefresh;
 }
 //# sourceMappingURL=globals.js.map
