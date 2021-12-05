@@ -26,5 +26,18 @@
 			{ "name": "Maak", "ecl": 3, "slave": true },
 			{ "name": "Zagua", "ecl": 4, "slave": true }
 		]
+	},
+	"Prince's Reclamation": {
+		"Player Characters": [
+			{ "name": "Kaja", "ecl": 2 },
+			{ "name": "Dithe", "ecl": 2 },
+			{ "name": "Rayner", "ecl": 1 },
+			{ "name": "Ekku", "ecl": 2 },
+			{ "name": "Melite", "ecl": 1 },
+			{ "name": "Allae", "ecl": 1 },
+			{ "name": "Yrsa", "ecl": 1 },
+			{ "name": "Zardril", "ecl": 1 },
+			{ "name": "Veldego", "ecl": 4 }
+		]
 	}
 }
