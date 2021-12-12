@@ -45,6 +45,7 @@ export const pages = [
 	new PageInfo(undefined, "homebrew/magic-items.html", "Magic Items", "magic-items"),
 	new PageInfo(undefined, "homebrew/bright-one.html", "The Bright One Prestige Class", "bright-one"),
 	new PageInfo(undefined, "homebrew/dread-aberromancer.html", "The Dread Aberromancer Prestige Class", "dread-aberromancer"),
+	new PageInfo(undefined, "homebrew/expressor.html", "Expressor of Perfect Beauty Prestige Class", "expressor"),
 	new PageInfo(undefined, "homebrew/lesser-drow.html", "Lesser Drow", "lesser-drow"),
 	new PageInfo(undefined, "homebrew/transformatives.html", "Transformatives", "transformatives"),
 	new PageInfo(undefined, "homebrew/downtime-training.html", "Downtime Training", "downtime-training"),
