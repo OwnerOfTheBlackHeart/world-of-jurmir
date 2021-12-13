@@ -3,30 +3,30 @@
 <ap-basic-table character-table>
 	[
 		["Size/Type:", "Medium Humanoid (human)"],
-		["Hit Dice:", "5d8+1d4+18 (40 / 40)"],
+		["Hit Dice:", "5d8+2d4+21 (46 / 46)"],
 		["Initiative:", "+2"],
 		["Speed:", "30 ft. (6 squares)"],
 		["Armor Class:", "16 (+2 dex, +4 +1 hide armor), touch 12, flat-footed 14"],
-		["Base Attack/Grapple:", "+3/+5"],
-		["Attack:", "+1 critosaurus longbow +6 ranged (1d8+3/19-20x3) or +1 critosaurus spear +6 melee (1d8+4/19-20x3) or throwing axe +5 melee (1d6+2)"],
-		["Full Attack:", "+1 critosaurus longbow +6 ranged (1d8+3/19-20x3) or +1 critosaurus spear +6 melee (1d8+4/19-20x3) or throwing axe +5 melee (1d6+2)"],
+		["Base Attack/Grapple:", "+4/+6"],
+		["Attack:", "+1 critosaurus longbow +7 ranged (1d8+3/19-20x3) or +1 critosaurus spear +7 melee (1d8+4/19-20x3) or throwing axe +6 melee (1d6+2)"],
+		["Full Attack:", "+1 critosaurus longbow +7 ranged (1d8+3/19-20x3) or +1 critosaurus spear +7 melee (1d8+4/19-20x3) or throwing axe +6 melee (1d6+2)"],
 		["Space/Reach:", "5 ft./5 ft."],
 		["Special Attacks:", "-"],
         ["Special Qualities:", 
             "From the gnoll lands, <ap-link-button linkName="noble-cackles">animal companion</ap-link-button>, nature sense, wild empathy,",
             "woodland stride, trackless step, resist nature’s lure, wild shape (1/day), summon familiar"
         ],
-		["Saves:", "Fort +7, Ref +3, Will +10"],
+		["Saves:", "Fort +7, Ref +3, Will +11"],
 		["Abilities:", "Str 14, Dex 14, Con 16, Int 13, Wis 18, Cha 15"],
 		["Skills:", "Concentration +4, Decipher Script +2, Handle Animal +10, Knowledge (nature) +13, Spot +12, Listen +12, Survival +14, Heal +12, Spellcraft +3"],
 		["Feats:", 
 			"Track, Martial Weapon Proficiency (longbow), Point Blank Shot, Lost Tradition (Wizard/Wis), Scribe Scroll"
 		],
-		["Challenge Rating:", "5"],
-		["Languages:", "Common (broken), gnolish, druidic"],
+		["Challenge Rating:", "7"],
+		["Languages:", "Common, gnolish, druidic"],
 		["Alignment:", "? <ap-auth-container permissions="gm camilia-alignment noble-full">Neutral Evil (I rolled this shit)</ap-auth-container>"],
-        ["Class Levels:", "Druid 5, <ap-link-button linkName="noble-camilia-spellbook">Wizard</ap-link-button> 1"],
-        ["Experience:", "20,306 / 21,000"]
+        ["Class Levels:", "Druid 5, <ap-link-button linkName="noble-camilia-spellbook">Wizard</ap-link-button> 2"],
+        ["Experience:", "21,093 / 21,000"]
 	]
 </ap-basic-table>
 
@@ -34,7 +34,6 @@
 	Plan:
 	Lvls 6 through 8 - Wizard
 	Lvl 9+ - Arcane Hierophant (RotW, Pg. 108)
-	Lvl 6 feat - Lost Tradition (Wizard/Wis)
 	Lvl 9 feat - Natural Spell
  -->
 
@@ -96,15 +95,17 @@
 	<div class="table-column">
 		<b>Wizard Spells</b>
 		<div style="margin: 14.4px">
-			Level 0 spells (DC 14, 3 per day)
+			Level 0 spells (DC 14, 4 per day)
 			<ul>
 				<li>2 Detect Magic</li>
 				<li>Light</li>
+				<li>Mending</li>
 			</ul><br/>
-			Level 1 spells (DC 15, 2 per day)
+			Level 1 spells (DC 15, 3 per day)
 			<ul>
 				<li>True Strike</li>
-				<li>Ray of Clumsiness</li>
+				<li>Ray of Clumsiness (SC 167)</li>
+				<li>Arrow Mind (SC 16)</li>
 			</ul>
 		</div>
 	</div>
@@ -119,6 +120,7 @@
 				["Decipher Script", 1, ""],
 				["Handle Animal", 8, ""],
 				["Knowledge (nature)", 8, "+2 Nature Sense, +2 synergy"],
+				["Knowledge (arcana)", 4, ""],
 				["Spot", 8, ""],
 				["Survival", 8, "+2 Nature Sense, +2 checks in aboveground natural environments<br/>(aquatic, desert, forest, hill, marsh, mountains, and plains)"],
                 ["Listen", 8, ""],
