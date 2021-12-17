@@ -99,6 +99,7 @@ export const nobleNav = [
     new PageInfo(undefined, "plotlines/missions/journey-to-the-river-cain.html", "Journey to the River Cain", "journey-to-the-river-cain"),
     new PageInfo(undefined, "plotlines/missions/keldhall-sewer-hunt.html", "Keldhall Sewer Hunt", "keldhall-sewer-hunt"),
     new PageInfo(undefined, "plotlines/missions/becoming-a-prophet.html", "Becoming a Prophet", "becoming-a-prophet"),
+    new PageInfo(undefined, "plotlines/missions/elizabeths-beauty-tour.html", "Elizabeth's Beauty Tour", "elizabeths-beauty-tour"),
     new PageInfo(undefined, "plotlines/missions/methnaes/sariels-investigation.html", "Sariel's Investigation", "sariels-investigation"),
     new PageInfo(undefined, "plotlines/missions/slayer/salamander-cave.html", "The Salamander Cave", "salamander-cave"),
     new PageInfo(undefined, "plotlines/missions/cults/investigating-chillbreak.html", "Investigating Chillbreak", "investigating-chillbreak"),
