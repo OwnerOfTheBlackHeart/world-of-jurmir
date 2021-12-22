@@ -140,6 +140,7 @@ export const nobleNav = [
     new PageInfo(undefined, "enemies/minor-gods/akkus/kata.html", "Kata of the Fallenfeather Sisterhood", "fallenfeather-kata"),
     new PageInfo(undefined, "enemies/minor-gods/akkus/fury.html", "Fury of the Fallenfeather Sisterhood", "fallenfeather-fury"),
     new PageInfo(undefined, "enemies/minor-gods/akkus/fone.html", "Fone of the Fallenfeather Sisterhood", "fallenfeather-fone"),
+    new PageInfo(undefined, "enemies/minor-gods/akkus/kide.html", "Kide of the Fallenfeather Sisterhood", "fallenfeather-kide"),
     new PageInfo(undefined, "enemies/minor-gods/cezvoc/cezvoc.html", "Cezvoc, God of Monsters and Dark Magic", "cezvoc"),
     new PageInfo(undefined, "enemies/minor-gods/cezvoc/quina-numuas.html", "Quina Numuas, High Priestess of Chillbreak", "quina-numuas"),
     new PageInfo(undefined, "enemies/minor-gods/cezvoc/yeshana-numuas.html", "Yeshana Numuas, Cillbreak's Master of Summons", "yeshana-numuas"),
