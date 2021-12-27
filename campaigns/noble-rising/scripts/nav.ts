@@ -349,6 +349,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "misc/note-to-kali.html", "Note to Kali", "note-to-kali"),
 	new PageInfo(undefined, "misc/inquisitors.html", "Inquisitors", "inquisitors"),
 	new PageInfo(undefined, "misc/nera-methnaes-agreement.html", "The Nera-Methnaes Agreement", "nera-methnaes-agreement"),
+	new PageInfo(undefined, "misc/random-npcs.html", "Random/Seen Once NPCs", "random-npcs"),
 
 	new PageInfo(undefined, "images/fang-at-desk.jpg", "", "fang-img", true),
 	new PageInfo(undefined, "images/mysterious-stranger.jpg", "", "mysterious-stranger-img", true),
