@@ -1,13 +1,13 @@
 {
 	"Noble Rising": {
 		"Player Characters": [
-			{ "name": "Elizabeth", "ecl": 7 },
+			{ "name": "Elizabeth", "ecl": 8 },
 			{ "name": "Sin", "ecl": 8 },
-			{ "name": "Draggin", "ecl": 7 },
-			{ "name": "Galadriel", "ecl": 6 },
+			{ "name": "Draggin", "ecl": 8 },
+			{ "name": "Galadriel", "ecl": 8 },
 			{ "name": "Nera", "ecl": 10 },
-			{ "name": "Paedir", "ecl": 7 },
-			{ "name": "Sariel", "ecl": 7 },
+			{ "name": "Paedir", "ecl": 8 },
+			{ "name": "Sariel", "ecl": 8 },
 			{ "name": "Kali", "ecl": 7 },
 			{ "name": "Laestra", "ecl": 9 }
 		],
