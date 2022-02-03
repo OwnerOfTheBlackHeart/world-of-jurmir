@@ -87,8 +87,8 @@ export function CalculateXp(characters: XpCharacter[], enemies: XpEnemy[]) {
 		enemies.forEach((enemyGroup) => {
 			let xp = 0;
 
-			if (enemyGroup.cr < 0) {
-				xp = globals.xpAwardsTable[ecl][1] / enemyGroup.cr;
+			if (enemyGroup.cr < 1) {
+				xp = globals.xpAwardsTable[ecl][1] * enemyGroup.cr;
 			} else {
 				xp = globals.xpAwardsTable[ecl][enemyGroup.cr];
 			}
