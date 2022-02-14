@@ -109,6 +109,11 @@ export async function LoadGlobalsJson() {
 	globals.randomRaceTables = randomRaceTables;
 	globals.xpAwardsTable = xpAwardsTable;
 
+	// This is being kept commented out for later use as part of debugging race tables
+	// for (let key in globals.randomRaceTables.values) {
+	// 	globals.randomRaceTables.values[key].sort((a, b) => a.from - b.from);
+	// }
+
 	globals.forceRefresh = forceRefresh;
 }
 

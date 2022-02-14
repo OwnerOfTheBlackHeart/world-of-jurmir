@@ -35,7 +35,6 @@ export class XpCalculator extends HTMLElement {
         containerDiv.appendChild(characterSelectArea);
         containerDiv.appendChild(enemySelectArea);
         containerDiv.appendChild(outputArea);
-        window.test = () => console.log(this.selectedCharacters);
     }
     BuildStyleElement(filepath) {
         const linkElem = document.createElement("link");
