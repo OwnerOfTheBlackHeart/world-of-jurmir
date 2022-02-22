@@ -324,6 +324,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "npcs/retainers/lola-ward.html", "Lola Ward, Human Rogue", "lola-ward"),
 	new PageInfo(undefined, "npcs/retainers/juliette-walker.html", "Juliette Walker, Personal Blade of Nera", "juliette-walker"),
 	new PageInfo(undefined, "npcs/retainers/falodran.html", "Falodran the Thief Melter", "falodran"),
+	new PageInfo(undefined, "npcs/retainers/chachick.html", "Chachick, Psychic Warrior Nen", "chachick"),
 
 	new PageInfo(undefined, "npcs/cults/xiiserra.html", "Xiiserra, Spellthief of the Calmers", "xiiserra"),
 
