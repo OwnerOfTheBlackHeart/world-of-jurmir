@@ -9,7 +9,7 @@
 			{ "name": "Paedir", "ecl": 10 },
 			{ "name": "Sariel", "ecl": 10 },
 			{ "name": "Kali", "ecl": 7 },
-			{ "name": "Laestra", "ecl": 9 }
+			{ "name": "Laestra", "ecl": 10 }
 		],
 		"Retainers": [
 			{ "name": "Camilia", "ecl": 7, "slave": true },
