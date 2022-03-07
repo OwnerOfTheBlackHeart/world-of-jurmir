@@ -1,32 +1,65 @@
 <h1>Laestra Nirylan, Enslaved Cleric of <ap-link-button linkName="noble-hamahakki">Hamahakki</ap-link-button></h1>
 <ap-image linkName="noble-laestra-img" class="character-picture" height="500">Picture of Laestra</ap-image>
-<ap-basic-table character-table>
-    [
-        ["Size/Type:", "Medium Humanoid (elf)"],
-        ["Hit Dice:", "10d8+20 (72 / 72)"],
-        ["Initiative:", "+1"],
-        ["Speed:", "30 ft. (6 squares)"],
-        ["Armor Class:", "11 (+1 dex), touch 11, flat-footed 10"],
-        ["Base Attack/Grapple:", "+7/+10"],
-        ["Attack:", "Punch +10 melee (1d3+3)"],
-        ["Full Attack:", "Punch +10 melee (1d3+3)"],
-        ["Space/Reach:", "5 ft./5 ft."],
-        ["Special Attacks:", "Death touch, rebuke undead (6 per day), rebuke spiders (6 per day)"],
-        ["Special Qualities:", 
-            "Darkvision 120 ft, <ap-link-button linkName="drow-traits">Drow traits</ap-link-button>, spell resistance 21, domains (death, spider <i>(SC 280)</i>)"
-        ],
-        ["Saves:", "Fort +9, Ref +4, Will +11"],
-        ["Abilities:", "Str 16, Dex 12, Con 14, Int 17, Wis 19, Cha 17"],
-        ["Skills:", "Concentration +15, Craft (trapmaking) +16, Diplomacy +16, Knowledge (religion) +16, Listen +6, Search +5, Spellcraft +16, Spot +6"],
-        ["Feats:", "Martial Weapon Proficiency (greatsword), Weapon Focus (greatsword), Eschew Materials, Spell Penetration"],
-        ["Challenge Rating:", "10"],
-        ["Languages:", "Common, Elven, Undercommon, Infernal, Draconic, Aquan"],
-        ["Alignment:", "NE"],
-        ["Level Adjustment:", "2 (2 negated)"],
-        ["Class Levels:", "Cleric 10"],
-        ["Experience:", "45,000 / 55,000"]
-    ]   
-</ap-basic-table>
+<div class="column-container">
+    <div class="column table-width">
+        <h2>Normal</h2>
+        <ap-basic-table character-table>
+            [
+                ["Size/Type:", "Medium Humanoid (elf)"],
+                ["Hit Dice:", "10d8+20 (72 / 72)"],
+                ["Initiative:", "+1"],
+                ["Speed:", "30 ft. (6 squares)"],
+                ["Armor Class:", "11 (+1 dex), touch 11, flat-footed 10"],
+                ["Base Attack/Grapple:", "+7/+10"],
+                ["Attack:", "Punch +10 melee (1d3+3)"],
+                ["Full Attack:", "Punch +10/+5 melee (1d3+3)"],
+                ["Space/Reach:", "5 ft./5 ft."],
+                ["Special Attacks:", "Death touch, rebuke undead (7 per day), rebuke spiders (7 per day)"],
+                ["Special Qualities:", 
+                    "Darkvision 120 ft, <ap-link-button linkName="drow-traits">Drow traits</ap-link-button>, spell resistance 21, domains (death, spider <i>(SC 280)</i>)"
+                ],
+                ["Saves:", "Fort +9, Ref +4, Will +11"],
+                ["Abilities:", "Str 16, Dex 12, Con 14, Int 17, Wis 18, Cha 18"],
+                ["Skills:", "Concentration +15, Craft (trapmaking) +16, Diplomacy +17, Knowledge (religion) +16, Listen +6, Search +5, Spellcraft +16, Spot +6"],
+                ["Feats:", "Martial Weapon Proficiency (greatsword), Extend Spell, Persistent Spell (CA 81), Divine Metamagic (persistent spell, CD 80)"],
+                ["Challenge Rating:", "10"],
+                ["Languages:", "Common, Elven, Undercommon, Infernal, Draconic, Aquan"],
+                ["Alignment:", "NE"],
+                ["Level Adjustment:", "2 (2 negated)"],
+                ["Class Levels:", "Cleric 10"],
+                ["Experience:", "45,000 / 55,000"]
+            ]   
+        </ap-basic-table>
+    </div>
+    <div class="column table-width">
+        <h2>Divine Power</h2>
+        <ap-basic-table character-table>
+            [
+                ["Size/Type:", "Medium Humanoid (elf)"],
+                ["Hit Dice:", "10d8+20 (72+10 / 72)"],
+                ["Initiative:", "+1"],
+                ["Speed:", "30 ft. (6 squares)"],
+                ["Armor Class:", "11 (+1 dex), touch 11, flat-footed 10"],
+                ["Base Attack/Grapple:", "+10/+16"],
+                ["Attack:", "Punch +16 melee (1d3+6)"],
+                ["Full Attack:", "Punch +16/+11 melee (1d3+6)"],
+                ["Space/Reach:", "5 ft./5 ft."],
+                ["Special Attacks:", "Death touch, rebuke undead (7 per day), rebuke spiders (7 per day)"],
+                ["Special Qualities:", 
+                    "Darkvision 120 ft, <ap-link-button linkName="drow-traits">Drow traits</ap-link-button>, spell resistance 21, domains (death, spider <i>(SC 280)</i>)"
+                ],
+                ["Saves:", "Fort +9, Ref +4, Will +11"],
+                ["Abilities:", "Str 22, Dex 12, Con 14, Int 17, Wis 18, Cha 18"],
+                ["Skills:", "Concentration +15, Craft (trapmaking) +16, Diplomacy +17, Knowledge (religion) +16, Listen +6, Search +5, Spellcraft +16, Spot +6"],
+                ["Feats:", "Martial Weapon Proficiency (greatsword), Extend Spell, Persistent Spell (CA 81), Divine Metamagic (persistent spell, CD 80)"],
+                ["Challenge Rating:", "10"],
+                ["Languages:", "Common, Elven, Undercommon, Infernal, Draconic, Aquan"],
+                ["Alignment:", "NE"]
+            ]   
+        </ap-basic-table>
+    </div>
+</div>
+
 
 <p>
     <i class="power">Death Touch (Su):</i> Laestra can make a melee touch attack, as if a melee touch attack spell, against a living creature. When she touches, 
@@ -68,7 +101,7 @@
 		</ap-skill-chart>
 	</div>
 	<div class="table-column">
-		<ap-enc-chart strength="16">
+		<ap-enc-chart strength="16" strengthAlt="22">
 			[
                 [0, 0, 0, 0],
                 ["Holy symbol, silver", 1, [0, 25, 0, 0], 1],

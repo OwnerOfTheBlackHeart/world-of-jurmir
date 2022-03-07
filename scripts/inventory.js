@@ -12,6 +12,7 @@ export class EncItem {
 export class Inventory {
     constructor(inv) {
         this.strength = inv.strength;
+        this.strengthAlt = inv.strengthAlt;
         this.multiplier = inv.multiplier;
         this.carryWeight = inv.carryWeight;
         this.contents = inv.contents;
@@ -20,12 +21,16 @@ export class Inventory {
         this.value = Coin.NewCoin();
         this.weight = 0;
         this.enc = undefined;
+        this.encAlt = undefined;
         this.ComputeInventory();
     }
     ComputeInventory() {
         this.weight = 0;
         if (this.strength != undefined) {
             this.enc = new Encumbrance(this.strength, this.multiplier);
+        }
+        if (this.strengthAlt != undefined) {
+            this.encAlt = new Encumbrance(this.strengthAlt, this.multiplier);
         }
         if (!Array.isArray(this.contents[0][2])) {
             this.coins = this.coins.Add(new Coin(this.contents[0]));
@@ -45,6 +50,9 @@ export class Inventory {
         this.BuildGoldTable(mainNode, this.coins);
         if (this.enc != undefined) {
             this.BuildEncTable(mainNode, this.enc);
+            if (this.encAlt != undefined) {
+                this.BuildEncTable(mainNode, this.encAlt);
+            }
         }
         else if (this.carryWeight != undefined) {
             this.BuildCarryWeightTable(mainNode, this.carryWeight);

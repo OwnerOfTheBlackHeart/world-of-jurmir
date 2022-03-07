@@ -1,5 +1,4 @@
 import { Coin } from "../coins.js";
-import { Encumbrance } from "../encumbrance.js";
 import * as Utilities from "../utilities.js";
 import { Inventory } from "../inventory.js";
 export class EncumbranceChart extends HTMLElement {
@@ -11,10 +10,7 @@ export class EncumbranceChart extends HTMLElement {
         if (!this.hasAttribute("multiplier")) {
             this.multiplier = 1;
         }
-        this.enc = new Encumbrance(this.strength, this.multiplier);
         this.inventory = [];
-        this.mainNode;
-        this.freeGold;
         if (this.innerHTML != undefined && this.innerHTML != "") {
             this.inventory = Utilities.StringToObject(this.innerHTML);
         }
@@ -28,6 +24,12 @@ export class EncumbranceChart extends HTMLElement {
     }
     set strength(val) {
         this.setAttribute("strength", val.toString());
+    }
+    get strengthAlt() {
+        return Number(this.getAttribute("strengthAlt"));
+    }
+    set strengthAlt(val) {
+        this.setAttribute("strengthAlt", val.toString());
     }
     get multiplier() {
         return Number(this.getAttribute("multiplier"));
@@ -59,6 +61,7 @@ export class EncumbranceChart extends HTMLElement {
             inventories.unshift(new Inventory({
                 name: "Main Inventory",
                 strength: this.strength,
+                strengthAlt: this.strengthAlt,
                 multiplier: this.multiplier,
                 contents: items,
             }));

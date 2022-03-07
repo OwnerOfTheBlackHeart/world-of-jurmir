@@ -12,6 +12,14 @@ export class EncumbranceChart extends HTMLElement {
 		this.setAttribute("strength", val.toString());
 	}
 
+	get strengthAlt(): number {
+		return Number(this.getAttribute("strengthAlt"));
+	}
+
+	set strengthAlt(val: number) {
+		this.setAttribute("strengthAlt", val.toString());
+	}
+
 	get multiplier(): number {
 		return Number(this.getAttribute("multiplier"));
 	}
@@ -20,10 +28,8 @@ export class EncumbranceChart extends HTMLElement {
 		this.setAttribute("multiplier", val.toString());
 	}
 
-	enc: Encumbrance;
 	inventory: any[];
 	mainNode: HTMLElement;
-	freeGold: Coin;
 
 	constructor() {
 		// Always call super first in constructor
@@ -37,10 +43,7 @@ export class EncumbranceChart extends HTMLElement {
 			this.multiplier = 1;
 		}
 
-		this.enc = new Encumbrance(this.strength, this.multiplier);
 		this.inventory = [];
-		this.mainNode;
-		this.freeGold;
 
 		if (this.innerHTML != undefined && this.innerHTML != "") {
 			this.inventory = Utilities.StringToObject(this.innerHTML);
@@ -81,6 +84,7 @@ export class EncumbranceChart extends HTMLElement {
 				new Inventory({
 					name: "Main Inventory",
 					strength: this.strength,
+					strengthAlt: this.strengthAlt,
 					multiplier: this.multiplier,
 					contents: items,
 				} as Inventory)
