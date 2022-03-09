@@ -293,6 +293,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "enemies/undead/elf-warrior-ghost.html", "Elf Warrior's Ghost", "elf-warrior-ghost"),
 	new PageInfo(undefined, "enemies/undead/de-lange-corpse.html", "King Thys De Lange's Corpse", "de-lange-corpse"),
 	new PageInfo(undefined, "enemies/undead/de-lange-ghost.html", "King Thys De Lange's Ghost", "de-lange-ghost"),
+	new PageInfo(undefined, "enemies/undead/girallon-skeleton.html", "Girallon Skeleton", "girallon-skeleton"),
 
 	new PageInfo(undefined, "enemies/goblins/bugbear-lieutenant.html", "Bugbear Lieutenant", "bugbear-lieutenant"),
 	new PageInfo(undefined, "enemies/goblins/bugbear-sergeant.html", "Bugbear Sergeant", "bugbear-sergeant"),
@@ -325,6 +326,10 @@ export const nobleNav = [
 	new PageInfo(undefined, "npcs/retainers/juliette-walker.html", "Juliette Walker, Personal Blade of Nera", "juliette-walker"),
 	new PageInfo(undefined, "npcs/retainers/falodran.html", "Falodran the Thief Melter", "falodran"),
 	new PageInfo(undefined, "npcs/retainers/chachick.html", "Chachick, Psychic Warrior Nen", "chachick"),
+
+	new PageInfo(undefined, "npcs/neras-undead/neras-undead.html", "Nera's Undead", "neras-undead"),
+	new PageInfo(undefined, "npcs/neras-undead/girallon-skeleton-plus.html", "Girallon Skeleton Plus", "girallon-skeleton-plus"),
+	new PageInfo(undefined, "npcs/neras-undead/armor-mimic.html", "Mimic Armor", "mimic-armor"),
 
 	new PageInfo(undefined, "npcs/cults/xiiserra.html", "Xiiserra, Spellthief of the Calmers", "xiiserra"),
 
