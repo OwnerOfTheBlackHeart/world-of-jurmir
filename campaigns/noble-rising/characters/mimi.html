@@ -1,0 +1,110 @@
+<h1>Mimi Rumbling Cloud, Giant Tigress</h1>
+<ap-image linkName="noble-mimi-img" class="character-picture" height="500">Picture of Mimi</ap-image>
+<ap-basic-table character-table>
+	[
+		["Size/Type:", "Huge giant (catfolk)"],
+		["Hit Dice:", "4d8+3d12+40 (74 / 74)"],
+		["Initiative:", "+2"],
+		["Speed:", "60 ft. (12 squares)"],
+		["Armor Class:", "13 (-2 size, +2 dex, +3 natural armor), touch 10, flat-footed 11"],
+		["Base Attack/Grapple:", "+5/+21"],
+		["Attack:", "Gargantuan tree +7 melee (4d8+12) or masterwork gargantuan composite longbow +4 ranged (4d6+8/x3)"],
+		["Full Attack:", "Gargantuan tree +7 melee (4d8+12) or masterwork gargantuan composite longbow +4 ranged (4d6+8/x3)"],
+		["Space/Reach:", "15 ft./15 ft."],
+		["Special Attacks:", "Rage 1/day"],
+        ["Special Qualities:", 
+            "Low-Light Vision, fast movement, illiteracy, uncanny dodge, trap sense +1"
+        ],
+		["Saves:", "Fort +11, Ref +4, Will +1"],
+		["Abilities:", "Str 27, Dex 14, Con 19, Int 10, Wis 8, Cha 12"],
+		["Skills:", 
+			"Climb +15, Intimidate +4, Listen +8, Move Silently +4, Survival +2"
+		],
+		["Feats:", 
+			"Power Attack, Monkey Grip (CW 103), Improvised Weapon Proficiency (see below)"
+		],
+		["Challenge Rating:", "8"],
+		["Languages:", "Common, Feline"],
+		["Alignment:", "Chaotic Neutral"],
+        ["Level Adjustment:", "2 (1 negated)"],
+        ["Class Levels:", "Giant 4, Barbarian 3"],
+        ["Experience:", "28,000 / 36,000"]
+	]
+</ap-basic-table>
+
+<p>
+    <i class="power">Improvised Weapon Proficiency</i> Copied from Dragon 295, page 17:
+</p>
+<p>
+    You are skilled at using any object as a weapon.
+</p>
+<p>
+    You do not suffer the standard -4 non-proficiency penalty for using an improvised weapon; instead you suffer a -2 non-proficiency penalty.
+</p>
+
+<div class="table-container">
+	<div class="table-column">
+		<ap-skill-chart>
+			[
+				["Armor Check Penalty", 0, ""],
+                ["Climb", 7, ""],
+                ["Intimidate", 3, ""],
+				["Listen", 7, "+2 racial"],
+				["Move Silently", 0, "+2 racial"],
+				["Survival", 3, ""]
+			]
+		</ap-skill-chart>
+	</div>
+	<div class="table-column">
+        <!-- Weight and Cost modifiers: Huge*4, Gargantuan*8 -->
+		<ap-enc-chart strength="27" multiplier="8">
+            [
+                [0, 0, 0, 0],
+                ["Gargantuan tree", 1, [0, 0, 0, 0], 64],
+                ["Masterwork gargantuan composite longbow (26)", 1, [0, 1900, 0, 0], 24],
+                ["Gargantuan arrows", 80, [0, 0, 4, 0], 1.2]
+            ]
+        </ap-enc-chart>
+	</div>
+</div>
+
+<h2 id="description">Description</h2>
+<p>
+    Mimi is a 19' tall and 3.2 ton female "tigerfolk" with "F (DDD)" cup titties, a sturdy build and a state perpetual happiness.
+    Mimi normally wears a light brown-gray garment resembling a shirt with elbow length sleeves and exposed shoulders with a
+    matching skirt that drapes down to her mid-shins, though the whole outfit looks like a dress unless one looks closely.
+    When travelling through terrain that might damage the skirt, she'll swap out the skirt for leather shorts or pants, depending on
+    the season.
+</p>
+
+<h2>Random Findings of Note</h2>
+<ul class="list">
+    <li>Mimi was gifted to Nera by <ap-link-button linkName="noble-desserr-nobility" hash="diha-raging-wolf">Countess Diha Raging Wolf</ap-link-button></li>
+    <li>Mimi likes hugs, even if she has to pick up the huggee</li>
+</ul>
+
+<h2 id="combat">Combat</h2>
+<p>
+    Mimi generally doesn't like to fight, as it makes her worry about all the "cute little babies," but when she has to fight,
+    Mimi softens up enemy units with her siege bow before charging in with whatever vaguely club like object she can find. While in
+    melee, she likes to keep her distance and use her natural reach to limit the retaliation ability of her opponents, or to reach
+    past her allies and crush oncoming enemies.
+</p>
+<p>
+    If too much harm comes to her "cute little babies," Mimi will suddenly become silent and stoic, focusing entirely on destroying
+    whatever threatens her allies. This stoic state is mechanically her barbarian rage.
+</p>
+
+<h2 id="history-and-motivation">History and Motivation</h2>
+<ap-auth-container permissions="gm mimi-history noble-full">
+    <p>
+        Born as a tribal catfolk among the forests of what is now <ap-link-button linkName="noble-rivers-pass">Rivers Pass</ap-link-button>
+    </p>
+</ap-auth-container>
+<ap-auth-container permissions="gm mimi-motivation noble-full">
+    <p>
+        Camilia has formed a blood pact, a magical contract, with Nera where in exchange for food, housing, and guidance
+        around the civilized world, Camilia will guard and aid Nera. Should Nera wish it, she may command Camilia to
+        mate.
+    </p>
+</ap-auth-container>

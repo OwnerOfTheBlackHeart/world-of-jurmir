@@ -26,10 +26,10 @@ export class Inventory {
     }
     ComputeInventory() {
         this.weight = 0;
-        if (this.strength != undefined) {
+        if (this.strength != undefined && this.strength > 0) {
             this.enc = new Encumbrance(this.strength, this.multiplier);
         }
-        if (this.strengthAlt != undefined) {
+        if (this.strengthAlt != undefined && this.strengthAlt > 0) {
             this.encAlt = new Encumbrance(this.strengthAlt, this.multiplier);
         }
         if (!Array.isArray(this.contents[0][2])) {
