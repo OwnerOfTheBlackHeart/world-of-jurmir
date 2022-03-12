@@ -329,7 +329,7 @@ export const nobleNav = [
 
 	new PageInfo(undefined, "npcs/neras-undead/neras-undead.html", "Nera's Undead", "neras-undead"),
 	new PageInfo(undefined, "npcs/neras-undead/girallon-skeleton-plus.html", "Girallon Skeleton Plus", "girallon-skeleton-plus"),
-	new PageInfo(undefined, "npcs/neras-undead/armor-lessiarrac.html", "Lessiarrac Armor", "lessiarrac-armor"),
+	new PageInfo(undefined, "npcs/neras-undead/armor-mimic.html", "Mimic Armor", "mimic-armor"),
 
 	new PageInfo(undefined, "npcs/cults/xiiserra.html", "Xiiserra, Spellthief of the Calmers", "xiiserra"),
 
@@ -398,7 +398,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "images/creatures/aberration-dragon.png", "", "aberration-dragon-img", true),
 	new PageInfo(undefined, "images/creatures/cryptstalker.png", "", "cryptstalker-img", true),
 	new PageInfo(undefined, "images/creatures/pophagite.png", "", "pophagite-img", true),
-	new PageInfo(undefined, "images/creatures/lessiarrac-armor.jpg", "", "lessiarrac-armor-img", true),
+	new PageInfo(undefined, "images/creatures/mimic-armor.jpg", "", "mimic-armor-img", true),
 
 	new PageInfo(undefined, "http://www.d20srd.org/srd/monsters/elf.htm", "", "srd-elf", true),
 	new PageInfo(undefined, "http://www.d20srd.org/srd/equipment/goodsAndServices.htm#thunderstone", "", "srd-tunderstone", true),
