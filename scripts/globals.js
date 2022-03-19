@@ -5,6 +5,7 @@ export const globals = {
     titlePostfix: " - World of Jurmir Reference Document",
     forceRefresh: false,
     nobleCurrentDate: undefined,
+    nobleNeraCurrentDate: undefined,
     princeCurrentDate: undefined,
     aaronCurrentDate: undefined,
     sbjCurrentDate: undefined,
@@ -96,6 +97,7 @@ export async function LoadGlobalsJson() {
         fetch("data/xp-awards.json").then((response) => response.json()),
     ]);
     globals.nobleCurrentDate = Time.FromInitializer(dateData.nobleCurrentDate);
+    globals.nobleNeraCurrentDate = Time.FromInitializer(dateData.nobleNeraCurrentDate);
     globals.princeCurrentDate = Time.FromInitializer(dateData.princeCurrentDate);
     globals.aaronCurrentDate = Time.FromInitializer(dateData.aaronCurrentDate);
     globals.sbjCurrentDate = Time.FromInitializer(dateData.sbjCurrentDate);

@@ -8,6 +8,7 @@ export const globals = {
 	titlePostfix: " - World of Jurmir Reference Document",
 	forceRefresh: false,
 	nobleCurrentDate: undefined as Time,
+	nobleNeraCurrentDate: undefined as Time,
 	princeCurrentDate: undefined as Time,
 	aaronCurrentDate: undefined as Time,
 	sbjCurrentDate: undefined as Time,
@@ -102,6 +103,7 @@ export async function LoadGlobalsJson() {
 	]);
 
 	globals.nobleCurrentDate = Time.FromInitializer(dateData.nobleCurrentDate);
+	globals.nobleNeraCurrentDate = Time.FromInitializer(dateData.nobleNeraCurrentDate);
 	globals.princeCurrentDate = Time.FromInitializer(dateData.princeCurrentDate);
 	globals.aaronCurrentDate = Time.FromInitializer(dateData.aaronCurrentDate);
 	globals.sbjCurrentDate = Time.FromInitializer(dateData.sbjCurrentDate);
@@ -119,6 +121,7 @@ export async function LoadGlobalsJson() {
 
 interface DatesJson {
 	nobleCurrentDate: DateInitializer;
+	nobleNeraCurrentDate: DateInitializer;
 	princeCurrentDate: DateInitializer;
 	aaronCurrentDate: DateInitializer;
 	sbjCurrentDate: DateInitializer;
