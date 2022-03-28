@@ -40,7 +40,7 @@ export function CalculateXp(characters, enemies) {
             }
             xpByEcl[ecl] += xp * enemyGroup.count;
         });
-        xpByEcl[ecl] /= Math.floor(characterCount);
+        xpByEcl[ecl] = Math.floor(xpByEcl[ecl] / characterCount);
     });
     const calculatedXp = [];
     for (let key in charactersByEcl.players) {

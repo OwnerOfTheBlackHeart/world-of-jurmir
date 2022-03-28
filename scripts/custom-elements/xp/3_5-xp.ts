@@ -96,7 +96,7 @@ export function CalculateXp(characters: XpCharacter[], enemies: XpEnemy[]) {
 			xpByEcl[ecl] += xp * enemyGroup.count;
 		});
 
-		xpByEcl[ecl] /= Math.floor(characterCount);
+		xpByEcl[ecl] = Math.floor(xpByEcl[ecl] / characterCount);
 	});
 
 	const calculatedXp: CalculatedXpEntry[] = [];

@@ -1,7 +1,7 @@
 {
 	"Noble Rising": {
 		"Player Characters": [
-			{ "name": "Elizabeth", "ecl": 9 },
+			{ "name": "Elizabeth", "ecl": 10 },
 			{ "name": "Sin", "ecl": 8 },
 			{ "name": "Draggin", "ecl": 10 },
 			{ "name": "Galadriel", "ecl": 8 },
@@ -15,7 +15,8 @@
 			{ "name": "Camilia", "ecl": 7, "slave": true },
 			{ "name": "Juliette", "ecl": 8, "slave": true },
 			{ "name": "Zarsra", "ecl": 6, "slave": true },
-			{ "name": "Lola", "ecl": 7 }
+			{ "name": "Lola", "ecl": 7 },
+			{ "name": "Nate", "ecl": 4, "slave": true }
 		],
 		"Slaves": [
 			{ "name": "Minion", "ecl": 7, "slave": true },
