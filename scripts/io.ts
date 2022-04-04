@@ -80,7 +80,7 @@ async function LoadPageWithoutHistory<T>(
 			const hashChild = document.querySelector<HTMLElement>(hash);
 			Utilities.showElement(pageArea, hashChild);
 		} else {
-			pageArea.scrollLeft = pageArea.scrollLeft = 0;
+			pageArea.scrollTop = pageArea.scrollLeft = 0;
 		}
 
 		return { page, hash, context };
