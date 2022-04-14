@@ -385,6 +385,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "images/npcs/eclavana-ichiir.png", "", "eclavana-ichiir-img", true),
 	new PageInfo(undefined, "images/npcs/falodran.jpg", "", "falodran-img", true),
 	new PageInfo(undefined, "images/npcs/lessiarra-rumbling-cloud.jpg", "", "lessiarra-img", true),
+	new PageInfo(undefined, "images/npcs/yeshana-numuas.png", "", "yeshana-numuas-img", true),
 
 	new PageInfo(undefined, "images/npcs/cults/akkus.jpg", "", "akkus-img", true),
 	new PageInfo(undefined, "images/npcs/cults/ilvith.jpg", "", "ilvith-img", true),
