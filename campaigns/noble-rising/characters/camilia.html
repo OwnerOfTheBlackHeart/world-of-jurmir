@@ -3,7 +3,7 @@
 <ap-basic-table character-table>
 	[
 		["Size/Type:", "Medium Humanoid (human)"],
-		["Hit Dice:", "5d8+2d4+21 (46 / 46)"],
+		["Hit Dice:", "5d8+3d4+24 (51 / 51)"],
 		["Initiative:", "+2"],
 		["Speed:", "30 ft. (6 squares)"],
 		["Armor Class:", "16 (+2 dex, +4 +1 hide armor), touch 12, flat-footed 14"],
@@ -16,26 +16,25 @@
             "From the gnoll lands, <ap-link-button linkName="noble-cackles">animal companion</ap-link-button>, nature sense, wild empathy,",
             "woodland stride, trackless step, resist nature’s lure, wild shape (1/day), summon familiar"
         ],
-		["Saves:", "Fort +7, Ref +3, Will +11"],
-		["Abilities:", "Str 14, Dex 14, Con 16, Int 13, Wis 18, Cha 15"],
+		["Saves:", "Fort +8, Ref +4, Will +11"],
+		["Abilities:", "Str 14, Dex 14, Con 16, Int 14, Wis 18, Cha 15"],
 		["Skills:", 
-			"Concentration +3, Decipher Script +1, Handle Animal +10, Knowledge (arcana) +9, Knowledge (nature) +13, Spot +12, Listen +12, ",
-			"Survival +14, Heal +12, Spellcraft +1"
+			"Concentration +7, Decipher Script +6, Handle Animal +10, Knowledge (arcane) +10, Knowledge (nature) +14, Knowledge (planes) +3, Spot +12, Listen +12, ",
+			"Survival +14, Heal +12, Spellcraft +10"
 		],
 		["Feats:", 
 			"Track, Martial Weapon Proficiency (longbow), Point Blank Shot, Lost Tradition (Wizard/Wis), Scribe Scroll"
 		],
-		["Challenge Rating:", "7"],
+		["Challenge Rating:", "8"],
 		["Languages:", "Common, gnolish, druidic"],
 		["Alignment:", "? <ap-auth-container permissions="gm camilia-alignment noble-full">Neutral Evil (I rolled this shit)</ap-auth-container>"],
-        ["Class Levels:", "Druid 5, <ap-link-button linkName="noble-camilia-spellbook">Wizard</ap-link-button> 2"],
-        ["Experience:", "36,000 / 21,000"]
+        ["Class Levels:", "Druid 5, <ap-link-button linkName="noble-camilia-spellbook">Wizard</ap-link-button> 3"],
+        ["Experience:", "36,000 / 36,000"]
 	]
 </ap-basic-table>
 
 <!-- 
 	Plan:
-	Lvls 6 through 8 - Wizard
 	Lvl 9+ - Arcane Hierophant (RotW, Pg. 108)
 	Lvl 9 feat - Natural Spell
  -->
@@ -110,6 +109,12 @@
 				<li>Ray of Clumsiness (SC 167)</li>
 				<li>Arrow Mind (SC 16)</li>
 			</ul>
+			</ul><br/>
+			Level 2 spells (DC 16, 2 per day)
+			<ul>
+				<li>See Invisibility</li>
+				<li>Mirror Image</li>
+			</ul>
 		</div>
 	</div>
 </div>
@@ -119,16 +124,17 @@
 		<ap-skill-chart>
 			[
 				["Armor Check Penalty", 0, ""],
-				["Concentration", 0, ""],
-				["Decipher Script", 0, ""],
+				["Concentration", 4, ""],
+				["Decipher Script", 4, ""],
 				["Handle Animal", 8, ""],
 				["Knowledge (nature)", 8, "+2 Nature Sense, +2 synergy"],
-				["Knowledge (arcana)", 8, ""],
+				["Knowledge (arcane)", 8, ""],
+				["Knowledge (planes)", 1, ""],
 				["Spot", 8, ""],
 				["Survival", 8, "+2 Nature Sense, +2 checks in aboveground natural environments<br/>(aquatic, desert, forest, hill, marsh, mountains, and plains)"],
                 ["Listen", 8, ""],
                 ["Heal", 8, ""],
-				["Spellcraft", 0, ""]
+				["Spellcraft", 6, "+2 synergy"]
 			]
 		</ap-skill-chart>
 	</div>
