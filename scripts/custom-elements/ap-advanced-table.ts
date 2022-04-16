@@ -98,23 +98,23 @@ export class AdvancedTable extends HTMLElement {
 
 		if (field.colSpan) {
 			cell.colSpan = field.colSpan;
-		} else if (column.columnColSpan) {
+		} else if (column?.columnColSpan) {
 			cell.colSpan = column.columnColSpan;
 		}
 
 		if (field.rowSpan) {
 			cell.rowSpan = field.rowSpan;
-		} else if (column.columnRowSpan) {
+		} else if (column?.columnRowSpan) {
 			cell.rowSpan = column.columnRowSpan;
 		}
 
 		if (field.style) {
 			cell.setAttribute("style", `${cell.getAttribute("style")}; ${field.style}`);
-		} else if (column.columnStyle) {
+		} else if (column?.columnStyle) {
 			cell.setAttribute("style", `${cell.getAttribute("style")}; ${column.columnStyle}`);
 		}
 
-		if (column.columnClass) {
+		if (column?.columnClass) {
 			column.columnClass.forEach((cssClass) => {
 				cell.classList.add(cssClass);
 			});
@@ -132,7 +132,7 @@ export class AdvancedTable extends HTMLElement {
 
 		if (field.align) {
 			cell.setAttribute("align", field.align);
-		} else if (column.columnAlign) {
+		} else if (column?.columnAlign) {
 			cell.setAttribute("align", column.columnAlign);
 		}
 

@@ -317,6 +317,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "npcs/ivy-cooke.html", "Ivy Cooke, Tiefling with Her Own Plans", "ivy-cooke"),
 	new PageInfo(undefined, "npcs/quilynn-loreweaver.html", "Dame Quilynn Loreweaver, Mayor Captain of Deathfall", "quilynn-loreweaver"),
 	new PageInfo(undefined, "npcs/belben-huntinghawk.html", "High Gravekeeper Belben Huntinghawk", "belben-huntinghawk"),
+	new PageInfo(undefined, "npcs/children.html", "Children of the Party", "children"),
 
 	new PageInfo(undefined, "npcs/retainers/turzk.html", "Turzk, Ancient Lizardfolk", "turzk"),
 	new PageInfo(undefined, "npcs/retainers/chonk.html", "Chonk, Turzk's Trainee", "chonk"),

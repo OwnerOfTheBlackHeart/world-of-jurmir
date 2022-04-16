@@ -8,9 +8,9 @@
     <div class="table-column">
 		<ap-advanced-table>
 			[
-				[{"isHeader":"true", "value":"Current Date"}],
-				["<ap-display-global property-path="nobleCurrentDate"></ap-display-global>"],
-				["<ap-display-global property-path="nobleNeraCurrentDate"></ap-display-global>"]
+				[{ "isHeader":"true", "value":"Current Date", "colSpan":2 }],
+				[{ "value": "Main Party", "isHeader": true, "align":"right" }, "<ap-display-global property-path="nobleCurrentDate"></ap-display-global>"],
+				[{ "value": "Nera's Party", "isHeader": true, "align":"right" }, "<ap-display-global property-path="nobleNeraCurrentDate"></ap-display-global>"]
 			]
 		</ap-advanced-table>
     </div>
@@ -40,7 +40,8 @@
 				[{ "day": 12, "month": 4, "year": 1454 }, "<ap-link-button linkName="noble-lessiarra">Lessiarra Rumbling Cloud</ap-link-button>"],
 				[{ "day": 8, "month": 8, "year": 1488 }, "<ap-link-button linkName="noble-yeshana-numuas">Yeshana Black</ap-link-button> (effectively 15 physical years of age)"],
 				[{ "day": 12, "month": 0, "year": 1459 }, "<ap-link-button linkName="noble-yeshana-numuas">Yeshana Numuas</ap-link-button>"],
-				[{ "day": 102, "month": 5, "year": 1488 }, "<ap-link-button linkName="noble-camilia">Camilia</ap-link-button>'s and Nera's kid(s)"]
+				[{ "day": 102, "month": 5, "year": 1488 }, "<ap-link-button linkName="noble-children" hash="cera-black">Cera Black</ap-link-button>"],
+				[{ "day": 26, "month": 8, "year": 1488 }, "<ap-link-button linkName="noble-children" hash="aniera-freebrooke">Aniera Elizabeth Freebrooke-Omorfia</ap-link-button>"]
             ]
         </ap-time-table>
 	</div>
@@ -234,6 +235,7 @@
 				[{"day": 5, "month": 1, "year": 1489}, "Paedir current time"],
 				[{"day": 5, "month": 1, "year": 1489}, "Draggin current time"],
 				[{"day": 5, "month": 1, "year": 1489}, "Sariel current time"],
+				[{"day": 19, "month": 8, "year": 1488}, "Nera communicated with <ap-link-button linkName="noble-liberation-guild">Vano</ap-link-button>"],
 				[{"day": 19, "month": 8, "year": 1488}, "Nera current time"],
 				[{"day": 5, "month": 1, "year": 1489}, "Downtime ends"],
 				[{"day": 8, "month": 8, "year": 1488}, "<ap-link-button linkName="noble-yeshana-numuas">Yeshana Numuas</ap-link-button> reincarnated"],
@@ -284,11 +286,11 @@
 				[{ "day": 14, "month": 5, "year": 1488 }, "<ap-link-button linkName="noble-camilia">Camilia</ap-link-button> impregnated by Nera"],
 				[{ "day": 95, "month": 5, "year": 1488 }, "<ap-link-button linkName="noble-camilia">Camilia</ap-link-button> second trimester"],
 				[{ "day": 98, "month": 5, "year": 1488 }, "<ap-link-button linkName="noble-camilia">Camilia</ap-link-button> third trimester"],
-				[{ "day": 102, "month": 5, "year": 1488 }, "<ap-link-button linkName="noble-camilia">Camilia</ap-link-button> gives <i class="power">birth</i> to Nera's kid(s)"],
+				[{ "day": 102, "month": 5, "year": 1488 }, "<ap-link-button linkName="noble-camilia">Camilia</ap-link-button> gives <i class="power">birth</i> to Nera's child, <ap-link-button linkName="noble-children" hash="cera-black">Cera Black</ap-link-button>"],
 				[{ "day": 12, "month": 6, "year": 1488 }, "Elizabeth impregnated by <ap-link-button linkName="noble-ilvith">Ilvith</ap-link-button>"],
 				[{ "day": 20, "month": 8, "year": 1488 }, "Elizabeth second trimester"],
 				[{ "day": 23, "month": 8, "year": 1488 }, "Elizabeth third trimester"],
-				[{ "day": 26, "month": 8, "year": 1488 }, "Elizabeth gives <i class="power">birth</i> to <ap-link-button linkName="noble-ilvith">Ilvith</ap-link-button>'s kid(s)"],
+				[{ "day": 26, "month": 8, "year": 1488 }, "Elizabeth gives <i class="power">birth</i> to <ap-link-button linkName="noble-ilvith">Ilvith</ap-link-button>'s child, <ap-link-button linkName="noble-children" hash="aniera-freebrooke">Aniera Elizabeth Freebrooke-Omorfia</ap-link-button>"],
 				[{ "day": 23, "month": 2, "year": 1488 }, "Nera impregnated <ap-link-button linkName="noble-ivy-cooke">Ivy Cooke</ap-link-button>"],
 				[{ "day": 23, "month": 5, "year": 1488 }, "<ap-link-button linkName="noble-ivy-cooke">Ivy Cooke</ap-link-button> second trimester"],
 				[{ "day": 23, "month": 8, "year": 1488 }, "<ap-link-button linkName="noble-ivy-cooke">Ivy Cooke</ap-link-button> third trimester"],

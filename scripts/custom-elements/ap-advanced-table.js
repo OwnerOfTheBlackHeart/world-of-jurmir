@@ -77,22 +77,22 @@ export class AdvancedTable extends HTMLElement {
         if (field.colSpan) {
             cell.colSpan = field.colSpan;
         }
-        else if (column.columnColSpan) {
+        else if (column === null || column === void 0 ? void 0 : column.columnColSpan) {
             cell.colSpan = column.columnColSpan;
         }
         if (field.rowSpan) {
             cell.rowSpan = field.rowSpan;
         }
-        else if (column.columnRowSpan) {
+        else if (column === null || column === void 0 ? void 0 : column.columnRowSpan) {
             cell.rowSpan = column.columnRowSpan;
         }
         if (field.style) {
             cell.setAttribute("style", `${cell.getAttribute("style")}; ${field.style}`);
         }
-        else if (column.columnStyle) {
+        else if (column === null || column === void 0 ? void 0 : column.columnStyle) {
             cell.setAttribute("style", `${cell.getAttribute("style")}; ${column.columnStyle}`);
         }
-        if (column.columnClass) {
+        if (column === null || column === void 0 ? void 0 : column.columnClass) {
             column.columnClass.forEach((cssClass) => {
                 cell.classList.add(cssClass);
             });
@@ -110,7 +110,7 @@ export class AdvancedTable extends HTMLElement {
         if (field.align) {
             cell.setAttribute("align", field.align);
         }
-        else if (column.columnAlign) {
+        else if (column === null || column === void 0 ? void 0 : column.columnAlign) {
             cell.setAttribute("align", column.columnAlign);
         }
         if (field.attributes) {
