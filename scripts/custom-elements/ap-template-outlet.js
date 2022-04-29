@@ -11,7 +11,7 @@ export class TemplateOutlet extends HTMLElement {
                 .then((response) => response.text())
                 .then((html) => {
                 if (html && this.templateUrl !== "") {
-                    this.innerHTML = html;
+                    this.innerHTML = this.updateHtmlToHeaderLevel(html);
                 }
                 if (location.hash) {
                     const element = this.querySelector(location.hash);
@@ -35,6 +35,13 @@ export class TemplateOutlet extends HTMLElement {
     set templatePath(val) {
         this.setAttribute("templatePath", val);
     }
+    get headerLevel() {
+        const hl = Number(this.getAttribute("headerLevel"));
+        return hl ? hl : 3;
+    }
+    set headerLevel(val) {
+        this.setAttribute("headerLevel", val.toString());
+    }
     buildTemplateUrl(path) {
         let templateFolder;
         let templateGroup;
@@ -56,6 +63,15 @@ export class TemplateOutlet extends HTMLElement {
         else {
             return `${templateFolder.path}/${names[2]}.${templateFolder.fileType}`;
         }
+    }
+    updateHtmlToHeaderLevel(html) {
+        var updatedHtml = html;
+        updatedHtml = updatedHtml.replaceAll("h5", `h${this.headerLevel + 4}`);
+        updatedHtml = updatedHtml.replaceAll("h4", `h${this.headerLevel + 3}`);
+        updatedHtml = updatedHtml.replaceAll("h3", `h${this.headerLevel + 2}`);
+        updatedHtml = updatedHtml.replaceAll("h2", `h${this.headerLevel + 1}`);
+        updatedHtml = updatedHtml.replaceAll("h1", `h${this.headerLevel}`);
+        return updatedHtml;
     }
 }
 customElements.define("ap-template-outlet", TemplateOutlet);

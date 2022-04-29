@@ -14,6 +14,9 @@ export const nobleNav = [
 	new PageInfo(undefined, "organizations/silver-daggers.html", "Silver Daggers Thieves' Guild", "silver-daggers"),
 	new PageInfo(undefined, "organizations/tae-gilonnalia-empire.html", "The Tae`Gilonnalia Empire", "tae-gilonnalia-empire"),
 
+	new PageInfo(undefined, "organizations/nera/order-of-the-black-oleander.html", "The Order of the Black Oleander", "black-oleander"),
+	new PageInfo(undefined, "organizations/nera/the-blackguard.html", "The Blackguard", "the-blackguard"),
+
 	new PageInfo(undefined, "organizations/kobold-clans/main.html", "Kobold Clans", "kobold-clans"),
 	new PageInfo(undefined, "organizations/kobold-clans/hidden-pond-clan.html", "Hidden Pond Clan", "hidden-pond-clan"),
 	new PageInfo(undefined, "organizations/kobold-clans/spelllake-clan.html", "Spelllake Clan", "spelllake-clan"),

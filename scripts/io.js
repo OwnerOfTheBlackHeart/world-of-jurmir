@@ -25,10 +25,9 @@ export async function LoadIntoElement(url, querySelector, context) {
     });
 }
 async function LoadPageWithoutHistory(page, hash, context) {
-    if ((page === null || page === void 0 ? void 0 : page.name) !== (loadedPage === null || loadedPage === void 0 ? void 0 : loadedPage.name)) {
+    if (page?.name !== loadedPage?.name) {
         return LoadIntoElement(page.url, pageAreaQuerySelector, { hash, context }).then(async (state) => {
-            var _a;
-            if ((_a = state.context) === null || _a === void 0 ? void 0 : _a.hash) {
+            if (state.context?.hash) {
                 const hashChild = document.querySelector(state.context.hash);
                 Utilities.showElement(state.element, hashChild);
             }
@@ -54,9 +53,9 @@ async function LoadPageWithoutHistory(page, hash, context) {
 export async function LoadPage(page, hash, context) {
     hash = Utilities.makeValidHash(hash);
     const toReturn = await LoadPageWithoutHistory(page, hash, context);
-    const url = BuildUrl(page === null || page === void 0 ? void 0 : page.name, hash);
+    const url = BuildUrl(page?.name, hash);
     history.pushState({ pageName: page.name, hash, context }, document.title, url);
-    return Object.assign(Object.assign({}, toReturn), { url });
+    return { ...toReturn, url };
 }
 export async function OnInitialLoad(context) {
     const pageName = GetActivePageName();
@@ -101,7 +100,7 @@ export function BuildUrl(pageName, hash) {
 export async function appFetch(input, init) {
     init = init ? init : {};
     if (globals.forceRefresh) {
-        init = Object.assign(Object.assign({}, init), { cache: "no-store" });
+        init = { ...init, cache: "no-store" };
     }
     return fetch(input, init);
 }
