@@ -217,7 +217,6 @@ class SexGeneratorElement extends HTMLElement {
                 const raceTable = globals.randomRaceTables.values[this.settingSelect.value];
                 if (raceTable) {
                     race = raceTable.find((r) => r.name === toFind);
-                    console.log({ race, raceTable, toFind });
                 }
             }
         }

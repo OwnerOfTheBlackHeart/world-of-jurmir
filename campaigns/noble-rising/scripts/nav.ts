@@ -192,6 +192,8 @@ export const nobleNav = [
 
 	new PageInfo(undefined, "plotlines/missions/slayer/salamander-cave.html", "The Salamander Cave", "salamander-cave"),
 
+	new PageInfo(undefined, "plotlines/missions/dragon/hunting-skalhos.html", "Hunting Skalhos", "hunting-skalhos"),
+
 	new PageInfo(undefined, "plotlines/missions/cults/investigating-chillbreak.html", "Investigating Chillbreak", "investigating-chillbreak"),
 	new PageInfo(undefined, "plotlines/missions/cults/lodestone-report.html", "Lodestone Report", "lodestone-report"),
 	new PageInfo(undefined, "plotlines/missions/cults/acquiring-the-loadstone.html", "Acquiring the Lodestone", "acquiring-the-loadstone"),
@@ -218,6 +220,8 @@ export const nobleNav = [
 	new PageInfo(undefined, "enemies/bandits/catfolk-sorcerer.html", "Catfolk Sorcerer", "catfolk-sorcerer"),
 	new PageInfo(undefined, "enemies/bandits/mutant-bandit-chief.html", "Mutant Bandit Chief", "mutant-bandit-chief"),
 	new PageInfo(undefined, "enemies/bandits/elf-fighter-2.html", "Elf Fighter", "elf-fighter-2"),
+
+	new PageInfo(undefined, "enemies/dragons/skalhos.html", "Skalhos the Hero Drowner", "skalhos"),
 
 	new PageInfo(undefined, "enemies/red-king/kaitlyn-evans.html", "Kaitlyn Evans, Red Princess of Baytide", "kaitlyn-evans"),
 	new PageInfo(undefined, "enemies/red-king/skrutenicencul.html", "Skrutenicencul, Kaitlyn Evans' Monstrous Child", "skrutenicencul"),

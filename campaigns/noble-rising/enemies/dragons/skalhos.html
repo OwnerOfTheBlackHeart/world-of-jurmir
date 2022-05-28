@@ -16,7 +16,7 @@
         ["Saves:", "Fort +16, Ref +11, Will +13"],
         ["Abilities:", "Str 23, Dex 10, Con 20, Int 12, Wis 13, Cha 12"],
         ["Skills:", 
-            "Bluff +13"
+            "Hide +20, Intimidate +25, Knowledge (local, nature, religion) +9, Move Silently +24, Sense Motive +25, Swim +36, Use Magic Device +25"
         ],
         ["Feats:", "Multiattack, Improved Natural Weapon (bite), Hover, Power Attack, Eschew Materials, 15, 18, 21"],
         ["Challenge Rating:", "12"],
@@ -66,118 +66,41 @@
 -->
 <div class="table-container">
     <div class="table-column">
+        168
         <ap-skill-chart>
             [
                 ["Concentration", 0, ""],
                 ["Diplomacy", 0, ""],
                 ["Escape Artist", 0, ""],
-                ["Hide", 0, ""],
-                ["Intimidate", 0, ""],
-                ["Knowledge ()", 0, ""],
-                ["Move Silently", 0, ""],
-                ["Sense Motive", 0, ""],
-                ["Swim", 0, ""],
-                ["Use Magic Device", 0, ""]
+                ["Hide", 24, "-4 size"],
+                ["Intimidate", 24, ""],
+                ["Knowledge (local)", 8, ""],
+                ["Knowledge (nature)", 8, ""],
+                ["Knowledge (religion)", 8, ""],
+                ["Move Silently", 24, ""],
+                ["Sense Motive", 24, ""],
+                ["Swim", 24, "+8 swim speed"],
+                ["Use Magic Device", 24, ""]
             ]
         </ap-skill-chart>
     </div>
-    <!-- <div class="table-column">
-        <ap-enc-chart strength="14">
-            [
-                [0, 248, 1730, 444],
-                ["Dayglasses (sunglasses)", 1, [0, 50, 0, 0], 0.5],
-                ["Rapier", 2, [0, 20, 0, 0], 2],
-                ["Dagger", 1, [0, 2, 0, 0], 1],
-                ["+1 Shortspear", 1, [0, 2301, 0, 0], 3],
-                ["Chainshirt", 1, [0, 100, 0, 0], 25],
-                ["Backpack", 1, [0, 2, 0, 0], 2],
-                ["Waterskin", 1, [0, 1, 0, 0], 4],
-                ["Hemp Rope, ft", 50, [0, 0, 0, 2], 0.2],
-                ["Flint and steel", 1, [0, 1, 0, 0], 0],
-                ["Grappling Hook", 1, [0, 1, 0, 0], 4],
-                ["Rations (per day)", 3, [0, 0, 5, 0], 1],
-                ["Drow Poison", 5, [0, 75, 0, 0], 0],
-                {
-                    "name":"Non-Combat Inventory (to be determined)",
-                    "carryWeight":0,
-                    "contents":[
-                        [0, 0, 0, 0],
-                        ["Dayglasses (sunglasses)", 1, [0, 50, 0, 0], 0.5],
-                        ["Traveler's Outfit, human quality, blue", 1, [0, 1, 0, 0], 5],
-                        ["Traveler's Outfit, human quality, brown", 1, [0, 1, 0, 0], 5],
-                        ["Traveler's Outfit, elven quality, green", 1, [0, 4, 0, 0], 5],
-                        ["Cotton Dress, elven quality, red", 1, [0, 6, 0, 0], 3],
-                        ["Courtier’s outfit, elven quality, red", 1, [0, 50, 0, 0], 6],
-                        ["Bedroll", 1, [0, 0, 1, 0], 5],
-                        ["Winter blanket", 1, [0, 0, 5, 0], 3],
-                        ["Steel mirror", 1, [0, 10, 0, 0], 0.5]
-                    ]
-                }
-            ]
-        </ap-enc-chart>
-    </div> -->
 </div>
 
 <h2 id="description">Description</h2>
 <p>
-	Pildrylth is a green dragon who stands at about 3 feet at the shoulder, when walking, and 14 feet from nose to tail. She lacks the
-	typical crest of a green dragon, instead having 2 curving front horns with six straight horns behind her head and a "beard" of spines
-	on the underside of her jaw. While the scales on Pildrylth's back are visible, her chest and wings are covered in vines and moss.
+    <b><i> EVERYTHING BELOW THIS POINT IS CURRENTLY PLACEHOLDER</i></b>
 </p>
 <p>
-	Pildrylth moves with a regal grace and speaks in either a sing-songy voice or with a commanding, echoing one. 
+    Skalhos is a black dragon who stands at about 7 feet at the should, when walking, and roughly 32 feet from nose to tail. She is 
+    a normal black dragon in appearance, with a skull-like face framed by horns. Skalhos's wings are heavily scared.
 </p>
-<ap-auth-container permissions="gm pildrylth-personality noble-full">
-    <p>
-		Pildrylth is a tactical and sneaky dragon who likes to feel like a queen. She takes great pleasure in expanding her power through
-		proxies and monitoring her "enemies" using spies while having her direct subordinates form her queendom (she is still debating on
-		if it is a queendom for an empire). When dealing with other creatures, Pildrylth likes to see smaller creatures cower, kneel, or 
-		otherwise show great fear or respect. Pildrylth is very careful not to allow untrusted creatures to find her capital burrow.
-	</p>
-</ap-auth-container>
+<p>
+	While Skalhos moves almost silently and carefully, she does so without any form of grace.
+</p>
 
-<!-- <h2>Random Findings of Note</h2>
-<ul class="list">
-    <li>Placeholder</li>
-</ul> -->
-
-<ap-auth-container permissions="gm pildrylth-combat noble-full">
-	<h2 id="combat">Combat</h2>
-	<p>
-		Pildrylth likes to start fights hidden, using her breath weapon to unleash as much damage to as many enemies as possible. She will then use
-		this first assault to judge her enemies. If they are weak, she will storm them herself, trying to break them up and kill them as efficiently
-		as possible. If the enemy is stronger, she will retreat back into the forest to hide while her minions attack, allowing Pildrylth to either
-		maneuver to cut off escape or to attack the easiest members of the enemies to kill.
-	</p>
-	<p>
-		Pildrylth normally travels with 10 kobolds who serve to screen her from smaller threats while moving, scout ahead, and to attack enemies she 
-		has engaged. Her screening force is usually 8, or so, strong and made up of rangers, rogues, and sorcerers with 2 scouts moving ahead to keep
-		the party from being ambushed and keep them informed of what lies ahead.
-	</p>
-	<p>
-		Pildrylth prefers to travel via water, as she views it as far safer than travelling by land or air.
-	</p>
-</ap-auth-container>
-
-<ap-auth-container permissions="gm pildrylth-history noble-full">
-	<h2 id="history-and-motivation">History and Motivation</h2>
-    <p>
-		Pildrylth hatched in her forest on Durnio 15th, 1445 (43 as of Durnio, 1488) surrounded by the 
-		<ap-link-button linkName="noble-hidden-pond-clan">Hidden Pond</ap-link-button> kobold clan, who viewed the finding of her egg as a sign from 
-		Kyranious and fed the ego and will to rule of Pildrylth, while simultaneously teaching her of her own weaknesses and the rewards of going 
-		unnoticed. 
-	</p>
-	<p>
-		Pildrylth has lead the Hidden Pond clan since her 5th year, using the lessons they have taught her to create a small network of knowledge as well as
-		establish proxies within the forest, only fueling her will to be a proper ruler. She has established locations throughout her forest that she
-		can meet with people without having to expose her burrow as well as methods to ensure that such locations remain safe.
-	</p>
-</ap-auth-container>
-<ap-auth-container permissions="gm pildrylth-motivation noble-full">
-    <p>
-		Pildrylth intends to create an actual empire of her own, with as many loyal subjects as possible, and then kill off the surrounding
-		elves and take any survivers to farm as food. She believes that all the forests of Taaira Ruzara belong to her by right of the gods.
-		She also wants to know the secrets of the elven silver-steel (mithral) because she believes her people will be able to make much better
-		use of it than the elves.
-    </p>
-</ap-auth-container>
+<h2 id="combat">Combat</h2>
+<p>
+    Skalhos prefers to start any fight hidden within shallow waters, striking the enemy from behind, using either her breath weapon or a volley
+    of natural attacks, whichever can do the most damage in the opening assault. After the initial ambush, Skalhos will attempt to draw the enemy
+    deeper into any number of prepared ambushes or traps, designed to draw out the suffering of the enemies for as long as possible.
+</p>

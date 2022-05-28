@@ -9,7 +9,15 @@
 		"**/*.js": { "when": "$(basename).ts" },
 		"**/*.js.map": true
 	},
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
 	"editor.formatOnSave": true,
 	"cSpell.checkLimit": 500,
 	"cSpell.maxNumberOfProblems": 1000,
