@@ -1,0 +1,112 @@
+Cody is making 14 enemies of her grandfather, which will be ancestral enemies.
+
+Once summoned/created for the first time, they must be defeated, after which they can be summoned
+	with "Summon Ancestral Enemy" or some magic item
+	The summon lasts for 1 day
+
+Acquiring a Summon Ancestral Enemy unlocks an iaijutsu power
+	Nera can always use Iaijutsu on the first turn of combat
+
+Determine titles for the leaders of the faith for each "church"
+
+Nera's knights order of Black Oleander
+
+Hippogriffs (up to 4) can be rented for 150gp per day
+
+Actions
+	Navigate to the center (survival DC 15, 0 of 4)
+	Hunt something specific (survival DC 20)
+	Gather materials (5 lbs per person)
+
+	0 hours
+
+	9,030 lbs
+	50 lbs given to Author for testing
+	Marketing in River's Pass
+
+	1 male orc who survived being one-shot by a ogre
+		Trained to be a cleric of Feph
+	
+8 headed hydra at tile 011.017
+	Gorga
+
+Minion crafting a barrel bear trap
+	DC 14
+	Total cost 500gp
+	1666sp to craft
+	504sp progress
+
+Spare dragons for later
+	Gessitos
+		Male, While Mature Adult (268 years old)
+		At war with Drilner
+		Has frost giants and trolls. Is rumored to have a lycanthrope under his command.
+		Located in the Howling Peaks
+	Drilner
+		Male, Gold Juvenile +2 HD (47 years old)
+		At war with Gessitos
+		Has gnoll soldiers, a collection of animals and kobolds (mostly sorcerers)
+		Located to the south of the Howling Peaks
+	Munthrir
+		Male, Blue Young Adult +2 HD (99 years old)
+		Looking to fortify their claims in the desert, particularly against the local lamias that they are at war with
+		Has a pair of dragonnes, harpies and soldiers
+		Located on the northern side of the Craglorn Mountains
+	Pildrylth
+		Gained some information from Phidove
+
+################################################
+################## Anti-Party ##################
+################################################
+
+Angry red head
+	Monk
+	Pissed off at Teddy, Priya and Vom
+	Was given a foo-foo drink
+Khog
+	Bone devil that escaped being killed by party
+	Previously hobgoblin cleric that worshiped Vano
+Lufir Arcanscape
+	Survivor of Elven Baby Stealing
+
+################################################
+######## Stuff to Prep for Noble Rising ########
+################################################
+
+1 month of payment for the towns and the hole
+
+Build Rathian
+	2 tailed wyvern?
+	19 HD wyvern
+	CR 15
+	5 foot radius fireball
+	Yeshana wants the stinger and venom gland, preferably still in the tail
+
+Have Phidove start working on preparing to make a chivalric order
+
+Dragons for Nera
+LV11: Wyrmling gold
+lv13: Young Black (update falodran at that time)
+lv15: Very Young Gold (age up gold)
+
+Draggin Megaraptor quest possible locations
+	Zo Gedad - Mutated
+		Rough estimate of mutations
+		Location of the nest
+		Has mutated minions
+		Do as solo session with Austin
+	Dawnflow
+
+Sariel is looking to hunt arrowhawks
+	Prep encounter
+
+Dragons for Peadir:
+	Peadir has chosen to go after:
+	Skalhos
+		Female, Black Adult +2 HD (186 years old)
+		Is currently inactive, in the middle of an estimated decade long sleep
+		Has doppelgangers, some undead, and lizardfolk
+		Located in the swamp near Old Castle
+	
+Consider adding an obsidian dragon as a potential enemy
+Consider using a spellweaver in the cult of Cezvocp
