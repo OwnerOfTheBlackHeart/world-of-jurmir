@@ -111,4 +111,6 @@ Dragons for Peadir:
 		Located in the swamp near Old Castle
 	
 Consider adding an obsidian dragon as a potential enemy
-Consider using a spellweaver in the cult of Cezvocp
+Consider using a spellweaver (MM2, 187) in the cult of Cezvocp
+	The spellweaver is likely to be some kind of leader or higher up, possibly a recurring enemy
+	Avolakia (MM2, 28) are another solid option to have 
