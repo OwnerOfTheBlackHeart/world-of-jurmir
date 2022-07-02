@@ -193,6 +193,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "plotlines/missions/slayer/salamander-cave.html", "The Salamander Cave", "salamander-cave"),
 
 	new PageInfo(undefined, "plotlines/missions/dragon/hunting-skalhos.html", "Hunting Skalhos", "hunting-skalhos"),
+	new PageInfo(undefined, "plotlines/missions/dragon/draggins-hunt.html", "Draggin's Hunt", "draggins-hunt"),
 
 	new PageInfo(undefined, "plotlines/missions/cults/investigating-chillbreak.html", "Investigating Chillbreak", "investigating-chillbreak"),
 	new PageInfo(undefined, "plotlines/missions/cults/lodestone-report.html", "Lodestone Report", "lodestone-report"),
