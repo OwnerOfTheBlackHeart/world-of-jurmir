@@ -284,6 +284,10 @@ export const nobleNav = [
 	new PageInfo(undefined, "enemies/mutated-animals/mutant-megaraptor.html", "Mutant Megaraptor", "mutant-megaraptor"),
 
 	new PageInfo(undefined, "enemies/kobolds/mutated-kobold.html", "Mutated Kobold", "mutated-kobold"),
+	new PageInfo(undefined, "enemies/kobolds/zarku.html", "Zarku, Personal Servant of Skalhos", "zarku"),
+
+	new PageInfo(undefined, "enemies/lizardfolk/lizardfolk-lieutenant.html", "Lizardfolk Lieutenant", "lizardfolk-lieutenant"),
+	new PageInfo(undefined, "enemies/lizardfolk/lizardfolk-leader.html", "Lizardfolk Leader", "lizardfolk-leader"),
 
 	new PageInfo(undefined, "enemies/nen/nen-drone.html", "Nen Drone", "nen-drone"),
 	new PageInfo(undefined, "enemies/nen/nen-warrior.html", "Nen Warrior", "nen-warrior"),
