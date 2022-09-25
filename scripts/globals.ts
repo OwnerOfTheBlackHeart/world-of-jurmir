@@ -17,8 +17,8 @@ export const globals = {
 	sexRanges: [
 		{ from: 1, to: 1, value: Sex.masculineHerm, hasBoobs: false, hasDick: true },
 		{ from: 2, to: 5, value: Sex.male, hasBoobs: false, hasDick: true },
-		{ from: 6, to: 6, value: Sex.feminineMale, hasBoobs: false, hasDick: true },
-		{ from: 7, to: 7, value: Sex.masculineFemale, hasBoobs: true, hasDick: false },
+		{ from: 6, to: 6, value: Sex.dickGirl, hasBoobs: true, hasDick: true },
+		{ from: 7, to: 7, value: Sex.cuntBoy, hasBoobs: false, hasDick: false },
 		{ from: 8, to: 11, value: Sex.female, hasBoobs: true, hasDick: false },
 		{ from: 12, to: 12, value: Sex.feminineHerm, hasBoobs: true, hasDick: true },
 	] as SexRollRange[],

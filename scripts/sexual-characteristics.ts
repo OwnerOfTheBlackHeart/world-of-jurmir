@@ -3,8 +3,8 @@ import { DiceRoll } from "./roll";
 export enum Sex {
 	masculineHerm = "Masculine Herm",
 	male = "Male",
-	feminineMale = "Feminine Male",
-	masculineFemale = "Masculine Female",
+	dickGirl = "Dick Girl",
+	cuntBoy = "Cunt Boy",
 	female = "Female",
 	feminineHerm = "Feminine Herm",
 }
