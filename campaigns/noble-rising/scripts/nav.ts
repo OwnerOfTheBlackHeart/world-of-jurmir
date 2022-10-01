@@ -198,6 +198,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "plotlines/missions/cults/investigating-chillbreak.html", "Investigating Chillbreak", "investigating-chillbreak"),
 	new PageInfo(undefined, "plotlines/missions/cults/lodestone-report.html", "Lodestone Report", "lodestone-report"),
 	new PageInfo(undefined, "plotlines/missions/cults/acquiring-the-loadstone.html", "Acquiring the Lodestone", "acquiring-the-loadstone"),
+	new PageInfo(undefined, "plotlines/missions/cults/a-bow-for-akkus.html", "A Bow for Akkus", "bow-for-akkus"),
 
 	new PageInfo(undefined, "plotlines/missions/fey/the-goblin-party.html", "The Goblin Party", "goblin-party"),
 	new PageInfo(undefined, "plotlines/missions/fey/goblin-party/urdes.html", "Urdes, the Goblin Rogue/Fighter", "urdes"),
@@ -255,6 +256,8 @@ export const nobleNav = [
 	new PageInfo(undefined, "enemies/minor-gods/akkus/kide.html", "Kide of the Fallenfeather Sisterhood", "fallenfeather-kide"),
 
 	new PageInfo(undefined, "enemies/minor-gods/cezvoc/cezvoc.html", "Cezvoc, God of Monsters and Dark Magic", "cezvoc"),
+	new PageInfo(undefined, "enemies/minor-gods/cezvoc/unworded-one.html", "The Unworded One", "unworded-one"),
+	new PageInfo(undefined, "enemies/minor-gods/cezvoc/joll-the-macabre.html", "Joll the Macabre", "joll-the-macabre"),
 	new PageInfo(undefined, "enemies/minor-gods/cezvoc/quina-numuas.html", "Quina Numuas, High Priestess of Chillbreak", "quina-numuas"),
 	new PageInfo(
 		undefined,
