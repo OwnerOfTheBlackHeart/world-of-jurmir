@@ -224,6 +224,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "enemies/bandits/elf-fighter-2.html", "Elf Fighter", "elf-fighter-2"),
 
 	new PageInfo(undefined, "enemies/dragons/skalhos.html", "Skalhos the Hero Drowner", "skalhos"),
+	new PageInfo(undefined, "enemies/dragons/rathian.html", "Rathian", "rathian"),
 
 	new PageInfo(undefined, "enemies/red-king/kaitlyn-evans.html", "Kaitlyn Evans, Red Princess of Baytide", "kaitlyn-evans"),
 	new PageInfo(undefined, "enemies/red-king/skrutenicencul.html", "Skrutenicencul, Kaitlyn Evans' Monstrous Child", "skrutenicencul"),
@@ -419,6 +420,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "images/creatures/cryptstalker.png", "", "cryptstalker-img", true),
 	new PageInfo(undefined, "images/creatures/pophagite.png", "", "pophagite-img", true),
 	new PageInfo(undefined, "images/creatures/mimic-armor.jpg", "", "mimic-armor-img", true),
+	new PageInfo(undefined, "images/creatures/rathian.png", "", "rathian-img", true),
 
 	new PageInfo(undefined, "http://www.d20srd.org/srd/monsters/elf.htm", "", "srd-elf", true),
 	new PageInfo(undefined, "http://www.d20srd.org/srd/equipment/goodsAndServices.htm#thunderstone", "", "srd-tunderstone", true),
