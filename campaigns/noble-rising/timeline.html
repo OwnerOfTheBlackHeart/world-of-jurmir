@@ -24,7 +24,7 @@
 <div class="table-container">
 	<div class="table-column">
         <h3>Birthday Timeline</h3>
-        <ap-time-table current-date-value="nobleCurrentDate">
+        <ap-time-table current-date-value='[ { "date":"nobleCurrentDate", "display":"Party"}, { "date":"nobleNeraCurrentDate", "display":"Nera"} ]'>
             [
 				["header", "Timeline"],
 				[4, 0, 1353, "<ap-link-button linkName="noble-zarsra">Zarsra</ap-link-button>"],
@@ -47,7 +47,7 @@
 	</div>
 	<div class="table-column">
         <h3>Noble Timeline</h3>
-        <ap-time-table current-date-value="nobleCurrentDate">
+        <ap-time-table current-date-value='[ { "date":"nobleCurrentDate", "display":"Party"}, { "date":"nobleNeraCurrentDate", "display":"Nera"} ]'>
             [
 				["header", "Timeline"],
 				[1, 6, 1487, "Start date"],
@@ -245,7 +245,7 @@
 	<ap-auth-container permissions="gm events-timeline noble-full">
 		<div class="table-column">
 			<h3>Events Timeline</h3>
-			<ap-time-table current-date-value="nobleCurrentDate">
+			<ap-time-table current-date-value='[ { "date":"nobleCurrentDate", "display":"Party"}, { "date":"nobleNeraCurrentDate", "display":"Nera"} ]'>
 				[
 					["header", "Timeline"],
 					[12, 6, 1487, "<ap-link-button linkName="noble-rise-of-the-bandit-king">The Bandit King is Declared</ap-link-button>"],
@@ -268,7 +268,7 @@
         <!-- 
             Elf/Catfolk hybrids, child will be adult at 64, 19 months and 3 weeks pregnancy, 6 month trimesters
         -->
-        <ap-time-table current-date-value="nobleCurrentDate">
+        <ap-time-table current-date-value='[ { "date":"nobleCurrentDate", "display":"Party"}, { "date":"nobleNeraCurrentDate", "display":"Nera"} ]'>
             [
                 ["header", "Timeline"],
 				[4, 8, 1487, "<ap-link-button linkName="noble-desserr-nobility" hash="reyrona-dathana">Reyrona</ap-link-button> was impregnated by Nera, non-identical twins"],

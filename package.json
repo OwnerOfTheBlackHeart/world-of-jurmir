@@ -1,5 +1,5 @@
 {
-	"name": "time-fuckery-reference-document",
+	"name": "wolf-of-jurmir-reference-doc",
 	"version": "1.0.0",
 	"scripts": {
 		"compile": "tsc"

@@ -7,6 +7,16 @@ interface TimeRow {
 	note: string;
 }
 
+interface CurrentDateSet {
+	date: string;
+	display: string;
+}
+
+interface CurrentTimeSet {
+	time: Time;
+	display: string;
+}
+
 export class TimeTable extends HTMLElement {
 	get showSeason() {
 		return this.hasAttribute("show-season");
@@ -33,11 +43,25 @@ export class TimeTable extends HTMLElement {
 	}
 
 	get currentDateValue() {
-		return this.getAttribute("current-date-value");
+		const currentDate = this.getAttribute("current-date-value");
+		if (currentDate) {
+			if (currentDate[0] === "[") {
+				return JSON.parse(currentDate);
+			} else {
+				return currentDate;
+			}
+		} else {
+			return undefined;
+		}
 	}
 
-	set currentDateValue(val) {
-		this.setAttribute("current-date-value", val);
+	set currentDateValue(val: string | CurrentDateSet[]) {
+		let attribute = val;
+		if (typeof attribute === "object") {
+			attribute = JSON.stringify(attribute);
+		}
+
+		this.setAttribute("current-date-value", attribute);
 	}
 
 	get disableSort() {
@@ -56,7 +80,7 @@ export class TimeTable extends HTMLElement {
 	rows: TimeRow[];
 	table: HTMLTableElement;
 	mainNode: HTMLElement;
-	currentDate: Time;
+	currentDate: Time | CurrentTimeSet[];
 
 	constructor() {
 		// Always call super first in constructor
@@ -92,8 +116,15 @@ export class TimeTable extends HTMLElement {
 			this.rows = dates;
 		}
 
-		if (this.currentDateValue) {
-			this.currentDate = Utilities.getDescendantProperty<Time>(globals, this.currentDateValue);
+		const dateValue = this.currentDateValue;
+		if (dateValue) {
+			if (typeof dateValue === "string") {
+				this.currentDate = Utilities.getDescendantProperty<Time>(globals, dateValue);
+			} else {
+				this.currentDate = dateValue.map<CurrentTimeSet>((set) => {
+					return { display: set.display, time: Utilities.getDescendantProperty<Time>(globals, set.date) };
+				});
+			}
 		}
 	}
 
@@ -143,15 +174,19 @@ export class TimeTable extends HTMLElement {
 
 		// Date Diff String
 		if (this.currentDate) {
-			const diffString = Time.BuildDiffString(this.currentDate, dateRow.time);
-			const dataNode = Utilities.CreateTableData(diffString);
+			const dataNode = Utilities.CreateTableData("");
 
-			if (diffString.search("ago") >= 0) {
-				dataNode.classList.add("previous-date");
-			} else if (diffString.search("from now") >= 0) {
-				dataNode.classList.add("future-date");
+			if (Array.isArray(this.currentDate)) {
+				this.currentDate.forEach((set, index) => {
+					if (index > 0) {
+						dataNode.appendChild(document.createElement("br"));
+					}
+
+					dataNode.appendChild(document.createTextNode(`${set.display}: `));
+					dataNode.appendChild(this.BuildDiffNode(set.time, dateRow.time));
+				});
 			} else {
-				dataNode.classList.add("current-date");
+				dataNode.appendChild(this.BuildDiffNode(this.currentDate, dateRow.time));
 			}
 
 			node.appendChild(dataNode);
@@ -166,6 +201,22 @@ export class TimeTable extends HTMLElement {
 		}
 
 		return node;
+	}
+
+	BuildDiffNode(currentDate: Time, entryDate: Time) {
+		const diffString = Time.BuildDiffString(currentDate, entryDate);
+		const diffNode = document.createElement("span");
+		diffNode.innerText = diffString;
+
+		if (diffString.search("ago") >= 0) {
+			diffNode.classList.add("previous-date");
+		} else if (diffString.search("from now") >= 0) {
+			diffNode.classList.add("future-date");
+		} else {
+			diffNode.classList.add("current-date");
+		}
+
+		return diffNode;
 	}
 
 	BuildAllMonths(table: HTMLTableElement) {
