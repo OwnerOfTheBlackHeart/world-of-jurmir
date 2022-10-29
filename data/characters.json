@@ -5,11 +5,11 @@
 			{ "name": "Sin", "ecl": 8 },
 			{ "name": "Draggin", "ecl": 10 },
 			{ "name": "Galadriel", "ecl": 8 },
-			{ "name": "Nera", "ecl": 10 },
+			{ "name": "Nera", "ecl": 11 },
 			{ "name": "Paedir", "ecl": 10 },
 			{ "name": "Sariel", "ecl": 10 },
 			{ "name": "Kali", "ecl": 7 },
-			{ "name": "Laestra", "ecl": 10 }
+			{ "name": "Laestra", "ecl": 11 }
 		],
 		"Retainers": [
 			{ "name": "Camilia", "ecl": 7, "slave": true },
@@ -21,7 +21,9 @@
 		"Slaves": [
 			{ "name": "Minion", "ecl": 7, "slave": true },
 			{ "name": "Priya", "ecl": 5, "slave": true },
-			{ "name": "Lily", "ecl": 6, "slave": true }
+			{ "name": "Lily", "ecl": 6, "slave": true },
+			{ "name": "Chonk", "ecl": 9, "slave": true },
+			{ "name": "Chachick", "ecl": 9, "slave": true }
 		],
 		"Orcs": [
 			{ "name": "Maak", "ecl": 3, "slave": true },
