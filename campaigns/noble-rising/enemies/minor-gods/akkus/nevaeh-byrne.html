@@ -27,7 +27,7 @@
 		["Languages:", "Common"],
 		["Alignment:", "Lawful Evil"],
         ["Class Levels:", "Rogue 5, Fighter 5"],
-        ["Experience:", "45,000 / 55,000"]
+        ["Experience:", "46,181 / 55,000"]
 	]
 </ap-basic-table>
 
@@ -60,20 +60,46 @@
 	<div class="table-column">
 		<ap-enc-chart strength="14">
 			[
-                [50, 50, 50, 50],
+                [0, 50, 50, 50],
                 ["+1 mithral chainmail", 1, [0, 8200, 0, 0], 20],
                 ["+2 bastard sword", 1, [0, 8335, 0, 0], 6],
                 ["+1 composite longbow (14)", 1, [0, 2600, 0, 0], 3],
                 ["Arrows", 20, [0, 0, 0, 5], 0.15],
-                ["Courtier's outfit (with jewelry)", 1, [0, 80, 0, 0], 6],
-                ["Traveler's outfit", 1, [0, 1, 0, 0], 5],
                 ["Pouch, belt", 1, [0, 1, 0, 0], 0.5],
-                ["Bedroll", 1, [0, 0, 1, 0], 5],
                 ["Waterskin", 1, [0, 1, 0, 0], 4],
                 ["Whetstone", 1, [0, 0, 0, 2], 1],
                 ["Parchment", 50, [0, 0, 2, 0], 0.01],
                 ["Ink, 1 oz.", 1, [0, 8, 0, 0], 0.01],
-                ["Inkpen", 1, [0, 0, 1, 0], 0.01]
+                ["Inkpen", 1, [0, 0, 1, 0], 0.01],
+                ["Handy Haversack", 1, [0, 2000, 0, 0], 5],
+                {
+					"name":"Handy haversack main pouch",
+                    "carryWeight":80,
+                    "contents":[
+						[0, 0, 0, 0],
+                        ["Courtier's outfit (with jewelry)", 1, [0, 80, 0, 0], 6],
+                        ["Traveler's outfit", 1, [0, 1, 0, 0], 5]
+                    ]
+				},
+                {
+                    "name":"Handy haversack left pouch",
+                    "carryWeight":20,
+                    "contents":[
+                        [0, 0, 0, 0],
+                        ["Bedroll", 1, [0, 0, 1, 0], 5],
+                        ["Blanket, winter", 1, [0, 0, 5, 0], 3],
+                        ["Soap (per lb.)", 1, [0, 0, 5, 0], 1],
+                        ["Rations (per day)", 5, [0, 0, 5, 0], 1],
+                        ["Potion of Heal Minor Wounds", 1, [0, 50, 0, 0], 0.1]
+                    ]
+                },
+                {
+					"name":"Handy haversack right pouch",
+                    "carryWeight":20,
+                    "contents":[
+						[50, 0, 0, 0]
+                    ]
+				}
 			]
 		</ap-enc-chart>
 	</div>
