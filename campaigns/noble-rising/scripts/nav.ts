@@ -343,6 +343,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "npcs/retainers/lola-ward.html", "Lola Ward, Human Rogue", "lola-ward"),
 	new PageInfo(undefined, "npcs/retainers/juliette-walker.html", "Juliette Walker, Personal Blade of Nera", "juliette-walker"),
 	new PageInfo(undefined, "npcs/retainers/falodran.html", "Falodran the Thief Melter", "falodran"),
+	new PageInfo(undefined, "npcs/retainers/mimakin.html", "Mimakin the Elegant", "mimakin"),
 	new PageInfo(undefined, "npcs/retainers/chachick.html", "Chachick, Psychic Warrior Nen", "chachick"),
 	new PageInfo(undefined, "npcs/retainers/nui.html", "Nui, Attuned Mutated Kobold", "nui"),
 
@@ -391,6 +392,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "images/sebas.png", "", "sebas-img", true),
 	new PageInfo(undefined, "images/ivy-cooke.jpg", "", "ivy-cooke-img", true),
 	new PageInfo(undefined, "images/quilynn-loreweaver.jpg", "", "quilynn-loreweaver-img", true),
+	new PageInfo(undefined, "images/mimakin.png", "", "mimakin-img", true),
 	new PageInfo(undefined, "images/reaper.jpg", "", "reaper-img", true),
 	new PageInfo(undefined, "images/sariel-revealing-painting.jpg", "", "sariel-revealing-painting-img", true),
 	new PageInfo(undefined, "images/ilvith-symbol.jpg", "", "ilvith-symbol-img", true),

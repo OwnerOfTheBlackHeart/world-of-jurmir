@@ -17,7 +17,8 @@
 			{ "name": "Zarsra", "ecl": 6, "slave": true },
 			{ "name": "Lola", "ecl": 7 },
 			{ "name": "Nate", "ecl": 4, "slave": true },
-			{ "name": "Nevaeh", "ecl": 10 }
+			{ "name": "Nevaeh", "ecl": 10 },
+			{ "name": "Nui", "ecl": 10 }
 		],
 		"Slaves": [
 			{ "name": "Minion", "ecl": 7, "slave": true },
