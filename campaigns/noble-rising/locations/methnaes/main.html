@@ -14,19 +14,127 @@
 <h2 id="important-people">Important People</h2>
 <ap-image linkName="noble-eclavana-ichiir-img" class="character-picture" height="500">Picture of Eclavana</ap-image>
 <h3 id="eclavna-ichiir">Duchess Eclavna Ichiir</h3>
-<p>
-    Duchess Eclavna Ichiir is a female drow who stands at 5' 1" tall with black skin, violet tinted white hair and dark red
-    eyes. She typically wears a dress made from gossamer-like golden spider silk with strands of silver and gold woven in with
-    rubies and sapphires dotted throughout the dress. Visible underneath the dress is a pair of silver silk panties and a silver
-    silk corset with no fabric between the ribs. On the jewelry end, Duchess Ichiir prefers diamond studded platinum, with 2
-    sets of ear rings, 3 to 5 necklaces (depending on the day), and a ring on every finger of her left hand. 
-</p>
-<p>
-    Duchess Ichiir is a results driven ruler and treats people based on how useful they have been, or could be, to her. She
-    is willing to accept the occasional failure, usually as a "learning opportunity," but repeated failures will earn her
-    wrath.
-</p>
-<p>
-    The Duchess has her eyes on moving up in rank to a queen, and she sees Taaira Ruzara as one step in acquiring enough land
-    to form her holdings into a queendom.
-</p>
+<div class="column-container">
+    <div class="column table-width">
+        <ap-auth-container permissions="gm eclavna-ichiir-combat-stats noble-full">
+            <ap-basic-table character-table>
+                [
+                    ["Size/Type:", "Medium Humanoid (elf)"],
+                    ["Hit Dice:", "16d10+48 (76 / 76)"],
+                    ["Initiative:", "+3"],
+                    ["Speed:", "30 ft. (6 squares)"],
+                    ["Armor Class:", "33 (+3 dex, +10 +2 nerium full plate, +6 +2 mithral tower shield, +2 amulet of natural armor +2, +2 ring of protection +2), touch 15, flat-footed 28"],
+                    ["Base Attack/Grapple:", "+16/+22"],
+                    ["Attack:", "+2 keen longsword +26 melee (1d8+12/17-20x2) or +2 hand crossbow +21 ranged (1d4 plus drow poison, 19-20/x2)"],
+                    ["Full Attack:", "+2 keen longsword +26/+21/+16/+11 melee (1d8+12/17-20x2) or +2 hand crossbow +21 ranged (1d4 plus drow poison, 19-20/x2)"],
+                    ["Space/Reach:", "5 ft./5 ft."],
+                    ["Special Attacks:", "Power Attack"],
+                    ["Special Qualities:", 
+                        "Darkvision 120 ft, <ap-link-button linkName="drow-traits">Drow traits</ap-link-button>, spell resistance 27, ",
+                        "DR 3/-, Energy Resistance fire 6, cold 6, and acid 6"
+                    ],
+                    ["Saves:", "Fort +13, Ref +8, Will +5"],
+                    ["Abilities:", "Str 22 (18), Dex 16, Con 16, Int 18, Wis 11, Cha 15"],
+                    ["Skills:", 
+                        "Appraise +14, Bluff +13, Diplomacy +28, Handle Animal +4, Intimidate +25, Knowledge (local) +23, Knowledge (nobility) +14, Listen +2, ",
+                        "Ride +14 (+10 in armor), Search +6, Sense Motive +21, Spot +2"
+                    ],
+                    ["Feats:", 
+                        "Animal Affinity, Blind-Fight, Combat Reflexes, Negotiator, Weapon Focus (longsword), Persuasive, Weapon Specialization (longsword), ",
+                        "Greater Weapon Focus (longsword), <ap-link-button linkName="3.5-homebrew-feats" hash="living-in-armor">Living in Armor</ap-link-button>, ",
+                        "<ap-link-button linkName="3.5-homebrew-feats" hash="adjusted-to-armor">Adjusted to Armor</ap-link-button>, ", 
+                        "<ap-link-button linkName="3.5-homebrew-feats" hash="armor-mountain">Armor Mountain</ap-link-button>, Greater Weapon Specialization (longsword), ",
+                        "Power Attack, Skill Focus (diplomacy)"
+                    ],
+                    ["Challenge Rating:", "16"],
+                    ["Languages:", "Common, Elven, Undercommon, Infernal, Drow Sign Language, Draconic, Aquan"],
+                    ["Alignment:", "LE"],
+                    ["Level Adjustment:", "2 (2 negated)"],
+                    ["Class Levels:", "Fighter 16"]
+                ]   
+            </ap-basic-table>
+        </ap-auth-container>
+        <p>
+            Duchess Eclavna Ichiir is a female drow who stands at 5' 1" tall with black skin, violet tinted white hair and dark red
+            eyes. She typically wears a dress made from gossamer-like golden spider silk with strands of silver and gold woven in with
+            rubies and sapphires dotted throughout the dress. Visible underneath the dress is a pair of silver silk panties and a silver
+            silk corset with no fabric between the ribs. On the jewelry end, Duchess Ichiir prefers diamond studded platinum, with 2
+            sets of ear rings, 3 to 5 necklaces (depending on the day), and a ring on every finger of her left hand. 
+        </p>
+        <p>
+            Duchess Ichiir is a results driven ruler and treats people based on how useful they have been, or could be, to her. She
+            is willing to accept the occasional failure, usually as a "learning opportunity," but repeated failures will earn her
+            wrath.
+        </p>
+        <p>
+            The Duchess has her eyes on moving up in rank to a queen, and she sees Taaira Ruzara as one step in acquiring enough land
+            to form her holdings into a queendom.
+        </p>
+        <ap-auth-container permissions="gm eclavna-ichiir-combat-stats noble-full">
+            <br/>
+            <ap-skill-chart>
+                [
+                    ["Armor Check Penalty", -4, ""],
+                    ["Appraise", 10, ""],
+                    ["Bluff", 9, "+2 feat"],
+                    ["Diplomacy", 19, "+5 feat, +2 synergy"],
+                    ["Handle Animal", 0, "+2 feat"],
+                    ["Intimidate", 19, "+2 feat, +2 synergy"],
+                    ["Knowledge (local)", 19, ""],
+                    ["Knowledge (nobility)", 10, ""],
+                    ["Listen", 0, "+2 racial"],
+                    ["Ride", 9, "+2 feat"],
+                    ["Search", 0, "+2 racial"],
+                    ["Sense Motive", 19, "+2 feat"],
+                    ["Spot", 0, "+2 racial"]
+                ]
+            </ap-skill-chart>
+        </ap-auth-container>
+    </div>
+    <ap-auth-container permissions="gm eclavna-ichiir-combat-stats noble-full">
+        <div class="table-column">
+            <ap-enc-chart strength="22">
+                [
+                    [0, 50, 0, 0],
+                    ["Holy symbol, silver", 1, [0, 25, 0, 0], 1],
+                    ["+2 Nerium full plate", 1, [0, 35800, 0, 0], 25],
+                    ["+2 mithral tower shield", 1, [0, 5180, 0, 0], 22.5],
+                    ["+2 keen longsword", 1, [0, 18315, 0, 0], 4],
+                    ["+2 hand crossbow", 1, [0, 8400, 0, 0], 2],
+                    ["Hand crossbow bolts", 40, [0, 0, 1, 0], 0.1],
+                    ["Amulet of Natural Armor +2", 1, [0, 8000, 0, 0], 0.1],
+                    ["Ring of Protection +2", 1, [0, 8000, 0, 0], 0.1],
+                    ["Belt of Giant's Strength +4", 1, [0, 16000, 0, 0], 1],
+                    ["Royal outfit", 1, [0, 200, 0, 0], 15],
+                    ["Signet Ring", 1, [0, 5, 0, 0], 0.1],
+                    ["Manacles, masterwork", 1, [0, 50, 0, 0], 2],
+                    ["Waterskin", 1, [0, 1, 0, 0], 4],
+                    ["Spyglass", 1, [0, 1000, 0, 0], 1],
+                    ["Bag of Holding, type 2", 1, [0, 5000, 0, 0], 25],
+                    {
+                        "name":"Bag of Holding, type II",
+                        "carryWeight":500,
+                        "contents":[
+                            [524, 51, 9, 8],
+                            ["Sealing Wax", 1, [0, 1, 0, 0], 1],
+                            ["Paper, sheet", 50, [0, 0, 4, 0], 0.05],
+                            ["Inkpen", 1, [0, 0, 1, 0], 0.01],
+                            ["Ink (1 oz. vial)", 1, [0, 8, 0, 0], 0.01],
+                            ["Ink (red, 1 oz. vial)", 1, [0, 16, 0, 0], 0.01],
+                            ["Paper, sheet", 50, [0, 0, 4, 0], 0.05],
+                            ["Mirror, small steel", 1, [0, 10, 0, 0], 0.5],
+                            ["Rope, silk (by foot)", 100, [0, 0, 2, 0], 0.1],
+                            ["Signal whistle", 1, [0, 0, 8, 0], 0.1],
+                            ["Bedroll", 1, [0, 0, 1, 0], 5],
+                            ["Blanket, winter", 1, [0, 0, 5, 0], 3],
+                            ["Tent", 1, [0, 10, 0, 0], 20],
+                            ["Soap", 1, [0, 0, 5, 0], 1],
+                            ["Whetstone", 1, [0, 0, 0, 2], 1],
+                            ["Rations, trail", 20, [0, 0, 5, 0], 1]
+                        ]
+                    }
+                ]
+            </ap-enc-chart>
+        </div>
+    </ap-auth-container>
+</div>
