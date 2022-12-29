@@ -259,6 +259,7 @@ export const nobleNav = [
 	new PageInfo(undefined, "enemies/minor-gods/cezvoc/cezvoc.html", "Cezvoc, God of Monsters and Dark Magic", "cezvoc"),
 	new PageInfo(undefined, "enemies/minor-gods/cezvoc/unworded-one.html", "The Unworded One", "unworded-one"),
 	new PageInfo(undefined, "enemies/minor-gods/cezvoc/joll-the-macabre.html", "Joll the Macabre", "joll-the-macabre"),
+	new PageInfo(undefined, "enemies/minor-gods/cezvoc/melody-wells.html", "Melody Wells, Champion of Cezvoc", "melody-wells"),
 	new PageInfo(undefined, "enemies/minor-gods/cezvoc/quina-numuas.html", "Quina Numuas, High Priestess of Chillbreak", "quina-numuas"),
 	new PageInfo(
 		undefined,
