@@ -12,20 +12,6 @@ Determine titles for the leaders of the faith for each "church"
 Nera's knights order of Black Oleander
 
 Hippogriffs (up to 4) can be rented for 150gp per day
-
-Actions
-	Navigate to the center (survival DC 15, 0 of 4)
-	Hunt something specific (survival DC 20)
-	Gather materials (5 lbs per person)
-
-	0 hours
-
-	9,030 lbs
-	50 lbs given to Author for testing
-	Marketing in River's Pass
-
-	1 male orc who survived being one-shot by a ogre
-		Trained to be a cleric of Feph
 	
 8 headed hydra at tile 011.017
 	Gorga
@@ -75,42 +61,8 @@ Lufir Arcanscape
 
 Build Mirstone
 
-1 month of payment for the towns and the hole
+Decide on location of next Ulath revival
+	Ritual to revive Ulath given by Joll the Macabre
+	Blue Field or Yine? Rocnest or Dalhurst?
 
-Build Rathian
-	2 tailed wyvern?
-	19 HD wyvern
-	CR 15
-	5 foot radius fireball
-	Yeshana wants the stinger and venom gland, preferably still in the tail
-
-Have Phidove start working on preparing to make a chivalric order
-
-Dragons for Nera
-LV11: Wyrmling gold
-lv13: Young Black (update falodran at that time)
-lv15: Very Young Gold (age up gold)
-
-Draggin Megaraptor quest possible locations
-	Zo Gedad - Mutated
-		Rough estimate of mutations
-		Location of the nest
-		Has mutated minions
-		Do as solo session with Austin
-	Dawnflow
-
-Sariel is looking to hunt arrowhawks
-	Prep encounter
-
-Dragons for Peadir:
-	Peadir has chosen to go after:
-	Skalhos
-		Female, Black Adult +2 HD (186 years old)
-		Is currently inactive, in the middle of an estimated decade long sleep
-		Has doppelgangers, some undead, and lizardfolk
-		Located in the swamp near Old Castle
-	
-Consider adding an obsidian dragon as a potential enemy
-Consider using a spellweaver (MM2, 187) in the cult of Cezvocp
-	The spellweaver is likely to be some kind of leader or higher up, possibly a recurring enemy
-	Avolakia (MM2, 28) are another solid option to have 
+Determine next cult
