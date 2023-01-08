@@ -3,7 +3,7 @@
 <ap-basic-table character-table>
 	[
 		["Size/Type:", "Medium Humanoid (human)"],
-		["Hit Dice:", "5d8+3d4+24 (51 / 51)"],
+		["Hit Dice:", "5d8+1d6+3d4+27 (60 / 60)"],
 		["Initiative:", "+2"],
 		["Speed:", "30 ft. (6 squares)"],
 		["Armor Class:", "16 (+2 dex, +4 +1 hide armor), touch 12, flat-footed 14"],
@@ -16,23 +16,23 @@
 		["Space/Reach:", "5 ft./5 ft."],
 		["Special Attacks:", "-"],
         ["Special Qualities:", 
-            "From the gnoll lands, <ap-link-button linkName="noble-cackles">animal companion</ap-link-button>, nature sense, wild empathy,",
-            "woodland stride, trackless step, resist nature’s lure, wild shape (1/day), summon familiar"
+            "From the gnoll lands, <ap-link-button linkName="noble-cackles">companion familiar</ap-link-button>, nature sense, wild empathy,",
+            "woodland stride, trackless step, resist nature’s lure, wild shape (2/day), summon familiar, ignore spell failure"
         ],
-		["Saves:", "Fort +8, Ref +4, Will +11"],
+		["Saves:", "Fort +8, Ref +4, Will +13"],
 		["Abilities:", "Str 14, Dex 14, Con 16, Int 14, Wis 18, Cha 15"],
 		["Skills:", 
-			"Concentration +7, Decipher Script +6, Handle Animal +10, Knowledge (arcane) +10, Knowledge (nature) +14, Knowledge (planes) +3, Spot +12, Listen +12, ",
-			"Survival +14, Heal +12, Spellcraft +10"
+			"Concentration +8, Decipher Script +6, Handle Animal +11, Knowledge (arcane) +11, Knowledge (nature) +15, Knowledge (planes) +3, Spot +13, Listen +13, ",
+			"Survival +15, Heal +12, Spellcraft +11"
 		],
 		["Feats:", 
-			"Track, Martial Weapon Proficiency (longbow), Point Blank Shot, Lost Tradition (Wizard/Wis), Scribe Scroll"
+			"Track, Martial Weapon Proficiency (longbow), Point Blank Shot, Lost Tradition (Wizard/Wis), Scribe Scroll, Natural Bond (CAdv 111, +3 to animal companion level)"
 		],
-		["Challenge Rating:", "8"],
+		["Challenge Rating:", "9"],
 		["Languages:", "Common, gnolish, druidic"],
 		["Alignment:", "? <ap-auth-container permissions="gm camilia-alignment noble-full">Neutral Evil (I rolled this shit)</ap-auth-container>"],
-        ["Class Levels:", "Druid 5, <ap-link-button linkName="noble-camilia-spellbook">Wizard</ap-link-button> 3"],
-        ["Experience:", "36,000 / 36,000"]
+        ["Class Levels:", "Druid 5, <ap-link-button linkName="noble-camilia-spellbook">Wizard</ap-link-button> 3, Arcane Hierophant (RotW, Pg. 108) 1"],
+        ["Experience:", "36,000 / 45,000"]
 	]
 </ap-basic-table>
 
@@ -70,7 +70,7 @@
 
 <div class="table-container">
 	<div class="table-column">
-		<b>Druid Spells</b>
+		<b>Druid Spells, Caster Level 6</b>
 		<div style="margin: 14.4px">
 			Level 0 spells (DC 14, 5 per day)
 			<ul>
@@ -85,21 +85,23 @@
 				<li>Produce Flame</li>
 				<li>Goodberry</li>
 			</ul><br/>
-			Level 2 spells (DC 16, 3 per day)
+			Level 2 spells (DC 16, 4 per day)
 			<ul>
 				<li>Cat’s Grace</li>
 				<li>Summon Nature’s Ally II</li>
 				<li>Barkskin</li>
+				<li>Nature’s Favor (SC 147)</li>
 			</ul><br/>
-			Level 3 spells (DC 17, 2 per day)
+			Level 3 spells (DC 17, 3 per day)
 			<ul>
 				<li>Call Lightning</li>
 				<li>Cure Moderate Wounds</li>
+				<li>Align Fang, Mass (SC 10)</li>
 			</ul>
 		</div>
 	</div>
 	<div class="table-column">
-		<b>Wizard Spells</b>
+		<b>Wizard Spells, Caster Level 4</b>
 		<div style="margin: 14.4px">
 			Level 0 spells (DC 14, 4 per day)
 			<ul>
@@ -107,17 +109,19 @@
 				<li>Light</li>
 				<li>Mending</li>
 			</ul><br/>
-			Level 1 spells (DC 15, 3 per day)
+			Level 1 spells (DC 15, 4 per day)
 			<ul>
 				<li>True Strike</li>
 				<li>Ray of Clumsiness (SC 167)</li>
 				<li>Arrow Mind (SC 16)</li>
+				<li></li>
 			</ul>
 			</ul><br/>
-			Level 2 spells (DC 16, 2 per day)
+			Level 2 spells (DC 16, 3 per day)
 			<ul>
 				<li>See Invisibility</li>
 				<li>Mirror Image</li>
+				<li>Sonic Weapon (SC 196)</li>
 			</ul>
 		</div>
 	</div>
@@ -128,17 +132,17 @@
 		<ap-skill-chart>
 			[
 				["Armor Check Penalty", 0, ""],
-				["Concentration", 4, ""],
+				["Concentration", 5, ""],
 				["Decipher Script", 4, ""],
 				["Handle Animal", 8, ""],
-				["Knowledge (nature)", 8, "+2 Nature Sense, +2 synergy"],
-				["Knowledge (arcane)", 8, ""],
+				["Knowledge (nature)", 9, "+2 Nature Sense, +2 synergy"],
+				["Knowledge (arcane)", 9, ""],
 				["Knowledge (planes)", 1, ""],
-				["Spot", 8, ""],
-				["Survival", 8, "+2 Nature Sense, +2 checks in aboveground natural environments<br/>(aquatic, desert, forest, hill, marsh, mountains, and plains)"],
-                ["Listen", 8, ""],
+				["Spot", 9, ""],
+				["Survival", 9, "+2 Nature Sense, +2 checks in aboveground natural environments<br/>(aquatic, desert, forest, hill, marsh, mountains, and plains)"],
+                ["Listen", 9, ""],
                 ["Heal", 8, ""],
-				["Spellcraft", 6, "+2 synergy"]
+				["Spellcraft", 7, "+2 synergy"]
 			]
 		</ap-skill-chart>
 	</div>
