@@ -12,7 +12,7 @@
 			{ "name": "Laestra", "ecl": 11 }
 		],
 		"Retainers": [
-			{ "name": "Camilia", "ecl": 7, "slave": true },
+			{ "name": "Camilia", "ecl": 9, "slave": true },
 			{ "name": "Juliette", "ecl": 8, "slave": true },
 			{ "name": "Zarsra", "ecl": 6, "slave": true },
 			{ "name": "Lola", "ecl": 7 },
@@ -24,7 +24,7 @@
 			{ "name": "Minion", "ecl": 7, "slave": true },
 			{ "name": "Priya", "ecl": 5, "slave": true },
 			{ "name": "Lily", "ecl": 6, "slave": true },
-			{ "name": "Chonk", "ecl": 9, "slave": true },
+			{ "name": "Chonk", "ecl": 9 },
 			{ "name": "Chachick", "ecl": 9, "slave": true }
 		],
 		"Orcs": [
