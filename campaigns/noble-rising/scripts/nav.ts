@@ -354,6 +354,9 @@ export const nobleNav = [
 
 	new PageInfo(undefined, "npcs/cults/xiiserra.html", "Xiiserra, Spellthief of the Calmers", "xiiserra"),
 
+	new PageInfo(undefined, "npcs/extraplanar-allies/ashbeel.html", "Ashbeel, Elizabeth's Erinyes Ally", "ashbeel"),
+	new PageInfo(undefined, "npcs/extraplanar-allies/firnna.html", "Firnna, Nera's Erinyes Servant", "firnna"),
+
 	new PageInfo(undefined, "characters/camilia.html", "Camilia Famia, Wild Beauty", "camilia"),
 	new PageInfo(undefined, "characters/lessiarra.html", "Lessiarra Rumbling Cloud, Giant Tigress", "lessiarra"),
 	new PageInfo(undefined, "characters/animal-companions/cackles.html", "Cackles the Spotted Hyena", "cackles"),
