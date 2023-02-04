@@ -4,35 +4,38 @@
 	<ap-basic-table character-table>
 		[
 			["Size/Type:", "Medium Humanoid (Elf)"],
-			["Hit Dice:", "1d10+6d4+6d8+26 (78)"],
+			["Hit Dice:", "1d10+6d4+8d8+30 (96 / 96)"],
 			["Initiative:", "+4"],
 			["Speed:", "30 ft. (6 squares)"],
-			["Armor Class:", "24 (+4 dex, +7 +2 mithral breastplate, +2 +1 light wooden shield, +1 ring of protection +1), touch 15, flat-footed 19"],
-			["Base Attack/Grapple:", "+10/+14"],
-			["Attack:", "Bloodstone longsword (+2) +17 melee (1d8+6/19-20x2) or ray +14 ranged"],
-			["Full Attack:", "Bloodstone longsword (+2) +17/+12 melee (1d8+6/19-20x2) or ray +14 ranged"],
+			["Armor Class:", 
+				"27 (+4 dex, +7 +2 mithral breastplate, +3 +2 light wooden shield, +1 ring of protection +1, +2 amulet of natural armor), ",
+				"touch 15, flat-footed 22"
+			],
+			["Base Attack/Grapple:", "+12/+16"],
+			["Attack:", "Bloodstone longsword (+3) +20 melee (1d8+6/19-20x2) or ray +16 ranged"],
+			["Full Attack:", "Bloodstone longsword (+3) +20/+15 melee (1d8+6/19-20x2) or ray +16 ranged"],
 			["Space/Reach:", "5 ft./5 ft."],
 			["Special Attacks:", "Bloodstone Bleed (2)"],
 			["Special Qualities:", 
 				"Darkvision 120 ft, <ap-link-button linkName="drow-traits">drow traits</ap-link-button>, ",
 				"spell resistance 24, summon familiar (bat), scribe scroll, universalist, light blindness, ",
-				"ignore spell failure 20%, Channel spell 4/day"
+				"ignore spell failure 25%, Channel spell 5/day"
 			],
-			["Saves:", "Fort +11, Ref +7, Will +11"],
+			["Saves:", "Fort +12, Ref +7, Will +12"],
 			["Abilities:", "Str 19, Dex 18, Con 14, Int 22 (18), Wis 13, Cha 18"],
 			["Skills:", 
 				"Handle Animal +8, Intimidate +8, Craft (weapon) +12, Climb +9 (+8 in armor), Jump +6 (+5 in armor), Ride +6 (+5 in armor), Swim +8 (+6 in armor), ",
-				"Concentration +17, Knowledge (arcane) +22, Knowledge (religion) +20, Knowledge (planes) +16, ",
-				"Decipher Script +10, Spellcraft +19, Listen +6, Spot +3, Search +3"
+				"Concentration +20, Knowledge (arcane) +24, Knowledge (religion) +22, Knowledge (planes) +21, ",
+				"Decipher Script +10, Spellcraft +23, Listen +6, Spot +3, Search +3"
 			],
 			["Feats:", 
 				"Weapon focus (longsword), spell penetration, scribe scroll, eschew materials, craft magic arms and armor,",
-				"greater spell penetration (+4 to caster level vs spell resistance), empower spell, craft wondrous item"
+				"greater spell penetration (+4 to caster level vs spell resistance), empower spell, craft wondrous item, combat casting"
 			],
 			["Challenge Rating:", "13"],
 			["Languages:", "Common, elven, undercommon, drow sign language, abyssal, draconic, gnome"],
 			["Alignment:", "True Neutral"],
-			["Class Levels:", "Fighter 1, <ap-link-button linkName="noble-yasrena-spellbook">Wizard 6</ap-link-button>, Spellsword (CW 79) 6"],
+			["Class Levels:", "Fighter 1, <ap-link-button linkName="noble-yasrena-spellbook">Wizard 6</ap-link-button>, Spellsword (CW 79) 8"],
 			["Level Adjustment:", "+2 (2 negated)"]
 		]
 	</ap-basic-table>
@@ -61,6 +64,9 @@
 		<i class="power">Headband of Intellect:</i> Yasrena wears a headband of intellect +4 that she made herself.
 	</p>
 
+	<p>
+		<i class="power">Spells:</i> Yasrena counts as a 10th level wizard for casting spells.
+	</p>
 	<div style="margin: 14.4px">
 		Level 0 spells (DC 14, 4 per day)
 		<ul>
@@ -91,16 +97,18 @@
 			<li>Fireball</li>
 			<li>Sound Lance (SC 197)</li>
 		</ul><br/>
-		Level 4 spells (DC 20, 3 per day)
+		Level 4 spells (DC 20, 4 per day)
 		<ul>
 			<li>Secure Shelter</li>
 			<li>Summon Monster IV</li>
 			<li>Blast of Flame (SC 32)</li>
+			<li>Dimension Door</li>
 		</ul><br/>
-		Level 5 spells (DC 21, 2 per day)
+		Level 5 spells (DC 21, 3 per day)
 		<ul>
 			<li>Teleport</li>
 			<li>Fabricate</li>
+			<li>Contact Other Plane</li>
 		</ul>
 	</div>
 
@@ -116,12 +124,12 @@
 					["Jump", 2, ""],
 					["Ride", 2, ""],
 					["Swim", 4, ""],
-					["Concentration", 15, ""],
-					["Knowledge (arcane)", 16, ""],
-					["Knowledge (religion)", 14, ""],
-					["Knowledge (planes)", 10, ""],
+					["Concentration", 18, ""],
+					["Knowledge (arcane)", 18, ""],
+					["Knowledge (religion)", 16, ""],
+					["Knowledge (planes)", 15, ""],
 					["Decipher Script", 4, ""],
-					["Spellcraft", 11, "+2 synergy"],
+					["Spellcraft", 15, "+2 synergy"],
 					["Listen", 0, "+3 familiar, +2 racial"],
 					["Spot", 0, "+2 racial"],
 					["Search", 0, "+2 racial"]
@@ -154,11 +162,11 @@
 
 <h2 id="description">Description</h2>
 <p>
-	Yasrena is 5' 2" tall and 117 lbs in weight with white hair, humanlike ice-blue eyes, light coal skin, and 
+	Yasrena is 5' 2" tall and 117 lbs in weight with white hair, human-like ice-blue eyes, light coal skin, and 
 	sharp features. She usually wears her hair in a large ponytail with two "strips" of hair on either side of
 	her face. She typically wears a black leather shirt that leaves her flanks and upper back exposed with matching
 	gloves and leggings, which others may consider sexually explicit while Yasrena considers it a show of confidence
-	in herself. When travelling or expecting danger, Yasrena adds a pair of metal gauntlets and metal heeled boots.
+	in herself. When traveling or expecting danger, Yasrena adds a pair of metal gauntlets and metal heeled boots.
 </p>
 
 <h2 id="combat">Combat</h2>

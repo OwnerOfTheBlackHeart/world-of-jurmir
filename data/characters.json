@@ -1,11 +1,11 @@
 {
 	"Noble Rising": {
 		"Player Characters": [
-			{ "name": "Elizabeth", "ecl": 10 },
+			{ "name": "Elizabeth", "ecl": 11 },
 			{ "name": "Sin", "ecl": 8 },
 			{ "name": "Draggin", "ecl": 10 },
 			{ "name": "Galadriel", "ecl": 8 },
-			{ "name": "Nera", "ecl": 11 },
+			{ "name": "Nera", "ecl": 12 },
 			{ "name": "Paedir", "ecl": 10 },
 			{ "name": "Sariel", "ecl": 10 },
 			{ "name": "Kali", "ecl": 7 },
@@ -13,18 +13,18 @@
 		],
 		"Retainers": [
 			{ "name": "Camilia", "ecl": 9, "slave": true },
-			{ "name": "Juliette", "ecl": 8, "slave": true },
-			{ "name": "Zarsra", "ecl": 6, "slave": true },
+			{ "name": "Juliette", "ecl": 10 },
+			{ "name": "Zarsra", "ecl": 8, "slave": true },
 			{ "name": "Lola", "ecl": 7 },
-			{ "name": "Nate", "ecl": 4, "slave": true },
-			{ "name": "Nevaeh", "ecl": 10 },
-			{ "name": "Nui", "ecl": 10 }
+			{ "name": "Nate", "ecl": 6, "slave": true },
+			{ "name": "Nevaeh", "ecl": 11 },
+			{ "name": "Nui", "ecl": 11 }
 		],
 		"Slaves": [
-			{ "name": "Minion", "ecl": 7, "slave": true },
+			{ "name": "Minion", "ecl": 9, "slave": true },
 			{ "name": "Priya", "ecl": 5, "slave": true },
 			{ "name": "Lily", "ecl": 6, "slave": true },
-			{ "name": "Chonk", "ecl": 9 },
+			{ "name": "Chonk", "ecl": 10 },
 			{ "name": "Chachick", "ecl": 9, "slave": true }
 		],
 		"Orcs": [
