@@ -107,7 +107,7 @@ export function addToRecordArray(record, key, data) {
     }
     record[key].push(data);
 }
-export function getRndInteger(min, max) {
+export function getRandomInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 export function isInRange(value, min, max) {
@@ -149,7 +149,7 @@ export function getRandomItemFromRange(items, sort = false) {
     if (sort) {
         sortedItems.sort((a, b) => a.from - b.from);
     }
-    const value = getRndInteger(sortedItems.firstElement().from, sortedItems.lastElement().to);
+    const value = getRandomInteger(sortedItems.firstElement().from, sortedItems.lastElement().to);
     return sortedItems.find((item) => isInRange(value, item.from, item.to));
 }
 export const Bounds = Object.freeze({

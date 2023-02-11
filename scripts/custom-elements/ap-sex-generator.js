@@ -9,6 +9,36 @@ export var ClassType;
     ClassType["npc"] = "NPC";
     ClassType["player"] = "Player";
 })(ClassType || (ClassType = {}));
+export const AttractivenessTypes = {
+    none: { name: "none", displayName: "None" },
+    any: {
+        name: "any",
+        displayName: "Any",
+        valueRange: { from: 1, to: 10 },
+    },
+    ugly: {
+        name: "ugly",
+        displayName: "Ugly",
+        valueRange: { from: 1, to: 5 },
+    },
+    average: {
+        name: "average",
+        displayName: "Average",
+        valueRange: { from: 3, to: 7 },
+    },
+    pretty: {
+        name: "pretty",
+        displayName: "Pretty",
+        valueRange: { from: 5, to: 10 },
+    },
+    veryPretty: {
+        name: "very-pretty",
+        displayName: "Very Pretty",
+        valueRange: { from: 7, to: 10 },
+    },
+    values: [],
+};
+AttractivenessTypes.values.push(AttractivenessTypes.none, AttractivenessTypes.any, AttractivenessTypes.ugly, AttractivenessTypes.average, AttractivenessTypes.pretty, AttractivenessTypes.veryPretty);
 class SexGeneratorElement extends HTMLElement {
     constructor() {
         super();
@@ -34,6 +64,12 @@ class SexGeneratorElement extends HTMLElement {
         row.appendChild(Utilities.CreateTableData("<b>Sex:</b>"));
         data = document.createElement("td");
         data.appendChild(this.sexSelect);
+        row.appendChild(data);
+        row = document.createElement("tr");
+        table.appendChild(row);
+        row.appendChild(Utilities.CreateTableData("<b>Attractiveness:</b>"));
+        data = document.createElement("td");
+        data.appendChild(this.attractivenessSelect);
         row.appendChild(data);
         row = document.createElement("tr");
         table.appendChild(row);
@@ -88,10 +124,12 @@ class SexGeneratorElement extends HTMLElement {
         this.races = [];
         this.raceSelect = document.createElement("select");
         this.sexSelect = document.createElement("select");
+        this.attractivenessSelect = document.createElement("select");
         this.settingSelect = document.createElement("select");
         this.classTypeSelect = document.createElement("select");
         this.raceSelect.id = "race-select-box";
         this.sexSelect.id = "sex-select-box";
+        this.attractivenessSelect.id = "attractiveness-select-box";
         this.settingSelect.id = "setting-select-box";
         this.classTypeSelect.id = "class-type-select-box";
         this.settingSelect.onchange = () => this.OnSettingChanged();
@@ -121,6 +159,12 @@ class SexGeneratorElement extends HTMLElement {
             option.value = sexRange.value;
             option.text = sexRange.value;
             this.sexSelect.appendChild(option);
+        });
+        AttractivenessTypes.values.forEach((attractivenessType) => {
+            option = document.createElement("option");
+            option.value = attractivenessType.name;
+            option.text = attractivenessType.displayName;
+            this.attractivenessSelect.appendChild(option);
         });
         option = document.createElement("option");
         option.value = noneOption;
@@ -183,14 +227,17 @@ class SexGeneratorElement extends HTMLElement {
         div.classList.add("tile");
         this.output.appendChild(div);
         div.innerHTML = '<i class="power">Race:</i> ' + sexInfo.race + '<br/>\n<i class="power">Sex:</i> ' + sexInfo.sex;
-        if (sexInfo.class) {
-            div.innerHTML += '<br/><i class="power">Class:</i> ' + sexInfo.class + " (" + sexInfo.level + ")";
+        if (sexInfo.attractiveness) {
+            div.innerHTML += '<br/>\n<i class="power">Attractiveness:</i> ' + sexInfo.attractiveness;
         }
         if (sexInfo.dickLength) {
             div.innerHTML += '<br/>\n<i class="power">Dick Length:</i> ' + sexInfo.dickLength + '"';
         }
         if (sexInfo.cupSize) {
             div.innerHTML += '<br/>\n<i class="power">Cup Size:</i> ' + sexInfo.cupSize;
+        }
+        if (sexInfo.class) {
+            div.innerHTML += '<br/><i class="power">Class:</i> ' + sexInfo.class + " (" + sexInfo.level + ")";
         }
     }
     GenerateSexualCharacteristics() {
@@ -207,7 +254,7 @@ class SexGeneratorElement extends HTMLElement {
                 raceSexualFeatures = this.races.find((r) => r.races.firstElement() === race.name);
             }
             else {
-                raceSexualFeatures = this.races[Utilities.getRndInteger(0, this.races.length - 1)];
+                raceSexualFeatures = this.races[Utilities.getRandomInteger(0, this.races.length - 1)];
             }
         }
         else {
@@ -244,12 +291,18 @@ class SexGeneratorElement extends HTMLElement {
                 toReturn.cupSize = "N/A";
             }
         }
+        if (this.attractivenessSelect.value !== AttractivenessTypes.none.name) {
+            const attractiveness = AttractivenessTypes.values.find((attractivenessType) => attractivenessType.name === this.attractivenessSelect.value);
+            if (attractiveness) {
+                toReturn.attractiveness = Utilities.getRandomInteger(attractiveness.valueRange.from, attractiveness.valueRange.to);
+            }
+        }
         if (race) {
             if (race.subName) {
                 toReturn.race += ` (${race.subName})`;
             }
             const isPC = this.classTypeSelect.value === ClassType.random
-                ? Utilities.getRndInteger(1, 100) <= race.pcChance
+                ? Utilities.getRandomInteger(1, 100) <= race.pcChance
                 : this.classTypeSelect.value === ClassType.player;
             let characterClass = isPC ? Utilities.getRandomItemFromRange(race.pcClasses) : Utilities.getRandomItemFromRange(race.npcClasses);
             toReturn.class = characterClass.name;

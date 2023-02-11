@@ -1,5 +1,5 @@
 import { DiceRoll } from "../../roll.js";
-import { Bounds, getRndInteger, NumberBounds } from "../../utilities.js";
+import { Bounds, getRandomInteger, NumberBounds } from "../../utilities.js";
 import { GetTownSizeByPopulationSize, TownSize } from "./town-sizes.js";
 
 export var generatedPopulationMax = 50000;
@@ -17,7 +17,7 @@ export function BuildPopulationFromPopulationSize(population: number): [Populati
 
 export function BuildPopulationFromTownSize(townSize: TownSize, population?: number): [PopulationClassRow[], number] {
 	if (!population) {
-		population = getRndInteger(
+		population = getRandomInteger(
 			townSize.population.lower ? townSize.population.lower : generatedPopulationMin,
 			townSize.population.upper ? townSize.population.upper : generatedPopulationMax
 		);
@@ -94,7 +94,7 @@ function GeneratePopulationForRow(row: PopulationClassRow, popClass: PopulationC
 	let modifier = townSize.communityModifier.highestLevelMod;
 
 	if (townSize.communityModifier.natureBoost && popClass.natureClass) {
-		const natureRoll = getRndInteger(1, 100);
+		const natureRoll = getRandomInteger(1, 100);
 
 		if (Bounds.isInBounds(natureRoll, natureClassBounds)) {
 			modifier += popClass.natureModifier;

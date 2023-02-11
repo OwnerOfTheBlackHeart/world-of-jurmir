@@ -1,5 +1,5 @@
 import { DiceRoll } from "../../roll.js";
-import { Bounds, getRandomItemFromRange, getRndInteger, NamedNumberRange, NumberBounds } from "../../utilities.js";
+import { Bounds, getRandomItemFromRange, getRandomInteger, NamedNumberRange, NumberBounds } from "../../utilities.js";
 import { BuildPopulationFromTownSize, PopulationClassRow } from "./population.js";
 import { GetTownSizeByName, GetTownSizeByPopulationSize, TownSize } from "./town-sizes.js";
 
@@ -36,7 +36,7 @@ function BuildPowerCenters(townSize: TownSize): string[] {
 		const powerCenter = PowerCenters.find((pc) => Bounds.isInBounds(roll, pc));
 		let powerCenterName: string;
 
-		if (powerCenter.canBeMonstrous && Bounds.isInBounds(getRndInteger(1, 100), monstrousPowerCenterBounds)) {
+		if (powerCenter.canBeMonstrous && Bounds.isInBounds(getRandomInteger(1, 100), monstrousPowerCenterBounds)) {
 			powerCenterName = "Monstrous";
 		} else {
 			powerCenterName = powerCenter.type;

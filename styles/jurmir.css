@@ -359,6 +359,7 @@ ol > li > ol > li {
 
 #race-select-box,
 #sex-select-box,
+#attractiveness-select-box,
 #setting-select-box,
 #class-type-select-box,
 #generate-count-input,
@@ -369,7 +370,7 @@ ol > li > ol > li {
 .tile {
 	display: inline-block;
 	width: 230px;
-	height: 100px;
+	height: 8em;
 	vertical-align: top;
 }
 

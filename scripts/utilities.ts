@@ -134,7 +134,7 @@ export function addToRecordArray<T, K extends string | number>(record: Record<K,
 	record[key].push(data);
 }
 
-export function getRndInteger(min: number, max: number): number {
+export function getRandomInteger(min: number, max: number): number {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
@@ -189,7 +189,7 @@ export function getRandomItemFromRange<T extends NumberRange>(items: T[] | Reado
 		sortedItems.sort((a, b) => a.from - b.from);
 	}
 
-	const value = getRndInteger(sortedItems.firstElement().from, sortedItems.lastElement().to);
+	const value = getRandomInteger(sortedItems.firstElement().from, sortedItems.lastElement().to);
 
 	return sortedItems.find((item) => isInRange(value, item.from, item.to));
 }

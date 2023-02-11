@@ -41,7 +41,7 @@ export class DiceRoll {
 		};
 
 		for (let i = 0; i < this.diceCount; i++) {
-			const value = Utilities.getRndInteger(1, this.diceSides);
+			const value = Utilities.getRandomInteger(1, this.diceSides);
 			result.total += value;
 
 			result.rolls.push({
