@@ -13,6 +13,8 @@ export interface SexRollRange {
 	from: number;
 	to: number;
 	value: Sex;
+	feminity: number;
+	masculinity: number;
 	hasBoobs: boolean;
 	hasDick: boolean;
 }

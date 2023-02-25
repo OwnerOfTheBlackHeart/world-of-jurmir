@@ -362,6 +362,9 @@ ol > li > ol > li {
 #attractiveness-select-box,
 #setting-select-box,
 #class-type-select-box,
+#class-sort-select-box,
+#sex-sort-select-box,
+#attractiveness-sort-select-box,
 #generate-count-input,
 #community-modifier-input {
 	width: 150px;

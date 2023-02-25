@@ -3,6 +3,7 @@ import { ClassChance, Race } from "../race.js";
 import { DiceRoll } from "../roll.js";
 import { RaceSexualFeatureRolls, Sex, SexRollRange } from "../sexual-characteristics.js";
 import * as Utilities from "../utilities.js";
+import { SortType } from "../utilities.js";
 
 const randomOption = "Random";
 const noneOption = "None";
@@ -58,6 +59,8 @@ class SexGeneratorElement extends HTMLElement {
 	attractivenessSelect: HTMLSelectElement;
 	settingSelect: HTMLSelectElement;
 	classTypeSelect: HTMLSelectElement;
+	attractivenessSortSelect: HTMLSelectElement;
+	sexSortSelect: HTMLSelectElement;
 	isHeroicCheckbox: HTMLInputElement;
 	generateCountInput: HTMLInputElement;
 	output: HTMLDivElement;
@@ -110,12 +113,22 @@ class SexGeneratorElement extends HTMLElement {
 		data.appendChild(this.sexSelect);
 		row.appendChild(data);
 
+		row.appendChild(Utilities.CreateTableData("<b>Sort By:</b>"));
+		data = document.createElement("td");
+		data.appendChild(this.sexSortSelect);
+		row.appendChild(data);
+
 		row = document.createElement("tr");
 		table.appendChild(row);
 
 		row.appendChild(Utilities.CreateTableData("<b>Attractiveness:</b>"));
 		data = document.createElement("td");
 		data.appendChild(this.attractivenessSelect);
+		row.appendChild(data);
+
+		row.appendChild(Utilities.CreateTableData("<b>Sort By:</b>"));
+		data = document.createElement("td");
+		data.appendChild(this.attractivenessSortSelect);
 		row.appendChild(data);
 
 		row = document.createElement("tr");
@@ -200,8 +213,6 @@ class SexGeneratorElement extends HTMLElement {
 		data.appendChild(this.loadButton);
 		row.appendChild(data);
 
-		this.BuildSortingRow(table);
-
 		this.output = document.createElement("div");
 		this.appendChild(this.output);
 	}
@@ -214,12 +225,16 @@ class SexGeneratorElement extends HTMLElement {
 		this.attractivenessSelect = document.createElement("select");
 		this.settingSelect = document.createElement("select");
 		this.classTypeSelect = document.createElement("select");
+		this.attractivenessSortSelect = document.createElement("select");
+		this.sexSortSelect = document.createElement("select");
 
 		this.raceSelect.id = "race-select-box";
 		this.sexSelect.id = "sex-select-box";
 		this.attractivenessSelect.id = "attractiveness-select-box";
 		this.settingSelect.id = "setting-select-box";
 		this.classTypeSelect.id = "class-type-select-box";
+		this.attractivenessSortSelect.id = "attractiveness-sort-select-box";
+		this.sexSortSelect.id = "sex-sort-select-box";
 
 		this.settingSelect.onchange = () => this.OnSettingChanged();
 
@@ -296,6 +311,32 @@ class SexGeneratorElement extends HTMLElement {
 		option.value = ClassType.npc;
 		option.text = ClassType.npc;
 		this.classTypeSelect.appendChild(option);
+
+		// Sorts
+		this.BuildSortOptions(this.attractivenessSortSelect);
+		this.BuildSortOptions(this.sexSortSelect, true);
+
+		this.attractivenessSortSelect.onchange = () => this.DisplayCurrentData();
+		this.sexSortSelect.onchange = () => this.DisplayCurrentData();
+	}
+
+	BuildSortOptions(el: HTMLSelectElement, isSex = false) {
+		let option = document.createElement("option");
+		option.value = SortType.none;
+		option.text = SortType.none;
+		el.appendChild(option);
+
+		option = document.createElement("option");
+		option.value = SortType.asc;
+		option.text = isSex ? "By Feminity" : SortType.asc;
+		el.appendChild(option);
+
+		option = document.createElement("option");
+		option.value = SortType.desc;
+		option.text = isSex ? "By Masculinity" : SortType.desc;
+		el.appendChild(option);
+
+		el.value = SortType.none;
 	}
 
 	BuildCommunityModifier(): HTMLTableRowElement {
@@ -312,10 +353,6 @@ class SexGeneratorElement extends HTMLElement {
 		this.communityModifierContainer.appendChild(data);
 
 		return this.communityModifierContainer;
-	}
-
-	BuildSortingRow(table: HTMLTableElement) {
-		// TODO: Setup sorting
 	}
 
 	OnSettingChanged() {
@@ -370,7 +407,37 @@ class SexGeneratorElement extends HTMLElement {
 	DisplayCurrentData() {
 		this.output.innerHTML = "";
 
-		// TODO: Add sorting here
+		if (this.attractivenessSortSelect.value !== SortType.none || this.sexSortSelect.value !== SortType.none) {
+			this.currentData.sort((lhs, rhs) => {
+				let result = 0;
+				if (lhs.attractiveness !== undefined) {
+					if (this.attractivenessSortSelect.value === SortType.asc) {
+						result = Utilities.Sorts.NumberAsc(lhs.attractiveness, rhs.attractiveness);
+					} else if (this.attractivenessSortSelect.value === SortType.desc) {
+						result = Utilities.Sorts.NumberDesc(lhs.attractiveness, rhs.attractiveness);
+					}
+				}
+
+				if (result !== 0) {
+					return result;
+				}
+
+				// Feminity = asc | Masculinity = desc
+				if (this.sexSortSelect.value === SortType.asc) {
+					result = Utilities.Sorts.NumberDesc(
+						globals.sexRangeByKey[lhs.sex as Sex].feminity,
+						globals.sexRangeByKey[rhs.sex as Sex].feminity
+					);
+				} else if (this.sexSortSelect.value === SortType.desc) {
+					result = Utilities.Sorts.NumberAsc(
+						globals.sexRangeByKey[lhs.sex as Sex].feminity,
+						globals.sexRangeByKey[rhs.sex as Sex].feminity
+					);
+				}
+
+				return result;
+			});
+		}
 
 		this.currentData.forEach((sexInfo) => this.DisplaySexualCharacteristics(sexInfo));
 	}

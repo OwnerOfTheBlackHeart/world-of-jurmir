@@ -11,13 +11,14 @@ export const globals = {
     randomRaceTables: undefined,
     xpAwardsTable: undefined,
     sexRanges: [
-        { from: 1, to: 1, value: Sex.masculineHerm, hasBoobs: false, hasDick: true },
-        { from: 2, to: 5, value: Sex.male, hasBoobs: false, hasDick: true },
-        { from: 6, to: 6, value: Sex.dickGirl, hasBoobs: true, hasDick: true },
-        { from: 7, to: 7, value: Sex.cuntBoy, hasBoobs: false, hasDick: false },
-        { from: 8, to: 11, value: Sex.female, hasBoobs: true, hasDick: false },
-        { from: 12, to: 12, value: Sex.feminineHerm, hasBoobs: true, hasDick: true },
+        { from: 1, to: 1, value: Sex.masculineHerm, hasBoobs: false, hasDick: true, feminity: 1, masculinity: 4 },
+        { from: 2, to: 5, value: Sex.male, hasBoobs: false, hasDick: true, feminity: 0, masculinity: 5 },
+        { from: 6, to: 6, value: Sex.dickGirl, hasBoobs: true, hasDick: true, feminity: 3, masculinity: 2 },
+        { from: 7, to: 7, value: Sex.cuntBoy, hasBoobs: false, hasDick: false, feminity: 2, masculinity: 3 },
+        { from: 8, to: 11, value: Sex.female, hasBoobs: true, hasDick: false, feminity: 5, masculinity: 0 },
+        { from: 12, to: 12, value: Sex.feminineHerm, hasBoobs: true, hasDick: true, feminity: 4, masculinity: 1 },
     ],
+    sexRangeByKey: {},
     breastSizes: [
         { roll: 1, cupSize: "Flat", inchesSize: 0 },
         { roll: 2, cupSize: "A", inchesSize: 0.5 },
@@ -85,6 +86,9 @@ export const globals = {
         { level: 10, xpRange: { lower: 285 }, title: "Accepted Heir" },
     ],
 };
+globals.sexRanges.forEach((sexRange) => {
+    globals.sexRangeByKey[sexRange.value] = sexRange;
+});
 await LoadGlobalsJson();
 export async function LoadGlobalsJson() {
     const [dateData, forceRefresh, randomRaceTables, xpAwardsTable] = await Promise.all([

@@ -152,6 +152,36 @@ export function getRandomItemFromRange(items, sort = false) {
     const value = getRandomInteger(sortedItems.firstElement().from, sortedItems.lastElement().to);
     return sortedItems.find((item) => isInRange(value, item.from, item.to));
 }
+export const Sorts = {
+    StringAsc(lhs, rhs) {
+        if (lhs === rhs) {
+            return 0;
+        }
+        else if (lhs > rhs) {
+            return 1;
+        }
+        else {
+            return -1;
+        }
+    },
+    StringDesc(lhs, rhs) {
+        if (lhs === rhs) {
+            return 0;
+        }
+        else if (lhs > rhs) {
+            return -1;
+        }
+        else {
+            return 1;
+        }
+    },
+    NumberAsc(lhs, rhs) {
+        return lhs - rhs;
+    },
+    NumberDesc(lhs, rhs) {
+        return rhs - lhs;
+    },
+};
 export const Bounds = Object.freeze({
     isInBounds: function (value, bounds) {
         if (bounds.lower == undefined && bounds.upper == undefined) {
@@ -168,4 +198,10 @@ export const Bounds = Object.freeze({
         }
     },
 });
+export var SortType;
+(function (SortType) {
+    SortType["asc"] = "asc";
+    SortType["desc"] = "desc";
+    SortType["none"] = "none";
+})(SortType || (SortType = {}));
 //# sourceMappingURL=utilities.js.map

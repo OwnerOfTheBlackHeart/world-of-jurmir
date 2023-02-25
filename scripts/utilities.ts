@@ -194,6 +194,33 @@ export function getRandomItemFromRange<T extends NumberRange>(items: T[] | Reado
 	return sortedItems.find((item) => isInRange(value, item.from, item.to));
 }
 
+export const Sorts = {
+	StringAsc(lhs: string, rhs: string): number {
+		if (lhs === rhs) {
+			return 0;
+		} else if (lhs > rhs) {
+			return 1;
+		} else {
+			return -1;
+		}
+	},
+	StringDesc(lhs: string, rhs: string): number {
+		if (lhs === rhs) {
+			return 0;
+		} else if (lhs > rhs) {
+			return -1;
+		} else {
+			return 1;
+		}
+	},
+	NumberAsc(lhs: number, rhs: number): number {
+		return lhs - rhs;
+	},
+	NumberDesc(lhs: number, rhs: number): number {
+		return rhs - lhs;
+	},
+};
+
 export interface NumberRange {
 	from: number;
 	to: number;
@@ -222,4 +249,10 @@ export const Bounds = Object.freeze({
 export interface NumberBounds {
 	upper?: number;
 	lower?: number;
+}
+
+export enum SortType {
+	asc = "asc",
+	desc = "desc",
+	none = "none",
 }
