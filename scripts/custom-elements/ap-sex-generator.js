@@ -42,11 +42,15 @@ AttractivenessTypes.values.push(AttractivenessTypes.none, AttractivenessTypes.an
 class SexGeneratorElement extends HTMLElement {
     constructor() {
         super();
+        this.currentData = [];
     }
     connectedCallback() {
         this.Render();
     }
     Render() {
+        this.saveAnchor = document.createElement("a");
+        this.saveAnchor.style.display = "none";
+        this.appendChild(this.saveAnchor);
         this.BuildSelectBoxes();
         const inputContainer = document.createElement("div");
         this.appendChild(inputContainer);
@@ -116,6 +120,24 @@ class SexGeneratorElement extends HTMLElement {
         button.textContent = "Generate Sexual Attributes";
         button.onclick = () => this.OnGenerateClick();
         data.appendChild(button);
+        row.appendChild(data);
+        row = document.createElement("tr");
+        table.appendChild(row);
+        data = document.createElement("td");
+        data.colSpan = 2;
+        const saveButton = document.createElement("button");
+        saveButton.textContent = "Save Results";
+        saveButton.classList.add("sex-generator-save");
+        saveButton.onclick = () => this.OnSaveClick();
+        data.appendChild(saveButton);
+        this.loadButton = document.createElement("input");
+        this.loadButton.type = "file";
+        this.loadButton.accept = ".json";
+        this.loadButton.textContent = "Load Results";
+        this.loadButton.onchange = (ev) => {
+            this.OnLoadClick(ev);
+        };
+        data.appendChild(this.loadButton);
         row.appendChild(data);
         this.output = document.createElement("div");
         this.appendChild(this.output);
@@ -215,12 +237,37 @@ class SexGeneratorElement extends HTMLElement {
         }
     }
     OnGenerateClick() {
-        this.output.innerHTML = "";
+        this.currentData = [];
         const generateCount = this.generateCountInput.valueAsNumber;
         for (let i = 0; i < generateCount; i++) {
             const sexInfo = this.GenerateSexualCharacteristics();
-            this.DisplaySexualCharacteristics(sexInfo);
+            this.currentData.push(sexInfo);
         }
+        this.DisplayCurrentData();
+    }
+    OnSaveClick() {
+        const file = new Blob([JSON.stringify(this.currentData, null, "\t")], { type: "application/json" });
+        this.saveAnchor.href = URL.createObjectURL(file);
+        this.saveAnchor.download = "npc-info.json";
+        this.saveAnchor.click();
+    }
+    OnLoadClick(ev) {
+        ev.preventDefault();
+        if (this.loadButton.value.length && this.loadButton.files.length) {
+            const reader = new FileReader();
+            reader.onload = (loadEv) => {
+                const newData = JSON.parse(loadEv.target.result);
+                if (Array.isArray(newData)) {
+                    this.currentData = newData;
+                    this.DisplayCurrentData();
+                }
+            };
+            reader.readAsText(this.loadButton.files[0]);
+        }
+    }
+    DisplayCurrentData() {
+        this.output.innerHTML = "";
+        this.currentData.forEach((sexInfo) => this.DisplaySexualCharacteristics(sexInfo));
     }
     DisplaySexualCharacteristics(sexInfo) {
         const div = document.createElement("div");

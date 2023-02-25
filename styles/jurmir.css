@@ -367,6 +367,10 @@ ol > li > ol > li {
 	width: 150px;
 }
 
+.sex-generator-save {
+	margin-right: 1em;
+}
+
 .tile {
 	display: inline-block;
 	width: 230px;
