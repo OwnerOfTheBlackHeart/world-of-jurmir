@@ -14,43 +14,96 @@ export enum ClassType {
 	player = "Player",
 }
 
-export const AttractivenessTypes = {
-	none: { name: "none", displayName: "None" } as AttractivenessInfo,
-	any: {
-		name: "any",
-		displayName: "Any",
-		valueRange: { from: 1, to: 10 },
-	} as AttractivenessInfo,
-	ugly: {
-		name: "ugly",
-		displayName: "Ugly",
-		valueRange: { from: 1, to: 5 },
-	} as AttractivenessInfo,
-	average: {
-		name: "average",
-		displayName: "Average",
-		valueRange: { from: 3, to: 7 },
-	} as AttractivenessInfo,
-	pretty: {
-		name: "pretty",
-		displayName: "Pretty",
-		valueRange: { from: 5, to: 10 },
-	} as AttractivenessInfo,
-	veryPretty: {
-		name: "very-pretty",
-		displayName: "Very Pretty",
-		valueRange: { from: 7, to: 10 },
-	} as AttractivenessInfo,
-	values: [] as AttractivenessInfo[],
+export enum SpecialSexTypes {
+	feminine = "feminine",
+	masculine = "masculine",
+	herm = "hermaphrodite-any",
+	inverse = "inverse",
+}
+
+export const SpecialOptions = {
+	sex: {
+		feminine: {
+			name: SpecialSexTypes.feminine,
+			displayName: "Feminine",
+			rollTable: [
+				{ from: 1, to: 1, sex: Sex.dickGirl },
+				{ from: 2, to: 5, sex: Sex.female },
+				{ from: 6, to: 6, sex: Sex.feminineHerm },
+			],
+		} as SexEntry,
+		masculine: {
+			name: SpecialSexTypes.masculine,
+			displayName: "Masculine",
+			rollTable: [
+				{ from: 1, to: 1, sex: Sex.masculineHerm },
+				{ from: 2, to: 5, sex: Sex.male },
+				{ from: 6, to: 6, sex: Sex.cuntBoy },
+			],
+		} as SexEntry,
+		hermaphrodite: {
+			name: SpecialSexTypes.herm,
+			displayName: "Herm (any)",
+			rollTable: [
+				{ from: 1, to: 3, sex: Sex.feminineHerm },
+				{ from: 4, to: 6, sex: Sex.masculineHerm },
+			],
+		} as SexEntry,
+		inverse: {
+			name: SpecialSexTypes.inverse,
+			displayName: "Inverse",
+			rollTable: [
+				{ from: 1, to: 3, sex: Sex.dickGirl },
+				{ from: 4, to: 6, sex: Sex.cuntBoy },
+			],
+		} as SexEntry,
+		values: [] as SexEntry[],
+	},
+	attractiveness: {
+		none: { name: "none", displayName: "None" } as AttractivenessEntry,
+		any: {
+			name: "any",
+			displayName: "Any",
+			valueRange: { from: 1, to: 10 },
+		} as AttractivenessEntry,
+		ugly: {
+			name: "ugly",
+			displayName: "Ugly",
+			valueRange: { from: 1, to: 5 },
+		} as AttractivenessEntry,
+		average: {
+			name: "average",
+			displayName: "Average",
+			valueRange: { from: 3, to: 7 },
+		} as AttractivenessEntry,
+		pretty: {
+			name: "pretty",
+			displayName: "Pretty",
+			valueRange: { from: 5, to: 10 },
+		} as AttractivenessEntry,
+		veryPretty: {
+			name: "very-pretty",
+			displayName: "Very Pretty",
+			valueRange: { from: 7, to: 10 },
+		} as AttractivenessEntry,
+		values: [] as AttractivenessEntry[],
+	},
 };
 
-AttractivenessTypes.values.push(
-	AttractivenessTypes.none,
-	AttractivenessTypes.any,
-	AttractivenessTypes.ugly,
-	AttractivenessTypes.average,
-	AttractivenessTypes.pretty,
-	AttractivenessTypes.veryPretty
+SpecialOptions.sex.values.push(
+	SpecialOptions.sex.feminine,
+	SpecialOptions.sex.masculine,
+	SpecialOptions.sex.hermaphrodite,
+	SpecialOptions.sex.inverse
+);
+
+SpecialOptions.attractiveness.values.push(
+	SpecialOptions.attractiveness.none,
+	SpecialOptions.attractiveness.any,
+	SpecialOptions.attractiveness.ugly,
+	SpecialOptions.attractiveness.average,
+	SpecialOptions.attractiveness.pretty,
+	SpecialOptions.attractiveness.veryPretty
 );
 
 class SexGeneratorElement extends HTMLElement {
@@ -268,6 +321,13 @@ class SexGeneratorElement extends HTMLElement {
 		option.text = randomOption;
 		this.sexSelect.appendChild(option);
 
+		SpecialOptions.sex.values.forEach((sexOption) => {
+			option = document.createElement("option");
+			option.value = sexOption.name;
+			option.text = sexOption.displayName;
+			this.sexSelect.appendChild(option);
+		});
+
 		globals.sexRanges.forEach((sexRange) => {
 			option = document.createElement("option");
 			option.value = sexRange.value;
@@ -276,12 +336,14 @@ class SexGeneratorElement extends HTMLElement {
 		});
 
 		// Attractiveness
-		AttractivenessTypes.values.forEach((attractivenessType) => {
+		SpecialOptions.attractiveness.values.forEach((attractivenessType) => {
 			option = document.createElement("option");
 			option.value = attractivenessType.name;
 			option.text = attractivenessType.displayName;
 			this.attractivenessSelect.appendChild(option);
 		});
+
+		this.attractivenessSelect.value = SpecialOptions.attractiveness.any.name;
 
 		// Settings
 		option = document.createElement("option");
@@ -500,7 +562,14 @@ class SexGeneratorElement extends HTMLElement {
 		if (this.sexSelect.value === randomOption) {
 			sex = this.GetRandomSex();
 		} else {
-			sex = globals.sexRanges.find((sexRange) => sexRange.value === this.sexSelect.value);
+			let selectedSex = this.sexSelect.value;
+			let sexEntry = SpecialOptions.sex.values.find((sexOption) => sexOption.name === selectedSex);
+
+			if (sexEntry) {
+				selectedSex = Utilities.getRandomItemFromRange(sexEntry.rollTable).sex;
+			}
+
+			sex = globals.sexRanges.find((sexRange) => sexRange.value === selectedSex);
 		}
 
 		const toReturn: SexInfo = { race: raceSexualFeatures.races.firstElement(), sex: sex.value };
@@ -524,8 +593,8 @@ class SexGeneratorElement extends HTMLElement {
 			}
 		}
 
-		if (this.attractivenessSelect.value !== AttractivenessTypes.none.name) {
-			const attractiveness = AttractivenessTypes.values.find(
+		if (this.attractivenessSelect.value !== SpecialOptions.attractiveness.none.name) {
+			const attractiveness = SpecialOptions.attractiveness.values.find(
 				(attractivenessType) => attractivenessType.name === this.attractivenessSelect.value
 			);
 
@@ -570,8 +639,19 @@ interface SexInfo {
 	level?: number;
 }
 
-interface AttractivenessInfo {
+interface SpecialOptionsEntry {
 	name: string;
 	displayName: string;
+}
+
+interface AttractivenessEntry extends SpecialOptionsEntry {
 	valueRange?: Utilities.NumberRange;
+}
+
+interface SexEntry extends SpecialOptionsEntry {
+	rollTable: SexEntryRange[];
+}
+
+interface SexEntryRange extends Utilities.NumberRange {
+	sex: string;
 }

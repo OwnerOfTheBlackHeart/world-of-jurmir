@@ -1,5 +1,6 @@
 import { globals } from "../globals.js";
 import { DiceRoll } from "../roll.js";
+import { Sex } from "../sexual-characteristics.js";
 import * as Utilities from "../utilities.js";
 import { SortType } from "../utilities.js";
 const randomOption = "Random";
@@ -10,36 +11,83 @@ export var ClassType;
     ClassType["npc"] = "NPC";
     ClassType["player"] = "Player";
 })(ClassType || (ClassType = {}));
-export const AttractivenessTypes = {
-    none: { name: "none", displayName: "None" },
-    any: {
-        name: "any",
-        displayName: "Any",
-        valueRange: { from: 1, to: 10 },
+export var SpecialSexTypes;
+(function (SpecialSexTypes) {
+    SpecialSexTypes["feminine"] = "feminine";
+    SpecialSexTypes["masculine"] = "masculine";
+    SpecialSexTypes["herm"] = "hermaphrodite-any";
+    SpecialSexTypes["inverse"] = "inverse";
+})(SpecialSexTypes || (SpecialSexTypes = {}));
+export const SpecialOptions = {
+    sex: {
+        feminine: {
+            name: SpecialSexTypes.feminine,
+            displayName: "Feminine",
+            rollTable: [
+                { from: 1, to: 1, sex: Sex.dickGirl },
+                { from: 2, to: 5, sex: Sex.female },
+                { from: 6, to: 6, sex: Sex.feminineHerm },
+            ],
+        },
+        masculine: {
+            name: SpecialSexTypes.masculine,
+            displayName: "Masculine",
+            rollTable: [
+                { from: 1, to: 1, sex: Sex.masculineHerm },
+                { from: 2, to: 5, sex: Sex.male },
+                { from: 6, to: 6, sex: Sex.cuntBoy },
+            ],
+        },
+        hermaphrodite: {
+            name: SpecialSexTypes.herm,
+            displayName: "Herm (any)",
+            rollTable: [
+                { from: 1, to: 3, sex: Sex.feminineHerm },
+                { from: 4, to: 6, sex: Sex.masculineHerm },
+            ],
+        },
+        inverse: {
+            name: SpecialSexTypes.inverse,
+            displayName: "Inverse",
+            rollTable: [
+                { from: 1, to: 3, sex: Sex.dickGirl },
+                { from: 4, to: 6, sex: Sex.cuntBoy },
+            ],
+        },
+        values: [],
     },
-    ugly: {
-        name: "ugly",
-        displayName: "Ugly",
-        valueRange: { from: 1, to: 5 },
+    attractiveness: {
+        none: { name: "none", displayName: "None" },
+        any: {
+            name: "any",
+            displayName: "Any",
+            valueRange: { from: 1, to: 10 },
+        },
+        ugly: {
+            name: "ugly",
+            displayName: "Ugly",
+            valueRange: { from: 1, to: 5 },
+        },
+        average: {
+            name: "average",
+            displayName: "Average",
+            valueRange: { from: 3, to: 7 },
+        },
+        pretty: {
+            name: "pretty",
+            displayName: "Pretty",
+            valueRange: { from: 5, to: 10 },
+        },
+        veryPretty: {
+            name: "very-pretty",
+            displayName: "Very Pretty",
+            valueRange: { from: 7, to: 10 },
+        },
+        values: [],
     },
-    average: {
-        name: "average",
-        displayName: "Average",
-        valueRange: { from: 3, to: 7 },
-    },
-    pretty: {
-        name: "pretty",
-        displayName: "Pretty",
-        valueRange: { from: 5, to: 10 },
-    },
-    veryPretty: {
-        name: "very-pretty",
-        displayName: "Very Pretty",
-        valueRange: { from: 7, to: 10 },
-    },
-    values: [],
 };
-AttractivenessTypes.values.push(AttractivenessTypes.none, AttractivenessTypes.any, AttractivenessTypes.ugly, AttractivenessTypes.average, AttractivenessTypes.pretty, AttractivenessTypes.veryPretty);
+SpecialOptions.sex.values.push(SpecialOptions.sex.feminine, SpecialOptions.sex.masculine, SpecialOptions.sex.hermaphrodite, SpecialOptions.sex.inverse);
+SpecialOptions.attractiveness.values.push(SpecialOptions.attractiveness.none, SpecialOptions.attractiveness.any, SpecialOptions.attractiveness.ugly, SpecialOptions.attractiveness.average, SpecialOptions.attractiveness.pretty, SpecialOptions.attractiveness.veryPretty);
 class SexGeneratorElement extends HTMLElement {
     constructor() {
         super();
@@ -189,18 +237,25 @@ class SexGeneratorElement extends HTMLElement {
         option.value = randomOption;
         option.text = randomOption;
         this.sexSelect.appendChild(option);
+        SpecialOptions.sex.values.forEach((sexOption) => {
+            option = document.createElement("option");
+            option.value = sexOption.name;
+            option.text = sexOption.displayName;
+            this.sexSelect.appendChild(option);
+        });
         globals.sexRanges.forEach((sexRange) => {
             option = document.createElement("option");
             option.value = sexRange.value;
             option.text = sexRange.value;
             this.sexSelect.appendChild(option);
         });
-        AttractivenessTypes.values.forEach((attractivenessType) => {
+        SpecialOptions.attractiveness.values.forEach((attractivenessType) => {
             option = document.createElement("option");
             option.value = attractivenessType.name;
             option.text = attractivenessType.displayName;
             this.attractivenessSelect.appendChild(option);
         });
+        this.attractivenessSelect.value = SpecialOptions.attractiveness.any.name;
         option = document.createElement("option");
         option.value = noneOption;
         option.text = noneOption;
@@ -373,7 +428,12 @@ class SexGeneratorElement extends HTMLElement {
             sex = this.GetRandomSex();
         }
         else {
-            sex = globals.sexRanges.find((sexRange) => sexRange.value === this.sexSelect.value);
+            let selectedSex = this.sexSelect.value;
+            let sexEntry = SpecialOptions.sex.values.find((sexOption) => sexOption.name === selectedSex);
+            if (sexEntry) {
+                selectedSex = Utilities.getRandomItemFromRange(sexEntry.rollTable).sex;
+            }
+            sex = globals.sexRanges.find((sexRange) => sexRange.value === selectedSex);
         }
         const toReturn = { race: raceSexualFeatures.races.firstElement(), sex: sex.value };
         if (sex.hasDick) {
@@ -393,8 +453,8 @@ class SexGeneratorElement extends HTMLElement {
                 toReturn.cupSize = "N/A";
             }
         }
-        if (this.attractivenessSelect.value !== AttractivenessTypes.none.name) {
-            const attractiveness = AttractivenessTypes.values.find((attractivenessType) => attractivenessType.name === this.attractivenessSelect.value);
+        if (this.attractivenessSelect.value !== SpecialOptions.attractiveness.none.name) {
+            const attractiveness = SpecialOptions.attractiveness.values.find((attractivenessType) => attractivenessType.name === this.attractivenessSelect.value);
             if (attractiveness) {
                 toReturn.attractiveness = Utilities.getRandomInteger(attractiveness.valueRange.from, attractiveness.valueRange.to);
             }

@@ -54,6 +54,8 @@ Khog
 	Previously hobgoblin cleric that worshiped Vano
 Lufir Arcanscape
 	Survivor of Elven Baby Stealing
+Raya Cole
+	The one Kali left to die
 
 ################################################
 ######## Stuff to Prep for Noble Rising ########
