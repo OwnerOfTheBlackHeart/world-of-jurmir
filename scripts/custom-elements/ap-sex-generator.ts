@@ -51,7 +51,7 @@ export const SpecialOptions = {
 		} as SexEntry,
 		inverse: {
 			name: SpecialSexTypes.inverse,
-			displayName: "Inverse",
+			displayName: "Trap/Inverse",
 			rollTable: [
 				{ from: 1, to: 3, sex: Sex.dickGirl },
 				{ from: 4, to: 6, sex: Sex.cuntBoy },
