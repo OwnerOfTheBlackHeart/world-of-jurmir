@@ -8,6 +8,7 @@ export const globals = {
     princeCurrentDate: undefined,
     aaronCurrentDate: undefined,
     sbjCurrentDate: undefined,
+    undestenCurrentDate: undefined,
     randomRaceTables: undefined,
     xpAwardsTable: undefined,
     sexRanges: [
@@ -103,6 +104,7 @@ export async function LoadGlobalsJson() {
     globals.princeCurrentDate = Time.FromInitializer(dateData.princeCurrentDate);
     globals.aaronCurrentDate = Time.FromInitializer(dateData.aaronCurrentDate);
     globals.sbjCurrentDate = Time.FromInitializer(dateData.sbjCurrentDate);
+    globals.undestenCurrentDate = Time.FromInitializer(dateData.undestenCurrentDate);
     globals.randomRaceTables = randomRaceTables;
     globals.xpAwardsTable = xpAwardsTable;
     globals.forceRefresh = forceRefresh;

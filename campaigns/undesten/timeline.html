@@ -1,0 +1,65 @@
+<h1>Undesten Timeline</h1>
+<p>
+    There is one lunar cycle per month, with the 1st of the month being a new moon,
+    the 15th of the month being a full moon and the 28th of the month being almost
+    a new moon.
+</p>
+<div class="table-container">
+    <div class="table-column">
+		<ap-advanced-table>
+			[
+				[{ "isHeader":"true", "value":"Current Date", "colSpan":2 }],
+				[{ "value": "Main Party", "isHeader": true, "align":"right" }, "<ap-display-global property-path="undestenCurrentDate"></ap-display-global>"]
+			]
+		</ap-advanced-table>
+    </div>
+	<div class="table-column">
+        <ap-time-table show-all-months></ap-time-table>
+	</div>
+	<div class="table-column">
+		<ap-birthday-generator current-date-value="undestenCurrentDate"></ap-birthday-generator>
+	</div>
+</div>
+<div class="table-container">
+	<div class="table-column">
+        <h3>Birthday Timeline</h3>
+        <ap-time-table current-date-value="undestenCurrentDate">
+            [
+				["header", "Timeline"],
+				[3, 2, 1522, "<ap-link-button linkName="">PLACEHOLDER</ap-link-button>"]
+            ]
+        </ap-time-table>
+	</div>
+	<div class="table-column">
+        <h3>Undesten Timeline</h3>
+        <ap-time-table current-date-value="undestenCurrentDate">
+            [
+				["header", "Timeline"],
+				[3, 2, 1522, "Start date"]
+			]
+        </ap-time-table>
+	</div>
+	<ap-auth-container permissions="gm events-timeline undesten-full">
+		<div class="table-column">
+			<h3>Events Timeline</h3>
+			<ap-time-table current-date-value="undestenCurrentDate">
+				[
+					["header", "Timeline"],
+					[3, 2, 1522, "<ap-link-button linkName="">PLACEHOLDER</ap-link-button>"]
+				]
+			</ap-time-table>
+		</div>
+	</ap-auth-container>
+    <div class="table-column">
+        <h3>Birth Timeline</h3>
+        <!-- 
+            Elf/Catfolk hybrids, child will be adult at 64, 19 months and 3 weeks pregnancy, 6 month trimesters
+        -->
+        <ap-time-table current-date-value="undestenCurrentDate">
+            [
+                ["header", "Timeline"],
+				[3, 2, 1522, "PLACEHOLDER"]
+            ]
+        </ap-time-table>
+    </div>
+</div>
