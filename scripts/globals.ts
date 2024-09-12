@@ -65,7 +65,7 @@ export const globals = {
 			breastSize: new DiceRoll("1d4+1"),
 		},
 		{
-			races: ["Gnome", "Halfling"],
+			races: ["Gnome", "Halfling", "Ratfolk"],
 			dickLength: new DiceRoll("1d4+1"),
 			heroicDickLength: new DiceRoll("1d6+1"),
 			breastSize: new DiceRoll("1d3+1"),

@@ -22,6 +22,7 @@ export const undestenNav = [
 	new PageInfo(undefined, "plotlines/main.html", "Plotline Index", "plotline-index"),
 
 	new PageInfo(undefined, "misc/children.html", "Children", "children"),
+	new PageInfo(undefined, "misc/boat-rules.html", "Boat/Ship Rules", "boat-rules"),
 ];
 
 undestenNav.forEach((pageInfo) => {

@@ -9,13 +9,14 @@ export const undestenNav = [
     new PageInfo(undefined, "http://anthonyparsch.com/images/undesten-map.png", "", "map-img", true),
     new PageInfo(undefined, "locations/oceanside/junkberg.html", "Junkberg, The Capital of Yuru Khan", "junkberg"),
     new PageInfo(undefined, "locations/oceanside/wavescraper.html", "Wavescraper, The Oceanside Trade Hub", "wavescraper"),
-    new PageInfo(undefined, "locations/oceanside/khov.html", "Wavescraper, The Oceanside Trade Hub", "khov"),
-    new PageInfo(undefined, "locations/oceanside/jijig.html", "Wavescraper, The Oceanside Trade Hub", "jijig"),
-    new PageInfo(undefined, "locations/oceanside/unsunk-evdsen.html", "Wavescraper, The Oceanside Trade Hub", "unsunk-evdsen"),
-    new PageInfo(undefined, "locations/oceanside/unasan-ruins.html", "Wavescraper, The Oceanside Trade Hub", "unasan-ruins"),
+    new PageInfo(undefined, "locations/oceanside/khov.html", "Khov, The Fields of Wavescraper", "khov"),
+    new PageInfo(undefined, "locations/oceanside/jijig.html", "Jijig, Humble Hamlet", "jijig"),
+    new PageInfo(undefined, "locations/oceanside/unsunk-evdsen.html", "The Unsunk Evdsen", "unsunk-evdsen"),
+    new PageInfo(undefined, "locations/oceanside/unasan-ruins.html", "The Unasan Ruins", "unasan-ruins"),
     new PageInfo(undefined, "npcs/random.html", "Random/Seen Once NPCs", "random-npcs"),
     new PageInfo(undefined, "plotlines/main.html", "Plotline Index", "plotline-index"),
     new PageInfo(undefined, "misc/children.html", "Children", "children"),
+    new PageInfo(undefined, "misc/boat-rules.html", "Boat/Ship Rules", "boat-rules"),
 ];
 undestenNav.forEach((pageInfo) => {
     if (!pageInfo.external) {
