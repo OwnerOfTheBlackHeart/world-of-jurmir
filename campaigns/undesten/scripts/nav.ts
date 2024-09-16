@@ -19,6 +19,14 @@ export const undestenNav = [
 
 	new PageInfo(undefined, "npcs/random.html", "Random/Seen Once NPCs", "random-npcs"),
 
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/humanoids/gillman/", "", "gillman", true),
+	new PageInfo(undefined, "enemies/gillman/gillman-magus.html", "Gillman Magus", "gillman-magus"),
+	new PageInfo(undefined, "enemies/gillman/gillman-heavy.html", "Gillman Heavy", "gillman-heavy"),
+
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/humanoids/merfolk/", "", "merfolk", true),
+	new PageInfo(undefined, "enemies/merfolk/merfolk-cleric.html", "Merfolk Cleric", "merfolk-cleric"),
+	new PageInfo(undefined, "enemies/merfolk/merfolk-sorcerer.html", "Merfolk Cleric", "merfolk-sorcerer"),
+
 	new PageInfo(undefined, "plotlines/main.html", "Plotline Index", "plotline-index"),
 
 	new PageInfo(undefined, "misc/children.html", "Children", "children"),
