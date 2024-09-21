@@ -25,7 +25,7 @@ export const undestenNav = [
 
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/humanoids/merfolk/", "", "merfolk", true),
 	new PageInfo(undefined, "enemies/merfolk/merfolk-cleric.html", "Merfolk Cleric", "merfolk-cleric"),
-	new PageInfo(undefined, "enemies/merfolk/merfolk-sorcerer.html", "Merfolk Cleric", "merfolk-sorcerer"),
+	new PageInfo(undefined, "enemies/merfolk/merfolk-sorcerer.html", "Merfolk Sorcerer", "merfolk-sorcerer"),
 
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/monstrous-humanoids/skum/", "", "skum", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/monstrous-humanoids/sahuagin/", "", "sahuagin", true),
