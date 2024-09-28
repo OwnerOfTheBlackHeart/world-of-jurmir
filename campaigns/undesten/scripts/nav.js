@@ -11,6 +11,8 @@ export const undestenNav = [
     new PageInfo(undefined, "locations/oceanside/wavescraper.html", "Wavescraper, The Oceanside Trade Hub", "wavescraper"),
     new PageInfo(undefined, "locations/oceanside/khov.html", "Khov, The Fields of Wavescraper", "khov"),
     new PageInfo(undefined, "locations/oceanside/jijig.html", "Jijig, Humble Hamlet", "jijig"),
+    new PageInfo(undefined, "locations/oceanside/khuuk.html", "Khuuk, The Great Coral Town", "khuuk"),
+    new PageInfo(undefined, "locations/oceanside/zogsool.html", "Zogsool, The River Docks", "zogsool"),
     new PageInfo(undefined, "locations/oceanside/unsunk-evdsen.html", "The Unsunk Evdsen", "unsunk-evdsen"),
     new PageInfo(undefined, "locations/oceanside/unasan-ruins.html", "The Unasan Ruins", "unasan-ruins"),
     new PageInfo(undefined, "npcs/random.html", "Random/Seen Once NPCs", "random-npcs"),
