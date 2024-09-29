@@ -182,11 +182,14 @@ export function makeValidHash(hash: string) {
 	return hash;
 }
 
-export function getRandomItemFromRange<T extends NumberRange>(items: T[] | Readonly<T[]>, sort = false): T {
-	let sortedItems = [...items];
+export function getRandomEntryFromRange<T extends NumberRange>(items: T[] | Readonly<T[]>, sort = false): T {
+	let sortedItems: T[];
 
 	if (sort) {
+		sortedItems = [...items];
 		sortedItems.sort((a, b) => a.from - b.from);
+	} else {
+		sortedItems = items as T[];
 	}
 
 	const value = getRandomInteger(sortedItems.firstElement().from, sortedItems.lastElement().to);

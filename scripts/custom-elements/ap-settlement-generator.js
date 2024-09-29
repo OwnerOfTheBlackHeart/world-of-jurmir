@@ -1,4 +1,4 @@
-import { getRandomItemFromRange } from "../utilities.js";
+import { getRandomEntryFromRange } from "../utilities.js";
 import { BuildSettlementFromPopulation, BuildSettlementFromTownSize, BuildSettlementFromTownSizeName, } from "../generators/settlement/settlements.js";
 import { townSizes, townSizesValues } from "../generators/settlement/town-sizes.js";
 const randomValue = "Random";
@@ -54,7 +54,7 @@ export class SettlementGeneratorElement extends HTMLElement {
     buildOutput(townType, population) {
         let settlement;
         if (townType === randomValue) {
-            settlement = BuildSettlementFromTownSize(getRandomItemFromRange(townSizesValues));
+            settlement = BuildSettlementFromTownSize(getRandomEntryFromRange(townSizesValues));
         }
         else if (townType === selectPopulationValue) {
             settlement = BuildSettlementFromPopulation(population);

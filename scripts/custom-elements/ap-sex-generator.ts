@@ -88,6 +88,37 @@ export const SpecialOptions = {
 		} as AttractivenessEntry,
 		values: [] as AttractivenessEntry[],
 	},
+	level: {
+		levelOne: {
+			from: 1,
+			to: 10,
+			formula: function (level: number) {
+				return 1;
+			},
+		} as LevelEntry,
+		quarterLevel: {
+			from: 11,
+			to: 16,
+			formula: function (level: number) {
+				return Math.ceil(level / 4);
+			},
+		} as LevelEntry,
+		halfLevel: {
+			from: 17,
+			to: 19,
+			formula: function (level: number) {
+				return Math.ceil(level / 2);
+			},
+		} as LevelEntry,
+		fullLevel: {
+			from: 17,
+			to: 19,
+			formula: function (level: number) {
+				return level;
+			},
+		} as LevelEntry,
+		values: [] as LevelEntry[],
+	},
 };
 
 SpecialOptions.sex.values.push(
@@ -104,6 +135,13 @@ SpecialOptions.attractiveness.values.push(
 	SpecialOptions.attractiveness.average,
 	SpecialOptions.attractiveness.pretty,
 	SpecialOptions.attractiveness.veryPretty
+);
+
+SpecialOptions.level.values.push(
+	SpecialOptions.level.levelOne,
+	SpecialOptions.level.quarterLevel,
+	SpecialOptions.level.halfLevel,
+	SpecialOptions.level.fullLevel
 );
 
 class SexGeneratorElement extends HTMLElement {
@@ -541,7 +579,7 @@ class SexGeneratorElement extends HTMLElement {
 			}
 
 			if (raceTable) {
-				race = Utilities.getRandomItemFromRange(raceTable);
+				race = Utilities.getRandomEntryFromRange(raceTable);
 				raceSexualFeatures = this.races.find((r) => r.races.firstElement() === race.name);
 			} else {
 				raceSexualFeatures = this.races[Utilities.getRandomInteger(0, this.races.length - 1)];
@@ -566,7 +604,7 @@ class SexGeneratorElement extends HTMLElement {
 			let sexEntry = SpecialOptions.sex.values.find((sexOption) => sexOption.name === selectedSex);
 
 			if (sexEntry) {
-				selectedSex = Utilities.getRandomItemFromRange(sexEntry.rollTable).sex;
+				selectedSex = Utilities.getRandomEntryFromRange(sexEntry.rollTable).sex;
 			}
 
 			sex = globals.sexRanges.find((sexRange) => sexRange.value === selectedSex);
@@ -612,17 +650,23 @@ class SexGeneratorElement extends HTMLElement {
 				this.classTypeSelect.value === ClassType.random
 					? Utilities.getRandomInteger(1, 100) <= race.pcChance
 					: this.classTypeSelect.value === ClassType.player;
-			let characterClass = isPC ? Utilities.getRandomItemFromRange(race.pcClasses) : Utilities.getRandomItemFromRange(race.npcClasses);
+			let characterClass = isPC ? Utilities.getRandomEntryFromRange(race.pcClasses) : Utilities.getRandomEntryFromRange(race.npcClasses);
 
 			toReturn.class = characterClass.name;
-			toReturn.level = new DiceRoll(characterClass.levelRoll).roll().total + this.communityModifierInput.valueAsNumber;
+			toReturn.level = this.GetLevel(characterClass);
 		}
 
 		return toReturn;
 	}
 
 	GetRandomSex(): SexRollRange {
-		return Utilities.getRandomItemFromRange(globals.sexRanges);
+		return Utilities.getRandomEntryFromRange(globals.sexRanges);
+	}
+
+	GetLevel(characterClass: ClassChance): number {
+		let level = new DiceRoll(characterClass.levelRoll).roll().total;
+		level = Utilities.getRandomEntryFromRange(SpecialOptions.level.values).formula(level);
+		return Math.max(level + this.communityModifierInput.valueAsNumber, 1);
 	}
 }
 
@@ -654,4 +698,8 @@ interface SexEntry extends SpecialOptionsEntry {
 
 interface SexEntryRange extends Utilities.NumberRange {
 	sex: string;
+}
+
+interface LevelEntry extends Utilities.NumberRange {
+	formula: (level: number) => number;
 }

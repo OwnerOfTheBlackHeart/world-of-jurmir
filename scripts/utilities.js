@@ -144,10 +144,14 @@ export function makeValidHash(hash) {
     }
     return hash;
 }
-export function getRandomItemFromRange(items, sort = false) {
-    let sortedItems = [...items];
+export function getRandomEntryFromRange(items, sort = false) {
+    let sortedItems;
     if (sort) {
+        sortedItems = [...items];
         sortedItems.sort((a, b) => a.from - b.from);
+    }
+    else {
+        sortedItems = items;
     }
     const value = getRandomInteger(sortedItems.firstElement().from, sortedItems.lastElement().to);
     return sortedItems.find((item) => isInRange(value, item.from, item.to));

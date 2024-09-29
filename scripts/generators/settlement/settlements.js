@@ -1,5 +1,5 @@
 import { DiceRoll } from "../../roll.js";
-import { Bounds, getRandomItemFromRange, getRandomInteger } from "../../utilities.js";
+import { Bounds, getRandomEntryFromRange, getRandomInteger } from "../../utilities.js";
 import { BuildPopulationFromTownSize } from "./population.js";
 import { GetTownSizeByName, GetTownSizeByPopulationSize } from "./town-sizes.js";
 export var monstrousPowerCenterBounds = { lower: 96 };
@@ -14,7 +14,7 @@ export function BuildSettlementFromTownSize(townSize, population) {
     settlement.townSize = townSize.name;
     settlement.goldLimit = townSize.goldLimit;
     settlement.powerCenters = BuildPowerCenters(townSize);
-    settlement.captain = getRandomItemFromRange(SettlementGuardCaptain).name;
+    settlement.captain = getRandomEntryFromRange(SettlementGuardCaptain).name;
     const [distribution, tempPop] = BuildPopulationFromTownSize(townSize, population);
     settlement.population = tempPop;
     settlement.populationDistribution = distribution;
@@ -33,7 +33,7 @@ function BuildPowerCenters(townSize) {
         else {
             powerCenterName = powerCenter.type;
         }
-        powerCenters.push(`${powerCenterName} (${getRandomItemFromRange(PowerCenterAlignment).name})`);
+        powerCenters.push(`${powerCenterName} (${getRandomEntryFromRange(PowerCenterAlignment).name})`);
     }
     return powerCenters;
 }
