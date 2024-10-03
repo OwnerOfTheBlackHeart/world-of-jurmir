@@ -15,6 +15,7 @@ export const undestenNav = [
     new PageInfo(undefined, "locations/oceanside/zogsool.html", "Zogsool, The River Docks", "zogsool"),
     new PageInfo(undefined, "locations/oceanside/unsunk-evdsen.html", "The Unsunk Evdsen", "unsunk-evdsen"),
     new PageInfo(undefined, "locations/oceanside/unasan-ruins.html", "The Unasan Ruins", "unasan-ruins"),
+    new PageInfo(undefined, "organizations/ming.html", "The Ming", "ming"),
     new PageInfo(undefined, "npcs/random.html", "Random/Seen Once NPCs", "random-npcs"),
     new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/humanoids/gillman/", "", "gillman", true),
     new PageInfo(undefined, "enemies/gillman/gillman-magus.html", "Gillman Magus", "gillman-magus"),
