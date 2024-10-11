@@ -19,6 +19,8 @@ export const undestenNav = [
 	new PageInfo(undefined, "locations/oceanside/unsunk-evdsen.html", "The Unsunk Evdsen", "unsunk-evdsen"),
 	new PageInfo(undefined, "locations/oceanside/unasan-ruins.html", "The Unasan Ruins", "unasan-ruins"),
 
+	new PageInfo(undefined, "locations/desertside/shehar.html", "Shehar, The Jewel at the Fork", "shehar"),
+
 	new PageInfo(undefined, "organizations/ming.html", "The Ming", "ming"),
 
 	new PageInfo(undefined, "npcs/random.html", "Random/Seen Once NPCs", "random-npcs"),
