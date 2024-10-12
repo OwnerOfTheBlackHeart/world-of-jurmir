@@ -20,6 +20,9 @@ export const undestenNav = [
 	new PageInfo(undefined, "locations/oceanside/unasan-ruins.html", "The Unasan Ruins", "unasan-ruins"),
 
 	new PageInfo(undefined, "locations/desertside/shehar.html", "Shehar, The Jewel at the Fork", "shehar"),
+	new PageInfo(undefined, "locations/desertside/grass-foot-tribe.html", "Grass Foot Tribe", "grass-foot-tribe"),
+	new PageInfo(undefined, "locations/desertside/temple-of-khon.html", "Temple of Khon", "temple-of-khon"),
+	new PageInfo(undefined, "locations/desertside/fallen-amid.html", "Fallen Amid", "fallen-amid"),
 
 	new PageInfo(undefined, "organizations/ming.html", "The Ming", "ming"),
 
