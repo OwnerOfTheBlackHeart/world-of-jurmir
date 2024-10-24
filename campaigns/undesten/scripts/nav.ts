@@ -27,6 +27,7 @@ export const undestenNav = [
 	new PageInfo(undefined, "organizations/ming.html", "The Ming", "ming"),
 
 	new PageInfo(undefined, "npcs/random.html", "Random/Seen Once NPCs", "random-npcs"),
+	new PageInfo(undefined, "npcs/touran-dara.html", "Touran Dara, Unwilling Lady of the Flumphs", "touran-dara"),
 
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/humanoids/gillman/", "", "gillman", true),
 	new PageInfo(undefined, "enemies/gillman/gillman-magus.html", "Gillman Magus", "gillman-magus"),
@@ -51,6 +52,8 @@ export const undestenNav = [
 
 	new PageInfo(undefined, "misc/children.html", "Children", "children"),
 	new PageInfo(undefined, "misc/boat-rules.html", "Boat/Ship Rules", "boat-rules"),
+
+	new PageInfo(undefined, "images/undesten/touran-dara.webp", "", "touran-dara-img", true),
 ];
 
 undestenNav.forEach((pageInfo) => {
