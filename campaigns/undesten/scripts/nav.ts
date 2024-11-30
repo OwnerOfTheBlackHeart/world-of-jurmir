@@ -37,7 +37,11 @@ export const undestenNav = [
 	new PageInfo(undefined, "enemies/merfolk/merfolk-cleric.html", "Merfolk Cleric", "merfolk-cleric"),
 	new PageInfo(undefined, "enemies/merfolk/merfolk-sorcerer.html", "Merfolk Sorcerer", "merfolk-sorcerer"),
 
-	new PageInfo(undefined, "enemies/goblinoids/half-demon-hobgoblin.html", "Half-Demon Hobgoblin", "merfolk-sorcerer"),
+	new PageInfo(undefined, "enemies/goblinoids/half-demon-hobgoblin.html", "Half-Demon Hobgoblin", "half-demon-hobgoblin"),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/humanoids/hobgoblin/", "", "hobgoblin", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/humanoids/goblin/", "", "goblin", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/humanoids/bugbear/", "", "bugbear", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/magical-beasts/worg/", "", "worg", true),
 
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/monstrous-humanoids/skum/", "", "skum", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/monstrous-humanoids/sahuagin/", "", "sahuagin", true),

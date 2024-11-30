@@ -11,7 +11,7 @@
     war.
 </p>
 <ap-auth-container permissions="gm undesten-full temple-of-khon-captives">
-    <div class="column-container">
+    <div id="captives" class="column-container">
         <div class="column">
             <h3 id="elf-captives">Elves</h3>
             <b>Race:</b> Elf<br/>
@@ -107,4 +107,360 @@
             <b>Class:</b> Expert (1)<br/>
             <b>Cost:</b> 188gp<br/><br/>
         </div>
+    </div>
+</ap-auth-container>
+
+<ap-auth-container permissions="gm undesten-full temple-of-khon-enemies">
+    <ul>
+        <li>APL 2.6</li>
+        <li><ap-link-button linkName="undesten-half-demon-hobgoblin">Half-Demon Hobgoblin (CR 3)</ap-link-button></li>
+        <li><ap-link-button linkName="undesten-hobgoblin">Hobgoblin (CR 1/2)</ap-link-button></li>
+        <li><ap-link-button linkName="undesten-goblin">Goblin (CR 1/3)</ap-link-button></li>
+        <li><ap-link-button linkName="undesten-bugbear">Bugbear (CR 2)</ap-link-button></li>
+        <li><ap-link-button linkName="undesten-worg">Worg (CR 2)</ap-link-button></li>
+    </ul>
+</ap-auth-container>
+
+<ap-auth-container permissions="gm undesten-full temple-of-khon-rooms">
+    <h2 id="rewards">Rewards</h2>
+    <p>
+        <b>XP:</b> 12,800
+        <b>Gold Equivalent:</b> 100 gp
+    </p>
+
+    <h2 id="rooms">Rooms</h2>
+    <h3 id="patrol">Patrol</h3>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-enemies">
+        <h4>Enemies - CR 3</h4>
+        <ul>
+            <li><ap-link-button linkName="undesten-worg">Worg (CR 2)</ap-link-button></li>
+            <li><ap-link-button linkName="undesten-hobgoblin">2 Hobgoblin (CR 1/2)</ap-link-button></li>
+        </ul>
+    </ap-auth-container>
+
+    <h3 id="ruined-house-1">Ruined House 1</h3>
+    <p>
+        This old house made of woven bushes covered in waterproofed fabric has been partially
+        smashed in, limiting the building's protection against the elements.
+    </p>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-enemies">
+        <h4>Enemies - CR 1/2</h4>
+        <ul>
+            <li><ap-link-button linkName="undesten-hobgoblin">Hobgoblin (CR 1/2)</ap-link-button></li>
+        </ul>
+    </ap-auth-container>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-treasure">
+        <h4>Treasure</h4>
+        <ul>
+            <li>2 potions of cure minor wounds</li>
+        </ul>
+    </ap-auth-container>
+
+    <h3 id="ruined-house-2">Ruined House 2</h3>
+    <p>
+        This old house made of woven bushes covered in waterproofed fabric has been partially
+        smashed in, limiting the building's protection against the elements.
+    </p>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-enemies">
+        <h4>Enemies - CR 2</h4>
+        <ul>
+            <li><ap-link-button linkName="undesten-bugbear">Bugbear (CR 2)</ap-link-button></li>
+        </ul>
+    </ap-auth-container>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-treasure">
+        <h4>Treasure</h4>
+        <ul>
+            <li>2 potions of cure minor wounds</li>
+        </ul>
+    </ap-auth-container>
+
+    <h3 id="ruined-house-3">Ruined House 3</h3>
+    <p>
+        Built like the other houses, this house has seen some repairs. Namely that the damaged
+        wall has been covered in clay, sundried and plastered, replacing the damaged section
+        of the house.
+    </p>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-enemies">
+        <h4>Enemies - CR 1</h4>
+        <ul>
+            <li><ap-link-button linkName="undesten-hobgoblin">Hobgoblin (CR 1/2)</ap-link-button></li>
+            <li><ap-link-button linkName="undesten-goblin">2 Goblins (CR 1/3)</ap-link-button></li>
+        </ul>
+    </ap-auth-container>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-treasure">
+        <h4>Treasure</h4>
+        <ul>
+            <li>2 potions of cure minor wounds</li>
+        </ul>
+    </ap-auth-container>
+
+    <h3 id="ruined-house-4">Ruined House 4</h3>
+    <p>
+        Unlike the other houses, this one was built of sun dried and plastered bricks, though
+        the plaster took some serious damage during the gnoll attack. The roof, whatever it
+        was once made of, has been replaced with a leather tent.
+    </p>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-enemies">
+        <h4>Enemies - CR 2</h4>
+        <ul>
+            <li><ap-link-button linkName="undesten-hobgoblin">3 Hobgoblins (CR 1/2)</ap-link-button></li>
+        </ul>
+    </ap-auth-container>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-treasure">
+        <h4>Treasure</h4>
+        <ul>
+            <li>2 potions of cure minor wounds</li>
+        </ul>
+    </ap-auth-container>
+
+    <h3 id="stables">Stables</h3>
+    <p>
+        Made from sandstone bricks, this building, the village stables, survived the gnollish
+        siege surprisingly unharmed. Unsurprisingly, the hobgoblins have decided that the
+        building makes a great home for their worgs.
+    </p>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-enemies">
+        <h4>Enemies - CR 4</h4>
+        <ul>
+            <li><ap-link-button linkName="undesten-worg">2 Worgs (CR 2)</ap-link-button></li>
+        </ul>
+    </ap-auth-container>
+
+    <h3 id="ruined-warehouse">Ruined Warehouse</h3>
+    <p>
+        What looks to have once been the main food storage of the village, this wooden warehouse
+        was heavily damaged damaged during the gnoll attack, but remained standing. The hobgoblins
+        have seen fit to repair the building with patches of sun dried clay.
+    </p>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-enemies">
+        <h4>Enemies - CR 4</h4>
+        <ul>
+            <li><ap-link-button linkName="undesten-worg">Worg (CR 2)</ap-link-button></li>
+            <li><ap-link-button linkName="undesten-bugbear">Bugbear (CR 2)</ap-link-button></li>
+        </ul>
+    </ap-auth-container>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-treasure">
+        <h4>Treasure</h4>
+        <ul>
+            <li>Leaf Armor</li>
+            <li>3 Spider Silk Bodysuits</li>
+            <li>+1 Spider Silk Bodysuit</li>
+            <li>Broken Crate</li>
+            <li>100 bars of soap (50 lbs)</li>
+            <li>250ft of hemp rope</li>
+            <li>3 bullseye lanterns</li>
+            <li>20 pints of lamp oil</li>
+            <li>200 trail rations</li>
+            <li>5 potions of cure minor wounds</li>
+        </ul>
+    </ap-auth-container>
+
+    <h3 id="poop-house">Poop House</h3>
+    <p>
+        This small, round stone building is an oversized outhouse with 6 latrines inside, none
+        of which have any separators between them. Chatty Cathies must have loved pooping here.
+    </p>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-treasure">
+        <h4>Treasure</h4>
+        <ul>
+            <li>Potion of cure moderate wounds</li>
+        </ul>
+    </ap-auth-container>
+
+    <h3 id="goblin-cages">Goblin Cages</h3>
+    <p>
+        This almost undamaged house, what looks to have once held someone of mild import, has
+        been reused by the hobgoblins as a storage for their goblin... brothers. The single
+        room building has been turned into little more than an oversized cage filled with
+        filth, rotting food and mistreated goblins.
+    </p>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-enemies">
+        <h4>Enemies - CR 3</h4>
+        <ul>
+            <li><ap-link-button linkName="undesten-goblin">6 Goblins (CR 1/3)</ap-link-button></li>
+        </ul>
+    </ap-auth-container>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-treasure">
+        <h4>Treasure</h4>
+        <ul>
+            <li>6 saps</li>
+            <li>6 whips</li>
+        </ul>
+    </ap-auth-container>
+
+    <h3 id="shrine-room">Shrine Room</h3>
+    <p>
+        The main room of the temple, the shrine at the far end of the room has been left in
+        place, but has been heavily defiled. Runes have been drawn all over it in... unknown
+        and unpleasant inks, and the smell of sulfur hangs over this room. Eight pews are
+        arranged into 4 rows, replaced by the hobgoblins for reasons most likely tactical.
+    </p>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-enemies">
+        <h4>Enemies - CR 3</h4>
+        <ul>
+            <li><ap-link-button linkName="undesten-hobgoblin">4 Hobgoblins (CR 1/2)</ap-link-button></li>
+        </ul>
+    </ap-auth-container>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-treasure">
+        <h4>Treasure</h4>
+        <ul>
+            <li>Potion of cure moderate wounds</li>
+        </ul>
+    </ap-auth-container>
+
+    <h3 id="barracks-1">Barracks 1</h3>
+    <p>
+        This room has been converted into a barracks, with a weapons rack and beds pushed as
+        close together as they can without becoming useless.
+    </p>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-enemies">
+        <h4>Enemies - CR 2</h4>
+        <ul>
+            <li><ap-link-button linkName="undesten-hobgoblin">3 Hobgoblins (CR 1/2)</ap-link-button></li>
+        </ul>
+    </ap-auth-container>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-treasure">
+        <h4>Treasure</h4>
+        <ul>
+            <li>Potion of cure moderate wounds</li>
+        </ul>
+    </ap-auth-container>
+
+    <h3 id="barracks-2">Barracks 2</h3>
+    <p>
+        This room has been converted into a barracks, with a weapons rack and beds pushed as
+        close together as they can without becoming useless.
+    </p>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-enemies">
+        <h4>Enemies - CR 3</h4>
+        <ul>
+            <li><ap-link-button linkName="undesten-hobgoblin">4 Hobgoblins (CR 1/2)</ap-link-button></li>
+        </ul>
+    </ap-auth-container>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-treasure">
+        <h4>Treasure</h4>
+        <ul>
+            <li>Potion of cure moderate wounds</li>
+        </ul>
+    </ap-auth-container>
+
+    <h3 id="armory">Armory</h3>
+    <p>
+        This room has been turned into an armory, mainly to hold the hobgoblins' armor. A few
+        spare weapons are stored here on racks.
+    </p>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-enemies">
+        <h4>Enemies - CR 3</h4>
+        <ul>
+            <li><ap-link-button linkName="undesten-hobgoblin">Hobgoblin (CR 1/2)</ap-link-button></li>
+            <li><ap-link-button linkName="undesten-bugbear">Bugbear (CR 2)</ap-link-button></li>
+        </ul>
+    </ap-auth-container>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-treasure">
+        <h4>Treasure</h4>
+        <ul>
+            <li>Armored coat</li>
+            <li>Studded leather</li>
+            <li>3 Parade armor</li>
+        </ul>
+    </ap-auth-container>
+
+    <h3 id="planning-room">Planning Room</h3>
+    <p>
+        A large table dominates the center of this room and is covered in papers and maps, all
+        in Goblin, that detail the plans of the, now most likely dead, hobgoblin warband, future
+        and past. The maps show that the catfolk were taken from raided catfolk tribes while
+        the elves were brought in from some foreign hobgoblin empire, while the letters suggest
+        that the hobgoblins were taking orders from a tribe out in the desert.
+    </p>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-enemies">
+        <h4>Enemies - CR 3</h4>
+        <ul>
+            <li><ap-link-button linkName="undesten-hobgoblin">Hobgoblin (CR 1/2)</ap-link-button></li>
+            <li><ap-link-button linkName="undesten-worg">Worg (CR 2)</ap-link-button></li>
+        </ul>
+    </ap-auth-container>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-treasure">
+        <h4>Treasure</h4>
+        <ul>
+            <li>Potion of cure moderate wounds</li>
+        </ul>
+    </ap-auth-container>
+
+    <h3 id="breeding-chamber">Breeding Chamber</h3>
+    <p>
+        This room is a cruel perversion of lust, appearing like a mix of a torture chamber
+        and a kinky brothel. Mounting posts, chains, whips, pillories and more.
+    </p>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-treasure">
+        <h4>Treasure</h4>
+        <ul>
+            <li>4 whips</li>
+        </ul>
+    </ap-auth-container>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-treasure">
+        <h4>Treasure</h4>
+        <ul>
+            <li>2 Potions of cure moderate wounds</li>
+        </ul>
+    </ap-auth-container>
+
+    <h3 id="slave-room">Slave Room</h3>
+    <p>
+        This room holds the hobgoblins' <a href="#captives">captives</a> in disgusting cages.
+        If the runes on the shrine in the <a href="#shrine-room">Shrine Room</a> have been
+        disturbed or removed, a huge humanoid deinotherium, an ancient elephant-like creature
+        with downward facing tusks, a short, thick trunk, and a pair of demonic wings has
+        killed the defenders of the room, clearly having smashed its way out of the cage
+        occupied by an unconscious drow woman.
+    </p>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-enemies">
+        <h4>Enemies - CR 5</h4>
+        <ul>
+            <li><ap-link-button linkName="undesten-hobgoblin">5 Hobgoblins (CR 1/2)</ap-link-button></li>
+            <li><ap-link-button linkName="undesten-bugbear">1 Bugbears (CR 2)</ap-link-button></li>
+        </ul>
+    </ap-auth-container>
+
+    <h3 id="mess-hall">Mess Hall</h3>
+    <p>
+        This room has been converted to a mess hall, with tables and chairs scattered about,
+        with a catfolk chained to a fireplace, with only enough chain to reach more wood and
+        the scattered kitchen supplies.
+    </p>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-enemies">
+        <h4>Enemies - CR 1</h4>
+        <ul>
+            <li><ap-link-button linkName="undesten-goblin">2 Goblins (CR 1/3)</ap-link-button></li>
+            <li><ap-link-button linkName="undesten-hobgoblin">Hobgoblin (CR 1/2)</ap-link-button></li>
+        </ul>
+    </ap-auth-container>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-treasure">
+        <h4>Treasure</h4>
+        <ul>
+            <li>Potion of cure moderate wounds</li>
+        </ul>
+    </ap-auth-container>
+
+    <h3 id="demons-rest">Demon's Rest</h3>
+    <p>
+        This room has been turned into a luxurious bedroom for the half-demon hobgoblin. It is
+        hard to tell if he has been given fine accommodations because he is the leader or because
+        he is someone of great import to the current operation.
+    </p>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-enemies">
+        <h4>Enemies - CR 4</h4>
+        <ul>
+            <li><ap-link-button linkName="undesten-half-demon-hobgoblin">Half-Demon Hobgoblin (CR 3)</ap-link-button></li>
+            <li><ap-link-button linkName="undesten-worg">Worg (CR 2)</ap-link-button></li>
+        </ul>
+    </ap-auth-container>
+    <ap-auth-container permissions="gm undesten-full temple-of-khon-treasure">
+        <h4>Treasure</h4>
+        <ul>
+            <li>+1 composite longbow (18)</li>
+            <li>Rose quartz (300 gp)</li>
+            <li>1 pp, 12 gp, 113 sp, 670 cp</li>
+        </ul>
+    </ap-auth-container>
 </ap-auth-container>
