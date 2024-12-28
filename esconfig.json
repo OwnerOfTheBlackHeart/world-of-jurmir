@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"module": "Esnext",
+		"moduleResolution": "classic",
+		"target": "es2021",
+		"noImplicitAny": true,
+		"removeComments": true,
+		"preserveConstEnums": true,
+		"sourceMap": true
+	},
+	"include": ["scripts/**/*", "campaigns/*/scripts/*"],
+	"exclude": ["node_modules", "**/*.spec.ts"]
+}

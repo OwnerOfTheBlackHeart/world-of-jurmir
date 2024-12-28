@@ -6,8 +6,8 @@ export class PageInfo {
 	name: string;
 	external: boolean;
 
-	constructor(id: string, url: string, title: string, name: string, external?: boolean) {
-		this.id = id;
+	constructor(id: string | undefined, url: string, title: string, name: string, external?: boolean) {
+		this.id = id ?? "";
 		this.url = url;
 		this.title = title;
 		this.name = name;
