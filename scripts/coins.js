@@ -1,17 +1,17 @@
 import { numberWithCommas } from "./utilities.js";
 export const singleCoinWeight = 0.02;
 export class Coin {
-    constructor(coins) {
-        this.pp = coins[0];
-        this.gp = coins[1];
-        this.sp = coins[2];
-        this.cp = coins[3];
-    }
     get weight() {
         return (this.pp + this.gp + this.sp + this.cp) * singleCoinWeight;
     }
     static NewCoin() {
         return new Coin([0, 0, 0, 0]);
+    }
+    constructor(coins) {
+        this.pp = coins[0];
+        this.gp = coins[1];
+        this.sp = coins[2];
+        this.cp = coins[3];
     }
     toString() {
         let toReturn = "";

@@ -6,14 +6,14 @@ To generate a birthday, enter the character's age in the input below and click t
 The birthday, along with how long ago it was, will be displayed directly below this sentence.
 `);
 class BirthdayGeneratorElement extends HTMLElement {
-    constructor() {
-        super();
-    }
     get currentDateValue() {
         return this.getAttribute("current-date-value");
     }
     set currentDateValue(val) {
         this.setAttribute("current-date-value", val);
+    }
+    constructor() {
+        super();
     }
     connectedCallback() {
         this.Render();

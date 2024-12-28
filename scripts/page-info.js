@@ -1,6 +1,6 @@
 export class PageInfo {
     constructor(id, url, title, name, external) {
-        this.id = id;
+        this.id = id ?? "";
         this.url = url;
         this.title = title;
         this.name = name;

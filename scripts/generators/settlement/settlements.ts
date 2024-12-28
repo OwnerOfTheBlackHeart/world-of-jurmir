@@ -64,13 +64,13 @@ interface PowerCenter extends NumberBounds {
 	canBeMonstrous?: boolean;
 }
 
-const PowerCenters = Object.freeze<PowerCenter>([
+const PowerCenters = Object.freeze<PowerCenter[]>([
 	{ type: "Conventional", upper: 13, canBeMonstrous: true },
 	{ type: "Nonstandard", lower: 14, upper: 18 },
 	{ type: "Magical", lower: 19 },
 ]);
 
-const PowerCenterAlignment = Object.freeze<NamedNumberRange>([
+const PowerCenterAlignment = Object.freeze<NamedNumberRange[]>([
 	{ from: 1, to: 35, name: "LG" },
 	{ from: 36, to: 39, name: "NG" },
 	{ from: 40, to: 41, name: "CG" },
@@ -82,7 +82,7 @@ const PowerCenterAlignment = Object.freeze<NamedNumberRange>([
 	{ from: 99, to: 100, name: "CE" },
 ]);
 
-const SettlementGuardCaptain = Object.freeze<NamedNumberRange>([
+const SettlementGuardCaptain = Object.freeze<NamedNumberRange[]>([
 	{ from: 1, to: 60, name: "Highest-level warrior" },
 	{ from: 61, to: 80, name: "Second highest-level fighter" },
 	{ from: 81, to: 100, name: "Highest-level fighter" },

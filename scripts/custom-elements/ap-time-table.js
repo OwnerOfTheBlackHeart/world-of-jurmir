@@ -2,47 +2,6 @@ import * as Utilities from "../utilities.js";
 import { TimeRef, Time } from "../time.js";
 import { globals } from "../globals.js";
 export class TimeTable extends HTMLElement {
-    constructor() {
-        super();
-        this.headerTitle = "";
-        this.rows = [];
-        this.table;
-        this.mainNode = this;
-        if (Utilities.IsGoodString(this.innerHTML)) {
-            const data = Utilities.StringToObject(this.innerHTML);
-            if (data[0][0] === "header") {
-                this.headerTitle = data[0][1];
-                data.shift();
-            }
-            const dates = [];
-            data.forEach((row) => {
-                if (Number.isInteger(row[0])) {
-                    dates.push({
-                        time: new Time(row[0], row[1], row[2]).DistributeDays(),
-                        note: row[3],
-                    });
-                }
-                else {
-                    dates.push({
-                        time: Time.FromInitializer(row[0]).DistributeDays(),
-                        note: row[1],
-                    });
-                }
-            });
-            this.rows = dates;
-        }
-        const dateValue = this.currentDateValue;
-        if (dateValue) {
-            if (typeof dateValue === "string") {
-                this.currentDate = Utilities.getDescendantProperty(globals, dateValue);
-            }
-            else {
-                this.currentDate = dateValue.map((set) => {
-                    return { display: set.display, time: Utilities.getDescendantProperty(globals, set.date) };
-                });
-            }
-        }
-    }
     get showSeason() {
         return this.hasAttribute("show-season");
     }
@@ -95,6 +54,47 @@ export class TimeTable extends HTMLElement {
         }
         else {
             this.removeAttribute("disable-sort");
+        }
+    }
+    constructor() {
+        super();
+        this.headerTitle = "";
+        this.rows = [];
+        this.table;
+        this.mainNode = this;
+        if (Utilities.IsGoodString(this.innerHTML)) {
+            const data = Utilities.StringToObject(this.innerHTML);
+            if (data[0][0] === "header") {
+                this.headerTitle = data[0][1];
+                data.shift();
+            }
+            const dates = [];
+            data.forEach((row) => {
+                if (Number.isInteger(row[0])) {
+                    dates.push({
+                        time: new Time(row[0], row[1], row[2]).DistributeDays(),
+                        note: row[3],
+                    });
+                }
+                else {
+                    dates.push({
+                        time: Time.FromInitializer(row[0]).DistributeDays(),
+                        note: row[1],
+                    });
+                }
+            });
+            this.rows = dates;
+        }
+        const dateValue = this.currentDateValue;
+        if (dateValue) {
+            if (typeof dateValue === "string") {
+                this.currentDate = Utilities.getDescendantProperty(globals, dateValue);
+            }
+            else {
+                this.currentDate = dateValue.map((set) => {
+                    return { display: set.display, time: Utilities.getDescendantProperty(globals, set.date) };
+                });
+            }
         }
     }
     connectedCallback() {

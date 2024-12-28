@@ -2,23 +2,6 @@ import { Coin } from "../coins.js";
 import * as Utilities from "../utilities.js";
 import { Inventory } from "../inventory.js";
 export class EncumbranceChart extends HTMLElement {
-    constructor() {
-        super();
-        if (!this.hasAttribute("strength")) {
-            this.strength = 10;
-        }
-        if (!this.hasAttribute("multiplier")) {
-            this.multiplier = 1;
-        }
-        this.inventory = [];
-        if (this.innerHTML != undefined && this.innerHTML != "") {
-            this.inventory = Utilities.StringToObject(this.innerHTML);
-        }
-        else {
-            this.inventory = [];
-        }
-        this.innerHTML = "";
-    }
     get strength() {
         return Number(this.getAttribute("strength"));
     }
@@ -36,6 +19,23 @@ export class EncumbranceChart extends HTMLElement {
     }
     set multiplier(val) {
         this.setAttribute("multiplier", val.toString());
+    }
+    constructor() {
+        super();
+        if (!this.hasAttribute("strength")) {
+            this.strength = 10;
+        }
+        if (!this.hasAttribute("multiplier")) {
+            this.multiplier = 1;
+        }
+        this.inventory = [];
+        if (this.innerHTML != undefined && this.innerHTML != "") {
+            this.inventory = Utilities.StringToObject(this.innerHTML);
+        }
+        else {
+            this.inventory = [];
+        }
+        this.innerHTML = "";
     }
     connectedCallback() {
         this.Render();

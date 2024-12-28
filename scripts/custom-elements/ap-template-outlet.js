@@ -2,6 +2,19 @@ import { appFetch, pageAreaQuerySelector } from "../io.js";
 import { templateGroups } from "../template-groups.js";
 import { showElement } from "../utilities.js";
 export class TemplateOutlet extends HTMLElement {
+    get templatePath() {
+        return this.getAttribute("templatePath");
+    }
+    set templatePath(val) {
+        this.setAttribute("templatePath", val);
+    }
+    get headerLevel() {
+        const hl = Number(this.getAttribute("headerLevel"));
+        return hl ? hl : 3;
+    }
+    set headerLevel(val) {
+        this.setAttribute("headerLevel", val.toString());
+    }
     constructor() {
         super();
         this.innerHTML = "";
@@ -28,19 +41,6 @@ export class TemplateOutlet extends HTMLElement {
         if (!this.innerHTML || this.innerHTML.trim() === "") {
             this.innerHTML = '<div class="warning">Failed to load template data</div>';
         }
-    }
-    get templatePath() {
-        return this.getAttribute("templatePath");
-    }
-    set templatePath(val) {
-        this.setAttribute("templatePath", val);
-    }
-    get headerLevel() {
-        const hl = Number(this.getAttribute("headerLevel"));
-        return hl ? hl : 3;
-    }
-    set headerLevel(val) {
-        this.setAttribute("headerLevel", val.toString());
     }
     buildTemplateUrl(path) {
         let templateFolder;

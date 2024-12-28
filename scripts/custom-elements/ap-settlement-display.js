@@ -1,16 +1,16 @@
 import * as Utilities from "../utilities.js";
 export class SettlementDisplayElement extends HTMLElement {
-    constructor() {
-        super();
-        if (Utilities.IsGoodString(this.innerHTML)) {
-            this.settlement = Utilities.StringToObject(this.innerHTML);
-        }
-    }
     get permissions() {
         return this.getAttribute("breakdown-permissions");
     }
     set permissions(val) {
         this.setAttribute("breakdown-permissions", val);
+    }
+    constructor() {
+        super();
+        if (Utilities.IsGoodString(this.innerHTML)) {
+            this.settlement = Utilities.StringToObject(this.innerHTML);
+        }
     }
     connectedCallback() {
         this.Render();

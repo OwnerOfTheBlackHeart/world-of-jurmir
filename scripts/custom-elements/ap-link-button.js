@@ -3,11 +3,6 @@ import { GetPageInfoFromName } from "../page-list.js";
 import { BuildUrl, LoadPage } from "../io.js";
 import { makeValidHash } from "../utilities.js";
 export class LinkButton extends HTMLElement {
-    constructor() {
-        super();
-        this.link;
-        this.pageInfo;
-    }
     static get observedAttributes() {
         return ["linkName", "disabled"];
     }
@@ -33,6 +28,11 @@ export class LinkButton extends HTMLElement {
         else {
             this.removeAttribute("disabled");
         }
+    }
+    constructor() {
+        super();
+        this.link;
+        this.pageInfo;
     }
     click() {
         if (PageInfo.IsInternalPage(this.pageInfo)) {

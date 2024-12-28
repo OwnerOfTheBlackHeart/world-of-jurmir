@@ -1,18 +1,5 @@
 import { Auth } from "../auth.js";
 export class AuthContainerElement extends HTMLElement {
-    constructor() {
-        super();
-        if (this.inline) {
-            this.startingDisplay = "inline";
-        }
-        else {
-            this.startingDisplay = this.style.display || this.defaultDisplay || "block";
-        }
-        if (this.startingDisplay === "inline" || this.startingDisplay === "inline-block") {
-            this.innerHTML = this.innerHTML.trim();
-        }
-        AuthContainers.push(this);
-    }
     get permissions() {
         return this.getAttribute("permissions");
     }
@@ -30,6 +17,19 @@ export class AuthContainerElement extends HTMLElement {
     }
     set inline(val) {
         this.toggleAttribute("inline", val);
+    }
+    constructor() {
+        super();
+        if (this.inline) {
+            this.startingDisplay = "inline";
+        }
+        else {
+            this.startingDisplay = this.style.display || this.defaultDisplay || "block";
+        }
+        if (this.startingDisplay === "inline" || this.startingDisplay === "inline-block") {
+            this.innerHTML = this.innerHTML.trim();
+        }
+        AuthContainers.push(this);
     }
     connectedCallback() {
         this.Render();
