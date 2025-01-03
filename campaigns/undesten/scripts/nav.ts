@@ -30,6 +30,8 @@ export const undestenNav = [
 
 	new PageInfo(undefined, "npcs/random.html", "Random/Seen Once NPCs", "random-npcs"),
 	new PageInfo(undefined, "npcs/touran-dara.html", "Touran Dara, Unwilling Lady of the Flumphs", "touran-dara"),
+	new PageInfo(undefined, "npcs/svala-vikardottir.html", "Svala Vikardottir, Fallenfeather Kata of Iirie", "svala-vikardottir"),
+	new PageInfo(undefined, "npcs/freydis-haukdottir.html", "Freydis Haukdottir, Fallenfeather Fury of Iirie", "freydis-haukdottir"),
 
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/humanoids/gillman/", "", "gillman", true),
 	new PageInfo(undefined, "enemies/gillman/gillman-magus.html", "Gillman Magus", "gillman-magus"),
@@ -67,12 +69,16 @@ export const undestenNav = [
 	),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-6/lord-achimair/", "", "sahuagin-lord", true),
 
-	new PageInfo(undefined, "plotlines/main.html", "Plotline Index", "plotline-index"),
+	new PageInfo(undefined, "plotlines/plotlines.html", "Plotline Index", "plotline-index"),
+	new PageInfo(undefined, "plotlines/hunt-them-first.html", "Hunt Them First", "hunt-them-first"),
+	new PageInfo(undefined, "plotlines/hobgod.html", "Hobgod", "hobgod"),
 
 	new PageInfo(undefined, "misc/children.html", "Children", "children"),
 	new PageInfo(undefined, "misc/boat-rules.html", "Boat/Ship Rules", "boat-rules"),
 
 	new PageInfo(undefined, "images/undesten/touran-dara.webp", "", "touran-dara-img", true),
+	new PageInfo(undefined, "images/undesten/svala-vikardottir.png", "", "svala-vikardottir-img", true),
+	new PageInfo(undefined, "images/undesten/freydis-haukdottir.png", "", "freydis-haukdottir-img", true),
 ];
 
 undestenNav.forEach((pageInfo) => {
