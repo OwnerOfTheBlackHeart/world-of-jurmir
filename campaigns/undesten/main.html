@@ -50,6 +50,14 @@
 		<ul>
 			<li><ap-link-button linkName="undesten-ming">The Ming</ap-link-button></li>
 			<li><ap-link-button linkName="undesten-adventurers-league">Adventurers' League</ap-link-button></li>
+			<li>
+				<h3 id="cults">Cults</h3>
+				<ul>
+					<ap-auth-container permissions="gm undesten-full-full undiscovered-cults undiscovered-organizations">
+						<li><ap-link-button linkName="undesten-iron-serpents">Iron Serpents</ap-link-button></li>
+					</ap-auth-container>
+				</ul>
+			</li>
 		</ul>
     </div>
 
@@ -83,7 +91,7 @@
         </ul>
     </div>
 
-    <!-- <div class="column">
-		<ap-template-outlet templatePath="app/3.5/enemies"></ap-template-outlet>
-    </div> -->
+    <div class="column">
+		<ap-template-outlet templatePath="app/pathfinder/enemies"></ap-template-outlet>
+    </div>
 </div>

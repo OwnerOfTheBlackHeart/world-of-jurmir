@@ -28,6 +28,8 @@ export const undestenNav = [
 	new PageInfo(undefined, "organizations/ming.html", "The Ming", "ming"),
 	new PageInfo(undefined, "organizations/adventurers-league.html", "Adventurers' League", "adventurers-league"),
 
+	new PageInfo(undefined, "organizations/cults/iron-serpents.html", "Iron Serpents", "iron-serpents"),
+
 	new PageInfo(undefined, "npcs/random.html", "Random/Seen Once NPCs", "random-npcs"),
 	new PageInfo(undefined, "npcs/touran-dara.html", "Touran Dara, Unwilling Lady of the Flumphs", "touran-dara"),
 	new PageInfo(undefined, "npcs/svala-vikardottir.html", "Svala Vikardottir, Fallenfeather Kata of Iirie", "svala-vikardottir"),
