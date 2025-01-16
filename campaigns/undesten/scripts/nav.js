@@ -60,6 +60,10 @@ export const undestenNav = [
     new PageInfo(undefined, "images/undesten/touran-dara.webp", "", "touran-dara-img", true),
     new PageInfo(undefined, "images/undesten/svala-vikardottir.png", "", "svala-vikardottir-img", true),
     new PageInfo(undefined, "images/undesten/freydis-haukdottir.png", "", "freydis-haukdottir-img", true),
+    new PageInfo(undefined, "images/undesten/ariana-fraser.jpg", "", "ariana-fraser-img", true),
+    new PageInfo(undefined, "images/undesten/leah-fraser.jpg", "", "leah-fraser-img", true),
+    new PageInfo(undefined, "images/undesten/kihu-thajos.jpg", "", "kihu-thajos-img", true),
+    new PageInfo(undefined, "images/undesten/rinisre.jpg", "", "rinisre-img", true),
 ];
 undestenNav.forEach((pageInfo) => {
     if (!pageInfo.external) {

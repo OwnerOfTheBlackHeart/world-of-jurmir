@@ -296,6 +296,11 @@ li > ap-link-button > a {
 	text-align: right;
 }
 
+.character-picture-left {
+	float: left;
+	margin-right: 5px;
+}
+
 .power {
 	font-weight: bold;
 }
@@ -389,4 +394,21 @@ ol > li > ol > li {
 span[redacted] {
 	color: black;
 	background-color: black;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.left-hand-image-container {
+	display: flex;
+}
+
+.left-hand-image-container > img,
+.left-hand-image-container > ul,
+.left-hand-image-container > ol {
+	display: inline-block;
+	flex: 0 0;
 }
