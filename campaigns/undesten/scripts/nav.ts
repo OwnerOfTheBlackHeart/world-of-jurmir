@@ -34,6 +34,7 @@ export const undestenNav = [
 	new PageInfo(undefined, "npcs/touran-dara.html", "Touran Dara, Unwilling Lady of the Flumphs", "touran-dara"),
 	new PageInfo(undefined, "npcs/svala-vikardottir.html", "Svala Vikardottir, Fallenfeather Kata of Iirie", "svala-vikardottir"),
 	new PageInfo(undefined, "npcs/freydis-haukdottir.html", "Freydis Haukdottir, Fallenfeather Fury of Iirie", "freydis-haukdottir"),
+	new PageInfo(undefined, "npcs/pildrylth-pathfinder.html", "Pildrylth the Calm, Tyrant of the Forest", "pildrylth"),
 
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/humanoids/gillman/", "", "gillman", true),
 	new PageInfo(undefined, "enemies/gillman/gillman-magus.html", "Gillman Magus", "gillman-magus"),
@@ -74,6 +75,7 @@ export const undestenNav = [
 	new PageInfo(undefined, "plotlines/plotlines.html", "Plotline Index", "plotline-index"),
 	new PageInfo(undefined, "plotlines/hunt-them-first.html", "Hunt Them First", "hunt-them-first"),
 	new PageInfo(undefined, "plotlines/hobgod.html", "Hobgod", "hobgod"),
+	new PageInfo(undefined, "plotlines/dragons-return.html", "Dragon's Return", "dragons-return"),
 
 	new PageInfo(undefined, "misc/children.html", "Children", "children"),
 	new PageInfo(undefined, "misc/boat-rules.html", "Boat/Ship Rules", "boat-rules"),
