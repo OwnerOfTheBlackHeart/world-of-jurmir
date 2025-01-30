@@ -57,6 +57,8 @@ export const undestenNav = [
     new PageInfo(undefined, "plotlines/hunt-them-first.html", "Hunt Them First", "hunt-them-first"),
     new PageInfo(undefined, "plotlines/hobgod.html", "Hobgod", "hobgod"),
     new PageInfo(undefined, "plotlines/dragons-return.html", "Dragon's Return", "dragons-return"),
+    new PageInfo(undefined, "plotlines/bring-the-deserts-inline.html", "Bring the Deserts Inline", "bring-the-deserts-inline"),
+    new PageInfo(undefined, "plotlines/track-the-cause.html", "Track the Cause", "track-the-cause"),
     new PageInfo(undefined, "misc/children.html", "Children", "children"),
     new PageInfo(undefined, "misc/boat-rules.html", "Boat/Ship Rules", "boat-rules"),
     new PageInfo(undefined, "images/undesten/touran-dara.webp", "", "touran-dara-img", true),
