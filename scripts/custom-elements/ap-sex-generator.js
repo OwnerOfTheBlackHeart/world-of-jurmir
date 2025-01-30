@@ -428,6 +428,9 @@ class SexGeneratorElement extends HTMLElement {
         if (sexInfo.class) {
             div.innerHTML += '<br/><i class="power">Class:</i> ' + sexInfo.class + " (" + sexInfo.level + ")";
         }
+        if (sexInfo.cost) {
+            div.innerHTML += '<br/><i class="power">Cost:</i> ' + sexInfo.cost + " gp";
+        }
     }
     GenerateSexualCharacteristics() {
         let raceSexualFeatures;
@@ -502,6 +505,9 @@ class SexGeneratorElement extends HTMLElement {
             toReturn.class = characterClass.name;
             toReturn.level = this.GetLevel(characterClass);
         }
+        if (this.settingSelect.value === "Undesten" || this.settingSelect.value === "Prince's Reclamation") {
+            toReturn.cost = this.CalculateSlaveCost(toReturn);
+        }
         return toReturn;
     }
     GetRandomSex() {
@@ -511,6 +517,126 @@ class SexGeneratorElement extends HTMLElement {
         let level = new DiceRoll(characterClass.levelRoll).roll().total;
         level = Utilities.getRandomEntryFromRange(SpecialOptions.level.values).formula(level);
         return Math.max(level + this.communityModifierInput.valueAsNumber, 1);
+    }
+    CalculateSlaveCost(info) {
+        if (info.race === undefined || info.attractiveness === undefined || info.class === undefined || info.sex === undefined) {
+            return 0;
+        }
+        let baseCost = 0;
+        let attractivenessMult = 1;
+        let racialMult = 1;
+        let sexMult = 1;
+        switch (info.class) {
+            case "Commoner":
+                baseCost = (info.level ** 2 + 9) * 5;
+                break;
+            case "Warrior":
+            case "Expert":
+            case "Adept":
+            case "Aristocrat":
+                baseCost = (info.level ** 2 + 2) * 25;
+                break;
+            case "Barbarian":
+            case "Fighter":
+            case "Monk":
+            case "Ranger":
+            case "Rogue":
+            case "Ninja":
+            case "Shifter":
+            case "Cavalier":
+            case "Gunslinger":
+            case "Samurai":
+            case "Bloodrager":
+            case "Paladin":
+            case "Brawler":
+            case "Slayer":
+            case "Swashbuckler":
+            case "Scout (CAdv, 10)":
+                baseCost = info.level ** 2 * 250;
+                break;
+            case "Cleric":
+            case "Oracle":
+            case "Druid":
+            case "Witch":
+            case "Vampire Hunter":
+            case "Inquisitor":
+            case "Omdura":
+            case "Antipaladin":
+            case "Hunter":
+            case "Shaman":
+            case "Warpriest":
+            case "Medium":
+            case "Spiritualist":
+            case "Favored Soul (CDiv, 6)":
+            case "Dragon Shaman (PH2, 12)":
+                baseCost = info.level ** 2 * 400;
+                break;
+            case "Bard":
+            case "Sorcerer":
+            case "Wizard":
+            case "Magus":
+            case "Elementalist":
+            case "Kineticist":
+            case "Alchemist":
+            case "Arcanist":
+            case "Investigator":
+            case "Skald":
+            case "Mesmerist":
+            case "Occultist":
+            case "Psychic":
+            case "Duskblade (PH2, 19)":
+            case "Warlock (CArc, 5)":
+            case "Warmage (CArc, 10)":
+                baseCost = info.level ** 2 * 500;
+                break;
+        }
+        if (info.attractiveness >= 7) {
+            attractivenessMult = (info.attractiveness - 6) * 0.5 + 1;
+        }
+        if (this.settingSelect.value === "Undesten") {
+            switch (info.race) {
+                case "Elf":
+                case "Gnome":
+                case "Drow":
+                    racialMult = 1.25;
+                    break;
+                case "Aasimar":
+                case "Tiefling":
+                    racialMult = 1.1;
+                    break;
+                case "Ratfolk":
+                    racialMult = 0.75;
+                    break;
+            }
+        }
+        else if (this.settingSelect.value === "Prince's Reclamation") {
+            switch (info.race) {
+                case "Lizardfolk":
+                case "Drow (drustkin)":
+                    racialMult = 1.25;
+                    break;
+                case "Aasimar":
+                case "Tiefling":
+                case "Goliath":
+                    racialMult = 1.1;
+                    break;
+                case "Orc":
+                case "Halfling":
+                    racialMult = 0.9;
+                    break;
+            }
+        }
+        switch (info.sex) {
+            case Sex.feminineHerm:
+            case Sex.masculineHerm:
+                sexMult = 1.1;
+                break;
+            case Sex.cuntBoy:
+            case Sex.dickGirl:
+                sexMult = 0.9;
+                break;
+        }
+        return Math.round(baseCost * attractivenessMult * racialMult * sexMult);
     }
 }
 customElements.define("ap-sex-generator", SexGeneratorElement);
