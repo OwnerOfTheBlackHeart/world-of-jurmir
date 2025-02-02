@@ -61,6 +61,10 @@ export const undestenNav = [
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/humanoids/bugbear/", "", "bugbear", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/magical-beasts/worg/", "", "worg", true),
 
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/humanoids/gnoll/", "", "gnoll", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/humanoids/gnoll/gnoll-flind-tohc/", "", "flind", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-4/gnoll-sergeant-cr-4/", "", "gnoll-sergeant", true),
+
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/monstrous-humanoids/skum/", "", "skum", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/monstrous-humanoids/sahuagin/", "", "sahuagin", true),
 	new PageInfo(
@@ -71,6 +75,11 @@ export const undestenNav = [
 		true
 	),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-6/lord-achimair/", "", "sahuagin-lord", true),
+
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-0/pirate-sailor-human-rogue-1/", "", "pirate-sailor", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-0/human-pirate-buccaneer/", "", "pirate-buccaneer", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-2/pirate-smuggler-human-rogue-3/", "", "pirate-smuggler", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-3/pirate-officer-half-elf-bard-4/", "", "pirate-officer", true),
 
 	new PageInfo(undefined, "plotlines/plotlines.html", "Plotline Index", "plotline-index"),
 	new PageInfo(undefined, "plotlines/hunt-them-first.html", "Hunt Them First", "hunt-them-first"),
