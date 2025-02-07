@@ -28,6 +28,7 @@ export const undestenNav = [
     new PageInfo(undefined, "npcs/svala-vikardottir.html", "Svala Vikardottir, Fallenfeather Kata of Iirie", "svala-vikardottir"),
     new PageInfo(undefined, "npcs/freydis-haukdottir.html", "Freydis Haukdottir, Fallenfeather Fury of Iirie", "freydis-haukdottir"),
     new PageInfo(undefined, "npcs/pildrylth-pathfinder.html", "Pildrylth the Calm, Tyrant of the Forest", "pildrylth"),
+    new PageInfo(undefined, "npcs/vida-amini.html", "Vida Amini", "vida-amini"),
     new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/humanoids/gillman/", "", "gillman", true),
     new PageInfo(undefined, "enemies/gillman/gillman-magus.html", "Gillman Magus", "gillman-magus"),
     new PageInfo(undefined, "enemies/gillman/gillman-heavy.html", "Gillman Heavy", "gillman-heavy"),
