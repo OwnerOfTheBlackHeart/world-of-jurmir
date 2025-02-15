@@ -10,6 +10,7 @@ const noneOption = "None";
 
 export enum ClassType {
 	random = "random",
+	noCommoner = "No Commoner",
 	npc = "NPC",
 	player = "Player",
 }
@@ -412,6 +413,11 @@ class SexGeneratorElement extends HTMLElement {
 		option.text = ClassType.npc;
 		this.classTypeSelect.appendChild(option);
 
+		option = document.createElement("option");
+		option.value = ClassType.noCommoner;
+		option.text = ClassType.noCommoner;
+		this.classTypeSelect.appendChild(option);
+
 		// Sorts
 		this.BuildSortOptions(this.attractivenessSortSelect);
 		this.BuildSortOptions(this.sexSortSelect, true);
@@ -650,11 +656,17 @@ class SexGeneratorElement extends HTMLElement {
 				toReturn.race += ` (${race.subName})`;
 			}
 
-			const isPC =
-				this.classTypeSelect.value === ClassType.random
-					? Utilities.getRandomInteger(1, 100) <= race.pcChance
-					: this.classTypeSelect.value === ClassType.player;
-			let characterClass = isPC ? Utilities.getRandomEntryFromRange(race.pcClasses) : Utilities.getRandomEntryFromRange(race.npcClasses);
+			let characterClass: ClassChance;
+			const classType = this.classTypeSelect.value as ClassType;
+			const isNoCommoner = classType === ClassType.noCommoner;
+
+			do {
+				const isPC =
+					classType === ClassType.random || classType === ClassType.noCommoner
+						? Utilities.getRandomInteger(1, 100) <= race.pcChance
+						: classType === ClassType.player;
+				characterClass = isPC ? Utilities.getRandomEntryFromRange(race.pcClasses) : Utilities.getRandomEntryFromRange(race.npcClasses);
+			} while (isNoCommoner && characterClass.name === "Commoner");
 
 			toReturn.class = characterClass.name;
 			toReturn.level = this.GetLevel(characterClass);

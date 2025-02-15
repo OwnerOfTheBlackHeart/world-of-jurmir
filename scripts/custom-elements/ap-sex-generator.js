@@ -8,6 +8,7 @@ const noneOption = "None";
 export var ClassType;
 (function (ClassType) {
     ClassType["random"] = "random";
+    ClassType["noCommoner"] = "No Commoner";
     ClassType["npc"] = "NPC";
     ClassType["player"] = "Player";
 })(ClassType || (ClassType = {}));
@@ -310,6 +311,10 @@ class SexGeneratorElement extends HTMLElement {
         option.value = ClassType.npc;
         option.text = ClassType.npc;
         this.classTypeSelect.appendChild(option);
+        option = document.createElement("option");
+        option.value = ClassType.noCommoner;
+        option.text = ClassType.noCommoner;
+        this.classTypeSelect.appendChild(option);
         this.BuildSortOptions(this.attractivenessSortSelect);
         this.BuildSortOptions(this.sexSortSelect, true);
         this.attractivenessSortSelect.onchange = () => this.DisplayCurrentData();
@@ -498,10 +503,15 @@ class SexGeneratorElement extends HTMLElement {
             if (race.subName) {
                 toReturn.race += ` (${race.subName})`;
             }
-            const isPC = this.classTypeSelect.value === ClassType.random
-                ? Utilities.getRandomInteger(1, 100) <= race.pcChance
-                : this.classTypeSelect.value === ClassType.player;
-            let characterClass = isPC ? Utilities.getRandomEntryFromRange(race.pcClasses) : Utilities.getRandomEntryFromRange(race.npcClasses);
+            let characterClass;
+            const classType = this.classTypeSelect.value;
+            const isNoCommoner = classType === ClassType.noCommoner;
+            do {
+                const isPC = classType === ClassType.random || classType === ClassType.noCommoner
+                    ? Utilities.getRandomInteger(1, 100) <= race.pcChance
+                    : classType === ClassType.player;
+                characterClass = isPC ? Utilities.getRandomEntryFromRange(race.pcClasses) : Utilities.getRandomEntryFromRange(race.npcClasses);
+            } while (isNoCommoner && characterClass.name === "Commoner");
             toReturn.class = characterClass.name;
             toReturn.level = this.GetLevel(characterClass);
         }
