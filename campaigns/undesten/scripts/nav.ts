@@ -100,6 +100,7 @@ export const undestenNav = [
 
 	new PageInfo(undefined, "misc/children.html", "Children", "children"),
 	new PageInfo(undefined, "misc/boat-rules.html", "Boat/Ship Rules", "boat-rules"),
+	new PageInfo(undefined, "misc/zoes-hounds.html", "Zoe's Hounds", "zoes-hounds"),
 
 	new PageInfo(undefined, "images/undesten/touran-dara.webp", "", "touran-dara-img", true),
 	new PageInfo(undefined, "images/undesten/svala-vikardottir.png", "", "svala-vikardottir-img", true),
