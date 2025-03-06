@@ -29,6 +29,8 @@ export const undestenNav = [
     new PageInfo(undefined, "npcs/freydis-haukdottir.html", "Freydis Haukdottir, Fallenfeather Fury of Iirie", "freydis-haukdottir"),
     new PageInfo(undefined, "npcs/pildrylth-pathfinder.html", "Pildrylth the Calm, Tyrant of the Forest", "pildrylth"),
     new PageInfo(undefined, "npcs/vida-amini.html", "Vida Amini", "vida-amini"),
+    new PageInfo(undefined, "npcs/seki-kayo.html", "Seki Kayo, Silverwolf Magic Hunter", "seki-kayo"),
+    new PageInfo(undefined, "npcs/yanaba.html", "Yanaba, Hellhound Sorceress", "yanaba"),
     new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/humanoids/gillman/", "", "gillman", true),
     new PageInfo(undefined, "enemies/gillman/gillman-magus.html", "Gillman Magus", "gillman-magus"),
     new PageInfo(undefined, "enemies/gillman/gillman-heavy.html", "Gillman Heavy", "gillman-heavy"),
@@ -37,6 +39,8 @@ export const undestenNav = [
     new PageInfo(undefined, "enemies/merfolk/merfolk-sorcerer.html", "Merfolk Sorcerer", "merfolk-sorcerer"),
     new PageInfo(undefined, "enemies/humanoids/tiefling-wizard.html", "Tiefling Wizard", "tiefling-wizard"),
     new PageInfo(undefined, "enemies/humanoids/aasimar-paladin.html", "Aasimar Paladin", "aasimar-paladin"),
+    new PageInfo(undefined, "enemies/cultists/hecks-hounds/zoes-hellhound.html", "Heck's Hounds Hellhound", "zoes-hellhound"),
+    new PageInfo(undefined, "enemies/cultists/hecks-hounds/zoes-silverwolf.html", "Heck's Hounds Silverwolf", "zoes-silverwolf"),
     new PageInfo(undefined, "enemies/cultists/red-king/catfolk-cultist.html", "Catfolk Cultist", "catfolk-cultist"),
     new PageInfo(undefined, "enemies/cultists/red-king/dwarf-cultist.html", "Dwarf Cultist", "dwarf-cultist"),
     new PageInfo(undefined, "enemies/cultists/red-king/elf-cultist.html", "Elf Cultist", "elf-cultist"),
@@ -84,6 +88,8 @@ export const undestenNav = [
     new PageInfo(undefined, "images/undesten/leah-fraser.jpg", "", "leah-fraser-img", true),
     new PageInfo(undefined, "images/undesten/kihu-thajos.jpg", "", "kihu-thajos-img", true),
     new PageInfo(undefined, "images/undesten/rinisre.jpg", "", "rinisre-img", true),
+    new PageInfo(undefined, "images/undesten/seki-kayo.jpg", "", "seki-kayo-img", true),
+    new PageInfo(undefined, "images/undesten/yanaba.webp", "", "yanaba-img", true),
 ];
 undestenNav.forEach((pageInfo) => {
     if (!pageInfo.external) {
