@@ -3,7 +3,9 @@
     <div class="column">
         <h2>Active</h2>
         <ul>
-            
+            <ap-auth-container permissions="undesten-active-plotlines undesten-full">
+                <li><ap-link-button linkName="undesten-hobgod">Hobgod</ap-link-button></li>
+            </ap-auth-container>
         </ul>
     </div>
     <div class="column">
@@ -11,7 +13,6 @@
         <ap-auth-container permissions="undesten-inactive-plotlines undesten-full">
             <ul>
                 <li><ap-link-button linkName="undesten-hunt-them-first">Hunt Them First</ap-link-button></li>
-                <li><ap-link-button linkName="undesten-hobgod">Hobgod</ap-link-button></li>
                 <li><ap-link-button linkName="undesten-dragons-return">Dragon's Return</ap-link-button></li>
                 <li><ap-link-button linkName="undesten-bring-the-deserts-inline">Bring the Deserts Inline</ap-link-button></li>
             </ul>
