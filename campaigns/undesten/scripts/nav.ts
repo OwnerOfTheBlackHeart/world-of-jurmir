@@ -25,6 +25,8 @@ export const undestenNav = [
 	new PageInfo(undefined, "locations/desertside/temple-of-khon.html", "Temple of Khon", "temple-of-khon"),
 	new PageInfo(undefined, "locations/desertside/fallen-amid.html", "Fallen Amid", "fallen-amid"),
 
+	new PageInfo(undefined, "locations/player/iirie-complex.html", "Iirie Complex", "iirie-complex"),
+
 	new PageInfo(undefined, "organizations/ming.html", "The Ming", "ming"),
 	new PageInfo(undefined, "organizations/adventurers-league.html", "Adventurers' League", "adventurers-league"),
 
