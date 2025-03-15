@@ -24,6 +24,7 @@ export const undestenNav = [
 	new PageInfo(undefined, "locations/desertside/grass-foot-tribe.html", "Grass Foot Tribe", "grass-foot-tribe"),
 	new PageInfo(undefined, "locations/desertside/temple-of-khon.html", "Temple of Khon", "temple-of-khon"),
 	new PageInfo(undefined, "locations/desertside/fallen-amid.html", "Fallen Amid", "fallen-amid"),
+	new PageInfo(undefined, "locations/desertside/outpost-dral.html", "Outpost Dral", "outpost-dral"),
 
 	new PageInfo(undefined, "locations/player/iirie-complex.html", "Iirie Complex", "iirie-complex"),
 
@@ -40,6 +41,7 @@ export const undestenNav = [
 	new PageInfo(undefined, "npcs/vida-amini.html", "Vida Amini", "vida-amini"),
 	new PageInfo(undefined, "npcs/seki-kayo.html", "Seki Kayo, Silverwolf Magic Hunter", "seki-kayo"),
 	new PageInfo(undefined, "npcs/yanaba.html", "Yanaba, Hellhound Sorceress", "yanaba"),
+	new PageInfo(undefined, "npcs/algon.html", "Algon, Hobgoblin Druid", "algon"),
 
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/humanoids/gillman/", "", "gillman", true),
 	new PageInfo(undefined, "enemies/gillman/gillman-magus.html", "Gillman Magus", "gillman-magus"),
@@ -51,6 +53,7 @@ export const undestenNav = [
 
 	new PageInfo(undefined, "enemies/humanoids/tiefling-wizard.html", "Tiefling Wizard", "tiefling-wizard"),
 	new PageInfo(undefined, "enemies/humanoids/aasimar-paladin.html", "Aasimar Paladin", "aasimar-paladin"),
+	new PageInfo(undefined, "enemies/humanoids/catfolk-thug.html", "Catfolk Thug", "catfolk-thug"),
 
 	new PageInfo(undefined, "enemies/cultists/hecks-hounds/zoes-hellhound.html", "Heck's Hounds Hellhound", "zoes-hellhound"),
 	new PageInfo(undefined, "enemies/cultists/hecks-hounds/zoes-silverwolf.html", "Heck's Hounds Silverwolf", "zoes-silverwolf"),
@@ -65,6 +68,9 @@ export const undestenNav = [
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/outsiders/mephit/mephit-water/", "", "water-mephit", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/outsiders/mephit/mephit-earth/", "", "earth-mephit", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/dragons/drakes/drake-river/", "", "river-drake", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/magical-beasts/ahuizotl/", "", "ahuizotl", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/magical-beasts/kamadan/", "", "kamadan", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/magical-beasts/chupacabra/", "", "chupacabra", true),
 
 	new PageInfo(undefined, "enemies/goblinoids/half-demon-hobgoblin.html", "Half-Demon Hobgoblin", "half-demon-hobgoblin"),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/humanoids/hobgoblin/", "", "hobgoblin", true),
@@ -97,6 +103,16 @@ export const undestenNav = [
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-0/human-pirate-buccaneer/", "", "pirate-buccaneer", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-2/pirate-smuggler-human-rogue-3/", "", "pirate-smuggler", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-3/pirate-officer-half-elf-bard-4/", "", "pirate-officer", true),
+
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/outsiders/daemons/lacridaemon", "", "lacridaemon", true),
+
+	new PageInfo(
+		undefined,
+		"https://www.d20pfsrd.com/bestiary/monster-listings/dragons/dragon/metallic-brass/brass-dragon-very-young",
+		"",
+		"very-young-brass-dragon",
+		true
+	),
 
 	new PageInfo(undefined, "plotlines/plotlines.html", "Plotline Index", "plotline-index"),
 	new PageInfo(undefined, "plotlines/hunt-them-first.html", "Hunt Them First", "hunt-them-first"),

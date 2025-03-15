@@ -328,7 +328,18 @@ ol > li {
 }
 
 ol > li > ol > li {
+	list-style-type: upper-alpha;
+}
+
+ol > li > ol > li > ol > li {
+	list-style-type: upper-roman;
+}
+
+ol > li > ol > li > ol > li > ol > li {
 	list-style-type: lower-alpha;
+}
+ol > li > ol > li > ol > li > ol > li > ol > li {
+	list-style-type: lower-roman;
 }
 
 .birthday-header {
