@@ -25,6 +25,8 @@ export const undestenNav = [
 	new PageInfo(undefined, "locations/desertside/temple-of-khon.html", "Temple of Khon", "temple-of-khon"),
 	new PageInfo(undefined, "locations/desertside/fallen-amid.html", "Fallen Amid", "fallen-amid"),
 	new PageInfo(undefined, "locations/desertside/outpost-dral.html", "Outpost Dral", "outpost-dral"),
+	new PageInfo(undefined, "locations/desertside/quellon-mine.html", "Quellon Mine", "quellon-mine"),
+	new PageInfo(undefined, "locations/desertside/sulthdon.html", "Sulthdon", "sulthdon"),
 
 	new PageInfo(undefined, "locations/player/iirie-complex.html", "Iirie Complex", "iirie-complex"),
 
