@@ -42,6 +42,7 @@ export const undestenNav = [
 	new PageInfo(undefined, "npcs/pildrylth-pathfinder.html", "Pildrylth the Calm, Tyrant of the Forest", "pildrylth"),
 	new PageInfo(undefined, "npcs/vida-amini.html", "Vida Amini", "vida-amini"),
 	new PageInfo(undefined, "npcs/seki-kayo.html", "Seki Kayo, Silverwolf Magic Hunter", "seki-kayo"),
+	new PageInfo(undefined, "npcs/yabu.html", 'Yabu, Kayo\'s "Night Wolf"', "yabu"),
 	new PageInfo(undefined, "npcs/yanaba.html", "Yanaba, Hellhound Sorceress", "yanaba"),
 	new PageInfo(undefined, "npcs/algon.html", "Algon, Hobgoblin Druid", "algon"),
 
@@ -136,6 +137,10 @@ export const undestenNav = [
 	new PageInfo(undefined, "images/undesten/rinisre.jpg", "", "rinisre-img", true),
 	new PageInfo(undefined, "images/undesten/seki-kayo.jpg", "", "seki-kayo-img", true),
 	new PageInfo(undefined, "images/undesten/yanaba.webp", "", "yanaba-img", true),
+	new PageInfo(undefined, "images/undesten/yabu.jpg", "", "yabu-img", true),
+	new PageInfo(undefined, "images/undesten/asukai-hatsu.png", "", "asukai-hatsu-img", true),
+	new PageInfo(undefined, "images/undesten/woya.png", "", "woya-img", true),
+	new PageInfo(undefined, "images/undesten/Dame Angele Desmarais.jpg", "", "angele-desmarais-img", true),
 ];
 
 undestenNav.forEach((pageInfo) => {
