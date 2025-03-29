@@ -112,8 +112,8 @@ export const SpecialOptions = {
 			},
 		} as LevelEntry,
 		fullLevel: {
-			from: 17,
-			to: 19,
+			from: 20,
+			to: 20,
 			formula: function (level: number) {
 				return level;
 			},

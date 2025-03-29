@@ -103,6 +103,9 @@ export const undestenNav = [
     new PageInfo(undefined, "images/undesten/seki-kayo.jpg", "", "seki-kayo-img", true),
     new PageInfo(undefined, "images/undesten/yanaba.webp", "", "yanaba-img", true),
     new PageInfo(undefined, "images/undesten/yabu.jpg", "", "yabu-img", true),
+    new PageInfo(undefined, "images/undesten/asukai-hatsu.png", "", "asukai-hatsu-img", true),
+    new PageInfo(undefined, "images/undesten/woya.png", "", "woya-img", true),
+    new PageInfo(undefined, "images/undesten/Dame Angele Desmarais.jpg", "", "angele-desmarais-img", true),
 ];
 undestenNav.forEach((pageInfo) => {
     if (!pageInfo.external) {
