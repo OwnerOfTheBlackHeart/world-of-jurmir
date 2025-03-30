@@ -141,6 +141,7 @@ export const undestenNav = [
 	new PageInfo(undefined, "images/undesten/asukai-hatsu.png", "", "asukai-hatsu-img", true),
 	new PageInfo(undefined, "images/undesten/woya.png", "", "woya-img", true),
 	new PageInfo(undefined, "images/undesten/Dame Angele Desmarais.jpg", "", "angele-desmarais-img", true),
+	new PageInfo(undefined, "images/undesten/kozue-rika.jpg", "", "kozue-rika-img", true),
 ];
 
 undestenNav.forEach((pageInfo) => {

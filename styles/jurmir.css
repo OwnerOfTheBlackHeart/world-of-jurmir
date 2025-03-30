@@ -415,11 +415,27 @@ span[redacted] {
 
 .left-hand-image-container {
 	display: flex;
+	width: 100%;
 }
 
 .left-hand-image-container > img,
 .left-hand-image-container > ul,
-.left-hand-image-container > ol {
+.left-hand-image-container > ol,
+.left-hand-image-container > p {
 	display: inline-block;
 	flex: 0 0;
+}
+
+.left-hand-image-container > div {
+	display: inline-block;
+	flex: 1 0;
+}
+
+.left-hand-image-container > *:not(:last-child) {
+	padding-right: 0.5rem;
+}
+
+.left-hand-image-container > p,
+.left-hand-image-container > * > p:first-child {
+	margin-top: 0;
 }

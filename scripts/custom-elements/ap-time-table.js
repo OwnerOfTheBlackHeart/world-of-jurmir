@@ -28,7 +28,7 @@ export class TimeTable extends HTMLElement {
         const currentDate = this.getAttribute("current-date-value");
         if (currentDate) {
             if (currentDate[0] === "[") {
-                return JSON.parse(currentDate);
+                return JSON.parse(currentDate.replaceAll(`'`, `"`));
             }
             else {
                 return currentDate;
@@ -70,10 +70,16 @@ export class TimeTable extends HTMLElement {
             }
             const dates = [];
             data.forEach((row) => {
-                if (Number.isInteger(row[0])) {
+                if (Number.isInteger(row?.[0])) {
                     dates.push({
                         time: new Time(row[0], row[1], row[2]).DistributeDays(),
                         note: row[3],
+                    });
+                }
+                else if (row?.[0]?.global) {
+                    dates.push({
+                        time: Utilities.getDescendantProperty(globals, row[0].global).DistributeDays(),
+                        note: row[1],
                     });
                 }
                 else {

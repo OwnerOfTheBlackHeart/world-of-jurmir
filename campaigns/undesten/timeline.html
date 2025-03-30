@@ -42,9 +42,12 @@
 	</div>
 	<div class="table-column">
         <h3>Undesten Timeline</h3>
-        <ap-time-table current-date-value="undestenCurrentDate">
+        <!-- <ap-time-table current-date-value="undestenCurrentDate"> -->
+        <ap-time-table current-date-value="[{ 'date': 'undestenCurrentDate', 'display': 'Yuru' }, { 'date': 'undestenMiriCurrentDate', 'display': 'Miri' }]">
             [
 				["header", "Timeline"],
+				[{ "global": "undestenMiriCurrentDate" }, "Miri current date"],
+				[{ "global": "undestenCurrentDate" }, "Yuru current date"],
 				[3, 2, 1522, "Start date"],
 				[5, 2, 1522, "Yuru purchased Nikou Miri"],
 				[7, 2, 1522, "Yuru purchased Darya Mirzaii"],
@@ -83,8 +86,7 @@
 				[{ "day": 221, "month": 2, "year": 1522 }, "Arrived in <ap-link-button linkName="undesten-shehar">Shehar</ap-link-button>"],
 				[{ "day": 226, "month": 2, "year": 1522 }, "Arrived in <ap-link-button linkName="undesten-iirie">Iirie</ap-link-button>"],
 				[{ "day": 223, "month": 2, "year": 1522 }, "<ap-link-button linkName="undesten-iirie-complex">Iirie Complex</ap-link-button> checked in on by Miri"],
-				[{ "day": 230, "month": 2, "year": 1522 }, "Arrived in <ap-link-button linkName="undesten-sulthdon">Sulthdon</ap-link-button>"],
-				[{ "day": 224, "month": 2, "year": 1522 }, "Miri current date"]
+				[{ "day": 230, "month": 2, "year": 1522 }, "Arrived in <ap-link-button linkName="undesten-sulthdon">Sulthdon</ap-link-button>"]
 			]
         </ap-time-table>
 	</div>
