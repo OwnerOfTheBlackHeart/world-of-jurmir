@@ -106,8 +106,28 @@ export const undestenNav = [
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-0/human-pirate-buccaneer/", "", "pirate-buccaneer", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-2/pirate-smuggler-human-rogue-3/", "", "pirate-smuggler", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-3/pirate-officer-half-elf-bard-4/", "", "pirate-officer", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-4/jungle-wizard-elf-transmuter-5/", "", "jungle-wizard", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-9/exander-runthorn/", "", "paranoid-wizard", true),
+	new PageInfo(
+		undefined,
+		"https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-6/wizard-extraordinaire-human-universalist-7/",
+		"",
+		"wizard-extraordinaire",
+		true
+	),
 
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/outsiders/daemons/lacridaemon", "", "lacridaemon", true),
+
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/dragons/wyvern", "", "wyvern", true),
+	new PageInfo(
+		undefined,
+		"https://www.d20pfsrd.com/alternative-rule-systems/mythic/mythic-monsters/mythic-wyvern/",
+		"",
+		"mythic-wyvern",
+		true
+	),
+
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/humanoids/lycanthrope/weretiger", "", "weretiger", true),
 
 	new PageInfo(
 		undefined,
@@ -116,6 +136,8 @@ export const undestenNav = [
 		"very-young-brass-dragon",
 		true
 	),
+
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/cloaker", "", "cloaker", true),
 
 	new PageInfo(undefined, "plotlines/plotlines.html", "Plotline Index", "plotline-index"),
 	new PageInfo(undefined, "plotlines/hunt-them-first.html", "Hunt Them First", "hunt-them-first"),
@@ -142,6 +164,7 @@ export const undestenNav = [
 	new PageInfo(undefined, "images/undesten/woya.png", "", "woya-img", true),
 	new PageInfo(undefined, "images/undesten/Dame Angele Desmarais.jpg", "", "angele-desmarais-img", true),
 	new PageInfo(undefined, "images/undesten/kozue-rika.jpg", "", "kozue-rika-img", true),
+	new PageInfo(undefined, "images/undesten/Vibeke Sofie Berg.jpg", "", "vibeke-sofie-berg-img", true),
 ];
 
 undestenNav.forEach((pageInfo) => {
