@@ -54,6 +54,8 @@ export const undestenNav = [
 	new PageInfo(undefined, "enemies/merfolk/merfolk-cleric.html", "Merfolk Cleric", "merfolk-cleric"),
 	new PageInfo(undefined, "enemies/merfolk/merfolk-sorcerer.html", "Merfolk Sorcerer", "merfolk-sorcerer"),
 
+	new PageInfo(undefined, "enemies/dragons/protogod-wyvern.html", "Protogod Wyvern", "protogod-wyvern"),
+
 	new PageInfo(undefined, "enemies/humanoids/tiefling-wizard.html", "Tiefling Wizard", "tiefling-wizard"),
 	new PageInfo(undefined, "enemies/humanoids/aasimar-paladin.html", "Aasimar Paladin", "aasimar-paladin"),
 	new PageInfo(undefined, "enemies/humanoids/catfolk-thug.html", "Catfolk Thug", "catfolk-thug"),
@@ -113,6 +115,14 @@ export const undestenNav = [
 		"https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-6/wizard-extraordinaire-human-universalist-7/",
 		"",
 		"wizard-extraordinaire",
+		true
+	),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-10/general-human-fighter-11/", "", "human-general", true),
+	new PageInfo(
+		undefined,
+		"https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-5/expert-bodyguard-human-warrior-7/",
+		"",
+		"expert-bodyguard",
 		true
 	),
 
