@@ -10,7 +10,8 @@
 			[
 				[{ "isHeader":"true", "value":"Current Date", "colSpan":2 }],
 				[{ "value": "Main Party", "isHeader": true, "align":"right" }, "<ap-display-global property-path="undestenCurrentDate"></ap-display-global>"],
-				[{ "value": "Miri", "isHeader": true, "align":"right" }, "<ap-display-global property-path="undestenMiriCurrentDate"></ap-display-global>"]
+				[{ "value": "Miri", "isHeader": true, "align":"right" }, "<ap-display-global property-path="undestenMiriCurrentDate"></ap-display-global>"],
+				[{ "value": "Gnollus", "isHeader": true, "align":"right" }, "<ap-display-global property-path="undestenGnollusCurrentDate"></ap-display-global>"]
 			]
 		</ap-advanced-table>
     </div>
@@ -42,12 +43,12 @@
 	</div>
 	<div class="table-column">
         <h3>Undesten Timeline</h3>
-        <!-- <ap-time-table current-date-value="undestenCurrentDate"> -->
-        <ap-time-table current-date-value="[{ 'date': 'undestenCurrentDate', 'display': 'Yuru' }, { 'date': 'undestenMiriCurrentDate', 'display': 'Miri' }]">
+        <ap-time-table current-date-value="[{ 'date': 'undestenCurrentDate', 'display': 'Yuru' }, { 'date': 'undestenMiriCurrentDate', 'display': 'Miri' }, { 'date': 'undestenGnollusCurrentDate', 'display': 'Gnollus' }]">
             [
 				["header", "Timeline"],
 				[{ "global": "undestenMiriCurrentDate" }, "Miri current date"],
 				[{ "global": "undestenCurrentDate" }, "Yuru current date"],
+				[{ "global": "undestenGnollusCurrentDate" }, "Gnollus current date"],
 				[3, 2, 1522, "Start date"],
 				[5, 2, 1522, "Yuru purchased Nikou Miri"],
 				[7, 2, 1522, "Yuru purchased Darya Mirzaii"],
@@ -89,7 +90,10 @@
 				[{ "day": 230, "month": 2, "year": 1522 }, "Arrived in <ap-link-button linkName="undesten-sulthdon">Sulthdon</ap-link-button> and cleared it, killing Orbei Yeronkhii"],
 				[{ "day": 233, "month": 2, "year": 1522 }, "Arrived in <ap-link-button linkName="undesten-iirie">Iirie</ap-link-button>"],
 				[{ "day": 239, "month": 2, "year": 1522 }, "Arrived in <ap-link-button linkName="undesten-grass-foot-tribe">Grass Foot Tribe</ap-link-button> and Yuru purchases <ap-link-button linkName="undesten-grass-foot-tribe" hash="obzu-nymo">Obzu Nymo</ap-link-button>"],
-				[{ "day": 245, "month": 2, "year": 1522 }, "Arrived in <ap-link-button linkName="undesten-junkberg">Junkberg</ap-link-button>"]
+				[{ "day": 245, "month": 2, "year": 1522 }, "Arrived in <ap-link-button linkName="undesten-junkberg">Junkberg</ap-link-button>"],
+				[{ "day": 229, "month": 2, "year": 1522 }, "Miri arrived in <ap-link-button linkName="undesten-iirie">Iirie</ap-link-button>"],
+				[{ "day": 230, "month": 2, "year": 1522 }, "Miri arrived in <ap-link-button linkName="undesten-iirie">Iirie</ap-link-button>"],
+				[{ "day": 257, "month": 2, "year": 1522 }, "Miri's palace is completed"]
 			]
         </ap-time-table>
 	</div>

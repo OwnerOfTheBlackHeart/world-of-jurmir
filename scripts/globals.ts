@@ -13,6 +13,7 @@ export const globals = {
 	sbjCurrentDate: undefined as Time,
 	undestenCurrentDate: undefined as Time,
 	undestenMiriCurrentDate: undefined as Time,
+	undestenGnollusCurrentDate: undefined as Time,
 	randomRaceTables: undefined as OrderedRecord<string, Race[]>,
 	xpAwardsTable: undefined as XpAwards,
 	sexRanges: [
@@ -114,6 +115,7 @@ export async function LoadGlobalsJson() {
 	globals.sbjCurrentDate = Time.FromInitializer(dateData.sbjCurrentDate);
 	globals.undestenCurrentDate = Time.FromInitializer(dateData.undestenCurrentDate);
 	globals.undestenMiriCurrentDate = Time.FromInitializer(dateData.undestenMiriCurrentDate);
+	globals.undestenGnollusCurrentDate = Time.FromInitializer(dateData.undestenGnollusCurrentDate);
 
 	globals.randomRaceTables = randomRaceTables;
 	globals.xpAwardsTable = xpAwardsTable;
@@ -134,6 +136,7 @@ interface DatesJson {
 	sbjCurrentDate: DateInitializer;
 	undestenCurrentDate: DateInitializer;
 	undestenMiriCurrentDate: DateInitializer;
+	undestenGnollusCurrentDate: DateInitializer;
 }
 
 export interface ReputationRank {

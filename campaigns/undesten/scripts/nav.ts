@@ -33,10 +33,12 @@ export const undestenNav = [
 	new PageInfo(undefined, "locations/mountain-top/grimvik.html", "Grimvik, Dwarven Trade Town", "grimvik"),
 
 	new PageInfo(undefined, "locations/player/iirie-complex.html", "Iirie Complex", "iirie-complex"),
+	new PageInfo(undefined, "locations/player/miris-palace.html", "Miri's Palace", "miris-palace"),
 
 	new PageInfo(undefined, "organizations/ming.html", "The Ming", "ming"),
 	new PageInfo(undefined, "organizations/adventurers-league.html", "Adventurers' League", "adventurers-league"),
 
+	new PageInfo(undefined, "organizations/cults/minor-gods.html", "Minor Gods", "minor-gods"),
 	new PageInfo(undefined, "organizations/cults/iron-serpents.html", "Iron Serpents", "iron-serpents"),
 
 	new PageInfo(undefined, "npcs/random.html", "Random/Seen Once NPCs", "random-npcs"),
@@ -179,6 +181,7 @@ export const undestenNav = [
 	new PageInfo(undefined, "images/undesten/Dame Angele Desmarais.jpg", "", "angele-desmarais-img", true),
 	new PageInfo(undefined, "images/undesten/kozue-rika.jpg", "", "kozue-rika-img", true),
 	new PageInfo(undefined, "images/undesten/Vibeke Sofie Berg.jpg", "", "vibeke-sofie-berg-img", true),
+	new PageInfo(undefined, "images/undesten/yvette.jpg", "", "yvette-img", true),
 ];
 
 undestenNav.forEach((pageInfo) => {
