@@ -42,6 +42,8 @@ export const undestenNav = [
     new PageInfo(undefined, "npcs/yabu.html", 'Yabu, Kayo\'s "Night Wolf"', "yabu"),
     new PageInfo(undefined, "npcs/yanaba.html", "Yanaba, Hellhound Sorceress", "yanaba"),
     new PageInfo(undefined, "npcs/algon.html", "Algon, Hobgoblin Druid", "algon"),
+    new PageInfo(undefined, "npcs/ayaki.html", "Sokhatai Ikaya, Shifter of Perform", "ayaki"),
+    new PageInfo(undefined, "npcs/ragna-namkidottir.html", "Ragna Namkidottir, Warpriest of Perform", "ragna-namkidottir"),
     new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/humanoids/gillman/", "", "gillman", true),
     new PageInfo(undefined, "enemies/gillman/gillman-magus.html", "Gillman Magus", "gillman-magus"),
     new PageInfo(undefined, "enemies/gillman/gillman-heavy.html", "Gillman Heavy", "gillman-heavy"),
@@ -105,6 +107,7 @@ export const undestenNav = [
     new PageInfo(undefined, "plotlines/dragons-return.html", "Dragon's Return", "dragons-return"),
     new PageInfo(undefined, "plotlines/bring-the-deserts-inline.html", "Bring the Deserts Inline", "bring-the-deserts-inline"),
     new PageInfo(undefined, "plotlines/track-the-cause.html", "Track the Cause", "track-the-cause"),
+    new PageInfo(undefined, "plotlines/age-of-ice.html", "Age of Ice", "age-of-ice"),
     new PageInfo(undefined, "misc/children.html", "Children", "children"),
     new PageInfo(undefined, "misc/boat-rules.html", "Boat/Ship Rules", "boat-rules"),
     new PageInfo(undefined, "misc/zoes-hounds.html", "Zoe's Hounds", "zoes-hounds"),
@@ -124,6 +127,8 @@ export const undestenNav = [
     new PageInfo(undefined, "images/undesten/kozue-rika.jpg", "", "kozue-rika-img", true),
     new PageInfo(undefined, "images/undesten/Vibeke Sofie Berg.jpg", "", "vibeke-sofie-berg-img", true),
     new PageInfo(undefined, "images/undesten/yvette.jpg", "", "yvette-img", true),
+    new PageInfo(undefined, "images/undesten/ayaki.jpg", "", "ayaki-img", true),
+    new PageInfo(undefined, "images/undesten/ragna-namkidottir.jpg", "", "ragna-namkidottir-img", true),
 ];
 undestenNav.forEach((pageInfo) => {
     if (!pageInfo.external) {
