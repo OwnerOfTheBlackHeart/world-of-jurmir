@@ -24,6 +24,7 @@ export const undestenNav = [
     new PageInfo(undefined, "locations/desertside/quellon-mine.html", "Quellon Mine", "quellon-mine"),
     new PageInfo(undefined, "locations/desertside/sulthdon.html", "Sulthdon", "sulthdon"),
     new PageInfo(undefined, "locations/desertside/jarut.html", "Jarut, River Rest Stop", "jarut"),
+    new PageInfo(undefined, "locations/desertside/elder-tower.html", "The Elder Tower", "elder-tower"),
     new PageInfo(undefined, "locations/mountain-top/dellar.html", "Dellar, Druidic Breadbasket", "dellar"),
     new PageInfo(undefined, "locations/mountain-top/grimvik.html", "Grimvik, Dwarven Trade Town", "grimvik"),
     new PageInfo(undefined, "locations/player/iirie-complex.html", "Iirie Complex", "iirie-complex"),
@@ -130,6 +131,7 @@ export const undestenNav = [
     new PageInfo(undefined, "images/undesten/yvette.jpg", "", "yvette-img", true),
     new PageInfo(undefined, "images/undesten/ayaki.jpg", "", "ayaki-img", true),
     new PageInfo(undefined, "images/undesten/ragna-namkidottir.jpg", "", "ragna-namkidottir-img", true),
+    new PageInfo(undefined, "images/undesten/queen-of-the-sands.png", "", "queen-of-the-sands-img", true),
 ];
 undestenNav.forEach((pageInfo) => {
     if (!pageInfo.external) {
