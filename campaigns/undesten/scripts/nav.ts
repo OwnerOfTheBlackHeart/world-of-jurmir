@@ -66,6 +66,13 @@ export const undestenNav = [
 
 	new PageInfo(undefined, "enemies/dragons/protogod-wyvern.html", "Protogod Wyvern", "protogod-wyvern"),
 
+	new PageInfo(
+		undefined,
+		"enemies/aberrations/aberration-dragon-very-young.html",
+		"Aberration Dragon, Very Young",
+		"aberration-dragon-very-young"
+	),
+
 	new PageInfo(undefined, "enemies/humanoids/tiefling-wizard.html", "Tiefling Wizard", "tiefling-wizard"),
 	new PageInfo(undefined, "enemies/humanoids/aasimar-paladin.html", "Aasimar Paladin", "aasimar-paladin"),
 	new PageInfo(undefined, "enemies/humanoids/catfolk-thug.html", "Catfolk Thug", "catfolk-thug"),
@@ -79,7 +86,18 @@ export const undestenNav = [
 	new PageInfo(undefined, "enemies/cultists/red-king/kobold-cultist.html", "Kobold Cultist", "kobold-cultist"),
 	new PageInfo(undefined, "enemies/cultists/red-king/orc-cultist.html", "Orc Cultist", "orc-cultist"),
 	new PageInfo(undefined, "enemies/cultists/red-king/luta-dagdottir.html", "Luta Dagdottir", "luta-dagdottir"),
+
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/grick/", "", "grick", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/mimic/", "", "mimic", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/undead/bloody-bones-3pp/", "", "bloody-bones-minor", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/unique-monsters/cr-3/zombie-monk/", "", "zombie-lord", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/oozes/gelatinous-cube/", "", "gelatinous-cube", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/undead/skeletal-champion/", "", "skeletal-champion", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/undead/ghoul/ghoul-wolf-tohc/", "", "ghoul-wolf", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/choker/", "", "choker", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/elder-thing/", "", "elder-thing", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/decapus/", "", "decapus", true),
+
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/outsiders/mephit/mephit-water/", "", "water-mephit", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/outsiders/mephit/mephit-earth/", "", "earth-mephit", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/dragons/drakes/drake-river/", "", "river-drake", true),
