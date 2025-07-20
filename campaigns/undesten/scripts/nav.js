@@ -25,6 +25,7 @@ export const undestenNav = [
     new PageInfo(undefined, "locations/desertside/sulthdon.html", "Sulthdon", "sulthdon"),
     new PageInfo(undefined, "locations/desertside/jarut.html", "Jarut, River Rest Stop", "jarut"),
     new PageInfo(undefined, "locations/desertside/elder-tower.html", "The Elder Tower", "elder-tower"),
+    new PageInfo(undefined, "locations/desertside/trifrost.html", "The Trifrost", "trifrost"),
     new PageInfo(undefined, "locations/mountain-top/dellar.html", "Dellar, Druidic Breadbasket", "dellar"),
     new PageInfo(undefined, "locations/mountain-top/grimvik.html", "Grimvik, Dwarven Trade Town", "grimvik"),
     new PageInfo(undefined, "locations/player/iirie-complex.html", "Iirie Complex", "iirie-complex"),
