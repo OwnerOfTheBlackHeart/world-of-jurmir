@@ -178,6 +178,28 @@ export const undestenNav = [
 
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/cloaker", "", "cloaker", true),
 
+	new PageInfo(
+		undefined,
+		"https://www.d20pfsrd.com/bestiary/monster-listings/outsiders/elemental/elemental-ice/small-ice-elemental/",
+		"",
+		"small-ice-elemental",
+		true
+	),
+	new PageInfo(
+		undefined,
+		"https://www.d20pfsrd.com/bestiary/monster-listings/outsiders/elemental/elemental-ice/medium-ice-elemental/",
+		"",
+		"medium-ice-elemental",
+		true
+	),
+	new PageInfo(
+		undefined,
+		"https://www.d20pfsrd.com/bestiary/monster-listings/outsiders/elemental/elemental-ice/large-ice-elemental/",
+		"",
+		"large-ice-elemental",
+		true
+	),
+
 	new PageInfo(undefined, "plotlines/plotlines.html", "Plotline Index", "plotline-index"),
 	new PageInfo(undefined, "plotlines/hunt-them-first.html", "Hunt Them First", "hunt-them-first"),
 	new PageInfo(undefined, "plotlines/hobgod.html", "Hobgod", "hobgod"),
