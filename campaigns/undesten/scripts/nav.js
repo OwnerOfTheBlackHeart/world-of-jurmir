@@ -66,6 +66,7 @@ export const undestenNav = [
     new PageInfo(undefined, "enemies/cultists/red-king/kobold-cultist.html", "Kobold Cultist", "kobold-cultist"),
     new PageInfo(undefined, "enemies/cultists/red-king/orc-cultist.html", "Orc Cultist", "orc-cultist"),
     new PageInfo(undefined, "enemies/cultists/red-king/luta-dagdottir.html", "Luta Dagdottir", "luta-dagdottir"),
+    new PageInfo(undefined, "enemies/cultists/red-king/dread-aberromancer.html", "Dread Aberromancer", "dread-aberromancer"),
     new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/grick/", "", "grick", true),
     new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/mimic/", "", "mimic", true),
     new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/undead/bloody-bones-3pp/", "", "bloody-bones-minor", true),
