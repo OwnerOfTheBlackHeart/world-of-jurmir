@@ -73,6 +73,8 @@ export const undestenNav = [
 		"Aberration Dragon, Very Young",
 		"aberration-dragon-very-young"
 	),
+	new PageInfo(undefined, "enemies/aberrations/mimic-armor.html", "Dread Aberromancer", "mimic-armor"),
+	new PageInfo(undefined, "enemies/aberrations/pophagite.html", "Pophagite", "pophagite"),
 
 	new PageInfo(undefined, "enemies/humanoids/tiefling-wizard.html", "Tiefling Wizard", "tiefling-wizard"),
 	new PageInfo(undefined, "enemies/humanoids/aasimar-paladin.html", "Aasimar Paladin", "aasimar-paladin"),
@@ -88,8 +90,6 @@ export const undestenNav = [
 	new PageInfo(undefined, "enemies/cultists/red-king/orc-cultist.html", "Orc Cultist", "orc-cultist"),
 	new PageInfo(undefined, "enemies/cultists/red-king/luta-dagdottir.html", "Luta Dagdottir", "luta-dagdottir"),
 	new PageInfo(undefined, "enemies/cultists/red-king/dread-aberromancer.html", "Dread Aberromancer", "dread-aberromancer"),
-	new PageInfo(undefined, "enemies/cultists/red-king/mimic-armor.html", "Dread Aberromancer", "mimic-armor"),
-	new PageInfo(undefined, "enemies/cultists/red-king/pophagite.html", "Dread Aberromancer", "pophagite"),
 
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/grick/", "", "grick", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/mimic/", "", "mimic", true),
