@@ -1,40 +1,85 @@
 <h1>Dread Aberromancer</h1>
 <ap-basic-table character-table>
 	[
-        ["Challenge Rating:", "1 (400 xp)"],
+        ["Challenge Rating:", "6 (2,400 xp)"],
         ["Class Levels:", "Cleric 5, Dread Aberromancer 5"],
         ["Alignment/Type:", "CE Medium humanoid (human)"],
-        ["Reaction:", "<b>Init</b> +XX; <b>Senses</b> Perception +XX"],
+        ["Reaction:", "<b>Init</b> +2; <b>Senses</b> Perception +3"],
 
         ["header", "DEFENSE"],
-        ["Armor Class:", "XX, touch XX, flat-footed XX (+2 armor, +4 Dex)"],
-		["Hit Dice:", "XX (10d8+10+10xCon)"],
-        ["Saves:", "<b>Fort</b> +5+X, <b>Ref</b> +2+X, <b>Will</b> +8+X"],
+        ["Armor Class:", "17, touch 13, flat-footed 15 (+3 armor, +2 Dex, +1 natural armor, +1 ring of protection)"],
+		["Hit Dice:", "75 (10d8+30)"],
+        ["Saves:", "<b>Fort</b> +7, <b>Ref</b> +4, <b>Will</b> +11"],
+        ["Energy Resistance:", "Fire 10, Acid 10"],
 
         ["header", "OFFENSE"],
         ["Speed:", "30 ft."],
-		["Melee:", "mwk war razor +2 (1d4+1/18–20)"],
+		["Melee:", "+1 Agile Spear +10/+5 (1d8+2/20x3)"],
+		["Melee (spear dancing):", "+1 Agile Spear +8/+3 (1d8+2/20x3) and Hilt +8 (1d6+1)"],
         ["Space/Reach:", "5 ft./5 ft."],
-		["Special Attacks:", "bleeding touch (5/day, 1d6 bleed, 1 round), channel negative energy (2/day, 1d6, DC 9), copycat (5/day, 1 round), sneak attack +1d6"],
-        ["Spells Prepared:", "CL 1st"],
-        ["1st", "command (DC 13), disguise self D (DC 13), shield of faith"],
-        ["0th", "light, mending, virtue"],
+		["Special Attacks:", 
+            "Destructive Smite (6/day, +5 damage, single melee attack), Strength Surge (6/day, standard, touch, +5 strength, 1 round)",
+            "channel negative energy (4/day, 3d6, DC 16), Command Aberration and Ooze, Draining Touch (2d6)"
+        ],
+        ["Spells Prepared:", "CL 10th"],
+        ["5th (DC 18)", "Righteous Might<sub>D</sub>, Summon Aberration V, Flame Strike"],
+        ["4th (DC 17)", "Spell Immunity<sub>D</sub>, Summon Aberration IV, Blessing of Fervor, Divine Power (+3)"],
+        ["3rd (DC 16)", "Rage<sub>D</sub>, Blindness/Deafness, Create Food and Water, Cure Serious Wounds, Invisibility Purge"],
+        ["2nd (DC 15)", "Bull's Strength<sub>D</sub>, 3x Admonishing Ray (2 rays), Cat's Grace, Cure Moderate Wounds"],
+        ["1st (DC 14)", "True Strike<sub>D</sub>, Comprehend Languages, 2x Divine Favor (+3), Shield of Faith (+3), Tap Inner Beauty"],
+        ["0th", "Create Water, Detect Magic, Enhanced Diplomacy, Mending"],
         ["Domains", "Strength, Destruction"],
 
         ["header", "STATISTICS"],
-		["Abilities:", "Str XX, Dex XX, Con XX, Int XX, Wis XX, Cha XX"],
-        ["Attack/Manuever:", "<b>Base Attack</b> +6, <b>CMB</b> +1, <b>CMD</b> 14"],
+		["Abilities:", "Str 8, Dex 15, Con 14, Int 10, Wis 17, Cha 13"],
+        ["Attack/Manuever:", "<b>Base Attack</b> +6, <b>CMB</b> +5, <b>CMD</b> 17"],
 		["Skills:", 
-            "Acrobatics +8, Total Skill Points 20 (2 per level + human + favored class) + 30 (2 per level + human + favored class) + 10xInt"
+            "Bluff +9, Craft (alchemy) +5, Diplomacy +14, Knowledge (dungeoneering) +13, Linguistics +4, Sense Motive +8, Stealth +15 (+14 in armor), Spellcraft +13"
         ],
-		["Feats:", "1st, Fast Learner, 3rd, 5th, Eclectic (Dread Aberromancer), 9th"],
+		["Feats:", "Weapon Finesse, Two-Weapon Fighting, Eclectic (Dread Aberromancer), Spear Dancing Style, Weapon Focus (spear), Spear Dancing Spiral"],
 		["Languages:", "Common, Voidspeak"],
-		["Special Qualities:", "spontaneous casting (inflict spells)"],
+		["Special Qualities:", 
+            "Spontaneous casting (inflict spells), Birth Aberration, <ap-link-button linkName="undesten-mimic-armor">Mimic Armor (medium)</ap-link-button>, Disguise Self"
+        ],
 
         ["header", "ECOLOGY"],
-        ["Treasure", "leather armor, masterwork war razor, 20 gp"]
+        ["Treasure", "+1 Agile Spear, Ring of Protection +1, Amulet of Natural Armor +1"]
 	]
 </ap-basic-table>
-<!--
-    Make a dexier build
--->
+<p>
+    The aberromancer wears their <ap-link-button linkName="undesten-mimic-armor">Mimic Armor</ap-link-button> in its light mode.
+</p>
+<p>
+    If the aberromancer is capable of giving birth, roll on the table below to determine if they are pregnant, and with what.
+</p>
+<ap-advanced-table>
+	[
+		[{"value": "Roll", "isHeader": true}, {"value": "Pregnancy", "isHeader": true}],
+		["1-2", "No Pregnancy"],
+		["3", "Choker"],
+		["4", "Gibbering Mouther"],
+		["5", "Dark Naga"],
+		["6", "Chuul"]
+	]
+</ap-advanced-table>
+
+<p>
+    Dread Aberromancers do not travel alone. Roll on the following table to determine what aberrations they have with them when they are met.
+    To determine the Dread Aberromancer's escort, roll a d20 and consult the table below.
+</p>
+<ap-advanced-table>
+    [
+		[{"value": "Roll", "isHeader": true}, {"value": "Escort", "isHeader": true}],
+		["1-10", "3 Chokers"],
+		["11", "2 Gibbering Mouthers"],
+		["12", "A Rust Monster and an Adherer (3pp)"],
+		["13", "Dark Naga"],
+		["14", "Chuul"],
+		["15", "A Decapus and a Choker"],
+		["16", "2 Ettercaps"],
+		["17", "A Fungal Crawler and a Grick"],
+		["18", "An Otyugh and a Gibbering Mouther"],
+		["19", "A Choker and an Elder Thing"],
+		["20", "Intellect Devourer"]
+	]
+</ap-advanced-table>

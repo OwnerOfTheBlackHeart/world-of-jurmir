@@ -49,15 +49,22 @@
 </ap-advanced-table>
 
 <h2 id="event-chart-deadlands">Event Chart (Deadlands)</h2>
-<ul class="list">
-	<li>Aberromancers with randomly rolled aberrations</li>
-	<li>Chokers</li>
-	<li>Skum</li>
-	<li>More Aberrations</li>
-	<li>Blood Golem</li>
-	<li>Behemoth Golem</li>
-	<li>Clockwork Squad (Soldier, Hound, Guardian)</li>
-</ul>
+<ap-advanced-table>
+    [
+		[{"value": "Roll (2d6)", "isHeader": true}, {"value": "Escort", "isHeader": true}],
+		["2", "<ap-link-button linkName="undesten-pophagite">Pophagite</ap-link-button>"],
+		["3", "<ap-link-button linkName="noble-cryptstalker">Cryptstalker</ap-link-button>"],
+		["4", "Chuul"],
+		["5", "<ap-link-button linkName="undesten-dread-aberromancer">Dread Aberromancer</ap-link-button>"],
+		["6", "1d4+1 Chokers"],
+		["7", "Nothing happens"],
+		["8", "Dark Naga"],
+		["9", "Intellect Devourer"],
+		["10", "Skum (Roll 1d100, 1-25 hostile, 26-50 bribable, 51-75 neutral, 76-100 friendly)"],
+		["11", "Friendly <ap-link-button linkName="undesten-dread-aberromancer">Dread Aberromancer</ap-link-button>"],
+		["12", "Golem, Adamantine"]
+	]
+</ap-advanced-table>
 
 <h2 id="events">Events</h2>
 <h3 id="pirate-attack">Pirate Attack</h3>
