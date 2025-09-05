@@ -79,6 +79,7 @@ export const undestenNav = [
 	new PageInfo(undefined, "enemies/humanoids/tiefling-wizard.html", "Tiefling Wizard", "tiefling-wizard"),
 	new PageInfo(undefined, "enemies/humanoids/aasimar-paladin.html", "Aasimar Paladin", "aasimar-paladin"),
 	new PageInfo(undefined, "enemies/humanoids/catfolk-thug.html", "Catfolk Thug", "catfolk-thug"),
+	new PageInfo(undefined, "enemies/humanoids/batling.html", "Batling", "batling"),
 
 	new PageInfo(undefined, "enemies/cultists/hecks-hounds/zoes-hellhound.html", "Heck's Hounds Hellhound", "zoes-hellhound"),
 	new PageInfo(undefined, "enemies/cultists/hecks-hounds/zoes-silverwolf.html", "Heck's Hounds Silverwolf", "zoes-silverwolf"),
@@ -241,6 +242,7 @@ export const undestenNav = [
 	new PageInfo(undefined, "images/undesten/ayaki.jpg", "", "ayaki-img", true),
 	new PageInfo(undefined, "images/undesten/ragna-namkidottir.jpg", "", "ragna-namkidottir-img", true),
 	new PageInfo(undefined, "images/undesten/queen-of-the-sands.png", "", "queen-of-the-sands-img", true),
+	new PageInfo(undefined, "images/undesten/batling.jpg", "", "batling-img", true),
 ];
 
 undestenNav.forEach((pageInfo) => {
