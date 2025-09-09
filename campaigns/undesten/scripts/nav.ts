@@ -243,6 +243,16 @@ export const undestenNav = [
 	new PageInfo(undefined, "images/undesten/ragna-namkidottir.jpg", "", "ragna-namkidottir-img", true),
 	new PageInfo(undefined, "images/undesten/queen-of-the-sands.png", "", "queen-of-the-sands-img", true),
 	new PageInfo(undefined, "images/undesten/batling.jpg", "", "batling-img", true),
+
+	new PageInfo(undefined, "images/undesten/roamers/marta-maccomhainn.png", "", "marta-maccomhainn-img", true),
+	new PageInfo(undefined, "images/undesten/roamers/theda-swetecok.jpg", "", "theda-swetecok-img", true),
+	new PageInfo(undefined, "images/undesten/roamers/niki-abedi.jpg", "", "niki-abedi-img", true),
+	new PageInfo(undefined, "images/undesten/roamers/sileken-von-ganters.jpg", "", "sileken-von-ganters-img", true),
+	new PageInfo(undefined, "images/undesten/roamers/kayla-olynn.jpg", "", "kayla-olynn-img", true),
+	new PageInfo(undefined, "images/undesten/roamers/larysa-pavlova.jfif", "", "larysa-pavlova-img", true),
+	new PageInfo(undefined, "images/undesten/roamers/aestrid-olaedottir.webp", "", "aestrid-olaedottir-img", true),
+	new PageInfo(undefined, "images/undesten/roamers/runa-olaedottir.jpg", "", "runa-olaedottir-img", true),
+	new PageInfo(undefined, "images/undesten/roamers/naunet.jpg", "", "naunet-img", true),
 ];
 
 undestenNav.forEach((pageInfo) => {
