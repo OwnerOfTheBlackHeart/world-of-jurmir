@@ -31,6 +31,8 @@ export const undestenNav = [
 	new PageInfo(undefined, "locations/desertside/elder-tower.html", "The Elder Tower", "elder-tower"),
 	new PageInfo(undefined, "locations/desertside/trifrost.html", "The Trifrost", "trifrost"),
 
+	new PageInfo(undefined, "locations/deadlands/zigvail.html", "Zigvail, Aberromancers' Hold", "zigvail"),
+
 	new PageInfo(undefined, "locations/mountain-top/dellar.html", "Dellar, Druidic Breadbasket", "dellar"),
 	new PageInfo(undefined, "locations/mountain-top/grimvik.html", "Grimvik, Dwarven Trade Town", "grimvik"),
 
@@ -212,6 +214,7 @@ export const undestenNav = [
 	new PageInfo(undefined, "plotlines/track-the-cause.html", "Track the Cause", "track-the-cause"),
 	new PageInfo(undefined, "plotlines/age-of-ice.html", "Age of Ice", "age-of-ice"),
 	new PageInfo(undefined, "plotlines/become-godsoul.html", "Become Godsoul", "become-godsoul"),
+	new PageInfo(undefined, "plotlines/weretiger-transformation.html", "Weretiger Transformation", "weretiger-transformation"),
 
 	new PageInfo(undefined, "misc/children.html", "Children", "children"),
 	new PageInfo(undefined, "misc/boat-rules.html", "Boat/Ship Rules", "boat-rules"),
