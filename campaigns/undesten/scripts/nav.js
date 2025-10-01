@@ -48,7 +48,7 @@ export const undestenNav = [
     new PageInfo(undefined, "npcs/algon.html", "Algon, Hobgoblin Druid", "algon"),
     new PageInfo(undefined, "npcs/ayaki.html", "Sokhatai Ikaya, Shifter of Perform", "ayaki"),
     new PageInfo(undefined, "npcs/ragna-namkidottir.html", "Ragna Namkidottir, Warpriest of Perform", "ragna-namkidottir"),
-    new PageInfo(undefined, "npcs/yasrena.html", "Yasrena Telenna, Drow Escapee, Pilgrim of Kriotz", "yasrena"),
+    new PageInfo(undefined, "npcs/yasrena-pathfinder.html", "Yasrena Telenna, Drow Escapee, Pilgrim of Kriotz", "yasrena"),
     new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/humanoids/gillman/", "", "gillman", true),
     new PageInfo(undefined, "enemies/gillman/gillman-magus.html", "Gillman Magus", "gillman-magus"),
     new PageInfo(undefined, "enemies/gillman/gillman-heavy.html", "Gillman Heavy", "gillman-heavy"),
