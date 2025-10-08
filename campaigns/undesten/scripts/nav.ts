@@ -262,6 +262,8 @@ export const undestenNav = [
 	new PageInfo(undefined, "images/undesten/roamers/aestrid-olaedottir.webp", "", "aestrid-olaedottir-img", true),
 	new PageInfo(undefined, "images/undesten/roamers/runa-olaedottir.jpg", "", "runa-olaedottir-img", true),
 	new PageInfo(undefined, "images/undesten/roamers/naunet.jpg", "", "naunet-img", true),
+	new PageInfo(undefined, "images/undesten/roamers/shabnam-farzin.jpg", "", "shabnam-farzin-img", true),
+	new PageInfo(undefined, "images/undesten/roamers/thorkatla-gaukdottir.jpg", "", "thorkatla-gaukdottir-img", true),
 ];
 
 undestenNav.forEach((pageInfo) => {
