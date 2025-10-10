@@ -264,6 +264,14 @@ export const undestenNav = [
 	new PageInfo(undefined, "images/undesten/roamers/naunet.jpg", "", "naunet-img", true),
 	new PageInfo(undefined, "images/undesten/roamers/shabnam-farzin.jpg", "", "shabnam-farzin-img", true),
 	new PageInfo(undefined, "images/undesten/roamers/thorkatla-gaukdottir.jpg", "", "thorkatla-gaukdottir-img", true),
+	new PageInfo(undefined, "images/undesten/roamers/tola-aridottir.jpg", "", "tola-aridottir-img", true),
+	new PageInfo(undefined, "images/undesten/roamers/naser-qaderi.jpg", "", "naser-qaderi-img", true),
+	new PageInfo(undefined, "images/undesten/roamers/peyman-mozafari.jpg", "", "peyman-mozafari-img", true),
+	new PageInfo(undefined, "images/undesten/roamers/aesa-aerindottir.jpg", "", "aesa-aerindottir-img", true),
+	new PageInfo(undefined, "images/undesten/roamers/ianessa.jpg", "", "ianessa-img", true),
+	new PageInfo(undefined, "images/undesten/roamers/slode-glumsson.jpg", "", "slode-glumsson-img", true),
+	new PageInfo(undefined, "images/undesten/roamers/joycelin-ayleward.jpg", "", "joycelin-ayleward-img", true),
+	new PageInfo(undefined, "images/undesten/roamers/aameae-yassor.jpg", "", "aameae-yassor-img", true),
 ];
 
 undestenNav.forEach((pageInfo) => {
