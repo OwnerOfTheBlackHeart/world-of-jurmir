@@ -685,8 +685,8 @@ class SexGeneratorElement extends HTMLElement {
 
 	GetLevel(characterClass: ClassChance): number {
 		let level = new DiceRoll(characterClass.levelRoll).roll().total;
-		level = Utilities.getRandomEntryFromRange(SpecialOptions.level.values).formula(level);
-		return Math.max(level + this.communityModifierInput.valueAsNumber, 1);
+		level = Utilities.getRandomEntryFromRange(SpecialOptions.level.values).formula(level + this.communityModifierInput.valueAsNumber);
+		return Math.max(level, 1);
 	}
 
 	CalculateSlaveCost(info: SexInfo): number {
