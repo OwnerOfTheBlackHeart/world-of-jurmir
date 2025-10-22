@@ -185,6 +185,7 @@ export const undestenNav = [
     new PageInfo(undefined, "images/undesten/roamers/slode-glumsson.jpg", "", "slode-glumsson-img", true),
     new PageInfo(undefined, "images/undesten/roamers/joycelin-ayleward.jpg", "", "joycelin-ayleward-img", true),
     new PageInfo(undefined, "images/undesten/roamers/aameae-yassor.jpg", "", "aameae-yassor-img", true),
+    new PageInfo(undefined, "images/undesten/roamers/kleio.jpg", "", "kleio-img", true),
 ];
 undestenNav.forEach((pageInfo) => {
     if (!pageInfo.external) {
