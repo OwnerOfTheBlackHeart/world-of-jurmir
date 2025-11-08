@@ -116,7 +116,9 @@
 				[{ "day": 361, "month": 2, "year": 1522 }, "Miri took finishes breaking Ragna"],
 				[{ "day": 366, "month": 2, "year": 1522 }, "Miri arrived in <ap-link-button linkName="undesten-trifrost">Trifrost</ap-link-button>"],
 				[{ "day": 371, "month": 2, "year": 1522 }, "Miri arrived in <ap-link-button linkName="undesten-iirie">Iirie</ap-link-button>"],
+				[{ "day": 355, "month": 3, "year": 1522 }, "Miri arrived in <ap-link-button linkName="undesten-iirie">Iirie</ap-link-button>"],
 				[{ "day": 376, "month": 2, "year": 1522 }, "Miri arrived in <ap-link-button linkName="undesten-trifrost">Trifrost</ap-link-button>"],
+				[{ "day": 359, "month": 3, "year": 1522 }, "Miri arrived in Miri arrived in <ap-link-button linkName="undesten-grass-foot-tribe">Grass Foot Tribe</ap-link-button> and collected the Coal Bin money"],
 				[{ "day": 376, "month": 2, "year": 1522 }, "<ap-link-button linkName="undesten-trifrost">Trifrost</ap-link-button> constructions complete"],
 				[{ "day": 351, "month": 3, "year": 1522 }, "Performed the ritual to Perform"]
 			]
@@ -125,7 +127,7 @@
 	<ap-auth-container permissions="gm events-timeline undesten-full">
 		<div class="table-column">
 			<h3>Events Timeline</h3>
-			<ap-time-table current-date-value="undestenCurrentDate">
+			<ap-time-table current-date-value="[{ 'date': 'undestenCurrentDate', 'display': 'Yuru' }, { 'date': 'undestenMiriCurrentDate', 'display': 'Miri' }, { 'date': 'undestenGnollusCurrentDate', 'display': 'Gnollus' }]">
 				[
 					["header", "Timeline"],
 					[3, 2, 1522, "<ap-link-button linkName="">PLACEHOLDER</ap-link-button>"]
@@ -138,10 +140,11 @@
         <!-- 
             Elf/Catfolk hybrids, child will be adult at 64, 19 months and 3 weeks pregnancy, 6 month trimesters
         -->
-        <ap-time-table current-date-value="undestenCurrentDate">
+        <ap-time-table current-date-value="[{ 'date': 'undestenCurrentDate', 'display': 'Yuru' }, { 'date': 'undestenMiriCurrentDate', 'display': 'Miri' }, { 'date': 'undestenGnollusCurrentDate', 'display': 'Gnollus' }]">
             [
                 ["header", "Timeline"],
-				[{ "day": 361, "month": 2, "year": 1522 }, "Ragna impregnated by Miri"]
+				[{ "day": 361, "month": 2, "year": 1522 }, "Ragna impregnated +1 by Miri"],
+				[{ "day": 351, "month": 3, "year": 1522 }, "Osavy impregnated by Akssort"]
             ]
         </ap-time-table>
     </div>
