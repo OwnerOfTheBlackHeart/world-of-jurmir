@@ -32,6 +32,11 @@ export const undestenNav = [
 	new PageInfo(undefined, "locations/desertside/trifrost.html", "The Trifrost", "trifrost"),
 
 	new PageInfo(undefined, "locations/deadlands/zigvail.html", "Zigvail, Aberromancers' Hold", "zigvail"),
+	new PageInfo(undefined, "locations/deadlands/da-fuck.html", "Da Fuck", "da-fuck"),
+	new PageInfo(undefined, "locations/deadlands/facility-28.html", "Facility 28", "facility-28"),
+	new PageInfo(undefined, "locations/deadlands/korvian-castle.html", "Korvian Castle", "korvian-castle"),
+	new PageInfo(undefined, "locations/deadlands/scronfarf.html", "Scronfarf", "scronfarf"),
+	new PageInfo(undefined, "locations/deadlands/skycruiser.html", "Skycruiser", "skycruiser"),
 
 	new PageInfo(undefined, "locations/mountain-top/dellar.html", "Dellar, Druidic Breadbasket", "dellar"),
 	new PageInfo(undefined, "locations/mountain-top/grimvik.html", "Grimvik, Dwarven Trade Town", "grimvik"),
@@ -94,6 +99,7 @@ export const undestenNav = [
 	new PageInfo(undefined, "enemies/cultists/red-king/orc-cultist.html", "Orc Cultist", "orc-cultist"),
 	new PageInfo(undefined, "enemies/cultists/red-king/luta-dagdottir.html", "Luta Dagdottir", "luta-dagdottir"),
 	new PageInfo(undefined, "enemies/cultists/red-king/dread-aberromancer.html", "Dread Aberromancer", "dread-aberromancer"),
+	new PageInfo(undefined, "enemies/cultists/red-king/dal-kye.html", "Dal-Kye, Farzin's Father, Kitsune Aberromancer", "dal-kye"),
 
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/grick/", "", "grick", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/mimic/", "", "mimic", true),
@@ -216,6 +222,7 @@ export const undestenNav = [
 	new PageInfo(undefined, "plotlines/age-of-ice.html", "Age of Ice", "age-of-ice"),
 	new PageInfo(undefined, "plotlines/become-godsoul.html", "Become Godsoul", "become-godsoul"),
 	new PageInfo(undefined, "plotlines/weretiger-transformation.html", "Weretiger Transformation", "weretiger-transformation"),
+	new PageInfo(undefined, "plotlines/farzins-call.html", "Farzin's Call", "farzins-call"),
 
 	new PageInfo(undefined, "misc/children.html", "Children", "children"),
 	new PageInfo(undefined, "misc/boat-rules.html", "Boat/Ship Rules", "boat-rules"),
