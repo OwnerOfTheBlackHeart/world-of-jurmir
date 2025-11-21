@@ -102,6 +102,10 @@ export const undestenNav = [
 	new PageInfo(undefined, "enemies/cultists/red-king/dal-kye.html", "Dal-Kye, Farzin's Father, Kitsune Aberromancer", "dal-kye"),
 
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/grick/", "", "grick", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/tentacled-horror/", "", "tentacled-horror", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/seugathi/", "", "seugathi", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/bogwid/", "", "bogwid", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/fachen/", "", "fachen", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/mimic/", "", "mimic", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/undead/bloody-bones-3pp/", "", "bloody-bones-minor", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/unique-monsters/cr-3/zombie-monk/", "", "zombie-lord", true),
@@ -109,6 +113,8 @@ export const undestenNav = [
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/undead/skeletal-champion/", "", "skeletal-champion", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/undead/ghoul/ghoul-wolf-tohc/", "", "ghoul-wolf", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/choker/", "", "choker", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/cloaker/", "", "cloaker", true),
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/chuul/", "", "chuul", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/elder-thing/", "", "elder-thing", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/decapus/", "", "decapus", true),
 
@@ -144,8 +150,44 @@ export const undestenNav = [
 		"sahuagin-mutant",
 		true
 	),
-	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-6/lord-achimair/", "", "sahuagin-lord", true),
 
+	new PageInfo(
+		undefined,
+		"https://www.d20pfsrd.com/bestiary/monster-listings/constructs/clockwork/clockwork-overseer/",
+		"",
+		"clockwork-overseer",
+		true
+	),
+	new PageInfo(
+		undefined,
+		"https://www.d20pfsrd.com/bestiary/monster-listings/constructs/clockwork/clockwork-soldier/",
+		"",
+		"clockwork-soldier",
+		true
+	),
+	new PageInfo(
+		undefined,
+		"https://www.d20pfsrd.com/bestiary/monster-listings/constructs/clockwork/clockwork-gunslinger/",
+		"",
+		"clockwork-gunslinger",
+		true
+	),
+	new PageInfo(
+		undefined,
+		"https://www.d20pfsrd.com/bestiary/monster-listings/constructs/clockwork/clockwork-hound/",
+		"",
+		"clockwork-hound",
+		true
+	),
+	new PageInfo(
+		undefined,
+		"https://www.d20pfsrd.com/bestiary/monster-listings/constructs/clockwork/clockwork-mage/",
+		"",
+		"clockwork-mage",
+		true
+	),
+
+	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-6/lord-achimair/", "", "sahuagin-lord", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-0/pirate-sailor-human-rogue-1/", "", "pirate-sailor", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-0/human-pirate-buccaneer/", "", "pirate-buccaneer", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-2/pirate-smuggler-human-rogue-3/", "", "pirate-smuggler", true),
@@ -188,8 +230,6 @@ export const undestenNav = [
 		"very-young-brass-dragon",
 		true
 	),
-
-	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/cloaker", "", "cloaker", true),
 
 	new PageInfo(
 		undefined,
