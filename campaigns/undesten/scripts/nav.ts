@@ -81,8 +81,15 @@ export const undestenNav = [
 		"Aberration Dragon, Very Young",
 		"aberration-dragon-very-young"
 	),
+	new PageInfo(
+		undefined,
+		"enemies/aberrations/aberration-dragon-juvenile.html",
+		"Aberration Dragon, Juvenile",
+		"aberration-dragon-juvenile"
+	),
 	new PageInfo(undefined, "enemies/aberrations/mimic-armor.html", "Dread Aberromancer", "mimic-armor"),
 	new PageInfo(undefined, "enemies/aberrations/pophagite.html", "Pophagite", "pophagite"),
+	new PageInfo(undefined, "enemies/aberrations/grick-dire.html", "Dire Grick", "grick-dire"),
 
 	new PageInfo(undefined, "enemies/humanoids/tiefling-wizard.html", "Tiefling Wizard", "tiefling-wizard"),
 	new PageInfo(undefined, "enemies/humanoids/aasimar-paladin.html", "Aasimar Paladin", "aasimar-paladin"),
