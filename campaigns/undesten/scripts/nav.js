@@ -91,7 +91,7 @@ export const undestenNav = [
     new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/oozes/gelatinous-cube/", "", "gelatinous-cube", true),
     new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/undead/skeletal-champion/", "", "skeletal-champion", true),
     new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/undead/skeleton-medium/skeleton-exploding/", "", "skeletal-exploding", true),
-    new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/undead/skeleton-medium/skeleton-black/", "", "skeletal-black", true),
+    new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/undead/skeleton-medium/skeleton-black/", "", "skeleton-black", true),
     new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/undead/ghoul/ghoul-wolf-tohc/", "", "ghoul-wolf", true),
     new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/choker/", "", "choker", true),
     new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/cloaker/", "", "cloaker", true),

@@ -129,7 +129,7 @@ export const undestenNav = [
 		undefined,
 		"https://www.d20pfsrd.com/bestiary/monster-listings/undead/skeleton-medium/skeleton-black/",
 		"",
-		"skeletal-black",
+		"skeleton-black",
 		true
 	),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/undead/ghoul/ghoul-wolf-tohc/", "", "ghoul-wolf", true),
