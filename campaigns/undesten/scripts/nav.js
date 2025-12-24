@@ -188,6 +188,7 @@ export const undestenNav = [
     new PageInfo(undefined, "images/undesten/oma-cah.jpg", "", "oma-cah-img", true),
     new PageInfo(undefined, "images/undesten/kadlin-geirdottir.jpg", "", "kadlin-geirdottir-img", true),
     new PageInfo(undefined, "images/undesten/katana.png", "", "katana-img", true),
+    new PageInfo(undefined, "images/undesten/nanet.png", "", "nanet-img", true),
     new PageInfo(undefined, "images/undesten/roamers/marta-maccomhainn.png", "", "marta-maccomhainn-img", true),
     new PageInfo(undefined, "images/undesten/roamers/theda-swetecok.jpg", "", "theda-swetecok-img", true),
     new PageInfo(undefined, "images/undesten/roamers/niki-abedi.jpg", "", "niki-abedi-img", true),
