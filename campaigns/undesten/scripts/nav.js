@@ -181,6 +181,7 @@ export const undestenNav = [
     new PageInfo(undefined, "images/undesten/ayaki.jpg", "", "ayaki-img", true),
     new PageInfo(undefined, "images/undesten/ragna-namkidottir.jpg", "", "ragna-namkidottir-img", true),
     new PageInfo(undefined, "images/undesten/queen-of-the-sands.png", "", "queen-of-the-sands-img", true),
+    new PageInfo(undefined, "images/undesten/great-red-beast.webp", "", "great-red-beast-img", true),
     new PageInfo(undefined, "images/undesten/lolth.png", "", "lolth-img", true),
     new PageInfo(undefined, "images/undesten/batling.jpg", "", "batling-img", true),
     new PageInfo(undefined, "images/undesten/zir-yah.jpg", "", "zir-yah-img", true),

@@ -79,13 +79,13 @@ export const undestenNav = [
 		undefined,
 		"enemies/aberrations/aberration-dragon-very-young.html",
 		"Aberration Dragon, Very Young",
-		"aberration-dragon-very-young"
+		"aberration-dragon-very-young",
 	),
 	new PageInfo(
 		undefined,
 		"enemies/aberrations/aberration-dragon-juvenile.html",
 		"Aberration Dragon, Juvenile",
-		"aberration-dragon-juvenile"
+		"aberration-dragon-juvenile",
 	),
 	new PageInfo(undefined, "enemies/aberrations/mimic-armor.html", "Dread Aberromancer", "mimic-armor"),
 	new PageInfo(undefined, "enemies/aberrations/pophagite.html", "Pophagite", "pophagite"),
@@ -123,14 +123,14 @@ export const undestenNav = [
 		"https://www.d20pfsrd.com/bestiary/monster-listings/undead/skeleton-medium/skeleton-exploding/",
 		"",
 		"skeletal-exploding",
-		true
+		true,
 	),
 	new PageInfo(
 		undefined,
 		"https://www.d20pfsrd.com/bestiary/monster-listings/undead/skeleton-medium/skeleton-black/",
 		"",
 		"skeleton-black",
-		true
+		true,
 	),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/undead/ghoul/ghoul-wolf-tohc/", "", "ghoul-wolf", true),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/aberrations/choker/", "", "choker", true),
@@ -169,7 +169,7 @@ export const undestenNav = [
 		"https://www.d20pfsrd.com/bestiary/monster-listings/monstrous-humanoids/sahuagin/mutant/",
 		"",
 		"sahuagin-mutant",
-		true
+		true,
 	),
 
 	new PageInfo(
@@ -177,35 +177,35 @@ export const undestenNav = [
 		"https://www.d20pfsrd.com/bestiary/monster-listings/constructs/clockwork/clockwork-overseer/",
 		"",
 		"clockwork-overseer",
-		true
+		true,
 	),
 	new PageInfo(
 		undefined,
 		"https://www.d20pfsrd.com/bestiary/monster-listings/constructs/clockwork/clockwork-soldier/",
 		"",
 		"clockwork-soldier",
-		true
+		true,
 	),
 	new PageInfo(
 		undefined,
 		"https://www.d20pfsrd.com/bestiary/monster-listings/constructs/clockwork/clockwork-gunslinger/",
 		"",
 		"clockwork-gunslinger",
-		true
+		true,
 	),
 	new PageInfo(
 		undefined,
 		"https://www.d20pfsrd.com/bestiary/monster-listings/constructs/clockwork/clockwork-hound/",
 		"",
 		"clockwork-hound",
-		true
+		true,
 	),
 	new PageInfo(
 		undefined,
 		"https://www.d20pfsrd.com/bestiary/monster-listings/constructs/clockwork/clockwork-mage/",
 		"",
 		"clockwork-mage",
-		true
+		true,
 	),
 
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-6/lord-achimair/", "", "sahuagin-lord", true),
@@ -220,7 +220,7 @@ export const undestenNav = [
 		"https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-6/wizard-extraordinaire-human-universalist-7/",
 		"",
 		"wizard-extraordinaire",
-		true
+		true,
 	),
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-10/general-human-fighter-11/", "", "human-general", true),
 	new PageInfo(
@@ -228,7 +228,7 @@ export const undestenNav = [
 		"https://www.d20pfsrd.com/bestiary/npc-s/npcs-cr-5/expert-bodyguard-human-warrior-7/",
 		"",
 		"expert-bodyguard",
-		true
+		true,
 	),
 
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/outsiders/daemons/lacridaemon", "", "lacridaemon", true),
@@ -239,7 +239,7 @@ export const undestenNav = [
 		"https://www.d20pfsrd.com/alternative-rule-systems/mythic/mythic-monsters/mythic-wyvern/",
 		"",
 		"mythic-wyvern",
-		true
+		true,
 	),
 
 	new PageInfo(undefined, "https://www.d20pfsrd.com/bestiary/monster-listings/humanoids/lycanthrope/weretiger", "", "weretiger", true),
@@ -249,7 +249,7 @@ export const undestenNav = [
 		"https://www.d20pfsrd.com/bestiary/monster-listings/dragons/dragon/metallic-brass/brass-dragon-very-young",
 		"",
 		"very-young-brass-dragon",
-		true
+		true,
 	),
 
 	new PageInfo(
@@ -257,21 +257,21 @@ export const undestenNav = [
 		"https://www.d20pfsrd.com/bestiary/monster-listings/outsiders/elemental/elemental-ice/small-ice-elemental/",
 		"",
 		"small-ice-elemental",
-		true
+		true,
 	),
 	new PageInfo(
 		undefined,
 		"https://www.d20pfsrd.com/bestiary/monster-listings/outsiders/elemental/elemental-ice/medium-ice-elemental/",
 		"",
 		"medium-ice-elemental",
-		true
+		true,
 	),
 	new PageInfo(
 		undefined,
 		"https://www.d20pfsrd.com/bestiary/monster-listings/outsiders/elemental/elemental-ice/large-ice-elemental/",
 		"",
 		"large-ice-elemental",
-		true
+		true,
 	),
 
 	new PageInfo(undefined, "plotlines/plotlines.html", "Plotline Index", "plotline-index"),
@@ -314,6 +314,7 @@ export const undestenNav = [
 	new PageInfo(undefined, "images/undesten/ayaki.jpg", "", "ayaki-img", true),
 	new PageInfo(undefined, "images/undesten/ragna-namkidottir.jpg", "", "ragna-namkidottir-img", true),
 	new PageInfo(undefined, "images/undesten/queen-of-the-sands.png", "", "queen-of-the-sands-img", true),
+	new PageInfo(undefined, "images/undesten/great-red-beast.webp", "", "great-red-beast-img", true),
 	new PageInfo(undefined, "images/undesten/lolth.png", "", "lolth-img", true),
 	new PageInfo(undefined, "images/undesten/batling.jpg", "", "batling-img", true),
 	new PageInfo(undefined, "images/undesten/zir-yah.jpg", "", "zir-yah-img", true),
